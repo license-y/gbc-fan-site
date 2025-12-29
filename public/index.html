@@ -1,100 +1,975 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="グリーンビーンズコーヒー - モダンでシンプルなコーヒー専門店">
-    <title>グリーンビーンズコーヒー | Green Beans Coffee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+  <!-- SEO/AEO メタ情報 -->
+  <title>Green Beans Coffee | 北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ</title>
+  <meta name="description" content="北参道駅徒歩3分。店名看板のない隠れ家コーヒー専門店。ペット同伴OK、グルテンフリーメニューあり。アンバサダーKikumiが見つけた魅力をご紹介。ダガヤサンドウのカフェならGreen Beans Coffee。">
+  <meta name="keywords" content="グリーンビーンズコーヒー, Green Beans Coffee, 北参道 カフェ, 千駄ヶ谷 カフェ, ペットフレンドリー カフェ, ペット同伴 カフェ 東京, グルテンフリー カフェ, 自家焙煎 コーヒー, ダガヤサンドウ カフェ, 焙煎体験, コーヒー専門店">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'coffee-brown': '#6F4E37',
-                        'coffee-light': '#A67C52',
-                        'wood-beige': '#D4B896',
-                        'concrete-gray': '#95A5A6',
-                        'cream': '#F5F5DC',
-                    },
-                    fontFamily: {
-                        'sans': ['Zen Maru Gothic', 'sans-serif'],
-                        'display': ['Zen Kaku Gothic New', 'sans-serif'],
-                    }
-                }
-            }
+  <!-- OGP -->
+  <meta property="og:title" content="Green Beans Coffee | 北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ">
+  <meta property="og:description" content="北参道駅徒歩3分。店名看板のない隠れ家コーヒー専門店。ペット同伴OK、グルテンフリーメニューあり。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/images/hero_bg-1.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://gbc-fan-site.pages.dev">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- CDN: Tailwind CSS v4 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- CDN: Animate.css v4.1.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- CDN: AOS v2.3.4 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Noto Serif JP', serif;
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A3728',
+            secondary: '#8B7355',
+            accent: '#C9A86C',
+            background: '#FAF8F5',
+            text: '#2D2A26',
+          }
         }
-    </script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Zen Maru Gothic', sans-serif;
-        }
-
-        .fade-in {
-            animation: fadeIn 1.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .coffee-bean {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-    </style>
+      }
+    }
+  </script>
 </head>
-<body class="bg-gradient-to-br from-cream via-white to-wood-beige min-h-screen flex items-center justify-center">
 
-    <div class="text-center fade-in px-6">
-        <!-- Coffee Icon -->
-        <div class="text-8xl mb-8 coffee-bean">
-            ☕
-        </div>
+<body class="bg-background text-text overflow-x-hidden">
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#hero" class="text-2xl font-bold">GBC</a>
 
-        <!-- Main Title -->
-        <h1 class="text-5xl md:text-6xl font-display font-bold text-coffee-brown mb-4">
-            グリーンビーンズコーヒー
-        </h1>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#hero" class="hover:text-accent transition">Home</a></li>
+        <li><a href="#about" class="hover:text-accent transition">About</a></li>
+        <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
+        <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
+        <li><a href="#access" class="hover:text-accent transition">Access</a></li>
+        <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
+        <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
+      </ul>
 
-        <!-- English Title -->
-        <p class="text-2xl md:text-3xl font-display text-coffee-light mb-12">
-            Green Beans Coffee
-        </p>
-
-        <!-- Coming Soon -->
-        <div class="inline-block bg-white/80 backdrop-blur-sm rounded-lg px-8 py-4 shadow-lg border border-coffee-light/20">
-            <p class="text-xl md:text-2xl text-concrete-gray font-medium">
-                Coming Soon
-            </p>
-        </div>
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md text-primary">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="#hero" class="block py-2 hover:text-accent transition">Home</a></li>
+        <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
+        <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
+        <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
+        <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
+        <li><a href="#visit-diary" class="block py-2 hover:text-accent transition">Visit Diary</a></li>
+        <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Images with Auto-switching (2 layers for smooth transition) -->
+    <div class="absolute inset-0 z-0">
+      <img id="hero-bg-1" src="/assets/images/hero_bg-1.jpg" alt="Green Beans Coffee Interior" class="absolute inset-0 w-full h-full object-cover transition-opacity duration-[4000ms] ease-in-out">
+      <img id="hero-bg-2" src="/assets/images/hero_bg-2.jpg" alt="Green Beans Coffee Interior" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[4000ms] ease-in-out">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 animate__animated animate__fadeInDown">
+        Green Beans Coffee
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+        店名看板のない<br class="sm:hidden">ペットフレンドリーカフェ
+      </p>
+    </div>
+
+    <!-- Ambassador Badge -->
+    <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-right z-10 text-sm sm:text-base">
+      <p class="text-xs sm:text-sm">GBCアンバサダー</p>
+      <p class="text-base sm:text-lg font-bold">Kikumi</p>
+    </div>
+
+    <!-- Scroll Down Arrow -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate__animated animate__bounce animate__infinite">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 md:py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">
+        About Green Beans Coffee
+      </h2>
+
+      <!-- Lead Paragraph -->
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-4xl mx-auto" data-aos="fade-up">
+        北参道・千駄ヶ谷エリア、通称「ダガヤサンドウ」にひっそりと佇むこのカフェは知る人ぞ知るコーヒー専門店。何度も通ううちに気づいたのはここが単なるカフェじゃないということ。ペットと一緒にくつろげる空間がありグルテンフリー対応メニューも提供、またハンドドリップや焙煎体験イベントといったコーヒーを通じた「体験」を届けてくれる場所です。このサイトでは開店当時から私が通い続けて見つけたGBCの魅力をお伝えします。
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-16 items-stretch">
+        <!-- Left: Images -->
+        <div data-aos="fade-right" class="flex flex-col gap-6">
+          <img src="/assets/images/about-shop-front.jpg" alt="店舗外観" class="w-full flex-1 rounded-lg shadow-lg object-cover" loading="lazy" decoding="async">
+          <img src="/assets/images/about-interior.jpg" alt="店内" class="w-full flex-1 rounded-lg shadow-lg object-cover" loading="lazy" decoding="async">
+        </div>
+
+        <!-- Right: Basic Info Table -->
+        <div data-aos="fade-left">
+          <div class="bg-background p-6 rounded-lg shadow h-full flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-4 text-primary">店舗基本情報</h3>
+            <div class="overflow-x-auto">
+            <table class="w-full">
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">店舗名</th>
+                <td class="py-3">Green Beans Coffee<br>（グリーンビーンズコーヒー）</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">ジャンル</th>
+                <td class="py-3">コーヒー専門店・カフェ</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">住所</th>
+                <td class="py-3">〒151-0051<br>東京都渋谷区千駄ヶ谷3-30-1<br>RC APARTMENT 1階</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">電話番号</th>
+                <td class="py-3">03-6447-0681</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">メール</th>
+                <td class="py-3">contact@greenbeans.co.jp</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">営業時間</th>
+                <td class="py-3">10:30〜20:00 (L.O. 19:30)</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">定休日</th>
+                <td class="py-3">不定休（Instagramで確認）</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">席数</th>
+                <td class="py-3">30席（カウンター4席、テーブル26席）</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">予約</th>
+                <td class="py-3">可（Instagram DM・電話・食べログ）</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">貸切</th>
+                <td class="py-3">可（着席20名・立食30名）</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">設備</th>
+                <td class="py-3">Wi-Fi(無料)・電源完備<br>ペット同伴OK・ベビーカー入店OK<br>バリアフリー・テイクアウトOK<br>英語メニューあり</td>
+              </tr>
+              <tr class="border-b border-accent/30">
+                <th class="text-left py-3 text-primary font-semibold">支払い方法</th>
+                <td class="py-3">現金・クレジットカード<br>電子マネー・QR決済</td>
+              </tr>
+              <tr>
+                <th class="text-left py-3 text-primary font-semibold">オープン</th>
+                <td class="py-3">2022年9月</td>
+              </tr>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-20 md:py-32 bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Menu</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        店内に入ってコーヒーの香りと共に最初に目を引くのがずらっと並んだ30種類以上の自家焙煎豆。コーヒーをよく知らないと何をどう選べばいいのか全くわかりません。でも大丈夫。店内に貼られている早見表を見ながらバリスタさんとお話するとぴったりの豆を選んでくれます。
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Coffee Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+          <img src="/assets/images/menu-coffee.jpg" alt="ハンドドリップコーヒー" class="w-full h-64 object-cover" loading="lazy" decoding="async">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-4 text-primary">コーヒー</h3>
+            <p class="mb-4">ハンドドリップコーヒーを注文するとバリスタが丁寧に淹れてくれます。その姿を見ているだけでなんだか贅沢な気分になります。</p>
+            <p class="mb-4">特殊な形をしたアシンメトリーカップで提供されます。飲み口の左右で厚みが違っていて1つのカップで右と左で香りや味わいの違いを感じながらコーヒーを飲むことができます。</p>
+            <p class="font-semibold text-primary">フルーティー / マイルド / ビター / デカフェ</p>
+          </div>
+        </div>
+
+        <!-- Food Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img src="/assets/images/menu-focaccia.jpg" alt="自家製フォカッチャ" class="w-full h-64 object-cover" loading="lazy" decoding="async">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-4 text-primary">フード</h3>
+            <p class="mb-4">GBCに来たらぜひ食べてほしいのが店内で焼いている自家製フォカッチャ。</p>
+            <p class="mb-4">開店当時は小麦粉バージョンでしたが、ある時から米粉バージョンに変わりました。外はカリッと中はもちもちで病みつきになります。グルテンフリー生活中の私にとって本当にありがたい存在です。</p>
+            <p class="text-sm text-secondary">※グルテンフリーワンプレートランチは、メイン・ソース・サイドディッシュを選べます。ワンプレート注文でドリンクメニュー半額！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 md:py-32 bg-white">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Experience</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        GBCは「ただコーヒーを飲む場所」じゃない。お客様に楽しい体験を提供する姿勢が他のカフェと一線を画してると感じます。
+      </p>
+
+      <!-- Instagram Embed: 焙煎体験 -->
+      <div class="max-w-xl mx-auto mb-16" data-aos="zoom-in">
+        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DQrB4VEkSAm/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px auto; max-width:540px; min-width:280px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DQrB4VEkSAm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">この投稿をInstagramで見る</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DQrB4VEkSAm/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Kentaro_barista(@kentaro_barista99)がシェアした投稿</a></p></div></blockquote>
+      </div>
+
+      <!-- Pet Friendly Section -->
+      <div data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-center mb-8 text-primary">ペットフレンドリーなカフェ</h3>
+        <p class="text-center text-lg leading-relaxed mb-12 max-w-3xl mx-auto">
+          GBCに行くとワンちゃん連れのお客さんをよく見かけます。店内にペットと一緒に入れるカフェって東京でも意外と少ないんですよね。しかもここはペットOKなだけじゃなくてペットと一緒に来店したらベットをチェキで撮影してくれるし、ペット撮影会の開催もあります。愛犬と一緒にゆっくりコーヒーを楽しみたい人にはぜひ一度訪れてほしい場所です。
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <img src="/assets/images/experience-pet-1.jpg" alt="ペットフレンドリー1" class="w-full rounded-lg shadow-lg" loading="lazy" decoding="async">
+          <img src="/assets/images/experience-pet-2.jpg" alt="ペットフレンドリー2" class="w-full rounded-lg shadow-lg" loading="lazy" decoding="async">
+          <img src="/assets/images/experience-pet-3.jpg" alt="ペットフレンドリー3" class="w-full rounded-lg shadow-lg" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Access Section -->
+  <section id="access" class="py-20 md:py-32 bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-16 text-primary" data-aos="fade-up">Access</h2>
+
+      <div class="grid md:grid-cols-2 gap-16">
+        <!-- Left: Text -->
+        <div data-aos="fade-right">
+          <h3 class="text-2xl font-bold mb-6 text-primary">北参道駅から（おすすめ）</h3>
+          <p class="mb-6 leading-relaxed">
+            副都心線の北参道駅2番出口を出て徒歩3分ほど。私はいつもこのルートで行っています。わかりやすくて近いです。
+          </p>
+
+          <h3 class="text-2xl font-bold mb-6 text-primary">千駄ヶ谷駅から</h3>
+          <p class="mb-6 leading-relaxed">
+            JR総武線の千駄ヶ谷駅からは徒歩7〜10分くらい。国立競技場を左に見ながら歩いていくと着きます。
+          </p>
+
+          <h4 class="text-xl font-bold mb-4 text-primary">各駅からの所要時間</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <span class="text-accent mr-2">●</span>
+              <span><span class="text-primary font-bold">北参道駅</span>（東京メトロ副都心線）徒歩3分 ← おすすめ</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-accent mr-2">●</span>
+              <span><span class="text-primary font-bold">千駄ヶ谷駅</span>（JR総武線）徒歩7〜10分</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-accent mr-2">●</span>
+              <span><span class="text-primary font-bold">国立競技場駅</span>（都営大江戸線）徒歩7分</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-accent mr-2">●</span>
+              <span><span class="text-primary font-bold">代々木駅</span>（JR）徒歩11分</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-accent mr-2">●</span>
+              <span><span class="text-primary font-bold">原宿駅</span>（JR）徒歩11分</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Google Map -->
+        <div data-aos="fade-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.593074936916!2d139.7052597!3d35.6775167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d4404ef151f%3A0x85142d57557d0f87!2z44Kw44Oq44O844Oz44OT44O844Oz44K544Kz44O844OS44O8!5e0!3m2!1sja!2sjp!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-lg"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Diary Section -->
+  <section id="visit-diary" class="py-20 md:py-32 bg-white">
+    <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Visit Diary</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        私がGBCに通い続けて見つけたお店の魅力。訪問のたびに新しい発見があります。
+      </p>
+
+      <div class="max-w-4xl mx-auto space-y-10">
+        <!-- Diary Entry #1 -->
+        <div class="bg-background p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2 text-primary">訪問記 #1 | 初めての訪問</h3>
+          <p class="leading-relaxed">
+            ウッド調のおしゃれな店内と焙煎したコーヒー豆の香りに癒されました。この日はコース料理をいただきましたが、すべてが感動。味はもちろん、ホテルレベルのおもてなしに驚きました。サラダだけでも感動するクオリティ。普段は小麦粉ものを食べないポリシーなのですが、フォカッチャと焦がしバターの組み合わせが絶妙においしくて、この日は我慢できずに全部食べてしまいました。メインのお肉は低温調理とのことで柔らかくとろける食感。また行きます！
+          </p>
+        </div>
+
+        <!-- Diary Entry #2 -->
+        <div class="bg-background p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2 text-primary">訪問記 #2 | グルテンフリー対応の細やかさ</h3>
+          <p class="leading-relaxed">
+            グループでコース料理をいただきました。私はグルテンフリー生活をしているので予約時にその旨を連絡。するとコースの2皿目でパスタの代わりに私だけ別料理（サーモンたっぷりのおしゃれなサラダ）を用意してくださいました。こまやかな配慮がうれしかったです。
+          </p>
+        </div>
+
+        <!-- Diary Entry #3 -->
+        <div class="bg-background p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2 text-primary">訪問記 #3 | JR千駄ヶ谷駅からのアクセス</h3>
+          <p class="leading-relaxed">
+            今回はJRで移動したので、千駄ヶ谷駅からお店へ。国立競技場を左に見ながら10分ほど歩いて到着しました。季節柄、ラテやデザートが桜バージョンに。行くたびに新しいメニューが追加されていて新鮮です。帰りは副都心線の北参道駅経由で。北参道からのほうがわかりやすくて近いですね。
+          </p>
+        </div>
+
+        <!-- Diary Entry #4 -->
+        <div class="bg-background p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2 text-primary">訪問記 #4 | 2024年10月 米粉フォカッチャとの出会い</h3>
+          <p class="leading-relaxed">
+            フォカッチャが米粉バージョンになっていました！グルテンフリーのスイーツも選べてうれしいです。バリスタさんの笑顔がすごく素敵だったのも良かった。次はグルテンフリーの友達と一緒に来ようと思います。
+          </p>
+        </div>
+
+        <!-- Diary Entry #5 -->
+        <div class="bg-background p-6 rounded-lg shadow" data-aos="fade-up">
+          <h3 class="text-xl font-bold mb-2 text-primary">訪問記 #5 | 2025年12月 貸切忘年会</h3>
+          <p class="leading-relaxed">
+            お気に入りのグリーンビーンズコーヒーで貸切の忘年会に参加しました。特別メニューで飲み物はアルコール＆ソフトドリンク飲み放題。そしてお食事はなんと全てグルテンフリー対応でした。夜の営業は少し暗めの照明で大人の雰囲気。アルコールが進みます。お食事の最後にいただいた生チョコが香り高いコーヒーとよく合って、満足の締めくくりでした。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GBC Magazine Section -->
+  <section id="gbc-magazine" class="py-20 md:py-32 bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">GBC Magazine</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        GBCでは毎月マガジンを発行していていつも最新号がお店に置いてあります。コーヒーのこと、ダガヤサンドウの情報、イベントのお知らせなどお店の「今」がわかる内容です。
+      </p>
+
+      <!-- Latest Issue -->
+      <div class="max-w-md mx-auto mb-16" data-aos="zoom-in">
+        <h3 class="text-2xl font-bold mb-4 text-center text-primary">最新号: 2026年1月</h3>
+        <img src="/assets/images/GBCMagagine_202601.jpg" alt="GBCマガジン2026年1月号" class="w-full rounded-lg shadow-lg cursor-pointer hover:shadow-xl transition" loading="lazy" decoding="async" onclick="openModal(this.src)">
+      </div>
+
+      <!-- Back Numbers -->
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-xl font-bold mb-6 text-center text-primary">バックナンバー</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <img src="/assets/images/GBCMagagine_202512.jpg" alt="2024年12月号" class="w-full rounded shadow cursor-pointer hover:shadow-lg transition" loading="lazy" decoding="async" onclick="openModal(this.src)">
+          <img src="/assets/images/GBCMagagine_202511.jpg" alt="2024年11月号" class="w-full rounded shadow cursor-pointer hover:shadow-lg transition" loading="lazy" decoding="async" onclick="openModal(this.src)">
+          <img src="/assets/images/GBCMagagine_202510.jpg" alt="2024年10月号" class="w-full rounded shadow cursor-pointer hover:shadow-lg transition" loading="lazy" decoding="async" onclick="openModal(this.src)">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Image Zoom -->
+  <div id="imageModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center" onclick="closeModal()">
+    <img id="modalImage" src="" alt="" class="max-w-full max-h-full p-4">
+  </div>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20 md:py-32 bg-white">
+    <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">FAQ</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        GBCに関するFAQです。私が実際に確認した情報をもとにしています。最新情報は公式Instagramでご確認ください。
+      </p>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <!-- FAQ Item #1 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q1. グリーンビーンズコーヒーはどこにありますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>東京都渋谷区千駄ヶ谷3-30-1 RC APARTMENT 1階です。北参道駅から徒歩3分、千駄ヶ谷駅からは徒歩7分くらい。国立競技場や東京体育館の近く、ダガヤサンドウエリアにあります。ちなみに店名の看板がないので、初めて行くときは通り過ぎないように注意です。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #2 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q2. 営業時間と定休日は？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>営業時間は10:30〜20:00（ラストオーダー19:30）です。定休日は不定休なので、行く前にInstagram（@green.beanscoffee）でチェックしておくのがおすすめです。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #3 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q3. 予約はできますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>はい、できます。Instagram DMや電話（03-6447-0681）で予約できるほか、食べログやホットペッパーからも予約可能です。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #4 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q4. ペットを連れて行っても大丈夫ですか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>大丈夫です！GBCはペットフレンドリーなカフェで、わんちゃんと一緒に店内で過ごせます。私が行くときもペット連れのお客さんをよく見かけます。ペット撮影会イベントも開催されているくらいなので、安心して連れて行けそうですね。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #5 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q5. 子ども連れでも入れますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>はい、大丈夫です。ベビーカーでの入店もOKとのこと。実際に子ども連れのファミリーも見かけます。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #6 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q6. グルテンフリーのメニューはありますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>あります。私自身グルテンフリー生活をしているので、これは本当にありがたいポイント。米粉を使った自家製フォカッチャやグルテンフリーのスイーツがあります。予約のときに伝えておけば、コース料理でも対応してもらえます。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #7 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q7. おすすめメニューは何ですか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>私のおすすめはハンドドリップコーヒー。バリスタさんにその日の気分を伝えるとぴったりの一杯を選んでくれます。フードならグルテンフリーワンプレートランチがおすすめ。米粉の自家製フォカッチャとサラダ付きで、メイン、サイドディッシュ、メインのソースを選べます。ワンプレートを注文したら、ドリンクメニューが半額で注文できるのもうれしい。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #8 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q8. コーヒー豆は買えますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>買えます。お店で飲んで気に入った豆をそのまま購入できます。毎日飲む人は毎月届く定期便サービスもあります。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #9 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q9. Wi-Fiや電源はありますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>両方あります。電源完備で無料でWi-Fiも使えるので、ノートPC持ち込みで作業している人も見かけます。カウンター席でもテーブル席でも全ての席で電源が使えます。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #10 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q10. 一人でも入りやすいですか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>はい。私も一人で行くことがありますが、カウンター席もあるし落ち着いた雰囲気なので居心地いいですよ。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #11 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q11. デートで使えますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>はい。むしろデートにおすすめ。実際にカップルで来ている人もよく見かけます。GBCを選んだら女性が喜ぶこと間違いなし。落ち着いた雰囲気でおしゃれ＆静か。コーヒーのいい香りに癒されて、いい雰囲気でお話ができるでしょう。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #12 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q12. 焙煎体験イベントは予約が必要ですか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>はい。開催日程はInstagramで告知されるので、参加したい人はチェックしておくといいですよ。スタッフさんに直接聞くかDMで申し込みとのことです。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #13 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q13. 貸切はできますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>貸切対応可能です。私も実際に貸切の忘年会に参加しました。着席で最大20名、立食で30名くらいまで対応可能とのこと。予約は3ヶ月前から2週間前まで受け付けているそうです。夜は照明が落ち着いた雰囲気になって、大人な空間になります。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #14 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q14. 支払い方法は何が使えますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>現金、クレジットカード（VISA、Master、JCBなど）、Suicaなどの電子マネー、PayPayなどのQR決済、いろいろ使えます。</p>
+          </div>
+        </details>
+
+        <!-- FAQ Item #15 -->
+        <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+          <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+            <span>Q15. テイクアウトはできますか？</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="p-4 pt-0 text-text">
+            <p>できます。コーヒーやフォカッチャなどをテイクアウトして、ダガヤサンドウをお散歩しながら楽しむのもいいですよ。</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Links Section -->
+  <section id="links" class="py-20 md:py-32 bg-background">
+    <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-3xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Links</h2>
+
+      <p class="text-center text-lg leading-relaxed mb-12" data-aos="fade-up">
+        GBCの公式情報はこちらからチェックできます。
+      </p>
+
+      <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/green.beanscoffee" target="_blank" class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+          <div>
+            <h3 class="font-bold text-primary">Instagram</h3>
+            <p class="text-sm text-secondary">@green.beanscoffee</p>
+          </div>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@greenbeanscoffee9" target="_blank" class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="50">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <div>
+            <h3 class="font-bold text-primary">YouTube</h3>
+            <p class="text-sm text-secondary">Green Beans Coffee</p>
+          </div>
+        </a>
+
+        <!-- Google Maps -->
+        <a href="https://www.google.co.jp/maps/place/グリーンビーンズコーヒー/" target="_blank" class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <div>
+            <h3 class="font-bold text-primary">Googleマップ</h3>
+            <p class="text-sm text-secondary">口コミ・ルート検索</p>
+          </div>
+        </a>
+
+        <!-- Tabelog -->
+        <a href="https://tabelog.com/tokyo/A1309/A130901/13277423" target="_blank" class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition" data-aos="fade-up" data-aos-delay="150">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          <div>
+            <h3 class="font-bold text-primary">食べログ</h3>
+            <p class="text-sm text-secondary">口コミ・予約</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-6 md:px-12 lg:px-16 text-center">
+      <h3 class="text-xl font-bold mb-6">このサイトについて</h3>
+      <p class="mb-8 leading-relaxed">
+        このサイトはGreen Beans CoffeeアンバサダーKikumiが実際に訪れた情報をもとに作成しています。お店の最新情報・公式情報はInstagram（@green.beanscoffee）をご確認ください。
+      </p>
+      <hr class="border-accent/30 mb-8 max-w-md mx-auto">
+      <p class="text-sm mb-4">
+        Created by Kikumi | 2026<br>
+        GBC Ambassador Site
+      </p>
+      <p class="text-xs text-accent">
+        © 2026 Kikumi. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Green Beans Coffee",
+    "alternateName": "グリーンビーンズコーヒー",
+    "description": "北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ。店名看板のない隠れ家コーヒー専門店。グルテンフリーメニューあり。",
+    "url": "https://gbc-fan-site.pages.dev",
+    "telephone": "+81-3-6447-0681",
+    "email": "contact@greenbeans.co.jp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "千駄ヶ谷3-30-1 RC APARTMENT 1階",
+      "addressLocality": "渋谷区",
+      "addressRegion": "東京都",
+      "postalCode": "151-0051",
+      "addressCountry": "JP"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.6775167,
+      "longitude": 139.7078346
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "10:30",
+      "closes": "20:00"
+    },
+    "priceRange": "￥1,000〜￥2,999",
+    "servesCuisine": ["Coffee", "Gluten-Free", "Cafe"],
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "電源コンセント", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "ペット同伴可", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "バリアフリー", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "テイクアウト", "value": true}
+    ],
+    "paymentAccepted": ["Cash", "Credit Card", "Electronic Money", "QR Code Payment"],
+    "currenciesAccepted": "JPY",
+    "sameAs": [
+      "https://www.instagram.com/green.beanscoffee",
+      "https://www.youtube.com/@greenbeanscoffee9",
+      "https://tabelog.com/tokyo/A1309/A130901/13277423"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "グリーンビーンズコーヒーはどこにありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "東京都渋谷区千駄ヶ谷3-30-1 RC APARTMENT 1階です。北参道駅から徒歩3分、千駄ヶ谷駅からは徒歩7分くらい。国立競技場や東京体育館の近く、ダガヤサンドウエリアにあります。ちなみに店名の看板がないので、初めて行くときは通り過ぎないように注意です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "営業時間と定休日は？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "営業時間は10:30〜20:00（ラストオーダー19:30）です。定休日は不定休なので、行く前にInstagram（@green.beanscoffee）でチェックしておくのがおすすめです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "予約はできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、できます。Instagram DMや電話（03-6447-0681）で予約できるほか、食べログやホットペッパーからも予約可能です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "ペットを連れて行っても大丈夫ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "大丈夫です！GBCはペットフレンドリーなカフェで、わんちゃんと一緒に店内で過ごせます。私が行くときもペット連れのお客さんをよく見かけます。ペット撮影会イベントも開催されているくらいなので、安心して連れて行けそうですね。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "子ども連れでも入れますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、大丈夫です。ベビーカーでの入店もOKとのこと。実際に子ども連れのファミリーも見かけます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "グルテンフリーのメニューはありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "あります。私自身グルテンフリー生活をしているので、これは本当にありがたいポイント。米粉を使った自家製フォカッチャやグルテンフリーのスイーツがあります。予約のときに伝えておけば、コース料理でも対応してもらえます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "おすすめメニューは何ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "私のおすすめはハンドドリップコーヒー。バリスタさんにその日の気分を伝えるとぴったりの一杯を選んでくれます。フードならグルテンフリーワンプレートランチがおすすめ。米粉の自家製フォカッチャとサラダ付きで、メイン、サイドディッシュ、メインのソースを選べます。ワンプレートを注文したら、ドリンクメニューが半額で注文できるのもうれしい。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "コーヒー豆は買えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "買えます。お店で飲んで気に入った豆をそのまま購入できます。毎日飲む人は毎月届く定期便サービスもあります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wi-Fiや電源はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "両方あります。電源完備で無料でWi-Fiも使えるので、ノートPC持ち込みで作業している人も見かけます。カウンター席でもテーブル席でも全ての席で電源が使えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "一人でも入りやすいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。私も一人で行くことがありますが、カウンター席もあるし落ち着いた雰囲気なので居心地いいですよ。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "デートで使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。むしろデートにおすすめ。実際にカップルで来ている人もよく見かけます。GBCを選んだら女性が喜ぶこと間違いなし。落ち着いた雰囲気でおしゃれ＆静か。コーヒーのいい香りに癒されて、いい雰囲気でお話ができるでしょう。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "焙煎体験イベントは予約が必要ですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい。開催日程はInstagramで告知されるので、参加したい人はチェックしておくといいですよ。スタッフさんに直接聞くかDMで申し込みとのことです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "貸切はできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "貸切対応可能です。私も実際に貸切の忘年会に参加しました。着席で最大20名、立食で30名くらいまで対応可能とのこと。予約は3ヶ月前から2週間前まで受け付けているそうです。夜は照明が落ち着いた雰囲気になって、大人な空間になります。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "支払い方法は何が使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "現金、クレジットカード（VISA、Master、JCBなど）、Suicaなどの電子マネー、PayPayなどのQR決済、いろいろ使えます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "テイクアウトはできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "できます。コーヒーやフォカッチャなどをテイクアウトして、ダガヤサンドウをお散歩しながら楽しむのもいいですよ。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Green Beans Coffee アンバサダーサイト",
+    "url": "https://gbc-fan-site.pages.dev",
+    "description": "北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ「Green Beans Coffee」のアンバサダーサイト",
+    "author": {
+      "@type": "Person",
+      "name": "Kikumi"
+    },
+    "about": {
+      "@type": "CafeOrCoffeeShop",
+      "name": "Green Beans Coffee"
+    }
+  }
+  </script>
+
+  <!-- Instagram Embed Script -->
+  <script async src="//www.instagram.com/embed.js"></script>
+
+  <!-- AOS Initialization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+  </script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // Navigation scroll behavior
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('main-nav');
+      if (window.scrollY > 50) {
+        nav.classList.remove('bg-transparent', 'text-white');
+        nav.classList.add('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+      } else {
+        nav.classList.add('bg-transparent', 'text-white');
+        nav.classList.remove('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Close mobile menu when link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Hero image auto-switching with smooth crossfade
+    const heroBg1 = document.getElementById('hero-bg-1');
+    const heroBg2 = document.getElementById('hero-bg-2');
+    let showingFirst = true;
+
+    setInterval(() => {
+      if (showingFirst) {
+        heroBg1.style.opacity = '0';
+        heroBg2.style.opacity = '1';
+      } else {
+        heroBg1.style.opacity = '1';
+        heroBg2.style.opacity = '0';
+      }
+      showingFirst = !showingFirst;
+    }, 15000); // Switch every 15 seconds
+
+    // Modal functions for magazine images
+    function openModal(src) {
+      document.getElementById('modalImage').src = src;
+      document.getElementById('imageModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('imageModal').classList.add('hidden');
+    }
+  </script>
 </body>
 </html>
