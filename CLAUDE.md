@@ -209,3 +209,33 @@ assets/images/magazine/YYYYMM-back.jpg
 
 ## 参考サイト
 - https://kaze-love.com（藤井風ファンサイト - 同じ制作者による類似プロジェクト）
+
+---
+
+# ドメイン取得後の作業（TODO）
+
+独自ドメインを取得したら、以下の箇所を新しいドメインに変更する必要があります：
+
+## 変更が必要な箇所
+
+### 1. index.html のメタタグ（3箇所）
+- **OGP og:url**: `<meta property="og:url" content="...">`
+- **OGP og:image**: `<meta property="og:image" content="...">`
+- **Canonical URL**: `<link rel="canonical" href="...">`
+
+※ HTMLファイル内にTODOコメントあり
+
+### 2. JSON-LD 構造化データ（1箇所）
+- **WebSite schema の url**: `</body>` 直前のJSON-LDスクリプト内
+
+## 作業手順
+
+1. 新しいドメインをCloudflare Pagesに設定
+2. 上記4箇所のURLを新ドメインに一括置換
+3. ブラウザで確認（OGPデバッグツール推奨: https://www.opengraph.xyz/）
+4. コミット＆プッシュ
+
+## 注意事項
+
+- 旧URL（gbc-fan-site.pages.dev）は引き続きアクセス可能
+- 必要に応じてリダイレクト設定を検討
