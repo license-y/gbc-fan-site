@@ -203,7 +203,7 @@ assets/images/magazine/YYYYMM-back.jpg
 ## 公式情報リンク
 - Instagram: https://www.instagram.com/green.beanscoffee
 - YouTube: https://www.youtube.com/@greenbeanscoffee9
-- Googleマップ: https://www.google.com/maps/search/?api=1&query=35.6775167,139.7078346&query_place_id=0x60188d4404ef151f:0x85142d57557d0f87
+- Googleマップ: https://www.google.com/maps/place/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%93%E3%83%BC%E3%83%B3%E3%82%BA%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr?entry=ttu
 - 食べログ: https://tabelog.com/tokyo/A1309/A130901/13277423
 - ホットペッパー: https://www.hotpepper.jp/strJ004509887/
 
