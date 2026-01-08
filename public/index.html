@@ -137,15 +137,19 @@
         Green Beans Coffee
       </h1>
       <p class="text-lg sm:text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">
-        北参道・千駄ヶ谷の<br class="sm:hidden">ペットフレンドリー自家焙煎コーヒー専門店
+        北参道・千駄ヶ谷の<br class="sm:hidden">ペットフレンドリー<br class="sm:hidden">自家焙煎コーヒー専門店
       </p>
     </div>
 
     <!-- Ambassador Badge -->
-    <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-left z-10 text-sm sm:text-base">
+    <a
+      href="#about-ambassador"
+      class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-left z-10 text-sm sm:text-base hover:opacity-80 transition-opacity cursor-pointer group"
+      aria-label="アンバサダーについて"
+    >
       <p class="text-xs sm:text-sm">GBCアンバサダー</p>
-      <p class="text-base sm:text-lg font-bold">Kikumi</p>
-    </div>
+      <p class="text-base sm:text-lg font-bold underline-offset-2 group-hover:underline">Kikumi</p>
+    </a>
 
     <!-- Scroll Down Arrow -->
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate__animated animate__bounce animate__infinite">
@@ -1078,7 +1082,7 @@
   </section>
 
   <!-- Links Section -->
-  <section id="links" class="py-20 md:py-32 bg-background">
+  <section id="links" class="py-16 md:py-24 bg-background">
     <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
       <h2 class="text-3xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Links</h2>
 
@@ -1153,6 +1157,43 @@
             <p class="text-sm text-secondary">口コミ・実名レビュー</p>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Ambassador Section -->
+  <section id="about-ambassador" class="py-10 md:py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">
+        About Ambassador
+      </h2>
+
+      <!-- 似顔絵（センター、小さめ） -->
+      <div class="flex justify-center mb-10" data-aos="zoom-in">
+        <img
+          src="/assets/images/ambassador-kikumi.jpg"
+          alt="アンバサダー Kikumi"
+          class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover"
+          style="padding: 4px; background: linear-gradient(180deg, #C9A86C, #4A3728); box-shadow: 0 20px 40px rgba(74, 55, 40, 0.3), 0 10px 20px rgba(74, 55, 40, 0.2), 0 5px 10px rgba(74, 55, 40, 0.1);"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+
+      <!-- テキスト（センター寄せ、最大幅制限） -->
+      <div class="max-w-3xl mx-auto space-y-6 text-left" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-lg leading-relaxed">
+          初めてGreen Beans Coffeeを訪れたのはオープン間もない頃。ウッド調の空間と焙煎したてのコーヒーの香りに包まれてここは特別な場所だと感じました。それから3年通っていますが訪れる度に新しい発見があります。
+        </p>
+        <p class="text-lg leading-relaxed">
+          カフェなのにホテルのような空間とサービス。化粧室のアメニティにも女性への心遣いを感じます。それまでは家でコーヒーを飲むことはなかったのに今では自宅でも毎日飲むようになりました。
+        </p>
+        <p class="text-lg leading-relaxed">
+          都内で友人と再会したり打ち合わせをする時にはいつもGreen Beans Coffeeを選んでいます。グルテンフリーのランチやスイーツが楽しめるのも魅力の一つです。静かにコーヒーを味わう人、わんこと一緒にくつろぐ人。コーヒー片手にパソコンで仕事をする人、穏やかな時間が流れる場所です。
+        </p>
+        <p class="text-lg leading-relaxed">
+          これからもアンバサダーとしてこのお店の魅力を定期的に発信していきます。
+        </p>
       </div>
     </div>
   </section>
@@ -1383,6 +1424,22 @@
       "@type": "CafeOrCoffeeShop",
       "name": "Green Beans Coffee"
     }
+  }
+  </script>
+
+  <!-- Person Schema for Ambassador -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kikumi",
+    "jobTitle": "アンバサダー",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Green Beans Coffee"
+    },
+    "description": "Green Beans Coffee公式アンバサダー。2022年のオープン当初から3年間通い続け、店舗の魅力を発信している。",
+    "url": "https://greenbeanscoffeeambassador.com#about-ambassador"
   }
   </script>
 
