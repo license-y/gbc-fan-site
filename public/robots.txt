@@ -1,0 +1,8 @@
+# Green Beans Coffee ファンサイト - robots.txt
+
+# すべての検索エンジンクローラーを許可
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://greenbeanscoffeeambassador.com/sitemap.xml
