@@ -83,11 +83,11 @@
   <!-- Navigation -->
   <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#hero" class="text-lg font-normal">GBCの魅力</a>
+      <a href="#" class="text-lg font-normal scroll-to-top">GBCの魅力</a>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8">
-        <li><a href="#hero" class="hover:text-accent transition">Home</a></li>
+        <li><a href="#" class="hover:text-accent transition scroll-to-top">Home</a></li>
         <li><a href="#about" class="hover:text-accent transition">About</a></li>
         <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
@@ -107,7 +107,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md text-primary">
       <ul class="flex flex-col space-y-2 p-4">
-        <li><a href="#hero" class="block py-2 hover:text-accent transition">Home</a></li>
+        <li><a href="#" class="block py-2 hover:text-accent transition scroll-to-top">Home</a></li>
         <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
         <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
@@ -1318,7 +1318,7 @@
         "name": "おすすめメニューは何ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "私のおすすめはハンドドリップコーヒー。バリスタさんにその日の気分を伝えるとぴったりの一杯を選んでくれます。左右で厚みが違うアシンメトリーカップを試せるのも魅力。フードならグルテンフリーワンプレートランチ。メインとサイドディッシュとソースが選べますがメインのおすすめはチキンソテー。皮がパリパリで病みつきです。"
+          "text": "私のおすすめはハンドドリップコーヒー。バリスタさんにその日の気分を伝えるとぴったりの一杯を選んでくれます。左右で厚みが違うアシンメトリーカップを試せるのも魅力。フードならグルテンフリーワンプレートランチ。メインとサイドディッシュとソースが選べますがメインのおすすめはグリルチキンソテー。皮がパリパリで病みつきです。"
         }
       },
       {
@@ -1464,6 +1464,19 @@
     document.querySelectorAll('#mobile-menu a').forEach(link => {
       link.addEventListener('click', () => {
         document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Scroll to top without adding hash to URL
+    document.querySelectorAll('.scroll-to-top').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        // Remove hash from URL
+        history.replaceState(null, null, window.location.pathname);
       });
     });
 
