@@ -1,2 +1,0 @@
-# Redirect from .pages.dev to custom domain
-https://gbc-fan-site.pages.dev/* https://greenbeanscoffeeambassador.com/:splat 301!
