@@ -463,6 +463,126 @@
     </div>
   </div>
 
+  <!-- Monthly Coffee Modal -->
+  <div id="monthlyModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closeMonthlyModal()">
+    <div class="relative" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeMonthlyModal()" class="absolute -top-12 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img id="monthlyModalImage" src="" alt="今月のおすすめコーヒー" class="max-h-[85vh] w-auto rounded-lg">
+    </div>
+  </div>
+
+  <!-- Coffee Beans Collection Section -->
+  <section id="coffee-beans" class="py-20 md:pb-16 bg-gradient-to-b from-white via-40% via-secondary/40 to-secondary/10">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-4 text-primary" data-aos="fade-up">Coffee Beans Collection</h2>
+      <p class="text-center text-lg text-secondary mb-12" data-aos="fade-up">〜 店内焙煎の厳選豆 全30種類 〜</p>
+
+      <!-- Monthly Coffee -->
+      <div class="mb-16" data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-center text-primary mb-6">今月のおすすめ</h3>
+        <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-xl mx-auto">
+          <div class="text-center">
+            <div class="relative group cursor-pointer" onclick="openMonthlyModal(1)">
+              <img src="/assets/images/monthly-coffee/1.jpg" alt="今月のおすすめコーヒー：コロンビア ナリーニョ" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <p class="mt-2 text-sm font-semibold text-primary">コロンビア ナリーニョ</p>
+          </div>
+          <div class="text-center">
+            <div class="relative group cursor-pointer" onclick="openMonthlyModal(2)">
+              <img src="/assets/images/monthly-coffee/2.jpg" alt="今月のおすすめコーヒー：ブラジル サントスNo.2" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
+              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                  <line x1="11" y1="8" x2="11" y2="14"></line>
+                  <line x1="8" y1="11" x2="14" y2="11"></line>
+                </svg>
+              </div>
+            </div>
+            <p class="mt-2 text-sm font-semibold text-primary">ブラジル サントスNo.2</p>
+          </div>
+        </div>
+        <p class="text-center text-sm text-secondary mt-3">クリックで拡大表示</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Fruity -->
+        <div class="bg-background rounded-lg shadow overflow-hidden" data-aos="fade-up">
+          <div class="bg-accent/20 px-6 py-4 text-center">
+            <h3 class="text-xl font-bold text-primary mb-1">Fruity</h3>
+            <p class="text-sm text-secondary">華やかな酸味と果実感</p>
+          </div>
+          <ul class="space-y-1.5 text-text text-sm px-6 py-5">
+            <li>エチオピア モカシダモ</li>
+            <li>エチオピア イルガチェフェG-2</li>
+            <li>ルワンダ スカイヒル</li>
+            <li>ケニア</li>
+            <li>コロンビアSP</li>
+            <li>ノチェMAG</li>
+            <li>コロンビア ナリーニョ</li>
+            <li>タンザニア</li>
+            <li>ニカラグア</li>
+            <li>コスタリカ</li>
+            <li>レリートMMH</li>
+            <li>ムチャナMHH</li>
+            <li>ケニア ピンクフラミンゴ</li>
+          </ul>
+        </div>
+
+        <!-- Mild -->
+        <div class="bg-background rounded-lg shadow overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-accent/40 px-6 py-4 text-center">
+            <h3 class="text-xl font-bold text-primary mb-1">Mild</h3>
+            <p class="text-sm text-secondary">バランスの取れた飲みやすさ</p>
+          </div>
+          <ul class="space-y-1.5 text-text text-sm px-6 py-5">
+            <li>ガテマラ</li>
+            <li>ホンジュラス</li>
+            <li>パプアニューギニア パラダイスバード</li>
+            <li>ブルーマウンテン</li>
+            <li>イエメン モカマタリ</li>
+            <li>ディアMCG</li>
+            <li>サバーフMCS</li>
+            <li>マニャンMYS</li>
+            <li class="flex items-center gap-1.5">コロンビア デカフェ <span class="text-amber-500">🌙</span></li>
+          </ul>
+        </div>
+
+        <!-- Bitter -->
+        <div class="bg-background rounded-lg shadow overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-secondary px-6 py-4 text-center">
+            <h3 class="text-xl font-bold text-white mb-1">Bitter</h3>
+            <p class="text-sm text-white/80">深いコクと苦味</p>
+          </div>
+          <ul class="space-y-1.5 text-text text-sm px-6 py-5">
+            <li>マンデリンG1</li>
+            <li>インドプランテーション</li>
+            <li>ブラジル アロマショコラ</li>
+            <li>ブラジル サントスNo.2</li>
+            <li>ブラジル 大吟醸サントス</li>
+            <li>ミャンマー 星山</li>
+            <li>タルデCMS</li>
+            <li>スバハCLH</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience Section -->
   <section id="experience" class="py-20 md:py-32 bg-white">
     <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
@@ -1601,6 +1721,16 @@
 
     function closeMenuModal() {
       document.getElementById('menuModal').classList.add('hidden');
+    }
+
+    // Monthly Coffee modal functions
+    function openMonthlyModal(num) {
+      document.getElementById('monthlyModalImage').src = '/assets/images/monthly-coffee/' + num + '.jpg';
+      document.getElementById('monthlyModal').classList.remove('hidden');
+    }
+
+    function closeMonthlyModal() {
+      document.getElementById('monthlyModal').classList.add('hidden');
     }
 
     // Video modal functions
