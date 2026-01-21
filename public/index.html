@@ -83,11 +83,11 @@
   <!-- Navigation -->
   <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#" class="text-lg font-normal scroll-to-top">GBCの魅力</a>
+      <a href="#hero" class="text-lg font-normal scroll-to-top">GBCの魅力</a>
 
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8">
-        <li><a href="#" class="hover:text-accent transition scroll-to-top">Home</a></li>
+        <li><a href="#hero" class="hover:text-accent transition scroll-to-top">Home</a></li>
         <li><a href="#about" class="hover:text-accent transition">About</a></li>
         <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
@@ -97,7 +97,7 @@
       </ul>
 
       <!-- Mobile Hamburger Button -->
-      <button id="mobile-menu-btn" class="md:hidden">
+      <button id="mobile-menu-btn" class="md:hidden" aria-label="メニューを開く">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -107,7 +107,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md text-primary">
       <ul class="flex flex-col space-y-2 p-4">
-        <li><a href="#" class="block py-2 hover:text-accent transition scroll-to-top">Home</a></li>
+        <li><a href="#hero" class="block py-2 hover:text-accent transition scroll-to-top">Home</a></li>
         <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
         <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
@@ -366,7 +366,7 @@
   <div id="menuModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 md:p-8" onclick="closeMenuModal()">
     <div class="relative max-w-sm w-full" onclick="event.stopPropagation()">
       <!-- Close Button -->
-      <button onclick="closeMenuModal()" class="absolute -top-16 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2">
+      <button onclick="closeMenuModal()" class="absolute -top-16 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2" aria-label="メニューを閉じる">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -374,26 +374,26 @@
       </button>
 
       <!-- Navigation Arrows - Desktop -->
-      <button onclick="changeMenuPage(-1)" class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-white hover:text-accent transition">
+      <button onclick="changeMenuPage(-1)" class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-white hover:text-accent transition" aria-label="前のページ">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </button>
 
-      <button onclick="changeMenuPage(1)" class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-white hover:text-accent transition">
+      <button onclick="changeMenuPage(1)" class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-white hover:text-accent transition" aria-label="次のページ">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
       </button>
 
       <!-- Navigation Arrows - Mobile (on image) -->
-      <button onclick="changeMenuPage(-1)" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3">
+      <button onclick="changeMenuPage(-1)" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3" aria-label="前のページ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="15 18 9 12 15 6"></polyline>
         </svg>
       </button>
 
-      <button onclick="changeMenuPage(1)" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3">
+      <button onclick="changeMenuPage(1)" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3" aria-label="次のページ">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="9 18 15 12 9 6"></polyline>
         </svg>
@@ -413,7 +413,7 @@
   <div id="paymentModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closePaymentModal()">
     <div class="relative bg-background rounded-xl max-w-2xl w-full p-6 md:p-8" onclick="event.stopPropagation()">
       <!-- Close Button -->
-      <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-primary hover:text-accent transition">
+      <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-primary hover:text-accent transition" aria-label="モーダルを閉じる">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -455,7 +455,7 @@
   <div id="monthlyModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4" onclick="closeMonthlyModal()">
     <div class="relative" onclick="event.stopPropagation()">
       <!-- Close Button -->
-      <button onclick="closeMonthlyModal()" class="absolute -top-12 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2">
+      <button onclick="closeMonthlyModal()" class="absolute -top-12 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2" aria-label="モーダルを閉じる">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -950,14 +950,14 @@
 
   <!-- Modal for Image Zoom -->
   <div id="imageModal" class="hidden fixed inset-0 bg-black/80 z-50 flex items-center justify-center" onclick="closeModal()">
-    <img id="modalImage" src="" alt="" class="max-w-full max-h-full p-4">
+    <img id="modalImage" src="" alt="拡大表示画像" class="max-w-full max-h-full p-4">
   </div>
 
   <!-- Modal for Video Player -->
   <div id="videoModal" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center" onclick="closeVideoModal()">
     <div class="relative w-full h-full flex items-center justify-center" onclick="event.stopPropagation()">
       <!-- Close Button -->
-      <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white hover:text-accent transition z-10 bg-black/50 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center">
+      <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white hover:text-accent transition z-10 bg-black/50 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center" aria-label="動画を閉じる">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
