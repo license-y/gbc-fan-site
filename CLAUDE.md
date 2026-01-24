@@ -19,23 +19,35 @@
 ```
 project-root/
 ├── project-docs/
-│   ├── site-content.md      # コンテンツ原稿
-│   ├── technical-spec.md    # 技術仕様（JSON-LD含む）
-│   └── image-list.md        # 画像リスト
+│   ├── site-content.md           # メインサイト コンテンツ原稿
+│   ├── pets-content.md           # ペットサイト コンテンツ原稿
+│   ├── pets-photoshoot-guide.md  # ペット撮影会 素材収集ガイド
+│   ├── technical-spec.md         # 技術仕様（JSON-LD含む）
+│   └── image-list.md             # 画像リスト
 ├── public/
-│   ├── index.html           # メインHTML
+│   ├── index.html                # メインHTML（Kikumi）
 │   ├── favicon.ico
-│   └── assets/
-│       ├── images/
-│       │   ├── hero/
-│       │   ├── about/
-│       │   ├── menu/
-│       │   ├── experience/
-│       │   ├── diary/
-│       │   └── magazine/
-│       ├── css/
-│       └── js/
-└── CLAUDE.md                # 本ファイル
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── hero/
+│   │   │   ├── about/
+│   │   │   ├── menu/
+│   │   │   ├── experience/
+│   │   │   ├── diary/
+│   │   │   └── magazine/
+│   │   ├── css/
+│   │   └── js/
+│   │
+│   └── pets/                     # ペット特化サイト（pome_ponkun）
+│       ├── index.html            # ペットサイトHTML
+│       └── assets/
+│           └── images/           # ペットサイト専用画像
+│               ├── hero/
+│               ├── pet-friendly/
+│               ├── cheki-booth/
+│               └── visit-diary/
+│
+└── CLAUDE.md                     # 本ファイル
 ```
 
 ---
@@ -175,7 +187,8 @@ project-root/
 ## FAQセクション
 
 - アコーディオン形式で実装
-- 15問のQ&Aを掲載
+- **メインサイト**: 17問のQ&Aを掲載
+- **ペットサイト**: 22問（メイン17問 + ペット特化5問）
 - JSON-LD FAQPage と連動
 
 ## コンテンツの書き方
@@ -215,6 +228,69 @@ assets/images/magazine/YYYYMM-back.jpg
 2. 画像を最適化
 3. magazine/ フォルダに保存
 4. index.html の該当箇所を更新
+
+---
+
+# ペット特化サイト（/pets/）
+
+## 概要
+
+- **URL**: `/pets/`（サブディレクトリ）
+- **アンバサダー**: pome_ponkun
+- **目的**: ペット愛好家視点でGreen Beans Coffeeの魅力を伝える
+- **詳細仕様**: `project-docs/pets-content.md` を参照
+
+## セクション構成（ペットサイト）
+
+ナビゲーションに表示: Home / About / Pet Friendly / Cheki Booth / Access / Visit Diary / FAQ（7項目）
+
+```
+[Hero] #hero ← ナビ: Home
+  ↓
+[About] #about ← ナビ: About（店舗紹介＋pome_ponkun紹介）
+  ↓
+[Pet Friendly] #pet-friendly ← ナビ: Pet Friendly（ペット同伴ルール・設備）
+  ↓
+[Cheki Booth] #cheki-booth ← ナビ: Cheki Booth（チェキブース・参加者の声）
+  ↓
+[Access] #access ← ナビ: Access
+  ↓
+[Visit Diary] #visit-diary ← ナビ: Visit Diary（pome_ponkunの訪問記）
+  ↓
+[FAQ] #faq ← ナビ: FAQ（22問: メイン17問 + ペット特化5問）
+  ↓
+[Links] #links ← ナビなし
+  ↓
+[Footer]
+```
+
+## メインサイトとの違い
+
+| 項目 | メインサイト | ペットサイト |
+|------|-------------|-------------|
+| アンバサダー | Kikumi | pome_ponkun |
+| Menuセクション | あり | なし（メインへリンク） |
+| GBC Magazine | あり | なし |
+| Pet Friendly | Experienceに含む | 独立セクション |
+| Cheki Booth | なし | あり |
+| FAQ数 | 17問 | 22問（+ペット特化5問） |
+
+## 基本情報の同期ルール
+
+両サイトで同一に保つ情報（更新時は**両方を同時に更新**すること）:
+
+- 営業時間・定休日
+- 住所・電話番号
+- Googleマップ埋め込み
+- 公式SNSリンク
+- 支払い方法
+- FAQ（メイン17問は同一内容）
+
+**更新手順:**
+1. メインサイト（`/public/index.html`）を更新
+2. ペットサイト（`/public/pets/index.html`）も同じ箇所を更新
+3. JSON-LDを両方確認
+4. 同時にコミット
 
 ---
 
