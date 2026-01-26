@@ -105,16 +105,57 @@
     /* Wave Divider */
     .wave-divider {
       width: 100%;
-      height: 60px;
+      height: 80px; /* モバイル: 高さを増やす */
       overflow: hidden;
       position: relative;
       z-index: 10;
     }
+
+    /* タブレット（iPad Pro）: さらに高さを増やす */
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .wave-divider {
+        height: 100px;
+      }
+    }
+
+    /* デスクトップ: 元の高さに戻す */
+    @media (min-width: 1367px) {
+      .wave-divider {
+        height: 60px;
+      }
+    }
+
     .wave-divider svg {
       position: absolute;
-      bottom: 0;
+      bottom: -2px; /* 継ぎ目を確実に隠す */
       width: 100%;
-      height: 100%;
+      height: calc(100% + 4px); /* 上下に余裕を持たせる */
+      display: block;
+    }
+
+    /* 問題の2箇所専用: モバイルでSVGに余裕を持たせる */
+    @media (max-width: 767px) {
+      .wave-problematic svg {
+        width: 110%; /* 幅を10%広げる */
+        left: -5%; /* 中央に配置 */
+        height: calc(100% + 20px); /* 高さも増やす */
+        top: -5px; /* 上部にも余裕を持たせる */
+        bottom: -5px; /* 下部にも余裕を持たせる */
+      }
+    }
+
+    /* スマホサイズ専用: さらに調整 */
+    @media (max-width: 480px) {
+      .wave-divider {
+        height: 100px; /* スマホでは高さをさらに増やす */
+      }
+      .wave-problematic svg {
+        width: 120%; /* 幅を20%広げる */
+        left: -10%; /* 中央に配置 */
+        height: calc(100% + 40px); /* 高さを大幅に増やす */
+        top: -10px; /* 上部にも余裕を持たせる */
+        bottom: -10px; /* 下部にも余裕を持たせる */
+      }
     }
 
     /* Hero wave special positioning */
@@ -241,15 +282,15 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-primary/95 backdrop-blur-md">
+    <div id="mobile-menu" class="hidden md:hidden bg-white/30 backdrop-blur-md shadow-lg">
       <ul class="flex flex-col items-center space-y-4 py-6">
-        <li><a href="#hero" class="hover:text-accent transition mobile-menu-link scroll-to-top">Home</a></li>
-        <li><a href="#about" class="hover:text-accent transition mobile-menu-link">About</a></li>
-        <li><a href="#pet-friendly" class="hover:text-accent transition mobile-menu-link">Pet Friendly</a></li>
-        <li><a href="#cheki-booth" class="hover:text-accent transition mobile-menu-link">Cheki Booth</a></li>
-        <li><a href="#access" class="hover:text-accent transition mobile-menu-link">Access</a></li>
-        <li><a href="#visit-diary" class="hover:text-accent transition mobile-menu-link">Visit Diary</a></li>
-        <li><a href="#faq" class="hover:text-accent transition mobile-menu-link">FAQ</a></li>
+        <li><a href="#hero" class="text-primary hover:text-accent transition mobile-menu-link scroll-to-top">Home</a></li>
+        <li><a href="#about" class="text-primary hover:text-accent transition mobile-menu-link">About</a></li>
+        <li><a href="#pet-friendly" class="text-primary hover:text-accent transition mobile-menu-link">Pet Friendly</a></li>
+        <li><a href="#cheki-booth" class="text-primary hover:text-accent transition mobile-menu-link">Cheki Booth</a></li>
+        <li><a href="#access" class="text-primary hover:text-accent transition mobile-menu-link">Access</a></li>
+        <li><a href="#visit-diary" class="text-primary hover:text-accent transition mobile-menu-link">Visit Diary</a></li>
+        <li><a href="#faq" class="text-primary hover:text-accent transition mobile-menu-link">FAQ</a></li>
       </ul>
     </div>
   </nav>
@@ -301,9 +342,9 @@
     </section>
 
     <!-- Wave Divider: Hero to About -->
-    <div class="wave-divider wave-divider-hero" style="background-color: #4A3728;">
-      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,0 C150,60 350,0 500,30 C650,60 800,20 1000,40 C1100,50 1150,30 1200,20 L1200,60 L0,60 Z" fill="#ffffff"/>
+    <div class="wave-divider wave-divider-hero wave-problematic" style="background-color: #4A3728;">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,80 L0,80 Z" fill="#ffffff"/>
       </svg>
     </div>
 
@@ -996,9 +1037,9 @@
     </section>
 
     <!-- Wave Divider: FAQ to Links -->
-    <div class="wave-divider bg-white">
-      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,20 C150,50 300,10 500,35 C700,60 900,20 1200,40 L1200,60 L0,60 Z" fill="#4A3728"/>
+    <div class="wave-divider wave-problematic" style="background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #4A3728 100%);">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,80 L0,80 Z" fill="#4A3728"/>
       </svg>
     </div>
 
