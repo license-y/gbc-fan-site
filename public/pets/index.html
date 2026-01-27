@@ -78,6 +78,146 @@
         background-color: #2D2A26;
       }
     }
+
+    /* ===== Playful Edition Styles ===== */
+
+    /* Floating Paw Animation */
+    .floating-paw {
+      position: fixed;
+      pointer-events: none;
+      opacity: 0.08;
+      z-index: 1;
+      animation: float-paw 20s ease-in-out infinite;
+    }
+    .floating-paw:nth-child(1) { top: 15%; left: 5%; animation-delay: 0s; animation-duration: 25s; }
+    .floating-paw:nth-child(2) { top: 40%; right: 8%; animation-delay: -5s; animation-duration: 22s; }
+    .floating-paw:nth-child(3) { top: 70%; left: 10%; animation-delay: -10s; animation-duration: 28s; }
+    .floating-paw:nth-child(4) { top: 25%; right: 15%; animation-delay: -15s; animation-duration: 24s; }
+    .floating-paw:nth-child(5) { top: 85%; right: 5%; animation-delay: -8s; animation-duration: 26s; }
+
+    @keyframes float-paw {
+      0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+      25% { transform: translateY(-20px) rotate(10deg) scale(1.05); }
+      50% { transform: translateY(-10px) rotate(-5deg) scale(0.95); }
+      75% { transform: translateY(-25px) rotate(5deg) scale(1.02); }
+    }
+
+    /* Wave Divider */
+    .wave-divider {
+      width: 100%;
+      height: 80px; /* モバイル: 高さを増やす */
+      overflow: hidden;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* タブレット（iPad Pro）: さらに高さを増やす */
+    @media (min-width: 768px) and (max-width: 1366px) {
+      .wave-divider {
+        height: 100px;
+      }
+    }
+
+    /* デスクトップ: 元の高さに戻す */
+    @media (min-width: 1367px) {
+      .wave-divider {
+        height: 60px;
+      }
+    }
+
+    .wave-divider svg {
+      position: absolute;
+      bottom: -2px; /* 継ぎ目を確実に隠す */
+      width: 100%;
+      height: calc(100% + 4px); /* 上下に余裕を持たせる */
+      display: block;
+    }
+
+    /* 問題の2箇所専用: モバイルでSVGに余裕を持たせる */
+    @media (max-width: 767px) {
+      .wave-problematic svg {
+        width: 110%; /* 幅を10%広げる */
+        left: -5%; /* 中央に配置 */
+        height: calc(100% + 20px); /* 高さも増やす */
+        top: -5px; /* 上部にも余裕を持たせる */
+        bottom: -5px; /* 下部にも余裕を持たせる */
+      }
+    }
+
+    /* スマホサイズ専用: さらに調整 */
+    @media (max-width: 480px) {
+      .wave-divider {
+        height: 100px; /* スマホでは高さをさらに増やす */
+      }
+      .wave-problematic svg {
+        width: 120%; /* 幅を20%広げる */
+        left: -10%; /* 中央に配置 */
+        height: calc(100% + 40px); /* 高さを大幅に増やす */
+        top: -10px; /* 上部にも余裕を持たせる */
+        bottom: -10px; /* 下部にも余裕を持たせる */
+      }
+    }
+
+    /* Hero wave special positioning */
+    .wave-divider-hero {
+      margin-top: 0;
+      position: relative;
+      z-index: 20;
+    }
+
+    /* Desktop: move wave below the fold */
+    @media (min-width: 768px) {
+      .wave-divider-hero {
+        margin-top: 0;
+      }
+    }
+
+    /* Card Hover Effect */
+    .playful-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 1.5rem !important;
+    }
+    .playful-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(74, 55, 40, 0.15);
+    }
+
+    /* Paw Icon for Section Titles */
+    .section-title-with-paw {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .section-title-with-paw::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23C9A86C'%3E%3Cpath d='M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5m0 2.5c1.12 0 2.07.74 2.39 1.75H9.61c.32-1.01 1.27-1.75 2.39-1.75'/%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    /* Rounded Buttons */
+    .playful-btn {
+      border-radius: 9999px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .playful-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(74, 55, 40, 0.2);
+    }
+
+    /* Softer shadows overall */
+    .playful-shadow {
+      box-shadow: 0 10px 30px rgba(74, 55, 40, 0.1);
+    }
+
+    /* Accent border for special elements */
+    .accent-border {
+      border: 3px solid #C9A86C;
+      border-radius: 1.5rem;
+    }
   </style>
 
   <script>
@@ -98,6 +238,23 @@
 </head>
 
 <body class="bg-background text-text overflow-x-hidden">
+  <!-- Floating Paw Decorations -->
+  <svg class="floating-paw" width="60" height="60" viewBox="0 0 24 24" fill="#8B7355">
+    <path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/>
+  </svg>
+  <svg class="floating-paw" width="45" height="45" viewBox="0 0 24 24" fill="#C9A86C">
+    <path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/>
+  </svg>
+  <svg class="floating-paw" width="55" height="55" viewBox="0 0 24 24" fill="#4A3728">
+    <path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/>
+  </svg>
+  <svg class="floating-paw" width="40" height="40" viewBox="0 0 24 24" fill="#8B7355">
+    <path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/>
+  </svg>
+  <svg class="floating-paw" width="50" height="50" viewBox="0 0 24 24" fill="#C9A86C">
+    <path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/>
+  </svg>
+
   <!-- Navigation -->
   <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -125,15 +282,15 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-primary/95 backdrop-blur-md">
+    <div id="mobile-menu" class="hidden md:hidden bg-white/30 backdrop-blur-md shadow-lg">
       <ul class="flex flex-col items-center space-y-4 py-6">
-        <li><a href="#hero" class="hover:text-accent transition mobile-menu-link scroll-to-top">Home</a></li>
-        <li><a href="#about" class="hover:text-accent transition mobile-menu-link">About</a></li>
-        <li><a href="#pet-friendly" class="hover:text-accent transition mobile-menu-link">Pet Friendly</a></li>
-        <li><a href="#cheki-booth" class="hover:text-accent transition mobile-menu-link">Cheki Booth</a></li>
-        <li><a href="#access" class="hover:text-accent transition mobile-menu-link">Access</a></li>
-        <li><a href="#visit-diary" class="hover:text-accent transition mobile-menu-link">Visit Diary</a></li>
-        <li><a href="#faq" class="hover:text-accent transition mobile-menu-link">FAQ</a></li>
+        <li><a href="#hero" class="text-primary hover:text-accent transition mobile-menu-link scroll-to-top">Home</a></li>
+        <li><a href="#about" class="text-primary hover:text-accent transition mobile-menu-link">About</a></li>
+        <li><a href="#pet-friendly" class="text-primary hover:text-accent transition mobile-menu-link">Pet Friendly</a></li>
+        <li><a href="#cheki-booth" class="text-primary hover:text-accent transition mobile-menu-link">Cheki Booth</a></li>
+        <li><a href="#access" class="text-primary hover:text-accent transition mobile-menu-link">Access</a></li>
+        <li><a href="#visit-diary" class="text-primary hover:text-accent transition mobile-menu-link">Visit Diary</a></li>
+        <li><a href="#faq" class="text-primary hover:text-accent transition mobile-menu-link">FAQ</a></li>
       </ul>
     </div>
   </nav>
@@ -151,6 +308,8 @@
              alt="愛犬と一緒に楽しめる北参道のカフェGreen Beans Coffee。店内ペット同伴OKのくつろぎ空間"
              class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[4000ms] ease-in-out">
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/50"></div>
+        <!-- Bottom fade to match wave divider -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#4A3728] to-transparent"></div>
       </div>
 
       <!-- Hero Content -->
@@ -182,22 +341,29 @@
       </div>
     </section>
 
+    <!-- Wave Divider: Hero to About -->
+    <div class="wave-divider wave-divider-hero wave-problematic" style="background-color: #4A3728;">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-12" data-aos="fade-up">About</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-12 section-title-with-paw justify-center" data-aos="fade-up">About</h2>
 
         <!-- Lead Text -->
         <div class="max-w-3xl mx-auto mb-16 text-left" data-aos="fade-up">
           <p class="text-lg leading-relaxed">
-            北参道・千駄ヶ谷エリアの「ダガヤサンドウ」で見つけた、愛犬と一緒に過ごせる隠れ家カフェ。店内に入った瞬間に広がるコーヒーの香り、そしてペットを温かく迎えてくれるスタッフさんたち。ここは私と愛犬にとって特別な場所になりました。このサイトでは、ペット愛好家の視点からGreen Beans Coffeeの魅力をお伝えします。
+            北参道・千駄ヶ谷エリアの「ダガヤサンドウ」で見つけた愛犬と一緒に過ごせる隠れ家カフェ。店内に入った瞬間に広がるコーヒーの香り、そしてペットを温かく迎えてくれるスタッフさんたち。ここは私と愛犬にとって特別な場所になりました。このサイトではペット愛好家の視点からGreen Beans Coffeeの魅力をお伝えします。
           </p>
         </div>
 
         <!-- Shop Info & Ambassador Info -->
         <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <!-- Shop Basic Info -->
-          <div class="bg-background p-8 rounded-lg shadow-md" data-aos="fade-right">
+          <div class="bg-background p-8 rounded-lg shadow-md playful-card" data-aos="fade-right">
             <h3 class="text-2xl font-bold text-primary mb-6">店舗基本情報</h3>
             <div class="space-y-4 text-text">
               <div class="flex items-start gap-3">
@@ -237,7 +403,7 @@
           </div>
 
           <!-- Ambassador Info -->
-          <div class="bg-background p-8 rounded-lg shadow-md" data-aos="fade-left">
+          <div class="bg-background p-8 rounded-lg shadow-md playful-card" data-aos="fade-left">
             <h3 class="text-2xl font-bold text-primary mb-6">pome_ponkun について</h3>
             <div class="space-y-4 text-text">
               <p class="leading-relaxed">
@@ -255,10 +421,17 @@
       </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-white">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#FAF8F5"/>
+      </svg>
+    </div>
+
     <!-- Pet Friendly Section -->
     <section id="pet-friendly" class="py-20 bg-gradient-to-b from-background to-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6" data-aos="fade-up">Pet Friendly</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6 section-title-with-paw justify-center" data-aos="fade-up">Pet Friendly</h2>
         <p class="text-center text-lg text-text mb-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
           Green Beans Coffeeは店内でペットと一緒に過ごせる、<br class="hidden md:block">東京でも珍しいペットフレンドリーカフェです。
         </p>
@@ -266,7 +439,7 @@
         <!-- Cards Grid -->
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <!-- Card 1: Rules -->
-          <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="100">
+          <div class="bg-white p-8 rounded-lg shadow-lg playful-card" data-aos="fade-up" data-aos-delay="100">
             <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6 mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
                 <path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"></path>
@@ -299,7 +472,7 @@
           </div>
 
           <!-- Card 2: Facilities -->
-          <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-white p-8 rounded-lg shadow-lg playful-card" data-aos="fade-up" data-aos-delay="200">
             <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6 mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
                 <path d="M2 7h20"></path>
@@ -330,7 +503,7 @@
           </div>
 
           <!-- Card 3: How to Enjoy -->
-          <div class="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-white p-8 rounded-lg shadow-lg playful-card" data-aos="fade-up" data-aos-delay="300">
             <div class="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mb-6 mx-auto">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
                 <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path>
@@ -361,20 +534,27 @@
 
         <!-- Link to Menu -->
         <div class="text-center mt-12" data-aos="fade-up">
-          <a href="../#menu" class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300">
+          <a href="../#menu" class="inline-block bg-primary text-white px-8 py-3 rounded-full hover:bg-secondary transition-colors duration-300 playful-btn">
             <span class="block md:inline">カフェのメニューを見る</span><span class="block md:inline text-sm md:text-base">（メインサイト）</span>
           </a>
         </div>
       </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-gradient-to-b from-background to-white" style="transform: scaleY(-1);">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
     <!-- Cheki Booth Section -->
     <section id="cheki-booth" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6" data-aos="fade-up">Cheki Booth</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6 section-title-with-paw justify-center" data-aos="fade-up">Cheki Booth</h2>
         <p class="text-center text-lg text-text mb-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          ペット連れで来店すると、チェキで愛犬の写真を撮ってもらえます。<br>
-          撮影したチェキは店内に飾られて、次に来たときに見返すのも楽しみのひとつ。
+          ペットと一緒に来店するとチェキでペットの写真を撮ってもらえます。<br>
+          撮影したチェキを店内に飾ってもらえるなんてうれしいサービスですね。
         </p>
 
         <!-- Content Grid -->
@@ -393,7 +573,7 @@
             <h3 class="text-2xl font-bold text-primary mb-6">チェキブースについて</h3>
             <div class="space-y-4 text-text mb-8">
               <p class="leading-relaxed">
-                GBCでは来店したペットの写真をチェキで撮影してくれます。撮影は無料、スタッフさんが優しくサポートしてくれます。
+                Green Beans Coffeeでは来店したペットの写真をチェキで撮影してくれます。撮影は無料、スタッフさんが優しくサポートしてくれます。
               </p>
               <p class="leading-relaxed">
                 店内の壁には今までに来店したたくさんのワンちゃんたちのチェキが飾られていて見ているだけで楽しくなります。
@@ -417,10 +597,17 @@
       </div>
     </section>
 
+    <!-- Wave Divider: Cheki Booth to Access -->
+    <div class="wave-divider bg-white">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#FAF8F5"/>
+      </svg>
+    </div>
+
     <!-- Access Section -->
     <section id="access" class="py-20 bg-gradient-to-b from-background to-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-16" data-aos="fade-up">Access</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-16 section-title-with-paw justify-center" data-aos="fade-up">Access</h2>
 
         <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <!-- Map -->
@@ -482,18 +669,25 @@
       </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-gradient-to-b from-background to-white" style="transform: scaleY(-1);">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
     <!-- Visit Diary Section -->
     <section id="visit-diary" class="py-20 bg-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6" data-aos="fade-up">Visit Diary</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-6 section-title-with-paw justify-center" data-aos="fade-up">Visit Diary</h2>
         <p class="text-center text-lg text-text mb-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          私と愛犬がGBCに通って見つけた魅力。<br>訪問のたびに新しい発見があります。
+          私と愛犬がGreen Beans Coffeeに通って見つけた魅力。<br>訪問のたびに新しい発見があります。
         </p>
 
         <!-- Diary Cards -->
         <div class="max-w-4xl mx-auto space-y-8">
           <!-- Diary #1 -->
-          <div class="bg-background rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+          <div class="bg-background rounded-lg shadow-lg overflow-hidden playful-card" data-aos="fade-up">
             <div class="md:flex">
               <div class="md:w-1/3">
                 <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=1470&auto=format&fit=crop"
@@ -513,7 +707,7 @@
           </div>
 
           <!-- Diary #2 -->
-          <div class="bg-background rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+          <div class="bg-background rounded-lg shadow-lg overflow-hidden playful-card" data-aos="fade-up">
             <div class="md:flex md:flex-row-reverse">
               <div class="md:w-1/3">
                 <img src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?q=80&w=1288&auto=format&fit=crop"
@@ -538,7 +732,7 @@
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-gradient-to-b from-background to-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-16" data-aos="fade-up">FAQ</h2>
+        <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-16 section-title-with-paw justify-center" data-aos="fade-up">FAQ</h2>
 
         <div class="max-w-4xl mx-auto space-y-4">
           <!-- FAQ Item #1 -->
@@ -826,6 +1020,19 @@
               <p>ランチタイム（11:30〜13:30頃）は混み合うことがあるため、ゆっくり過ごしたい場合は少し時間をずらすのがおすすめです。平日の午後や夕方は比較的空いていて過ごしやすいです。</p>
             </div>
           </details>
+
+          <!-- FAQ Item #23 -->
+          <details class="bg-background rounded-lg shadow group" data-aos="fade-up">
+            <summary class="p-4 cursor-pointer font-bold text-primary hover:text-accent transition flex justify-between items-center">
+              <span>Q23. 海外からのお客様でも安心して利用できますか？</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div class="p-4 pt-0 text-text">
+              <p>海外のお客様も安心です。メニューは日英併記、無料WiFi・電源・キャッシュレス決済完備。ハンドドリップコーヒーをアシンメトリーカップで楽しむ体験は海外の方に好評です。店内はゆったりとしており、キャリーバッグも楽々置けます。</p>
+            </div>
+          </details>
         </div>
 
         <!-- Check Official Instagram Link -->
@@ -841,6 +1048,13 @@
         </div>
       </div>
     </section>
+
+    <!-- Wave Divider: FAQ to Links -->
+    <div class="wave-divider wave-problematic" style="background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #4A3728 100%);">
+      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" shape-rendering="geometricPrecision">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,80 L0,80 Z" fill="#4A3728"/>
+      </svg>
+    </div>
 
     <!-- Links Section -->
     <section id="links" class="py-20 bg-primary text-white">
@@ -1234,6 +1448,14 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "ランチタイム（11:30〜13:30頃）は混み合うことがあるため、ゆっくり過ごしたい場合は少し時間をずらすのがおすすめです。平日の午後や夕方は比較的空いていて過ごしやすいです。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "海外からのお客様でも安心して利用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "海外のお客様も安心です。メニューは日英併記、無料WiFi・電源・キャッシュレス決済完備。ハンドドリップコーヒーをアシンメトリーカップで楽しむ体験は海外の方に好評です。店内はゆったりとしており、キャリーバッグも楽々置けます。"
         }
       }
     ]
