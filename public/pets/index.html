@@ -4,17 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- プレビューデプロイ保護：本番用.pages.devのみリダイレクト -->
-  <script>
-    (function() {
-      // 本番用の .pages.dev ドメインのみ本番ドメインにリダイレクト
-      if (window.location.hostname === 'gbc-fan-site.pages.dev') {
-        window.location.href = 'https://greenbeanscoffeeambassador.com' + window.location.pathname + window.location.search + window.location.hash;
-      }
-      // プレビューデプロイ（例: 478dbf8.gbc-fan-site.pages.dev）と本番ドメインはそのまま表示
-    })();
-  </script>
-
   <!-- Google Analytics GA4 トラッキングコード -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPQZLGFJVX"></script>
   <script>
