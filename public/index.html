@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- プレビューデプロイ保護：本番用.pages.devのみリダイレクト -->
+  <script>
+    (function() {
+      // 本番用の .pages.dev ドメインのみ本番ドメインにリダイレクト
+      if (window.location.hostname === 'gbc-fan-site.pages.dev') {
+        window.location.href = 'https://greenbeanscoffeeambassador.com' + window.location.pathname + window.location.search + window.location.hash;
+      }
+      // プレビューデプロイ（例: 478dbf8.gbc-fan-site.pages.dev）と本番ドメインはそのまま表示
+    })();
+  </script>
+
   <!-- Google Analytics GA4 トラッキングコード -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPQZLGFJVX"></script>
   <script>
@@ -1269,7 +1280,7 @@
           </svg>
           <div>
             <h3 class="font-bold text-primary">Googleマップ</h3>
-            <p class="text-sm text-secondary">口コミ・ルート検索</p>
+            <p class="text-sm text-secondary">口コミ・経路確認</p>
           </div>
         </a>
 
@@ -1280,7 +1291,7 @@
           </svg>
           <div>
             <h3 class="font-bold text-primary">食べログ</h3>
-            <p class="text-sm text-secondary">口コミ・簡単予約</p>
+            <p class="text-sm text-secondary">料理写真・簡単予約</p>
           </div>
         </a>
 
