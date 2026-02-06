@@ -224,7 +224,7 @@ project-root/
 以下の構造化データを `<head>` 内または `</body>` 直前に設置:
 
 1. **LocalBusiness (CafeOrCoffeeShop)**: 店舗情報
-2. **FAQPage**: よくある質問（15問）
+2. **FAQPage**: よくある質問（メインサイト: 19問、ペットサイト: ペット特化FAQ）
 3. **WebSite**: サイト情報
 
 詳細は `project-docs/technical-spec.md` を参照。
@@ -232,8 +232,8 @@ project-root/
 ## FAQセクション
 
 - アコーディオン形式で実装
-- **メインサイト**: 17問のQ&Aを掲載
-- **ペットサイト**: 22問（メイン17問 + ペット特化5問）
+- **メインサイト**: 19問の基本Q&Aを掲載
+- **ペットサイト**: ペット特化FAQを掲載（メインサイトとは独立）
 - JSON-LD FAQPage と連動
 
 ## コンテンツの書き方
@@ -302,7 +302,7 @@ assets/images/magazine/YYYYMM-back.jpg
   ↓
 [Visit Diary] #visit-diary ← ナビ: Visit Diary（pome_ponkunの訪問記）
   ↓
-[FAQ] #faq ← ナビ: FAQ（22問: メイン17問 + ペット特化5問）
+[FAQ] #faq ← ナビ: FAQ（ペット特化のFAQ）
   ↓
 [Links] #links ← ナビなし
   ↓
@@ -318,7 +318,7 @@ assets/images/magazine/YYYYMM-back.jpg
 | GBC Magazine | あり | なし |
 | Pet Friendly | Experienceに含む | 独立セクション |
 | Cheki Booth | なし | あり |
-| FAQ数 | 17問 | 22問（+ペット特化5問） |
+| FAQ | 19問（基本FAQ） | ペット特化FAQ（独立） |
 
 ## 基本情報の同期ルール
 
@@ -329,7 +329,8 @@ assets/images/magazine/YYYYMM-back.jpg
 - Googleマップ埋め込み
 - 公式SNSリンク
 - 支払い方法
-- FAQ（メイン17問は同一内容）
+
+**注記**: FAQは各サイトで独立しています。メインサイトは基本FAQ、ペットサイトはペット特化FAQを掲載します。
 
 **更新手順:**
 1. メインサイト（`/public/index.html`）を更新
