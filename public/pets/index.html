@@ -327,10 +327,10 @@
       </div>
 
       <!-- Ambassador Badge -->
-      <div class="absolute bottom-8 right-8 z-10 text-white text-left animate__animated animate__fadeIn animate__delay-2s">
-        <p class="text-sm opacity-90">GBCアンバサダー</p>
-        <p class="text-lg font-bold">Ayaka</p>
-      </div>
+      <a href="#ambassador" class="absolute bottom-8 right-8 z-10 text-white text-left animate__animated animate__fadeIn animate__delay-2s hover:text-accent transition-colors duration-300 group">
+        <p class="text-sm opacity-90 group-hover:opacity-100">GBCアンバサダー</p>
+        <p class="text-lg font-bold group-hover:underline">Ayaka</p>
+      </a>
 
       <!-- Scroll Indicator -->
       <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
@@ -833,6 +833,13 @@
       </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-white">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#FAF8F5"/>
+      </svg>
+    </div>
+
     <!-- FAQ Section -->
     <section id="faq" class="py-20 bg-gradient-to-b from-background to-white">
       <div class="container mx-auto px-4">
@@ -1147,14 +1154,14 @@
     </section>
 
     <!-- Wave Divider: FAQ to Links -->
-    <div class="wave-divider wave-problematic" style="background: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #4A3728 100%);">
-      <svg viewBox="0 0 1200 80" preserveAspectRatio="none" shape-rendering="geometricPrecision">
-        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,80 L0,80 Z" fill="#4A3728"/>
+    <div class="wave-divider bg-white">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#FAF8F5"/>
       </svg>
     </div>
 
     <!-- Links Section -->
-    <section id="links" class="py-20 bg-primary text-white">
+    <section id="links" class="py-20 bg-background text-primary">
       <div class="container mx-auto px-4">
         <h2 class="text-4xl md:text-5xl font-bold text-center mb-16" data-aos="fade-up">Links</h2>
 
@@ -1234,8 +1241,15 @@
       </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider bg-background">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+
     <!-- Ambassador Section -->
-    <section class="py-20 bg-white">
+    <section id="ambassador" class="py-20 bg-white">
       <div class="container mx-auto px-4">
         <h2 class="text-4xl md:text-5xl font-bold text-center text-primary mb-12" data-aos="fade-up">アンバサダー Ayaka</h2>
 
@@ -1261,7 +1275,7 @@
                 きっかけは紹介が縁でした。以前もサービス業に勤めていましたが「もっと長く愛犬と一緒に過ごしたい」と考えていた時にたどり着いたのがGBCでした。同伴出勤を希望したところ快く受け入れていただけたことが決め手になりました。
               </p>
               <p class="leading-relaxed">
-                現在はGBCアンバサダーとしてペットイベントの時に活動しています。
+                現在はGBCアンバサダーとして主にペットイベントの際に活動しています。
               </p>
             </div>
           </div>
