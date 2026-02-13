@@ -82,7 +82,10 @@
 <body class="bg-background text-text overflow-x-hidden">
   <!-- Navigation -->
   <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
-    <div class="container mx-auto px-4 py-4 flex justify-end items-center">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Site Title -->
+      <a href="#hero" class="text-lg font-normal scroll-to-top">GBCアンバサダー メインサイト</a>
+
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-8">
         <li><a href="#hero" class="hover:text-accent transition scroll-to-top">Home</a></li>
@@ -136,14 +139,10 @@
     </div>
 
     <!-- Ambassador Badge -->
-    <a
-      href="#about-ambassador"
-      class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-left z-10 text-sm sm:text-base hover:opacity-80 transition-opacity cursor-pointer group"
-      aria-label="アンバサダーについて"
-    >
+    <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-left z-10 text-sm sm:text-base">
       <p class="text-xs sm:text-sm">GBCアンバサダー</p>
-      <p class="text-base sm:text-lg font-bold underline-offset-2 group-hover:underline">Kikumi</p>
-    </a>
+      <p class="text-base sm:text-lg font-bold">Kikumi</p>
+    </div>
 
     <!-- Scroll Down Arrow -->
     <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate__animated animate__bounce animate__infinite">
@@ -736,8 +735,14 @@
           </div>
           <!-- Google Rating -->
           <div class="mt-3 text-right">
-            <p class="text-xs sm:text-sm text-secondary font-semibold">
-              Google評価4.8 490レビュー (2026年2月13日現在)
+            <p class="text-sm text-secondary font-semibold flex items-center justify-end gap-2">
+              <span>Google評価</span>
+              <span>4.8</span>
+              <svg class="w-4 h-4 text-accent fill-current" viewBox="0 0 24 24">
+                <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+              </svg>
+              <span>490件のレビュー</span>
+              <span class="opacity-70">(2026.2.13現在)</span>
             </p>
           </div>
         </div>
@@ -1331,6 +1336,15 @@
         <p class="text-lg leading-relaxed">
           これからもアンバサダーとしてこのお店の魅力を定期的に発信していきます。
         </p>
+        <div class="mt-8 text-right" data-aos="fade-up" data-aos-delay="200">
+          <a href="https://m.me/kikumi.h" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors">
+            <span class="font-semibold">Ambassador Kikumi</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -1343,12 +1357,6 @@
         このサイトはGreen Beans Coffeeアンバサダーが実際に訪れた情報をもとに作成しています。<br class="hidden md:inline">お店の最新情報・公式情報は<a href="https://www.instagram.com/green.beanscoffee" target="_blank" class="underline hover:no-underline transition-all">Instagram（@green.beanscoffee）</a>をご確認ください。
       </p>
       <hr class="border-accent/30 mb-8 max-w-md mx-auto">
-      <p class="text-sm mb-2">
-        Created by Kikumi (GBC Ambassador)
-        <a href="https://m.me/kikumi.h" target="_blank" rel="noopener noreferrer" title="Contact me" class="inline-block hover:text-accent transition-colors ml-1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block align-text-bottom"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
-        </a>
-      </p>
       <p class="text-xs text-accent">
         © 2026 Green Beans Coffee Ambassador. All rights reserved.
       </p>
