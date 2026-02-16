@@ -938,7 +938,7 @@
   </div>
 
   <!-- FAQ Section -->
-  <section id="faq" class="py-20 md:py-32 bg-white">
+  <section id="faq" class="py-20 md:py-32 bg-white scroll-mt-32">
     <div class="max-w-5xl mx-auto px-6 md:px-12 lg:px-16">
       <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">FAQ</h2>
 
@@ -1777,6 +1777,27 @@
     function closePaymentModal() {
       document.getElementById('paymentModal').classList.add('hidden');
     }
+
+    // Handle anchor links when page loads (for external links with target="_blank")
+    window.addEventListener('load', () => {
+      if (window.location.hash) {
+        // Wait for images and content to fully load
+        setTimeout(() => {
+          const element = document.querySelector(window.location.hash);
+          if (element) {
+            // Scroll with offset for sticky nav
+            const offset = 100; // Adjust for navbar height
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        }, 500);
+      }
+    });
   </script>
 </body>
 </html>
