@@ -1297,8 +1297,155 @@
           </div>
         </a>
 
+        <!-- Official LINE (Modal Trigger) -->
+        <button type="button" onclick="openLineModal()" class="flex items-center gap-4 bg-white p-4 rounded-lg shadow hover:shadow-lg transition cursor-pointer text-left w-full" data-aos="fade-up" data-aos-delay="450">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+          <div>
+            <h3 class="font-bold text-primary">公式LINE</h3>
+            <p class="text-sm text-secondary">来場者限定のお知らせ</p>
+          </div>
+        </button>
+
       </div>
     </div>
+
+    <!-- LINE Modal -->
+    <div id="lineModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4" onclick="closeLineModalOnBackdrop(event)">
+      <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+        <div class="relative">
+          <!-- Close Button -->
+          <button onclick="closeLineModal()" class="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <div class="grid md:grid-cols-[2fr_3fr] gap-0">
+            <!-- Content: モバイルで先に表示、デスクトップで右側 -->
+            <div class="md:order-2 p-8 md:p-12 flex flex-col justify-center">
+              <!-- Right: Content -->
+
+              <h3 class="text-2xl md:text-3xl font-bold text-primary mb-4">来店者限定！<br>公式LINE登録特典</h3>
+              <p class="text-base md:text-lg text-text mb-8 leading-snug">
+                Green Beans Coffeeにご来店いただいたお客様は公式LINEへご登録いただけます。登録後はお店をより深く楽しむための特典をご利用いただけます。
+              </p>
+
+              <!-- Point Card System -->
+              <div class="mb-8 p-6 bg-gradient-to-r from-accent/10 to-accent/5 rounded-xl border-2 border-accent/20">
+                <h4 class="font-bold text-primary text-lg mb-4 flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  ポイントカード制度
+                </h4>
+                <p class="text-sm text-text mb-4 leading-snug">
+                  ご来店ごとにポイントが加算され、来店回数に応じて会員ランクがアップ。特別な特典をお楽しみいただけます。
+                </p>
+                <div class="grid grid-cols-3 gap-3">
+                  <!-- Bronze -->
+                  <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-amber-600 to-amber-800 mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <h5 class="font-bold text-xs text-amber-700 mb-1">ブロンズ</h5>
+                    <p class="text-xs text-secondary">3回来店</p>
+                    <p class="text-xs text-accent font-semibold mt-1">ドリップバッグ<br>プレゼント</p>
+                  </div>
+                  <!-- Silver -->
+                  <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-gray-400 to-gray-600 mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <h5 class="font-bold text-xs text-gray-600 mb-1">シルバー</h5>
+                    <p class="text-xs text-secondary">さらに来店で</p>
+                    <p class="text-xs text-accent font-semibold mt-1">特別な<br>体験を</p>
+                  </div>
+                  <!-- Gold -->
+                  <div class="text-center">
+                    <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 mb-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <h5 class="font-bold text-xs text-yellow-600 mb-1">ゴールド</h5>
+                    <p class="text-xs text-secondary">最上級会員</p>
+                    <p class="text-xs text-accent font-semibold mt-1">プレミアム<br>特典</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <h4 class="font-bold text-primary text-lg mb-3">その他の登録特典</h4>
+
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h5 class="font-semibold text-primary">30種類以上のコーヒー豆ガイド</h5>
+                    <p class="text-sm text-secondary">フルーティ・マイルド・ビター・デカフェなど、お好みに合わせた豆選びをサポート</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h5 class="font-semibold text-primary">監修バリスタのプロフィール</h5>
+                    <p class="text-sm text-secondary">こだわりの焙煎を手がけるバリスタの情報をチェック</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h5 class="font-semibold text-primary">各種イベント情報</h5>
+                    <p class="text-sm text-secondary">焙煎体験やペット撮影会などの最新情報をいち早くお届け</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <h5 class="font-semibold text-primary">来店予約・お問い合わせ</h5>
+                    <p class="text-sm text-secondary">LINEから気軽にご予約やご質問が可能</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 p-4 bg-accent/10 rounded-lg">
+                <p class="text-sm text-text text-center">
+                  <strong class="text-primary">ご登録方法：</strong><br class="md:hidden">
+                  来店時にスタッフへお声がけください
+                </p>
+              </div>
+            </div>
+
+            <!-- Images: モバイルで後に表示、デスクトップで左側 -->
+            <div class="md:order-1 bg-white flex flex-col items-center justify-start gap-6 p-8 md:p-12">
+              <div class="w-full max-w-sm rounded-lg overflow-hidden shadow-lg bg-white">
+                <img src="/assets/images/gbc-line.jpg" alt="Green Beans Coffee 公式LINE QRコード" class="w-full h-auto block" loading="lazy" decoding="async">
+              </div>
+              <div class="w-full max-w-sm rounded-lg overflow-hidden shadow-lg bg-white mt-10">
+                <img src="/assets/images/gbc-line-pointcard.jpg" alt="Green Beans Coffee ポイントカード" class="w-full h-auto block" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- About Ambassador Section -->
@@ -1796,6 +1943,39 @@
             });
           }
         }, 500);
+      }
+    });
+  </script>
+
+  <!-- LINE Modal Script -->
+  <script>
+    function openLineModal() {
+      const modal = document.getElementById('lineModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLineModal() {
+      const modal = document.getElementById('lineModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = 'auto';
+    }
+
+    function closeLineModalOnBackdrop(event) {
+      if (event.target.id === 'lineModal') {
+        closeLineModal();
+      }
+    }
+
+    // ESCキーでモーダルを閉じる
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        const modal = document.getElementById('lineModal');
+        if (modal && !modal.classList.contains('hidden')) {
+          closeLineModal();
+        }
       }
     });
   </script>
