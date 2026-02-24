@@ -141,3 +141,6 @@ vite.config.ts.timestamp-*
 
 # Playwright screenshots
 .playwright-mcp/
+
+# Temporary project docs (PDFs etc. — delete after use)
+project-docs/*.pdf
