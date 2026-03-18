@@ -760,19 +760,19 @@
         </p>
 
         <!-- Content Grid -->
-        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
+        <div class="flex flex-col lg:grid lg:grid-cols-3 gap-8 lg:items-start max-w-5xl mx-auto">
           <!-- Image -->
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" class="relative w-full" style="padding-bottom: 177.78%;">
             <img src="assets/images/cheki-booth/cheki-1.jpg"
                  alt="Green Beans Coffeeのチェキブース。来店したペットの写真が壁一面に飾られています"
-                 class="w-full max-h-[450px] object-cover object-top rounded-lg shadow-xl"
+                 class="absolute inset-0 w-full h-full object-cover object-top rounded-lg shadow-xl"
                  loading="lazy"
                  decoding="async">
           </div>
 
           <!-- Text Content -->
-          <div data-aos="fade-left">
-            <h3 class="text-2xl font-bold text-primary mb-6 text-center md:text-left">チェキに関する<br class="md:hidden">お店側のサービス</h3>
+          <div data-aos="fade-up">
+            <h3 class="text-2xl font-bold text-primary mb-6 text-center">チェキに関する<br>お店側のサービス</h3>
             <div class="bg-background p-6 rounded-lg">
               <ol class="space-y-3 text-text list-decimal list-inside">
                 <li class="leading-relaxed">記念チェキ撮影</li>
@@ -788,6 +788,35 @@
               <p class="text-sm text-text/80 mt-6 italic">
                 ※ チェキの無料サービスは比較的空いている時間帯のサービスになります。
               </p>
+            </div>
+          </div>
+
+          <!-- YouTube Shorts: チェキブース動画 (インライン再生 / 終了後サムネイルに戻る) -->
+          <div class="w-full" data-aos="fade-left">
+            <div class="relative w-full rounded-lg shadow-lg overflow-hidden" style="padding-bottom: 177.78%;">
+              <!-- サムネイルオーバーレイ -->
+              <div id="chekiThumb" class="absolute inset-0 cursor-pointer group" onclick="playChekiInline()">
+                <img src="https://img.youtube.com/vi/XnktMIUsN4Q/maxresdefault.jpg"
+                     alt="チェキブース動画サムネイル"
+                     class="w-full h-full object-cover"
+                     loading="lazy" decoding="async">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="bg-red-600 rounded-full w-16 h-16 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- YouTube iframe（再生ボタン押下後に表示） -->
+              <iframe id="chekiIframe"
+                class="absolute inset-0 w-full h-full"
+                src=""
+                title="チェキブース"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="display:none;"></iframe>
             </div>
           </div>
         </div>
@@ -1146,7 +1175,7 @@
                   <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
                 </svg>
                 <div>
-                  <h4 class="font-bold text-primary mb-1">鳩の森神社<br>（徒歩約5分）</h4>
+                  <h4 class="font-bold text-primary mb-1">鳩森八幡神社<br>（徒歩約5分）</h4>
                   <p class="text-sm text-text">都内屈指のパワースポット
                 
                   </p>
@@ -1202,15 +1231,62 @@
               アンバサダーAyakaの<br class="md:hidden">おすすめの楽しみ方
             </h3>
             <div class="bg-white/50 rounded-lg p-6">
-              <p class="text-text leading-relaxed mb-4">
-                ペット同伴でも気兼ねなく本格的なスペシャルティコーヒーとグルテンフリーランチを楽しめるのがGreen Beans Coffeeの最大の魅力です。
-              </p>
-              <p class="text-text leading-relaxed mb-4">
-                ペット連れの友人とカフェで集まり、お洒落なショップが並ぶダガヤサンドウ（北参道・千駄ヶ谷エリア）を探索したり、広々とした明治公園や国立競技場近辺をお散歩したりするのが私のイチオシのコースです！
-              </p>
-              <p class="text-right text-sm font-semibold text-primary mt-6">
-                GBCペットアンバサダー Ayaka
-              </p>
+              <div class="grid md:grid-cols-3 gap-6 items-center">
+                <!-- テキスト＋署名 -->
+                <div>
+                  <p class="text-text leading-relaxed mb-4">
+                    ペット同伴でも気兼ねなく本格的なスペシャルティコーヒーとグルテンフリーランチを楽しめるのがGreen Beans Coffeeの最大の魅力です。
+                  </p>
+                  <p class="text-text leading-relaxed mb-4">
+                    ペット連れの友人とカフェで集まり、お洒落なショップが並ぶダガヤサンドウ（北参道・千駄ヶ谷エリア）を探索したり、広々とした明治公園や国立競技場近辺をお散歩したりするのが私のイチオシのコースです！
+                  </p>
+                  <p class="text-right text-sm font-semibold text-primary mt-6">
+                    GBCペットアンバサダー Ayaka
+                  </p>
+                </div>
+                <!-- 動画1: 7eylDMwdLoE -->
+                <div class="relative w-full rounded-xl shadow-lg overflow-hidden" style="padding-bottom: 177.78%;">
+                  <div id="accessThumb1" class="absolute inset-0 cursor-pointer group"
+                       onclick="playInlineVideo('accessThumb1','accessIframe1','7eylDMwdLoE')">
+                    <img src="https://img.youtube.com/vi/7eylDMwdLoE/maxresdefault.jpg"
+                         alt="お散歩コース動画1"
+                         class="w-full h-full object-cover"
+                         loading="lazy" decoding="async">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <div class="bg-red-600 rounded-full w-12 h-12 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0">
+                          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <iframe id="accessIframe1" class="absolute inset-0 w-full h-full" src=""
+                    title="お散歩コース1" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="display:none;"></iframe>
+                </div>
+                <!-- 動画2: IEejKgF0O6U -->
+                <div class="relative w-full rounded-xl shadow-lg overflow-hidden" style="padding-bottom: 177.78%;">
+                  <div id="accessThumb2" class="absolute inset-0 cursor-pointer group"
+                       onclick="playInlineVideo('accessThumb2','accessIframe2','IEejKgF0O6U')">
+                    <img src="https://img.youtube.com/vi/IEejKgF0O6U/maxresdefault.jpg"
+                         alt="お散歩コース動画2"
+                         class="w-full h-full object-cover"
+                         loading="lazy" decoding="async">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                      <div class="bg-red-600 rounded-full w-12 h-12 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="0">
+                          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <iframe id="accessIframe2" class="absolute inset-0 w-full h-full" src=""
+                    title="お散歩コース2" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen style="display:none;"></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -2070,6 +2146,23 @@
     });
   </script>
 
+  <!-- Video Modal -->
+  <div id="videoModal" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center" onclick="closeVideoModal()">
+    <div class="relative w-full h-full flex items-center justify-center" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeVideoModal()" class="absolute top-4 right-4 text-white hover:text-accent transition z-10 bg-black/50 rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center" aria-label="動画を閉じる">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <!-- Video Container: 縦長動画(9:16)対応 -->
+      <div class="relative w-full h-full max-w-[90vw] max-h-[90vh] md:max-w-[500px] md:max-h-[888px] mx-auto">
+        <iframe id="videoFrame" class="w-full h-full rounded-lg" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
   <!-- Gallery Modal -->
   <div id="galleryModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
     <div class="relative max-w-3xl w-full">
@@ -2106,6 +2199,65 @@
   </div>
 
   <script>
+    // インライン再生 汎用関数
+    function playInlineVideo(thumbId, iframeId, videoId) {
+      document.getElementById(thumbId).style.display = 'none';
+      const iframe = document.getElementById(iframeId);
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1&rel=0`;
+      iframe.style.display = 'block';
+    }
+
+    // チェキブース: インライン再生
+    function playChekiInline() {
+      playInlineVideo('chekiThumb', 'chekiIframe', 'XnktMIUsN4Q');
+    }
+
+    // Video Modal Functions
+    function openVideoModal(videoId, title) {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoFrame');
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&enablejsapi=1`;
+      iframe.title = title;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+      const modal = document.getElementById('videoModal');
+      const iframe = document.getElementById('videoFrame');
+      iframe.src = '';
+      modal.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // 動画終了検知: インライン or モーダルを判別してリセット
+    const inlinePlayers = [
+      { iframe: 'chekiIframe',   thumb: 'chekiThumb'   },
+      { iframe: 'accessIframe1', thumb: 'accessThumb1' },
+      { iframe: 'accessIframe2', thumb: 'accessThumb2' },
+    ];
+    window.addEventListener('message', function(event) {
+      if (event.origin !== 'https://www.youtube.com') return;
+      try {
+        const data = JSON.parse(event.data);
+        if (data.event === 'onStateChange' && data.info === 0) {
+          for (const p of inlinePlayers) {
+            const iframe = document.getElementById(p.iframe);
+            if (iframe && iframe.style.display !== 'none') {
+              iframe.src = '';
+              iframe.style.display = 'none';
+              document.getElementById(p.thumb).style.display = '';
+              return;
+            }
+          }
+          const modal = document.getElementById('videoModal');
+          if (modal && !modal.classList.contains('hidden')) {
+            closeVideoModal();
+          }
+        }
+      } catch(e) {}
+    });
+
     // Gallery Modal Functions
     const galleryImages = [
       'assets/images/visit-diary/visit-pon-4.jpg',
