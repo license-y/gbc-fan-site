@@ -144,3 +144,10 @@ vite.config.ts.timestamp-*
 
 # Temporary project docs (PDFs etc. — delete after use)
 project-docs/*.pdf
+
+# Inbox (作業用一時ファイル置き場)
+inbox/*
+!inbox/.gitkeep
+!inbox/monthly-coffee/
+inbox/monthly-coffee/*
+!inbox/monthly-coffee/.gitkeep

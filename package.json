@@ -4,10 +4,12 @@
   "description": "Webpage template for Claude Code with Unsplash integration",
   "type": "module",
   "scripts": {
-    "search": "node dev-tools/unsplash-search.js"
+    "search": "node dev-tools/unsplash-search.js",
+    "update-images": "node scripts/update-images.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "tinify": "^1.6.0",
     "undici": "^7.16.0",
     "unsplash-js": "^7.0.19"
   },
