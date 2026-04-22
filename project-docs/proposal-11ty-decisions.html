@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBC アンバサダーサイト 11ty 実装 追加確認事項</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #2D2A26;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 18mm;
+    }
+
+    .doc-header {
+      border-bottom: 3px solid #4A3728;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .doc-header .date {
+      font-size: 11px;
+      color: #8B7355;
+      margin-bottom: 4px;
+    }
+
+    .doc-header h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #4A3728;
+      letter-spacing: 0.05em;
+    }
+
+    .doc-header .subtitle {
+      font-size: 12px;
+      color: #8B7355;
+      margin-top: 4px;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #4A3728;
+      background: #FAF8F5;
+      border-left: 4px solid #C9A86C;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    .box {
+      border: 1px solid #C9A86C;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      background: #FFFDF9;
+    }
+
+    .box-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #4A3728;
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+
+    th {
+      background: #4A3728;
+      color: #fff;
+      padding: 7px 10px;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #E8E0D5;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #FAF8F5;
+    }
+
+    .highlight {
+      background: #FFF8E8;
+      border: 1px solid #C9A86C;
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+    }
+
+    .highlight p {
+      margin: 0;
+    }
+
+    .alert {
+      background: #FFF5F5;
+      border: 1px solid #E8A0A0;
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+    }
+
+    .alert p {
+      margin: 0;
+    }
+
+    .decision-block {
+      border: 2px solid #4A3728;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+
+    .decision-header {
+      background: #4A3728;
+      padding: 10px 16px;
+    }
+
+    .decision-header .decision-label {
+      font-size: 11px;
+      color: #C9A86C;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+    }
+
+    .decision-header .decision-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #FAF8F5;
+      margin-top: 2px;
+    }
+
+    .decision-body {
+      padding: 12px 16px;
+      background: #FAF8F5;
+    }
+
+    .decision-body p {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .option {
+      border: 1px solid #D0C4B0;
+      border-radius: 5px;
+      padding: 8px 12px;
+      background: #fff;
+      font-size: 12px;
+    }
+
+    .option.recommended {
+      border-color: #C9A86C;
+      background: #FFFDF9;
+    }
+
+    .option-label {
+      font-weight: 700;
+      color: #4A3728;
+      margin-bottom: 2px;
+    }
+
+    .option.recommended .option-label::after {
+      content: "　← Kikumi おすすめ";
+      font-size: 10px;
+      color: #C9A86C;
+      font-weight: 400;
+    }
+
+    .option-desc {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .answer-field {
+      border: 1px dashed #8B7355;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-top: 4px;
+      background: #fff;
+      min-height: 36px;
+    }
+
+    .answer-field .label {
+      font-size: 10px;
+      color: #8B7355;
+      margin-bottom: 2px;
+    }
+
+    .confirmed-list {
+      font-size: 12px;
+    }
+
+    .confirmed-list li {
+      list-style: none;
+      padding: 4px 0;
+      border-bottom: 1px solid #E8E0D5;
+      display: flex;
+      gap: 10px;
+    }
+
+    .confirmed-list li:last-child {
+      border-bottom: none;
+    }
+
+    .confirmed-list .check {
+      color: #6A9B6A;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .doc-footer {
+      border-top: 1px solid #E8E0D5;
+      padding-top: 10px;
+      margin-top: 24px;
+      font-size: 11px;
+      color: #8B7355;
+      text-align: center;
+    }
+
+    /* モックアップ */
+    .mockup {
+      background: #F0EDE8;
+      border-radius: 4px;
+      padding: 7px 9px;
+      margin-top: 6px;
+    }
+
+    .mockup-label {
+      font-size: 9px;
+      color: #8B7355;
+      margin-bottom: 5px;
+      font-style: italic;
+    }
+
+    .mock-nav {
+      background: rgba(74,55,40,0.92);
+      border-radius: 3px;
+      padding: 5px 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .mock-nav .m-logo {
+      color: #C9A86C;
+      font-weight: 700;
+      font-size: 10px;
+      margin-right: 10px;
+    }
+
+    .mock-nav .m-item {
+      color: rgba(250,248,245,0.8);
+      font-size: 9px;
+      padding: 1px 5px;
+    }
+
+    .mock-nav .m-item.new-item {
+      background: #C9A86C;
+      color: #4A3728;
+      font-weight: 700;
+      border-radius: 2px;
+      margin-left: 3px;
+    }
+
+    .mock-footer-area {
+      background: #FAF8F5;
+      border: 1px solid #E8E0D5;
+      border-radius: 3px;
+      padding: 6px 10px;
+      font-size: 10px;
+      color: #8B7355;
+    }
+
+    .mock-btn {
+      display: inline-block;
+      background: #4A3728;
+      color: #FAF8F5;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin-top: 4px;
+      font-size: 10px;
+    }
+
+    .mock-layout {
+      display: flex;
+      gap: 5px;
+      min-height: 50px;
+    }
+
+    .mock-main-col {
+      flex: 3;
+      background: #fff;
+      border: 1px solid #D0C4B0;
+      border-radius: 3px;
+      padding: 6px;
+    }
+
+    .mock-side-col {
+      flex: 1;
+      background: #E8E0D5;
+      border: 1px solid #D0C4B0;
+      border-radius: 3px;
+      padding: 6px;
+      font-size: 9px;
+      color: #6A5740;
+      line-height: 1.8;
+    }
+
+    .mock-line {
+      height: 5px;
+      background: #D0C4B0;
+      border-radius: 2px;
+      margin-bottom: 4px;
+      width: 100%;
+    }
+
+    .mock-line.w80 { width: 80%; }
+    .mock-line.w60 { width: 60%; }
+
+    .mock-head-simple {
+      background: #FAF8F5;
+      border-bottom: 1px solid #E8E0D5;
+      border: 1px solid #E8E0D5;
+      padding: 5px 10px;
+      font-size: 10px;
+      color: #8B7355;
+      border-radius: 3px;
+    }
+
+    .mock-head-full {
+      background: rgba(74,55,40,0.92);
+      padding: 5px 8px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    .mock-head-full .m-logo {
+      color: #C9A86C;
+      font-weight: 700;
+      font-size: 10px;
+      margin-right: 8px;
+    }
+
+    .mock-head-full .m-item {
+      color: rgba(250,248,245,0.8);
+      font-size: 9px;
+      padding: 1px 4px;
+    }
+
+    .mock-flow {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      font-size: 10px;
+    }
+
+    .mock-flow-box {
+      background: #fff;
+      border: 1px solid #8B7355;
+      border-radius: 3px;
+      padding: 3px 8px;
+      color: #4A3728;
+      white-space: nowrap;
+    }
+
+    .mock-flow-box.draft-box {
+      border-style: dashed;
+      color: #8B7355;
+      background: #FAF8F5;
+    }
+
+    .mock-flow-box.pub-box {
+      background: #4A3728;
+      color: #FAF8F5;
+      border-color: #4A3728;
+    }
+
+    .mock-arrow {
+      color: #8B7355;
+      font-size: 12px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 15mm 15mm 12mm; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ヘッダー -->
+  <div class="doc-header">
+    <div class="date">2026年4月 作成　／　前回提案書（強化提案）の補足資料</div>
+    <h1>GBC アンバサダーサイト 11ty 実装　追加確認事項</h1>
+  </div>
+
+  <!-- 確定・整理済み事項 -->
+  <div class="section">
+    <div class="section-title">01　前回の提案から確定している内容</div>
+    <ul class="confirmed-list">
+      <li><span class="check">✓</span><span>サイトは <strong>greenbeanscoffeeambassador.com</strong> ですでに公開中（独自ドメイン取得済み）</span></li>
+      <li><span class="check">✓</span><span>記事追加の対象は <strong>/articles/</strong> のみ。ペットサイト（/pets/）は現状維持</span></li>
+      <li><span class="check">✓</span><span>実装方式は「<strong>既存サイトはそのまま、/articles/ だけ11ty管理</strong>」の共存方式</span></li>
+      <li><span class="check">✓</span><span>記事の画像は、GBCから提供写真があればそれを優先。なければ Unsplash を使用</span></li>
+    </ul>
+  </div>
+
+  <!-- 要決定事項-->
+  <div class="section">
+    <div class="section-title">02　決めていただきたいこと（4点）</div>
+
+    <!-- 決定① -->
+    <div class="decision-block">
+      <div class="decision-header">
+        <div class="decision-label">要決定事項①</div>
+        <div class="decision-title">メインサイトのナビゲーションに「記事」を追加するか</div>
+      </div>
+      <div class="decision-body">
+        <div class="options">
+          <div class="option">
+            <div class="option-label">A）ナビに「Articles」を追加する（8項目になる）</div>
+            <div class="option-desc">最もわかりやすいが、ナビが1つ増えてデザインバランスを確認する必要がある。</div>
+            <div class="mockup">
+              <div class="mockup-label">ナビのイメージ</div>
+              <div class="mock-nav">
+                <span class="m-logo">GBC</span>
+                <span class="m-item">Home</span><span class="m-item">About</span><span class="m-item">Menu</span><span class="m-item">Experience</span><span class="m-item">Access</span><span class="m-item">Visit Diary</span><span class="m-item">FAQ</span><span class="m-item new-item">Articles ✦</span>
+              </div>
+            </div>
+          </div>
+          <div class="option recommended">
+            <div class="option-label">B）記事トップページ（/articles/）を作り、フッター・または適切なセクションからリンクする</div>
+            <div class="option-desc">現在のナビ7項目を崩さずに済む。「もっと読む」「記事一覧はこちら」などのリンクを設置。記事が増えてきたら後でナビ追加を検討する。</div>
+            <div class="mockup">
+              <div class="mockup-label">サイト下部などに設置するリンクのイメージ</div>
+              <div class="mock-footer-area">
+                GBCに関するコーヒーコラム・体験レポートなど…
+                <div><span class="mock-btn">記事一覧はこちら →</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option-label">C）当面は記事トップページのみ作成し、ナビへの追加は後で判断</div>
+            <div class="option-desc">記事が実際に溜まってきた段階でナビ追加を検討。まず動かすことを優先する。B と同じ見た目からスタートし、後でAに変更する。</div>
+          </div>
+        </div>
+        <div class="answer-field">
+          <div class="label">回答欄</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 決定② -->
+    <div class="decision-block">
+      <div class="decision-header">
+        <div class="decision-label">要決定事項②</div>
+        <div class="decision-title">記事ページにサイドバー（横の情報欄）を設けるか</div>
+      </div>
+      <div class="decision-body">
+        <div class="options">
+          <div class="option recommended">
+            <div class="option-label">あり（カテゴリー一覧・関連記事リストを右横に表示）</div>
+            <div class="option-desc">記事間の回遊がしやすくなり、SEOにも効果的。サンプルで見てから判断可能。</div>
+            <div class="mockup">
+              <div class="mockup-label">記事ページのイメージ（2カラム）</div>
+              <div class="mock-layout">
+                <div class="mock-main-col">
+                  <div class="mock-line w80"></div>
+                  <div class="mock-line"></div>
+                  <div class="mock-line w60"></div>
+                </div>
+                <div class="mock-side-col">カテゴリー<br>──────<br>関連記事<br>──────</div>
+              </div>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option-label">なし（シンプルな1カラム表示）</div>
+            <div class="option-desc">記事の読みやすさを重視。スマートフォンでの閲覧に向いている。</div>
+            <div class="mockup">
+              <div class="mockup-label">記事ページのイメージ（1カラム）</div>
+              <div class="mock-main-col" style="max-width:65%">
+                <div class="mock-line w80"></div>
+                <div class="mock-line"></div>
+                <div class="mock-line w60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="answer-field">
+          <div class="label">回答欄</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 決定③ -->
+    <div class="decision-block">
+      <div class="decision-header">
+        <div class="decision-label">要決定事項③</div>
+        <div class="decision-title">記事ページのヘッダーをどうするか</div>
+      </div>
+      <div class="decision-body">
+        <div class="options">
+          <div class="option recommended">
+            <div class="option-label">メインサイトへ戻れるシンプルなナビを設置</div>
+            <div class="option-desc">「← Green Beans Coffee トップへ」のようなリンクを上部に表示。メインサイトのフルナビは表示しない。</div>
+            <div class="mockup">
+              <div class="mockup-label">記事ページ上部のイメージ</div>
+              <div class="mock-head-simple">← Green Beans Coffee トップへ</div>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option-label">メインサイトと同じナビをそのまま使う</div>
+            <div class="option-desc">統一感は出るが、記事ページからHero・About等へのスクロールナビは機能しないため、調整が必要。</div>
+            <div class="mockup">
+              <div class="mockup-label">記事ページ上部のイメージ</div>
+              <div class="mock-head-full">
+                <span class="m-logo">GBC</span>
+                <span class="m-item">Home</span><span class="m-item">About</span><span class="m-item">Menu</span><span class="m-item">Experience</span><span class="m-item">Access</span><span class="m-item">Visit Diary</span><span class="m-item">FAQ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="answer-field">
+          <div class="label">回答欄</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 決定④ -->
+    <div class="decision-block">
+      <div class="decision-header">
+        <div class="decision-label">要決定事項④</div>
+        <div class="decision-title">記事の作成・公開フロー</div>
+      </div>
+      <div class="decision-body">
+
+        <!-- 参考情報 -->
+        <div class="box" style="margin-bottom:12px;">
+          <div class="box-title" style="margin-bottom:8px;">記事の作成方法（どちらを選んでも実装は同じ）</div>
+          <div style="font-size:11px; color:#4A3728; font-weight:600; margin-bottom:4px;">Claude Code で作成（Yukiさんの場合）</div>
+          <div class="mockup" style="margin-bottom:8px;">
+            <div class="mock-flow">
+              <div class="mock-flow-box">内容を指示</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">ファイル作成</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">確認・修正</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">GitHubにアップ</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box pub-box">サイトに反映</div>
+            </div>
+          </div>
+          <div style="font-size:11px; color:#4A3728; font-weight:600; margin-bottom:4px;">Claude Chat で原稿作成 → 配置・公開（四倉さんの場合）</div>
+          <div class="mockup">
+            <div class="mock-flow">
+              <div class="mock-flow-box">Claude Chatで原稿作成</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">.mdをダウンロード</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">フォルダに配置</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box">GitHubにアップ</div>
+              <span class="mock-arrow">→</span>
+              <div class="mock-flow-box pub-box">サイトに反映</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 実装に影響する決定 -->
+        <div style="font-size:11px; font-weight:700; color:#8B7355; margin-bottom:6px;">要決定事項</div>
+        <div class="options">
+          <div class="option recommended">
+            <div class="option-label">下書き管理なし（シンプル）</div>
+            <div class="option-desc">追加設定不要。GitHub にアップした時点でサイトに反映される。</div>
+          </div>
+          <div class="option">
+            <div class="option-label">下書き管理あり</div>
+            <div class="option-desc">11ty 設定ファイルへの追加作業が発生（+1〜2時間）。ファイルを下書きフォルダに置くと公開されず、公開フォルダに移したタイミングでサイトに反映される。</div>
+            <div class="mockup">
+              <div class="mock-flow">
+                <div class="mock-flow-box">ファイル作成</div>
+                <span class="mock-arrow">→</span>
+                <div class="mock-flow-box draft-box">下書きフォルダ</div>
+                <span class="mock-arrow">→</span>
+                <div class="mock-flow-box">確認・承認</div>
+                <span class="mock-arrow">→</span>
+                <div class="mock-flow-box pub-box">公開フォルダへ移動 → 反映</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="answer-field">
+          <div class="label">回答欄</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="doc-footer">
+    GBC アンバサダーサイト 11ty 実装 追加確認事項 ／ Kikumi Hori
+  </div>
+
+</div>
+</body>
+</html>
