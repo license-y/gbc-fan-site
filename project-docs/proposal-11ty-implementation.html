@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBC アンバサダーサイト 強化提案</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #2D2A26;
+      background: #fff;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 20mm 18mm 18mm;
+    }
+
+    /* ヘッダー */
+    .doc-header {
+      border-bottom: 3px solid #4A3728;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .doc-header .date {
+      font-size: 11px;
+      color: #8B7355;
+      margin-bottom: 4px;
+    }
+
+    .doc-header h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #4A3728;
+      letter-spacing: 0.05em;
+    }
+
+    .doc-header .subtitle {
+      font-size: 12px;
+      color: #8B7355;
+      margin-top: 4px;
+    }
+
+    /* セクション */
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #4A3728;
+      background: #FAF8F5;
+      border-left: 4px solid #C9A86C;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 13px;
+    }
+
+    /* ボックス */
+    .box {
+      border: 1px solid #C9A86C;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      background: #FFFDF9;
+    }
+
+    .box-title {
+      font-weight: 700;
+      font-size: 13px;
+      color: #4A3728;
+      margin-bottom: 6px;
+    }
+
+    /* テーブル */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 12px;
+      font-size: 12px;
+    }
+
+    th {
+      background: #4A3728;
+      color: #fff;
+      padding: 7px 10px;
+      text-align: left;
+      font-weight: 500;
+    }
+
+    td {
+      padding: 7px 10px;
+      border-bottom: 1px solid #E8E0D5;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #FAF8F5;
+    }
+
+    /* 強調 */
+    .highlight {
+      background: #FFF8E8;
+      border: 1px solid #C9A86C;
+      border-radius: 4px;
+      padding: 10px 14px;
+      margin-bottom: 12px;
+    }
+
+    .highlight p {
+      margin: 0;
+    }
+
+    /* 講座カード */
+    .course-card {
+      border: 2px solid #4A3728;
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #FAF8F5;
+    }
+
+    .course-card .course-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #4A3728;
+      margin-bottom: 6px;
+    }
+
+    .course-card .course-desc {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    .course-meta {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .course-meta-item {
+      font-size: 12px;
+      color: #4A3728;
+    }
+
+    .course-meta-item strong {
+      display: block;
+      font-size: 16px;
+      color: #C9A86C;
+    }
+
+    .price-note {
+      font-size: 11px;
+      color: #8B7355;
+      margin-top: 8px;
+    }
+
+    /* フロー */
+    .flow {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .flow-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 12px;
+    }
+
+    .flow-step {
+      background: #4A3728;
+      color: #fff;
+      border-radius: 50%;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .flow-content strong {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 1px;
+    }
+
+    .flow-content span {
+      color: #666;
+      font-size: 11px;
+    }
+
+    /* フッター */
+    .doc-footer {
+      border-top: 1px solid #E8E0D5;
+      padding-top: 10px;
+      margin-top: 24px;
+      font-size: 11px;
+      color: #8B7355;
+      text-align: center;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; padding: 15mm 15mm 12mm; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ヘッダー -->
+  <div class="doc-header">
+    <div class="date">2026年4月 作成</div>
+    <h1>GBC アンバサダーサイト 強化提案</h1>
+    <div class="subtitle">メインサイトにコンテンツを増やしてSEOを強化するための、現実的なプラン</div>
+  </div>
+
+  <!-- 現状と目標 -->
+  <div class="section">
+    <div class="section-title">01　やりたいこと・目標の確認</div>
+    <p>GBC アンバサダーのメインサイトにテーマ別の記事を継続的に追加していくことで、検索エンジンからの集客を強化したい。</p>
+    <div class="box">
+      <div class="box-title">イメージしている構成</div>
+      <table>
+        <tr><th>テーマ</th><th>記事数（目標）</th><th>例</th></tr>
+        <tr><td>ペットとコーヒー</td><td>20記事</td><td>千駄ヶ谷でペットと過ごすカフェ</td></tr>
+        <tr><td>コーヒー</td><td>30記事</td><td>自家焙煎の豆の選び方、淹れ方</td></tr>
+        <tr><td>グルテンフリー</td><td>20記事</td><td>米粉フォカッチャとコーヒーのペアリング</td></tr>
+        <tr><td>体験・イベント</td><td>15記事</td><td>チェキブース体験レポート</td></tr>
+        <tr><td>ビジネス利用</td><td>15記事</td><td>北参道でリモートワーク</td></tr>
+      </table>
+      <p style="font-size:11px; color:#666;">URL例：greenbeanscoffeeambassador.com/articles/coffee/how-to-brew など</p>
+    </div>
+  </div>
+
+  <!-- 現状の課題 -->
+  <div class="section">
+    <div class="section-title">02　現状のサイトのままでは難しい理由</div>
+    <p>現在のメインサイトは「1ページ完結型」として、店舗情報・FAQ・構造化データが一箇所に集約された設計になっています。これはAIが情報を参照しやすいAEO対策として非常に効果的であり、検索エンジンからの評価も得やすい構成です。今回の「記事を増やしてSEOを強化する」という構想は、この土台をさらに活かす、方向性として最適な次の一手です。</p>
+    <p><u>ただし、現在の形式のまま記事を10本・20本と追加していくには、記事ごとにHTMLファイルを1枚ずつ手作業で作る必要があり、現実的に管理が困難になります。</u></p>
+    <p>記事を自由に増やせる仕組みとして一般的によく使われるのが <strong>WordPress</strong> です。ただしWordPressは、有料サーバーの契約・セキュリティ対策・定期的なアップデートなど、維持管理のコストと手間が継続的にかかります。また、現在のサイトのデザインや構成をWordPressに移行する作業自体も、かなりの労力を要します。</p>
+    <div class="highlight">
+      <p>💡 <strong>解決策：「11ty（Eleventy）」という仕組みを導入する</strong><br>
+      記事をシンプルなテキスト形式（Markdown）で書くだけで、HTMLページが自動生成されます。サーバー不要・メンテ不要・無料で運用でき、現在のサイトと同じCloudflare Pagesで動作します。WordPressの複雑さを抱えずに、同じ目標を実現できる現実的な選択肢です。</p>
+    </div>
+  </div>
+
+  <!-- 実現するための流れ -->
+  <div class="section">
+    <div class="section-title">03　実現するための流れ（提案）</div>
+    <div class="flow">
+      <div class="flow-item">
+        <div class="flow-step">1</div>
+        <div class="flow-content">
+          <strong>枠組みの構築（Kikumi）</strong>
+          <span>11tyの初期設定・記事テンプレート・サンプル記事1本を作成。事務所に出勤できるうちに対応。</span>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-step">2</div>
+        <div class="flow-content">
+          <strong>11ty講座を受講（Yukiさん）</strong>
+          <span>今すぐ始める。Claude Codeの基本編の続きとして学べる内容。枠組みが完成する頃には使える状態になっておく。（<a href="#course" style="color:#C9A86C;">講座詳細はこちら</a>）</span>
+        </div>
+      </div>
+      <div class="flow-item">
+        <div class="flow-step">3</div>
+        <div class="flow-content">
+          <strong>記事を継続的に追加（Yukiさん）</strong>
+          <span>テキストを書いてClaude Codeに指示するだけで記事ページが完成。GBCの情報をもとに、Claude Codeと一緒に記事を作っていく。</span>
+        </div>
+      </div>
+    </div>
+    <div class="highlight">
+      <p>📌 <strong>ポイント</strong>：Kikumiが「使える状態」を作り、あとは<span style="color:#C9A86C; font-weight:700;">Yukiさんが自走できる体制</span>を目指します。現在のサイトのメンテナンスと並行して進められます。</p>
+    </div>
+  </div>
+
+  <!-- パス構造 -->
+  <div class="section">
+    <div class="section-title">04　サブディレクトリ構造（実装計画）</div>
+    <div class="box">
+      <div class="box-title">greenbeanscoffeeambassador.com</div>
+      <div style="font-family: monospace; font-size: 12px; line-height: 2; padding: 6px 0;">
+        <div style="color:#4A3728; font-weight:700;">/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:400; color:#8B7355;">← メインサイト（現在）</span></div>
+        <div style="color:#4A3728; font-weight:700;">/articles/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight:400; color:#8B7355;">← 記事トップ（新規）</span></div>
+        <div style="padding-left:16px; color:#2D2A26;">/articles/pet-coffee/ &nbsp;&nbsp;<span style="color:#8B7355;">← ペットとコーヒー（20記事）</span></div>
+        <div style="padding-left:16px; color:#2D2A26;">/articles/coffee/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8B7355;">← コーヒー（30記事）</span></div>
+        <div style="padding-left:16px; color:#2D2A26;">/articles/glutenfree/ &nbsp;&nbsp;<span style="color:#8B7355;">← グルテンフリー（20記事）</span></div>
+        <div style="padding-left:16px; color:#2D2A26;">/articles/experience/ &nbsp;&nbsp;<span style="color:#8B7355;">← 体験・イベント（15記事）</span></div>
+        <div style="padding-left:16px; color:#2D2A26;">/articles/business/ &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#8B7355;">← ビジネス利用（15記事）</span></div>
+      </div>
+    </div>
+    <div class="highlight">
+      <p>⚠️ <strong>技術的な注意点</strong><br>
+      現在のメインサイトと記事エリアを同じドメインで共存させる設計は、一見シンプルに見えますが、技術的に最も慎重さが求められる部分です。ちょうど、既存の建物に増築する際に基礎から確認が必要なように、既存サイトへの影響を確認しながら丁寧に設定を進める必要があります。この工程を確実に行うことが、後々のトラブルを防ぐ鍵になります。</p>
+    </div>
+    <div class="box">
+      <div class="box-title">作業時間の目安</div>
+      <table>
+        <tr><th>作業内容</th><th>目安時間</th></tr>
+        <tr><td>11ty セットアップ・既存サイトとの共存設定</td><td>2〜3時間</td></tr>
+        <tr><td>記事テンプレート作成（既存デザインに合わせる）</td><td>2〜3時間</td></tr>
+        <tr><td>デザイン確認・修正対応</td><td>2〜3時間</td></tr>
+        <tr><td>URL・フォルダ構造の設定</td><td>1時間</td></tr>
+        <tr><td>サンプル記事1本の作成（確認・修正対応含む）</td><td>2〜3時間</td></tr>
+        <tr><td>Yukiさんへの引き継ぎ手順メモ</td><td>1時間</td></tr>
+        <tr><td style="font-weight:700;">合計</td><td style="font-weight:700;">10〜14時間</td></tr>
+      </table>
+      <p style="font-size:11px; color:#C0392B; font-weight:700; margin-top:6px;">※ 環境や状況によっては、この2倍程度の時間が必要になる場合があります。</p>
+    </div>
+    <div class="highlight">
+      <p>📌 <strong>Kikumiが事務所に出勤できる期間は限られています。</strong>この期間内に枠組みを完成させ、Yukiさんへ引き継ぐためには、早めに方針を決めてスタートすることが重要です。</p>
+    </div>
+  </div>
+
+  <!-- 講座案内 -->
+  <div class="section" id="course">
+    <div class="section-title">05　おすすめ講座のご案内</div>
+    <div class="course-card">
+      <div style="background:#4A3728; margin:-14px -16px 12px; padding:12px 16px; border-radius:6px 6px 0 0;">
+        <div style="font-size:15px; font-weight:700; color:#FAF8F5; line-height:1.4;">Claude Code で 11ty（Eleventy）を使う</div>
+        <div style="font-size:15px; font-weight:700; color:#C9A86C; line-height:1.4;">講師：亀田学広</div>
+      </div>
+      <div class="course-desc">
+        非エンジニア・ノンデザイナーが Claude Code で Eleventy を操り、マルチページ・ブログなどを実現。WordPressに頼らず、安全・無料・自動化されたサイト運営のノウハウを習得する。
+      </div>
+      <div class="course-meta">
+        <div class="course-meta-item">
+          <strong>30,000円</strong>受講料（税込）
+        </div>
+        <div class="course-meta-item">
+          <strong>18回</strong>レッスン数
+        </div>
+        <div class="course-meta-item">
+          <strong>1.5時間</strong>動画コンテンツ
+        </div>
+      </div>
+      <div class="price-note">
+        ※ Claude Code 基本編（CWM講座）受講者向けの応用コースです。<br>
+        ※ 現在はパートナー経由でのみお申し込みいただけます。<br><br>
+        なお、11tyの知識は、現在計画中の <strong>tokyocoffeeguide.com</strong> の英語100記事サイトの構築にもそのまま活かすことができます。
+      </div>
+    </div>
+  </div>
+
+  <!-- まとめ -->
+  <div class="section">
+    <div class="section-title">06　まとめ・次のステップ</div>
+    <table>
+      <tr><th>担当</th><th>やること</th><th>時期</th></tr>
+      <tr><td>Kikumi</td><td>11ty の枠組み構築・サンプル記事作成・引き継ぎ</td><td>事務所に出勤できるうちに</td></tr>
+      <tr><td>Yuki</td><td>11ty 講座を受講して仕組みを理解する</td><td>今すぐ始める</td></tr>
+      <tr><td>Yuki</td><td>Claude Code を使って記事を継続的に追加する</td><td>枠組み完成後〜</td></tr>
+    </table>
+    <p style="font-size:12px; color:#555;">ぜひご活用ください。ご入金確認後に講座URLをご案内します。</p>
+  </div>
+
+  <div class="doc-footer">
+    GBC アンバサダーサイト 強化提案 ／ Kikumi Hori
+  </div>
+
+</div>
+</body>
+</html>
