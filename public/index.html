@@ -86,16 +86,21 @@
       <!-- Site Title -->
       <a href="#hero" class="text-lg font-normal scroll-to-top">GBCアンバサダー メインサイト</a>
 
-      <!-- Desktop Menu -->
-      <ul class="hidden md:flex space-x-8">
-        <li><a href="#hero" class="hover:text-accent transition scroll-to-top">Home</a></li>
-        <li><a href="#about" class="hover:text-accent transition">About</a></li>
-        <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
-        <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
-        <li><a href="#access" class="hover:text-accent transition">Access</a></li>
-        <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
-        <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
-      </ul>
+      <!-- Desktop Menu + Site Switch -->
+      <div class="hidden md:flex items-center gap-6">
+        <ul class="flex space-x-8">
+          <li><a href="#about" class="hover:text-accent transition">About</a></li>
+          <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
+          <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
+          <li><a href="#access" class="hover:text-accent transition">Access</a></li>
+          <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
+          <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
+        </ul>
+        <a href="/pets/" class="flex items-center gap-1.5 border border-accent text-accent rounded-full px-3 py-1 text-xs tracking-wide hover:border-white hover:text-white transition whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
+          Pet Site
+        </a>
+      </div>
 
       <!-- Mobile Hamburger Button -->
       <button id="mobile-menu-btn" class="md:hidden" aria-label="メニューを開く">
@@ -108,13 +113,18 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md text-primary">
       <ul class="flex flex-col space-y-2 p-4">
-        <li><a href="#hero" class="block py-2 hover:text-accent transition scroll-to-top">Home</a></li>
         <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
         <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
         <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
         <li><a href="#visit-diary" class="block py-2 hover:text-accent transition">Visit Diary</a></li>
         <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
+        <li class="border-t border-primary/20 pt-2 mt-1">
+          <a href="/pets/" class="flex items-center gap-2 py-2 text-accent hover:text-primary transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
+            Pet Site
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
