@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ペットサイト alt属性 レビューシート</title>
+  <style>
+    /* 画面表示用 */
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #2D2A26;
+      background: #FAF8F5;
+      margin: 0;
+      padding: 24px;
+    }
+
+    .page-header {
+      border-bottom: 3px solid #4A3728;
+      padding-bottom: 12px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 20px;
+      color: #4A3728;
+      margin: 0 0 4px 0;
+    }
+
+    .meta {
+      color: #8B7355;
+      font-size: 11px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background: #4A3728;
+      padding: 6px 12px;
+      margin: 24px 0 12px 0;
+      border-radius: 4px;
+    }
+
+    .alt-card {
+      background: #fff;
+      border: 1px solid #C9A86C;
+      border-radius: 6px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      page-break-inside: avoid;
+    }
+
+    .alt-card .card-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .image-num {
+      font-size: 11px;
+      font-weight: bold;
+      color: #fff;
+      background: #8B7355;
+      padding: 2px 8px;
+      border-radius: 10px;
+      flex-shrink: 0;
+    }
+
+    .image-path {
+      font-size: 10px;
+      color: #8B7355;
+      word-break: break-all;
+    }
+
+    .label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #8B7355;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 8px;
+      margin-bottom: 2px;
+    }
+
+    .current-alt {
+      background: #FAF8F5;
+      border-left: 3px solid #C9A86C;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .suggested-alt {
+      background: #fff9f0;
+      border-left: 3px solid #4A3728;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: #2D2A26;
+    }
+
+    .char-count {
+      font-size: 10px;
+      color: #999;
+      text-align: right;
+      margin-top: 2px;
+    }
+
+    .note {
+      font-size: 11px;
+      color: #C0392B;
+      background: #FDF0F0;
+      border: 1px dashed #C0392B;
+      border-radius: 4px;
+      padding: 6px 10px;
+      margin-top: 6px;
+    }
+
+    .decision-box {
+      margin-top: 8px;
+    }
+
+    .decision-box .label {
+      color: #4A3728;
+    }
+
+    .decision-lines {
+      border: 1px solid #C9A86C;
+      border-radius: 4px;
+      height: 44px;
+      background: #fff;
+      position: relative;
+    }
+
+    .decision-lines::after {
+      content: "ここに確定テキストを記入";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 10px;
+      color: #ccc;
+      pointer-events: none;
+    }
+
+    .two-candidates {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .candidate-label {
+      font-size: 10px;
+      font-weight: bold;
+      color: #4A3728;
+      margin-bottom: 2px;
+    }
+
+    /* 印刷用スタイル */
+    @media print {
+      body {
+        background: #fff;
+        padding: 10mm;
+        font-size: 11px;
+      }
+
+      .section-title {
+        margin-top: 16px;
+      }
+
+      .alt-card {
+        margin-bottom: 10px;
+        padding: 10px 12px;
+      }
+
+      .decision-lines {
+        height: 40px;
+      }
+
+      /* ページをまたがない */
+      .alt-card {
+        page-break-inside: avoid;
+      }
+
+      /* 印刷時の色を保持 */
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>ペットサイト — alt属性 レビューシート</h1>
+    <div class="meta">
+      対象ファイル: public/pets/index.html　｜　作成日: 2026年4月14日　｜　画像数: 18点
+    </div>
+    <div class="meta" style="margin-top:4px;">
+      ◎ 使い方: 「提案文」を参考に「確定テキスト」欄にご自身の言葉で書き込んでください。目安は80〜120文字程度です。
+    </div>
+  </div>
+
+
+  <!-- ===== Hero ===== -->
+  <div class="section-title">Hero セクション（#hero）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 1</span>
+      <span class="image-path">assets/images/hero/hero-bg-1.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">Green Beans Coffeeで愛犬と過ごすひととき。北参道の都会派ペットフレンドリーカフェ</div>
+    <div class="char-count">現在: 42文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">愛犬と一緒にゆったりコーヒーを楽しめる北参道の都会派ペットフレンドリーカフェ Green Beans Coffee。小型・中型犬の店内同伴OKで、千駄ヶ谷の隠れ家空間でのひとときを</div>
+    <div class="char-count">提案: 83文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 2</span>
+      <span class="image-path">assets/images/hero/hero-bg-2.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">愛犬と一緒に店内で楽しめる北参道のカフェGreen Beans Coffee。店内ペット同伴OKのくつろぎ空間</div>
+    <div class="char-count">現在: 47文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">千駄ヶ谷・ダガヤサンドウエリアにある犬同伴OKのコーヒー専門店 Green Beans Coffee。愛犬連れの飼い主がリラックスして過ごせる、都会の真ん中のくつろぎ空間</div>
+    <div class="char-count">提案: 80文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== About ===== -->
+  <div class="section-title">About セクション（#about）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 3</span>
+      <span class="image-path">../assets/images/about-shop-front.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">北参道・千駄ヶ谷のダガヤサンドウエリアに佇む、店名看板のない隠れ家カフェGreen Beans Coffee</div>
+    <div class="char-count">現在: 47文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">北参道・千駄ヶ谷のダガヤサンドウに佇む、店名看板のない隠れ家ペットフレンドリーカフェ Green Beans Coffee。知る人ぞ知るコーヒー専門店の外観</div>
+    <div class="char-count">提案: 75文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 4</span>
+      <span class="image-path">assets/images/about-pet-interior.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">自家焙煎コーヒー豆</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="note">⚠️ 要確認: ファイル名が「about-pet-interior」のため、画像の内容（コーヒー豆 or 店内の様子）をご確認ください。内容に合わせて下の候補A・Bから選んでください。</div>
+    <div class="label">提案文（2候補）</div>
+    <div class="two-candidates">
+      <div>
+        <div class="candidate-label">候補 A：コーヒー豆の画像の場合</div>
+        <div class="suggested-alt">Green Beans Coffeeが誇る自家焙煎コーヒー豆。北参道の本格コーヒー専門店が丁寧に仕上げたスペシャルティコーヒーの豆</div>
+      </div>
+      <div>
+        <div class="candidate-label">候補 B：ペット同伴の店内写真の場合</div>
+        <div class="suggested-alt">愛犬と一緒に過ごせるGreen Beans Coffeeの居心地よい店内。北参道の犬同伴カフェならではの温かみのある空間</div>
+      </div>
+    </div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Pet Friendly ===== -->
+  <div class="section-title">Pet Friendly セクション（#pet-friendly）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 5</span>
+      <span class="image-path">assets/images/pet-friendly/pet-friendly-1.jpg（カード①：ペット同伴について）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">ペット同伴のルール</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約80文字）</div>
+    <div class="suggested-alt">Green Beans Coffeeのペット同伴ルール。小型・中型犬まで店内OK、リード着用で安心して過ごせる北参道の犬同伴ペットフレンドリーカフェ</div>
+    <div class="char-count">提案: 66文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 6</span>
+      <span class="image-path">assets/images/pet-friendly/pet-friendly-2.jpg（カード②：ペット向けサービス）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">ペット向けサービス</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約80文字）</div>
+    <div class="suggested-alt">Green Beans Coffeeが用意するペット向けサービス。お水・水飲みボウルの提供やチェキ撮影など、愛犬連れに嬉しい北参道カフェのサービス</div>
+    <div class="char-count">提案: 68文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 7</span>
+      <span class="image-path">assets/images/pet-friendly/pet-friendly-3.jpg（カード③：おすすめの過ごし方）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">おすすめの過ごし方</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約80文字）</div>
+    <div class="suggested-alt">ペット連れ同士でGreen Beans Coffeeに集合し、北参道・千駄ヶ谷エリアをお散歩するおすすめの過ごし方。ダガヤサンドウ散策とセットで楽しむ</div>
+    <div class="char-count">提案: 69文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Cheki Booth ===== -->
+  <div class="section-title">Cheki Booth セクション（#cheki-booth）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 8</span>
+      <span class="image-path">assets/images/cheki-booth/cheki-1.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">Green Beans Coffeeのチェキブース。来店したペットの写真が壁一面に飾られています</div>
+    <div class="char-count">現在: 41文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">Green Beans Coffeeの名物チェキブース。来店した愛犬たちのチェキ写真が壁一面に飾られ、ペットとの訪問記念になる北参道の犬同伴カフェならではのサービス</div>
+    <div class="char-count">提案: 77文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 9</span>
+      <span class="image-path">YouTube サムネイル（チェキブース紹介動画 / ID: XnktMIUsN4Q）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">チェキブース動画サムネイル</div>
+    <div class="char-count">現在: 12文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">Green Beans Coffeeのチェキブースを紹介するYouTube Shorts動画。北参道のペットフレンドリーカフェで愛犬の記念チェキを撮影する様子を収録</div>
+    <div class="char-count">提案: 73文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Wan!Pass / Donate ===== -->
+  <div class="section-title">Donate for Pets セクション（Wan!Pass / 日本レスキュー協会）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 10</span>
+      <span class="image-path">assets/images/wanpass/qr-display.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">店内に設置されたWan!PassのQRコード</div>
+    <div class="char-count">現在: 18文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">北参道のペットフレンドリーカフェGreen Beans Coffee店内に設置されたWan!Pass（ワンパス）のQRコード。愛犬とのカフェ訪問が動物福祉への寄付につながるサービス</div>
+    <div class="char-count">提案: 82文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 11</span>
+      <span class="image-path">assets/images/wanpass/donation-box.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">店内に設置された日本レスキュー協会の募金箱</div>
+    <div class="char-count">現在: 21文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">Green Beans Coffee店内に設置された日本レスキュー協会の募金箱。動物福祉・災害救助犬・セラピードッグの支援活動を、北参道のカフェでコーヒーを飲みながら応援できる</div>
+    <div class="char-count">提案: 82文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Visit Diary ===== -->
+  <div class="section-title">Visit Diary セクション（#visit-diary）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 12</span>
+      <span class="image-path">assets/images/visit-diary/visit-pon-1.jpg（日記①：初めての訪問 / 2023年8月20日）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">初めての訪問 - ポンとGreen Beans Coffee</div>
+    <div class="char-count">現在: 22文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">ポメラニアンのポンと初めてGreen Beans Coffeeを訪問した日の記録。2023年夏、北参道の犬同伴カフェと出会い、ペット連れで涼しく過ごせた感動の一日</div>
+    <div class="char-count">提案: 74文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 13</span>
+      <span class="image-path">assets/images/visit-diary/visit-pon-2.jpg（日記②：GBCスタッフとして働き始める / 2023年8月下旬）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">GBCスタッフとして働き始める - ポンと一緒に同伴出勤</div>
+    <div class="char-count">現在: 26文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">愛犬ポン（ポメラニアン）との同伴出勤を快く受け入れてくれたGreen Beans Coffee。2023年8月、ペットアンバサダーAyakaがGBCスタッフとして働き始めた頃の写真</div>
+    <div class="char-count">提案: 83文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 14</span>
+      <span class="image-path">assets/images/visit-diary/visit-pon-3.jpg（日記③：ポン誕生祭イベント / 2024年11月）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">ポン誕生祭イベント - 2歳のお誕生日をGreen Beans Coffeeで</div>
+    <div class="char-count">現在: 32文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">ポメラニアンのポンが2歳のお誕生日を迎えた「ポン誕生祭」の写真。2024年11月、北参道のペットフレンドリーカフェGreen Beans Coffeeで開催されたペットイベント</div>
+    <div class="char-count">提案: 82文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Access ===== -->
+  <div class="section-title">Access セクション（#access）— YouTube Shortsサムネイル</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 15</span>
+      <span class="image-path">YouTube サムネイル（お散歩コース動画1 / ID: 7eylDMwdLoE）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">お散歩コース動画1</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">北参道・千駄ヶ谷のダガヤサンドウからGreen Beans Coffeeへのペット連れお散歩ルートを紹介するYouTube Shorts動画。アンバサダーAyakaのイチオシコース</div>
+    <div class="char-count">提案: 80文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 16</span>
+      <span class="image-path">YouTube サムネイル（お散歩コース動画2 / ID: IEejKgF0O6U）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">お散歩コース動画2</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">明治公園・国立競技場周辺のペット連れお散歩コースを紹介するYouTube Shorts動画。千駄ヶ谷・北参道エリアをポンと一緒に歩くAyakaのおすすめルート</div>
+    <div class="char-count">提案: 74文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== Ambassador ===== -->
+  <div class="section-title">アンバサダーセクション</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 17</span>
+      <span class="image-path">assets/images/ambassador-ayaka.jpg</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">アンバサダー Ayaka</div>
+    <div class="char-count">現在: 9文字</div>
+    <div class="label">提案文（約90文字）</div>
+    <div class="suggested-alt">Green Beans Coffeeのペットアンバサダー Ayakaと愛犬ポン（ポメラニアン）。pome_ponkunとしてInstagramで活動し、北参道カフェの魅力を発信するアンバサダー</div>
+    <div class="char-count">提案: 82文字</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- ===== ギャラリーモーダル ===== -->
+  <div class="section-title">ギャラリーモーダル（動的表示）</div>
+
+  <div class="alt-card">
+    <div class="card-header">
+      <span class="image-num">画像 18</span>
+      <span class="image-path">ギャラリーモーダル内 動的画像（id="galleryImage"）</span>
+    </div>
+    <div class="label">現在のalt属性</div>
+    <div class="current-alt">ポン誕生祭の写真</div>
+    <div class="char-count">現在: 8文字</div>
+    <div class="label">提案文（約80文字）</div>
+    <div class="suggested-alt">2024年11月にGreen Beans Coffeeで開催されたポン誕生祭イベントの写真。北参道のペットフレンドリーカフェで愛犬たちが集まったお誕生日パーティーの様子</div>
+    <div class="char-count">提案: 77文字</div>
+    <div class="note">ℹ️ 補足: このaltはJavaScriptで動的に差し替えられる可能性があります。サイトの動作を確認した上で更新してください。</div>
+    <div class="decision-box">
+      <div class="label">▼ 確定テキスト（記入欄）</div>
+      <div class="decision-lines"></div>
+    </div>
+  </div>
+
+
+  <!-- フッター -->
+  <div style="margin-top: 40px; border-top: 1px solid #C9A86C; padding-top: 12px; font-size: 10px; color: #8B7355; text-align: right;">
+    Green Beans Coffee ファンサイト — ペットサイト alt属性レビューシート｜作成: Claude Code
+  </div>
+
+</body>
+</html>
