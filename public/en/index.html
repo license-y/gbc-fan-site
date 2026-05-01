@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPQZLGFJVX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LPQZLGFJVX');
+  </script>
+
+  <!-- SEO Meta -->
+  <title>Green Beans Coffee | Pet-Friendly Specialty Coffee in Kitasando / Sendagaya, Tokyo</title>
+  <meta name="description" content="Green Beans Coffee is a specialty coffee shop in Kitasando / Sendagaya, Tokyo — 3 min walk from Kitasando Station. Pets welcome indoors, gluten-free menu, 30+ house-roasted beans. No storefront sign — a hidden gem in the Dagayasando neighborhood.">
+  <meta name="keywords" content="Green Beans Coffee, Kitasando cafe, Sendagaya cafe, pet-friendly cafe Tokyo, gluten-free cafe Tokyo, specialty coffee Tokyo, Dagayasando, house-roasted coffee, coffee experience Tokyo">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Green Beans Coffee | Pet-Friendly Specialty Coffee in Kitasando / Sendagaya, Tokyo">
+  <meta property="og:description" content="A hidden-gem specialty coffee shop in Kitasando / Sendagaya. Pets welcome indoors, gluten-free menu, 30+ house-roasted beans. No storefront sign.">
+  <meta property="og:type" content="website">
+  <!-- TODO: update og:url and og:image after custom domain is set -->
+  <meta property="og:url" content="https://greenbeanscoffeeambassador.com/en/">
+  <meta property="og:image" content="https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg">
+
+  <!-- Canonical & hreflang -->
+  <link rel="canonical" href="https://greenbeanscoffeeambassador.com/en/">
+  <link rel="alternate" hreflang="ja" href="https://greenbeanscoffeeambassador.com/">
+  <link rel="alternate" hreflang="en" href="https://greenbeanscoffeeambassador.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://greenbeanscoffeeambassador.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- CDN: Tailwind CSS v4 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- CDN: Animate.css v4.1.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- CDN: AOS v2.3.4 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A3728',
+            secondary: '#8B7355',
+            accent: '#C9A86C',
+            background: '#FAF8F5',
+            text: '#2D2A26',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-background text-text overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent text-white transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+      <!-- Site Title -->
+      <a href="#hero" class="text-lg font-normal scroll-to-top">GBC Ambassador — Main Site</a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-4">
+        <ul class="flex space-x-8">
+          <li><a href="#about" class="hover:text-accent transition">About</a></li>
+          <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
+          <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
+          <li><a href="#access" class="hover:text-accent transition">Access</a></li>
+          <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
+          <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
+        </ul>
+
+        <!-- Language Toggle -->
+        <div class="flex items-center border border-white/60 rounded-full overflow-hidden text-xs ml-2" id="lang-toggle-desktop">
+          <a href="/" class="px-3 py-1 hover:bg-white/20 transition">JA</a>
+          <a href="/en/" class="px-3 py-1 bg-white text-primary font-bold">EN</a>
+        </div>
+
+        <!-- Pet Site Button -->
+        <a href="/pets/" class="flex items-center gap-1.5 border border-accent text-accent rounded-full px-3 py-1 text-xs tracking-wide hover:border-white hover:text-white transition whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
+          Pet Site
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md text-primary">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="#about" class="block py-2 hover:text-accent transition">About</a></li>
+        <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
+        <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
+        <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
+        <li><a href="#visit-diary" class="block py-2 hover:text-accent transition">Visit Diary</a></li>
+        <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
+        <li class="border-t border-primary/20 pt-3 mt-1 flex items-center gap-3">
+          <span class="text-sm text-secondary">Language:</span>
+          <div class="flex items-center border border-primary/40 rounded-full overflow-hidden text-xs">
+            <a href="/" class="px-3 py-1 hover:bg-primary/10 transition">JA</a>
+            <a href="/en/" class="px-3 py-1 bg-primary text-white font-bold">EN</a>
+          </div>
+        </li>
+        <li class="border-t border-primary/20 pt-2 mt-1">
+          <a href="/pets/" class="flex items-center gap-2 py-2 text-accent hover:text-primary transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
+            Pet Site
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Images with Auto-switching -->
+    <div class="absolute inset-0 z-0">
+      <img id="hero-bg-1" src="/assets/images/hero_bg-1.jpg" alt="Green Beans Coffee — a specialty coffee shop in Kitasando and Sendagaya, Tokyo. Over 30 carefully selected house-roasted beans served one cup at a time." class="absolute inset-0 w-full h-full object-cover transition-opacity duration-[4000ms] ease-in-out">
+      <img id="hero-bg-2" src="/assets/images/hero_bg-2.jpg" alt="Green Beans Coffee — a warm, quiet third place in Kitasando and Sendagaya, Tokyo. 30 varieties of house-roasted beans, served with care." class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[4000ms] ease-in-out">
+      <div class="absolute inset-0 bg-black/40"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 animate__animated animate__fadeInDown">
+        Green Beans Coffee
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+        Pet-Friendly Specialty Coffee<br class="sm:hidden"> in Kitasando · Sendagaya, Tokyo
+      </p>
+    </div>
+
+    <!-- Ambassador Badge -->
+    <div class="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 text-white text-left z-10 text-sm sm:text-base">
+      <p class="text-xs sm:text-sm">GBC Ambassador</p>
+      <p class="text-base sm:text-lg font-bold">Kikumi</p>
+    </div>
+
+    <!-- Scroll Down Arrow -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate__animated animate__bounce animate__infinite">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- (Remaining sections to be added) -->
+
+  <!-- AOS Initialization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true, offset: 100 });
+  </script>
+
+  <!-- Custom JavaScript -->
+  <script>
+    // Navigation scroll behavior
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('main-nav');
+      const langToggle = document.getElementById('lang-toggle-desktop');
+      if (window.scrollY > 50) {
+        nav.classList.remove('bg-transparent', 'text-white');
+        nav.classList.add('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+        langToggle.classList.remove('border-white/60');
+        langToggle.classList.add('border-primary/40');
+      } else {
+        nav.classList.add('bg-transparent', 'text-white');
+        nav.classList.remove('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+        langToggle.classList.add('border-white/60');
+        langToggle.classList.remove('border-primary/40');
+      }
+    });
+
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Close mobile menu when link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+
+    // Scroll to top without hash
+    document.querySelectorAll('.scroll-to-top').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        history.replaceState(null, null, window.location.pathname);
+      });
+    });
+
+    // Hero image auto-switching
+    const heroBg1 = document.getElementById('hero-bg-1');
+    const heroBg2 = document.getElementById('hero-bg-2');
+    let showingFirst = true;
+
+    setInterval(() => {
+      if (showingFirst) {
+        heroBg1.style.opacity = '0';
+        heroBg2.style.opacity = '1';
+      } else {
+        heroBg1.style.opacity = '1';
+        heroBg2.style.opacity = '0';
+      }
+      showingFirst = !showingFirst;
+    }, 7000);
+  </script>
+
+</body>
+</html>
