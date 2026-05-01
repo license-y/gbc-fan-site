@@ -25,8 +25,11 @@
   <meta property="og:url" content="https://greenbeanscoffeeambassador.com">
   <meta property="og:image" content="https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg">
 
-  <!-- Canonical -->
+  <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://greenbeanscoffeeambassador.com">
+  <link rel="alternate" hreflang="ja" href="https://greenbeanscoffeeambassador.com/">
+  <link rel="alternate" hreflang="en" href="https://greenbeanscoffeeambassador.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://greenbeanscoffeeambassador.com/">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -96,6 +99,12 @@
           <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
           <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
         </ul>
+        <!-- Language Toggle -->
+        <div class="flex items-center border border-white/60 rounded-full overflow-hidden text-xs ml-2" id="lang-toggle-desktop">
+          <a href="/" class="px-3 py-1 bg-white text-primary font-bold">JA</a>
+          <a href="/en/" class="px-3 py-1 hover:bg-white/20 transition">EN</a>
+        </div>
+
         <a href="/pets/" class="flex items-center gap-1.5 border border-accent text-accent rounded-full px-3 py-1 text-xs tracking-wide hover:border-white hover:text-white transition whitespace-nowrap">
           <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
           Pet Site
@@ -119,6 +128,13 @@
         <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
         <li><a href="#visit-diary" class="block py-2 hover:text-accent transition">Visit Diary</a></li>
         <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
+        <li class="border-t border-primary/20 pt-3 mt-1 flex items-center gap-3">
+          <span class="text-sm text-secondary">Language:</span>
+          <div class="flex items-center border border-primary/40 rounded-full overflow-hidden text-xs">
+            <a href="/" class="px-3 py-1 bg-primary text-white font-bold">JA</a>
+            <a href="/en/" class="px-3 py-1 hover:bg-primary/10 transition">EN</a>
+          </div>
+        </li>
         <li class="border-t border-primary/20 pt-2 mt-1">
           <a href="/pets/" class="flex items-center gap-2 py-2 text-accent hover:text-primary transition">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
@@ -1995,12 +2011,15 @@
     // Navigation scroll behavior
     window.addEventListener('scroll', () => {
       const nav = document.getElementById('main-nav');
+      const langToggle = document.getElementById('lang-toggle-desktop');
       if (window.scrollY > 50) {
         nav.classList.remove('bg-transparent', 'text-white');
         nav.classList.add('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+        if (langToggle) { langToggle.classList.remove('border-white/60'); langToggle.classList.add('border-primary/40'); }
       } else {
         nav.classList.add('bg-transparent', 'text-white');
         nav.classList.remove('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
+        if (langToggle) { langToggle.classList.add('border-white/60'); langToggle.classList.remove('border-primary/40'); }
       }
     });
 
