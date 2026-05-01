@@ -104,8 +104,9 @@
 
         <!-- Language Toggle -->
         <div class="flex items-center border border-white/60 rounded-full overflow-hidden text-xs ml-2" id="lang-toggle-desktop">
-          <a href="/" class="px-3 py-1 hover:bg-white/20 transition">JA</a>
-          <a href="/en/" class="px-3 py-1 bg-white text-primary font-bold">EN</a>
+          <a href="/" id="lang-inactive" class="px-3 py-1" style="color:white">JA</a>
+          <span id="lang-sep" class="w-px self-stretch" style="background:rgba(255,255,255,0.45)"></span>
+          <a href="/en/" class="px-3 py-1 bg-accent text-primary font-bold">EN</a>
         </div>
 
         <!-- Pet Site Button -->
@@ -135,8 +136,9 @@
         <li class="border-t border-primary/20 pt-3 mt-1 flex items-center gap-3">
           <span class="text-sm text-secondary">Language:</span>
           <div class="flex items-center border border-primary/40 rounded-full overflow-hidden text-xs">
-            <a href="/" class="px-3 py-1 hover:bg-primary/10 transition">JA</a>
-            <a href="/en/" class="px-3 py-1 bg-primary text-white font-bold">EN</a>
+            <a href="/" class="px-3 py-1 text-secondary hover:bg-primary/10 transition">JA</a>
+            <span class="w-px self-stretch bg-primary/20"></span>
+            <a href="/en/" class="px-3 py-1 bg-accent text-primary font-bold">EN</a>
           </div>
         </li>
         <li class="border-t border-primary/20 pt-2 mt-1">
@@ -1547,13 +1549,19 @@
       if (window.scrollY > 50) {
         nav.classList.remove('bg-transparent', 'text-white');
         nav.classList.add('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
-        langToggle.classList.remove('border-white/60');
-        langToggle.classList.add('border-primary/40');
+        if (langToggle) { langToggle.classList.remove('border-white/60'); langToggle.classList.add('border-primary/40'); }
+        const sep = document.getElementById('lang-sep');
+        const inactive = document.getElementById('lang-inactive');
+        if (sep) sep.style.background = 'rgba(74,55,40,0.2)';
+        if (inactive) inactive.style.color = '#8B7355';
       } else {
         nav.classList.add('bg-transparent', 'text-white');
         nav.classList.remove('backdrop-blur-md', 'bg-white/80', 'shadow-md', 'text-primary');
-        langToggle.classList.add('border-white/60');
-        langToggle.classList.remove('border-primary/40');
+        if (langToggle) { langToggle.classList.add('border-white/60'); langToggle.classList.remove('border-primary/40'); }
+        const sep = document.getElementById('lang-sep');
+        const inactive = document.getElementById('lang-inactive');
+        if (sep) sep.style.background = 'rgba(255,255,255,0.45)';
+        if (inactive) inactive.style.color = 'white';
       }
     });
 
