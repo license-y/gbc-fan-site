@@ -353,6 +353,104 @@
     </div>
   </div>
 
+  <!-- Menu Section -->
+  <section id="menu" class="py-20 md:py-32 bg-background">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-12 text-primary" data-aos="fade-up">Menu</h2>
+
+      <!-- Lead Paragraph -->
+      <p class="text-left text-lg leading-relaxed mb-16 max-w-4xl mx-auto" data-aos="fade-up">
+        Hand-drip coffee brewed from 30+ house-roasted beans, freshly made gluten-free food, and house-made sweets that pair beautifully with coffee — every item on the Green Beans Coffee menu is crafted with care and warmth.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <!-- Coffee Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up">
+          <img src="/assets/images/menu-coffee.jpg" alt="Green Beans Coffee in Kitasando / Sendagaya, Tokyo. House-roasted coffee brewed one cup at a time by hand-drip — tailored to your taste." class="w-full h-64 object-cover" loading="lazy" decoding="async">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Coffee</h3>
+            <p class="mb-4">Each cup is brewed by hand with care, served in a distinctive asymmetric cup with different rim thicknesses on each side. The left and right sides offer subtly different aromas and flavors — a unique experience you won't find anywhere else.</p>
+            <p class="font-semibold text-primary">Fruity / Mild / Bitter / Decaf</p>
+          </div>
+        </div>
+
+        <!-- Food Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+          <img src="/assets/images/menu-focaccia.jpg" alt="Green Beans Coffee's gluten-free one-plate lunch in Kitasando / Sendagaya, Tokyo. Nutritionally balanced with quality ingredients." class="w-[85%] h-64 object-contain mx-auto block" loading="lazy" decoding="async">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Food</h3>
+            <p class="leading-relaxed">Don't miss the gluten-free one-plate lunch. It features house-made rice flour focaccia (baked fresh every morning) and a salad, plus your choice of main and side dish. Stay after lunch — drinks are half price until 3 PM.</p>
+          </div>
+        </div>
+
+        <!-- Sweets Card -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <img src="/assets/images/menu-sweets.jpg" alt="House-made sweets and gluten-free desserts at Green Beans Coffee in Kitasando / Sendagaya, Tokyo. Perfectly paired with specialty coffee." class="w-[98%] h-64 object-contain mx-auto block" loading="lazy" decoding="async">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-4 text-primary">Sweets</h3>
+            <p class="leading-relaxed">A moist rice flour chocolate brownie (gluten-free), a colorful house-made sweets plate, apple pie with caramel ice cream, and creamy ice cream made with premium Hokkaido milk — all crafted to complement the coffee.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- View Full Menu Button -->
+      <div class="text-center mt-12" data-aos="fade-up">
+        <button onclick="openMenuModal()" class="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-300 shadow-md hover:shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          View Full Menu
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Modal -->
+  <div id="menuModal" class="hidden fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 md:p-8" onclick="closeMenuModal()">
+    <div class="relative max-w-sm w-full" onclick="event.stopPropagation()">
+      <!-- Close Button -->
+      <button onclick="closeMenuModal()" class="absolute -top-16 right-0 text-white hover:text-accent transition bg-black/50 rounded-full p-2" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Navigation Arrows - Desktop -->
+      <button onclick="changeMenuPage(-1)" class="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 text-white hover:text-accent transition" aria-label="Previous page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button onclick="changeMenuPage(1)" class="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 text-white hover:text-accent transition" aria-label="Next page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Navigation Arrows - Mobile -->
+      <button onclick="changeMenuPage(-1)" class="md:hidden absolute left-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3" aria-label="Previous page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button onclick="changeMenuPage(1)" class="md:hidden absolute right-2 top-1/2 -translate-y-1/2 text-white hover:text-accent transition bg-black/50 rounded-full p-3" aria-label="Next page">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Menu Image -->
+      <img id="menuModalImage" src="" alt="Green Beans Coffee menu" class="w-full h-auto rounded-lg shadow-2xl">
+
+      <!-- Page Counter -->
+      <div class="text-center mt-4 text-white">
+        <span id="menuPageCounter">1 / 9</span>
+      </div>
+    </div>
+  </div>
+
   <!-- (Remaining sections to be added) -->
 
   <!-- AOS Initialization -->
@@ -399,6 +497,47 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
         history.replaceState(null, null, window.location.pathname);
       });
+    });
+
+    // Menu Modal
+    const menuPages = [
+      '/assets/images/menu-page-1.jpg',
+      '/assets/images/menu-page-2.jpg',
+      '/assets/images/menu-page-3.jpg',
+      '/assets/images/menu-page-4.jpg',
+      '/assets/images/menu-page-5.jpg',
+      '/assets/images/menu-page-6.jpg',
+      '/assets/images/menu-page-7.jpg',
+      '/assets/images/menu-page-8.jpg',
+      '/assets/images/menu-page-9.jpg'
+    ];
+    let currentMenuPage = 0;
+
+    function openMenuModal() {
+      currentMenuPage = 0;
+      updateMenuPage();
+      document.getElementById('menuModal').classList.remove('hidden');
+    }
+    function closeMenuModal() {
+      document.getElementById('menuModal').classList.add('hidden');
+    }
+    function changeMenuPage(direction) {
+      currentMenuPage += direction;
+      if (currentMenuPage < 0) currentMenuPage = menuPages.length - 1;
+      if (currentMenuPage >= menuPages.length) currentMenuPage = 0;
+      updateMenuPage();
+    }
+    function updateMenuPage() {
+      document.getElementById('menuModalImage').src = menuPages[currentMenuPage];
+      document.getElementById('menuPageCounter').textContent = `${currentMenuPage + 1} / ${menuPages.length}`;
+    }
+    document.addEventListener('keydown', (e) => {
+      const menuModal = document.getElementById('menuModal');
+      if (!menuModal.classList.contains('hidden')) {
+        if (e.key === 'ArrowLeft') changeMenuPage(-1);
+        if (e.key === 'ArrowRight') changeMenuPage(1);
+        if (e.key === 'Escape') closeMenuModal();
+      }
     });
 
     // Payment Modal
