@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPQZLGFJVX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LPQZLGFJVX');
+  </script>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+
+  <!-- OGP -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  {% if thumbnail %}
+  <meta property="og:image" content="https://greenbeanscoffeeambassador.com{{ thumbnail }}">
+  {% else %}
+  <meta property="og:image" content="https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg">
+  {% endif %}
+
+  <link rel="canonical" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- CDN: Tailwind CSS v4 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- CDN: Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Noto Sans JP', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Noto Serif JP', serif; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A3728',
+            secondary: '#8B7355',
+            accent: '#C9A86C',
+            background: '#FAF8F5',
+            text: '#2D2A26',
+          }
+        }
+      }
+    }
+  </script>
+
+  {% block head %}{% endblock %}
+</head>
+
+<body class="bg-[#FAF8F5] text-[#2D2A26] overflow-x-hidden">
+
+  <!-- Navigation（記事ページ専用：シンプル構成） -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 shadow-md text-[#4A3728] transition-all duration-300">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+      <!-- 左：ブランド + ナビ -->
+      <div class="flex items-center gap-4 text-sm">
+        <a href="/" class="font-semibold text-[#4A3728] hover:text-[#C9A86C] transition whitespace-nowrap">GBC</a>
+        <span class="text-[#D0C4B0] hidden sm:block select-none">/</span>
+        <a href="/" class="hidden sm:flex items-center gap-1 text-xs text-[#8B7355] hover:text-[#4A3728] transition whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+          メインサイト
+        </a>
+        <span class="text-[#D0C4B0] hidden sm:block select-none">/</span>
+        <span class="hidden sm:block text-xs font-bold text-[#4A3728]">Articles</span>
+      </div>
+
+      <!-- 右：言語切替 + Pet Site + モバイルメニューボタン -->
+      <div class="flex items-center gap-3">
+        <!-- Language Toggle -->
+        <div class="flex items-center border border-[#4A3728]/40 rounded-full overflow-hidden text-xs">
+          <a href="/" class="px-3 py-1 bg-[#C9A86C]/50 text-[#4A3728] font-bold">JA</a>
+          <span class="w-px self-stretch bg-[#4A3728]/20"></span>
+          <a href="/en/" class="px-3 py-1 text-[#8B7355] hover:bg-[#4A3728]/10 transition">EN</a>
+        </div>
+
+        <!-- Pet Site Link -->
+        <a href="/pets/" class="flex items-center gap-1.5 border border-[#C9A86C] text-[#C9A86C] rounded-full px-3 py-1 text-xs hover:bg-[#C9A86C] hover:text-white transition whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M8.35 3c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C10 3.73 9.24 3 8.35 3m7.3 0c-.44 0-.84.17-1.15.47-.3.31-.5.69-.5 1.11 0 .94.77 1.67 1.68 1.67.43 0 .83-.17 1.14-.47.3-.31.5-.69.5-1.11C17.32 3.73 16.56 3 15.65 3M5 6.5c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72C2.55 10.01 3.53 11 4.67 11c.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72C7.11 7.5 6.13 6.5 5 6.5m14 0c-.66 0-1.27.26-1.73.7-.45.46-.72 1.07-.72 1.72 0 1.09.98 2.08 2.12 2.08.65 0 1.26-.26 1.72-.7.45-.46.72-1.07.72-1.72 0-1.08-.98-2.08-2.11-2.08m-7 3c-2.35 0-4.23 1.88-4.53 4.26-.06.53.27.98.8.98h7.46c.53 0 .86-.45.8-.98C16.23 11.38 14.35 9.5 12 9.5"/></svg>
+          Pet Site
+        </a>
+
+        <!-- Mobile menu button（スマホのみ） -->
+        <button id="mobile-menu-btn" class="sm:hidden text-[#4A3728]" aria-label="メニューを開く">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu（スマホのみ） -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white/95 backdrop-blur-md border-t border-[#E8E0D5]">
+      <ul class="flex flex-col p-4 text-sm gap-1 text-[#4A3728]">
+        <li>
+          <a href="/" class="flex items-center gap-2 py-2 hover:text-[#C9A86C] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            メインサイトへ
+          </a>
+        </li>
+        <li><a href="/articles/" class="block py-2 font-bold">Articles 一覧</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-16">
+    {{ content | safe }}
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#4A3728] text-white/70 text-center py-8 text-xs mt-16">
+    <p class="mb-1"><a href="/" class="hover:text-[#C9A86C] transition">Green Beans Coffee アンバサダーサイト</a></p>
+    <p>GBCアンバサダー Kikumi ／ <a href="/articles/" class="hover:text-[#C9A86C] transition">記事一覧</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+---
+layout: articles-base.njk
+title: GBC コラム | Green Beans Coffee アンバサダーサイト
+description: Green Beans Coffeeに関するコーヒー・ペット・グルテンフリー・体験イベントのコラム記事一覧です。
+permalink: /articles/index.html
+---
+
+<main class="max-w-5xl mx-auto px-4 py-12">
+
+  <div class="mb-10 text-center">
+    <h1 class="text-3xl font-bold text-[#4A3728] mb-3">GBC コラム</h1>
+    <p class="text-[#8B7355]">Green Beans Coffee にまつわるコーヒー・ペット・グルテンフリー・体験イベントの記事</p>
+  </div>
+
+  {%- if collections.articles.length == 0 %}
+  <p class="text-center text-[#8B7355] py-20">記事を準備中です。</p>
+  {%- else %}
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {%- for post in collections.articles %}
+    <a href="{{ post.url }}" class="group block bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
+      {%- if post.data.thumbnail %}
+      <div class="aspect-video overflow-hidden">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      </div>
+      {%- endif %}
+      <div class="p-5">
+        {%- if post.data.tags %}
+        <div class="flex flex-wrap gap-1 mb-2">
+          {%- for tag in post.data.tags %}
+          {%- if tag != "articles" %}
+          <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">{{ tag }}</span>
+          {%- endif %}
+          {%- endfor %}
+        </div>
+        {%- endif %}
+        <h2 class="text-base font-bold text-[#2D2A26] mb-2 group-hover:text-[#4A3728] leading-snug">{{ post.data.title }}</h2>
+        {%- if post.data.description %}
+        <p class="text-sm text-[#8B7355] line-clamp-2">{{ post.data.description }}</p>
+        {%- endif %}
+        <p class="text-xs text-[#B0A090] mt-3">{{ post.date | dateJa }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+
+  {%- endif %}
+
+</main>

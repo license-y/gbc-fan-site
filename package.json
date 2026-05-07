@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "search": "node dev-tools/unsplash-search.js",
-    "update-images": "node scripts/update-images.js"
+    "update-images": "node scripts/update-images.js",
+    "dev": "eleventy --serve --input=src --output=public",
+    "build": "eleventy --input=src --output=public"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -24,5 +26,8 @@
   "license": "MIT",
   "engines": {
     "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
   }
 }

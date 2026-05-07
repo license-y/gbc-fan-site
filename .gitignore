@@ -151,3 +151,6 @@ inbox/*
 !inbox/monthly-coffee/
 inbox/monthly-coffee/*
 !inbox/monthly-coffee/.gitkeep
+
+# 11ty ビルド生成物（Cloudflare Pages がビルド時に生成する）
+public/articles/
