@@ -2,11 +2,11 @@
 layout: article.njk
 title: 自分で焙煎したコーヒーを飲む体験：Green Beans Coffeeの焙煎イベントに参加しました
 description: コーヒー豆を自分で焙煎して、その場で飲む体験イベント。北参道のGreen Beans Coffeeで定期開催されている焙煎体験に参加したレポートです。コーヒー初心者でも楽しめる内容でした。
-date: 2026-05-07
+date: 2026-05-01
 tags:
   - articles
   - 体験・イベント
-thumbnail: /assets/images/events/event-roasting.jpg
+thumbnail: /assets/images/articles/roasting-event.jpg
 ---
 
 「コーヒーが好きだけど、豆のことはよくわからない」——私もずっとそうでした。Green Beans Coffeeで焙煎体験のイベントがあると聞いて、思い切って参加してみました。

@@ -2,7 +2,7 @@
 layout: article.njk
 title: 小麦粉不使用でこのおいしさ：Green Beans Coffeeの米粉フォカッチャ
 description: グルテンフリー生活でカフェを敬遠していた方へ。北参道のGreen Beans Coffeeでは米粉を使ったフォカッチャをはじめ、グルテンフリー対応のフードメニューが充実しています。コーヒーとのペアリングも含めてレポートします。
-date: 2026-05-07
+date: 2026-05-03
 tags:
   - articles
   - グルテンフリー

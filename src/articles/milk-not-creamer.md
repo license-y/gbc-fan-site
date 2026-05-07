@@ -2,7 +2,7 @@
 layout: article.njk
 title: コーヒーフレッシュを使わない。それだけで分かるGBCの本気度
 description: Green Beans Coffeeではコーヒーフレッシュ（植物性液体クリーム）を使わず本物の牛乳を提供。ホットコーヒーには温めたミルクを添えるというこだわりは年に一度出会えるかどうかの希少な体験です。
-date: 2026-05-07
+date: 2026-05-06
 tags:
   - articles
   - コーヒー
