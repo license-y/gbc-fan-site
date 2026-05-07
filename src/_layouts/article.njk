@@ -55,7 +55,7 @@ layout: articles-base.njk
 
       <!-- アイキャッチ画像 -->
       {% if thumbnail %}
-      <div class="rounded-xl overflow-hidden mb-8">
+      <div class="max-w-[500px] mx-auto rounded-xl overflow-hidden mb-8">
         <img src="{{ thumbnail }}" alt="{{ title }}" class="w-full object-cover" loading="lazy" decoding="async">
       </div>
       {% endif %}
@@ -134,26 +134,84 @@ layout: articles-base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
             最新記事
           </h2>
-          <ul class="space-y-3">
-            {% for post in collections.articles | slice(0, 5) %}
-            {% if post.url != page.url %}
-            <li>
-              <a href="{{ post.url }}" class="flex gap-3 group">
-                {% if post.data.thumbnail %}
-                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-16 h-12 object-cover rounded flex-shrink-0" loading="lazy">
-                {% else %}
-                <div class="w-16 h-12 bg-[#FAF8F5] rounded flex-shrink-0 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A86C" stroke-width="1.5"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2z"/></svg>
-                </div>
+          <ul class="divide-y divide-[#F0EAE0]">
+            {% set count = 0 %}
+            {% for post in collections.articles %}
+            {% if post.url != page.url and count < 5 %}
+            {% set count = count + 1 %}
+            {% set postTags = [] %}
+            {% for tag in post.data.tags %}
+              {% if tag != "articles" %}{% set postTags = (postTags.push(tag), postTags) %}{% endif %}
+            {% endfor %}
+            <li class="py-3">
+              <a href="{{ post.url }}" class="group block">
+                {% if postTags.length > 0 %}
+                <span class="text-xs text-[#B0A090]">{{ postTags[0] }}</span>
                 {% endif %}
-                <div>
-                  <p class="text-xs text-[#2D2A26] leading-snug group-hover:text-[#C9A86C] transition line-clamp-2">{{ post.data.title }}</p>
-                  <p class="text-xs text-[#B0A090] mt-1">{{ post.date | dateJa }}</p>
-                </div>
+                <p class="text-xs font-medium text-[#2D2A26] leading-snug group-hover:text-[#C9A86C] transition mt-0.5 line-clamp-2">{{ post.data.title }}</p>
+                <p class="text-xs text-[#B0A090] mt-1">{{ post.date | dateJa }}</p>
               </a>
             </li>
             {% endif %}
             {% endfor %}
+          </ul>
+        </div>
+
+        <!-- アクセス情報 -->
+        <div class="bg-white rounded-xl border border-[#E8E0D5] p-6">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            アクセス
+          </h2>
+          <ul class="space-y-2.5 text-xs text-[#2D2A26]">
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">住所</span>
+              <span>東京都渋谷区<br>千駄ヶ谷3-30-1<br>RC APARTMENT 1階</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">最寄駅</span>
+              <span>北参道駅 徒歩3分<br>千駄ヶ谷駅 徒歩7分</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">営業時間</span>
+              <span>10:30〜20:00<br><span class="text-[#B0A090]">L.O. 19:30</span></span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">定休日</span>
+              <span>不定休<br><a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer" class="text-[#C9A86C] hover:underline">Instagram で確認</a></span>
+            </li>
+          </ul>
+          <a href="/#access" class="inline-flex items-center gap-1 text-xs text-[#8B7355] hover:text-[#4A3728] transition mt-4">
+            地図・詳細アクセス
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+
+        <!-- SNS リンク -->
+        <div class="bg-white rounded-xl border border-[#E8E0D5] p-6">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            公式 SNS
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-3 text-xs text-[#2D2A26] hover:text-[#C9A86C] transition group">
+                <span class="w-7 h-7 rounded-full bg-[#FAF8F5] border border-[#E8E0D5] flex items-center justify-center flex-shrink-0 group-hover:border-[#C9A86C] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </span>
+                <span>@green.beanscoffee<br><span class="text-[#B0A090]">最新情報・定休日</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@greenbeanscoffee9" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-3 text-xs text-[#2D2A26] hover:text-[#C9A86C] transition group">
+                <span class="w-7 h-7 rounded-full bg-[#FAF8F5] border border-[#E8E0D5] flex items-center justify-center flex-shrink-0 group-hover:border-[#C9A86C] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9"/></svg>
+                </span>
+                <span>Green Beans Coffee<br><span class="text-[#B0A090]">動画・イベント記録</span></span>
+              </a>
+            </li>
           </ul>
         </div>
 

@@ -1082,9 +1082,9 @@
         Green Beans Coffee にまつわるコーヒー・ペット・グルテンフリー・体験イベントについて、<br class="hidden md:block">アンバサダー Kikumi が実際の体験をもとに発信しています。
       </p>
 
-      <!-- 記事カード -->
-      <div id="articles-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12" data-aos="fade-up">
-        <!-- 記事カードはJSで動的に生成 -->
+      <!-- 記事リスト -->
+      <div id="articles-grid" class="max-w-3xl mx-auto mb-12 border border-[#E8E0D5] rounded-xl overflow-hidden bg-white max-h-[280px] overflow-y-auto" data-aos="fade-up">
+        <!-- 記事リストはJSで動的に生成 -->
       </div>
 
       <div class="text-center" data-aos="fade-up">
@@ -2267,26 +2267,17 @@
       fetch('/articles/articles.json')
         .then(function(r) { return r.json(); })
         .then(function(articles) {
-          const latest = articles.slice(0, 3);
-          if (latest.length === 0) {
-            grid.innerHTML = '<p class="col-span-3 text-center text-secondary py-8">記事を準備中です。</p>';
+          if (articles.length === 0) {
+            grid.innerHTML = '<p class="text-center text-secondary py-8 text-sm">記事を準備中です。</p>';
             return;
           }
-          grid.innerHTML = latest.map(function(a) {
-            const tags = (a.tags || []).map(function(t) {
-              return '<span class="text-xs bg-background text-secondary border border-[#E8E0D5] rounded-full px-2 py-0.5">' + t + '</span>';
-            }).join('');
-            const img = a.thumbnail
-              ? '<div class="aspect-video overflow-hidden"><img src="' + a.thumbnail + '" alt="' + a.title + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async"></div>'
-              : '';
-            return '<a href="' + a.url + '" class="group block bg-[#FAF8F5] rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">'
-              + img
-              + '<div class="p-5">'
-              + (tags ? '<div class="flex flex-wrap gap-1 mb-2">' + tags + '</div>' : '')
-              + '<h3 class="text-base font-bold text-text mb-2 group-hover:text-primary leading-snug">' + a.title + '</h3>'
-              + (a.description ? '<p class="text-sm text-secondary line-clamp-2">' + a.description + '</p>' : '')
-              + '<p class="text-xs text-[#B0A090] mt-3">' + a.date + '</p>'
-              + '</div></a>';
+          grid.innerHTML = articles.map(function(a, i) {
+            const tag = (a.tags || [])[0] || '';
+            const border = i < articles.length - 1 ? ' border-b border-[#E8E0D5]' : '';
+            return '<a href="' + a.url + '" class="group flex items-center justify-between px-6 py-4 hover:bg-[#FAF8F5] transition-colors duration-150' + border + '">'
+              + '<span class="text-sm text-[#2D2A26] group-hover:text-[#4A3728] transition leading-snug pr-4">' + a.title + '</span>'
+              + '<span class="text-xs text-[#B0A090] whitespace-nowrap flex-shrink-0">' + (tag ? tag + '　' : '') + a.date + '</span>'
+              + '</a>';
           }).join('');
         })
         .catch(function() {
