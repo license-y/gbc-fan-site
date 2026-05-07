@@ -52,6 +52,25 @@
     <div class="subtitle">記事の追加・公開・サイト管理の手順書 ／ オーナー向け</div>
   </div>
 
+  <!-- 00 作業開始前の必須確認 -->
+  <div class="section">
+    <div class="section-title" style="background: #FFF0F0; border-left-color: #CC4444;">00　作業開始前の必須確認</div>
+    <div class="alert">
+      <p>⚠️ <strong>複数人で管理しているため、</strong>作業を始める前に必ず最新のファイルを取得してください。取得せずに作業を始めると、他の人の変更が上書きされてしまう場合があります。</p>
+    </div>
+    <div class="subsection-title">作業開始時に必ず行うこと</div>
+    <p>Claude Codeのチャット欄に以下を入力して、Enterキーを押します。</p>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">! git pull origin main</div>
+    </div>
+    <div class="highlight">
+      <p>💡 <strong>「!」（ビックリマーク）について</strong>：Claude Codeのチャット欄で <code>!</code> に続けてコマンドを入力すると、ターミナルのコマンドとして直接実行されます。許可を求める画面が出たら「許可」をクリックしてください。</p>
+    </div>
+    <p>「<code>Already up to date.</code>」と表示されれば最新の状態です。そのまま作業を続けてください。</p>
+    <p>ファイルのダウンロードが始まった場合は、完了を待ってから作業を開始してください。</p>
+  </div>
+
   <!-- 01 全体の仕組み -->
   <div class="section">
     <div class="section-title">01　サイトの仕組み（全体像）</div>
@@ -114,6 +133,24 @@
     </div>
     <div class="highlight">
       <p>💡 <strong>文体のルール</strong>：記事はすべて「GBCアンバサダーとして体験・聞いた」という立場で書きます。店側の公式説明のような書き方（「〜を提供しています」「〜にこだわっています」）にならないよう、Claudeが自動的に確認・修正します。修正した場合はどこをどう直したか報告します。</p>
+    </div>
+
+    <div class="subsection-title">ステップ 4-B：ローカルで記事の見た目を確認する（任意）</div>
+    <p>コミット＆プッシュの前に手元でレイアウトを確認したい場合は、Claudeに依頼できます。</p>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">ローカルで確認したいので開発サーバーを起動してください。</div>
+    </div>
+    <p>Claudeが <code>npm run dev</code> を実行し、確認用のURLを教えてくれます。ブラウザでそのURLを開いて記事の見た目を確認してください。確認が終わったら次のように伝えます。</p>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">確認できました。サーバーを止めてください。</div>
+    </div>
+    <div class="alert">
+      <p>⚠️ <strong>ローカル確認時の制限</strong>：開発サーバー（<code>npm run dev</code>）では記事のレイアウト・文章は確認できますが、<strong>検索機能は動作しません</strong>。検索もあわせて確認したい場合は「フルビルドでも確認したい」とClaudeに伝えてください。</p>
+    </div>
+    <div class="highlight">
+      <p>💡 確認用URLの例：<code>http://localhost:8080/articles/</code>（記事一覧）または <code>http://localhost:8080/articles/記事のスラッグ名/</code>（個別記事）。正確なURLはClaudeが教えてくれます。</p>
     </div>
 
     <div class="subsection-title">ステップ 5：公開する</div>
