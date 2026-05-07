@@ -96,7 +96,7 @@
           <li><a href="#menu" class="hover:text-accent transition">Menu</a></li>
           <li><a href="#experience" class="hover:text-accent transition">Experience</a></li>
           <li><a href="#access" class="hover:text-accent transition">Access</a></li>
-          <li><a href="#visit-diary" class="hover:text-accent transition">Visit Diary</a></li>
+          <li><a href="#articles" class="hover:text-accent transition">Articles</a></li>
           <li><a href="#faq" class="hover:text-accent transition">FAQ</a></li>
         </ul>
         <!-- Language Toggle -->
@@ -127,7 +127,7 @@
         <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
         <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
-        <li><a href="#visit-diary" class="block py-2 hover:text-accent transition">Visit Diary</a></li>
+        <li><a href="/articles/" class="block py-2 hover:text-accent transition">Articles</a></li>
         <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
         <li class="border-t border-primary/20 pt-3 mt-1 flex items-center gap-3">
           <span class="text-sm text-secondary">Language:</span>
@@ -1073,6 +1073,28 @@
       </div>
     </div>
   </div>
+
+  <!-- Articles Section -->
+  <section id="articles" class="py-20 md:py-32 bg-white scroll-mt-20">
+    <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
+      <h2 class="text-4xl font-bold text-center mb-4 text-primary" data-aos="fade-up">GBC コラム</h2>
+      <p class="text-left md:text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
+        Green Beans Coffee にまつわるコーヒー・ペット・グルテンフリー・体験イベントについて、<br class="hidden md:block">アンバサダー Kikumi が実際の体験をもとに発信しています。
+      </p>
+
+      <!-- 記事リスト -->
+      <div id="articles-grid" class="max-w-3xl mx-auto mb-12 border border-[#E8E0D5] rounded-xl overflow-hidden bg-white max-h-[280px] overflow-y-auto" data-aos="fade-up">
+        <!-- 記事リストはJSで動的に生成 -->
+      </div>
+
+      <div class="text-center" data-aos="fade-up">
+        <a href="/articles/" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors duration-300 shadow-md hover:shadow-lg">
+          記事一覧はこちら
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!-- FAQ Section -->
   <section id="faq" class="py-20 md:py-32 bg-white scroll-mt-32">
@@ -2234,6 +2256,34 @@
         }
       }
     });
+  </script>
+
+  <!-- Articles セクション：記事カード動的生成 -->
+  <script>
+    (function() {
+      const grid = document.getElementById('articles-grid');
+      if (!grid) return;
+
+      fetch('/articles/articles.json')
+        .then(function(r) { return r.json(); })
+        .then(function(articles) {
+          if (articles.length === 0) {
+            grid.innerHTML = '<p class="text-center text-secondary py-8 text-sm">記事を準備中です。</p>';
+            return;
+          }
+          grid.innerHTML = articles.map(function(a, i) {
+            const tag = (a.tags || [])[0] || '';
+            const border = i < articles.length - 1 ? ' border-b border-[#E8E0D5]' : '';
+            return '<a href="' + a.url + '" class="group flex items-center justify-between px-6 py-4 hover:bg-[#FAF8F5] transition-colors duration-150' + border + '">'
+              + '<span class="text-sm text-[#2D2A26] group-hover:text-[#4A3728] transition leading-snug pr-4">' + a.title + '</span>'
+              + '<span class="text-xs text-[#B0A090] whitespace-nowrap flex-shrink-0">' + (tag ? tag + '　' : '') + a.date + '</span>'
+              + '</a>';
+          }).join('');
+        })
+        .catch(function() {
+          grid.innerHTML = '';
+        });
+    })();
   </script>
 </body>
 </html>

@@ -408,3 +408,89 @@ assets/images/magazine/YYYYMM-back.jpg
 
 - 旧URL（gbc-fan-site.pages.dev）は引き続きアクセス可能
 - 必要に応じてリダイレクト設定を検討
+
+---
+
+# GBC コラム（11ty 記事管理）
+
+## 概要
+
+メインサイトに 11ty（Eleventy）を使った記事管理システムを追加。`/articles/` 以下で動作。
+
+## ファイル構成
+
+```
+src/
+├── articles/                         # 記事ソース（Markdownで追加）
+│   ├── *.md                          # 個別記事ファイル
+│   ├── index.njk                     # 記事一覧ページ
+│   ├── articles.json.11ty.js         # 記事リストJSON（自動生成）
+│   ├── tags/index.njk                # カテゴリ別一覧（自動生成）
+│   └── articles-sitemap.xml.11ty.js  # 記事サイトマップ（自動生成）
+├── _layouts/
+│   ├── articles-base.njk             # 記事ページ共通ナビ・フッター
+│   └── article.njk                   # 個別記事テンプレート（サイドバー付き）
+.eleventy.js                          # 11ty設定ファイル
+```
+
+## ビルドコマンド
+
+```bash
+npm run dev    # ローカル確認（記事ページのみ。検索機能は動作しない）
+npm run build  # 本番ビルド（eleventy + pagefind。Cloudflare Pagesが自動実行）
+```
+
+**重要**: `npm run dev` では検索（Pagefind）は動作しない。検索テストは `npm run build` 後に `npx serve public` で確認。
+
+## 記事の追加手順
+
+1. `src/articles/` に `.md` ファイルを作成
+2. フロントマターを記述（layout・title・description・date・tags・thumbnail）
+3. `tags` には必ず `articles` を含める
+4. コミット＆プッシュ → Cloudflare Pages が自動ビルド・デプロイ
+
+## フロントマターのテンプレート
+
+```markdown
+---
+layout: article.njk
+title: 記事タイトル
+description: 100〜120文字の要約
+date: 2026-05-07
+tags:
+  - articles
+  - カテゴリ名
+thumbnail: /assets/images/hero_bg-1.jpg
+---
+```
+
+## 現在のカテゴリ
+
+- ペットとコーヒー
+- グルテンフリー
+- 体験・イベント
+- （新カテゴリはtags:に追加するだけで自動生成）
+
+## 自動生成されるファイル（.gitignore対象）
+
+- `public/articles/` — ビルド時に生成
+- `public/articles-sitemap.xml` — 記事サイトマップ（記事追加時に自動更新）
+- `public/pagefind/` — 検索インデックス
+
+## Articles ナビリンクの変更タイミング
+
+現在は `href="#articles"` でメインページ内スクロール。
+**記事が10本を超えたら** `href="/articles/"` に変更する（`public/index.html` のデスクトップ・モバイル両方）。
+
+## サイトマップ
+
+| ファイル | 管理 |
+|---------|------|
+| `public/sitemap.xml` | 手動（大きな変更時のみ更新） |
+| `public/articles-sitemap.xml` | 自動（ビルド時に自動生成） |
+
+Google Search Console に両方登録すること。
+
+## 詳細な運用手順
+
+`project-docs/articles-handoff-guide.html` を参照。
