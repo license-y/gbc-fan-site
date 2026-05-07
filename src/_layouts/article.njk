@@ -2,9 +2,20 @@
 layout: articles-base.njk
 ---
 
+<style>
+  .special-h2 {
+    background: #FAF8F5;
+    border-left: 3px solid #C9A86C !important;
+    border-bottom: none !important;
+    padding: 8px 16px !important;
+    margin-top: 3rem !important;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+
 <div class="max-w-6xl mx-auto px-4 py-12">
 
-  <!-- パンくずリスト -->
+  <!-- パンくずリスト（フル幅） -->
   <nav class="text-xs text-[#8B7355] mb-6 flex items-center gap-1">
     <a href="/" class="hover:text-[#4A3728] transition">トップ</a>
     <span>/</span>
@@ -13,41 +24,42 @@ layout: articles-base.njk
     <span class="text-[#4A3728]">{{ title }}</span>
   </nav>
 
-  <div class="flex flex-col lg:flex-row gap-10">
+  <!-- 記事ヘッダー（フル幅） -->
+  <header class="mb-10">
+    <!-- タグ -->
+    {% if tags %}
+    <div class="flex flex-wrap gap-2 mb-4">
+      {% for tag in tags %}
+      {% if tag != "articles" %}
+      <a href="/articles/tags/{{ tag }}/" class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-3 py-1 hover:bg-[#C9A86C] hover:text-white hover:border-[#C9A86C] transition">{{ tag }}</a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
 
-    <!-- メイン記事エリア -->
-    <article class="lg:w-2/3">
-      <!-- 記事ヘッダー -->
-      <header class="mb-8">
-        <!-- タグ -->
-        {% if tags %}
-        <div class="flex flex-wrap gap-2 mb-4">
-          {% for tag in tags %}
-          {% if tag != "articles" %}
-          <a href="/articles/tags/{{ tag }}/" class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-3 py-1 hover:bg-[#C9A86C] hover:text-white hover:border-[#C9A86C] transition">{{ tag }}</a>
-          {% endif %}
-          {% endfor %}
-        </div>
-        {% endif %}
+    <!-- タイトル -->
+    <h1 class="text-2xl md:text-4xl font-bold text-[#4A3728] leading-snug mb-4">{{ title }}</h1>
 
-        <!-- タイトル -->
-        <h1 class="text-2xl md:text-3xl font-bold text-[#4A3728] leading-snug mb-4">{{ title }}</h1>
+    <!-- メタ情報 -->
+    <div class="flex items-center gap-4 text-xs text-[#8B7355] border-b border-[#E8E0D5] pb-5">
+      <span>{{ page.date | dateJa }}</span>
+      <span>GBCアンバサダー Kikumi</span>
+    </div>
+  </header>
 
-        <!-- メタ情報 -->
-        <div class="flex items-center gap-4 text-xs text-[#8B7355] border-b border-[#E8E0D5] pb-4">
-          <span>{{ page.date | dateJa }}</span>
-          <span>GBCアンバサダー Kikumi</span>
-        </div>
-      </header>
+  <!-- 2カラムレイアウト（メタ情報の下から） -->
+  <div class="flex flex-col lg:flex-row gap-10 mt-8">
+
+    <!-- 本文エリア -->
+    <article class="lg:w-2/3 min-w-0">
 
       <!-- アイキャッチ画像 -->
       {% if thumbnail %}
-      <div class="mb-8 rounded-xl overflow-hidden">
+      <div class="rounded-xl overflow-hidden mb-8">
         <img src="{{ thumbnail }}" alt="{{ title }}" class="w-full object-cover" loading="lazy" decoding="async">
       </div>
       {% endif %}
 
-      <!-- 記事本文 -->
       <div class="prose prose-stone max-w-none
         prose-headings:font-serif prose-headings:text-[#4A3728]
         prose-h2:text-xl prose-h2:border-b prose-h2:border-[#E8E0D5] prose-h2:pb-2 prose-h2:mt-10
@@ -56,13 +68,37 @@ layout: articles-base.njk
         prose-a:text-[#C9A86C] prose-a:no-underline hover:prose-a:underline
         prose-img:rounded-lg
         prose-blockquote:border-l-[#C9A86C] prose-blockquote:bg-[#FAF8F5] prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-lg
-        prose-strong:text-[#4A3728]
-        prose-ul:list-disc prose-ol:list-decimal">
+        prose-strong:text-[#4A3728]">
         {{ content | safe }}
       </div>
 
-      <!-- 記事フッター（FAQ・関連記事誘導） -->
-      <div class="mt-12 pt-8 border-t border-[#E8E0D5]">
+      <!-- シェアボタン -->
+      <div class="mt-12 pt-8 border-t border-[#E8E0D5] text-center">
+        <p class="text-xs text-[#8B7355] mb-4">この記事をシェア</p>
+        <div class="inline-flex items-center gap-4">
+          <!-- X (Twitter) -->
+          <a id="share-x" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.856L1.254 2.25H8.08l4.259 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            ポスト
+          </a>
+          <!-- LINE -->
+          <a id="share-line" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            LINE
+          </a>
+          <!-- Facebook -->
+          <a id="share-fb" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- 記事フッター -->
+      <div class="mt-8 pt-6 border-t border-[#E8E0D5] text-center">
         <a href="/#faq" class="inline-flex items-center gap-2 text-sm text-[#8B7355] hover:text-[#4A3728] transition">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
           店舗についてのよくある質問はこちら
@@ -134,3 +170,23 @@ layout: articles-base.njk
 
   </div>
 </div>
+
+<script>
+  // まとめ・よくある質問 の h2 に特別スタイルを適用
+  document.querySelectorAll('article h2').forEach(function(h2) {
+    var text = h2.textContent.trim();
+    if (['まとめ', 'よくある質問', 'FAQ', 'Summary', 'Conclusion'].includes(text)) {
+      h2.classList.add('special-h2');
+    }
+  });
+
+  // SNS シェアボタンのURL設定
+  var pageUrl = encodeURIComponent(location.href);
+  var pageTitle = encodeURIComponent(document.title);
+  var shareX = document.getElementById('share-x');
+  var shareLine = document.getElementById('share-line');
+  var shareFb = document.getElementById('share-fb');
+  if (shareX) shareX.href = 'https://twitter.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle;
+  if (shareLine) shareLine.href = 'https://social-plugins.line.me/lineit/share?url=' + pageUrl;
+  if (shareFb) shareFb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
+</script>
