@@ -21,17 +21,24 @@
     .box-title { font-weight: 700; font-size: 13px; color: #4A3728; margin-bottom: 6px; }
     .highlight { background: #FFF8E8; border: 1px solid #C9A86C; border-radius: 4px; padding: 10px 14px; margin-bottom: 12px; }
     .alert { background: #FFF5F5; border: 1px solid #E8A0A0; border-radius: 4px; padding: 10px 14px; margin-bottom: 12px; }
+    .tech-box { background: #F5F3F0; border: 1px solid #D0C4B0; border-radius: 4px; padding: 10px 14px; margin-bottom: 12px; }
+    .tech-box-title { font-size: 11px; font-weight: 700; color: #8B7355; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
     .step { display: flex; gap: 10px; margin-bottom: 8px; font-size: 12px; align-items: flex-start; }
     .step-num { background: #4A3728; color: #fff; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
     .step-content strong { display: block; font-weight: 600; margin-bottom: 1px; }
     .step-content span { color: #666; font-size: 11px; }
+    .chat { background: #F8F6F3; border-radius: 8px; padding: 12px 14px; margin-bottom: 10px; font-size: 12px; }
+    .chat-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
+    .chat-label.you { color: #4A3728; }
+    .chat-label.claude { color: #8B7355; }
+    .chat-bubble { background: #fff; border: 1px solid #E8E0D5; border-radius: 6px; padding: 8px 12px; font-size: 12px; line-height: 1.7; }
     code { background: #F0EDE8; border: 1px solid #D0C4B0; border-radius: 3px; padding: 1px 5px; font-family: monospace; font-size: 12px; color: #4A3728; }
     pre { background: #F0EDE8; border: 1px solid #D0C4B0; border-radius: 4px; padding: 10px 12px; font-family: monospace; font-size: 11px; line-height: 1.7; overflow-x: auto; margin-bottom: 10px; white-space: pre-wrap; }
     table { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 12px; }
     th { background: #4A3728; color: #fff; padding: 7px 10px; text-align: left; font-weight: 500; }
     td { padding: 7px 10px; border-bottom: 1px solid #E8E0D5; vertical-align: top; }
     tr:nth-child(even) td { background: #FAF8F5; }
-    .tag { display: inline-block; background: #FAF8F5; border: 1px solid #C9A86C; border-radius: 12px; padding: 1px 8px; font-size: 11px; color: #4A3728; margin: 1px; }
+    .tag { display: inline-block; background: #FAF8F5; border: 1px solid #C9A86C; border-radius: 12px; padding: 1px 8px; font-size: 11px; color: #4A3728; margin: 2px; }
     .doc-footer { border-top: 1px solid #E8E0D5; padding-top: 10px; margin-top: 24px; font-size: 11px; color: #8B7355; text-align: center; }
     @media print { body { background: #fff; } .page { margin: 0; padding: 15mm 15mm 12mm; } }
   </style>
@@ -40,186 +47,156 @@
 <div class="page">
 
   <div class="doc-header">
-    <div class="date">2026年5月 作成</div>
+    <div class="date">2026年5月 作成・更新</div>
     <h1>GBC コラム 運用引き継ぎガイド</h1>
-    <div class="subtitle">記事の追加・公開・サイト管理の手順書 ／ Yukiさん向け</div>
+    <div class="subtitle">記事の追加・公開・サイト管理の手順書 ／ オーナー向け</div>
   </div>
 
   <!-- 01 全体の仕組み -->
   <div class="section">
     <div class="section-title">01　サイトの仕組み（全体像）</div>
-    <p>GBCコラムは「<strong>11ty（Eleventy）</strong>」という仕組みで動いています。記事をテキストファイル（Markdown）で書くと、自動的にウェブページが生成されます。</p>
+    <p>GBCコラムの記事は、<strong>Claude Code（AI）に指示するだけで作成・公開できます</strong>。Markdownファイルを自分で書く必要はありません。Claudeが記事を書き、GitHubへのアップロードも代行してくれます。</p>
     <div class="box">
-      <div class="box-title">記事を公開するまでの流れ</div>
+      <div class="box-title">記事を公開するまでの流れ（全体）</div>
       <div class="step">
         <div class="step-num">1</div>
-        <div class="step-content"><strong>Markdownファイルを作成・編集する</strong><span>src/articles/ フォルダに .md ファイルを追加するだけ</span></div>
+        <div class="step-content"><strong>Claude Code に「記事を書きたい」と伝える</strong><span>書きたい内容のメモを伝えるだけでOK</span></div>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-content"><strong>GitHub にアップロードする（push）</strong><span>Claude Code から「コミット＆プッシュ」を指示する</span></div>
+        <div class="step-content"><strong>Claudeの質問に答える</strong><span>カテゴリ・まとめの有無・Q&Aの有無・画像について5項目</span></div>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-content"><strong>Cloudflare Pages が自動でビルド＆公開する</strong><span>数分後に greenbeanscoffeeambassador.com/articles/ に反映される</span></div>
+        <div class="step-content"><strong>下書きを確認・修正する</strong><span>気になる箇所を伝えれば何度でも調整してもらえる</span></div>
       </div>
-    </div>
-    <div class="highlight">
-      <p>💡 <strong>Cloudflare Pages のビルドとは？</strong><br>
-      GitHubにアップすると、Cloudflare Pagesが自動的に <code>npm run build</code> を実行します。このコマンドが「MarkdownファイルをHTMLに変換する」「検索インデックスを生成する」「記事サイトマップを更新する」をすべて自動で行います。</p>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content"><strong>「コミット＆プッシュ」を指示する</strong><span>Cloudflare Pagesが自動でビルド＆公開。数分で反映される</span></div>
+      </div>
     </div>
   </div>
 
-  <!-- 02 記事の追加方法 -->
+  <!-- 02 実際の作成フロー -->
   <div class="section">
-    <div class="section-title">02　記事を追加する方法</div>
+    <div class="section-title">02　記事を作る流れ（具体例）</div>
 
-    <div class="subsection-title">ファイルの場所</div>
-    <p>記事ファイルはすべて <code>src/articles/</code> フォルダに置きます。</p>
-    <pre>src/
-└── articles/
-    ├── pet-cafe-sendagaya.md      ← サンプル記事①
-    ├── glutenfree-focaccia.md     ← サンプル記事②
-    ├── roasting-experience.md     ← サンプル記事③
-    └── 新しい記事.md              ← ここに追加していく</pre>
+    <div class="subsection-title">ステップ 1：「記事を書きたい」と伝える</div>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">記事を書きたいです。GBCはコーヒーフレッシュを使わずに本物の牛乳を使っています。ホットコーヒーには温めて提供してくれます。こういうお店は年に一度出会えるかどうかのレベルです。</div>
+    </div>
 
-    <div class="subsection-title">ファイル名のルール</div>
-    <p>ファイル名がそのままURLになります。<strong>英数字とハイフン（-）のみ</strong>使用してください。日本語・スペースは使用不可。</p>
-    <table>
-      <tr><th>ファイル名</th><th>URL</th></tr>
-      <tr><td><code>pet-cafe-sangubashi.md</code></td><td>/articles/pet-cafe-sangubashi/</td></tr>
-      <tr><td><code>coffee-how-to-brew.md</code></td><td>/articles/coffee-how-to-brew/</td></tr>
-    </table>
+    <div class="subsection-title">ステップ 2：Claudeから5つの質問が来る</div>
+    <div class="chat">
+      <div class="chat-label claude">Claude</div>
+      <div class="chat-bubble">
+        ありがとうございます。記事を作成する前に確認させてください。<br><br>
+        <strong>1. カテゴリ：</strong>以下の7つからどれにしますか？<br>
+        　コーヒー ／ 焙煎 ／ グルテンフリー ／ 体験・イベント ／ ペット ／ 美容健康 ／ ダガヤサンドウ<br><br>
+        <strong>2. まとめセクションをつけますか？</strong>（つける／つけない）<br><br>
+        <strong>3. 記事末尾にQ&Aをつけますか？</strong>（つける／つけない）<br><br>
+        <strong>4. 画像：</strong>提供しますか？Unsplashで探しますか？
+      </div>
+    </div>
 
-    <div class="subsection-title">記事ファイルの書き方</div>
-    <p>ファイルの先頭に「---」で囲まれた設定部分（フロントマター）を書き、その後に本文を書きます。</p>
-    <pre>---
-layout: article.njk
-title: ここに記事のタイトル
-description: ここに記事の要約（検索結果やSNSシェア時に表示されます）
-date: 2026-05-07
-tags:
-  - articles
-  - ペットとコーヒー
-thumbnail: /assets/images/hero_bg-1.jpg
----
+    <div class="subsection-title">ステップ 3：答えを返す（メモ程度でOK）</div>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">カテゴリはコーヒー。まとめはなし。Q&Aはつけてください。画像はUnsplashで探してください。</div>
+    </div>
 
-ここから本文を書きます。
+    <div class="subsection-title">ステップ 4：下書きが届く → 確認・修正</div>
+    <p>Claudeが記事の下書きを作成します。気になる部分があれば、そのまま伝えるだけで修正してもらえます。</p>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">冒頭の書き方を変えてほしいです。実際には「コーヒーフレッシュはありません」とは言われていないので。</div>
+    </div>
+    <div class="highlight">
+      <p>💡 <strong>文体のルール</strong>：記事はすべて「GBCアンバサダーとして体験・聞いた」という立場で書きます。店側の公式説明のような書き方（「〜を提供しています」「〜にこだわっています」）にならないよう、Claudeが自動的に確認・修正します。修正した場合はどこをどう直したか報告します。</p>
+    </div>
 
-## 見出し（大）
-
-本文の段落です。
-
-### 見出し（中）
-
-**太字** は重要な部分に使います。</pre>
-
-    <div class="subsection-title">フロントマターの各項目</div>
-    <table>
-      <tr><th>項目</th><th>必須</th><th>説明</th></tr>
-      <tr><td><code>layout</code></td><td>必須</td><td>必ず <code>article.njk</code> と書く（変更不要）</td></tr>
-      <tr><td><code>title</code></td><td>必須</td><td>記事のタイトル</td></tr>
-      <tr><td><code>description</code></td><td>推奨</td><td>100〜120文字の要約。SEO・SNSシェアに使用</td></tr>
-      <tr><td><code>date</code></td><td>必須</td><td>公開日（YYYY-MM-DD形式）</td></tr>
-      <tr><td><code>tags</code></td><td>必須</td><td><code>articles</code> は必ず含める。カテゴリを追加（後述）</td></tr>
-      <tr><td><code>thumbnail</code></td><td>任意</td><td>サムネイル画像のパス。なくてもOK</td></tr>
-    </table>
+    <div class="subsection-title">ステップ 5：公開する</div>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">OKです。コミット＆プッシュしてください。</div>
+    </div>
+    <p>以上で完了です。数分後にサイトに反映されます。</p>
   </div>
 
   <!-- 03 カテゴリ -->
   <div class="section">
-    <div class="section-title">03　カテゴリ（タグ）の管理</div>
-    <p>現在使用中のカテゴリ：</p>
-    <p>
-      <span class="tag">ペットとコーヒー</span>
+    <div class="section-title">03　カテゴリ（7つ固定）</div>
+    <p>カテゴリは以下の<strong>7つに固定</strong>されています。勝手に増やさず、必ずこの中から選んでください。</p>
+    <p style="margin: 10px 0;">
+      <span class="tag">コーヒー</span>
+      <span class="tag">焙煎</span>
       <span class="tag">グルテンフリー</span>
       <span class="tag">体験・イベント</span>
+      <span class="tag">ペット</span>
+      <span class="tag">美容健康</span>
+      <span class="tag">ダガヤサンドウ</span>
     </p>
-    <p style="margin-top:8px;">新しいカテゴリを追加したい場合は、<code>tags:</code> に新しい名前を書くだけで自動的に作成されます。</p>
-    <pre>tags:
-  - articles
-  - コーヒー      ← 新カテゴリを追加するだけでOK</pre>
     <div class="highlight">
-      <p>📌 <code>articles</code> タグは必ず入れてください。これがないと記事一覧に表示されません。</p>
+      <p>📌 カテゴリを追加・変更したい場合は「<strong>○○というカテゴリを追加したい</strong>」とClaudeに伝えてください。CLAUDE.mdも含めて一括で更新します。</p>
     </div>
   </div>
 
   <!-- 04 画像 -->
   <div class="section">
-    <div class="section-title">04　画像の使い方</div>
+    <div class="section-title">04　画像の追加方法</div>
 
-    <div class="subsection-title">使用できる画像（現在）</div>
-    <table>
-      <tr><th>パス</th><th>内容</th></tr>
-      <tr><td><code>/assets/images/hero_bg-1.jpg</code></td><td>店内（コーヒーを淹れる様子）</td></tr>
-      <tr><td><code>/assets/images/hero_bg-2.jpg</code></td><td>店内（別アングル）</td></tr>
-      <tr><td><code>/assets/images/about-interior.jpg</code></td><td>内装</td></tr>
-      <tr><td><code>/assets/images/about-shop-front.jpg</code></td><td>外観</td></tr>
-      <tr><td><code>/assets/images/menu-coffee.jpg</code></td><td>コーヒー</td></tr>
-      <tr><td><code>/assets/images/menu-focaccia.jpg</code></td><td>フォカッチャ</td></tr>
-      <tr><td><code>/assets/images/menu-sweets.jpg</code></td><td>スイーツ</td></tr>
-      <tr><td><code>/assets/images/experience-pet-1.jpg</code></td><td>ペット①</td></tr>
-      <tr><td><code>/assets/images/experience-pet-2.jpg</code></td><td>ペット②</td></tr>
-      <tr><td><code>/assets/images/events/event-roasting.jpg</code></td><td>焙煎体験イベント</td></tr>
-      <tr><td><code>/assets/images/events/event-handdrip.jpg</code></td><td>ハンドドリップ体験</td></tr>
-    </table>
-
-    <div class="subsection-title">新しい画像を追加したい場合</div>
+    <div class="subsection-title">自分で撮影した写真を使いたい場合</div>
     <div class="step">
       <div class="step-num">1</div>
-      <div class="step-content"><strong>画像を <code>public/assets/images/</code> に保存する</strong><span>サイズは横幅1200px以下に最適化推奨（TinyPNG: https://tinypng.com/）</span></div>
+      <div class="step-content"><strong><code>public/assets/images/articles/</code> フォルダに画像を置く</strong><span>ファイル名は仮のままでOK（Claudeがリネームします）</span></div>
     </div>
     <div class="step">
       <div class="step-num">2</div>
-      <div class="step-content"><strong>記事の <code>thumbnail:</code> にパスを書く</strong><span>例: <code>thumbnail: /assets/images/my-photo.jpg</code></span></div>
+      <div class="step-content"><strong>Claudeに「画像を置きました」と伝える</strong><span>ファイルサイズを確認してもらえます</span></div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
-      <div class="step-content"><strong>本文中に画像を挿入する場合</strong><span><code>![説明文](/assets/images/my-photo.jpg)</code> と書く</span></div>
-    </div>
-  </div>
-
-  <!-- 05 ローカル確認 -->
-  <div class="section">
-    <div class="section-title">05　ローカルで確認する方法</div>
-    <table>
-      <tr><th>確認したいもの</th><th>方法</th><th>URL</th></tr>
-      <tr><td>記事ページの見た目</td><td>Claude Codeで <code>npm run dev</code> を実行</td><td>http://localhost:8080/articles/</td></tr>
-      <tr><td>検索機能</td><td><code>npm run build</code> 後に <code>npx serve public</code></td><td>http://localhost:3000/articles/</td></tr>
-      <tr><td>メインサイト</td><td>VS Code の Live Server でも可</td><td>—</td></tr>
-    </table>
-    <div class="alert">
-      <p>⚠️ <strong>注意</strong>：<code>npm run dev</code>（ローカル開発モード）では検索機能は動作しません。検索のテストは必ず <code>npm run build</code> 後に行ってください。</p>
-    </div>
-  </div>
-
-  <!-- 06 公開手順 -->
-  <div class="section">
-    <div class="section-title">06　記事を公開する手順（毎回の作業）</div>
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content"><strong>記事ファイルを作成・編集する</strong><span><code>src/articles/</code> フォルダに .md ファイルを追加または編集</span></div>
-    </div>
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content"><strong>ローカルで確認する（任意）</strong><span><code>npm run dev</code> でブラウザ確認。問題なければ次へ</span></div>
-    </div>
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content"><strong>Claude Code に「コミット＆プッシュ」を指示する</strong><span>「記事を追加したのでコミット＆プッシュしてください」と伝えるだけ</span></div>
+      <div class="step-content"><strong>200KB超の場合は圧縮を案内される</strong><span>TinyPNG（https://tinypng.com/）などで圧縮してから再度置く</span></div>
     </div>
     <div class="step">
       <div class="step-num">4</div>
-      <div class="step-content"><strong>Cloudflare Pages の自動デプロイを待つ</strong><span>通常3〜5分で公開される。ダッシュボードの Deployments タブで確認可</span></div>
+      <div class="step-content"><strong>Claudeが記事に合った名前にリネームして設定してくれる</strong><span>自分でファイル名を考える必要なし</span></div>
+    </div>
+
+    <div class="subsection-title">フリー素材（Unsplash）を使いたい場合</div>
+    <p>「Unsplashで探してください」と伝えるだけで、Claudeが記事に合う写真を検索・ダウンロード・設定まで行います。</p>
+
+    <div class="highlight">
+      <p>💡 <strong>画像の命名ルール</strong>：記事内容を表す英語名・ハイフン区切り・小文字（例：<code>handdrip-event.jpg</code>）でClaudeが統一して管理します。</p>
+    </div>
+  </div>
+
+  <!-- 05 公開手順 -->
+  <div class="section">
+    <div class="section-title">05　記事を公開する（コミット＆プッシュ）</div>
+    <p>記事の内容がOKになったら、以下を伝えるだけです。</p>
+    <div class="chat">
+      <div class="chat-label you">あなた</div>
+      <div class="chat-bubble">コミット＆プッシュしてください。</div>
+    </div>
+    <p>Cloudflare Pagesが自動でビルド＆公開します。通常3〜5分で反映されます。</p>
+    <div class="highlight">
+      <p>📌 <strong>コミットだけ</strong>（公開前の保存）と<strong>コミット＆プッシュ</strong>（即公開）は別です。確認してから公開したい場合は「コミットだけしてください」と伝えてください。</p>
     </div>
     <div class="highlight">
       <p>📌 新しい記事を追加するたびに、<strong>検索インデックスと記事サイトマップも自動で更新</strong>されます。手動での追加作業は不要です。</p>
     </div>
+
+    <div class="tech-box">
+      <div class="tech-box-title">技術補足</div>
+      <p>「コミット＆プッシュ」とは、ファイルの変更をGitHubに保存・送信することです。Cloudflare PagesはGitHubへの変更を検知して自動的に <code>npm run build</code>（MarkdownをHTMLに変換・検索インデックス生成・サイトマップ更新）を実行します。</p>
+    </div>
   </div>
 
-  <!-- 07 サイトマップ -->
+  <!-- 06 Google Search Console -->
   <div class="section">
-    <div class="section-title">07　Google Search Console へのサイトマップ登録</div>
+    <div class="section-title">06　Google Search Console へのサイトマップ登録</div>
     <p>記事を検索エンジンに早く認識してもらうために、2つのサイトマップを Google Search Console に登録してください。</p>
     <table>
       <tr><th>サイトマップURL</th><th>内容</th><th>更新</th></tr>
@@ -229,42 +206,37 @@ thumbnail: /assets/images/hero_bg-1.jpg
     <p><strong>登録手順：</strong> Search Console → サイドメニュー「サイトマップ」→ URLを入力して送信</p>
   </div>
 
-  <!-- 08 記事内FAQ -->
+  <!-- 07 記事内FAQ -->
   <div class="section">
-    <div class="section-title">08　記事内 FAQ について（AEO対策）</div>
-    <p>各記事の末尾に「よくある質問」セクションを入れることを推奨します。AIや検索エンジンが回答として引用しやすくなります。</p>
-    <pre>## よくある質問
+    <div class="section-title">07　記事内 FAQ について（AEO対策）</div>
+    <p>各記事の末尾に「よくある質問」セクションを入れることを推奨します。AIや検索エンジンが回答として引用しやすくなります。記事作成時にClaudeへ「Q&Aをつけてください」と伝えれば自動で作成してくれます。</p>
+    <div class="tech-box">
+      <div class="tech-box-title">技術補足：Markdownでの記述例</div>
+      <pre>## よくある質問
 
 **Q. 質問をここに書きます**
-はい、回答をここに書きます。具体的な情報（数字・固有名詞）を含めると効果的です。
+回答をここに書きます。具体的な情報（数字・固有名詞）を含めると効果的です。
 
 **Q. 別の質問**
 回答。</pre>
+    </div>
     <div class="highlight">
       <p>💡 メインサイトのFAQと内容が重複しても問題ありません。記事の文脈に特化した質問を入れることで、ロングテール検索への対応になります。</p>
     </div>
   </div>
 
-  <!-- 09 今後の構想 -->
+  <!-- 08 今後の運用 -->
   <div class="section">
-    <div class="section-title">09　今後の運用について</div>
+    <div class="section-title">08　今後の運用について</div>
 
     <div class="subsection-title">Articles ナビリンクの変更タイミング</div>
     <p>現在、メインサイトのナビの「Articles」はページ内の GBCコラムセクション（<code>#articles</code>）にスクロールする設定になっています。<strong>記事が10本を超えたら</strong>、直接 <code>/articles/</code>（記事一覧ページ）へ飛ぶよう変更することを推奨します。</p>
-    <p>変更箇所：<code>public/index.html</code> のナビ内 <code>href="#articles"</code> を <code>href="/articles/"</code> に2箇所変更するだけです。</p>
+    <p>変更の際はClaudeに「Articlesのナビリンクを記事一覧ページに変更してください」と伝えるだけです。</p>
 
-    <div class="subsection-title">カテゴリ構成の目標</div>
-    <table>
-      <tr><th>カテゴリ</th><th>目標記事数</th><th>例</th></tr>
-      <tr><td>ペットとコーヒー</td><td>20記事</td><td>千駄ヶ谷でペットと過ごすカフェ</td></tr>
-      <tr><td>コーヒー</td><td>30記事</td><td>自家焙煎の豆の選び方</td></tr>
-      <tr><td>グルテンフリー</td><td>20記事</td><td>米粉フォカッチャのペアリング</td></tr>
-      <tr><td>体験・イベント</td><td>15記事</td><td>チェキブース体験レポート</td></tr>
-      <tr><td>ビジネス利用</td><td>15記事</td><td>北参道でリモートワーク</td></tr>
-    </table>
-
-    <div class="subsection-title">記事URLとカテゴリの命名について</div>
-    <p>現在、ナビや一部の表示でカタカナ・英語が混在しています（例：「Articles」「ペットとコーヒー」）。<strong>全体的な表記の統一はオーナーと相談して決定</strong>してください。変更の際はカテゴリ名（タグ）の変更が必要になります。</p>
+    <div class="tech-box">
+      <div class="tech-box-title">技術補足：変更箇所</div>
+      <p><code>public/index.html</code> のナビ内 <code>href="#articles"</code> を <code>href="/articles/"</code> に2箇所（デスクトップ・モバイル）変更します。</p>
+    </div>
   </div>
 
   <div class="doc-footer">
