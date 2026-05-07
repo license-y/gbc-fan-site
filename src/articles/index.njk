@@ -5,12 +5,63 @@ description: Green Beans Coffeeに関するコーヒー・ペット・グルテ�
 permalink: /articles/index.html
 ---
 
+<style>
+  /* Pagefind UI カスタマイズ */
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #4A3728;
+    --pagefind-ui-text: #2D2A26;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #E8E0D5;
+    --pagefind-ui-tag: #FAF8F5;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 9999px;
+    --pagefind-ui-font: 'Noto Sans JP', sans-serif;
+  }
+  .pagefind-ui__search-input {
+    font-size: 0.875rem !important;
+  }
+  .pagefind-ui__result-title {
+    color: #4A3728 !important;
+  }
+  .pagefind-ui__result-excerpt {
+    font-size: 0.8rem !important;
+    color: #8B7355 !important;
+  }
+  mark {
+    background: #F5EDD8 !important;
+    color: #4A3728 !important;
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+</style>
+
 <main class="max-w-4xl mx-auto px-4 py-12">
 
   <div class="mb-8 text-center">
     <h1 class="text-3xl font-bold text-[#4A3728] mb-2">GBC コラム</h1>
     <p class="text-sm text-[#8B7355]">Green Beans Coffee にまつわるコーヒー・ペット・グルテンフリー・体験イベントの記事</p>
   </div>
+
+  <!-- 検索ボックス -->
+  <div id="search" class="mb-8 max-w-lg mx-auto"></div>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({
+          element: '#search',
+          showSubResults: false,
+          showImages: false,
+          translations: {
+            placeholder: '記事を検索...',
+            zero_results: '「[SEARCH_TERM]」に一致する記事はありません'
+          }
+        });
+      }
+    });
+  </script>
 
   {%- if collections.articles.length == 0 %}
   <p class="text-center text-[#8B7355] py-20">記事を準備中です。</p>
