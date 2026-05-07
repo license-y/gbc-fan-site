@@ -155,3 +155,4 @@ inbox/monthly-coffee/*
 # 11ty / Pagefind ビルド生成物（Cloudflare Pages がビルド時に生成する）
 public/articles/
 public/pagefind/
+public/articles-sitemap.xml
