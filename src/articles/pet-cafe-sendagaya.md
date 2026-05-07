@@ -6,7 +6,7 @@ date: 2026-05-07
 tags:
   - articles
   - ペットとコーヒー
-thumbnail: /assets/images/hero/hero_bg-1.jpg
+thumbnail: /assets/images/hero_bg-1.jpg
 ---
 
 北参道駅から徒歩3分。千駄ヶ谷のダガヤサンドウエリアに、愛犬と一緒にゆったり過ごせる自家焙煎コーヒー専門店「Green Beans Coffee」があります。
