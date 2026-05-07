@@ -127,7 +127,7 @@
         <li><a href="#menu" class="block py-2 hover:text-accent transition">Menu</a></li>
         <li><a href="#experience" class="block py-2 hover:text-accent transition">Experience</a></li>
         <li><a href="#access" class="block py-2 hover:text-accent transition">Access</a></li>
-        <li><a href="/articles/" class="block py-2 hover:text-accent transition">Articles</a></li>
+        <li><a href="#articles" class="block py-2 hover:text-accent transition">Articles</a></li>
         <li><a href="#faq" class="block py-2 hover:text-accent transition">FAQ</a></li>
         <li class="border-t border-primary/20 pt-3 mt-1 flex items-center gap-3">
           <span class="text-sm text-secondary">Language:</span>
@@ -1075,7 +1075,7 @@
   </div>
 
   <!-- Articles Section -->
-  <section id="articles" class="py-20 md:py-32 bg-white scroll-mt-28">
+  <section id="articles" class="py-20 md:py-32 bg-white scroll-mt-16 md:scroll-mt-28">
     <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-16">
       <h2 class="text-4xl font-bold text-center mb-4 text-primary" data-aos="fade-up">GBC コラム</h2>
       <p class="text-left md:text-center text-lg leading-relaxed mb-16 max-w-3xl mx-auto" data-aos="fade-up">
@@ -1088,7 +1088,7 @@
       </div>
 
       <div class="text-center" data-aos="fade-up">
-        <a href="/articles/" class="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-lg hover:bg-secondary transition-colors duration-300 shadow-md hover:shadow-lg">
+        <a href="/articles/" class="inline-flex items-center gap-2 bg-primary text-white px-20 py-3 rounded-lg hover:bg-secondary transition-colors duration-300 shadow-md hover:shadow-lg">
           記事一覧はこちら
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -2276,7 +2276,10 @@
             const border = i < articles.length - 1 ? ' border-b border-[#E8E0D5]' : '';
             return '<a href="' + a.url + '" class="group flex items-center justify-between px-6 py-4 hover:bg-[#FAF8F5] transition-colors duration-150' + border + '">'
               + '<span class="text-sm text-[#2D2A26] group-hover:text-[#4A3728] transition leading-snug pr-4">' + a.title + '</span>'
-              + '<span class="text-xs text-[#B0A090] whitespace-nowrap flex-shrink-0">' + (tag ? tag + '　' : '') + a.date + '</span>'
+              + '<span class="flex flex-col items-end gap-0.5 text-xs text-[#B0A090] flex-shrink-0">'
+              + (tag ? '<span class="whitespace-nowrap">' + tag + '</span>' : '')
+              + '<span class="whitespace-nowrap">' + a.date + '</span>'
+              + '</span>'
               + '</a>';
           }).join('');
         })

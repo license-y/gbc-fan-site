@@ -71,13 +71,13 @@ permalink: /articles/index.html
   <div class="flex flex-wrap justify-center gap-2 mb-8" id="category-filters">
     <button
       data-category="all"
-      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white transition">
+      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
       すべて
     </button>
     {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット", "美容健康", "ダガヤサンドウ"] %}
     <button
       data-category="{{ cat }}"
-      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728] transition">
+      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
       {{ cat }}
     </button>
     {%- endfor %}
@@ -144,13 +144,15 @@ permalink: /articles/index.html
     btn.addEventListener('click', function() {
       var category = btn.dataset.category;
 
-      // ボタンのアクティブスタイルを切り替え
+      // 他のボタンを非アクティブに（クリックしたボタンは除外）
       buttons.forEach(function(b) {
+        if (b === btn) return;
         b.classList.remove('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
-        b.classList.add('border-[#D0C4B0]', 'text-[#8B7355]');
+        b.classList.add('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
       });
+      // クリックしたボタンをアクティブに（hoverクラスも除去してテキスト白を確保）
+      btn.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
       btn.classList.add('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
-      btn.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]');
 
       // カードの表示・非表示
       var visible = 0;
