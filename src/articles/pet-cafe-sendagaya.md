@@ -2,7 +2,7 @@
 layout: article.njk
 title: 北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました
 description: 北参道・千駄ヶ谷エリアで愛犬と一緒に入れる自家焙煎カフェ「Green Beans Coffee」を実際に訪問。店内の様子・ペットフレンドリーなポイント・おすすめメニューをレポートします。
-date: 2026-05-05
+date: 2026-05-03
 tags:
   - articles
   - ペット

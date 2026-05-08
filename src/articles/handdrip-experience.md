@@ -2,7 +2,7 @@
 layout: article.njk
 title: コーヒー豆の選別から始まるGreen Beans Coffeeのハンドドリップ体験
 description: GBCのハンドドリップ体験イベントレポート。悪い豆の見分け方・除外した時としない時の味の違い・焙煎見学・バリスタ手淹れのテイクアウトまで。豆の購入価格でここまで体験できます。
-date: 2026-05-07
+date: 2026-05-05
 tags:
   - articles
   - コーヒー

@@ -2,7 +2,7 @@
 layout: article.njk
 title: トイレにこそお店の本気が出るGreen Beans Coffeeのアメニティ
 description: 北参道・Green Beans Coffeeのトイレには歯のお手入れピックやうがい薬など心遣いあふれるアメニティが揃っています。デートや外出時にも安心して使えるカフェです。
-date: 2026-05-08
+date: 2026-05-07
 tags:
   - articles
   - 店内
