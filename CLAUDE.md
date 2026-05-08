@@ -216,34 +216,6 @@ project-root/
 
 ---
 
-# セクション構成（確定）
-
-ナビゲーションに表示: Home / About / Menu / Experience / Access / Visit Diary / FAQ（7項目）
-
-```
-[Hero] #hero ← ナビ: Home
-  ↓
-[About] #about ← ナビ: About（店舗紹介＋基本情報統合）
-  ↓
-[Menu] #menu ← ナビ: Menu
-  ↓
-[Experience] #experience ← ナビ: Experience（体験イベント＋ペットフレンドリー統合）
-  ↓
-[Access] #access ← ナビ: Access
-  ↓
-[Visit Diary] #visit-diary ← ナビ: Visit Diary
-  ↓
-[GBC Magazine] #gbc-magazine ← ナビなし（スクロールで表示）
-  ↓
-[FAQ] #faq ← ナビ: FAQ
-  ↓
-[Links] #links ← ナビなし（フッター付近）
-  ↓
-[About This Site] フッター
-```
-
----
-
 # AEO対策 重要事項
 
 ## JSON-LD構造化データ（必須）
@@ -556,6 +528,7 @@ thumbnail: /assets/images/hero_bg-1.jpg
 **タイトル：**
 - 「北参道」「千駄ヶ谷」「コーヒー専門店」などの検索ワードを自然に含める
 - 「〜してみた」「〜に行ってきました」など体験型タイトルはクリックされやすく、AIにも引用されやすい
+- 下書きを書き始める前に、SEO/AEOを意識したタイトル案を2〜3個提示してユーザーに選んでもらう
 
 **FAQ（Q&A）の書き方：**
 - AIや音声検索が「そのまま読み上げられる」簡潔な回答を心がける
