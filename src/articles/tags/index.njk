@@ -6,13 +6,13 @@ pagination:
   alias: tag
 permalink: /articles/tags/{{ tag }}/index.html
 eleventyComputed:
-  title: "{{ tag }} の記事一覧 | GBC コラム"
+  title: "{{ tag }} の記事一覧 | GBC Articles"
   description: "Green Beans Coffee に関する「{{ tag }}」カテゴリの記事一覧です。"
 ---
 
-<main class="max-w-5xl mx-auto px-4 py-12">
+<main class="max-w-4xl mx-auto px-4 py-12">
 
-  <div class="mb-10">
+  <div class="mb-8">
     <nav class="text-xs text-[#8B7355] mb-4 flex items-center gap-1">
       <a href="/" class="hover:text-[#4A3728] transition">トップ</a>
       <span>/</span>
@@ -24,25 +24,49 @@ eleventyComputed:
     <p class="text-sm text-[#8B7355]">カテゴリ「{{ tag }}」の記事一覧</p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div class="flex flex-col gap-4">
     {%- set taggedPosts = collections[tag] %}
     {%- if taggedPosts %}
     {%- for post in taggedPosts | reverse %}
-    <a href="{{ post.url }}" class="group block bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
+    {%- set postTags = [] %}
+    {%- for t in post.data.tags %}
+      {%- if t != "articles" %}
+        {%- set postTags = (postTags.push(t), postTags) %}
+      {%- endif %}
+    {%- endfor %}
+    <a href="{{ post.url }}"
+      class="group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
+
       {%- if post.data.thumbnail %}
-      <div class="aspect-video overflow-hidden">
-        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      <div class="w-32 sm:w-44 h-28 sm:h-32 flex-shrink-0 overflow-hidden">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      </div>
+      {%- else %}
+      <div class="w-32 sm:w-44 h-28 sm:h-32 flex-shrink-0 bg-[#FAF8F5] flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D0C4B0" stroke-width="1.5"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2z"/></svg>
       </div>
       {%- endif %}
-      <div class="p-5">
-        <h2 class="text-base font-bold text-[#2D2A26] mb-2 group-hover:text-[#4A3728] leading-snug">{{ post.data.title }}</h2>
-        {%- if post.data.description %}
-        <p class="text-sm text-[#8B7355] line-clamp-2">{{ post.data.description }}</p>
-        {%- endif %}
-        <p class="text-xs text-[#B0A090] mt-3">{{ post.date | dateJa }}</p>
+
+      <div class="p-4 sm:p-5 flex flex-col justify-between flex-1 min-w-0">
+        <div>
+          {%- if postTags.length > 0 %}
+          <div class="flex flex-wrap gap-1 mb-2">
+            {%- for t in postTags %}
+            <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">{{ t }}</span>
+            {%- endfor %}
+          </div>
+          {%- endif %}
+          <h2 class="text-sm sm:text-base font-bold text-[#2D2A26] group-hover:text-[#4A3728] leading-snug mb-1">{{ post.data.title }}</h2>
+          {%- if post.data.description %}
+          <p class="text-xs text-[#8B7355] line-clamp-2 hidden sm:block">{{ post.data.description }}</p>
+          {%- endif %}
+        </div>
+        <p class="text-xs text-[#B0A090] mt-2">{{ post.date | dateJa }}</p>
       </div>
     </a>
     {%- endfor %}
+    {%- else %}
+    <p class="text-center text-[#8B7355] py-12 text-sm">このカテゴリの記事はまだありません。</p>
     {%- endif %}
   </div>
 
