@@ -596,10 +596,9 @@ thumbnail: /assets/images/hero_bg-1.jpg
 - `public/articles-sitemap.xml` — 記事サイトマップ（記事追加時に自動更新）
 - `public/pagefind/` — 検索インデックス
 
-## Articles ナビリンクの変更タイミング
+## Articles ナビリンク
 
-現在は `href="#articles"` でメインページ内スクロール。
-**記事が10本を超えたら** `href="/articles/"` に変更する（`public/index.html` のデスクトップ・モバイル両方）。
+ナビの Articles リンクは `href="/articles/"` で記事一覧ページに直接遷移する（変更済み）。
 
 ## サイトマップ
 
