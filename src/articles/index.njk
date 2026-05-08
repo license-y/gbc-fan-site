@@ -39,7 +39,7 @@ permalink: /articles/index.html
 <main class="max-w-4xl mx-auto px-4 py-12">
 
   <div class="mb-8 text-center">
-    <h1 class="text-3xl font-bold text-[#4A3728] mb-2">GBC コラム</h1>
+    <h1 class="text-3xl font-bold text-[#4A3728] mb-2">GBC Articles</h1>
     <p class="text-sm text-[#8B7355]">Green Beans Coffee にまつわるコーヒー・ペット・グルテンフリー・体験イベントの記事</p>
   </div>
 
@@ -71,13 +71,13 @@ permalink: /articles/index.html
   <div class="flex flex-wrap justify-center gap-2 mb-8" id="category-filters">
     <button
       data-category="all"
-      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
+      class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
       すべて
     </button>
-    {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット", "美容健康", "ダガヤサンドウ"] %}
+    {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット", "美容健康", "ビジネス", "店内", "ダガヤサンドウ"] %}
     <button
       data-category="{{ cat }}"
-      class="filter-btn text-xs px-4 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
+      class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
       {{ cat }}
     </button>
     {%- endfor %}

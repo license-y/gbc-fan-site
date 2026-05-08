@@ -111,8 +111,8 @@
       <div class="chat-label claude">Claude</div>
       <div class="chat-bubble">
         ありがとうございます。記事を作成する前に確認させてください。<br><br>
-        <strong>1. カテゴリ：</strong>以下の7つからどれにしますか？<br>
-        　コーヒー ／ 焙煎 ／ グルテンフリー ／ 体験・イベント ／ ペット ／ 美容健康 ／ ダガヤサンドウ<br><br>
+        <strong>1. カテゴリ：</strong>以下の9つから選んでください（原則1つ、内容が跨る場合は最大2つまでOK）<br>
+        　コーヒー ／ 焙煎 ／ グルテンフリー ／ 体験・イベント ／ ペット ／ 美容健康 ／ ビジネス ／ 店内 ／ ダガヤサンドウ<br><br>
         <strong>2. まとめセクションをつけますか？</strong>（つける／つけない）<br><br>
         <strong>3. 記事末尾にQ&Aをつけますか？</strong>（つける／つけない）<br><br>
         <strong>4. 画像：</strong>提供しますか？Unsplashで探しますか？
@@ -125,11 +125,24 @@
       <div class="chat-bubble">カテゴリはコーヒー。まとめはなし。Q&Aはつけてください。画像はUnsplashで探してください。</div>
     </div>
 
-    <div class="subsection-title">ステップ 4：下書きが届く → 確認・修正</div>
-    <p>Claudeが記事の下書きを作成します。気になる部分があれば、そのまま伝えるだけで修正してもらえます。</p>
+    <div class="subsection-title">ステップ 4：下書きが届く → カテゴリー評価 → 内容確認・修正</div>
+    <p>Claudeが記事の下書きを作成します。下書きと一緒に、カテゴリーの評価結果が届きます。単なる確認ではなく、内容を読んだうえで問題があれば理由を添えて指摘します。</p>
+
+    <p style="margin-top:12px; font-weight:bold;">パターン①：カテゴリーが適切な場合</p>
+    <div class="chat">
+      <div class="chat-label claude">Claude</div>
+      <div class="chat-bubble">（下書き本文）<br><br>📌 <strong>カテゴリー：コーヒー</strong><br>記事の主題と一致しています。このまま保存します。</div>
+    </div>
+
+    <p style="margin-top:12px; font-weight:bold;">パターン②：変更を提案する場合</p>
+    <div class="chat">
+      <div class="chat-label claude">Claude</div>
+      <div class="chat-bubble">（下書き本文）<br><br>📌 <strong>カテゴリーの変更を提案します。</strong><br>当初の選択：コーヒー・グルテンフリー<br>提案：グルテンフリー<br>理由：コーヒーに触れているのはペアリングの一文だけで、記事の主題は米粉フォカッチャです。コーヒーをつけると焦点がボケるので外すほうが読者に伝わりやすくなります。<br>このまま変更してよいですか？</div>
+    </div>
+    <p>変更してよければそのまま伝えてください。元のカテゴリーを維持したい場合も一言伝えるだけでOKです。内容に気になる部分があれば、あわせて伝えられます。</p>
     <div class="chat">
       <div class="chat-label you">あなた</div>
-      <div class="chat-bubble">冒頭の書き方を変えてほしいです。実際には「コーヒーフレッシュはありません」とは言われていないので。</div>
+      <div class="chat-bubble">変更でOKです。冒頭の書き方も変えてほしいです。実際には「コーヒーフレッシュはありません」とは言われていないので。</div>
     </div>
     <div class="highlight">
       <p>💡 <strong>文体のルール</strong>：記事はすべて「GBCアンバサダーとして体験・聞いた」という立場で書きます。店側の公式説明のような書き方（「〜を提供しています」「〜にこだわっています」）にならないよう、Claudeが自動的に確認・修正します。修正した場合はどこをどう直したか報告します。</p>
@@ -163,8 +176,8 @@
 
   <!-- 03 カテゴリ -->
   <div class="section">
-    <div class="section-title">03　カテゴリ（7つ固定）</div>
-    <p>カテゴリは以下の<strong>7つに固定</strong>されています。勝手に増やさず、必ずこの中から選んでください。</p>
+    <div class="section-title">03　カテゴリ（9つ固定）</div>
+    <p>カテゴリは以下の<strong>9つに固定</strong>されています。勝手に増やさず、必ずこの中から選んでください。</p>
     <p style="margin: 10px 0;">
       <span class="tag">コーヒー</span>
       <span class="tag">焙煎</span>
@@ -172,8 +185,13 @@
       <span class="tag">体験・イベント</span>
       <span class="tag">ペット</span>
       <span class="tag">美容健康</span>
+      <span class="tag">ビジネス</span>
+      <span class="tag">店内</span>
       <span class="tag">ダガヤサンドウ</span>
     </p>
+    <div class="highlight">
+      <p>📌 <strong>複数カテゴリについて</strong>：原則1つ。記事の内容が自然に複数にまたがる場合は最大2つまでOKです。3つ以上にしたい場合は「記事の切り口を絞るサイン」なので、書き直しを検討してください。</p>
+    </div>
     <div class="highlight">
       <p>📌 カテゴリを追加・変更したい場合は「<strong>○○というカテゴリを追加したい</strong>」とClaudeに伝えてください。CLAUDE.mdも含めて一括で更新します。</p>
     </div>

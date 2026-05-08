@@ -6,7 +6,7 @@ date: 2026-05-03
 tags:
   - articles
   - グルテンフリー
-thumbnail: /assets/images/menu-focaccia.jpg
+thumbnail: /assets/images/articles/glutenfree-focaccia.jpg
 ---
 
 「グルテンフリーだと、カフェで食べられるものが少ない」——そんな経験をしている方は多いと思います。サンドイッチもスコーンもパウンドケーキも、多くのカフェフードは小麦粉が主役です。
