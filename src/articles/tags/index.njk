@@ -4,7 +4,7 @@ pagination:
   data: collections.tagList
   size: 1
   alias: tag
-permalink: /articles/tags/{{ tag }}/index.html
+permalink: /articles/tags/{{ tag | tagSlug }}/index.html
 eleventyComputed:
   title: "{{ tag }} の記事一覧 | GBC Articles"
   description: "Green Beans Coffee に関する「{{ tag }}」カテゴリの記事一覧です。"

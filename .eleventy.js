@@ -1,7 +1,21 @@
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 
+const TAG_SLUGS = {
+  "コーヒー": "coffee",
+  "焙煎": "roasting",
+  "グルテンフリー": "gluten-free",
+  "体験・イベント": "events",
+  "ペット": "pet",
+  "美容健康": "beauty-health",
+  "ビジネス": "business",
+  "店内": "interior",
+  "ダガヤサンドウ": "dagayasando",
+};
+
 export default function (eleventyConfig) {
+  eleventyConfig.addFilter("tagSlug", (tag) => TAG_SLUGS[tag] || tag);
+  eleventyConfig.addGlobalData("tagSlugs", TAG_SLUGS);
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");
 
