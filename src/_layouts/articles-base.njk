@@ -117,8 +117,8 @@
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": {{ title | dump }},
-    "description": {{ description | dump }},
+    "headline": {{ title | dump | safe }},
+    "description": {{ description | dump | safe }},
     "datePublished": "{{ date | dateISO }}",
     "dateModified": "{{ date | dateISO }}",
     "author": {
