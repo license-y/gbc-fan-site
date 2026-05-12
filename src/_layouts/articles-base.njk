@@ -64,6 +64,34 @@
   </script>
 
   {% block head %}{% endblock %}
+
+  {% if date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ title | dump }},
+    "description": {{ description | dump }},
+    "datePublished": "{{ date | dateISO }}",
+    "dateModified": "{{ date | dateISO }}",
+    "author": {
+      "@type": "Person",
+      "name": "Kikumi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Green Beans Coffee アンバサダーサイト",
+      "url": "https://greenbeanscoffeeambassador.com"
+    },
+    "image": "https://greenbeanscoffeeambassador.com{% if thumbnail %}{{ thumbnail }}{% else %}/assets/images/hero_bg-1.jpg{% endif %}",
+    "url": "https://greenbeanscoffeeambassador.com{{ page.url }}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://greenbeanscoffeeambassador.com{{ page.url }}"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 
 <body class="bg-[#FAF8F5] text-[#2D2A26] overflow-x-hidden">

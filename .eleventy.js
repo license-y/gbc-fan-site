@@ -43,6 +43,12 @@ export default function (eleventyConfig) {
     return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
   });
 
+  // ISO 8601 日付フィルター（例: 2026-05-07）
+  eleventyConfig.addFilter("dateISO", function (date) {
+    const d = new Date(date);
+    return d.toISOString().split("T")[0];
+  });
+
   return {
     dir: {
       input: "src",
