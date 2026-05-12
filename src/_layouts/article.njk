@@ -238,6 +238,46 @@ layout: articles-base.njk
     }
   });
 
+  // FAQPage JSON-LD の生成
+  (function() {
+    var faqItems = [];
+    var prose = document.querySelector('article .prose');
+    if (!prose) return;
+
+    prose.querySelectorAll('p').forEach(function(p) {
+      var strong = p.querySelector('strong');
+      if (!strong) return;
+      var qText = strong.textContent.trim();
+      if (!qText.startsWith('Q.')) return;
+
+      var clone = p.cloneNode(true);
+      clone.querySelectorAll('strong, br').forEach(function(el) { el.remove(); });
+      var aText = clone.textContent.trim();
+      if (!aText) return;
+
+      faqItems.push({ q: qText, a: aText });
+    });
+
+    if (faqItems.length === 0) return;
+
+    var schema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqItems.map(function(item) {
+        return {
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": { "@type": "Answer", "text": item.a }
+        };
+      })
+    };
+
+    var s = document.createElement('script');
+    s.type = 'application/ld+json';
+    s.textContent = JSON.stringify(schema);
+    document.head.appendChild(s);
+  })();
+
   // SNS シェアボタンのURL設定
   var pageUrl = encodeURIComponent(location.href);
   var pageTitle = encodeURIComponent(document.title);
