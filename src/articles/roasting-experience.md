@@ -38,6 +38,8 @@ thumbnail: /assets/images/articles/roasting-event.jpg
 
 Green Beans Coffeeの30種類以上の豆ラインナップを改めて見ると、それぞれに個性があることが感じられて、選ぶのが楽しくなりました。
 
+焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。焙煎を学んだ目線で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。GBCが素材にこだわる姿勢は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)にも表れています。
+
 ## まとめ
 
 Green Beans Coffeeの焙煎体験は北参道で参加できる本格的なコーヒー体験イベントです。専用の焙煎機を使って少人数でじっくり学びその場でドリップした一杯を味わえます。コーヒー初心者から愛好家まで楽しめる内容で焙煎士のこだわりと技術を肌で感じられる貴重な時間でした。

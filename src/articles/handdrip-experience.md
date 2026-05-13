@@ -42,6 +42,8 @@ thumbnail: /assets/images/articles/handdrip-event.jpg
 
 お得すぎる体験であることは確かです。GBCのコーヒーをより深く知りたいと思ったらぜひ参加してみてください！
 
+豆を自分で焙煎する体験に興味が湧いた方は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベント](/articles/roasting-experience/)もおすすめです。ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別です。体験後の散歩コースには[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もぜひ。GBCが本物の牛乳にこだわる理由は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でご覧いただけます。
+
 ## まとめ
 
 Green Beans Coffeeのハンドドリップ体験は豆の選別・抽出技術・焙煎見学・テイクアウトコーヒーまでが豆の購入代金のみで体験できるイベントです。北参道の自家焙煎コーヒー専門店ならではの内容でコーヒー初心者から愛好家まで楽しめます。次回の開催日程は公式Instagram（@green.beanscoffee）でご確認ください。
