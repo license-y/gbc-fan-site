@@ -21,13 +21,18 @@ export default function (eleventyConfig) {
 
   // タグページ（カテゴリ一覧）の自動生成
   eleventyConfig.addCollection("tagList", function (collectionApi) {
+    const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","店内","ダガヤサンドウ"];
     const tagSet = new Set();
     collectionApi.getAll().forEach((item) => {
       (item.data.tags || []).forEach((tag) => {
         if (tag !== "articles") tagSet.add(tag);
       });
     });
-    return [...tagSet].sort();
+    return [...tagSet].sort((a, b) => {
+      const ai = TAG_ORDER.indexOf(a);
+      const bi = TAG_ORDER.indexOf(b);
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+    });
   });
 
   // カテゴリ別記事一覧コレクション
