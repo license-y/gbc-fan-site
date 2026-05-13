@@ -163,14 +163,20 @@ layout: articles-base.njk
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
             アクセス
           </h2>
-          <ul class="space-y-2.5 text-xs text-[#2D2A26]">
+          <ul class="space-y-3 text-xs text-[#2D2A26]">
             <li class="flex gap-2">
               <span class="text-[#B0A090] flex-shrink-0 w-14">住所</span>
               <span>東京都渋谷区<br>千駄ヶ谷3-30-1<br>RC APARTMENT 1階</span>
             </li>
             <li class="flex gap-2">
               <span class="text-[#B0A090] flex-shrink-0 w-14">最寄駅</span>
-              <span>北参道駅 徒歩3分<br>千駄ヶ谷駅 徒歩7分</span>
+              <span>
+                北参道駅 徒歩3分<br>
+                千駄ヶ谷駅 徒歩7分<br>
+                国立競技場駅 徒歩7分<br>
+                代々木駅 徒歩11分<br>
+                原宿駅 徒歩11分
+              </span>
             </li>
             <li class="flex gap-2">
               <span class="text-[#B0A090] flex-shrink-0 w-14">営業時間</span>
@@ -181,10 +187,18 @@ layout: articles-base.njk
               <span>不定休<br><a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer" class="text-[#C9A86C] hover:underline">Instagram で確認</a></span>
             </li>
           </ul>
-          <a href="/#access" class="inline-flex items-center gap-1 text-xs text-[#8B7355] hover:text-[#4A3728] transition mt-4">
-            地図・詳細アクセス
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
-          </a>
+          <!-- Googleマップ -->
+          <div class="mt-4 rounded-lg overflow-hidden border border-[#E8E0D5]">
+            <div class="flex items-center gap-1.5 px-3 py-2 bg-[#FAF8F5] border-b border-[#E8E0D5]">
+              <span class="text-yellow-400 text-xs">★</span>
+              <span class="text-xs font-medium text-[#4A3728]">4.8</span>
+              <span class="text-xs text-[#B0A090]">（526件のクチコミ）</span>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.593074936916!2d139.7052597!3d35.6775167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d4404ef151f%3A0x85142d57557d0f87!2z44Kw44Oq44O844Oz44OT44O844Oz44K544Kz44O844OS44O8!5e0!3m2!1sja!2sjp!4v1234567890"
+              width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
 
         <!-- SNS リンク -->
