@@ -113,8 +113,8 @@ layout: articles-base.njk
           {% endfor %}
           <a href="{{ post.url }}" class="group flex flex-col gap-2 bg-[#FAF8F5] border border-[#E8E0D5] rounded-lg overflow-hidden hover:border-[#C9A86C] transition">
             {% if post.data.thumbnail %}
-            <div class="overflow-hidden aspect-video">
-              <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" decoding="async">
+            <div class="overflow-hidden h-36 w-full">
+              <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300" loading="lazy" decoding="async">
             </div>
             {% endif %}
             <div class="px-3 pb-3 flex flex-col gap-1">
