@@ -15,6 +15,16 @@ const TAG_SLUGS = {
 
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("tagSlug", (tag) => TAG_SLUGS[tag] || tag);
+
+  // 前後記事取得フィルター（コレクションは日付降順）
+  eleventyConfig.addFilter("prevPost", (collection, currentUrl) => {
+    const idx = collection.findIndex(p => p.url === currentUrl);
+    return idx < collection.length - 1 ? collection[idx + 1] : null;
+  });
+  eleventyConfig.addFilter("nextPost", (collection, currentUrl) => {
+    const idx = collection.findIndex(p => p.url === currentUrl);
+    return idx > 0 ? collection[idx - 1] : null;
+  });
   eleventyConfig.addGlobalData("tagSlugs", TAG_SLUGS);
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");

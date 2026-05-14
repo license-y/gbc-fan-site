@@ -97,6 +97,38 @@ layout: articles-base.njk
         </div>
       </div>
 
+      <!-- 前後記事ナビ -->
+      {% set prevPost = collections.articles | prevPost(page.url) %}
+      {% set nextPost = collections.articles | nextPost(page.url) %}
+      {% if prevPost or nextPost %}
+      <nav class="mt-8 pt-6 border-t border-[#E8E0D5]">
+        <div class="flex gap-3">
+          {% if prevPost %}
+          <a href="{{ prevPost.url }}" class="flex-1 flex flex-col gap-1.5 bg-[#FAF8F5] border border-[#D0C4B0] rounded-lg p-4 hover:border-[#C9A86C] transition group">
+            <span class="text-xs text-[#8B7355] flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+              前の記事
+            </span>
+            <span class="text-xs font-medium text-[#4A3728] line-clamp-2 group-hover:text-[#C9A86C] transition leading-snug">{{ prevPost.data.title }}</span>
+          </a>
+          {% else %}
+          <div class="flex-1"></div>
+          {% endif %}
+          {% if nextPost %}
+          <a href="{{ nextPost.url }}" class="flex-1 flex flex-col gap-1.5 items-end bg-[#FAF8F5] border border-[#D0C4B0] rounded-lg p-4 hover:border-[#C9A86C] transition group text-right">
+            <span class="text-xs text-[#8B7355] flex items-center gap-1">
+              次の記事
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </span>
+            <span class="text-xs font-medium text-[#4A3728] line-clamp-2 group-hover:text-[#C9A86C] transition leading-snug">{{ nextPost.data.title }}</span>
+          </a>
+          {% else %}
+          <div class="flex-1"></div>
+          {% endif %}
+        </div>
+      </nav>
+      {% endif %}
+
       <!-- 記事フッター（PC のみ表示） -->
       <div class="mt-8 pt-6 border-t border-[#E8E0D5] text-center hidden lg:block">
         <div class="inline-flex flex-wrap justify-center gap-3">
