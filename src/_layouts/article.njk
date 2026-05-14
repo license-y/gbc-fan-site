@@ -97,6 +97,39 @@ layout: articles-base.njk
         </div>
       </div>
 
+      <!-- 関連記事 -->
+      {% set related = collections.articles | relatedPosts(page.url, tags) %}
+      {% if related.length > 0 %}
+      <div class="mt-8 pt-6 border-t border-[#E8E0D5]">
+        <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          関連記事
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {% for post in related %}
+          {% set postTags = [] %}
+          {% for tag in post.data.tags %}
+            {% if tag != "articles" %}{% set postTags = (postTags.push(tag), postTags) %}{% endif %}
+          {% endfor %}
+          <a href="{{ post.url }}" class="group flex flex-col gap-2 bg-[#FAF8F5] border border-[#E8E0D5] rounded-lg overflow-hidden hover:border-[#C9A86C] transition">
+            {% if post.data.thumbnail %}
+            <div class="overflow-hidden aspect-video">
+              <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" loading="lazy" decoding="async">
+            </div>
+            {% endif %}
+            <div class="px-3 pb-3 flex flex-col gap-1">
+              {% if postTags.length > 0 %}
+              <span class="text-xs text-[#B0A090]">{{ postTags[0] }}</span>
+              {% endif %}
+              <p class="text-xs font-medium text-[#2D2A26] leading-snug line-clamp-2 group-hover:text-[#C9A86C] transition">{{ post.data.title }}</p>
+              <p class="text-xs text-[#B0A090]">{{ post.date | dateJa }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
       <!-- 前後記事ナビ -->
       {% set prevPost = collections.articles | prevPost(page.url) %}
       {% set nextPost = collections.articles | nextPost(page.url) %}

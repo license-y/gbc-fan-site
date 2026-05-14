@@ -16,6 +16,22 @@ const TAG_SLUGS = {
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("tagSlug", (tag) => TAG_SLUGS[tag] || tag);
 
+  // 関連記事取得フィルター（タグ一致数が多い順、最大3件）
+  eleventyConfig.addFilter("relatedPosts", (collection, currentUrl, currentTags) => {
+    const tags = (currentTags || []).filter(t => t !== "articles");
+    return collection
+      .filter(p => p.url !== currentUrl)
+      .map(p => {
+        const pTags = (p.data.tags || []).filter(t => t !== "articles");
+        const score = pTags.filter(t => tags.includes(t)).length;
+        return { post: p, score };
+      })
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || b.post.date - a.post.date)
+      .slice(0, 3)
+      .map(({ post }) => post);
+  });
+
   // 前後記事取得フィルター（コレクションは日付降順）
   eleventyConfig.addFilter("prevPost", (collection, currentUrl) => {
     const idx = collection.findIndex(p => p.url === currentUrl);
