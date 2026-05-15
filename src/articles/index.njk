@@ -67,29 +67,37 @@ permalink: /articles/index.html
   <p class="text-center text-[#8B7355] py-20">記事を準備中です。</p>
   {%- else %}
 
-  <!-- カテゴリフィルター -->
-  <div class="flex flex-col items-center gap-2 mb-8" id="category-filters">
-    <div class="flex flex-wrap justify-center gap-2">
-      <button
-        data-category="all"
-        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
-        すべて
-      </button>
-      {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット"] %}
-      <button
-        data-category="{{ cat }}"
-        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
-        {{ cat }}
-      </button>
+  <!-- カテゴリフィルター（モバイル：3段） -->
+  <div class="flex flex-col items-center gap-1.5 mb-8 md:hidden" id="category-filters">
+    <div class="flex justify-center gap-1.5">
+      <button data-category="all" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">すべて</button>
+      {%- for cat in ["コーヒー", "焙煎", "グルテンフリー"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
       {%- endfor %}
     </div>
-    <div class="flex flex-wrap justify-center gap-2">
+    <div class="flex justify-center gap-1.5">
+      {%- for cat in ["体験・イベント", "ペット", "美容健康", "ビジネス"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+      {%- endfor %}
+    </div>
+    <div class="flex justify-center gap-1.5">
+      {%- for cat in ["サードプレイス", "店内", "ダガヤサンドウ"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <!-- カテゴリフィルター（PC：2段） -->
+  <div class="hidden md:flex flex-col items-center gap-2 mb-8">
+    <div class="flex justify-center gap-2">
+      <button data-category="all" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">すべて</button>
+      {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+      {%- endfor %}
+    </div>
+    <div class="flex justify-center gap-2">
       {%- for cat in ["美容健康", "ビジネス", "サードプレイス", "店内", "ダガヤサンドウ"] %}
-      <button
-        data-category="{{ cat }}"
-        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
-        {{ cat }}
-      </button>
+      <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
       {%- endfor %}
     </div>
   </div>
@@ -155,15 +163,16 @@ permalink: /articles/index.html
     btn.addEventListener('click', function() {
       var category = btn.dataset.category;
 
-      // 他のボタンを非アクティブに（クリックしたボタンは除外）
+      // 全ボタンを非アクティブに（モバイル・PC両レイアウト対象）
       buttons.forEach(function(b) {
-        if (b === btn) return;
         b.classList.remove('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
         b.classList.add('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
       });
-      // クリックしたボタンをアクティブに（hoverクラスも除去してテキスト白を確保）
-      btn.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
-      btn.classList.add('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
+      // 同じdata-categoryを持つ全ボタンをアクティブに（モバイル・PC同期）
+      document.querySelectorAll('.filter-btn[data-category="' + category + '"]').forEach(function(b) {
+        b.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
+        b.classList.add('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
+      });
 
       // カードの表示・非表示
       var visible = 0;
