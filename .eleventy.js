@@ -9,6 +9,7 @@ const TAG_SLUGS = {
   "ペット": "pet",
   "美容健康": "beauty-health",
   "ビジネス": "business",
+  "サードプレイス": "third-place",
   "店内": "interior",
   "ダガヤサンドウ": "dagayasando",
 };
@@ -47,7 +48,7 @@ export default function (eleventyConfig) {
 
   // タグページ（カテゴリ一覧）の自動生成
   eleventyConfig.addCollection("tagList", function (collectionApi) {
-    const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","店内","ダガヤサンドウ"];
+    const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","サードプレイス","店内","ダガヤサンドウ"];
     const tagSet = new Set();
     collectionApi.getAll().forEach((item) => {
       (item.data.tags || []).forEach((tag) => {

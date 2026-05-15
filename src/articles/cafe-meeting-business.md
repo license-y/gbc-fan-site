@@ -6,7 +6,7 @@ date: 2026-05-13
 tags:
   - articles
   - ビジネス
-  - 店内
+  - サードプレイス
 thumbnail: /assets/images/articles/cafe-meeting-business.jpg
 ---
 
@@ -49,7 +49,7 @@ thumbnail: /assets/images/articles/cafe-meeting-business.jpg
 **③ PCは最小限にして対話を中心に**
 カフェの雰囲気を活かすためPC画面に頼りすぎず対話中心の商談を心がけると効果的です。資料はスマートフォンやタブレットで手軽に共有するのがスマートです。
 
-GBCをリモートワークや日常の作業場所としても活用したい方は[コーヒー代でホテルラウンジ体験：GBCはビジネスパーソンの穴場](/articles/business-remote-work-gbc/)もご覧ください。商談相手に印象を残すなら[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)の注文がおすすめです。GBCのトイレには商談前の身だしなみに役立つアメニティが揃っており[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)で詳しく紹介しています。コーヒーの素材へのこだわりが気になった方は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)もあわせてどうぞ。
+GBCをリモートワークや日常の作業場所としても活用したい方は[コーヒー代でホテルラウンジ体験：GBCはビジネスパーソンの穴場](/articles/business-remote-work-gbc/)もご覧ください。商談相手に印象を残すなら[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)の注文がおすすめです。GBCのトイレには商談前の身だしなみに役立つアメニティが揃っており[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)で詳しく紹介しています。コーヒーの素材へのこだわりが気になった方は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)もあわせてどうぞ。カフェが「第3の居場所（サードプレイス）」になる理由を知りたい方は[グリーンビーンズコーヒーが私のサードプレイスになるまで](/articles/third-place-dagayasando-gbc/)もぜひ。
 
 ## まとめ
 
