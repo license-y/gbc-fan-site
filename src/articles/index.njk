@@ -68,19 +68,30 @@ permalink: /articles/index.html
   {%- else %}
 
   <!-- カテゴリフィルター -->
-  <div class="flex flex-wrap justify-center gap-2 mb-8" id="category-filters">
-    <button
-      data-category="all"
-      class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
-      すべて
-    </button>
-    {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット", "美容健康", "ビジネス", "サードプレイス", "店内", "ダガヤサンドウ"] %}
-    <button
-      data-category="{{ cat }}"
-      class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
-      {{ cat }}
-    </button>
-    {%- endfor %}
+  <div class="flex flex-col items-center gap-2 mb-8" id="category-filters">
+    <div class="flex flex-wrap justify-center gap-2">
+      <button
+        data-category="all"
+        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">
+        すべて
+      </button>
+      {%- for cat in ["コーヒー", "焙煎", "グルテンフリー", "体験・イベント", "ペット"] %}
+      <button
+        data-category="{{ cat }}"
+        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
+        {{ cat }}
+      </button>
+      {%- endfor %}
+    </div>
+    <div class="flex flex-wrap justify-center gap-2">
+      {%- for cat in ["美容健康", "ビジネス", "サードプレイス", "店内", "ダガヤサンドウ"] %}
+      <button
+        data-category="{{ cat }}"
+        class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">
+        {{ cat }}
+      </button>
+      {%- endfor %}
+    </div>
   </div>
 
   <!-- 記事リスト -->
