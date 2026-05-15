@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Beans Coffee アンバサダーサイト 実装一覧</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+      font-size: 11pt;
+      line-height: 1.7;
+      color: #2D2A26;
+      background: #fff;
+    }
+
+    .cover {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #4A3728;
+      color: #FAF8F5;
+      page-break-after: always;
+      text-align: center;
+      padding: 60px;
+    }
+
+    .cover-logo {
+      font-size: 13pt;
+      letter-spacing: 0.2em;
+      color: #C9A86C;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .cover h1 {
+      font-size: 24pt;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .cover .subtitle {
+      font-size: 13pt;
+      color: #C9A86C;
+      margin-bottom: 60px;
+    }
+
+    .cover .meta {
+      font-size: 10pt;
+      color: #D0C4B0;
+      line-height: 2;
+    }
+
+    .cover .divider {
+      width: 60px;
+      height: 2px;
+      background: #C9A86C;
+      margin: 40px auto;
+    }
+
+    .page {
+      padding: 40px 50px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #4A3728;
+      border-left: 4px solid #C9A86C;
+      padding-left: 12px;
+      margin: 40px 0 16px;
+      page-break-after: avoid;
+    }
+
+    h3 {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #8B7355;
+      margin: 24px 0 10px;
+      page-break-after: avoid;
+    }
+
+    .section-intro {
+      background: #FAF8F5;
+      border: 1px solid #E8E0D5;
+      border-radius: 6px;
+      padding: 14px 18px;
+      font-size: 10pt;
+      color: #5A5046;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+      font-size: 10pt;
+      page-break-inside: avoid;
+    }
+
+    th {
+      background: #4A3728;
+      color: #FAF8F5;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 9.5pt;
+    }
+
+    td {
+      padding: 7px 12px;
+      border-bottom: 1px solid #E8E0D5;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #FDFCFA;
+    }
+
+    tr:last-child td {
+      border-bottom: 2px solid #D0C4B0;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #FAF8F5;
+      border: 1px solid #D0C4B0;
+      color: #8B7355;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 9pt;
+      margin: 2px;
+    }
+
+    .badge-done {
+      display: inline-block;
+      background: #4A3728;
+      color: #fff;
+      border-radius: 4px;
+      padding: 1px 8px;
+      font-size: 9pt;
+    }
+
+    .badge-partial {
+      display: inline-block;
+      background: #C9A86C;
+      color: #fff;
+      border-radius: 4px;
+      padding: 1px 8px;
+      font-size: 9pt;
+    }
+
+    .highlight-box {
+      background: #FFF8EE;
+      border-left: 4px solid #C9A86C;
+      padding: 14px 18px;
+      margin: 20px 0;
+      font-size: 10pt;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .toc {
+      background: #FAF8F5;
+      border: 1px solid #E8E0D5;
+      border-radius: 8px;
+      padding: 30px 40px;
+      margin: 40px 0;
+      page-break-inside: avoid;
+    }
+
+    .toc h2 {
+      border: none;
+      padding: 0;
+      margin: 0 0 20px;
+      font-size: 13pt;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+      line-height: 2.2;
+      font-size: 11pt;
+    }
+
+    .toc ol li {
+      color: #4A3728;
+    }
+
+    .toc ol li span {
+      color: #8B7355;
+      font-size: 10pt;
+    }
+
+    .page-header {
+      border-bottom: 2px solid #4A3728;
+      padding-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    .page-header .doc-title {
+      font-size: 11pt;
+      color: #8B7355;
+    }
+
+    .footer-note {
+      margin-top: 50px;
+      padding-top: 20px;
+      border-top: 1px solid #E8E0D5;
+      font-size: 9pt;
+      color: #8B7355;
+      text-align: center;
+    }
+
+    @media print {
+      body { font-size: 10pt; }
+      .cover { height: 100vh; }
+      .page { padding: 30px 40px; }
+      h2 { margin-top: 30px; }
+      @page { margin: 15mm 20mm; size: A4; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 表紙 -->
+<div class="cover">
+  <div class="cover-logo">Green Beans Coffee Ambassador Site</div>
+  <h1>実装一覧ドキュメント</h1>
+  <div class="subtitle">Technical Implementation Summary</div>
+  <div class="divider"></div>
+  <div class="meta">
+    作成日：2026年5月<br>
+    対象サイト：greenbeanscoffeeambassador.com<br>
+    アンバサダー：Kikumi<br>
+    制作：Claude Code（Anthropic）
+  </div>
+</div>
+
+<!-- 本文 -->
+<div class="page">
+
+  <div class="page-header">
+    <div class="doc-title">Green Beans Coffee アンバサダーサイト｜実装一覧ドキュメント</div>
+  </div>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <h2>目次</h2>
+    <ol>
+      <li>サイト構成 <span>— ページ数・URL構造</span></li>
+      <li>技術スタック <span>— フレームワーク・ライブラリ</span></li>
+      <li>SEO基本実装 <span>— title / description / canonical / sitemap 等</span></li>
+      <li>OGP / Twitter Card <span>— SNSシェア対策</span></li>
+      <li>JSON-LD 構造化データ <span>— スキーマ種類・プロパティ</span></li>
+      <li>MEO実装 <span>— LocalBusiness・Googleマップ最適化</span></li>
+      <li>AEO実装 <span>— AI検索・音声検索対応</span></li>
+      <li>パフォーマンス最適化</li>
+      <li>記事システム（11ty） <span>— 検索・タグ・関連記事</span></li>
+      <li>デザイン・UI</li>
+      <li>アクセス解析</li>
+    </ol>
+  </div>
+
+  <!-- A. サイト構成 -->
+  <h2>A. サイト構成</h2>
+  <table>
+    <tr>
+      <th>URL</th>
+      <th>内容</th>
+      <th>言語</th>
+    </tr>
+    <tr>
+      <td><code>/</code></td>
+      <td>メインサイト（ワンページ構成）</td>
+      <td>日本語</td>
+    </tr>
+    <tr>
+      <td><code>/en/</code></td>
+      <td>英語版</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td><code>/pets/</code></td>
+      <td>ペット専用サイト（アンバサダー：pome_ponkun）</td>
+      <td>日本語</td>
+    </tr>
+    <tr>
+      <td><code>/articles/</code></td>
+      <td>記事一覧（11ty生成・15本）</td>
+      <td>日本語</td>
+    </tr>
+    <tr>
+      <td><code>/articles/[slug]/</code></td>
+      <td>個別記事ページ（サイドバー付き）</td>
+      <td>日本語</td>
+    </tr>
+    <tr>
+      <td><code>/articles/tags/[tag]/</code></td>
+      <td>カテゴリ別記事一覧（自動生成・10カテゴリ）</td>
+      <td>日本語</td>
+    </tr>
+  </table>
+
+  <!-- B. 技術スタック -->
+  <h2>B. 技術スタック</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th><th>バージョン</th></tr>
+    <tr><td>静的サイトジェネレータ</td><td>Eleventy（11ty）</td><td>v3.1.5</td></tr>
+    <tr><td>テンプレートエンジン</td><td>Nunjucks（.njk）</td><td>—</td></tr>
+    <tr><td>CSS フレームワーク</td><td>Tailwind CSS（CDN）</td><td>v4.1 以上</td></tr>
+    <tr><td>全文検索</td><td>Pagefind（静的インデックス）</td><td>v1.5.2</td></tr>
+    <tr><td>アニメーション</td><td>Animate.css（CDN）</td><td>v4.1.1</td></tr>
+    <tr><td>スクロールアニメーション</td><td>AOS - Animate On Scroll（CDN）</td><td>v2.3.4</td></tr>
+    <tr><td>アイコン</td><td>Lucide（CDN）</td><td>v0.536.0</td></tr>
+    <tr><td>フォント</td><td>Noto Sans JP / Noto Serif JP（Google Fonts）</td><td>—</td></tr>
+    <tr><td>画像最適化</td><td>Jimp / Tinify API</td><td>—</td></tr>
+    <tr><td>ホスティング</td><td>Cloudflare Pages</td><td>—</td></tr>
+    <tr><td>バージョン管理</td><td>Git / GitHub</td><td>—</td></tr>
+  </table>
+
+  <!-- C. SEO -->
+  <h2>C. SEO 基本実装</h2>
+  <table>
+    <tr><th>項目</th><th>状態</th><th>備考</th></tr>
+    <tr><td>title タグ</td><td><span class="badge-done">✅ 実装済</span></td><td>各ページ固有・適切な文字数</td></tr>
+    <tr><td>meta description</td><td><span class="badge-done">✅ 実装済</span></td><td>各ページ固有・120文字以内</td></tr>
+    <tr><td>meta keywords</td><td><span class="badge-done">✅ 実装済</span></td><td>メインサイトに設定</td></tr>
+    <tr><td>canonical タグ</td><td><span class="badge-done">✅ 実装済</span></td><td>全ページ</td></tr>
+    <tr><td>hreflang</td><td><span class="badge-done">✅ 実装済</span></td><td>ja / en / x-default</td></tr>
+    <tr><td>robots.txt</td><td><span class="badge-done">✅ 実装済</span></td><td>Allow: / / Sitemap 指定あり</td></tr>
+    <tr><td>sitemap.xml</td><td><span class="badge-done">✅ 実装済</span></td><td>メインサイト用・記事用（2ファイル）</td></tr>
+    <tr><td>BreadcrumbList</td><td><span class="badge-done">✅ 実装済</span></td><td>記事ページで3階層（ホーム › 記事 › タイトル）</td></tr>
+    <tr><td>ファビコン</td><td><span class="badge-done">✅ 実装済</span></td><td>512×512px 正方形PNG</td></tr>
+  </table>
+
+  <!-- D. OGP -->
+  <h2>D. OGP / Twitter Card</h2>
+  <table>
+    <tr><th>プロパティ</th><th>メインサイト</th><th>ペットサイト</th><th>英語版</th><th>記事ページ</th></tr>
+    <tr><td>og:title</td><td>✅</td><td>✅</td><td>✅</td><td>✅（動的）</td></tr>
+    <tr><td>og:description</td><td>✅</td><td>✅</td><td>✅</td><td>✅（動的）</td></tr>
+    <tr><td>og:type</td><td>website</td><td>website</td><td>website</td><td>article</td></tr>
+    <tr><td>og:site_name</td><td>GBC アンバサダーサイト</td><td>GBC ペットアンバサダーサイト</td><td>GBC Ambassador Site</td><td>GBC コラム</td></tr>
+    <tr><td>og:url</td><td>✅</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>og:image</td><td>✅</td><td>✅（専用画像）</td><td>✅</td><td>✅（サムネイル）</td></tr>
+    <tr><td>twitter:card</td><td>summary_large_image</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td>twitter:title</td><td>✅</td><td>✅</td><td>✅</td><td>✅（動的）</td></tr>
+    <tr><td>twitter:description</td><td>✅</td><td>✅</td><td>✅</td><td>✅（動的）</td></tr>
+    <tr><td>twitter:image</td><td>✅</td><td>✅</td><td>✅</td><td>✅（サムネイル）</td></tr>
+  </table>
+
+  <!-- E. JSON-LD -->
+  <h2>E. JSON-LD 構造化データ</h2>
+  <table>
+    <tr><th>スキーマ</th><th>設置場所</th><th>主なプロパティ</th></tr>
+    <tr>
+      <td><strong>WebSite</strong></td>
+      <td>メインサイト</td>
+      <td>name / url / description / author（Person）/ about（CafeOrCoffeeShop）</td>
+    </tr>
+    <tr>
+      <td><strong>CafeOrCoffeeShop<br>（LocalBusiness）</strong></td>
+      <td>全記事ページ・メインサイト</td>
+      <td>name / telephone / address / geo / openingHours / priceRange / amenityFeature / paymentAccepted / aggregateRating / hasMap / sameAs</td>
+    </tr>
+    <tr>
+      <td><strong>BreadcrumbList</strong></td>
+      <td>全ページ</td>
+      <td>ホーム › 記事 › タイトル（動的生成）</td>
+    </tr>
+    <tr>
+      <td><strong>BlogPosting</strong></td>
+      <td>個別記事ページ</td>
+      <td>headline / datePublished / dateModified / author / publisher / image / speakable / mainEntityOfPage</td>
+    </tr>
+    <tr>
+      <td><strong>FAQPage</strong></td>
+      <td>記事ページ（Q&Aあり）</td>
+      <td>Question / acceptedAnswer（記事内容から自動抽出）</td>
+    </tr>
+    <tr>
+      <td><strong>VideoObject</strong></td>
+      <td>メインサイト</td>
+      <td>焙煎体験・ハンドドリップ体験動画 ×2（name / description / thumbnailUrl / uploadDate / embedUrl）</td>
+    </tr>
+    <tr>
+      <td><strong>Person</strong></td>
+      <td>メインサイト・全記事</td>
+      <td>@id / name / jobTitle / knowsAbout / sameAs（Kikumiを固有エンティティとして識別）</td>
+    </tr>
+  </table>
+
+  <!-- F. MEO -->
+  <h2>F. MEO（Googleマップ最適化）</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>住所（構造化）</td><td>東京都渋谷区千駄ヶ谷3-30-1 RC APARTMENT 1階（PostalAddress形式）</td></tr>
+    <tr><td>電話番号</td><td>+81-3-6447-0681</td></tr>
+    <tr><td>座標（geo）</td><td>緯度 35.6775167 / 経度 139.7078346</td></tr>
+    <tr><td>営業時間</td><td>毎日 10:30〜20:00（OpeningHoursSpecification）</td></tr>
+    <tr><td>価格帯</td><td>￥1,000〜￥2,999</td></tr>
+    <tr><td>設備情報</td><td>Wi-Fi / 電源コンセント / ペット同伴可 / テイクアウト</td></tr>
+    <tr><td>支払方法</td><td>現金 / クレジットカード / 電子マネー / QRコード決済</td></tr>
+    <tr><td>Google評価（JSON-LD）</td><td>4.8（526件）</td></tr>
+    <tr><td>hasMap</td><td>Google Maps URL 設定済み</td></tr>
+    <tr><td>Googleマップ埋め込み</td><td>記事サイドバーにiframe実装</td></tr>
+    <tr><td>sameAs</td><td>Instagram / YouTube / 食べログ</td></tr>
+  </table>
+
+  <!-- G. AEO -->
+  <h2>G. AEO（AI検索・音声検索最適化）</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>FAQPage スキーマ</td><td>記事内のQ&Aを自動抽出・構造化。AI・音声検索に直接回答として活用される</td></tr>
+    <tr><td>speakable スキーマ</td><td>h1・article p を音声読み上げ対象に指定（Google Assistant等対応）</td></tr>
+    <tr><td>BlogPosting スキーマ</td><td>全15記事に実装。datePublished / author / headline を構造化</td></tr>
+    <tr><td>Person エンティティ</td><td>@id でKikumiを固有エンティティ化。全記事のauthorと紐付け</td></tr>
+    <tr><td>セマンティックHTML</td><td>h1〜h3 / article / section / nav 等の適切な使用</td></tr>
+    <tr><td>内部リンク運用</td><td>新記事作成時に3〜4本のアンカーテキストリンク＋2〜3本の逆リンクを追加（ルール化・運用中）</td></tr>
+    <tr><td>エリアキーワード</td><td>北参道・千駄ヶ谷・ダガヤサンドウ・表参道・渋谷・代々木・新宿 等を各記事に自然に挿入</td></tr>
+    <tr><td>周辺スポットキーワード</td><td>鳩森八幡神社・国立競技場・代々木公園・明治神宮外苑 等を記事内に挿入</td></tr>
+  </table>
+
+  <!-- H. パフォーマンス -->
+  <h2>H. パフォーマンス最適化</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>画像遅延読み込み</td><td><code>loading="lazy" decoding="async"</code> 全画像に設定</td></tr>
+    <tr><td>CDN 利用</td><td>Tailwind CSS / Animate.css / AOS / Lucide / Google Fonts</td></tr>
+    <tr><td>外部依存最小化</td><td>不要なライブラリを排除・必要最小限の外部リソースのみ利用</td></tr>
+    <tr><td>モバイルファースト</td><td>Tailwind レスポンシブ設計（sm / md / lg ブレークポイント）</td></tr>
+    <tr><td>画像圧縮</td><td>記事サムネイルは200KB以内を基準に管理</td></tr>
+    <tr><td>ファビコン</td><td>512×512px 正方形PNG</td></tr>
+  </table>
+
+  <!-- I. 記事システム -->
+  <h2>I. 記事システム（11ty）</h2>
+
+  <h3>記事・カテゴリ</h3>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>記事数</td><td>15本（随時追加）</td></tr>
+    <tr><td>カテゴリ（タグ）</td><td>10種類：コーヒー / 焙煎 / グルテンフリー / 体験・イベント / ペット / 美容健康 / ビジネス / サードプレイス / 店内 / ダガヤサンドウ</td></tr>
+    <tr><td>記事文字数</td><td>2,000文字程度を基準（Q&A・まとめ含む）</td></tr>
+    <tr><td>記事サムネイル</td><td>全記事に設定済み（Unsplash・ローカル保存）</td></tr>
+  </table>
+
+  <h3>機能・ナビゲーション</h3>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>全文検索</td><td>Pagefind（ビルド時インデックス生成）</td></tr>
+    <tr><td>カテゴリフィルター</td><td>モバイル3段 / PC2段（JSでアクティブ状態を同期）</td></tr>
+    <tr><td>関連記事</td><td>タグ一致数スコアリング・最大3件表示</td></tr>
+    <tr><td>前後記事ナビ</td><td>前の記事 / 次の記事リンク</td></tr>
+    <tr><td>SNSシェア</td><td>X（Twitter）/ LINE / Facebook（動的URL生成）</td></tr>
+    <tr><td>カテゴリページ</td><td>/articles/tags/[slug]/ を自動生成</td></tr>
+    <tr><td>記事サイトマップ</td><td>articles-sitemap.xml をビルド時自動生成</td></tr>
+  </table>
+
+  <h3>サイドバー（記事詳細ページ）</h3>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>関連記事</td><td>タグ一致スコアで最大3件</td></tr>
+    <tr><td>カテゴリ一覧</td><td>全10カテゴリへのリンク</td></tr>
+    <tr><td>アクセス情報</td><td>住所・営業時間・Google評価・Maps埋め込み</td></tr>
+    <tr><td>公式SNS</td><td>Instagram / YouTube リンク</td></tr>
+  </table>
+
+  <!-- J. デザイン・UI -->
+  <h2>J. デザイン・UI</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr>
+      <td>カラーパレット</td>
+      <td>
+        Primary #4A3728（ダークブラウン）<br>
+        Secondary #8B7355（ミディアムブラウン）<br>
+        Accent #C9A86C（ゴールドベージュ）<br>
+        Background #FAF8F5（オフホワイト）<br>
+        Text #2D2A26（ダークグレー）
+      </td>
+    </tr>
+    <tr><td>フォント</td><td>本文：Noto Sans JP / 見出し：Noto Serif JP</td></tr>
+    <tr><td>レスポンシブ</td><td>モバイルファースト（sm / md / lg ブレークポイント）</td></tr>
+    <tr><td>アニメーション</td><td>Animate.css + AOS（スクロール連動）</td></tr>
+    <tr><td>ナビゲーション</td><td>固定ナビ（スクロールで背景変化）/ モバイルハンバーガーメニュー</td></tr>
+    <tr><td>記事レイアウト</td><td>2カラム（本文 + スティッキーサイドバー）</td></tr>
+    <tr><td>言語切替</td><td>日本語 / English トグルボタン</td></tr>
+  </table>
+
+  <!-- K. アクセス解析 -->
+  <h2>K. アクセス解析</h2>
+  <table>
+    <tr><th>項目</th><th>内容</th></tr>
+    <tr><td>ツール</td><td>Google Analytics 4（GA4）</td></tr>
+    <tr><td>トラッキングID</td><td>G-LPQZLGFJVX</td></tr>
+    <tr><td>設置ページ</td><td>メインサイト・記事ページ全ページ</td></tr>
+    <tr><td>実装方法</td><td>gtag.js（非同期読み込み）</td></tr>
+  </table>
+
+  <!-- 文体・運用ルール -->
+  <h2>L. 文体・コンテンツ運用ルール</h2>
+  <table>
+    <tr><th>項目</th><th>ルール</th></tr>
+    <tr><td>執筆視点</td><td>アンバサダー視点（外部の立場）。「〜と教えていただきました」「〜とのことです」</td></tr>
+    <tr><td>一人称</td><td>「私」固定</td></tr>
+    <tr><td>読点（、）</td><td>最小限に抑える（Kikumi文体の最大の特徴）</td></tr>
+    <tr><td>お客さん表記</td><td>「お客さん」または「お客さま」を文脈で使い分け。「客」単体は使用禁止</td></tr>
+    <tr><td>記事文字数</td><td>2,000文字程度（Q&A・まとめ含む）</td></tr>
+    <tr><td>カテゴリ数</td><td>原則1つ・最大2つまで（1記事あたり）</td></tr>
+    <tr><td>内部リンク</td><td>新記事 → 既存記事：3〜4本 / 既存記事 → 新記事（逆リンク）：2〜3本</td></tr>
+    <tr><td>画像</td><td>Unsplash画像はローカル保存（public/assets/images/articles/）・200KB以内推奨</td></tr>
+    <tr><td>Q&A</td><td>AEO対策のため各記事に4問程度を推奨</td></tr>
+  </table>
+
+  <div class="footer-note">
+    Green Beans Coffee アンバサダーサイト 実装一覧ドキュメント｜2026年5月作成<br>
+    greenbeanscoffeeambassador.com｜Claude Code（Anthropic）により作成
+  </div>
+
+</div>
+
+</body>
+</html>
