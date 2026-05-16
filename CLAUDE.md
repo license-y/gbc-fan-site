@@ -191,7 +191,7 @@ Unsplashから画像を使用する場合は、外部URLを直接参照せず、
 以下の構造化データを `<head>` 内または `</body>` 直前に設置:
 
 1. **LocalBusiness (CafeOrCoffeeShop)**: 店舗情報
-2. **FAQPage**: よくある質問（メインサイト: 19問、ペットサイト: ペット特化FAQ）
+2. **FAQPage**: よくある質問（メインサイト: 28問、ペットサイト: ペット特化FAQ）
 3. **WebSite**: サイト情報
 
 詳細は `project-docs/technical-spec.md` を参照。
@@ -199,7 +199,7 @@ Unsplashから画像を使用する場合は、外部URLを直接参照せず、
 ## FAQセクション
 
 - アコーディオン形式で実装
-- **メインサイト**: 19問の基本Q&Aを掲載
+- **メインサイト**: 28問の基本Q&Aを掲載
 - **ペットサイト**: ペット特化FAQを掲載（メインサイトとは独立）
 - JSON-LD FAQPage と連動
 
@@ -252,7 +252,7 @@ assets/images/magazine/YYYYMM-back.jpg
 | GBC Magazine | あり | なし |
 | Pet Friendly | Experienceに含む | 独立セクション |
 | Cheki Booth | なし | あり |
-| FAQ | 19問（基本FAQ） | ペット特化FAQ（独立） |
+| FAQ | 28問（基本FAQ） | ペット特化FAQ（独立） |
 
 ## 基本情報の同期ルール
 
@@ -312,7 +312,7 @@ src/
 
 ```bash
 npm run dev    # ローカル確認（記事ページのみ。検索機能は動作しない）
-npm run build  # 本番ビルド（eleventy + pagefind。Cloudflare Pagesが自動実行）
+npm run build  # 本番ビルド（最終更新日自動更新 + eleventy + pagefind。Cloudflare Pagesが自動実行）
 ```
 
 **重要**: `npm run dev` では検索（Pagefind）は動作しない。検索テストは `npm run build` 後に `npx serve public` で確認。
