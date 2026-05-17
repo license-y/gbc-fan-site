@@ -50,7 +50,7 @@ thumbnail: /assets/images/articles/gluten-free-basics.jpg
 
 ただし缶コーヒーやインスタントコーヒーには小麦由来成分が使われているものがあります。グルテンを意識するなら成分表示を確認する習慣が大切です。豆から丁寧に淹れたコーヒーはグルテンフリーの食事との相性も抜群で腸が落ち着いてくると風味もよりクリアに感じられます。
 
-GBCのグルテンフリーメニューを実際に食べたレポートは[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)でご覧いただけます。コーヒーの抗酸化成分と美容の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。GBCのコーヒーへの素材へのこだわりは[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でも感じていただけます。
+GBCのグルテンフリーメニューを実際に食べたレポートは[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)でご覧いただけます。コーヒーの抗酸化成分と美容の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。GBCのコーヒーへの素材へのこだわりは[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でも感じていただけます。コーヒーがシミ・くすみ・むくみ・冷えに働きかける3つの効果をまとめて知りたい方は[コーヒーで叶える美肌習慣](/articles/coffee-beauty-effects/)もおすすめです。
 
 ## まず週1回の置き換えから
 
