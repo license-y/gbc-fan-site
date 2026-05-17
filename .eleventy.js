@@ -81,6 +81,20 @@ export default function (eleventyConfig) {
     return d.toISOString().split("T")[0];
   });
 
+  // FAQPage Schema用：HTMLからQ&Aペアを抽出
+  eleventyConfig.addFilter("extractFAQ", function (content) {
+    if (!content) return [];
+    const items = [];
+    const regex = /<strong>(Q\.[^<]+)<\/strong><br\s*\/?>([\s\S]*?)<\/p>/gi;
+    let match;
+    while ((match = regex.exec(content)) !== null) {
+      const q = match[1].trim();
+      const a = match[2].replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+      if (q && a) items.push({ q, a });
+    }
+    return items;
+  });
+
   return {
     dir: {
       input: "src",

@@ -76,130 +76,141 @@
     }
   </script>
 
-  <!-- JSON-LD: CafeOrCoffeeShop (LocalBusiness) -->
+  <!-- JSON-LD: @graph（CafeOrCoffeeShop + BreadcrumbList + BlogPosting + FAQPage を1本に統合） -->
+  {% set faqItems = content | extractFAQ %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "Green Beans Coffee",
-    "alternateName": "グリーンビーンズコーヒー",
-    "description": "北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ。店名看板のない隠れ家コーヒー専門店。グルテンフリーメニューあり。",
-    "url": "https://greenbeanscoffeeambassador.com",
-    "telephone": "+81-3-6447-0681",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "千駄ヶ谷3-30-1 RC APARTMENT 1階",
-      "addressLocality": "渋谷区",
-      "addressRegion": "東京都",
-      "postalCode": "151-0051",
-      "addressCountry": "JP"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 35.6775167,
-      "longitude": 139.7078346
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "10:30",
-      "closes": "20:00"
-    },
-    "priceRange": "￥1,000〜￥2,999",
-    "servesCuisine": ["Coffee","Gluten-Free","Cafe"],
-    "amenityFeature": [
-      {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
-      {"@type": "LocationFeatureSpecification", "name": "電源コンセント", "value": true},
-      {"@type": "LocationFeatureSpecification", "name": "ペット同伴可", "value": true},
-      {"@type": "LocationFeatureSpecification", "name": "テイクアウト", "value": true}
-    ],
-    "paymentAccepted": ["Cash","Credit Card","Electronic Money","QR Code Payment"],
-    "currenciesAccepted": "JPY",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "526",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "hasMap": "https://www.google.com/maps/place/Green+Beans+Coffee/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr",
-    "sameAs": [
-      "https://www.instagram.com/green.beanscoffee",
-      "https://www.youtube.com/@greenbeanscoffee9",
-      "https://tabelog.com/tokyo/A1309/A130901/13277423"
-    ]
-  }
-  </script>
-
-  <!-- JSON-LD: BreadcrumbList -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "ホーム",
-        "item": "https://greenbeanscoffeeambassador.com"
+        "@type": "CafeOrCoffeeShop",
+        "name": "Green Beans Coffee",
+        "alternateName": "グリーンビーンズコーヒー",
+        "description": "北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ。店名看板のない隠れ家コーヒー専門店。グルテンフリーメニューあり。",
+        "url": "https://greenbeanscoffeeambassador.com",
+        "telephone": "+81-3-6447-0681",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "千駄ヶ谷3-30-1 RC APARTMENT 1階",
+          "addressLocality": "渋谷区",
+          "addressRegion": "東京都",
+          "postalCode": "151-0051",
+          "addressCountry": "JP"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.6775167,
+          "longitude": 139.7078346
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:30",
+          "closes": "20:00"
+        },
+        "priceRange": "￥1,000〜￥2,999",
+        "servesCuisine": ["Coffee","Gluten-Free","Cafe"],
+        "amenityFeature": [
+          {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "電源コンセント", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "ペット同伴可", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "テイクアウト", "value": true}
+        ],
+        "paymentAccepted": ["Cash","Credit Card","Electronic Money","QR Code Payment"],
+        "currenciesAccepted": "JPY",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "526",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "hasMap": "https://www.google.com/maps/place/Green+Beans+Coffee/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr",
+        "sameAs": [
+          "https://www.instagram.com/green.beanscoffee",
+          "https://www.youtube.com/@greenbeanscoffee9",
+          "https://tabelog.com/tokyo/A1309/A130901/13277423"
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "記事",
-        "item": "https://greenbeanscoffeeambassador.com/articles/"
-      }{% if title and page.url != "/articles/" %},
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://greenbeanscoffeeambassador.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "記事",
+            "item": "https://greenbeanscoffeeambassador.com/articles/"
+          }{% if title and page.url != "/articles/" %},
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ title | dump | safe }},
+            "item": "https://greenbeanscoffeeambassador.com{{ page.url }}"
+          }{% endif %}
+        ]
+      }
+      {% if date %},
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": {{ title | dump | safe }},
-        "item": "https://greenbeanscoffeeambassador.com{{ page.url }}"
-      }{% endif %}
+        "@type": "BlogPosting",
+        "headline": {{ title | dump | safe }},
+        "description": {{ description | dump | safe }},
+        "datePublished": "{{ date | dateISO }}",
+        "dateModified": "{{ date | dateISO }}",
+        "author": {
+          "@type": "Person",
+          "@id": "https://greenbeanscoffeeambassador.com/#ambassador-kikumi",
+          "name": "Kikumi",
+          "jobTitle": "GBCアンバサダー",
+          "url": "https://greenbeanscoffeeambassador.com",
+          "sameAs": [
+            "https://greenbeanscoffeeambassador.com",
+            "https://horikikumi.pages.dev/"
+          ],
+          "knowsAbout": ["スペシャルティコーヒー", "自家焙煎コーヒー", "ペットフレンドリーカフェ", "グルテンフリー"]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Green Beans Coffee アンバサダーサイト",
+          "url": "https://greenbeanscoffeeambassador.com"
+        },
+        "image": "https://greenbeanscoffeeambassador.com{% if thumbnail %}{{ thumbnail }}{% else %}/assets/images/hero_bg-1.jpg{% endif %}",
+        "url": "https://greenbeanscoffeeambassador.com{{ page.url }}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://greenbeanscoffeeambassador.com{{ page.url }}"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "article p"]
+        }
+      }
+      {% endif %}
+      {% if faqItems | length > 0 %},
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for item in faqItems %}
+          {
+            "@type": "Question",
+            "name": {{ item.q | dump | safe }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ item.a | dump | safe }}
+            }
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      }
+      {% endif %}
     ]
   }
   </script>
-
-  {% block head %}{% endblock %}
-
-  {% if date %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": {{ title | dump | safe }},
-    "description": {{ description | dump | safe }},
-    "datePublished": "{{ date | dateISO }}",
-    "dateModified": "{{ date | dateISO }}",
-    "author": {
-      "@type": "Person",
-      "@id": "https://greenbeanscoffeeambassador.com/#ambassador-kikumi",
-      "name": "Kikumi",
-      "jobTitle": "GBCアンバサダー",
-      "url": "https://greenbeanscoffeeambassador.com",
-      "sameAs": [
-        "https://greenbeanscoffeeambassador.com",
-        "https://horikikumi.pages.dev/"
-      ],
-      "knowsAbout": ["スペシャルティコーヒー", "自家焙煎コーヒー", "ペットフレンドリーカフェ", "グルテンフリー"]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Green Beans Coffee アンバサダーサイト",
-      "url": "https://greenbeanscoffeeambassador.com"
-    },
-    "image": "https://greenbeanscoffeeambassador.com{% if thumbnail %}{{ thumbnail }}{% else %}/assets/images/hero_bg-1.jpg{% endif %}",
-    "url": "https://greenbeanscoffeeambassador.com{{ page.url }}",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://greenbeanscoffeeambassador.com{{ page.url }}"
-    },
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": ["h1", "article p"]
-    }
-  }
-  </script>
-  {% endif %}
 </head>
 
 <body class="bg-[#FAF8F5] text-[#2D2A26] overflow-x-hidden">
