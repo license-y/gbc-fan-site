@@ -40,7 +40,7 @@ thumbnail: /assets/images/articles/sendagaya-pet-walk.jpg
 
 自家焙煎のスペシャルティコーヒーを注文してほっとひと息。愛犬が横でリラックスしている姿を見ながら飲むコーヒーは格別です。「ここに来るために歩いてきた」という達成感が加わって一杯の価値がさらに高まります。
 
-このコースのGBC店内の様子は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しく紹介しています。カフェを選ぶときのチェックポイントは[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてご覧ください。鳩森八幡神社の富士塚や鳩みくじについては[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で紹介しています。長時間のお散歩後にも安心なGBCのトイレアメニティは[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)もどうぞ。
+このコースのGBC店内の様子は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しく紹介しています。カフェを選ぶときのチェックポイントは[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてご覧ください。鳩森八幡神社の富士塚や鳩みくじについては[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で紹介しています。長時間のお散歩後にも安心なGBCのトイレアメニティは[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)もどうぞ。ペットと一緒にチェキ写真を撮って店内に飾ってもらえるサービスは[店内ペット同伴OK・無料チェキ展示サービスも](/articles/cheki-pet-cafe-dagayasando/)でご紹介しています。
 
 ## まとめ
 
