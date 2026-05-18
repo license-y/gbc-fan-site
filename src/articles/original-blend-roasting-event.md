@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 世界に一つだけのコーヒーを自分で焙煎してみた：Green Beans Coffeeのオリジナルブレンド体験
+title: 選んだ豆が我が子のように可愛く思えた：GBCのオリジナルブレンド焙煎体験レポート
 description: 北参道のGreen Beans Coffeeで2024年から毎月開催されているオリジナルブレンド焙煎体験。30種類の豆から自分だけのブレンドを作り実際に焙煎するイベントのレポートです。
 date: 2026-05-18
 tags:
