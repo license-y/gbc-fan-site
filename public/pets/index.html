@@ -44,7 +44,7 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
 
   <!-- CDN: Animate.css v4.1.1 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'" />
 
   <!-- CDN: AOS v2.3.4 -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
@@ -440,10 +440,12 @@
       <div class="absolute inset-0 z-0">
         <img id="hero-bg-1" src="assets/images/hero/hero-bg-1.jpg"
              alt="愛犬と一緒にゆったりコーヒーを楽しめる北参道の都会派ペットフレンドリーカフェ Green Beans Coffee。小型・中型犬の店内同伴OKで、北参道・千駄ヶ谷の隠れ家空間でのひとときを"
-             class="absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-[4000ms] ease-in-out">
+             class="absolute inset-0 w-full h-full object-cover object-bottom transition-opacity duration-[4000ms] ease-in-out"
+             width="1920" height="1080" fetchpriority="high">
         <img id="hero-bg-2" src="assets/images/hero/hero-bg-2.jpg"
              alt="北参道・千駄ヶ谷（ダガヤサンドウ）エリアにある犬同伴OKのコーヒー専門店 Green Beans Coffee。愛犬連れの飼い主がリラックスして過ごせる、都会の真ん中のくつろぎ空間"
-             class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[4000ms] ease-in-out">
+             class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-[4000ms] ease-in-out"
+             width="1920" height="1080" loading="lazy">
         <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-black/50"></div>
         <!-- Bottom fade to match wave divider -->
         <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#4A3728] to-transparent"></div>
