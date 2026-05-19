@@ -7,7 +7,7 @@ tags:
   - articles
   - 美容健康
   - コーヒー
-thumbnail: /assets/images/articles/1.jpg
+thumbnail: /assets/images/articles/chlorogenic-acid-beauty.jpg
 ---
 
 GBCに通いながらバリスタさんから教えていただくコーヒーと美容の関係は知れば知るほど奥が深いテーマです。クロロゲン酸の抗酸化作用からカフェインが血行に与える影響まで一杯のコーヒーには思っていた以上に美容に関わる成分が詰まっています。
