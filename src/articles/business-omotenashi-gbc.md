@@ -7,7 +7,7 @@ tags:
   - articles
   - ビジネス
   - 店内
-thumbnail: /assets/images/articles/01.jpg
+thumbnail: /assets/images/articles/business-omotenashi-gbc.jpg
 ---
 
 席に着くとまもなくスタッフがおしぼりとお冷を持ってきてくれます。
