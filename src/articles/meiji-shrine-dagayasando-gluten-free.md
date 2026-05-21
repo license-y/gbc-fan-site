@@ -7,7 +7,7 @@ tags:
   - articles
   - ダガヤサンドウ
   - グルテンフリー
-thumbnail: /assets/images/articles/13002696_3476_2.jpg
+thumbnail: /assets/images/articles/meiji-shrine-dagayasando.jpg
 ---
 
 明治神宮の参道を歩くと空気が変わる感覚があります。
