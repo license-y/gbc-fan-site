@@ -69,16 +69,21 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // 日付フォーマットフィルター（例: 2026年5月7日）
+  // 日付フォーマットフィルター（例: 2026年5月7日）- JST基準
   eleventyConfig.addFilter("dateJa", function (date) {
     const d = new Date(date);
-    return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
+    const jst = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+    return `${jst.getFullYear()}年${jst.getMonth() + 1}月${jst.getDate()}日`;
   });
 
-  // ISO 8601 日付フィルター（例: 2026-05-07）
+  // ISO 8601 日付フィルター（例: 2026-05-07）- JST基準
   eleventyConfig.addFilter("dateISO", function (date) {
     const d = new Date(date);
-    return d.toISOString().split("T")[0];
+    const jst = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+    const y = jst.getFullYear();
+    const m = String(jst.getMonth() + 1).padStart(2, '0');
+    const day = String(jst.getDate()).padStart(2, '0');
+    return `${y}-${m}-${day}`;
   });
 
   // FAQPage Schema用：HTMLからQ&Aペアを抽出
