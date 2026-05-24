@@ -46,7 +46,7 @@ thumbnail: /assets/images/articles/coffee-beauty-effects.jpg
 
 千駄ヶ谷・ダガヤサンドウエリアを散策したり鳩森八幡神社へ立ち寄ったりするついでに一杯。代々木や表参道から少し足を延ばして訪れる価値のある場所だと感じています。
 
-コーヒーの抗酸化成分についてさらに詳しく知りたい方は[クロロゲン酸が活性酸素を抑えるしくみを解説した記事](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。腸内環境と美容のつながりに興味がある方には[グルテンと美容・健康の関係を学べる記事](/articles/gluten-basics-beauty-health/)もおすすめです。美容効果を高めたい方は豆のクオリティにもこだわった[グリーンビーンズコーヒーのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひ試してみてください。浅煎りの魅力をもっと深く知りたい方は[GBCの焙煎体験レポート](/articles/roasting-experience/)も参考になります。GBCのグルテンフリーフォカッチャと美容コーヒーのペアリングは[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)でご紹介しています。
+コーヒーの抗酸化成分についてさらに詳しく知りたい方は[クロロゲン酸が活性酸素を抑えるしくみを解説した記事](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。ブラックコーヒーで美容効果を最大限に活かす飲み方と習慣は[千駄ヶ谷のカフェで始めるブラックコーヒー習慣：美容健康に効く飲み方と効果](/articles/black-coffee-beauty-health/)で詳しく紹介しています。腸内環境と美容のつながりに興味がある方には[グルテンと美容・健康の関係を学べる記事](/articles/gluten-basics-beauty-health/)もおすすめです。美容効果を高めたい方は豆のクオリティにもこだわった[グリーンビーンズコーヒーのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひ試してみてください。浅煎りの魅力をもっと深く知りたい方は[GBCの焙煎体験レポート](/articles/roasting-experience/)も参考になります。GBCのグルテンフリーフォカッチャと美容コーヒーのペアリングは[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)でご紹介しています。
 
 ## まとめ
 
