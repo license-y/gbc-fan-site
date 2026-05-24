@@ -1,6 +1,6 @@
----
+﻿---
 layout: article.njk
-title: 千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩：将棋会館・鳩森八幡神社を通ってGreen Beans Coffeeへ
+title: 千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ
 description: 千駄ヶ谷駅を出発し東京体育館・将棋会館・鳩森八幡神社を通ってGreen Beans Coffeeへ。愛犬と歩くダガヤサンドウ散歩コースの魅力と店内ペット同伴OKのGBCでのひと休みをレポートします。
 date: 2026-05-14
 tags:

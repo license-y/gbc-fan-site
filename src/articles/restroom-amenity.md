@@ -1,6 +1,6 @@
----
+﻿---
 layout: article.njk
-title: トイレにこそお店の本気が出るGreen Beans Coffeeのアメニティ
+title: 千駄ヶ谷のカフェ店内レポート：トイレのアメニティにGBCの本気を見た
 description: 北参道・Green Beans Coffeeのトイレには歯のお手入れピックやうがい薬など心遣いあふれるアメニティが揃っています。デートや外出時にも安心して使えるカフェです。
 date: 2026-05-07
 tags:
