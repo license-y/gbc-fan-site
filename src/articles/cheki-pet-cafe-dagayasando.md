@@ -6,7 +6,7 @@ date: 2026-05-16
 tags:
   - articles
   - ペット
-  - 店内
+  - カフェ店内
 thumbnail: /assets/images/articles/cheki-pet-cafe-dagayasando.jpg
 ---
 

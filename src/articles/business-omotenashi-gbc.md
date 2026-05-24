@@ -6,7 +6,7 @@ date: 2026-05-20
 tags:
   - articles
   - ビジネス
-  - 店内
+  - カフェ店内
 thumbnail: /assets/images/articles/business-omotenashi-gbc.jpg
 ---
 

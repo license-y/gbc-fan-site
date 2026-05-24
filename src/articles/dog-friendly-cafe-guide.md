@@ -6,7 +6,7 @@ date: 2026-05-12
 tags:
   - articles
   - ペット
-  - 店内
+  - カフェ店内
 thumbnail: /assets/images/articles/pet-friendly-cafe-dogs.jpg
 ---
 
