@@ -42,7 +42,7 @@ thumbnail: /assets/images/articles/handdrip-event.jpg
 
 お得すぎる体験であることは確かです。グリーンビーンズコーヒーのコーヒーをより深く知りたいと思ったらぜひ参加してみてください！
 
-このイベントの毎月の開催情報や参加の流れについては[北参道のバリスタに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もあわせてご覧ください。豆を自分で焙煎する体験に興味が湧いた方は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベント](/articles/roasting-experience/)もおすすめです。30種類の豆からオリジナルブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別です。体験後の散歩コースには[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もぜひ。GBCが本物の牛乳にこだわる理由は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でご覧いただけます。日々のハンドドリップを楽しむカフェ店内の雰囲気については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひ読んでみてください。
+このイベントの毎月の開催情報や参加の流れについては[北参道のバリスタに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もあわせてご覧ください。豆を自分で焙煎する体験に興味が湧いた方は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベント](/articles/roasting-experience/)もおすすめです。30種類の豆からオリジナルブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別です。体験後の散歩コースには[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もぜひ。GBCが本物の牛乳にこだわる理由は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でご覧いただけます。日々のハンドドリップを楽しむカフェ店内の雰囲気については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひ読んでみてください。体験で知ったコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)もあわせてどうぞ。
 
 ## まとめ
 
