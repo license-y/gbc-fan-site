@@ -44,7 +44,7 @@ thumbnail: /assets/images/articles/meiji-shrine-dagayasando.jpg
 
 洗練されたダガヤサンドウの雰囲気とグリーンビーンズコーヒーの空間が相まって「東京らしいおしゃれな体験」として支持されているのだと感じています。
 
-GBCで楽しめるグルテンフリーフードの詳細は[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)と[小麦粉不使用なのにこのおいしさ：GBCの自家製グルテンフリースイーツプレート3種](/articles/glutenfree-sweets-plate/)でご紹介しています。ダガヤサンドウのもうひとつのパワースポットを知りたい方は[北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もあわせてどうぞ。グルテンフリーと美容・健康の関係を詳しく知りたい方には[小麦が腸に与える影響とは？グルテンを知って始める美容・健康習慣](/articles/gluten-basics-beauty-health/)もおすすめです。
+GBCで楽しめるグルテンフリーフードの詳細は[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)と[小麦粉不使用なのにこのおいしさ：GBCの自家製グルテンフリースイーツプレート3種](/articles/glutenfree-sweets-plate/)でご紹介しています。ダガヤサンドウのもうひとつのパワースポットを知りたい方は[北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もあわせてどうぞ。グルテンフリーと美容・健康の関係を詳しく知りたい方には[小麦が腸に与える影響とは？グルテンを知って始める美容・健康習慣](/articles/gluten-basics-beauty-health/)もおすすめです。北参道駅からダガヤサンドウを歩くルートとGBCへのアクセスは[北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)でもご紹介しています。
 
 ## まとめ
 
