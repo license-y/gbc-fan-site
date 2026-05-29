@@ -7,7 +7,7 @@ tags:
   - articles
   - サードプレイス
   - カフェ店内
-thumbnail: https://source.unsplash.com/K8XYGbw4Ahg/1200x800
+thumbnail: https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?w=1200&q=80
 ---
 
 渋谷や新宿でデートをしたあとで「少しゆっくりしたいね」となる瞬間があります。そのとき私がいつも思い浮かべるのは北参道のGreen Beans Coffeeです。
