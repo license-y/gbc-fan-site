@@ -1,4 +1,4 @@
----
+﻿---
 layout: article.njk
 title: コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方
 description: Green Beans Coffeeのバリスタ体験で知ったコーヒーと温度の関係。淹れたて約70℃ではコクと酸味、3分後50℃前後では香りと風味が豊かになります。飲み頃を知ると一杯の楽しみ方が広がります。
@@ -44,7 +44,7 @@ Green Beans Coffeeは毎月GBCマガジンを発行しています。
 
 ---
 
-以前の体験では[豆の選別からハンドドリップまで、GBCの体験イベントの全容](/articles/handdrip-experience/)を詳しく書きました。毎月のイベント詳細や申し込み方法については[北参道のバリスタに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)をあわせてご覧ください。温度と風味の関係を理解した上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)はひと味違います。コーヒーをもっと深く知りたくなったら[GBCの焙煎体験イベント](/articles/roasting-experience/)で豆から学ぶのもおすすめです。国立競技場や鳩森八幡神社が近いダガヤサンドウのGBCは渋谷・新宿・表参道からもアクセスしやすい立地です。
+以前の体験では[豆の選別からハンドドリップまで、GBCの体験イベントの全容](/articles/handdrip-experience/)を詳しく書きました。毎月のイベント詳細や申し込み方法については[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)をあわせてご覧ください。温度と風味の関係を理解した上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)はひと味違います。コーヒーをもっと深く知りたくなったら[GBCの焙煎体験イベント](/articles/roasting-experience/)で豆から学ぶのもおすすめです。国立競技場や鳩森八幡神社が近いダガヤサンドウのGBCは渋谷・新宿・表参道からもアクセスしやすい立地です。
 
 ## まとめ
 
