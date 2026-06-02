@@ -50,7 +50,7 @@ thumbnail: /assets/images/articles/original-blend-roasting.jpg
 
 自分でブレンドして焙煎した一杯は格別においしく感じました。同じ豆でも組み合わせや焙煎の具合で風味が変わることを体験として実感できます。グリーンビーンズコーヒーでしかできないこの体験はコーヒーへの向き合い方を変えてくれます。完成したブレンドは持ち帰ることもできます。
 
-ブレンドと焙煎をあわせて学ぶなら[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)もおすすめです。豆の個性を理解した上で飲む[GBCオリジナルのプレミアムコーヒー](/articles/premium-coffee-gbc/)はさらに奥深く感じられます。焙煎の視点で読む[自家焙煎コーヒーの焙煎体験レポート](/articles/roasting-experience/)も参考になります。焙煎と美容成分の関係に興味が出てきたら[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。焙煎士から直接学び自分の豆を持ち帰れる月例イベントは[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)でご紹介しています。
+焙煎の基礎知識は[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)でまとめていますのでブレンド体験の前にぜひ読んでみてください。ブレンドと焙煎をあわせて学ぶなら[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)もおすすめです。豆の個性を理解した上で飲む[GBCオリジナルのプレミアムコーヒー](/articles/premium-coffee-gbc/)はさらに奥深く感じられます。焙煎の視点で読む[自家焙煎コーヒーの焙煎体験レポート](/articles/roasting-experience/)も参考になります。焙煎と美容成分の関係に興味が出てきたら[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。焙煎士から直接学び自分の豆を持ち帰れる月例イベントは[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)でご紹介しています。
 
 ## まとめ
 

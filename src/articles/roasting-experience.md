@@ -38,7 +38,7 @@ thumbnail: /assets/images/articles/roasting-event.jpg
 
 グリーンビーンズコーヒーの30種類以上の豆ラインナップを改めて見ると、それぞれに個性があることが感じられて、選ぶのが楽しくなりました。
 
-30種類の豆から自分だけのブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。毎月開催・豆代のみで参加できるハンドドリップ体験の詳細は[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もご覧ください。焙煎を学んだ目線で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。GBCが素材にこだわる姿勢は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)にも表れています。焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントの詳細は[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)もどうぞ。
+焙煎の基礎から押さえたい方は[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)もあわせてご覧ください。30種類の豆から自分だけのブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。毎月開催・豆代のみで参加できるハンドドリップ体験の詳細は[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もご覧ください。焙煎を学んだ目線で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。GBCが素材にこだわる姿勢は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)にも表れています。焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントの詳細は[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)もどうぞ。
 
 ## まとめ
 
