@@ -60,7 +60,7 @@ thumbnail: /assets/images/articles/coffee-roasting-basics-gbc.jpg
 
 専用の焙煎機を使って実際に豆を焙煎しその場でドリップして飲む体験です。焙煎の3つのポイントを知った状態で参加すると体験の解像度が全然ちがいます。「ここで焙煎度の差が出るんだ」「これがチャフか」という実感を持ちながら楽しめます。
 
-焙煎体験の雰囲気は[北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)で詳しくご紹介しています。焙煎した豆を持ち帰れる月例イベントは[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)をご覧ください。30種類の豆からブレンドを作る体験は[北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)でレポートしています。焙煎した豆で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)も焙煎の視点で味わうとまた違う発見があります。
+焙煎体験の雰囲気は[北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)で詳しくご紹介しています。焙煎した豆を持ち帰れる月例イベントは[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)をご覧ください。30種類の豆からブレンドを作る体験は[北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)でレポートしています。焙煎した豆で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)も焙煎の視点で味わうとまた違う発見があります。豆のタイプ（フルーティ・マイルド・ビター）の特徴と選び方は[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)で詳しくまとめています。
 
 ## まとめ
 
