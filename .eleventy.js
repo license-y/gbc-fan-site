@@ -86,6 +86,16 @@ export default function (eleventyConfig) {
     return `${y}-${m}-${day}`;
   });
 
+  // RSS用：RFC 2822形式の日付フィルター
+  eleventyConfig.addFilter("dateToRfc2822", function (date) {
+    return new Date(date).toUTCString();
+  });
+
+  // 配列の先頭N件を返すフィルター
+  eleventyConfig.addFilter("head", function (array, n) {
+    return array.slice(0, n);
+  });
+
   // FAQPage Schema用：HTMLからQ&Aペアを抽出
   eleventyConfig.addFilter("extractFAQ", function (content) {
     if (!content) return [];

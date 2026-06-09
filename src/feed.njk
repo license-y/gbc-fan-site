@@ -1,0 +1,27 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Green Beans Coffee｜GBCアンバサダー Kikumiのコラム</title>
+    <link>https://greenbeanscoffeeambassador.com/articles/</link>
+    <atom:link href="https://greenbeanscoffeeambassador.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>店名看板のないペットフレンドリーカフェ・Green Beans Coffee（北参道・ダガヤサンドウ）の最新コラム</description>
+    <language>ja</language>
+    <lastBuildDate>{{ collections.articles[0].date | dateToRfc2822 }}</lastBuildDate>
+    {% for post in collections.articles | head(20) %}
+    <item>
+      <title>{{ post.data.title | escape }}</title>
+      <link>https://greenbeanscoffeeambassador.com{{ post.url }}</link>
+      <guid isPermaLink="true">https://greenbeanscoffeeambassador.com{{ post.url }}</guid>
+      <pubDate>{{ post.date | dateToRfc2822 }}</pubDate>
+      <description>{{ post.data.description | escape }}</description>
+      {% if post.data.thumbnail %}
+      <enclosure url="https://greenbeanscoffeeambassador.com{{ post.data.thumbnail }}" type="image/jpeg" length="0"/>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
