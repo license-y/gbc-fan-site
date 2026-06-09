@@ -48,7 +48,7 @@ thumbnail: /assets/images/articles/dog-cheki-photo-booth-dagayasando-gbc.jpg
 
 ## まとめ
 
-東京・渋谷エリアで愛犬と本格的なサードプレイス体験をしたい方にGreen Beans Coffeeはベストな選択肢のひとつです。[千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)ではチェキブースの詳しい様子をレポートしています。GBCへ向かう散歩コースについては[千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)が参考になります。サードプレイスとしてのGBCの魅力は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でも詳しく紹介しています。
+東京・渋谷エリアで愛犬と本格的なサードプレイス体験をしたい方にGreen Beans Coffeeはベストな選択肢のひとつです。[千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)ではチェキブースの詳しい様子をレポートしています。GBCへ向かう散歩コースについては[千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)が参考になります。サードプレイスとしてのGBCの魅力は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でも詳しく紹介しています。店内同伴OKのGBCで愛犬と記念写真を撮る楽しみ方は[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)でも書いています。
 
 グリーンビーンズコーヒーは北参道駅から徒歩3分のダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店です。店内全席ペット同伴OKで無料のチェキ撮影・展示サービスも行っています。東京・渋谷区で愛犬と過ごすサードプレイスをお探しの方にぜひ訪れてほしい一軒です。
 
