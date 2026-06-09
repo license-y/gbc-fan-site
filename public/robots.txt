@@ -4,5 +4,34 @@
 User-agent: *
 Allow: /
 
+# AIクローラー明示的許可（AEO対策）
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
 # サイトマップの場所
 Sitemap: https://greenbeanscoffeeambassador.com/sitemap.xml
+Sitemap: https://greenbeanscoffeeambassador.com/articles-sitemap.xml
