@@ -96,6 +96,14 @@ export default function (eleventyConfig) {
     return array.slice(0, n);
   });
 
+  // RSS用：HTMLタグを除去して本文冒頭250字を返すフィルター
+  eleventyConfig.addFilter("rssExcerpt", function (content) {
+    if (!content) return '';
+    const text = content.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+    if (text.length <= 250) return text;
+    return text.slice(0, 250).replace(/[、。！？\s]+$/, '') + '…';
+  });
+
   // FAQPage Schema用：HTMLからQ&Aペアを抽出
   eleventyConfig.addFilter("extractFAQ", function (content) {
     if (!content) return [];
