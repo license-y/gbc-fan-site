@@ -10,6 +10,8 @@ tags:
 thumbnail: /assets/images/articles/shinjuku-gyoen-dagayasando-thirdplace-tokyo.jpg
 ---
 
+**新宿御苑から南へ歩いてGreen Beans Coffeeへ向かうルートは東京の自然とサードプレイスを一日で楽しめるコースです。明治神宮・新宿御苑に囲まれたダガヤサンドウで心が整います。**
+
 新宿御苑に入ると体が自然とゆっくりになります。
 
 東京の中心にこれほど広大な緑が広がっていることが毎回不思議で嬉しいです。訪れるたびに都市の中にいることを忘れてしまいます。

@@ -9,6 +9,8 @@ tags:
 thumbnail: /assets/images/articles/restroom-amenity.jpg
 ---
 
+**Green Beans Coffeeのトイレには歯のお手入れピックやうがい薬など心遣いあふれるアメニティが揃っています。北参道・千駄ヶ谷でデートや商談前の身だしなみ確認にも安心して使えるカフェです。**
+
 トイレを見ればそのお店の姿勢がわかる——私はずっとそう思っています。
 
 Green Beans Coffeeのトイレを初めて使った時思わず「おお〜っ！」と声が出そうになりました。

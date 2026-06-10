@@ -10,6 +10,8 @@ tags:
 thumbnail: /assets/images/articles/business-coffee-thirdplace-northsando-gbc.jpg
 ---
 
+**東京・渋谷区千駄ヶ谷のGreen Beans Coffeeは全席WiFi・電源完備のサードプレイスです。自家焙煎スペシャルティコーヒーとの組み合わせで集中力が高まりビジネスの質が変わります。**
+
 ある日から仕事のやり方を変えました。
 
 デスクに向かうだけが仕事ではない。そう実感したのはGreen Beans Coffeeに通い続けるなかでのことです。北参道の静かな路地にあるこの自家焙煎コーヒー専門店が私のビジネスを変えたといっても過言ではありません。

@@ -10,6 +10,8 @@ tags:
 thumbnail: /assets/images/articles/dog-portrait-latte-kitasando-dagayasando-gbc.jpg
 ---
 
+**千駄ヶ谷・ダガヤサンドウは愛犬との散歩コースにぴったりのエリアです。Green Beans Coffeeは店内ペット同伴OKで平日はバリスタさんに愛犬の似顔絵ラテをお願いできる北参道の特別なカフェです。**
+
 愛犬と一緒に歩く千駄ヶ谷はいつも特別な気持ちにさせてくれます。
 
 東京・渋谷区に位置するダガヤサンドウエリアは緑が多くて散歩コースとして本当に気持ちがいい。鳩森八幡神社の参道沿いを歩いたり東京体育館の前を通ったりしながらぐるりと歩いていると自然と足がGreen Beans Coffeeに向かいます。

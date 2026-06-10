@@ -10,6 +10,8 @@ tags:
 thumbnail: /assets/images/articles/business-latte-dagayasando-gbc.jpg
 ---
 
+**千駄ヶ谷ダガヤサンドウのGreen Beans Coffeeは商談・打ち合わせ・面接に選ばれるビジネスカフェです。鳩森八幡神社に隣接する静かな空間とスペシャルティコーヒーが会話の質を高めます。**
+
 商談の前日にふと思うことがあります。「どこで会おうか」。
 
 会議室でもなくチェーンのカフェでもなく静かで落ち着いた場所。そんな場所を探しているビジネスパーソンに私がずっと通い続けているGreen Beans Coffeeをお伝えしたいと思いました。

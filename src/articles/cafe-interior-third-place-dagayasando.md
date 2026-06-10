@@ -10,6 +10,8 @@ tags:
 thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
 ---
 
+**ダガヤサンドウのGreen Beans Coffeeはバリスタさんのハンドドリップと静かなBGMが独特の空気を作り出すサードプレイスカフェです。北参道・千駄ヶ谷でペット同伴OKの落ち着いた空間として愛されています。**
+
 バリスタさんの手元を眺めながらコーヒーを待つ時間があります。
 
 ドリッパーにお湯が静かに注がれるのを見ているだけで不思議と呼吸が深くなります。Green Beans Coffeeで過ごす時間の中で私が一番好きな瞬間かもしれません。
