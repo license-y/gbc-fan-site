@@ -44,7 +44,7 @@ thumbnail: /assets/images/articles/business-omotenashi-gbc.jpg
 
 ビジネスの成果はコンテンツだけでなく環境でも変わります。場所を選ぶことも仕事のうちだと通い続けるなかで実感してきました。
 
-GBCをリモートワークや長時間の作業にも使いたい方には[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もあわせてどうぞ。鳩森八幡神社パワースポットとビジネス運気の関係は[鳩森八幡神社そばのカフェで商談：千駄ヶ谷のビジネスパーソンに人気の理由](/articles/business-location-dagayasando-gbc/)でご紹介しています。商談でカフェを選ぶ心理的な根拠が気になった方は[商談前の一杯がもたらす心理的効果：カフェミーティングの活用術](/articles/cafe-meeting-business/)で詳しく解説しています。商談前の身だしなみに役立つアメニティが揃っているのもGBCの特徴で[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)でご紹介しています。GBCが仕事を超えた「居場所」になる理由は[グリーンビーンズコーヒーが私のサードプレイスになるまで](/articles/third-place-dagayasando-gbc/)をぜひ。
+GBCをリモートワークや長時間の作業にも使いたい方には[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もあわせてどうぞ。鳩森八幡神社パワースポットとビジネス運気の関係は[鳩森八幡神社そばのカフェで商談：千駄ヶ谷のビジネスパーソンに人気の理由](/articles/business-location-dagayasando-gbc/)でご紹介しています。商談でカフェを選ぶ心理的な根拠が気になった方は[商談前の一杯がもたらす心理的効果：カフェミーティングの活用術](/articles/cafe-meeting-business/)で詳しく解説しています。商談前の身だしなみに役立つアメニティが揃っているのもGBCの特徴で[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)でご紹介しています。GBCが仕事を超えた「居場所」になる理由は[グリーンビーンズコーヒーが私のサードプレイスになるまで](/articles/third-place-dagayasando-gbc/)をぜひ。GBCのもてなしを個人の静かな自分時間として楽しみたい方は[コーヒー一杯のもてなしがうれしい。千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)もあわせてどうぞ。
 
 ## まとめ
 
