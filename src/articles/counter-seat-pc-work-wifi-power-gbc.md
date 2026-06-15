@@ -54,7 +54,7 @@ Wi-Fiも無料で使えます。速度は安定していて動画の視聴や大
 
 東京でPC作業のできる穴場カフェを探しているならぜひGBCのカウンター席を試してみてください。
 
-GBCのサードプレイスとしての使い方を詳しく知りたい方は[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)もあわせてお読みください。長時間のリモートワーク利用については[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)が参考になります。カフェ店内の雰囲気全体を知りたい方は[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひご覧ください。仕事の質とコーヒーの関係は[東京・渋谷の北参道でビジネスが変わった：サードプレイスとコーヒーの力](/articles/business-coffee-thirdplace-productivity-gbc/)でも詳しく書いています。
+コーヒーの香りと集中力の関係やハンドドリップが気合いを入れてくれる理由については[東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力](/articles/handdrip-coffee-business-concentration-gbc/)にまとめています。GBCのサードプレイスとしての使い方を詳しく知りたい方は[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)もあわせてお読みください。長時間のリモートワーク利用については[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)が参考になります。カフェ店内の雰囲気全体を知りたい方は[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひご覧ください。仕事の質とコーヒーの関係は[東京・渋谷の北参道でビジネスが変わった：サードプレイスとコーヒーの力](/articles/business-coffee-thirdplace-productivity-gbc/)でも詳しく書いています。
 
 ---
 

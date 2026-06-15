@@ -56,7 +56,7 @@ thumbnail: /assets/images/articles/business-coffee-thirdplace-northsando-gbc.jpg
 
 ---
 
-ビジネスとサードプレイスの関係をさらに深掘りしたい方には[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)もおすすめです。カフェで商談を行う心理的な効果については[千駄ヶ谷のサードプレイスで商談前の一杯：ビジネスカフェミーティングの活用術](/articles/cafe-meeting-business/)で詳しく紹介しています。GBCの設備や空間の使いやすさについては[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)を、サードプレイスという概念そのものについては[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)をあわせて読んでみてください。
+ハンドドリップコーヒーを手元に気合いを入れて仕事を一気に進めたい方は[東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力](/articles/handdrip-coffee-business-concentration-gbc/)もあわせてどうぞ。ビジネスとサードプレイスの関係をさらに深掘りしたい方には[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)もおすすめです。カフェで商談を行う心理的な効果については[千駄ヶ谷のサードプレイスで商談前の一杯：ビジネスカフェミーティングの活用術](/articles/cafe-meeting-business/)で詳しく紹介しています。GBCの設備や空間の使いやすさについては[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)を、サードプレイスという概念そのものについては[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)をあわせて読んでみてください。
 
 ## まとめ
 
