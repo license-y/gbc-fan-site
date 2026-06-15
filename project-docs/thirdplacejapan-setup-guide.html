@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thirdplacejapan.com サイト構築ガイド</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Hiragino Sans', 'Hiragino Kino Gothic ProN', 'Noto Sans JP', sans-serif;
+      font-size: 13px;
+      line-height: 1.8;
+      color: #2D2A26;
+      background: #fff;
+    }
+
+    .cover {
+      background: #1a3a2a;
+      color: #FAF8F5;
+      padding: 80px 60px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      page-break-after: always;
+    }
+
+    .cover .label {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #6abf8a;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .cover h1 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      border-left: 4px solid #6abf8a;
+      padding-left: 20px;
+    }
+
+    .cover .domain {
+      font-size: 22px;
+      color: #6abf8a;
+      font-weight: 700;
+      margin-bottom: 8px;
+      padding-left: 24px;
+      letter-spacing: 1px;
+    }
+
+    .cover .subtitle {
+      font-size: 14px;
+      color: #8fc9a8;
+      margin-bottom: 48px;
+      padding-left: 24px;
+    }
+
+    .cover .toc { margin: 32px 0; }
+
+    .cover .toc-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px dotted #4a7a5a;
+      gap: 12px;
+    }
+
+    .cover .toc-num {
+      background: #6abf8a;
+      color: #1a3a2a;
+      font-size: 11px;
+      font-weight: 700;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .cover .toc-title { font-size: 13px; font-weight: 600; }
+    .cover .toc-desc { font-size: 11px; color: #8fc9a8; margin-left: auto; }
+
+    .cover .meta {
+      font-size: 12px;
+      color: #4a7a5a;
+      margin-top: auto;
+      padding-top: 40px;
+      border-top: 1px solid #4a7a5a;
+    }
+    .cover .meta p { margin-bottom: 4px; }
+
+    .page {
+      padding: 48px 60px;
+      page-break-after: always;
+      min-height: 100vh;
+    }
+    .page:last-child { page-break-after: auto; }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: #4a7a5a;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1a3a2a;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #6abf8a;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1a3a2a;
+      margin: 24px 0 10px;
+      padding-left: 10px;
+      border-left: 3px solid #6abf8a;
+    }
+
+    h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: #4a7a5a;
+      margin: 16px 0 8px;
+    }
+
+    p { margin-bottom: 10px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 12px;
+    }
+
+    th {
+      background: #1a3a2a;
+      color: #FAF8F5;
+      padding: 8px 12px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 8px 12px;
+      border-bottom: 1px solid #d8ead2;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td { background: #f4faf5; }
+
+    .highlight-box {
+      background: #f4faf5;
+      border-left: 4px solid #6abf8a;
+      padding: 16px 20px;
+      margin: 16px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlight-box strong { color: #1a3a2a; }
+
+    .step-block {
+      border: 1px solid #6abf8a;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 12px 0;
+    }
+
+    .step-header {
+      background: #1a3a2a;
+      color: #FAF8F5;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .step-num {
+      background: #6abf8a;
+      color: #1a3a2a;
+      font-size: 12px;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-title { font-size: 14px; font-weight: 700; }
+
+    .step-body {
+      padding: 14px 16px;
+      font-size: 12px;
+    }
+
+    .step-body ul { padding-left: 18px; }
+    .step-body ul li { margin-bottom: 4px; }
+
+    .flow-box {
+      background: #1a3a2a;
+      color: #FAF8F5;
+      padding: 20px 24px;
+      border-radius: 4px;
+      margin: 16px 0;
+      font-size: 12px;
+      font-family: monospace;
+      line-height: 2;
+    }
+
+    .flow-box .arrow { color: #6abf8a; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    .card {
+      border: 1px solid #d8ead2;
+      border-radius: 4px;
+      padding: 14px;
+    }
+
+    .card h4 { margin-top: 0; }
+
+    .tag {
+      display: inline-block;
+      background: #6abf8a;
+      color: #1a3a2a;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 2px;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+
+    .tag.dark {
+      background: #1a3a2a;
+      color: #FAF8F5;
+    }
+
+    .conclusion-box {
+      background: #1a3a2a;
+      color: #FAF8F5;
+      padding: 24px 28px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+
+    .conclusion-box h3 {
+      color: #6abf8a;
+      border-left-color: #6abf8a;
+      font-size: 15px;
+      margin-top: 0;
+    }
+
+    .conclusion-box p { color: #FAF8F5; margin-bottom: 8px; }
+
+    .domain-display {
+      font-size: 24px;
+      font-weight: 700;
+      color: #1a3a2a;
+      background: #f4faf5;
+      border: 2px solid #6abf8a;
+      border-radius: 4px;
+      padding: 16px 24px;
+      text-align: center;
+      margin: 20px 0;
+      letter-spacing: 2px;
+    }
+
+    .spell-box {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    .letter {
+      background: #1a3a2a;
+      color: #6abf8a;
+      font-size: 14px;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: monospace;
+    }
+
+    .letter.sep {
+      background: transparent;
+      color: #4a7a5a;
+      font-size: 18px;
+    }
+
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    ul li { margin-bottom: 4px; }
+
+    @media print {
+      body { font-size: 11px; }
+      .cover { min-height: auto; padding: 60px 50px; }
+      .page { min-height: auto; padding: 40px 50px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 表紙 -->
+<div class="cover">
+  <div class="label">Setup Guide 2026</div>
+  <h1>サイト構築・運営ガイド</h1>
+  <div class="domain">thirdplacejapan.com</div>
+  <div class="subtitle">日本のサードプレイス専門ポータルサイト</div>
+
+  <div class="toc">
+    <div class="toc-item">
+      <div class="toc-num">1</div>
+      <div class="toc-title">ドメイン戦略の結論</div>
+      <div class="toc-desc">.com 1本に絞る理由</div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">2</div>
+      <div class="toc-title">サイト構築の全体手順</div>
+      <div class="toc-desc">GitHub → 11ty → Cloudflare → ドメイン接続</div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">3</div>
+      <div class="toc-title">コンテンツ設計</div>
+      <div class="toc-desc">カテゴリ・運営者ポジション・GBCとの連携</div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">4</div>
+      <div class="toc-title">GBCサイトとの違い・決めること</div>
+      <div class="toc-desc">デザイン・カラー・CLAUDE.md設定</div>
+    </div>
+    <div class="toc-item">
+      <div class="toc-num">5</div>
+      <div class="toc-title">推奨する進め方</div>
+      <div class="toc-desc">優先順位・最初の一歩</div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <p>作成日：2026年5月30日</p>
+    <p>ドメイン取得済み：thirdplacejapan.com</p>
+    <p>参照：SEO・AEO戦略レポート2026（seo-aeo-strategy-2026.html）</p>
+    <p>作成：Claude Code（Anthropic）</p>
+  </div>
+</div>
+
+<!-- Section 1: ドメイン戦略 -->
+<div class="page">
+  <div class="section-label">Section 01</div>
+  <h2>ドメイン戦略の結論</h2>
+
+  <div class="domain-display">thirdplacejapan.com</div>
+
+  <div class="spell-box">
+    <div class="letter">t</div><div class="letter">h</div><div class="letter">i</div><div class="letter">r</div><div class="letter">d</div>
+    <div class="letter">p</div><div class="letter">l</div><div class="letter">a</div><div class="letter">c</div><div class="letter">e</div>
+    <div class="letter">j</div><div class="letter">a</div><div class="letter">p</div><div class="letter">a</div><div class="letter">n</div>
+    <div class="letter sep">.</div>
+    <div class="letter">c</div><div class="letter">o</div><div class="letter">m</div>
+  </div>
+
+  <h3>thirdplacejapan.com 1本に絞る理由</h3>
+
+  <table>
+    <tr>
+      <th>比較項目</th>
+      <th>thirdplacetokyo.net</th>
+      <th>thirdplacejapan.com ✓</th>
+    </tr>
+    <tr>
+      <td>カバーエリア</td>
+      <td>東京限定</td>
+      <td><strong>日本全国</strong></td>
+    </tr>
+    <tr>
+      <td>インバウンド需要</td>
+      <td>高い</td>
+      <td><strong>さらに高い</strong></td>
+    </tr>
+    <tr>
+      <td>将来の拡張性</td>
+      <td>東京のみ</td>
+      <td><strong>大阪・京都・全国へ展開可能</strong></td>
+    </tr>
+    <tr>
+      <td>ドメイン拡張子</td>
+      <td>.net（2番手）</td>
+      <td><strong>.com（最高信頼性）</strong></td>
+    </tr>
+    <tr>
+      <td>競合の少なさ</td>
+      <td>ほぼゼロ</td>
+      <td><strong>完全ゼロに近い</strong></td>
+    </tr>
+    <tr>
+      <td>ブランドの格</td>
+      <td>ローカル</td>
+      <td><strong>ナショナル</strong></td>
+    </tr>
+  </table>
+
+  <div class="highlight-box">
+    <strong>東京メインのコンテンツでも「japan」ドメインは全く問題なし。</strong><br>
+    Time Out Tokyo・Tokyo Weekenderなど東京中心でも「Japan」を名乗るメディアは多く、ユーザーも違和感を持たない。インバウンド向けには「Japan」のほうが検索されやすく、東京コンテンツで十分対応できる。
+  </div>
+
+  <h3>サイト構造のイメージ</h3>
+  <div class="flow-box">
+thirdplacejapan.com（日本全体のポータル）<br>
+<span class="arrow">    ├──</span> 東京特集（メインコンテンツ）<br>
+<span class="arrow">    │     ├──</span> 渋谷・ダガヤサンドウ（GBC中心）<br>
+<span class="arrow">    │     ├──</span> 新宿・原宿・表参道エリア<br>
+<span class="arrow">    │     └──</span> ペット・グルテンフリー・ビジネス特集<br>
+<span class="arrow">    ├──</span> （将来）大阪・京都・福岡<br>
+<span class="arrow">    └──</span> 英語コンテンツ（インバウンド向け）<br>
+<br>
+<span class="arrow">         ↕ 相互リンク</span><br>
+<br>
+horikikumi.pages.dev（GBCファンサイト・実績あり）
+  </div>
+</div>
+
+<!-- Section 2: 構築手順 -->
+<div class="page">
+  <div class="section-label">Section 02</div>
+  <h2>サイト構築の全体手順</h2>
+
+  <h3>全体の流れ</h3>
+  <div class="flow-box">
+① GitHubリポジトリ作成<br>
+<span class="arrow">      ↓</span><br>
+② サイト構築（11ty + Tailwind CSS）<br>
+<span class="arrow">      ↓</span><br>
+③ Cloudflare Pages にデプロイ<br>
+<span class="arrow">      ↓</span><br>
+④ 独自ドメイン（thirdplacejapan.com）を接続<br>
+<span class="arrow">      ↓</span><br>
+⑤ 記事を書き始める
+  </div>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">1</div>
+      <div class="step-title">GitHubリポジトリ作成</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>GitHub で新しいリポジトリを作成（例：<code>thirdplacejapan</code>）</li>
+        <li>GBCサイトのリポジトリ構成を参考にフォルダを作る</li>
+        <li>README.md にサイトの概要を記載しておく</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">2</div>
+      <div class="step-title">サイト構築（GBCサイトと同じ技術スタック）</div>
+    </div>
+    <div class="step-body">
+      <table>
+        <tr>
+          <th>技術</th>
+          <th>用途</th>
+          <th>GBCサイトと同じ</th>
+        </tr>
+        <tr>
+          <td>11ty（Eleventy）</td>
+          <td>記事管理・静的サイト生成</td>
+          <td>✓ 同じ</td>
+        </tr>
+        <tr>
+          <td>Tailwind CSS v4</td>
+          <td>デザイン</td>
+          <td>✓ 同じ（カラーのみ変更）</td>
+        </tr>
+        <tr>
+          <td>Pagefind</td>
+          <td>記事検索</td>
+          <td>✓ 同じ</td>
+        </tr>
+        <tr>
+          <td>Animate.css / AOS</td>
+          <td>スクロールアニメーション</td>
+          <td>✓ 同じ</td>
+        </tr>
+        <tr>
+          <td>JSON-LD構造化データ</td>
+          <td>AEO対策</td>
+          <td>✓ 同じ（内容を変更）</td>
+        </tr>
+      </table>
+      <p>ビルドコマンド：<code>npm run build</code>（本番） / <code>npm run dev</code>（ローカル確認）</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">3</div>
+      <div class="step-title">Cloudflare Pages にデプロイ</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>Cloudflare Pages の管理画面でGitHubリポジトリを連携</li>
+        <li>ビルド設定：コマンド <code>npm run build</code>・出力フォルダ <code>public</code></li>
+        <li>GitHubにプッシュするたびに自動デプロイされる</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">4</div>
+      <div class="step-title">独自ドメイン接続（thirdplacejapan.com）</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>Cloudflare Pages の管理画面 → 「カスタムドメイン」を追加</li>
+        <li><code>thirdplacejapan.com</code> を入力して保存</li>
+        <li>DNSレコードを設定（Cloudflareでドメイン管理している場合は自動設定）</li>
+        <li>SSL証明書も自動発行される（httpsが自動で有効になる）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num">5</div>
+      <div class="step-title">記事を書き始める</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>GBCサイトと同じMarkdownファイル形式で記事を作成</li>
+        <li>Claude Code（AI）と一緒に記事を執筆</li>
+        <li>GitHubにプッシュ → Cloudflare Pagesが自動ビルド → 公開</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Section 3: コンテンツ設計 -->
+<div class="page">
+  <div class="section-label">Section 03</div>
+  <h2>コンテンツ設計</h2>
+
+  <h3>カテゴリ設計案</h3>
+  <div class="two-col">
+    <div class="card">
+      <div class="tag">メイン</div>
+      <h4>エリア別</h4>
+      <p>渋谷・新宿・原宿・表参道・代々木・千駄ヶ谷・北参道・ダガヤサンドウ…</p>
+    </div>
+    <div class="card">
+      <div class="tag">メイン</div>
+      <h4>用途別</h4>
+      <p>仕事・読書・デート・ペット同伴・グループ・一人時間・リモートワーク…</p>
+    </div>
+    <div class="card">
+      <div class="tag dark">特集</div>
+      <h4>テーマ特集</h4>
+      <p>ペットOK・グルテンフリー・コーヒー専門・静かな空間・英語メニューあり…</p>
+    </div>
+    <div class="card">
+      <div class="tag dark">連携</div>
+      <h4>GBC特集コーナー</h4>
+      <p>GBCアンバサダー記事からの流入を誘導する常設コーナー</p>
+    </div>
+  </div>
+
+  <h3>運営者ポジション</h3>
+  <table>
+    <tr>
+      <th>項目</th>
+      <th>GBCファンサイト</th>
+      <th>thirdplacejapan.com</th>
+    </tr>
+    <tr>
+      <td>立場</td>
+      <td>アンバサダー（愛用者・体験者）</td>
+      <td><strong>キュレーター／サードプレイス研究家</strong></td>
+    </tr>
+    <tr>
+      <td>視点</td>
+      <td>1店舗への深い愛着</td>
+      <td>日本全体を俯瞰する目線</td>
+    </tr>
+    <tr>
+      <td>文体</td>
+      <td>一人称・体験・感情</td>
+      <td>客観・比較・情報整理</td>
+    </tr>
+    <tr>
+      <td>信頼の根拠</td>
+      <td>「3年通い続けた実体験」</td>
+      <td>「日本のサードプレイスを最も知る専門メディア」</td>
+    </tr>
+    <tr>
+      <td>他店舗記事</td>
+      <td>書かない</td>
+      <td>積極的に取り上げる</td>
+    </tr>
+    <tr>
+      <td>比較・まとめ記事</td>
+      <td>書かない</td>
+      <td>主力コンテンツ</td>
+    </tr>
+  </table>
+
+  <h3>GBCサイトとの相互リンク戦略</h3>
+  <div class="highlight-box">
+    <strong>「地図」と「最も詳しい1ページ」の関係を作る</strong><br>
+    thirdplacejapan.com が「日本のサードプレイスの地図」、GBCサイトが「その中で最も詳しい1店舗」という構造。ポータルからGBCへの流入と、GBCからポータルへの誘導を両方設計する。
+  </div>
+
+  <table>
+    <tr>
+      <th>コンテンツ種別</th>
+      <th>GBCファンサイト</th>
+      <th>thirdplacejapan.com</th>
+    </tr>
+    <tr>
+      <td>GBC体験記事</td>
+      <td>詳細な体験記事</td>
+      <td>要約＋「詳細はこちら」リンク</td>
+    </tr>
+    <tr>
+      <td>東京サードプレイスまとめ</td>
+      <td>書かない</td>
+      <td>主力コンテンツ</td>
+    </tr>
+    <tr>
+      <td>ペット同伴カフェリスト</td>
+      <td>GBC特化</td>
+      <td>東京・日本全体のリスト</td>
+    </tr>
+    <tr>
+      <td>英語記事</td>
+      <td>一部対応</td>
+      <td>積極展開（インバウンド主戦場）</td>
+    </tr>
+    <tr>
+      <td>FAQ・Q&A</td>
+      <td>GBC特化</td>
+      <td>「日本のサードプレイス」全般</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Section 4: GBCサイトとの違い -->
+<div class="page">
+  <div class="section-label">Section 04</div>
+  <h2>GBCサイトとの違い・決めること</h2>
+
+  <h3>サイト基本情報の設定</h3>
+  <table>
+    <tr>
+      <th>項目</th>
+      <th>GBCファンサイト</th>
+      <th>thirdplacejapan.com（決める内容）</th>
+    </tr>
+    <tr>
+      <td>サイト名</td>
+      <td>Green Beans Coffee</td>
+      <td>例：「Third Place Japan」</td>
+    </tr>
+    <tr>
+      <td>キャッチコピー</td>
+      <td>店名看板のないペットフレンドリーカフェ</td>
+      <td>例：「日本のサードプレイスを探す」</td>
+    </tr>
+    <tr>
+      <td>アンバサダー名</td>
+      <td>Kikumi / pome_ponkun</td>
+      <td>キュレーター名を決める</td>
+    </tr>
+    <tr>
+      <td>カラーパレット</td>
+      <td>ダークブラウン・ゴールド系</td>
+      <td>GBCと差別化した配色（緑系推奨）</td>
+    </tr>
+  </table>
+
+  <h3>カラーパレット案</h3>
+  <div class="two-col">
+    <div class="card">
+      <h4>推奨：グリーン系（自然・居心地）</h4>
+      <ul>
+        <li>Primary：#1a3a2a（ダークグリーン）</li>
+        <li>Secondary：#4a7a5a（ミディアムグリーン）</li>
+        <li>Accent：#6abf8a（ライトグリーン）</li>
+        <li>Background：#f4faf5（グリーンオフホワイト）</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>代替案：ネイビー系（知的・信頼性）</h4>
+      <ul>
+        <li>Primary：#1a2a3a（ダークネイビー）</li>
+        <li>Secondary：#2a4a6a（ミディアムネイビー）</li>
+        <li>Accent：#4a8abf（ライトブルー）</li>
+        <li>Background：#f4f7fa（ブルーオフホワイト）</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>CLAUDE.md の設定（重要）</h3>
+  <p>GBCサイトに <code>CLAUDE.md</code> があるように、thirdplacejapan.com 用にも専用の <code>CLAUDE.md</code> を作成する。Claude Code との作業品質を一定に保つために必須。</p>
+
+  <table>
+    <tr>
+      <th>設定項目</th>
+      <th>内容</th>
+    </tr>
+    <tr>
+      <td>サイトの目的・コンセプト</td>
+      <td>日本のサードプレイス専門ポータル</td>
+    </tr>
+    <tr>
+      <td>記事の文体ガイドライン</td>
+      <td>キュレーター視点・客観・比較重視</td>
+    </tr>
+    <tr>
+      <td>必須SEOキーワード</td>
+      <td>東京・渋谷・新宿・サードプレイス・third place japan</td>
+    </tr>
+    <tr>
+      <td>カテゴリ（固定）</td>
+      <td>エリア別・用途別・テーマ特集・GBC特集</td>
+    </tr>
+    <tr>
+      <td>Git操作ルール</td>
+      <td>GBCサイトと同じルール</td>
+    </tr>
+    <tr>
+      <td>GBCサイトとの連携ルール</td>
+      <td>相互リンクの基準を明記</td>
+    </tr>
+  </table>
+</div>
+
+<!-- Section 5: 推奨する進め方 -->
+<div class="page">
+  <div class="section-label">Section 05</div>
+  <h2>推奨する進め方</h2>
+
+  <h3>フェーズ別ロードマップ</h3>
+
+  <div class="step-block">
+    <div class="step-header">
+      <div class="step-num" style="background:#6abf8a">1</div>
+      <div class="step-title">フェーズ1：立ち上げ（〜1ヶ月）</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>GitHubリポジトリ作成・11ty環境構築</li>
+        <li>トップページ（index.html）デザイン・作成</li>
+        <li>記事テンプレート作成</li>
+        <li>CLAUDE.md 設定</li>
+        <li>Cloudflare Pages デプロイ + ドメイン接続</li>
+        <li>1本目の記事公開（「東京のサードプレイスとは？」定義記事推奨）</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step-block" style="margin-top:8px;">
+    <div class="step-header">
+      <div class="step-num" style="background:#6abf8a">2</div>
+      <div class="step-title">フェーズ2：コンテンツ積み上げ（1〜3ヶ月）</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>東京エリア特集記事を20本公開</li>
+        <li>GBCサイトとの相互リンクを本格始動</li>
+        <li>英語記事5本（Tokyo third place・pet-friendly cafe優先）</li>
+        <li>FAQ・JSON-LD構造化データを全記事に設置</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step-block" style="margin-top:8px;">
+    <div class="step-header">
+      <div class="step-num" style="background:#6abf8a">3</div>
+      <div class="step-title">フェーズ3：権威確立（3〜12ヶ月）</div>
+    </div>
+    <div class="step-body">
+      <ul>
+        <li>記事数50本・FAQ累計200問を目標</li>
+        <li>英語記事15〜30本（Tokyo third place 英語AEO引用85%を目指す）</li>
+        <li>「日本のサードプレイスといえばthirdplacejapan.com」の認知形成</li>
+        <li>情報コントロール度40〜70%を達成</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>最初の一歩として最優先でやること</h3>
+  <table>
+    <tr>
+      <th>優先度</th>
+      <th>タスク</th>
+      <th>理由</th>
+    </tr>
+    <tr>
+      <td>★★★★★</td>
+      <td>サイトコンセプト・カラーを決める</td>
+      <td>すべての作業の土台になる</td>
+    </tr>
+    <tr>
+      <td>★★★★★</td>
+      <td>トップページを作る</td>
+      <td>ドメインに訪問者が来たときの顔</td>
+    </tr>
+    <tr>
+      <td>★★★★☆</td>
+      <td>「東京のサードプレイスとは？」記事を書く</td>
+      <td>AEO対策の最重要ピラーコンテンツ</td>
+    </tr>
+    <tr>
+      <td>★★★★☆</td>
+      <td>GBCサイトにthirdplacejapan.comへのリンクを追加</td>
+      <td>既存の権威をポータルに流す</td>
+    </tr>
+    <tr>
+      <td>★★★☆☆</td>
+      <td>英語記事1本目を公開</td>
+      <td>競合ゼロの今が最速参入タイミング</td>
+    </tr>
+  </table>
+
+  <div class="conclusion-box">
+    <h3>まとめ</h3>
+    <p>thirdplacejapan.com はGBCファンサイトと同じ技術スタック（11ty + Cloudflare Pages）で構築できるため、すでにノウハウがある状態から始められます。</p>
+    <p>コンテンツは東京メインで始め、将来的に全国へ拡張できる設計にすることで「日本のサードプレイス専門メディア」としての権威を段階的に確立していきます。</p>
+    <p><strong>「サイトを作りたい」と言うだけでClaude Codeが構築を始められます。いつでもスタートできます。</strong></p>
+  </div>
+</div>
+
+</body>
+</html>
