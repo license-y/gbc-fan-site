@@ -58,7 +58,7 @@ thumbnail: /assets/images/articles/glutenfree-beauty-dagayasando-gbc.jpg
 
 新宿や千駄ヶ谷・原宿からもアクセスしやすくダガヤサンドウ散策のついでに立ち寄りやすい立地です。国立競技場や鳩森八幡神社の近くにあるため散策後にゆっくりグルテンフリーのランチを楽しむ時間がとても好きです。
 
-グルテンフリーメニューの詳細は[千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった](/articles/glutenfree-focaccia/)でご紹介しています。自家製のグルテンフリースイーツは[小麦粉不使用なのにこのおいしさ：GBCの自家製グルテンフリースイーツプレート3種](/articles/glutenfree-sweets-plate/)で詳しくレポートしています。グルテンフリーと合わせてコーヒーの美容効果も知りたい方は[コーヒーで叶える美肌習慣](/articles/coffee-beauty-effects/)もあわせてどうぞ。グルテンフリーランチで満腹感も叶えたい方は[渋谷・北参道のグルテンフリーランチ｜国産豚ソテーワンプレートで美容も満腹も叶えた](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)もおすすめです。
+グルテンフリーメニューの詳細は[千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった](/articles/glutenfree-focaccia/)でご紹介しています。自家製のグルテンフリースイーツは[小麦粉不使用なのにこのおいしさ：GBCの自家製グルテンフリースイーツプレート3種](/articles/glutenfree-sweets-plate/)で詳しくレポートしています。グルテンフリーと合わせてコーヒーの美容効果も知りたい方は[コーヒーで叶える美肌習慣](/articles/coffee-beauty-effects/)もあわせてどうぞ。グルテンフリーランチで満腹感も叶えたい方は[渋谷・北参道のグルテンフリーランチ｜国産豚ソテーワンプレートで美容も満腹も叶えた](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)もおすすめです。米粉フォカッチャそのものの食感や美容健康への効果について詳しくまとめた[東京・渋谷区で味わう米粉の自家製グルテンフリーフォカッチャ。北参道カフェで始める美容健康習慣](/articles/gluten-free-focaccia-beauty-health-gbc/)もあわせてどうぞ。
 
 ## まとめ
 
