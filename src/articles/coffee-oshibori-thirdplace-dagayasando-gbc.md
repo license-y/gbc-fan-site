@@ -56,7 +56,7 @@ thumbnail: /assets/images/articles/coffee-cloth-oshibori-dagayasando-gbc.jpg
 
 散歩のついでにGBCへ立ち寄って布おしぼりで手を拭いて一杯のコーヒーで自分を整える。東京でそういう過ごし方ができる場所を持てることが私には贅沢に感じられます。
 
-布おしぼりのもてなしをビジネスシーンでも活用したい方は[千駄ヶ谷のビジネスカフェで商談：ホテルラウンジ級のおもてなしがある店内](/articles/business-omotenashi-gbc/)もあわせてどうぞ。カフェ店内の静かな空気感については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)で詳しく書いています。サードプレイスという概念をもう少し深く知りたい方は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もどうぞ。GBCのトイレアメニティについては[千駄ヶ谷のカフェ店内レポート：トイレのアメニティにGBCの本気を見た](/articles/restroom-amenity/)でご紹介しています。
+布おしぼりのもてなしをビジネスシーンでも活用したい方は[千駄ヶ谷のビジネスカフェで商談：ホテルラウンジ級のおもてなしがある店内](/articles/business-omotenashi-gbc/)もあわせてどうぞ。カフェ店内の静かな空気感については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)で詳しく書いています。サードプレイスという概念をもう少し深く知りたい方は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もどうぞ。GBCのトイレアメニティについては[千駄ヶ谷のカフェ店内レポート：トイレのアメニティにGBCの本気を見た](/articles/restroom-amenity/)でご紹介しています。カフェラテのラテアートについては[渋谷区・ダガヤサンドウでバリスタのラテアートを楽しむ。千駄ヶ谷のカフェラテ体験記](/articles/latte-art-barista-dagayasando-gbc/)もあわせてご覧ください。
 
 ## まとめ
 
