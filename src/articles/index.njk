@@ -117,7 +117,7 @@ permalink: /articles/index.html
 
       <!-- サムネイル -->
       {%- if post.data.thumbnail %}
-      <div class="w-32 sm:w-44 h-28 sm:h-32 flex-shrink-0 overflow-hidden">
+      <div class="w-32 sm:w-44 flex-shrink-0 overflow-hidden self-stretch">
         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
       </div>
       {%- else %}
