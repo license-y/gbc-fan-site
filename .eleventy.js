@@ -69,6 +69,14 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // ピラー記事（定義・解説ガイド）コレクション
+  eleventyConfig.addCollection("pillars", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("articles")
+      .filter(p => p.data.pillar === true)
+      .sort((a, b) => b.date - a.date);
+  });
+
   // 日付フォーマットフィルター（例: 2026年5月7日）- JST基準
   eleventyConfig.addFilter("dateJa", function (date) {
     const d = new Date(date);

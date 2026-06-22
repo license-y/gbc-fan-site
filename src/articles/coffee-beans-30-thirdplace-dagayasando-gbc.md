@@ -64,7 +64,7 @@ thumbnail: /assets/images/articles/coffee-beans-30-varieties-interior-dagayasand
 
 「今日はどの豆にしようか」と選ぶ瞬間から始まるGBCの時間をぜひ体験してみてください。
 
-ハンドドリップの丁寧な仕事ぶりとカフェ店内の空気感については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)でも詳しくお伝えしています。サードプレイスという概念に興味がある方は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もあわせてどうぞ。GBCをフリーランスの仕事場として活用したい方は[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)が参考になります。デートでの使い方をもっと詳しく知りたい方は[北参道カフェでホテルラウンジ気分のデート：渋谷・新宿から10分](/articles/date-cafe-kitasando-hotel-lounge/)もぜひ読んでみてください。
+サードプレイスの定義と5つの条件を基礎から知りたい方は[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)を先に読むとより理解が深まります。ハンドドリップの丁寧な仕事ぶりとカフェ店内の空気感については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)でも詳しくお伝えしています。サードプレイスという概念に興味がある方は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もあわせてどうぞ。GBCをフリーランスの仕事場として活用したい方は[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)が参考になります。デートでの使い方をもっと詳しく知りたい方は[北参道カフェでホテルラウンジ気分のデート：渋谷・新宿から10分](/articles/date-cafe-kitasando-hotel-lounge/)もぜひ読んでみてください。
 
 ## よくある質問
 
