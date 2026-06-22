@@ -46,6 +46,8 @@ thumbnail: /assets/images/articles/handdrip-event.jpg
 
 この体験で得た技術が自宅での「自分だけのコーヒー時間」につながる理由については[東京・渋谷で教わるハンドドリップ、自宅をサードプレイスにする体験](/articles/handdrip-home-thirdplace-event-gbc/)にまとめています。仕事に集中したい日にハンドドリップコーヒーを活用する方法は[東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力](/articles/handdrip-coffee-business-concentration-gbc/)にまとめています。このイベントの毎月の開催情報や参加の流れについては[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もあわせてご覧ください。豆を自分で焙煎する体験に興味が湧いた方は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベント](/articles/roasting-experience/)もおすすめです。30種類の豆からオリジナルブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別です。体験後の散歩コースには[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もぜひ。GBCが本物の牛乳にこだわる理由は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)でご覧いただけます。日々のハンドドリップを楽しむカフェ店内の雰囲気については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひ読んでみてください。体験で知ったコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)もあわせてどうぞ。
 
+ハンドドリップの定義・道具・蒸らしや温度のポイントをまとめて知りたい方は[ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方](/articles/handdrip-guide/)も参考にしてください。
+
 ## まとめ
 
 Green Beans Coffeeのハンドドリップ体験は豆の選別・抽出技術・焙煎見学・テイクアウトコーヒーまでが豆の購入代金のみで体験できるイベントです。東京・渋谷区の表参道・原宿・新宿からもアクセスしやすく代々木公園や国立競技場にも近い北参道の自家焙煎コーヒー専門店ならではの内容でコーヒー初心者から愛好家まで楽しめます。次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
