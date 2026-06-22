@@ -75,11 +75,11 @@ permalink: /articles/index.html
       <h2 class="text-base font-bold text-[#4A3728]">GBC ガイド</h2>
       <span class="text-xs text-[#B0A090]">— テーマを深く知るための入口</span>
     </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
       {%- for post in collections.pillars %}
       <a href="{{ post.url }}" class="group flex flex-col bg-[#FDF8F0] rounded-xl border border-[#C9A86C] overflow-hidden hover:shadow-md transition-shadow duration-200">
         {%- if post.data.thumbnail %}
-        <div class="h-36 overflow-hidden">
+        <div class="h-24 overflow-hidden">
           <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
         </div>
         {%- endif %}
