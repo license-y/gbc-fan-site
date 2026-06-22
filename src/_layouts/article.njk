@@ -42,7 +42,7 @@ layout: articles-base.njk
 
     <!-- メタ情報 -->
     <div class="flex items-center gap-4 text-xs text-[#8B7355] border-b border-[#E8E0D5] pb-5">
-      <span>{{ page.date | dateJa }}</span>
+      {% if not pillar %}<span>{{ page.date | dateJa }}</span>{% endif %}
       <span>GBCアンバサダー</span>
     </div>
   </header>
