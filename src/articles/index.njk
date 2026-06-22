@@ -150,40 +150,79 @@ permalink: /articles/index.html
   <!-- 該当記事なし -->
   <p id="no-results" class="hidden text-center text-[#8B7355] py-12 text-sm">このカテゴリの記事はまだありません。</p>
 
+  <!-- もっと見るボタン -->
+  <div id="load-more-wrap" class="hidden text-center mt-8">
+    <button id="load-more-btn" class="px-8 py-3 rounded-full border border-[#4A3728] text-[#4A3728] text-sm hover:bg-[#4A3728] hover:text-white transition-colors duration-200">
+      もっと見る
+    </button>
+    <p id="load-more-count" class="text-xs text-[#B0A090] mt-2"></p>
+  </div>
+
   {%- endif %}
 
 </main>
 
 <script>
-  var buttons = document.querySelectorAll('.filter-btn');
-  var cards = document.querySelectorAll('.article-card');
-  var noResults = document.getElementById('no-results');
+  var ITEMS_PER_PAGE = 20;
+  var currentCategory = 'all';
+  var visibleCount = ITEMS_PER_PAGE;
 
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = Array.from(document.querySelectorAll('.article-card'));
+  var noResults = document.getElementById('no-results');
+  var loadMoreWrap = document.getElementById('load-more-wrap');
+  var loadMoreBtn = document.getElementById('load-more-btn');
+  var loadMoreCount = document.getElementById('load-more-count');
+
+  function getFiltered() {
+    return cards.filter(function(card) {
+      if (currentCategory === 'all') return true;
+      var tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+      return tags.includes(currentCategory);
+    });
+  }
+
+  function renderCards() {
+    var filtered = getFiltered();
+    cards.forEach(function(card) { card.style.display = 'none'; });
+    filtered.slice(0, visibleCount).forEach(function(card) { card.style.display = ''; });
+
+    var remaining = filtered.length - visibleCount;
+    if (remaining > 0) {
+      loadMoreWrap.classList.remove('hidden');
+      loadMoreCount.textContent = '残り ' + remaining + ' 件';
+    } else {
+      loadMoreWrap.classList.add('hidden');
+    }
+
+    noResults.classList.toggle('hidden', filtered.length > 0);
+  }
+
+  // カテゴリフィルター
   buttons.forEach(function(btn) {
     btn.addEventListener('click', function() {
-      var category = btn.dataset.category;
+      currentCategory = btn.dataset.category;
+      visibleCount = ITEMS_PER_PAGE;
 
-      // 全ボタンを非アクティブに（モバイル・PC両レイアウト対象）
       buttons.forEach(function(b) {
         b.classList.remove('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
         b.classList.add('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
       });
-      // 同じdata-categoryを持つ全ボタンをアクティブに（モバイル・PC同期）
-      document.querySelectorAll('.filter-btn[data-category="' + category + '"]').forEach(function(b) {
+      document.querySelectorAll('.filter-btn[data-category="' + currentCategory + '"]').forEach(function(b) {
         b.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
         b.classList.add('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
       });
 
-      // カードの表示・非表示
-      var visible = 0;
-      cards.forEach(function(card) {
-        var tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
-        var show = category === 'all' || tags.includes(category);
-        card.style.display = show ? '' : 'none';
-        if (show) visible++;
-      });
-
-      noResults.classList.toggle('hidden', visible > 0);
+      renderCards();
     });
   });
+
+  // もっと見るボタン
+  loadMoreBtn.addEventListener('click', function() {
+    visibleCount += ITEMS_PER_PAGE;
+    renderCards();
+  });
+
+  // 初期表示
+  renderCards();
 </script>
