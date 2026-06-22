@@ -75,9 +75,9 @@ permalink: /articles/index.html
       <h2 class="text-base font-bold text-[#4A3728]">GBC ガイド</h2>
       <span class="text-xs text-[#B0A090]">— テーマを深く知るための入口</span>
     </div>
-    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3" id="pillars-grid">
       {%- for post in collections.pillars %}
-      <a href="{{ post.url }}" class="group flex flex-col bg-[#FDF8F0] rounded-xl border border-[#C9A86C] overflow-hidden hover:shadow-md transition-shadow duration-200">
+      <a href="{{ post.url }}" class="pillar-card group flex flex-col bg-[#FDF8F0] rounded-xl border border-[#C9A86C] overflow-hidden hover:shadow-md transition-shadow duration-200{% if loop.index > 6 %} hidden{% endif %}">
         {%- if post.data.thumbnail %}
         <div class="h-24 overflow-hidden">
           <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
@@ -93,6 +93,19 @@ permalink: /articles/index.html
       </a>
       {%- endfor %}
     </div>
+    {%- if collections.pillars.length > 6 %}
+    <div class="text-center mt-4" id="pillars-more-wrap">
+      <button id="pillars-more-btn" onclick="showAllPillars()" class="text-xs text-[#8B7355] border border-[#C9A86C] rounded-full px-4 py-1.5 hover:bg-[#FDF8F0] transition-colors duration-200">
+        もっと見る（{{ collections.pillars.length - 6 }}件）
+      </button>
+    </div>
+    <script>
+      function showAllPillars() {
+        document.querySelectorAll('.pillar-card.hidden').forEach(function(el) { el.classList.remove('hidden'); });
+        document.getElementById('pillars-more-wrap').style.display = 'none';
+      }
+    </script>
+    {%- endif %}
   </div>
   <hr class="border-[#E8E0D5] mb-8">
   {%- endif %}
