@@ -361,7 +361,6 @@ thumbnail: /assets/images/hero_bg-1.jpg
 layout: article.njk
 title: 〇〇とは？タイトル
 description: 100〜120文字の要約
-date: 2026-05-07
 tags:
   - articles
   - カテゴリ名
@@ -369,6 +368,8 @@ pillar: true
 thumbnail: /assets/images/articles/〇〇.jpg
 ---
 ```
+
+**注意**: ピラー記事には `date` フィールドを入れない。日付を入れると「情報が古い」と判断されやすくなるため、常時有効なガイド記事としての性質を保つ。
 
 `pillar: true` を追加すると記事一覧ページとメインサイトのArticlesセクションに「GBCガイド」として特別表示される。
 

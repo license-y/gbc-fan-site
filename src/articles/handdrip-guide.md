@@ -2,7 +2,6 @@
 layout: article.njk
 title: ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方
 description: ハンドドリップとは手でお湯を注いでコーヒーを抽出する方法のことです。東京・渋谷区ダガヤサンドウのGreen Beans Coffeeでバリスタさんに学んだ基礎知識・道具・淹れ方のポイントをGBCアンバサダーKikumiが解説します。
-date: 2026-06-22
 tags:
   - articles
   - コーヒー
