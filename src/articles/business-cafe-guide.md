@@ -6,6 +6,7 @@ tags:
   - articles
   - ビジネス
 pillar: true
+date: 2026-06-23
 thumbnail: /assets/images/articles/business-latte-dagayasando-gbc.jpg
 ---
 

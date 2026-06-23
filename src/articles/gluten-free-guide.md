@@ -6,6 +6,7 @@ tags:
   - articles
   - グルテンフリー
 pillar: true
+date: 2026-06-23
 thumbnail: /assets/images/articles/gluten-free-basics.jpg
 ---
 

@@ -6,6 +6,7 @@ tags:
   - articles
   - 美容健康
 pillar: true
+date: 2026-06-23
 thumbnail: /assets/images/articles/coffee-beauty-effects.jpg
 ---
 
