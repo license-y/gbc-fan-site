@@ -110,13 +110,6 @@ permalink: /articles/index.html
   <hr class="border-[#E8E0D5] mb-8">
   {%- endif %}
 
-  <!-- 最新記事セクションヘッダー -->
-  <div class="flex items-center gap-2 mb-4">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-    <h2 class="text-base font-bold text-[#4A3728]">最新記事</h2>
-    <span class="text-xs text-[#B0A090]">— ダガヤサンドウのカフェ便り</span>
-  </div>
-
   <!-- カテゴリフィルター（モバイル：3段） -->
   <div class="flex flex-col items-center gap-1.5 mb-8 md:hidden" id="category-filters">
     <div class="flex justify-center gap-1.5">
@@ -150,6 +143,13 @@ permalink: /articles/index.html
       <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
       {%- endfor %}
     </div>
+  </div>
+
+  <!-- 最新記事セクションヘッダー -->
+  <div class="flex items-center gap-2 mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <h2 class="text-base font-bold text-[#4A3728]">最新記事</h2>
+    <span class="text-xs text-[#B0A090]">— ダガヤサンドウのカフェ便り</span>
   </div>
 
   <!-- 記事リスト -->
