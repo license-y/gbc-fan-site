@@ -375,6 +375,13 @@ thumbnail: /assets/images/articles/〇〇.jpg
 
 `pillar: true` を追加すると記事一覧ページとメインサイトのArticlesセクションに「GBCガイド」として特別表示される。
 
+## メインサイトのGBCガイド表示ルール
+
+- **常に最新ピラー記事2件を表示する**（`public/index.html` の `#articles` セクション内）
+- 新しいピラー記事を追加したら、`public/index.html` の GBCガイドカード2枚を最新2件に差し替えること
+- 対象箇所: `<!-- GBCガイド（ピラー記事） -->` のコメント以下 `grid grid-cols-1 sm:grid-cols-2` のグリッド内
+- 更新時は thumbnail・title・description・href を新記事に合わせて変更する
+
 ## カテゴリ（固定・追加不可）
 
 - コーヒー
