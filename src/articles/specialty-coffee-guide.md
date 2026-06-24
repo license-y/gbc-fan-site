@@ -6,7 +6,7 @@ tags:
   - articles
   - コーヒー
 pillar: true
-date: 2026-06-23
+date: 2026-06-24
 thumbnail: /assets/images/articles/coffee-beans-30-varieties-interior-dagayasando-gbc.jpg
 ---
 
