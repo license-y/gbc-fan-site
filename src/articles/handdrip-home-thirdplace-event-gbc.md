@@ -48,7 +48,7 @@ thumbnail: /assets/images/articles/handdrip-home-thirdplace-event-gbc.jpg
 
 ## まとめ
 
-東京・渋谷区の北参道・千駄ヶ谷に位置するGreen Beans Coffeeのハンドドリップ体験イベントはバリスタさんが実演と手順説明で丁寧に淹れ方を教えてくれます。「なぜそうするか」まで理解することで技術が自宅でも再現できるものになり毎日のコーヒー時間が自分だけのサードプレイスに変わります。新宿から10分ほどのダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店ならではの体験です。鳩森八幡神社や国立競技場・東京体育館にも近い北参道駅徒歩3分・千駄ヶ谷駅徒歩5分のGBCで自分のコーヒー時間を育ててみてください。最新の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
+東京・渋谷区の北参道・千駄ヶ谷に位置するGreen Beans Coffeeのハンドドリップ体験イベントはバリスタさんが実演と手順説明で丁寧に淹れ方を教えてくれます。「なぜそうするか」まで理解することで技術が自宅でも再現できるものになり毎日のコーヒー時間が自分だけのサードプレイスに変わります。新宿から10分ほどのダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店ならではの体験です。鳩森八幡神社や国立競技場・東京体育館にも近い北参道駅徒歩3分・千駄ヶ谷駅徒歩7分のGBCで自分のコーヒー時間を育ててみてください。最新の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
 
 ## よくある質問
 
