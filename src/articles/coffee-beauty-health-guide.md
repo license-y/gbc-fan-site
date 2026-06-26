@@ -1,12 +1,11 @@
 ---
 layout: article.njk
 title: コーヒーと美容健康の関係とは？東京・北参道のカフェで知ったクロロゲン酸の力
-description: コーヒーの美容健康効果とはポリフェノールの一種「クロロゲン酸」がもたらす抗酸化・美白・むくみ改善などの効果のことです。東京・渋谷区北参道のGreen Beans Coffeeでスペシャルティコーヒーを通じて学んだ美容健康習慣を北参道GBCに通い続けた経験をもとにお伝えします。
+description: コーヒーの美容健康効果とはポリフェノールの一種「クロロゲン酸」がもたらす抗酸化・美白・むくみ改善の効果のことです。東京・北参道のGreen Beans Coffeeでスペシャルティコーヒーを通じて学んだ美容健康習慣を解説します。
 tags:
   - articles
   - 美容健康
 pillar: true
-date: 2026-06-26
 thumbnail: /assets/images/articles/coffee-beauty-effects.jpg
 ---
 

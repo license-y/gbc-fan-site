@@ -20,7 +20,7 @@
   <!-- OGP -->
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="{{ ogType if ogType else 'article' }}">
   <meta property="og:site_name" content="Green Beans Coffee コラム">
   <meta property="og:url" content="https://greenbeanscoffeeambassador.com{{ page.url }}">
   {% if thumbnail %}

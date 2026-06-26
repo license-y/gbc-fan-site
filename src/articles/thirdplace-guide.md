@@ -1,12 +1,11 @@
 ---
 layout: article.njk
 title: サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方
-description: サードプレイスとは家でも職場でもない「第3の居場所」のこと。社会学者レイ・オルデンバーグが提唱した概念を北参道GBCに通い続けた経験をもとにお伝えします。
+description: サードプレイスとは家でも職場でもない「第3の居場所」のこと。社会学者レイ・オルデンバーグが提唱した概念で、東京・渋谷区北参道のGreen Beans Coffeeに3年以上通い続けたアンバサダーが意味と選び方を解説します。
 tags:
   - articles
   - サードプレイス
 pillar: true
-date: 2026-06-23
 thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
 ---
 
