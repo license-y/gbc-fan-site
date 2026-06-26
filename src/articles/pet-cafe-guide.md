@@ -6,7 +6,7 @@ tags:
   - articles
   - ペット
 pillar: true
-date: 2026-06-25
+date: 2026-06-24
 thumbnail: /assets/images/articles/dog-indoor-cafe-dagayasando-gbc.jpg
 ---
 
