@@ -203,6 +203,22 @@
 
 詳細は `project-docs/technical-spec.md` を参照。
 
+### AggregateRating の更新ルール
+- `ratingValue` と `reviewCount` はGoogleマップの最新値に**手動で更新**する
+- 目安：月1回（口コミが増えやすい時期に確認）
+- 更新箇所：`public/index.html` と `public/pets/index.html` の両方
+- 更新したら近くのHTMLコメント `最終更新: YYYY-MM` の日付も書き換えること
+
+### Speakable セレクタ（記事ページ）
+- `src/_layouts/articles-base.njk` の `cssSelector` は `["h1", "h2", "article .prose > p:first-of-type"]` を維持する
+- `p:first-of-type` = 答えリード（冒頭太字段落）を音声検索対象として指定
+- `article .prose p`（全段落）は広すぎるため使わない
+
+### 記事著者情報（動的展開）
+- 記事frontmatterに `author` フィールドを追加すると著者名が動的にJSON-LDへ反映される
+- 省略した場合はデフォルト `Kikumi` が使われる
+- ペット記事など別著者が書く場合は `author: Ayaka` のように明記する
+
 ## メタタグ・OGP実装ルール（必須）
 
 ### og:type

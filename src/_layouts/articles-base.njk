@@ -217,13 +217,13 @@
         "dateModified": "{{ date | dateISO }}",
         "author": {
           "@type": "Person",
-          "@id": "https://greenbeanscoffeeambassador.com/#ambassador-kikumi",
-          "name": "Kikumi",
+          "@id": "https://greenbeanscoffeeambassador.com/#ambassador-{{ author or 'kikumi' | lower }}",
+          "name": "{{ author or 'Kikumi' }}",
           "jobTitle": "GBCアンバサダー",
           "url": "https://greenbeanscoffeeambassador.com",
           "sameAs": [
-            "https://greenbeanscoffeeambassador.com",
-            "https://horikikumi.pages.dev/"
+            "https://greenbeanscoffeeambassador.com"{% if not author or author == "Kikumi" %},
+            "https://horikikumi.pages.dev/"{% endif %}
           ],
           "knowsAbout": ["スペシャルティコーヒー", "自家焙煎コーヒー", "ペットフレンドリーカフェ", "グルテンフリー"]
         },
@@ -240,7 +240,7 @@
         },
         "speakable": {
           "@type": "SpeakableSpecification",
-          "cssSelector": ["h1", "article .prose p"]
+          "cssSelector": ["h1", "h2", "article .prose > p:first-of-type"]
         }
       }
       {% endif %}
