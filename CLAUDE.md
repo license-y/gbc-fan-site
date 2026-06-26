@@ -219,6 +219,21 @@
 - 省略した場合はデフォルト `Kikumi` が使われる
 - ペット記事など別著者が書く場合は `author: Ayaka` のように明記する
 
+### VideoObject スキーマ（YouTube動画）
+- `inLanguage: "ja"` を必ず含めること（2026-06に全動画へ追加済み）
+- 必須フィールド: `name` / `description` / `thumbnailUrl` / `uploadDate` / `embedUrl` / `contentUrl` / `inLanguage` / `publisher`
+- 新しいYouTube動画を追加する際は既存のVideoObjectと同じ構造で追記すること
+
+### EventSeries スキーマ（体験イベント）
+- `inLanguage: "ja"` と `offers`（予約リンク）を必ず含めること（2026-06に追加済み）
+- `offers.url` は公式Instagram（`https://www.instagram.com/green.beanscoffee`）を指定
+- 新しいイベントを追加する際は既存のEventSeriesと同じ構造で追記すること
+
+### Schema.org バージョン運用方針
+- `"@context": "https://schema.org"` の形式（バージョン番号なし）が最新の推奨形式
+- Googleは常に最新の schema.org 仕様を参照するため、バージョンを固定する必要はない
+- 変更不要。現状維持すること
+
 ## メタタグ・OGP実装ルール（必須）
 
 ### og:type
