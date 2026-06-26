@@ -10,7 +10,7 @@ tags:
 thumbnail: /assets/images/articles/meiji-gaien-ginkgo-dagayasando-thirdplace-gbc.jpg
 ---
 
-**明治神宮外苑のいちょう並木を歩いたあとはダガヤサンドウを散策してGreen Beans Coffeeへ向かうコースが東京のサードプレイス巡りとしておすすめです。グリーンビーンズコーヒーで心が整います。**
+**明治神宮外苑からダガヤサンドウへの散策コースとは東京・渋谷区の緑と静けさをつないでGreen Beans Coffeeでサードプレイス体験まで完結できる半日の過ごし方です。新宿駅からも気軽に来られます。**
 
 青山通りからまっすぐ延びるいちょう並木を歩くたびに時間の感覚がゆっくりになります。
 
