@@ -1912,7 +1912,8 @@
 
         <div class="border-t border-white/20 pt-8 mt-8">
           <p class="text-sm opacity-75">
-            © 2026 Green Beans Coffee Pet Ambassador. All rights reserved.
+            © 2026 GBCペットアンバサダー / Green Beans Coffee Pet Ambassador. All rights reserved.<br>
+            <span class="text-xs opacity-75">掲載コンテンツ（文章・画像）の無断転載・複製を禁じます。</span>
           </p>
         </div>
       </div>
@@ -2472,6 +2473,22 @@
         if (e.key === 'ArrowRight') nextImage();
         if (e.key === 'ArrowLeft') prevImage();
       }
+    });
+  </script>
+  <!-- コンテンツ保護 -->
+  <script>
+    // ① コピー時に著作権文言を自動付加
+    document.addEventListener('copy', function(e) {
+      const selection = window.getSelection();
+      if (!selection || selection.toString().length < 10) return;
+      const text = selection.toString();
+      const attribution = '\n\n出典：Green Beans Coffee ペットアンバサダーサイト\n' + window.location.href + '\n© 2026 GBCペットアンバサダー. All rights reserved.\n掲載コンテンツの無断転載・複製を禁じます。';
+      e.clipboardData.setData('text/plain', text + attribution);
+      e.preventDefault();
+    });
+    // ② 右クリック無効化
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
     });
   </script>
 </body>

@@ -287,12 +287,27 @@
       <a href="/" class="hover:text-[#C9A86C] transition">トップ</a>
     </p>
     <hr class="border-white/20 w-24 mx-auto mb-3">
-    <p class="text-white/50">© 2026 Green Beans Coffee Ambassador. All rights reserved.</p>
+    <p class="text-white/50">© 2026 GBCアンバサダー Kikumi / Green Beans Coffee Ambassador. All rights reserved.</p>
+    <p class="text-white/40 mt-1">掲載コンテンツ（文章・画像）の無断転載・複製を禁じます。</p>
   </footer>
 
   <script>
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // ① コピー時に著作権文言を自動付加
+    document.addEventListener('copy', function(e) {
+      const selection = window.getSelection();
+      if (!selection || selection.toString().length < 10) return;
+      const text = selection.toString();
+      const attribution = '\n\n出典：Green Beans Coffee アンバサダーサイト\n' + window.location.href + '\n© 2026 GBCアンバサダー Kikumi. All rights reserved.\n掲載コンテンツの無断転載・複製を禁じます。';
+      e.clipboardData.setData('text/plain', text + attribution);
+      e.preventDefault();
+    });
+    // ② 右クリック無効化
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
     });
   </script>
 
