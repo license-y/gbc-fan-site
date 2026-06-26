@@ -217,10 +217,14 @@
 ### twitter:description と og:description
 - 両者は**必ず同一の内容**にすること。別の文章を書かない
 - `twitter:description` だけ独自の文章にすると一貫性が崩れてSNS共有時に混乱が生じる
+- **og:description・twitter:description も 100〜120字厳守**（name="description" と同じ基準）
+  - `name="description"` を長めに書いても `og:description` だけ短いケースが発生しやすい → 3つすべてを確認すること
+  - ⚠️ 過去に `og:description` が60字のまま放置された事例あり（2026年6月修正）
 
 ### description の文字数（100〜120字厳守）
 - **100字未満**: 検索結果での情報量が不足する → 短すぎはNG
 - **120字超**: 検索結果で切り捨てられる → 長すぎもNG
+- **対象は3つすべて**: `name="description"` / `og:description` / `twitter:description`
 - 新記事作成後・既存記事編集後は文字数を必ず確認すること
 - **⚠️ 締め文を入れない（文字数超過の主な原因）**: 「北参道GBCに通い続けた経験をもとにお伝えします」「〜の経験をもとにお伝えします」などの締め文はdescriptionに入れない。定義文＋場所情報＋体験内容で構成し、締め文は省く
 - **descriptionの推奨構成（ピラー記事）**: 「〇〇とは△△のことです。（定義文）」＋「東京・北参道のGreen Beans Coffeeで〜できます。（場所と体験）」で100〜120字に収める
