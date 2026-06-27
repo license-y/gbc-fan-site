@@ -6,7 +6,7 @@ tags:
   - articles
   - ダガヤサンドウ
 pillar: true
-date: 2026-06-26
+date: 2026-06-27
 thumbnail: /assets/images/articles/third-place-dagayasando-gbc.jpg
 ---
 

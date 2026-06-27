@@ -6,6 +6,7 @@ tags:
   - articles
   - サードプレイス
 pillar: true
+date: 2026-06-27
 thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
 ---
 

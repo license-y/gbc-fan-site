@@ -6,7 +6,7 @@ tags:
   - articles
   - 体験・イベント
 pillar: true
-date: 2026-06-26
+date: 2026-06-27
 thumbnail: /assets/images/articles/handdrip-event.jpg
 ---
 
