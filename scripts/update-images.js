@@ -14,7 +14,7 @@
  *   inbox/monthly-coffee/2.jpg       → monthly-coffee/2.jpg に
  */
 
-import { readFileSync, existsSync, renameSync, unlinkSync, copyFileSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, renameSync, unlinkSync, copyFileSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -61,11 +61,29 @@ async function compressAndCopy(srcPath, destPath, tinify) {
   }
 }
 
-// TinyPNG なしで単純コピー
+// TinyPNG なしで単純コピー（フォールバック用）
 function simpleCopy(srcPath, destPath) {
   copyFileSync(srcPath, destPath);
   const size = readFileSync(destPath).length;
   log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(size)}, 圧縮なし)`);
+}
+
+// jimp で圧縮してコピー（最大幅1200px、JPEG品質75）
+async function compressWithJimp(srcPath, destPath) {
+  const { Jimp } = await import('jimp');
+  const srcSize = readFileSync(srcPath).length;
+
+  const image = await Jimp.read(srcPath);
+  if (image.width > 1200) {
+    image.resize({ w: 1200 });
+  }
+
+  const buffer = await image.getBuffer('image/jpeg', { quality: 75 });
+  writeFileSync(destPath, buffer);
+
+  const destSize = buffer.length;
+  const reduction = Math.round((1 - destSize / srcSize) * 100);
+  log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)} → ${formatSize(destSize)}, ${reduction}%削減)`);
 }
 
 // マガジンローテーション
@@ -136,8 +154,8 @@ async function main() {
   }
 
   if (!apiKeyUsed) {
-    log.warn('TinyPNG API キーが未設定です。圧縮なしでファイルを移動します。');
-    log.info('.env.local に TINYPNG_API_KEY を追加すると自動圧縮が有効になります');
+    log.warn('TinyPNG API キーが未設定です。jimp でローカル圧縮します（最大幅1200px・品質75）。');
+    log.info('.env.local に TINYPNG_API_KEY を追加するとクラウド圧縮が有効になります');
     log.info('APIキー取得: https://tinypng.com/developers');
   }
 
@@ -170,7 +188,7 @@ async function main() {
     if (tinify) {
       await compressAndCopy(inboxFiles.magazine, destPath, tinify);
     } else {
-      simpleCopy(inboxFiles.magazine, destPath);
+      await compressWithJimp(inboxFiles.magazine, destPath);
     }
     unlinkSync(inboxFiles.magazine);
   } else {
@@ -189,7 +207,7 @@ async function main() {
       if (tinify) {
         await compressAndCopy(srcPath, destPath, tinify);
       } else {
-        simpleCopy(srcPath, destPath);
+        await compressWithJimp(srcPath, destPath);
       }
       unlinkSync(srcPath);
     } else {
@@ -209,7 +227,7 @@ async function main() {
       if (tinify) {
         await compressAndCopy(srcPath, destPath, tinify);
       } else {
-        simpleCopy(srcPath, destPath);
+        await compressWithJimp(srcPath, destPath);
       }
       unlinkSync(srcPath);
     } else {
