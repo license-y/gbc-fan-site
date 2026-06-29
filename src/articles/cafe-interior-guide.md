@@ -6,7 +6,7 @@ tags:
   - articles
   - カフェ店内
 pillar: true
-date: 2026-06-27
+date: 2026-06-29
 thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
 ---
 

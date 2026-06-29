@@ -6,7 +6,7 @@ tags:
   - articles
   - 焙煎
 pillar: true
-date: 2026-06-27
+date: 2026-06-28
 thumbnail: /assets/images/articles/coffee-roasting-experience-professional-gbc.jpg
 ---
 
