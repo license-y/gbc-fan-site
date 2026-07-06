@@ -152,8 +152,9 @@ inbox/*
 inbox/monthly-coffee/*
 !inbox/monthly-coffee/.gitkeep
 
-# Claude Code internal files
-.claude/
+# Claude Code internal files（skills はチーム共有のため git 管理する）
+.claude/*
+!.claude/skills/
 
 # 11ty / Pagefind ビルド生成物（Cloudflare Pages がビルド時に生成する）
 public/articles/
