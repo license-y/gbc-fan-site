@@ -6,6 +6,7 @@ tags:
   - articles
   - 美容健康
 pillar: true
+date: 2026-07-01
 thumbnail: /assets/images/articles/coffee-beauty-health-guide-gbc.jpg
 thumbnailAlt: 焙煎豆に囲まれた黒いコーヒーカップとスプーン
 ---

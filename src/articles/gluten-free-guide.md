@@ -6,6 +6,7 @@ tags:
   - articles
   - グルテンフリー
 pillar: true
+date: 2026-06-26
 thumbnail: /assets/images/articles/gluten-free-guide-gbc.jpg
 thumbnailAlt: 黒と白の米粉フォカッチャ2種と、オイル・ディップが並ぶ黒いプレート
 ---

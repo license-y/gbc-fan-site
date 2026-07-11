@@ -6,6 +6,7 @@ tags:
   - articles
   - コーヒー
 pillar: true
+date: 2026-06-25
 thumbnail: /assets/images/articles/handdrip-guide-gbc.jpg
 thumbnailAlt: ハンドドリップでコーヒーを淹れるバリスタの手元
 ---

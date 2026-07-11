@@ -6,6 +6,7 @@ tags:
   - articles
   - 体験・イベント
 pillar: true
+date: 2026-06-29
 thumbnail: /assets/images/articles/event-guide-gbc.jpg
 thumbnailAlt: 体験イベントに参加する複数のお客さんとスタッフさんが並ぶ店内の様子
 ---

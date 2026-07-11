@@ -6,6 +6,7 @@ tags:
   - articles
   - ペット
 pillar: true
+date: 2026-06-24
 thumbnail: /assets/images/articles/pet-cafe-guide-gbc.jpg
 thumbnailAlt: 店内の木の床でくつろぐ白いポメラニアン、スマートフォンで撮影する様子
 ---

@@ -6,6 +6,7 @@ tags:
   - articles
   - ダガヤサンドウ
 pillar: true
+date: 2026-06-30
 thumbnail: /assets/images/articles/dagayasando-guide-gbc.jpg
 thumbnailAlt: 店名看板のないGreen Beans Coffeeの入り口、メニューやウェルカムボードが並ぶ外観
 ---

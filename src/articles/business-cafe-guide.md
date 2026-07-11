@@ -6,6 +6,7 @@ tags:
   - articles
   - ビジネス
 pillar: true
+date: 2026-07-03
 thumbnail: /assets/images/articles/business-cafe-guide-gbc.jpg
 thumbnailAlt: 木のテーブル席に設置された電源コンセント
 ---

@@ -6,6 +6,7 @@ tags:
   - articles
   - 焙煎
 pillar: true
+date: 2026-06-28
 thumbnail: /assets/images/articles/roasting-machine-guide-gbc.jpg
 thumbnailAlt: 店内に置かれた大型のステンレス製自家焙煎機
 ---

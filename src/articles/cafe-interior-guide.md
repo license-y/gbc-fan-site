@@ -6,6 +6,7 @@ tags:
   - articles
   - カフェ店内
 pillar: true
+date: 2026-07-02
 thumbnail: /assets/images/articles/cafe-interior-guide-gbc.jpg
 thumbnailAlt: 木目のテーブルと黒いスチールチェアが並ぶGreen Beans Coffeeの店内
 ---
