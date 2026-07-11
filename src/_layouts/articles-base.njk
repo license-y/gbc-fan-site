@@ -214,7 +214,7 @@
         "headline": {{ title | dump | safe }},
         "description": {{ description | dump | safe }},
         "datePublished": "{{ date | dateISO }}",
-        "dateModified": "{{ date | dateISO }}",
+        "dateModified": "{{ (updated or date) | dateISO }}",
         "author": {
           "@type": "Person",
           "@id": "https://greenbeanscoffeeambassador.com/#ambassador-{{ author or 'kikumi' | lower }}",

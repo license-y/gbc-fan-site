@@ -8,7 +8,7 @@ export function render({ collections }) {
   const today = new Date().toISOString().split("T")[0];
 
   const articleEntries = (collections.articles || []).map((post) => {
-    const lastmod = new Date(post.date).toISOString().split("T")[0];
+    const lastmod = new Date(post.data.updated || post.date).toISOString().split("T")[0];
     return `  <url>
     <loc>${base}${post.url}</loc>
     <lastmod>${lastmod}</lastmod>
