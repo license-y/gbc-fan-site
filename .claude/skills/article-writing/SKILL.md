@@ -165,6 +165,38 @@ thumbnail: /assets/images/articles/〇〇.jpg
 
 `pillar: true` を追加すると記事一覧ページとメインサイトのArticlesセクションに「GBCガイド」として特別表示される。
 
+## 更新日（updated）フィールドのルール
+
+記事を大きくリライトしたときは、フロントマターに `updated: YYYY-MM-DD` を追加する（2回目以降は日付を書き換え）。
+
+```markdown
+---
+layout: article.njk
+title: 記事タイトル
+description: 100〜120文字の要約
+date: 2026-05-07
+updated: 2026-07-11
+tags:
+  - articles
+  - カテゴリ名
+thumbnail: /assets/images/hero_bg-1.jpg
+---
+```
+
+**反映される場所（`updated` を追加すると自動で連動する）：**
+- JSON-LD `BlogPosting` の `dateModified`（`src/_layouts/articles-base.njk`）
+- `public/articles-sitemap.xml` の `lastmod`
+- 記事ページのメタ情報に読者向けの「更新日：」表示（`src/_layouts/article.njk`。`updated` がない記事には表示されない）
+
+**⚠️ `updated` を追加してよい場合／悪い場合：**
+- ◯ 記事本文を実質的に書き直した・情報を追加した（読者が読み直す価値がある変更）
+- ✕ 誤字修正など軽微な変更
+- ✕ 内部リンクを1本追加しただけの編集（⑤のピラーリンク強化作業など）
+
+中身を伴わない変更で `updated` だけ書き換えると、Googleのスパムポリシーが禁止する「date spam」とみなされるリスクがあるため、上記の基準を守ること。
+
+---
+
 ## メインサイトのGBCガイド表示ルール
 
 - **常に最新ピラー記事2件を表示する**（`public/index.html` の `#articles` セクション内）
