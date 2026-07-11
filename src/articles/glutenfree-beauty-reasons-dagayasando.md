@@ -8,6 +8,7 @@ tags:
   - グルテンフリー
   - 美容健康
 thumbnail: /assets/images/articles/glutenfree-beauty-dagayasando-gbc.jpg
+thumbnailAlt: ダガヤサンドウのグルテンフリーメニュー、美容効果のイメージ
 ---
 
 **グルテンフリーが美容に効く3つの理由は腸内環境の改善・慢性炎症の抑制・消化負担の軽減です。東京・渋谷区のGreen Beans Coffeeで米粉フォカッチャを試しながら始めるカフェ健康習慣をご紹介します。**

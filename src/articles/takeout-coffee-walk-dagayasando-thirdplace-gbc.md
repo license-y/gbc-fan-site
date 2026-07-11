@@ -8,6 +8,7 @@ tags:
   - サードプレイス
   - ダガヤサンドウ
 thumbnail: /assets/images/articles/takeout-coffee-dagayasando-walk-thirdplace-gbc.jpg
+thumbnailAlt: テイクアウトカップを手にダガヤサンドウを歩く様子
 ---
 
 **東京・ダガヤサンドウエリアはコーヒー専門店のテイクアウトコーヒーを手に一日中散歩を楽しめるサードプレイスです。Green Beans Coffeeから歩き始めると明治神宮や新宿御苑・明治神宮外苑という東京の緑が出迎えてくれます。**

@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - カフェ店内
 thumbnail: /assets/images/articles/counter-workspace-wifi-power-gbc.jpg
+thumbnailAlt: カウンター席でPC作業をする様子、Wi-Fi・電源完備の環境
 ---
 
 **Green Beans CoffeeはWi-Fi・電源完備でPC作業ができる北参道・千駄ヶ谷のカフェです。カウンター席で集中できる静かな環境はフリーランスや個人事業主のサードプレイスとして最適です。**

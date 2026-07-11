@@ -8,6 +8,7 @@ tags:
   - 美容健康
   - コーヒー
 thumbnail: /assets/images/articles/coffee-beans-beauty-home-ritual-gbc.jpg
+thumbnailAlt: 自宅で楽しむコーヒータイム、美容サードプレイスのイメージ
 ---
 
 **コーヒーの美容効果は成分だけではありません。香りのリラックス効果・腸内環境へのアプローチ・丁寧に淹れる時間のマインドフルネス。この3つを知ることで自宅のコーヒータイムが美容サードプレイスに変わります。**

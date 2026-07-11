@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/original-blend-roasting.jpg
+thumbnailAlt: オリジナルブレンドの焙煎体験イベントの様子
 ---
 
 **Green Beans Coffeeでは30種類の豆から自分だけのオリジナルブレンドを選んで焙煎できる体験イベントを毎月開催しています。東京・北参道で唯一無二のコーヒーを作る特別な体験です。**

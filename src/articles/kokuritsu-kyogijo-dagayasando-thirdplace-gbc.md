@@ -8,6 +8,7 @@ tags:
   - ダガヤサンドウ
   - サードプレイス
 thumbnail: /assets/images/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc.jpg
+thumbnailAlt: 国立競技場からダガヤサンドウへ続く散歩道
 ---
 
 **ダガヤサンドウとは国立競技場・東京体育館を擁する渋谷区千駄ヶ谷から北参道にかけての緑豊かなエリアで東京屈指のサードプレイスが集まる場所です。新宿・渋谷からのアクセスも良く散歩と一杯が融合した時間を過ごせます。**

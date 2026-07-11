@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - サードプレイス
 thumbnail: /assets/images/articles/cafe-meeting-business.jpg
+thumbnailAlt: 商談前の一杯として提供されるコーヒー
 ---
 
 **温かい飲み物を手にすると相手への印象が好意的になるという心理研究があります。千駄ヶ谷ダガヤサンドウのGreen Beans Coffeeでの商談は会議室より打ち解けた対話が生まれやすくビジネスの質が変わります。**

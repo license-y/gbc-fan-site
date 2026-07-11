@@ -8,6 +8,7 @@ tags:
   - ペット
   - サードプレイス
 thumbnail: /assets/images/articles/dog-cheki-photo-booth-dagayasando-gbc.jpg
+thumbnailAlt: 愛犬とのチェキ撮影ブース、サードプレイスの一コマ
 ---
 
 **東京・渋谷区のGreen Beans Coffeeは店内全席ペット同伴OK・無料チェキ撮影展示サービスもある愛犬家のサードプレイスです。北参道駅から徒歩3分で渋谷・新宿エリアから10分以内のダガヤサンドウにあります。**

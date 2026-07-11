@@ -8,6 +8,7 @@ tags:
   - 美容健康
   - コーヒー
 thumbnail: /assets/images/articles/coffee-beauty-effects.jpg
+thumbnailAlt: コーヒーカップとシミ・くすみ・むくみ改善をイメージした構図
 ---
 
 **コーヒーにはシミ・くすみの予防・アンチエイジング・むくみ改善という3つの美容効果があります。北参道のGreen Beans Coffeeでバリスタさんから学んだ美容とコーヒーの関係を3つにまとめてお伝えします。**

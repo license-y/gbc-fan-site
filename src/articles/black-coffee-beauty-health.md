@@ -8,6 +8,7 @@ tags:
   - 美容健康
   - コーヒー
 thumbnail: /assets/images/articles/black-coffee-beauty-health-gbc.jpg
+thumbnailAlt: ブラックコーヒーが入ったカップ。北参道のカフェで美容習慣として楽しむ一杯
 ---
 
 **ブラックコーヒーにはクロロゲン酸による抗酸化作用・代謝アップ・むくみ改善など美容健康に嬉しい効果があります。東京・千駄ヶ谷のGreen Beans Coffeeでは自家焙煎スペシャルティコーヒーをブラックで飲む習慣が体の内側からケアにつながります。**

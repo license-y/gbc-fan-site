@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/coffee-beans-fruity-mild-bitter-roasting-gbc.jpg
+thumbnailAlt: フルーティ・マイルド・ビターに分類されたコーヒー豆
 ---
 
 **コーヒー豆はフルーティ・マイルド・ビターの3タイプに分かれ気分やシーンに合わせた選び方があります。東京・渋谷区北参道のGreen Beans Coffeeでは焙煎体験イベントで自分だけのオリジナル豆も作れます。**

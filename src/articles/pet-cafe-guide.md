@@ -7,7 +7,8 @@ tags:
   - ペット
 pillar: true
 date: 2026-06-24
-thumbnail: /assets/images/articles/dog-indoor-cafe-dagayasando-gbc.jpg
+thumbnail: /assets/images/articles/pet-cafe-guide-gbc.jpg
+thumbnailAlt: 店内でペットと過ごすカフェの様子
 ---
 
 **犬と入れるカフェとはペットを連れたまま店内で飲食できるカフェのことです。テラス席のみOKの店と異なり天候に関係なく愛犬とゆっくり過ごせます。東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは店内ペット同伴OKで無料チェキ展示サービスもあります。**

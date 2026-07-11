@@ -8,6 +8,7 @@ tags:
   - カフェ店内
   - サードプレイス
 thumbnail: /assets/images/articles/coffee-cloth-oshibori-dagayasando-gbc.jpg
+thumbnailAlt: 布おしぼりとお冷が運ばれてくるダガヤサンドウのカフェ
 ---
 
 **Green Beans Coffeeはコーヒー一杯を頼むとスタッフさんが布おしぼりとお冷をテーブルまで運んでくれます。セルフサービスではないホテルラウンジ級のもてなしが千駄ヶ谷・ダガヤサンドウで自分だけのサードプレイス時間を完成させてくれます。**

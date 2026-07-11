@@ -8,6 +8,7 @@ tags:
   - ダガヤサンドウ
   - ペット
 thumbnail: /assets/images/articles/national-stadium-dagayasando-pet-walk-gbc.jpg
+thumbnailAlt: 国立競技場エリアを愛犬と散歩する様子
 ---
 
 **東京・千駄ヶ谷の国立競技場エリアは愛犬との散歩コースに最適です。東京体育館・将棋会館を通りダガヤサンドウを歩いた先にあるGreen Beans Coffeeは店内ペット同伴OKで、新宿から10分ほどとは思えない落ち着いた時間を過ごせます。**

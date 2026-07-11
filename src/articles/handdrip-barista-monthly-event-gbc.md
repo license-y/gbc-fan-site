@@ -8,6 +8,7 @@ tags:
   - 体験・イベント
   - コーヒー
 thumbnail: /assets/images/articles/handdrip-barista-monthly-event-gbc.jpg
+thumbnailAlt: バリスタによるハンドドリップ体験イベントの様子
 ---
 
 **Green Beans Coffeeは毎月ハンドドリップ体験イベントをコーヒー豆代のみで開催しています。北参道のバリスタさんから淹れ方を直接教われる千駄ヶ谷の体験型コーヒーイベントです。**

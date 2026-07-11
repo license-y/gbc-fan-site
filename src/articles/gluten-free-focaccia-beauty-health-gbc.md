@@ -8,6 +8,7 @@ tags:
   - グルテンフリー
   - 美容健康
 thumbnail: /assets/images/articles/gluten-free-focaccia-rice-flour-beauty-gbc.jpg
+thumbnailAlt: 米粉の自家製グルテンフリーフォカッチャ、美容健康習慣のイメージ
 ---
 
 **渋谷区千駄ヶ谷のGreen Beans Coffeeでは米粉を使った自家製グルテンフリーフォカッチャを提供しています。もちもちとした食感と小麦粉不使用ならではの軽やかさが特徴で腸内環境を整え美容や健康にもつながる一品です。**

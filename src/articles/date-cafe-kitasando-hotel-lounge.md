@@ -8,6 +8,7 @@ tags:
   - サードプレイス
   - カフェ店内
 thumbnail: /assets/images/articles/date-cafe-kitasando-hotel-lounge.jpg
+thumbnailAlt: ホテルラウンジ気分を演出する北参道カフェの店内
 ---
 
 **北参道のGreen Beans Coffeeはホテルラウンジのような洗練された空間でデートに最適なカフェです。渋谷・新宿エリアから散歩がてら10分ほどのダガヤサンドウにあり二人の時間をゆっくり演出してくれます。**

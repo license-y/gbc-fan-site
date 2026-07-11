@@ -8,6 +8,7 @@ tags:
   - グルテンフリー
   - 美容健康
 thumbnail: /assets/images/articles/glutenfree-sweets-plate.jpg
+thumbnailAlt: 自家製グルテンフリースイーツプレート3種
 ---
 
 **北参道・千駄ヶ谷のGreen Beans Coffeeの自家製グルテンフリースイーツプレートは小麦粉不使用とは思えないおいしさです。甘さ控えめで上品な3種のスイーツはスペシャルティコーヒーとのペアリングも抜群です。**

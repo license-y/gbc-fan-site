@@ -8,6 +8,7 @@ tags:
   - カフェ店内
   - サードプレイス
 thumbnail: /assets/images/articles/coffee-beans-30-varieties-interior-dagayasando-gbc.jpg
+thumbnailAlt: 30種類以上のコーヒー豆が並ぶ店内、ダガヤサンドウのカフェ
 ---
 
 **東京・渋谷区のダガヤサンドウにあるGreen Beans Coffeeは30種類のコーヒー豆を扱うコーヒー専門店です。仕事・デート・女子会・打ち合わせとあらゆるシーンで使えるサードプレイスとして北参道・千駄ヶ谷エリアに愛されています。**

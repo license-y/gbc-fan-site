@@ -8,6 +8,7 @@ tags:
   - ペット
   - カフェ店内
 thumbnail: /assets/images/articles/pet-friendly-cafe-dogs.jpg
+thumbnailAlt: 愛犬と一緒に入れるペットフレンドリーカフェの様子
 ---
 
 **ペット同伴OKのカフェ選びでは「店内入店の可否」「愛犬への配慮」「他のお客さんとの距離感」の3点を確認するのが重要です。千駄ヶ谷ダガヤサンドウのGreen Beans Coffeeはすべての条件を満たす愛犬連れにやさしいカフェです。**

@@ -8,6 +8,7 @@ tags:
   - ダガヤサンドウ
   - ペット
 thumbnail: /assets/images/articles/sendagaya-pet-walk.jpg
+thumbnailAlt: 千駄ヶ谷から愛犬と歩くダガヤサンドウ散歩コース
 ---
 
 **千駄ヶ谷駅から東京体育館・将棋会館・鳩森八幡神社を経由してGreen Beans Coffeeへ向かう愛犬との散歩コースです。緑と歴史と本格コーヒーが一度に楽しめるダガヤサンドウの特別ルートです。**

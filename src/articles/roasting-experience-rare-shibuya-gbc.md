@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/coffee-roasting-experience-professional-gbc.jpg
+thumbnailAlt: 業務用焙煎機を操作する焙煎体験の様子
 ---
 
 **Green Beans Coffeeでは東京・渋谷エリアでは珍しい焙煎体験イベントを定期開催しています。業務用焙煎機を使い焙煎士の指導のもとで自分好みの豆を選び世界にひとつだけのコーヒーを仕上げることができます。**

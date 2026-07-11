@@ -7,6 +7,7 @@ tags:
   - articles
   - ダガヤサンドウ
 thumbnail: /assets/images/articles/hatonomori01.jpg
+thumbnailAlt: 鳩森八幡神社の境内、富士塚のあるパワースポット
 ---
 
 **鳩森八幡神社は千駄ヶ谷駅から徒歩5分の都内最古の富士塚があるパワースポットです。将棋の聖地としても知られダガヤサンドウ散歩のルートとしてGreen Beans Coffeeと合わせて楽しめます。**

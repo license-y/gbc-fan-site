@@ -8,6 +8,7 @@ tags:
   - ペット
   - カフェ店内
 thumbnail: /assets/images/articles/dog-portrait-latte-kitasando-dagayasando-gbc.jpg
+thumbnailAlt: 愛犬の似顔絵が描かれたカフェラテ
 ---
 
 **千駄ヶ谷・ダガヤサンドウは愛犬との散歩コースにぴったりのエリアです。Green Beans Coffeeは店内ペット同伴OKで平日はバリスタさんに愛犬の似顔絵ラテをお願いできる北参道の特別なカフェです。**

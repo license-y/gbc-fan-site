@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - カフェ店内
 thumbnail: /assets/images/articles/business-omotenashi-gbc.jpg
+thumbnailAlt: ホテルラウンジのようなおもてなしが感じられる店内の様子
 ---
 
 **Green Beans Coffeeは着席するとおしぼりとお冷を運んでくれるホテルラウンジ級のホスピタリティがある千駄ヶ谷のカフェです。商談・打ち合わせの場として渋谷区のビジネスパーソンに選ばれています。**

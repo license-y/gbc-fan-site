@@ -7,7 +7,8 @@ tags:
   - コーヒー
 pillar: true
 date: 2026-06-25
-thumbnail: /assets/images/articles/handdrip-home-thirdplace-event-gbc.jpg
+thumbnail: /assets/images/articles/handdrip-guide-gbc.jpg
+thumbnailAlt: ハンドドリップでコーヒーを淹れるバリスタの手元
 ---
 
 **ハンドドリップとはコーヒーの粉にお湯をゆっくりと手で注いで抽出する方法のことです。機械を使わず人の手でコントロールするため同じ豆でも味が大きく変わります。東京・渋谷区北参道のGreen Beans Coffeeではバリスタさんが一杯ずつ丁寧に淹れてくれます。**

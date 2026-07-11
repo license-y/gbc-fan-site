@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - サードプレイス
 thumbnail: /assets/images/articles/freelance-third-place-dagayasando-gbc.jpg
+thumbnailAlt: フリーランスがサードプレイスとして利用するダガヤサンドウのカフェ
 ---
 
 **フリーランス・個人事業主のサードプレイスとして渋谷区千駄ヶ谷のGreen Beans Coffeeが選ばれています。新宿から10分・北参道駅から徒歩3分のダガヤサンドウで静かな空間と心地よいBGMが仕事の質を高めます。**

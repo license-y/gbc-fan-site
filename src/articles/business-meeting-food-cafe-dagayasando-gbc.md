@@ -8,6 +8,7 @@ tags:
   - カフェ店内
   - ビジネス
 thumbnail: /assets/images/articles/business-meeting-food-coffee-dagayasando-gbc.jpg
+thumbnailAlt: 打ち合わせ用に提供されるコーヒーとフードのセット
 ---
 
 **渋谷区ダガヤサンドウのGreen Beans Coffeeはコーヒーとフードが揃うホテルラウンジのような空間です。東京の中心にありながら静かで落ち着いた店内はビジネスの打ち合わせ場所としてマイリストに入れておきたい一軒です。**

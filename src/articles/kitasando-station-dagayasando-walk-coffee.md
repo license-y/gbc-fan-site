@@ -8,6 +8,7 @@ tags:
   - ダガヤサンドウ
   - コーヒー
 thumbnail: /assets/images/articles/kitasando-station-dagayasando-power-spot.jpg
+thumbnailAlt: 北参道駅周辺、散歩の合間に立ち寄るコーヒー専門店
 ---
 
 **北参道駅はダガヤサンドウの玄関口で明治神宮・新宿御苑・明治神宮外苑という3つのパワースポットに囲まれたエリアです。駅から徒歩3分のGreen Beans Coffeeは散歩のひと息に最適な自家焙煎コーヒー専門店です。**

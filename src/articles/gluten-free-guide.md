@@ -7,7 +7,8 @@ tags:
   - グルテンフリー
 pillar: true
 date: 2026-06-26
-thumbnail: /assets/images/articles/gluten-free-basics.jpg
+thumbnail: /assets/images/articles/gluten-free-guide-gbc.jpg
+thumbnailAlt: グルテンフリーフードの基礎知識をイメージした構図
 ---
 
 **グルテンフリーとは小麦・大麦・ライ麦などに含まれるたんぱく質「グルテン」を含まない食材を選ぶ食事法のことです。腸内環境を整え美容健康効果が期待できることから近年注目を集めています。東京・渋谷区北参道のGreen Beans Coffeeでは米粉フォカッチャやグルテンフリースイーツも楽しめます。**

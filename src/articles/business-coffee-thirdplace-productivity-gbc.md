@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - サードプレイス
 thumbnail: /assets/images/articles/business-coffee-thirdplace-northsando-gbc.jpg
+thumbnailAlt: 北参道のカフェ店内、サードプレイスとして仕事に使う空間
 ---
 
 **東京・渋谷区千駄ヶ谷のGreen Beans Coffeeは全席WiFi・電源完備のサードプレイスです。自家焙煎スペシャルティコーヒーとの組み合わせで集中力が高まりビジネスの質が変わります。**

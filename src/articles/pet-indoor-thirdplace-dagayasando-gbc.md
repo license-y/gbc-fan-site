@@ -8,6 +8,7 @@ tags:
   - ペット
   - サードプレイス
 thumbnail: /assets/images/articles/dog-indoor-cafe-dagayasando-gbc.jpg
+thumbnailAlt: 店内でペットと過ごすカフェの様子
 ---
 
 **北参道・ダガヤサンドウのGreen Beans Coffeeは東京都内でも貴重なペット店内同伴OKのカフェです。天候を問わず愛犬と同じ空間でゆっくりできる愛犬家のサードプレイスとして渋谷区で愛されています。**

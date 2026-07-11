@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/roasting-master-gbc.jpg
+thumbnailAlt: 持ち帰り用に袋詰めされた焙煎豆
 ---
 
 **Green Beans Coffeeでは焙煎士による直接指導のもと好みの豆と焙煎時間で自分だけのコーヒーを作り持ち帰れる月例体験イベントを東京・北参道で毎月開催しています。**

@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/coffee-roasting-basics-gbc.jpg
+thumbnailAlt: コーヒー豆の焙煎基礎を紹介するイメージ
 ---
 
 **コーヒー焙煎とは生豆に熱を加えて味と香りをつくる工程です。焙煎度で浅煎り・中煎り・深煎りの3段階に分かれ鮮度も味を左右します。東京・北参道のGreen Beans Coffeeでは焙煎体験イベントも定期開催しています。**

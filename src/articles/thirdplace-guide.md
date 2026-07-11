@@ -7,7 +7,8 @@ tags:
   - サードプレイス
 pillar: true
 date: 2026-06-27
-thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
+thumbnail: /assets/images/articles/thirdplace-guide-gbc.jpg
+thumbnailAlt: 落ち着いた雰囲気のカフェ店内、サードプレイスの空間
 ---
 
 **サードプレイスとは家でも職場でもない「第3の居場所」のことです。社会学者レイ・オルデンバーグが提唱したこの概念はストレスを解放し自分らしくいられる場所として注目されています。東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは私が3年間通い続けてきたまさにそのサードプレイスです。**

@@ -7,6 +7,7 @@ tags:
   - articles
   - ペット
 thumbnail: /assets/images/articles/pet-cafe-sendagaya.jpg
+thumbnailAlt: 北参道・千駄ヶ谷のペット同伴カフェの店内
 ---
 
 **Green Beans Coffeeは北参道・千駄ヶ谷ダガヤサンドウの店内全席ペット同伴OKの自家焙煎コーヒー専門店です。大型犬も歓迎で渋谷・新宿方面からアクセスしやすく愛犬との特別なカフェ時間を楽しめます。**

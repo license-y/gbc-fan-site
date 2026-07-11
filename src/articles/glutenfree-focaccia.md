@@ -7,6 +7,7 @@ tags:
   - articles
   - グルテンフリー
 thumbnail: /assets/images/articles/glutenfree-focaccia.jpg
+thumbnailAlt: 手作りの米粉グルテンフリーフォカッチャ
 ---
 
 **北参道・千駄ヶ谷のGreen Beans Coffeeでは米粉を使ったグルテンフリーフォカッチャを提供しています。小麦粉不使用でもちっとした食感でスペシャルティコーヒーとの相性も抜群です。**

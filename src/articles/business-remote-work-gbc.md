@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - サードプレイス
 thumbnail: /assets/images/articles/business-remote-work-gbc.jpg
+thumbnailAlt: リモートワーク中のノートPCとコーヒーが並ぶカウンター席
 ---
 
 **北参道のGreen Beans Coffeeは全席WiFi・電源完備で静かな空間のビジネスカフェです。リモートワーク・商談・打ち合わせに使える条件が揃い東京のサードプレイスとして穴場的な存在です。**

@@ -7,6 +7,7 @@ tags:
   - articles
   - コーヒー
 thumbnail: /assets/images/articles/milk-coffee.jpg
+thumbnailAlt: 本物の牛乳を使ったコーヒー、コーヒーフレッシュ不使用
 ---
 
 **Green Beans Coffeeはコーヒーフレッシュを使わず本物の牛乳を提供する北参道の自家焙煎コーヒー専門店です。ホットコーヒーには温めたミルクを添えるこだわりがコーヒーへの真摯な姿勢を示しています。**

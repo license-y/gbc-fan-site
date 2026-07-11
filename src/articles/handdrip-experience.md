@@ -8,6 +8,7 @@ tags:
   - コーヒー
   - 体験・イベント
 thumbnail: /assets/images/articles/handdrip-event.jpg
+thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 ---
 
 **Green Beans Coffeeのハンドドリップ体験は豆の選別から抽出技術・焙煎見学・テイクアウトコーヒーまでが豆代のみで体験できるイベントです。北参道のバリスタさんがコーヒーへの見方を変えてくれる内容です。**

@@ -57,7 +57,7 @@ layout: articles-base.njk
       <!-- アイキャッチ画像 -->
       {% if thumbnail %}
       <div class="max-w-[500px] mx-auto rounded-xl overflow-hidden mb-8">
-        <img src="{{ thumbnail }}" alt="{{ title }} | Green Beans Coffee 北参道・千駄ヶ谷" class="w-full object-cover" loading="lazy" decoding="async" width="800" height="450">
+        <img src="{{ thumbnail }}" alt="{{ thumbnailAlt or (title + ' | Green Beans Coffee 北参道・千駄ヶ谷') }}" class="w-full object-cover" loading="lazy" decoding="async" width="800" height="450">
       </div>
       {% endif %}
 

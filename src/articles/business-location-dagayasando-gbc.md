@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - コーヒー
 thumbnail: /assets/images/articles/business-latte-dagayasando-gbc.jpg
+thumbnailAlt: ダガヤサンドウのカフェで提供されるカフェラテ、商談利用のイメージ
 ---
 
 **千駄ヶ谷ダガヤサンドウのGreen Beans Coffeeは商談・打ち合わせ・面接に選ばれるビジネスカフェです。鳩森八幡神社に隣接する静かな空間とスペシャルティコーヒーが会話の質を高めます。**

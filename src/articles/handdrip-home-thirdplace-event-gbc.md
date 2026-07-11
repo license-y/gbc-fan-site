@@ -8,6 +8,7 @@ tags:
   - 体験・イベント
   - コーヒー
 thumbnail: /assets/images/articles/handdrip-home-thirdplace-event-gbc.jpg
+thumbnailAlt: ハンドドリップでコーヒーを淹れるバリスタの手元
 ---
 
 **Green Beans Coffeeのハンドドリップ体験イベントは、バリスタさんが実演と手順説明で丁寧に淹れ方を教えてくれます。この体験で得た技術を自宅に持ち帰ることで自分だけのコーヒー時間＝サードプレイスが生まれます。**

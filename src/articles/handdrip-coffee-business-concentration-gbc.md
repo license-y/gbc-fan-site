@@ -8,6 +8,7 @@ tags:
   - ビジネス
   - コーヒー
 thumbnail: /assets/images/articles/business-handdrip-coffee-focus-gbc.jpg
+thumbnailAlt: 仕事中に飲むハンドドリップコーヒー、集中力アップのイメージ
 ---
 
 **仕事に集中したいときこそコーヒー専門店のハンドドリップコーヒーを選んでください。豊かな香りと丁寧な一杯が気持ちを切り替え集中力を引き上げてくれます。渋谷区千駄ヶ谷のGreen Beans Coffeeがその場所です。**

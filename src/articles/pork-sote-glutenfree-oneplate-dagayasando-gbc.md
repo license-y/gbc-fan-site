@@ -8,6 +8,7 @@ tags:
   - グルテンフリー
   - 美容健康
 thumbnail: /assets/images/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc.jpg
+thumbnailAlt: 国産豚ソテーのグルテンフリーワンプレート
 ---
 
 **Green Beans Coffeeの国産豚ソテーセレクトワンプレートは米粉フォカッチャ・旬野菜サラダが揃うグルテンフリーランチです。渋谷・北参道で美容も満腹感も妥協なく叶えられる千駄ヶ谷の一皿です。**

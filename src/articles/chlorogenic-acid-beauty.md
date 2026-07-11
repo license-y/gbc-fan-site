@@ -7,6 +7,7 @@ tags:
   - articles
   - 美容健康
 thumbnail: /assets/images/articles/chlorogenic-acid-beauty.jpg
+thumbnailAlt: クロロゲン酸を含むコーヒー豆、美容効果のイメージ
 ---
 
 **クロロゲン酸はコーヒー豆に豊富なポリフェノールで抗酸化作用によりシミ・老化の原因となる活性酸素を抑えます。北参道のGreen Beans Coffeeでバリスタさんから学んだ美容とコーヒーの関係をお伝えします。**

@@ -8,6 +8,7 @@ tags:
   - コーヒー
   - 体験・イベント
 thumbnail: /assets/images/articles/coffee-temperature-flavor-barista-gbc.jpg
+thumbnailAlt: バリスタが淹れるコーヒー、温度による風味の違いを紹介
 ---
 
 **コーヒーの飲み頃温度とは淹れたての約70℃ではなく3分後の50℃前後のことです。この温度で香りと風味がもっとも豊かに感じられます。北参道のGreen Beans Coffeeのバリスタ体験で学んだ一杯の楽しみ方です。**

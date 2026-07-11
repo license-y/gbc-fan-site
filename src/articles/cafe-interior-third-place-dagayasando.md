@@ -8,6 +8,7 @@ tags:
   - サードプレイス
   - カフェ店内
 thumbnail: /assets/images/articles/cafe-interior-handdrip-third-place-gbc.jpg
+thumbnailAlt: 落ち着いた雰囲気のカフェ店内、ハンドドリップとサードプレイスの空間
 ---
 
 **ダガヤサンドウのGreen Beans Coffeeはバリスタさんのハンドドリップと静かなBGMが独特の空気を作り出すサードプレイスカフェです。北参道・千駄ヶ谷でペット同伴OKの落ち着いた空間として愛されています。**

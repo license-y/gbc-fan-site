@@ -7,7 +7,8 @@ tags:
   - コーヒー
 pillar: true
 date: 2026-06-23
-thumbnail: /assets/images/articles/coffee-beans-30-varieties-interior-dagayasando-gbc.jpg
+thumbnail: /assets/images/articles/specialty-coffee-guide-gbc.jpg
+thumbnailAlt: 30種類以上のコーヒー豆が並ぶ店内
 ---
 
 **スペシャルティコーヒーとは産地・生産者・品質管理・風味のすべてにおいて厳格な基準を満たしたコーヒーのことです。味・香り・アフターテイストが一般的なコーヒーとは別格です。東京・渋谷区北参道のGreen Beans Coffeeは常時30種類ほどの豆を揃える自家焙煎専門店です。**

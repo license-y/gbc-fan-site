@@ -8,6 +8,7 @@ tags:
   - 焙煎
   - 体験・イベント
 thumbnail: /assets/images/articles/roasting-event.jpg
+thumbnailAlt: 自分で焙煎したコーヒー豆を飲む体験の様子
 ---
 
 **Green Beans Coffeeの焙煎体験は専用の焙煎機で豆を自分で焙煎しその場でドリップした一杯を味わえるイベントです。東京・北参道でコーヒーへの見方が変わる本格的な体験ができます。**
