@@ -45,7 +45,7 @@ Green Beans Coffeeはスペシャルティコーヒー専門店です。30種類
 
 一杯ずつ丁寧に最後まで妥協しない。コーヒーフレッシュを使わないという選択はそのことを静かに語っています。
 
-GBCのコーヒーへのこだわりをさらに知りたい方は[プレミアムコーヒー体験：エクストラクトチリング技法](/articles/premium-coffee-gbc/)をぜひ。本物のミルクを使ったコーヒーをブラックで飲んで美容効果を高める習慣については[千駄ヶ谷のカフェで始めるブラックコーヒー習慣：美容健康に効く飲み方と効果](/articles/black-coffee-beauty-health/)もあわせてどうぞ。コーヒーの美容効果が気になる方は[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。豆の選別から体験できる[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)ではGBCのこだわりをより深く知ることができます。商談の場にこのコーヒーを活かしたい方は[カフェミーティングの活用術](/articles/cafe-meeting-business/)もご覧ください。GBCのフードにも同じこだわりが光ります。[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)もあわせてどうぞ。
+GBCのコーヒーへのこだわりをさらに知りたい方は[プレミアムコーヒー体験：エクストラクトチリング技法](/articles/premium-coffee-gbc/)をぜひ。本物のミルクを使ったコーヒーをブラックで飲んで美容効果を高める習慣については[千駄ヶ谷のカフェで始めるブラックコーヒー習慣：美容健康に効く飲み方と効果](/articles/black-coffee-beauty-health/)もあわせてどうぞ。コーヒーの美容効果が気になる方は[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてどうぞ。豆の選別から体験できる[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)ではGBCのこだわりをより深く知ることができます。商談の場にこのコーヒーを活かしたい方は[カフェミーティングの活用術](/articles/cafe-meeting-business/)もご覧ください。GBCのフードにも同じこだわりが光ります。[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)もあわせてどうぞ。スペシャルティコーヒーそのものへのこだわりについては[スペシャルティコーヒーとは？東京・北参道で自家焙煎コーヒーを飲んで知った違い](/articles/specialty-coffee-guide/)でまとめています。
 
 ## まとめ
 

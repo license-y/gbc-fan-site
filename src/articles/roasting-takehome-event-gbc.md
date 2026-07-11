@@ -52,7 +52,7 @@ thumbnail: /assets/images/articles/roasting-master-gbc.jpg
 
 ## まとめ
 
-GBCの焙煎体験イベントは毎月東京・北参道で開催されています。焙煎士が基礎から教えてくれる少人数制のイベントで好みの豆と焙煎時間で自分だけのコーヒーを作り持ち帰ることができます。焙煎以外のコーヒー知識も学べて一度参加するとコーヒーの楽しみ方が広がります。千駄ヶ谷・北参道駅からアクセスしやすくダガヤサンドウエリアの散策とあわせて参加するのもおすすめです。次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
+GBCの焙煎体験イベントは毎月東京・北参道で開催されています。焙煎士が基礎から教えてくれる少人数制のイベントで好みの豆と焙煎時間で自分だけのコーヒーを作り持ち帰ることができます。焙煎以外のコーヒー知識も学べて一度参加するとコーヒーの楽しみ方が広がります。千駄ヶ谷・北参道駅からアクセスしやすくダガヤサンドウエリアの散策とあわせて参加するのもおすすめです。焙煎機の仕組みについて基礎から知りたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
 
 ## よくある質問
 

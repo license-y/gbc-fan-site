@@ -48,7 +48,7 @@ thumbnail: /assets/images/articles/sendagaya-pet-walk.jpg
 
 千駄ヶ谷駅から東京体育館・将棋会館・鳩森八幡神社を経由してGreen Beans Coffeeへ。愛犬と歩くダガヤサンドウ散歩コースは緑と歴史と本格コーヒーが一度に楽しめる都内でも特別なルートです。渋谷区に位置する千駄ヶ谷エリアは表参道・原宿・新宿からもアクセスしやすく週末のお出かけ先としてもおすすめです。ペットと一緒に贅沢な半日を過ごしてみてください。
 
-GBCに到着したらバリスタさんに愛犬の似顔絵ラテをお願いしてみるのもおすすめです。[千駄ヶ谷を愛犬と散歩して北参道カフェで似顔絵ラテを楽しむ](/articles/dog-walk-portrait-latte-dagayasando/)で紹介しています。チェキ撮影サービスや愛犬とのサードプレイス体験については[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)もあわせてご覧ください。GBCの店内で愛犬と記念写真を撮る体験については[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)でも紹介しています。国立競技場エリアからダガヤサンドウを歩いて愛犬と素敵な一日を過ごす体験は[東京・千駄ヶ谷を愛犬と歩く一日。国立競技場エリアからダガヤサンドウのカフェへ](/articles/national-stadium-pet-walk-dagayasando-gbc/)でもご紹介しています。
+GBCに到着したらバリスタさんに愛犬の似顔絵ラテをお願いしてみるのもおすすめです。[千駄ヶ谷を愛犬と散歩して北参道カフェで似顔絵ラテを楽しむ](/articles/dog-walk-portrait-latte-dagayasando/)で紹介しています。チェキ撮影サービスや愛犬とのサードプレイス体験については[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)もあわせてご覧ください。GBCの店内で愛犬と記念写真を撮る体験については[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)でも紹介しています。国立競技場エリアからダガヤサンドウを歩いて愛犬と素敵な一日を過ごす体験は[東京・千駄ヶ谷を愛犬と歩く一日。国立競技場エリアからダガヤサンドウのカフェへ](/articles/national-stadium-pet-walk-dagayasando-gbc/)でもご紹介しています。ペット同伴カフェを選ぶ基準は[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)でまとめています。
 
 ## よくある質問
 
