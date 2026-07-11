@@ -1,7 +1,7 @@
 ---
 layout: article.njk
 title: 東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた
-description: 渋谷区で店内ペット同伴OKのカフェは少ない。北参道のGreen Beans Coffeeは全席ペット同伴可で無料チェキ撮影・展示も。愛犬と「第三の居場所」として過ごす一日を紹介します。
+description: 渋谷区で店内ペット同伴OKのカフェは少ない。北参道のGreen Beans Coffeeは店内全席ペット同伴可で無料チェキ撮影・展示も楽しめます。愛犬と過ごす「第三の居場所」としての一日をレポートします。
 date: 2026-06-03
 tags:
   - articles
