@@ -6,9 +6,8 @@ tags:
   - articles
   - 美容健康
 pillar: true
-date: 2026-07-01
 thumbnail: /assets/images/articles/coffee-beauty-health-guide-gbc.jpg
-thumbnailAlt: コーヒーカップと美容健康効果をイメージした構図
+thumbnailAlt: 焙煎豆に囲まれた黒いコーヒーカップとスプーン
 ---
 
 **コーヒーの美容健康効果とはクロロゲン酸などのポリフェノールがもたらす抗酸化・美白・むくみ改善・腸活などの効果のことです。スペシャルティコーヒーを適切な温度で飲むことで美容成分をより効率よく摂取できます。東京・渋谷区北参道のGreen Beans Coffeeで私の美容習慣は変わりました。**

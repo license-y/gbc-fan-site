@@ -6,9 +6,8 @@ tags:
   - articles
   - カフェ店内
 pillar: true
-date: 2026-07-02
 thumbnail: /assets/images/articles/cafe-interior-guide-gbc.jpg
-thumbnailAlt: 落ち着いた雰囲気のカフェ店内、ハンドドリップとサードプレイスの空間
+thumbnailAlt: 木目のテーブルと黒いスチールチェアが並ぶGreen Beans Coffeeの店内
 ---
 
 **居心地のいいカフェとは空間デザイン・接客の質・清潔感・音環境・席のバリエーションという5つの条件が整ったカフェのことです。この5条件が「また来たい」という気持ちをつくります。東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは何度来ても飽きない居心地の良さがあります。**

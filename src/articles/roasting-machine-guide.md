@@ -6,9 +6,8 @@ tags:
   - articles
   - 焙煎
 pillar: true
-date: 2026-06-28
 thumbnail: /assets/images/articles/roasting-machine-guide-gbc.jpg
-thumbnailAlt: 業務用焙煎機を操作する焙煎体験の様子
+thumbnailAlt: 店内に置かれた大型のステンレス製自家焙煎機
 ---
 
 **焙煎機とはコーヒーの生豆に熱を加えて風味・香り・色を引き出す専用の装置のことです。焙煎機の種類・熱の加え方・焙煎時間によってコーヒーの味が大きく変わります。東京・渋谷区北参道のGreen Beans Coffeeには本格的な焙煎機があり体験イベントで実際に焙煎する工程を間近で見学できます。**

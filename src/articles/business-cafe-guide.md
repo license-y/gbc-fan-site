@@ -6,9 +6,8 @@ tags:
   - articles
   - ビジネス
 pillar: true
-date: 2026-07-03
 thumbnail: /assets/images/articles/business-cafe-guide-gbc.jpg
-thumbnailAlt: ダガヤサンドウのカフェで提供されるカフェラテ、ビジネス利用のイメージ
+thumbnailAlt: 木のテーブル席に設置された電源コンセント
 ---
 
 **ビジネスカフェとは仕事・商談・リモートワークに適した環境を備えたカフェのことです。Wi-Fi・電源・静かな空間・適度な接客という4条件を満たすカフェはチェーン店よりも個人経営の専門店に多く存在します。東京・渋谷区千駄ヶ谷のGreen Beans Coffeeはビジネス利用に最適な自家焙煎カフェです。**

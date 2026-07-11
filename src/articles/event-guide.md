@@ -6,9 +6,8 @@ tags:
   - articles
   - 体験・イベント
 pillar: true
-date: 2026-06-29
 thumbnail: /assets/images/articles/event-guide-gbc.jpg
-thumbnailAlt: ハンドドリップ体験イベントの様子
+thumbnailAlt: 体験イベントに参加する複数のお客さんとスタッフさんが並ぶ店内の様子
 ---
 
 **GBCの体験イベントとは東京・渋谷区北参道のGreen Beans Coffeeが毎月開催するコーヒー体験プログラムのことです。ハンドドリップ体験と焙煎体験の2種類があり豆代のみで参加できます。バリスタさんから直接学べる機会として東京のコーヒー好きに人気です。**

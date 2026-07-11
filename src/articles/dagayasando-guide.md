@@ -6,9 +6,8 @@ tags:
   - articles
   - ダガヤサンドウ
 pillar: true
-date: 2026-06-30
 thumbnail: /assets/images/articles/dagayasando-guide-gbc.jpg
-thumbnailAlt: ダガヤサンドウエリアのカフェ、サードプレイスとしての空間
+thumbnailAlt: 店名看板のないGreen Beans Coffeeの入り口、メニューやウェルカムボードが並ぶ外観
 ---
 
 **ダガヤサンドウとは東京・渋谷区の千駄ヶ谷・北参道エリアを指す通称で個性的なカフェやセレクトショップが集まる注目エリアです。落ち着いた街並みと感度の高い店が点在しカフェ好きや愛犬家に支持されています。Green Beans CoffeeはダガヤサンドウのGBCとして知られる自家焙煎専門店です。**

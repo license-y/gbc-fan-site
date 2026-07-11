@@ -6,7 +6,6 @@ tags:
   - articles
   - コーヒー
 pillar: true
-date: 2026-06-23
 thumbnail: /assets/images/articles/specialty-coffee-guide-gbc.jpg
 thumbnailAlt: 30種類以上のコーヒー豆が並ぶ店内
 ---
