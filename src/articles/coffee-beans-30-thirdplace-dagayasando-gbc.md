@@ -7,7 +7,7 @@ tags:
   - articles
   - カフェ店内
   - サードプレイス
-thumbnail: /assets/images/articles/coffee-beans-30-varieties-interior-dagayasando-gbc.jpg
+thumbnail: /assets/images/articles/coffee-beans-30-thirdplace-dagayasando-gbc.jpg
 thumbnailAlt: 複数人でカフェラテを囲む手元、女子会や打ち合わせのひとコマ
 ---
 
