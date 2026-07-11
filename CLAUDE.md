@@ -196,7 +196,7 @@
 ### AggregateRating の更新ルール
 - `ratingValue` と `reviewCount` はGoogleマップの最新値に**手動で更新**する
 - 目安：月1回（口コミが増えやすい時期に確認）
-- 更新箇所：`public/index.html` と `public/pets/index.html` の両方
+- 更新箇所：`public/index.html` と `public/pets/index.html` の両方、および記事テンプレート `src/_layouts/article.njk`（サイドバーの「◯◯件のレビュー」表示）と `src/_layouts/articles-base.njk`（JSON-LDの `reviewCount`）
 - 更新したら近くのHTMLコメント `最終更新: YYYY-MM` の日付も書き換えること
 
 ### VideoObject スキーマ（YouTube動画）
