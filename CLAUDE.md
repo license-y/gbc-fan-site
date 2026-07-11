@@ -194,10 +194,11 @@
 詳細は `project-docs/technical-spec.md` を参照。
 
 ### AggregateRating の更新ルール
-- `ratingValue` と `reviewCount` はGoogleマップの最新値に**手動で更新**する
+- `ratingValue` と `reviewCount` はGoogleマップの最新値に更新する
 - 目安：月1回（口コミが増えやすい時期に確認）
-- 更新箇所：`public/index.html` と `public/pets/index.html` の両方、および記事テンプレート `src/_layouts/article.njk`（サイドバーの「◯◯件のレビュー」表示）と `src/_layouts/articles-base.njk`（JSON-LDの `reviewCount`）
-- 更新したら近くのHTMLコメント `最終更新: YYYY-MM` の日付も書き換えること
+- **更新は必ず `npm run update-reviews -- <reviewCount> [ratingValue]` を使うこと**（例: `npm run update-reviews -- 540 4.7`）。`public/index.html`・`public/pets/index.html`・記事テンプレート2ファイル（`src/_layouts/article.njk`／`articles-base.njk`）と、各ファイルのHTMLコメント `最終更新: YYYY-MM` を一括で更新する。対象ファイルの一覧は `scripts/review-locations.config.js` で管理している
+- 個別ファイルを手で書き換えないこと（更新漏れの原因になるため）。ファイルが増えた場合は `review-locations.config.js` にエントリを追記する
+- `npm run build` 実行時に `scripts/check-review-consistency.js` が自動で全ファイルの値の食い違いを検知し、あれば警告を出す（ビルド自体は止めない）。手動で `npm run check-reviews` を実行しても確認できる
 
 ### VideoObject スキーマ（YouTube動画）
 - `inLanguage: "ja"` を必ず含めること（2026-06に全動画へ追加済み）

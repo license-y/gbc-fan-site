@@ -6,8 +6,10 @@
   "scripts": {
     "search": "node dev-tools/unsplash-search.js",
     "update-images": "node scripts/update-images.js",
+    "update-reviews": "node scripts/update-review-count.js",
+    "check-reviews": "node scripts/check-review-consistency.js",
     "dev": "eleventy --serve --input=src --output=public",
-    "build": "node scripts/update-date.js && eleventy --input=src --output=public && pagefind --site public --output-path public/pagefind"
+    "build": "node scripts/update-date.js && node scripts/check-review-consistency.js && eleventy --input=src --output=public && pagefind --site public --output-path public/pagefind"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
