@@ -71,7 +71,7 @@ thumbnailAlt: コーヒー豆の焙煎基礎を紹介するイメージ
 
 次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
 
-焙煎機の種類・ハゼの仕組み・自家焙煎の意味まで体系的に知りたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。
+焙煎機の種類・ハゼの仕組み・自家焙煎の意味まで体系的に知りたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。浅煎り・中煎り・深煎りの飲み比べについては[東京・北参道の焙煎体験で学んだ、浅煎り・中煎り・深煎りの違いと選び方](/articles/roasting-degree-comparison-kitasando-gbc/)でも詳しく解説しています。
 
 ## よくある質問
 
