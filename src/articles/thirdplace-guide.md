@@ -93,7 +93,7 @@ thumbnailAlt: 木のテーブルに置かれた文庫本とカプチーノ
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは新宿から10分ほどの距離にありながらこの5条件をすべて備えたサードプレイスです。グリーンビーンズコーヒーであなただけの第3の居場所を見つけてみてください。
 
-GBCでの仕事・デート・女子会などサードプレイスの多彩な使い方については[仕事も恋も女子会も。東京・渋谷ダガヤサンドウのコーヒー専門店がサードプレイスになるわけ](/articles/coffee-beans-30-thirdplace-dagayasando-gbc/)で詳しく紹介しています。カフェ店内の雰囲気やハンドドリップの詳細は[東京・ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)をあわせてどうぞ。フリーランス・個人事業主のサードプレイス活用法は[東京・ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)が参考になります。新宿御苑やダガヤサンドウの散歩とGBCを組み合わせるコースは[東京のパワースポット新宿御苑｜渋谷・ダガヤサンドウのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)でも紹介しています。
+GBCでの仕事・デート・女子会などサードプレイスの多彩な使い方については[仕事も恋も女子会も。東京・渋谷ダガヤサンドウのコーヒー専門店がサードプレイスになるわけ](/articles/coffee-beans-30-thirdplace-dagayasando-gbc/)で詳しく紹介しています。カフェ店内の雰囲気やハンドドリップの詳細は[東京・ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)をあわせてどうぞ。フリーランス・個人事業主のサードプレイス活用法は[東京・ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)が参考になります。新宿御苑やダガヤサンドウの散歩とGBCを組み合わせるコースは[東京のパワースポット新宿御苑｜渋谷・ダガヤサンドウのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)でも紹介しています。予定を入れない日曜日にひとりで読書や日記を楽しむサードプレイスの過ごし方は[東京・千駄ヶ谷のサードプレイスで見つけた「ひとり時間」、読書と日記で心を整える日曜日](/articles/sunday-solitude-thirdplace-sendagaya-gbc/)もあわせてどうぞ。
 
 ## よくある質問
 
