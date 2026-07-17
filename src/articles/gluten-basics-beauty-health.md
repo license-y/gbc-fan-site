@@ -9,6 +9,7 @@ tags:
   - 美容健康
 thumbnail: /assets/images/articles/gluten-free-basics.jpg
 thumbnailAlt: グルテンフリーフードの基礎知識をイメージした構図
+thumbnailCaption: ※写真はイメージです
 ---
 
 **グルテンとは小麦・大麦・ライ麦に含まれるタンパク質で腸の炎症と関わる可能性があります。腸を整えることは肌・美容にも直結するため北参道のGreen Beans Coffeeのグルテンフリーメニューから始める習慣がおすすめです。**

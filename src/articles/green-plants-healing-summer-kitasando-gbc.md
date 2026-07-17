@@ -8,6 +8,7 @@ tags:
   - 美容健康
 thumbnail: /assets/images/articles/green-plants-healing-summer-kitasando-gbc.webp
 thumbnailAlt: 観葉植物に囲まれたカフェ店内の様子、パームツリーとカウンター席
+thumbnailCaption: ※写真はイメージです
 ---
 
 **観葉植物に囲まれたGreen Beans Coffeeの店内は紫外線で疲れた目や心を癒す夏の休憩スポットです。緑を眺めながら過ごす時間が北参道の美容習慣になっています。**

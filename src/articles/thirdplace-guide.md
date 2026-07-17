@@ -9,6 +9,7 @@ pillar: true
 date: 2026-06-27
 thumbnail: /assets/images/articles/thirdplace-guide-gbc.jpg
 thumbnailAlt: 木のテーブルに置かれた文庫本とカプチーノ
+thumbnailCaption: ※写真はイメージです
 ---
 
 **サードプレイスとは家でも職場でもない「第3の居場所」のことです。社会学者レイ・オルデンバーグが提唱したこの概念はストレスを解放し自分らしくいられる場所として注目されています。**

@@ -9,6 +9,7 @@ tags:
   - ダガヤサンドウ
 thumbnail: /assets/images/articles/third-place-dagayasando-gbc.jpg
 thumbnailAlt: ダガヤサンドウのカフェ、サードプレイスとしての空間
+thumbnailCaption: ※写真はイメージです
 ---
 
 **グリーンビーンズコーヒーは家でも職場でもない第3の居場所「サードプレイス」として北参道・ダガヤサンドウで愛されるカフェです。静かな空間と自家焙煎コーヒーが東京・渋谷区でかけがえのない居場所をつくってくれます。**

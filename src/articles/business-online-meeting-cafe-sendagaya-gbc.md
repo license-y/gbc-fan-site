@@ -8,6 +8,7 @@ tags:
   - ビジネス
 thumbnail: /assets/images/articles/business-online-meeting-cafe-sendagaya-gbc.jpg
 thumbnailAlt: ノートPCの画面に多数の参加者が並ぶオンライン会議の様子、木目調のテーブルで参加する場面
+thumbnailCaption: ※写真はイメージです
 ---
 
 **Green Beans Coffeeは安定したWi-Fi環境と個室感のある席選びで、オンライン会議やWeb商談にも活用しやすいビジネスカフェです。東京・渋谷区千駄ヶ谷にあり新宿からも通いやすい立地です。**

@@ -8,6 +8,7 @@ tags:
   - グルテンフリー
 thumbnail: /assets/images/articles/gluten-free-summer-vegetables-sendagaya-gbc.jpg
 thumbnailAlt: 木箱に並んだ色とりどりの夏野菜。市場から仕入れたばかりの茄子やパプリカ
+thumbnailCaption: ※写真はイメージです
 ---
 
 **渋谷区千駄ヶ谷のGreen Beans Coffeeはグルテンフリーメニューに旬の夏野菜を取り入れています。彩り豊かな夏野菜は美容と満足感を両立させる食材です。**

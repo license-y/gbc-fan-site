@@ -8,6 +8,7 @@ tags:
   - サードプレイス
 thumbnail: /assets/images/articles/sunday-solitude-thirdplace-sendagaya-gbc.jpg
 thumbnailAlt: 木製テーブルに置かれた文庫本とカフェラテ、静かな読書時間の様子
+thumbnailCaption: ※写真はイメージです
 ---
 
 **日曜日にGreen Beans Coffeeでひとりの時間を過ごすと心が整い週明けの気持ちが軽くなります。読書や日記に集中できる千駄ヶ谷のサードプレイスです。**
