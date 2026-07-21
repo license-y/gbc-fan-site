@@ -217,7 +217,7 @@
         "dateModified": "{{ (updated or date) | dateISO }}",
         "author": {
           "@type": "Person",
-          "@id": "https://greenbeanscoffeeambassador.com/#ambassador-{{ author or 'kikumi' | lower }}",
+          "@id": "https://greenbeanscoffeeambassador.com/#ambassador-{{ (author or 'kikumi') | lower }}",
           "name": "{{ author or 'Kikumi' }}",
           "jobTitle": "GBCアンバサダー",
           "url": "https://greenbeanscoffeeambassador.com",

@@ -52,9 +52,11 @@ export const targets = [
     file: 'public/en/index.html',
     reviewCountPatterns: [
       /\d+(?=\s*reviews)/g,
+      /(?<="reviewCount":\s*")\d+/g,
     ],
     ratingValuePatterns: [
       /(?<=text-sm font-medium text-\[#4A3728\] whitespace-nowrap">)[\d.]+(?=<)/g,
+      /(?<="ratingValue":\s*")[\d.]+/g,
     ],
   },
 ];
