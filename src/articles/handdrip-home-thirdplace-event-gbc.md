@@ -45,7 +45,7 @@ thumbnailAlt: ハンドドリップでコーヒーを淹れるバリスタの手
 
 ---
 
-ハンドドリップ体験の毎月の開催情報と参加の流れは[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)でご覧ください。体験で知ったコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)もあわせてどうぞ。GBCのカフェ店内でサードプレイスとして過ごす魅力は[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)に書いています。体験参加の詳しいレポートは[北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)もぜひ。ハンドドリップの基本的な淹れ方は[ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方](/articles/handdrip-guide/)でまとめています。
+ハンドドリップ体験の毎月の開催情報と参加の流れは[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)でご覧ください。体験で知ったコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)もあわせてどうぞ。GBCのカフェ店内でサードプレイスとして過ごす魅力は[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)に書いています。体験参加の詳しいレポートは[北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)もぜひ。ハンドドリップの基本的な淹れ方は[ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方](/articles/handdrip-guide/)でまとめています。GBCの体験イベント全体像は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)でご覧いただけます。
 
 ## まとめ
 
