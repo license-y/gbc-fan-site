@@ -33,7 +33,7 @@ thumbnailCaption: ※写真はイメージです
 
 千駄ヶ谷は新宿から10分ほど。渋谷区の中でもオンライン会議に集中できる貴重なビジネスカフェだと感じています。
 
-対面での打ち合わせに使いたい方は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)、PC作業向けの環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)で詳しく解説しています。朝の時間帯を活用したい方は[東京・千駄ヶ谷で朝活ミーティング、始業前のグリーンビーンズコーヒーが静かで集中できる理由](/articles/morning-business-meeting-sendagaya-gbc/)、リモートワークでの活用法は[東京・北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もあわせてご覧ください。2〜3人の少人数チーム打ち合わせに使えるかどうかは[少人数チームの打ち合わせに使える？東京・千駄ヶ谷のビジネスカフェで見た半個室感](/articles/business-cafe-small-team-meeting-sendagaya-gbc/)で詳しく紹介しています。
+対面での打ち合わせに使いたい方は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)、PC作業向けの環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)で詳しく解説しています。朝の時間帯を活用したい方は[東京・千駄ヶ谷で朝活ミーティング、始業前のグリーンビーンズコーヒーが静かで集中できる理由](/articles/morning-business-meeting-sendagaya-gbc/)、リモートワークでの活用法は[東京・北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もあわせてご覧ください。2〜3人の少人数チーム打ち合わせに使えるかどうかは[少人数チームの打ち合わせに使える？東京・千駄ヶ谷のビジネスカフェで感じた席と席のゆとり](/articles/business-cafe-small-team-meeting-sendagaya-gbc/)で詳しく紹介しています。
 
 ## まとめ
 
