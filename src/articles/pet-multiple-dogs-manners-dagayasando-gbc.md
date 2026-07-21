@@ -32,7 +32,7 @@ thumbnailAlt: リードをつけた複数の小型犬が店内の床で穏やか
 
 千駄ヶ谷は新宿から10分ほど。渋谷区の中でも複数頭での来店がしやすいペット同伴カフェとして貴重な存在だと感じています。
 
-ペット同伴カフェの基本については[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)、選び方のポイントは[東京・北参道発・ペットカフェの選び方：愛犬と入店前にチェックすべき3つのポイント](/articles/dog-friendly-cafe-guide/)で詳しく解説しています。店内同伴OKの魅力は[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)、記念に残る体験としては[東京・千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)もあわせてご覧ください。
+ペット同伴カフェの基本については[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)、選び方のポイントは[東京・北参道発・ペットカフェの選び方：愛犬と入店前にチェックすべき3つのポイント](/articles/dog-friendly-cafe-guide/)で詳しく解説しています。店内同伴OKの魅力は[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)、記念に残る体験としては[東京・千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)もあわせてご覧ください。初めての入店で不安な方は[初めてのペット同伴カフェ、東京・北参道で聞いた入店ルールとスタッフの心遣い](/articles/pet-cafe-first-visit-entry-manners-kitasando-gbc/)も参考になります。
 
 ## まとめ
 

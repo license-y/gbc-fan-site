@@ -43,7 +43,7 @@ thumbnailAlt: 千駄ヶ谷から愛犬と歩くダガヤサンドウ散歩コー
 
 グリーンビーンズコーヒーの自家焙煎スペシャルティコーヒーを注文してほっとひと息。愛犬が横でリラックスしている姿を見ながら飲む一杯は格別です。「ここに来るために歩いてきた」という達成感が加わって一杯の価値がさらに高まります。
 
-このコースのGBC店内の様子は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しく紹介しています。カフェを選ぶときのチェックポイントは[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてご覧ください。鳩森八幡神社の富士塚や鳩みくじについては[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で紹介しています。長時間のお散歩後にも安心なGBCのトイレアメニティは[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)もどうぞ。ペットと一緒にチェキ写真を撮って店内に飾ってもらえるサービスは[店内ペット同伴OK・無料チェキ展示サービスも](/articles/cheki-pet-cafe-dagayasando/)でご紹介しています。
+このコースのGBC店内の様子は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しく紹介しています。カフェを選ぶときのチェックポイントは[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてご覧ください。鳩森八幡神社の富士塚や鳩みくじについては[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で紹介しています。長時間のお散歩後にも安心なGBCのトイレアメニティは[トイレにこそお店の本気が出るGBCのアメニティ](/articles/restroom-amenity/)もどうぞ。ペットと一緒にチェキ写真を撮って店内に飾ってもらえるサービスは[店内ペット同伴OK・無料チェキ展示サービスも](/articles/cheki-pet-cafe-dagayasando/)でご紹介しています。初めての入店で先客の犬がいる場合の流れは[初めてのペット同伴カフェ、東京・北参道で聞いた入店ルールとスタッフの心遣い](/articles/pet-cafe-first-visit-entry-manners-kitasando-gbc/)でも詳しく紹介しています。
 
 ## まとめ
 

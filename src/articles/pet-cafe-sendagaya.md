@@ -46,7 +46,7 @@ Green Beans Coffeeは**自家焙煎のスペシャルティコーヒー専門店
 
 フードメニューは**グルテンフリー対応**が充実しています。米粉を使ったフォカッチャやスコーンなど小麦が気になる方でも安心して楽しめます。詳しくは[小麦粉不使用でこのおいしさ：GBCの米粉フォカッチャ](/articles/glutenfree-focaccia/)をご覧ください。
 
-ペット同伴カフェを選ぶときに確認すべきポイントをまとめた[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてどうぞ。千駄ヶ谷駅から将棋会館・鳩森八幡神社を経由してGBCへ向かう散歩コースは[千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩](/articles/sendagaya-pet-walk-dagayasando/)でご紹介しています。GBCを起点にした散歩コースとして[ダガヤサンドウの鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もおすすめです。愛犬と訪れる前に知っておきたい[GBCの充実したトイレアメニティ](/articles/restroom-amenity/)もご覧ください。店内のチェキブースで愛犬との記念写真を残す体験は[店内ペット同伴OK・チェキ撮影もできるダガヤサンドウの都会派カフェ](/articles/cheki-pet-cafe-dagayasando/)でもご紹介しています。ペット同伴カフェを選ぶときのチェックポイントは[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)でまとめています。
+ペット同伴カフェを選ぶときに確認すべきポイントをまとめた[愛犬と入れるカフェの選び方](/articles/dog-friendly-cafe-guide/)もあわせてどうぞ。千駄ヶ谷駅から将棋会館・鳩森八幡神社を経由してGBCへ向かう散歩コースは[千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩](/articles/sendagaya-pet-walk-dagayasando/)でご紹介しています。GBCを起点にした散歩コースとして[ダガヤサンドウの鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もおすすめです。愛犬と訪れる前に知っておきたい[GBCの充実したトイレアメニティ](/articles/restroom-amenity/)もご覧ください。店内のチェキブースで愛犬との記念写真を残す体験は[店内ペット同伴OK・チェキ撮影もできるダガヤサンドウの都会派カフェ](/articles/cheki-pet-cafe-dagayasando/)でもご紹介しています。ペット同伴カフェを選ぶときのチェックポイントは[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)でまとめています。初めての入店時にスタッフの方がどう案内してくれるかは[初めてのペット同伴カフェ、東京・北参道で聞いた入店ルールとスタッフの心遣い](/articles/pet-cafe-first-visit-entry-manners-kitasando-gbc/)で詳しく紹介しています。
 
 ## まとめ
 

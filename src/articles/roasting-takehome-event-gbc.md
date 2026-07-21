@@ -49,7 +49,7 @@ thumbnailAlt: 持ち帰り用に袋詰めされた焙煎豆
 
 焙煎体験をきっかけにコーヒーへの見方が変わった方が多いのも納得できます。知識として頭に入れるより体験として学ぶほうが深く残ります。グリーンビーンズコーヒーは毎月定期開催なので気になったことを次回また確認しに来られるのも嬉しいです。
 
-焙煎を初めて学ぶ方には[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)が入門として最適です。焙煎体験の全体的な流れと雰囲気は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベントに参加しました](/articles/roasting-experience/)で詳しくご紹介しています。30種類の豆から自分だけのブレンドを作る[GBCのオリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)もあわせてぜひ。焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。焙煎を学んだ目線で改めて飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は一層深みが感じられます。豆のタイプ（フルーティ・マイルド・ビター）の特徴を理解してから参加するとより豆選びが楽しくなります。詳しくは[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)をどうぞ。
+焙煎を初めて学ぶ方には[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)が入門として最適です。焙煎体験の全体的な流れと雰囲気は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベントに参加しました](/articles/roasting-experience/)で詳しくご紹介しています。30種類の豆から自分だけのブレンドを作る[GBCのオリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)もあわせてぜひ。焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。焙煎を学んだ目線で改めて飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は一層深みが感じられます。豆のタイプ（フルーティ・マイルド・ビター）の特徴を理解してから参加するとより豆選びが楽しくなります。詳しくは[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)をどうぞ。持ち帰った豆の保存方法や飲み頃については[東京・北参道の焙煎体験で持ち帰った豆、正しい保存方法と美味しい飲み頃](/articles/roasting-beans-storage-kitasando-gbc/)で詳しく解説しています。
 
 ## まとめ
 
