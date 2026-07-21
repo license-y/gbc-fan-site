@@ -188,7 +188,7 @@
 以下の構造化データを `<head>` 内または `</body>` 直前に設置:
 
 1. **LocalBusiness (CafeOrCoffeeShop)**: 店舗情報
-2. **FAQPage**: よくある質問（メインサイト: 19問、ペットサイト: ペット特化FAQ）
+2. **FAQPage**: よくある質問（メインサイト: 28問、ペットサイト: ペット特化FAQ21問）
 3. **WebSite**: サイト情報
 
 詳細は `project-docs/technical-spec.md` を参照。
@@ -233,8 +233,9 @@
 ## FAQセクション
 
 - アコーディオン形式で実装
-- **メインサイト**: 19問の基本Q&Aを掲載
-- **ペットサイト**: ペット特化FAQを掲載（メインサイトとは独立）
+- **メインサイト**: 基本Q&Aを掲載（2026-07時点で28問）
+- **ペットサイト**: ペット特化FAQを掲載（2026-07時点で21問、メインサイトとは独立）
+- 問題数は増減するため固定値として扱わない。正確な件数を確認する場合は各ファイルで `grep -c '"@type": "Question"' public/index.html`（ペットサイトは `public/pets/index.html`）を実行する
 - JSON-LD FAQPage と連動
 
 ## コンテンツの書き方
@@ -286,7 +287,7 @@ assets/images/magazine/YYYYMM-back.jpg
 | GBC Magazine | あり | なし |
 | Pet Friendly | Experienceに含む | 独立セクション |
 | Cheki Booth | なし | あり |
-| FAQ | 19問（基本FAQ） | ペット特化FAQ（独立） |
+| FAQ | 基本FAQ（2026-07時点28問） | ペット特化FAQ（2026-07時点21問・独立） |
 
 ## 基本情報の同期ルール
 
