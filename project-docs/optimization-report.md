@@ -388,7 +388,7 @@ AIが引用しやすい「人間らしい、でも情報は正確」な文章。
 #### 5. **外部リンクの充実**
 
 **実施内容:**
-- Instagram、YouTube、Googleマップ、食べログ、ホットペッパーへのリンク
+- Instagram、YouTube、Googleマップ、食べログ、Kitasando Reserveへのリンク
 - 各プラットフォームの特性に応じた案内
 
 **効果:**
