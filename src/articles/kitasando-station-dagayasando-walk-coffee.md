@@ -51,7 +51,7 @@ thumbnailAlt: 北参道駅周辺、散歩の合間に立ち寄るコーヒー専
 
 散歩でほてった体を冷たい飲み物でクールダウンするもよし。温かいコーヒーで気持ちを整えるもよし。どちらの気分でも受け止めてくれる場所です。
 
-ダガヤサンドウエリアの散歩コースと鳩森八幡神社については[北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で詳しくご紹介しています。明治神宮・新宿御苑散策後のグルテンフリーフードに興味がある方は[明治神宮・新宿御苑を歩いたら千駄ヶ谷のグルテンフリーカフェへ](/articles/meiji-shrine-dagayasando-gluten-free/)もあわせてどうぞ。GBCがサードプレイスとして機能する理由は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)で詳しく書いています。散歩コースをペットと一緒に楽しみたい方は[千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩](/articles/sendagaya-pet-walk-dagayasando/)もぜひ。テイクアウトコーヒーを手にダガヤサンドウを歩く一日の楽しみ方は[コーヒーを片手に歩く、東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)でも詳しくご紹介しています。
+ダガヤサンドウエリアの散歩コースと鳩森八幡神社については[北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)で詳しくご紹介しています。明治神宮・新宿御苑散策後のグルテンフリーフードに興味がある方は[明治神宮・新宿御苑を歩いたら千駄ヶ谷のグルテンフリーカフェへ](/articles/meiji-shrine-dagayasando-gluten-free/)もあわせてどうぞ。グリーンビーンズコーヒーがサードプレイスとして機能する理由は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)で詳しく書いています。散歩コースをペットと一緒に楽しみたい方は[千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩](/articles/sendagaya-pet-walk-dagayasando/)もぜひ。テイクアウトコーヒーを手にダガヤサンドウを歩く一日の楽しみ方は[コーヒーを片手に歩く、東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)でも詳しくご紹介しています。
 
 ## まとめ
 
