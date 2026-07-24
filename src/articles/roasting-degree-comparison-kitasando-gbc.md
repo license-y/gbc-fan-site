@@ -48,7 +48,7 @@ thumbnailAlt: 生豆と中煎り、深煎りの焙煎豆を並べて色の違い
 
 北参道は新宿から10分ほど。渋谷区の中でも自家焙煎の香りに包まれながら過ごせる貴重な場所です。
 
-焙煎の基礎から知りたい方は[コーヒー豆の焙煎とは？東京・渋谷北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)、焙煎装置の仕組みは[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)で解説しています。豆の風味の選び方は[東京・渋谷北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)、持ち帰り体験については[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷GBCの月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もあわせてご覧ください。
+焙煎の基礎から知りたい方は[コーヒー豆の焙煎とは？東京・渋谷北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)、焙煎装置の仕組みは[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)で解説しています。豆の風味の選び方は[東京・渋谷北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)、持ち帰り体験については[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷GBCの月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もあわせてご覧ください。飲み比べで見つけた焙煎度を自宅でどう再現するかは[浅煎りと深煎りで淹れ方は変わる？東京・北参道の焙煎体験で学んだ抽出のコツ](/articles/roasting-degree-brewing-technique-kitasando-gbc/)で詳しく紹介しています。
 
 ## まとめ
 
