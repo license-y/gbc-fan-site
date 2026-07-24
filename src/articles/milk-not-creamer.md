@@ -6,7 +6,7 @@ date: 2026-05-04
 tags:
   - articles
   - コーヒー
-thumbnail: /assets/images/articles/milk-coffee.jpg
+thumbnail: /assets/images/articles/milk-not-creamer-kitasando-gbc.jpg
 thumbnailAlt: 本物の牛乳を使ったコーヒー、コーヒーフレッシュ不使用
 thumbnailCaption: ※写真はイメージです
 ---

@@ -6,7 +6,7 @@ date: 2026-05-08
 tags:
   - articles
   - 美容健康
-thumbnail: /assets/images/articles/chlorogenic-acid-beauty.jpg
+thumbnail: /assets/images/articles/chlorogenic-acid-coffee-beauty-kitasando-gbc.jpg
 thumbnailAlt: クロロゲン酸を含むコーヒー豆、美容効果のイメージ
 ---
 

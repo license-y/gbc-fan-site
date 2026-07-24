@@ -7,7 +7,7 @@ tags:
   - articles
   - グルテンフリー
   - 美容健康
-thumbnail: /assets/images/articles/glutenfree-sweets-plate.jpg
+thumbnail: /assets/images/articles/gluten-free-sweets-plate-kitasando-gbc.jpg
 thumbnailAlt: 自家製グルテンフリースイーツプレート3種
 ---
 

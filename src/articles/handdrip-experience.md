@@ -7,7 +7,7 @@ tags:
   - articles
   - コーヒー
   - 体験・イベント
-thumbnail: /assets/images/articles/handdrip-event.jpg
+thumbnail: /assets/images/articles/handdrip-bean-selection-kitasando-gbc.jpg
 thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 ---
 

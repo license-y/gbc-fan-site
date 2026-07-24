@@ -7,7 +7,7 @@ tags:
   - articles
   - ペット
   - カフェ店内
-thumbnail: /assets/images/articles/pet-friendly-cafe-dogs.jpg
+thumbnail: /assets/images/articles/pet-friendly-cafe-checklist-kitasando-gbc.jpg
 thumbnailAlt: 愛犬と一緒に入れるペットフレンドリーカフェの様子
 ---
 

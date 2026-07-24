@@ -6,7 +6,7 @@ date: 2026-05-06
 tags:
   - articles
   - ダガヤサンドウ
-thumbnail: /assets/images/articles/hatonomori01.jpg
+thumbnail: /assets/images/articles/hatomori-shrine-dagayasando-gbc.jpg
 thumbnailAlt: 鳩森八幡神社の境内、富士塚のあるパワースポット
 ---
 

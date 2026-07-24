@@ -6,7 +6,7 @@ date: 2026-05-07
 tags:
   - articles
   - カフェ店内
-thumbnail: /assets/images/articles/restroom-amenity.jpg
+thumbnail: /assets/images/articles/restroom-amenity-sendagaya-gbc.jpg
 thumbnailAlt: カフェのトイレに用意されたアメニティ
 ---
 

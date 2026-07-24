@@ -7,7 +7,7 @@ tags:
   - articles
   - ビジネス
   - サードプレイス
-thumbnail: /assets/images/articles/cafe-meeting-business.jpg
+thumbnail: /assets/images/articles/business-meeting-sendagaya-thirdplace-gbc.jpg
 thumbnailAlt: 商談前の一杯として提供されるコーヒー
 ---
 

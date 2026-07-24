@@ -7,7 +7,7 @@ tags:
   - articles
   - 美容健康
   - コーヒー
-thumbnail: /assets/images/articles/coffee-beauty-effects.jpg
+thumbnail: /assets/images/articles/coffee-beauty-skin-effects-kitasando-gbc.jpg
 thumbnailAlt: コーヒーカップとシミ・くすみ・むくみ改善をイメージした構図
 ---
 

@@ -7,7 +7,7 @@ tags:
   - articles
   - 焙煎
   - 体験・イベント
-thumbnail: /assets/images/articles/roasting-event.jpg
+thumbnail: /assets/images/articles/roasting-first-experience-kitasando-gbc.jpg
 thumbnailAlt: 自分で焙煎したコーヒー豆を飲む体験の様子
 ---
 

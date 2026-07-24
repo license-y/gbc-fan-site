@@ -6,7 +6,7 @@ date: 2026-05-02
 tags:
   - articles
   - グルテンフリー
-thumbnail: /assets/images/articles/glutenfree-focaccia.jpg
+thumbnail: /assets/images/articles/rice-flour-focaccia-sendagaya-gbc.jpg
 thumbnailAlt: 手作りの米粉グルテンフリーフォカッチャ
 ---
 

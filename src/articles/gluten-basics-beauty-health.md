@@ -7,7 +7,7 @@ tags:
   - articles
   - グルテンフリー
   - 美容健康
-thumbnail: /assets/images/articles/gluten-free-basics.jpg
+thumbnail: /assets/images/articles/wheat-gut-health-basics-kitasando-gbc.jpg
 thumbnailAlt: グルテンフリーフードの基礎知識をイメージした構図
 thumbnailCaption: ※写真はイメージです
 ---
