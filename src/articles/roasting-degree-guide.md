@@ -6,7 +6,7 @@ tags:
   - articles
   - 焙煎
 pillar: true
-date: 2026-07-28
+date: 2026-07-27
 thumbnail: /assets/images/articles/roasting-degree-guide-kitasando-gbc.jpg
 thumbnailAlt: 店内に掲示されたGreen Beans Coffeeのローストガイド、8段階の焙煎度と豆の色の変化を示す看板
 ---

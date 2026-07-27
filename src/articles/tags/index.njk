@@ -39,8 +39,8 @@ eleventyComputed:
       class="group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
 
       {%- if post.data.thumbnail %}
-      <div class="w-32 sm:w-44 flex-shrink-0 overflow-hidden self-stretch">
-        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      <div class="relative w-32 sm:w-44 flex-shrink-0 overflow-hidden self-stretch">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
       </div>
       {%- else %}
       <div class="w-32 sm:w-44 flex-shrink-0 bg-[#FAF8F5] flex items-center justify-center self-stretch">

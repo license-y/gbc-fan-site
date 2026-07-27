@@ -6,7 +6,7 @@ tags:
   - articles
   - コーヒー
 pillar: true
-date: 2026-07-29
+date: 2026-07-27
 thumbnail: /assets/images/articles/coffee-origin-guide-kitasando-gbc.jpg
 thumbnailAlt: 店内に掲示されたGreen Beans Coffeeのコーヒー豆メニュー看板、産地ごとに酸味と苦味・クリアとコクの軸で配置された図
 ---
