@@ -8,7 +8,7 @@ tags:
   - ダガヤサンドウ
   - サードプレイス
 thumbnail: /assets/images/articles/shinjuku-gyoen-dagayasando-thirdplace-tokyo.jpg
-thumbnailAlt: 新宿御苑の緑豊かな景観
+thumbnailAlt: 池に木々が映り込む新宿御苑の日本庭園、遠くに高層ビルも見える風景
 ---
 
 **新宿御苑からダガヤサンドウを歩いてGreen Beans Coffeeでコーヒーを楽しむルートは東京・渋谷区で自然とサードプレイスを半日で体験できる最良の過ごし方です。新宿から10分ほどで別世界に来られます。**

@@ -8,7 +8,7 @@ tags:
   - コーヒー
   - 焙煎
 thumbnail: /assets/images/articles/premium-coffee-gbc.jpg
-thumbnailAlt: 自家焙煎のプレミアムコーヒー
+thumbnailAlt: 自家焙煎機とExtract Chilling技法で抽出するGreen Beans Coffeeのプレミアムコーヒー
 ---
 
 **Green Beans Coffeeのプレミアムコーヒーは非売品ブレンド豆・自家焙煎・エクストラクトチリング技法の3要素が重なったオリジナルの一杯です。千駄ヶ谷でしか飲めない1,980円の特別なスペシャルティコーヒー体験です。**

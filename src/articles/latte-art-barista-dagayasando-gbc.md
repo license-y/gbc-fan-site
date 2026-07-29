@@ -8,7 +8,7 @@ tags:
   - コーヒー
   - 体験・イベント
 thumbnail: /assets/images/articles/latte-art-barista-dagayasando-gbc.jpg
-thumbnailAlt: バリスタが描くラテアート
+thumbnailAlt: 馬・白鳥・くま・海馬など動物モチーフのラテアートが並ぶ7つのカップ、コーヒー豆も散らして撮影
 ---
 
 **Green Beans Coffeeのカフェラテには、バリスタさんが一杯ずつ丁寧に描くラテアートがついてきます。渋谷区ダガヤサンドウの静かな空間で自分だけのアートを目の前で楽しめる体験は格別です。**

@@ -8,7 +8,7 @@ tags:
   - ダガヤサンドウ
   - グルテンフリー
 thumbnail: /assets/images/articles/meiji-shrine-dagayasando.jpg
-thumbnailAlt: 明治神宮・新宿御苑周辺の散策路
+thumbnailAlt: 新宿の高層ビル群を背景に広がる明治神宮の緑豊かな森を上空から見た様子
 ---
 
 **ダガヤサンドウは明治神宮・新宿御苑・明治神宮外苑に囲まれたパワースポットエリアです。その中心にあるGreen Beans Coffeeはグルテンフリーフードと自家焙煎スペシャルティコーヒーを楽しめる千駄ヶ谷の専門店です。**

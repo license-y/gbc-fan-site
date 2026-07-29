@@ -8,7 +8,7 @@ tags:
   - ビジネス
   - サードプレイス
 thumbnail: /assets/images/articles/business-meeting-sendagaya-thirdplace-gbc.jpg
-thumbnailAlt: 商談前の一杯として提供されるコーヒー
+thumbnailAlt: コンクリート壁の店内に置かれた木目調テーブルと黒いアイアンチェア、商談利用を想定した落ち着いた席
 ---
 
 **温かい飲み物を手にすると相手への印象が好意的になるという心理研究があります。千駄ヶ谷ダガヤサンドウのGreen Beans Coffeeでの商談は会議室より打ち解けた対話が生まれやすくビジネスの質が変わります。**

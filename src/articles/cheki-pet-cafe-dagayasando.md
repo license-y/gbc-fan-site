@@ -8,7 +8,7 @@ tags:
   - ペット
   - カフェ店内
 thumbnail: /assets/images/articles/cheki-pet-cafe-dagayasando.jpg
-thumbnailAlt: ペット同伴カフェのチェキ展示ブース
+thumbnailAlt: 抹茶ラテと犬の顔をかたどったラテアートの隣で、こちらを見上げる白いポメラニアン
 ---
 
 **北参道・ダガヤサンドウのGreen Beans Coffeeは店内全席ペット同伴OKで無料チェキ撮影・展示サービスもある東京都内でも珍しいカフェです。自家焙煎スペシャルティコーヒーと愛犬との特別な時間を楽しめます。**

@@ -7,7 +7,7 @@ tags:
   - articles
   - グルテンフリー
 thumbnail: /assets/images/articles/rice-flour-focaccia-sendagaya-gbc.jpg
-thumbnailAlt: 手作りの米粉グルテンフリーフォカッチャ
+thumbnailAlt: GREEN BEANS COFFEEのカップと、紙に包まれた米粉グルテンフリーフォカッチャ2種
 ---
 
 **北参道・千駄ヶ谷のGreen Beans Coffeeでは米粉を使ったグルテンフリーフォカッチャを提供しています。小麦粉不使用でもちっとした食感でスペシャルティコーヒーとの相性も抜群です。**

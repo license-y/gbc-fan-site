@@ -8,7 +8,7 @@ tags:
   - ダガヤサンドウ
   - サードプレイス
 thumbnail: /assets/images/articles/meiji-gaien-ginkgo-dagayasando-thirdplace-gbc.jpg
-thumbnailAlt: 明治神宮外苑のいちょう並木
+thumbnailAlt: 青空に映える明治神宮外苑の黄色いいちょう並木、見上げるアングルで撮影
 ---
 
 **明治神宮外苑からダガヤサンドウへの散策コースとは東京・渋谷区の緑と静けさをつないでGreen Beans Coffeeでサードプレイス体験まで完結できる半日の過ごし方です。新宿駅からも気軽に来られます。**

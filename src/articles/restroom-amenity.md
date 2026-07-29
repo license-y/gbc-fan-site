@@ -7,7 +7,7 @@ tags:
   - articles
   - カフェ店内
 thumbnail: /assets/images/articles/restroom-amenity-sendagaya-gbc.jpg
-thumbnailAlt: カフェのトイレに用意されたアメニティ
+thumbnailAlt: 花とアメニティが並ぶ店内の化粧台、ハンドソープや温水洗浄便座の操作パネルも見える
 ---
 
 **Green Beans Coffeeのトイレアメニティは歯のお手入れピック・うがい薬・使い捨てコップが揃う東京のカフェでも珍しいサービスです。北参道・千駄ヶ谷でデートや商談前の身だしなみ確認にも使えます。**

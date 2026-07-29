@@ -63,7 +63,7 @@ Green Beans Coffeeではスタッフの方にその日の気分や好みを伝�
 
 Green Beans Coffeeのコーヒー豆は「フルーティ・マイルド・ビター」の三タイプに分かれていて気分やシーンに合わせて選ぶ楽しみがあります。焙煎体験イベントでは好みの豆を選んで実際に焙煎し唯一無二のオリジナル豆を作ることができます。東京・渋谷区の北参道・千駄ヶ谷にあるグリーンビーンズコーヒーは新宿や表参道・代々木・原宿方面からもアクセスしやすく鳩森八幡神社や国立競技場の散策コースとの組み合わせもおすすめです。夏に飲みやすい豆選びについては[東京・北参道の夏のコーヒー選び、暑い日に飲みたいすっきり系の一杯とは](/articles/summer-bean-selection-kitasando-gbc/)でもご紹介しています。焙煎中の香りの変化に注目した体験談は[東京・北参道の焙煎体験で気づいた、コーヒーは香りで印象が変わるという発見](/articles/roasting-aroma-experience-kitasando-gbc/)もあわせてどうぞ。
 
-次回の焙煎体験イベントの開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。焙煎の仕組みそのものについて詳しく知りたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎度そのものの違いをじっくり飲み比べたい方は[東京・北参道の焙煎体験で学んだ、浅煎り・中煎り・深煎りの違いと選び方](/articles/roasting-degree-comparison-kitasando-gbc/)もご覧ください。
+次回の焙煎体験イベントの開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。焙煎の仕組みそのものについて詳しく知りたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎度そのものの違いをじっくり飲み比べたい方は[東京・北参道の焙煎体験で学んだ、浅煎り・中煎り・深煎りの違いと選び方](/articles/roasting-degree-comparison-kitasando-gbc/)もご覧ください。フルーティ・マイルド・ビターがそもそもどの産地の豆に由来するのか知りたい方は[コーヒー豆の産地別特徴とは？東京・北参道で知ったアジア・アフリカ・中南米の違い](/articles/coffee-origin-guide/)もあわせてご覧ください。
 
 ## よくある質問
 
