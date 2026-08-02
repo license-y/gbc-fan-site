@@ -8,6 +8,7 @@ tags:
   - ビジネス
 thumbnail: /assets/images/articles/casual-interview-cafe-sendagaya-gbc.jpg
 thumbnailAlt: カフェの小さなテーブルでノートPCとコーヒーを挟んで向き合って話す2人
+thumbnailCaption: ※写真はイメージです
 ---
 
 **Green Beans Coffeeは転職のカジュアル面談にも使われる東京でも珍しいビジネスカフェです。堅苦しくない空気の中で本音に近い会話ができます。**
