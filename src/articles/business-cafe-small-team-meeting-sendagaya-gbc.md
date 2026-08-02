@@ -49,7 +49,7 @@ thumbnailCaption: ※写真はイメージです
 
 一人での作業や商談だけでなく少人数のチームミーティングにも対応できる懐の深さがこのカフェの持ち味だと改めて感じました。
 
-一人利用でのWi-Fi・電源環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)、オンライン会議での席選びのコツは[東京・千駄ヶ谷のカフェでオンライン会議、Wi-Fi環境と席のゆとりをチェック](/articles/business-online-meeting-cafe-sendagaya-gbc/)で詳しく紹介しています。朝の時間帯の活用法は[東京・千駄ヶ谷で朝活ミーティング、始業前のグリーンビーンズコーヒーが静かで集中できる理由](/articles/morning-business-meeting-sendagaya-gbc/)もあわせてどうぞ。ビジネスカフェの選び方全体は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)で解説しています。
+一人利用でのWi-Fi・電源環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)、オンライン会議での席選びのコツは[東京・千駄ヶ谷のカフェでオンライン会議、Wi-Fi環境と席のゆとりをチェック](/articles/business-online-meeting-cafe-sendagaya-gbc/)で詳しく紹介しています。朝の時間帯の活用法は[東京・千駄ヶ谷で朝活ミーティング、始業前のグリーンビーンズコーヒーが静かで集中できる理由](/articles/morning-business-meeting-sendagaya-gbc/)もあわせてどうぞ。ビジネスカフェの選び方全体は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)で解説しています。転職のカジュアル面談での使い方は[転職のカジュアル面談にも。東京・千駄ヶ谷のビジネスカフェが選ばれる理由](/articles/casual-interview-cafe-sendagaya-gbc/)もあわせてどうぞ。
 
 ## まとめ
 
