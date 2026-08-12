@@ -2,7 +2,7 @@
 layout: article.njk
 title: 渋谷・北参道のカフェ、GBC Frozen Brewで夏の街歩き休憩に涼を
 description: Green Beans Coffeeの「GBC Frozen Brew」は、氷のボウルから選ぶ持ち帰り専用の冷凍コーヒーです。東京・渋谷区北参道で街歩きやウォーキングの合間にキーンと涼める夏限定ドリンクをご紹介します。
-date: 2026-08-10
+date: 2026-08-11
 tags:
   - articles
   - コーヒー
