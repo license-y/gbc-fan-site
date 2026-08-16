@@ -57,7 +57,7 @@ Green Beans Coffeeは愛犬と店内で一緒に過ごせる数少ないカフ�
 
 ---
 
-ダガヤサンドウへのおすすめ散歩コースは[千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)で紹介しています。愛犬とのサードプレイス体験やチェキ撮影については[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)もあわせてどうぞ。グリーンビーンズコーヒーとの出会いやサードプレイスになるまでの経緯は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)で書いています。グリーンビーンズコーヒーのペット同伴環境について詳しく知りたい方は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)も参考にしてください。国立競技場エリアから愛犬とダガヤサンドウを歩くコースの魅力は[東京・千駄ヶ谷を愛犬と歩く一日。国立競技場エリアからダガヤサンドウのカフェへ](/articles/national-stadium-pet-walk-dagayasando-gbc/)でもご紹介しています。
+ダガヤサンドウへのおすすめ散歩コースは[千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)で紹介しています。愛犬とのサードプレイス体験やチェキ撮影については[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)もあわせてどうぞ。グリーンビーンズコーヒーとの出会いやサードプレイスになるまでの経緯は[千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)で書いています。グリーンビーンズコーヒーのペット同伴環境について詳しく知りたい方は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)も参考にしてください。国立競技場エリアから愛犬とダガヤサンドウを歩くコースの魅力は[東京・千駄ヶ谷を愛犬と歩く一日。国立競技場エリアからダガヤサンドウのカフェへ](/articles/national-stadium-pet-walk-dagayasando-gbc/)でもご紹介しています。帰省しないお盆休みの過ごし方は[渋谷・千駄ヶ谷のペット同伴カフェで過ごす、帰省なしのお盆休みプラン](/articles/obon-pet-cafe-dagayasando-gbc/)にまとめました。
 
 ## まとめ
 
