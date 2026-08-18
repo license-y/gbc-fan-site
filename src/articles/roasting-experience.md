@@ -47,7 +47,7 @@ Green Beans Coffeeの焙煎体験は東京・渋谷区の北参道で参加で�
 
 次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でお知らせされます。ぜひチェックしてみてください。
 
-グリーンビーンズコーヒーで開催している体験イベント（ハンドドリップ・焙煎・オリジナルブレンド）の全体像を知りたい方は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)をご覧ください。焙煎機の仕組みや焙煎の工程について体系的に学びたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎したての豆を冷却しながら選別するハンドピックの様子は[東京・北参道の焙煎体験で見た、焙煎したての豆を選別するハンドピックの瞬間](/articles/fresh-roasted-beans-check-kitasando-gbc/)で詳しく紹介しています。
+グリーンビーンズコーヒーで開催している体験イベント（ハンドドリップ・焙煎・オリジナルブレンド）の全体像を知りたい方は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)をご覧ください。焙煎機の仕組みや焙煎の工程について体系的に学びたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎したての豆を冷却しながら選別するハンドピックの様子は[東京・北参道の焙煎体験で見た、焙煎したての豆を選別するハンドピックの瞬間](/articles/fresh-roasted-beans-check-kitasando-gbc/)で詳しく紹介しています。イベントのない日に焙煎機を間近で眺めた話は[東京・北参道のカフェ店内で初めて間近に見た焙煎機、その迫力に驚いた話](/articles/roasting-machine-first-look-kitasando-gbc/)にまとめています。
 
 ## よくある質問
 

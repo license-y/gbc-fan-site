@@ -73,7 +73,7 @@ Green Beans Coffeeの焙煎体験イベントでは実際の焙煎機を使っ�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeでは直熱釜熱風煎デジタル秒速珈琲自家焙煎機を使った本格的な焙煎体験イベントが毎月開催されています。グリーンビーンズコーヒーの焙煎機の前でコーヒーが生まれる瞬間を体験してみてください。
 
-焙煎体験への参加レポートは[東京・北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)でご覧いただけます。焙煎の基礎知識については[コーヒー豆の焙煎とは？東京・渋谷北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)が参考になります。豆の種類とフレーバーの違いについては[東京・渋谷北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)もあわせてどうぞ。オリジナルブレンドを焙煎する体験は[東京・北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)でご覧いただけます。
+焙煎体験への参加レポートは[東京・北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)でご覧いただけます。焙煎の基礎知識については[コーヒー豆の焙煎とは？東京・渋谷北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)が参考になります。豆の種類とフレーバーの違いについては[東京・渋谷北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)もあわせてどうぞ。オリジナルブレンドを焙煎する体験は[東京・北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)でご覧いただけます。イベントのない日の店内で焙煎機を間近に眺めた様子は[東京・北参道のカフェ店内で初めて間近に見た焙煎機、その迫力に驚いた話](/articles/roasting-machine-first-look-kitasando-gbc/)で紹介しています。
 
 ## よくある質問
 
