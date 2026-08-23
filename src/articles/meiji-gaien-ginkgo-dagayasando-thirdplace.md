@@ -57,7 +57,7 @@ thumbnailAlt: 青空に映える明治神宮外苑の黄色いいちょう並木
 
 夏には近隣で神宮外苑花火大会も開催されます。当日のアクセスや過ごし方は[東京・北参道から歩く神宮外苑花火大会2026、当日ガイド](/articles/jingu-gaien-fireworks-dagayasando-gbc/)で紹介しています。
 
-ダガヤサンドウの散歩スポットについては[鳩森八幡神社のパワースポット記事](/articles/hatomori-shrine-dagayasando/)もあわせてご覧ください。[新宿御苑からダガヤサンドウへのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)も同じエリアの楽しみ方として参考になります。Green Beans Coffeeがサードプレイスになるまでのストーリーは[こちらの記事](/articles/third-place-dagayasando-gbc/)をどうぞ。国立競技場駅を起点にしたダガヤサンドウ散歩コースは[国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)でも紹介しています。サードプレイスという概念そのものをより深く知りたい方は[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)もあわせてどうぞ。
+ダガヤサンドウの散歩スポットについては[鳩森八幡神社のパワースポット記事](/articles/hatomori-shrine-dagayasando/)もあわせてご覧ください。[新宿御苑からダガヤサンドウへのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)も同じエリアの楽しみ方として参考になります。Green Beans Coffeeがサードプレイスになるまでのストーリーは[こちらの記事](/articles/third-place-dagayasando-gbc/)をどうぞ。国立競技場駅を起点にしたダガヤサンドウ散歩コースは[国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)でも紹介しています。サードプレイスという概念そのものをより深く知りたい方は[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)もあわせてどうぞ。青山側の外苑前駅から明治神宮外苑を抜けて歩くコースは[東京・外苑前駅から歩くダガヤサンドウ。銀座線で行く青山経由のサードプレイス散歩](/articles/gaienmae-ginza-line-dagayasando-gbc/)でご紹介しています。
 
 ---
 
