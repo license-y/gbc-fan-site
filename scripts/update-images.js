@@ -47,14 +47,28 @@ function formatSize(bytes) {
   return `${Math.round(bytes / 1024)}KB`;
 }
 
+// 圧縮結果のサイズ差をラベル付きで整形（増加時は「増加」、削減時は「削減」）
+function formatReduction(srcSize, destSize) {
+  const diff = Math.round((1 - destSize / srcSize) * 100);
+  return diff >= 0 ? `${diff}%削減` : `${Math.abs(diff)}%増加`;
+}
+
 // TinyPNG で圧縮してコピー
 async function compressAndCopy(srcPath, destPath, tinify) {
   const srcSize = readFileSync(srcPath).length;
   try {
     await tinify.fromFile(srcPath).toFile(destPath);
-    const destSize = readFileSync(destPath).length;
-    const reduction = Math.round((1 - destSize / srcSize) * 100);
-    log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)} → ${formatSize(destSize)}, ${reduction}%削減)`);
+    let destSize = readFileSync(destPath).length;
+
+    // 再圧縮で元より大きくなった場合は元ファイルをそのまま使う
+    if (destSize > srcSize) {
+      copyFileSync(srcPath, destPath);
+      destSize = srcSize;
+      log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)}, 圧縮で増加したため元ファイルを使用)`);
+      return;
+    }
+
+    log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)} → ${formatSize(destSize)}, ${formatReduction(srcSize, destSize)})`);
   } catch (err) {
     log.error(`TinyPNG エラー: ${err.message}`);
     throw err;
@@ -79,11 +93,17 @@ async function compressWithJimp(srcPath, destPath) {
   }
 
   const buffer = await image.getBuffer('image/jpeg', { quality: 75 });
-  writeFileSync(destPath, buffer);
-
   const destSize = buffer.length;
-  const reduction = Math.round((1 - destSize / srcSize) * 100);
-  log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)} → ${formatSize(destSize)}, ${reduction}%削減)`);
+
+  // 再圧縮で元より大きくなった場合は元ファイルをそのまま使う
+  if (destSize > srcSize) {
+    copyFileSync(srcPath, destPath);
+    log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)}, 圧縮で増加したため元ファイルを使用)`);
+    return;
+  }
+
+  writeFileSync(destPath, buffer);
+  log.ok(`${srcPath.replace(ROOT + '/', '')} → ${destPath.replace(ROOT + '/', '')} (${formatSize(srcSize)} → ${formatSize(destSize)}, ${formatReduction(srcSize, destSize)})`);
 }
 
 // マガジンローテーション
