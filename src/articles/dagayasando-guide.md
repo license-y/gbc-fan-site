@@ -93,7 +93,7 @@ Green Beans Coffeeはダガヤサンドウのグリーンビーンズコーヒ�
 
 グリーンビーンズコーヒーはそのダガヤサンドウの中心に位置する自家焙煎コーヒー専門店です。新宿から10分ほどでアクセスできる東京の隠れたサードプレイスとしてぜひ訪れてみてください。
 
-エリアの散策レポートは[東京・国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)で詳しくご紹介しています。鳩森八幡神社の体験は[東京・北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)をどうぞ。明治神宮外苑とダガヤサンドウの散歩コースは[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)が参考になります。南東側の外苑前駅から青山を抜けて歩くルートは[東京・外苑前駅から歩くダガヤサンドウ。銀座線で行く青山経由のサードプレイス散歩](/articles/gaienmae-ginza-line-dagayasando-gbc/)でご紹介しています。グリーンビーンズコーヒーでのコーヒー体験については[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でご覧いただけます。
+エリアの散策レポートは[東京・国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)で詳しくご紹介しています。鳩森八幡神社の体験は[東京・北参道エリアから歩いて5分：ダガヤサンドウのパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)をどうぞ。明治神宮外苑とダガヤサンドウの散歩コースは[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)が参考になります。南東側の外苑前駅から青山を抜けて歩くルートは[東京・外苑前駅から歩くダガヤサンドウ。銀座線で行く青山経由のサードプレイス散歩](/articles/gaienmae-ginza-line-dagayasando-gbc/)でご紹介しています。グリーンビーンズコーヒーでのコーヒー体験については[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でご覧いただけます。新宿駅新南口や代々木駅の一部も実は千駄ヶ谷の住所であるという地名の境界については[東京・新宿駅新南口も千駄ヶ谷？ダガヤサンドウのGreen Beans Coffeeへ徒歩圏内](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で詳しくご紹介しています。
 
 ## よくある質問
 
