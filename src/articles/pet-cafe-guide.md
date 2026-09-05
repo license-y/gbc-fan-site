@@ -84,7 +84,7 @@ Green Beans Coffeeでは店内ペット同伴が歓迎されています。渋�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは店内ペット同伴OKで無料チェキ展示サービスも提供されています。グリーンビーンズコーヒーで愛犬とともに過ごす特別な時間をぜひ体験してみてください。
 
-グリーンビーンズコーヒーのペット同伴体験については[東京・北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しくレポートしています。チェキ展示サービスの体験は[東京・千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)をご覧ください。愛犬と渋谷のサードプレイスで過ごした体験は[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)にまとめています。愛犬との散歩コースについては[東京・千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)もあわせてどうぞ。
+グリーンビーンズコーヒーのペット同伴体験については[東京・北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)で詳しくレポートしています。チェキ展示サービスの体験は[東京・千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)をご覧ください。愛犬と渋谷のサードプレイスで過ごした体験は[東京・渋谷エリアで愛犬とサードプレイス｜GBCのチェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)にまとめています。愛犬との散歩コースについては[東京・千駄ヶ谷から愛犬とペット散歩：将棋会館・鳩森八幡神社を通ってGBCダガヤサンドウへ](/articles/sendagaya-pet-walk-dagayasando/)もあわせてどうぞ。朝晩が涼しくなってきた初秋に散歩コースを伸ばしながらカフェでひと休みする過ごし方は[東京・千駄ヶ谷を愛犬と歩く初秋、北参道のペット同伴カフェでひと休み](/articles/autumn-dog-walk-sendagaya-pet-cafe-gbc/)でも紹介しています。
 
 ## よくある質問
 

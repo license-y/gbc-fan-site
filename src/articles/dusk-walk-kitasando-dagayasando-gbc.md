@@ -56,7 +56,7 @@ thumbnailCaption: ※写真はイメージです
 
 歩く前に軽く水分をとっておくのも、夕涼み散歩を心地よく楽しむための小さなコツです。涼しくなってきたとはいえ真夏の屋外なので、無理のない範囲で歩くことを心がけています。
 
-ダガヤサンドウという街そのものについては[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)で詳しく紹介しています。夏の夜に開催される神宮外苑花火大会の当日ガイドは[東京・北参道から歩く神宮外苑花火大会2026、当日ガイド](/articles/jingu-gaien-fireworks-dagayasando-gbc/)もあわせてどうぞ。猛暑の日に店内で涼む過ごし方は[東京・ダガヤサンドウの夏こもり、涼しい店内で過ごすグリーンビーンズコーヒーの午後](/articles/cafe-interior-summer-afternoon-dagayasando-gbc/)、朝の時間帯の過ごし方は[東京・ダガヤサンドウの夏の朝活、代々木公園を歩いてグリーンビーンズコーヒーで迎える朝](/articles/yoyogi-park-morning-walk-dagayasando-gbc/)もあわせてどうぞ。店内空間の居心地について詳しく知りたい方は[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)もご覧ください。
+ダガヤサンドウという街そのものについては[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)で詳しく紹介しています。夏の夜に開催される神宮外苑花火大会の当日ガイドは[東京・北参道から歩く神宮外苑花火大会2026、当日ガイド](/articles/jingu-gaien-fireworks-dagayasando-gbc/)もあわせてどうぞ。猛暑の日に店内で涼む過ごし方は[東京・ダガヤサンドウの夏こもり、涼しい店内で過ごすグリーンビーンズコーヒーの午後](/articles/cafe-interior-summer-afternoon-dagayasando-gbc/)、朝の時間帯の過ごし方は[東京・ダガヤサンドウの夏の朝活、代々木公園を歩いてグリーンビーンズコーヒーで迎える朝](/articles/yoyogi-park-morning-walk-dagayasando-gbc/)もあわせてどうぞ。店内空間の居心地について詳しく知りたい方は[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)もご覧ください。夏の夕涼みから季節が進み朝晩が涼しくなってきた頃の過ごし方は[東京・北参道の朝晩が涼しくなってきた頃、ダガヤサンドウのサードプレイスで過ごす一杯](/articles/autumn-chill-thirdplace-kitasando-gbc/)にまとめています。
 
 ## まとめ
 
