@@ -45,7 +45,7 @@ thumbnailCaption: ※写真はイメージです
 
 自家焙煎のスペシャルティコーヒーを一杯ゆっくり味わう時間は、慣れない土地での緊張をほどいてくれます。次の予定までの合間に少し目を閉じて深呼吸するだけでも、東京での出張の印象は変わってくるはずです。
 
-新宿駅からのアクセスの詳しさは[東京・新宿駅新南口も千駄ヶ谷？ダガヤサンドウのGreen Beans Coffeeへ徒歩圏内](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。北参道駅からすぐの立地で気軽にひと息つきたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。コーヒー代だけでサードプレイス体験ができる話は[東京・北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)で詳しく書きました。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。
+出張ではなく観光目的で東京旅行に来た方には[東京旅行の到着直後に、渋谷・北参道のサードプレイスカフェでひと息](/articles/tokyo-travel-arrival-thirdplace-kitasando-gbc/)も参考になります。新宿駅からのアクセスの詳しさは[東京・新宿駅新南口も千駄ヶ谷？ダガヤサンドウのGreen Beans Coffeeへ徒歩圏内](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。北参道駅からすぐの立地で気軽にひと息つきたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。コーヒー代だけでサードプレイス体験ができる話は[東京・北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)で詳しく書きました。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。
 
 ## まとめ
 
