@@ -387,6 +387,8 @@ Markdownでは1行の改行が無視されるため、**Q.**タイトルと回�
 9. **本文中の裸GBC表記**：`\[.*?\]\(.*?\)`を除去した本文に`GBC`が残っていないか（リンクアンカーテキストは除外して判定する）
 10. **外部リンクのセキュリティ属性**：メインサイト（`public/index.html`）・ペットサイト（`public/pets/index.html`）・英語版（`public/en/index.html`）のHTML内`target="_blank"`リンクに`rel="noopener noreferrer"`が付いているか。記事本文（Markdown内`<a>`タグ）は基本的に付与済みだが、メインサイト側のHTML直書き外部リンクは漏れやすい
 11. **自動生成一覧ページのdescription**：`src/articles/index.njk`（記事一覧トップ）・`src/articles/tags/index.njk`（カテゴリ別一覧、10ページ分）のdescriptionも100〜120字基準の対象に含める。特に`tags/index.njk`は全カテゴリ共通のテンプレート文になりやすく、短すぎ・ほぼ同一文（薄い重複コンテンツ）になっていないか確認する
+    - **2026-09-15対応済み**：実際に10カテゴリのdescriptionが「{{ tag }}」部分以外ほぼ同一文になっている問題が監査で見つかり、`.eleventy.js`にカテゴリごとの個別description文を持つ`TAG_DESCRIPTIONS`オブジェクトを追加して解消した（`TAG_SLUGS`と同じ`addGlobalData`のパターン）。`src/articles/tags/index.njk`のフロントマターは`description: "{{ tagDescriptions[tag] }}"`でこれを参照している。新しい観点でカテゴリ一覧のdescriptionを見直す場合や、将来カテゴリを追加する場合は`.eleventy.js`の`TAG_DESCRIPTIONS`に該当カテゴリのエントリを追記すること（`TAG_SLUGS`と項目を揃える）
+12. **タイトルの文字数・読点**：`grep -h "^title:" src/articles/*.md`で全タイトルを抽出し、読点（、）を含むもの・40字を超えるものがないか確認する。2026-09-15の監査で103記事中33本に読点、26本に40字超が見つかり、全件を修正した実績がある（対応時はタイトルをアンカーテキストとして引用している他記事のリンクも同時に更新すること。詳細は`references/seo-aeo-rules.md`のタイトル作成ルールを参照）
 
 **注意点（CRLF対応）**：このプロジェクトのMarkdownファイルは改行コードが`\r\n`（CRLF）のため、Node.jsスクリプトで正規表現を書くときは`content.replace(/\r\n/g, '\n')`で正規化してから処理すること。正規化を忘れると`tags:`のYAML配列などが正しくパースできず誤検知（全件ヒット/全件ノーヒット）になる。2026-07の監査で実際にこの罠にはまった。
 
