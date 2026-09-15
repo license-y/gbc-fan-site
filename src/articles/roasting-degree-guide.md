@@ -54,7 +54,7 @@ thumbnailAlt: 店内に掲示されたGreen Beans Coffeeのローストガイド
 
 **苦味とコクを楽しみたい場合**：深煎り（フルシティ〜イタリアン）がおすすめです。ミルクを加えたラテやカプチーノとの相性も抜群です。
 
-焙煎の仕組みそのものについては[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)で詳しく解説しています。浅煎り・中煎り・深煎りの飲み比べレポートは[東京・北参道の焙煎体験で学んだ、浅煎り・中煎り・深煎りの違いと選び方](/articles/roasting-degree-comparison-kitasando-gbc/)を、抽出方法との関係は[浅煎りと深煎りで淹れ方は変わる？東京・北参道の焙煎体験で学んだ抽出のコツ](/articles/roasting-degree-brewing-technique-kitasando-gbc/)をご覧ください。
+焙煎の仕組みそのものについては[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)で詳しく解説しています。浅煎り・中煎り・深煎りの飲み比べレポートは[東京・北参道の焙煎体験で学んだ浅煎り・中煎り・深煎りの違いと選び方](/articles/roasting-degree-comparison-kitasando-gbc/)を、抽出方法との関係は[浅煎りと深煎りで淹れ方は変わる？東京・北参道の焙煎体験で学んだ抽出のコツ](/articles/roasting-degree-brewing-technique-kitasando-gbc/)をご覧ください。
 
 ## 東京・渋谷北参道のGreen Beans Coffeeで焙煎度を選ぶ
 

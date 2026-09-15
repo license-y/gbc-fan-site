@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京・北参道のグルテンフリーランチ、鮮魚のグリルときのこが彩るオメガ3美肌ごはん
+title: 東京・北参道のグルテンフリーランチは鮮魚のグリルときのこが彩るオメガ3美肌ごはん
 description: 東京・北参道のGreen Beans Coffeeで食べた鮮魚のグリルのグルテンフリーランチをレポート。きのこと彩り野菜が添えられオメガ3脂肪酸もとれる渋谷区千駄ヶ谷で人気の美肌ごはんを詳しくご紹介します。
 date: 2026-07-19
 tags:
@@ -36,7 +36,7 @@ thumbnailAlt: 鮮魚のグリルにきのことサラダを添えたグルテン
 
 新宿から10分ほどの北参道駅から徒歩3分、千駄ヶ谷駅からも徒歩7分とアクセスがよく明治神宮外苑や新宿御苑を散策したあとのランチ利用にもぴったりです。
 
-グルテンフリーの基礎知識は[グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法](/articles/gluten-free-guide/)、ワンプレートの一例は[東京・渋谷北参道のグルテンフリーランチ｜国産豚ソテーワンプレートで美容も満腹も叶えた](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)で詳しく紹介しています。旬野菜へのこだわりは[東京・千駄ヶ谷のグルテンフリーカフェで見つけた、旬の夏野菜へのこだわり](/articles/gluten-free-summer-vegetables-sendagaya-gbc/)、腸活習慣については[東京・渋谷区のグルテンフリーカフェで始める夏バテ対策、腸に優しい食事習慣](/articles/glutenfree-summer-gut-health-gbc/)もあわせてどうぞ。
+グルテンフリーの基礎知識は[グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法](/articles/gluten-free-guide/)、ワンプレートの一例は[東京・北参道のグルテンフリーランチ｜国産豚ソテーワンプレート](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)で詳しく紹介しています。旬野菜へのこだわりは[東京・千駄ヶ谷のグルテンフリーカフェで見つけた旬の夏野菜へのこだわり](/articles/gluten-free-summer-vegetables-sendagaya-gbc/)、腸活習慣については[東京・渋谷区のグルテンフリーカフェで始める夏バテ対策は腸に優しい食事習慣](/articles/glutenfree-summer-gut-health-gbc/)もあわせてどうぞ。
 
 ## バリスタさんに聞いた魚メニューへのこだわり
 

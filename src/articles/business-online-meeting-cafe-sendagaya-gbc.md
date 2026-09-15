@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京・千駄ヶ谷のカフェでオンライン会議、Wi-Fi環境と席のゆとりをチェック
+title: 東京・千駄ヶ谷のカフェでオンライン会議前にチェックしたいWi-Fi環境
 description: 東京・渋谷区千駄ヶ谷のGreen Beans Coffeeはオンライン会議やWeb商談にも使えるビジネスカフェです。Wi-Fi環境と席と席の間にゆとりのある席選びのコツ、意識したいマナーについて詳しくお伝えします。
 date: 2026-07-15
 tags:
@@ -45,7 +45,7 @@ thumbnailCaption: ※写真はイメージです
 
 千駄ヶ谷は新宿から10分ほど。渋谷区の中でもオンライン会議に集中できる貴重なビジネスカフェだと感じています。
 
-対面での打ち合わせに使いたい方は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)、PC作業向けの環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)で詳しく解説しています。朝の時間帯を活用したい方は[東京・千駄ヶ谷で朝活ミーティング、始業前のグリーンビーンズコーヒーが静かで集中できる理由](/articles/morning-business-meeting-sendagaya-gbc/)、リモートワークでの活用法は[東京・北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もあわせてご覧ください。2〜3人の少人数チーム打ち合わせに使えるかどうかは[少人数チームの打ち合わせに使える？東京・千駄ヶ谷のビジネスカフェのテーブル配置と使い勝手](/articles/business-cafe-small-team-meeting-sendagaya-gbc/)で詳しく紹介しています。転職のカジュアル面談での使い方は[転職のカジュアル面談にも。東京・千駄ヶ谷のビジネスカフェが選ばれる理由](/articles/casual-interview-cafe-sendagaya-gbc/)もあわせてどうぞ。
+対面での打ち合わせに使いたい方は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)、PC作業向けの環境については[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)で詳しく解説しています。朝の時間帯を活用したい方は[東京・千駄ヶ谷の朝活ミーティングに集中できるグリーンビーンズコーヒーの理由](/articles/morning-business-meeting-sendagaya-gbc/)、リモートワークでの活用法は[東京・北参道のビジネスカフェが穴場のサードプレイスだった理由](/articles/business-remote-work-gbc/)もあわせてご覧ください。2〜3人の少人数チーム打ち合わせに使えるかどうかは[東京・千駄ヶ谷の少人数チーム打ち合わせに使えるビジネスカフェの座席事情](/articles/business-cafe-small-team-meeting-sendagaya-gbc/)で詳しく紹介しています。転職のカジュアル面談での使い方は[転職のカジュアル面談にも。東京・千駄ヶ谷のビジネスカフェが選ばれる理由](/articles/casual-interview-cafe-sendagaya-gbc/)もあわせてどうぞ。
 
 ## まとめ
 

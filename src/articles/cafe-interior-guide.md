@@ -75,7 +75,7 @@ Green Beans Coffeeは東京・渋谷区ダガヤサンドウにある自家焙�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeはこの5条件をすべて満たしています。グリーンビーンズコーヒーの店内で過ごす時間はただコーヒーを飲むだけでなく「ここにいたい」と思わせてくれる体験です。ぜひ一度訪れてみてください。
 
-グリーンビーンズコーヒーの店内の雰囲気については[東京・ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)で詳しくレポートしています。おしぼりのおもてなしについては[コーヒー一杯のもてなしがうれしい。東京・千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)をどうぞ。トイレのアメニティについては[東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティにGBCの本気を見た](/articles/restroom-amenity/)に詳しくまとめています。カウンター席での仕事体験は[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)もあわせてご覧ください。夕方の時間帯の店内の雰囲気は[東京・ダガヤサンドウの夕涼み、日が傾く北参道を歩いてグリーンビーンズコーヒーへ](/articles/dusk-walk-kitasando-dagayasando-gbc/)でも紹介しています。
+グリーンビーンズコーヒーの店内の雰囲気については[東京・ダガヤサンドウのカフェ店内で過ごすハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)で詳しくレポートしています。おしぼりのおもてなしについては[コーヒー一杯のもてなしがうれしい。東京・千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)をどうぞ。トイレのアメニティについては[東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティにGBCの本気を見た](/articles/restroom-amenity/)に詳しくまとめています。カウンター席での仕事体験は[東京・千駄ヶ谷のカフェカウンターでPCを広げる：渋谷で集中できる仕事場体験](/articles/counter-seat-pc-work-wifi-power-gbc/)もあわせてご覧ください。夕方の時間帯の店内の雰囲気は[東京・ダガヤサンドウの夕涼みは日が傾く北参道を歩いてグリーンビーンズコーヒーへ](/articles/dusk-walk-kitasando-dagayasando-gbc/)でも紹介しています。
 
 ## よくある質問
 

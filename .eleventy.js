@@ -14,6 +14,20 @@ const TAG_SLUGS = {
   "ダガヤサンドウ": "dagayasando",
 };
 
+// カテゴリ一覧ページ（tags/index.njk）用の個別description（100〜120字、カテゴリごとに内容を変えて重複コンテンツを回避）
+const TAG_DESCRIPTIONS = {
+  "コーヒー": "東京・渋谷区北参道のGreen Beans Coffeeで味わう自家焙煎スペシャルティコーヒーにまつわる記事一覧です。豆の産地や抽出方法、季節ごとの一杯選びをアンバサダーKikumiが北参道駅徒歩3分の店内からお届けします。",
+  "焙煎": "東京・北参道のGreen Beans Coffeeで参加した焙煎体験にまつわる記事一覧です。生豆の選別から焙煎機の仕組み、浅煎り・中煎り・深煎りの違いや豆の保存方法まで、体験を通じて学んだことをお届けします。",
+  "グルテンフリー": "東京・千駄ヶ谷のGreen Beans Coffeeで味わうグルテンフリーメニューにまつわる記事一覧です。米粉フォカッチャや旬の夏野菜を使ったランチなど、渋谷区で楽しめる腸と美容に優しい食事習慣を紹介します。",
+  "体験・イベント": "東京・北参道のGreen Beans Coffeeで毎月開催されるハンドドリップ・焙煎体験にまつわる記事一覧です。参加したイベントの様子や豆選びのコツ、オリジナルブレンド作りをアンバサダーKikumiがレポートします。",
+  "ペット": "東京・千駄ヶ谷のペット同伴カフェGreen Beans Coffeeにまつわる記事一覧です。愛犬とのカフェ時間や入店マナー、複数頭でのマナー、チェキ撮影の体験談を渋谷区のペットフレンドリー視点でお届けします。",
+  "美容健康": "東京・北参道のGreen Beans Coffeeで学んだコーヒーと美容健康の関係にまつわる記事一覧です。クロロゲン酸やグルテンフリー食、ブラックコーヒー習慣から始める体にやさしい生活法を紹介します。",
+  "ビジネス": "東京・渋谷区千駄ヶ谷のビジネスカフェGreen Beans Coffeeにまつわる記事一覧です。打ち合わせやオンライン会議、朝活ミーティング、商談やおもてなしでの活用法を新宿エリアで働く方にもお届けします。",
+  "サードプレイス": "東京・渋谷区ダガヤサンドウのサードプレイスGreen Beans Coffeeにまつわる記事一覧です。仕事や読書、ひとり時間、フリーランスの作業を過ごす第3の居場所としての魅力を3年通った視点で紹介します。",
+  "カフェ店内": "東京・ダガヤサンドウのGreen Beans Coffee店内の様子にまつわる記事一覧です。焙煎機のある空間やカウンター席、トイレのアメニティまで、居心地のよさを支える店内のこだわりを詳しくお届けします。",
+  "ダガヤサンドウ": "東京・渋谷区の隠れたカフェエリア、ダガヤサンドウにまつわる記事一覧です。Green Beans Coffeeを起点に鳩森八幡神社や国立競技場、明治神宮外苑周辺を歩いた散策記をアンバサダーKikumiが紹介します。",
+};
+
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("tagSlug", (tag) => TAG_SLUGS[tag] || tag);
 
@@ -43,6 +57,7 @@ export default function (eleventyConfig) {
     return idx > 0 ? collection[idx - 1] : null;
   });
   eleventyConfig.addGlobalData("tagSlugs", TAG_SLUGS);
+  eleventyConfig.addGlobalData("tagDescriptions", TAG_DESCRIPTIONS);
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");
 

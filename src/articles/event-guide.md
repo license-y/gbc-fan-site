@@ -69,7 +69,7 @@ Green Beans Coffeeは東京・渋谷区ダガヤサンドウにある自家焙�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeで開催されるこの体験イベントはグリーンビーンズコーヒーならではのコーヒーとの深い関わり方を教えてくれます。ぜひ一度参加してみてください。
 
-ハンドドリップ体験の詳細レポートは[東京・北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)でご覧いただけます。焙煎体験の体験記は[東京・北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)に詳しくまとめています。オリジナルブレンド焙煎体験については[東京・北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)をどうぞ。焙煎した豆を持ち帰る体験は[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷GBCの月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もあわせてご覧ください。
+ハンドドリップ体験の詳細レポートは[東京・北参道のバリスタさんに教わるハンドドリップ体験は毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)でご覧いただけます。焙煎体験の体験記は[東京・北参道の焙煎体験イベントに参加してきました：自分で焙煎したコーヒーを飲む感動](/articles/roasting-experience/)に詳しくまとめています。オリジナルブレンド焙煎体験については[東京・北参道で焙煎体験イベントに参加してきました：GBCのオリジナルブレンドが最高だった](/articles/original-blend-roasting-event/)をどうぞ。焙煎した豆を持ち帰る体験は[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷GBCの月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もあわせてご覧ください。
 
 ## よくある質問
 

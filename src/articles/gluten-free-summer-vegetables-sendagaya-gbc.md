@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京・千駄ヶ谷のグルテンフリーカフェで見つけた、旬の夏野菜へのこだわり
+title: 東京・千駄ヶ谷のグルテンフリーカフェで見つけた旬の夏野菜へのこだわり
 description: 東京・渋谷区千駄ヶ谷のGreen Beans Coffeeはグルテンフリーメニューに旬の夏野菜を取り入れています。彩り豊かな夏野菜へのこだわりと美容健康への効果、選び方のポイントを詳しくお伝えします。
 date: 2026-07-12
 tags:
@@ -45,7 +45,7 @@ thumbnailCaption: ※写真はイメージです
 
 千駄ヶ谷は新宿から10分ほど。渋谷区の中でもこうした季節の食材にこだわったメニューに出会えるのはうれしい驚きです。
 
-グルテンフリーの基本について詳しく知りたい方は[グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法](/articles/gluten-free-guide/)をご覧ください。腸への効果については[東京・渋谷区のグルテンフリーカフェで始める夏バテ対策、腸に優しい食事習慣](/articles/glutenfree-summer-gut-health-gbc/)、ボリューム重視の一皿は[東京・渋谷北参道のグルテンフリーランチ｜国産豚ソテーワンプレートで美容も満腹も叶えた](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)でも紹介しています。甘いものが好きな方には[東京・北参道のグルテンフリースイーツが最高：千駄ヶ谷GBCの自家製スイーツプレート3種](/articles/glutenfree-sweets-plate/)もおすすめです。魚をメインにしたグルテンフリーランチは[東京・北参道のグルテンフリーランチ、鮮魚のグリルときのこが彩るオメガ3美肌ごはん](/articles/gluten-free-fish-lunch-omega3-kitasando-gbc/)でご紹介しています。
+グルテンフリーの基本について詳しく知りたい方は[グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法](/articles/gluten-free-guide/)をご覧ください。腸への効果については[東京・渋谷区のグルテンフリーカフェで始める夏バテ対策は腸に優しい食事習慣](/articles/glutenfree-summer-gut-health-gbc/)、ボリューム重視の一皿は[東京・北参道のグルテンフリーランチ｜国産豚ソテーワンプレート](/articles/pork-sote-glutenfree-oneplate-dagayasando-gbc/)でも紹介しています。甘いものが好きな方には[東京・北参道の自家製グルテンフリースイーツプレート3種が最高だった](/articles/glutenfree-sweets-plate/)もおすすめです。魚をメインにしたグルテンフリーランチは[東京・北参道のグルテンフリーランチは鮮魚のグリルときのこが彩るオメガ3美肌ごはん](/articles/gluten-free-fish-lunch-omega3-kitasando-gbc/)でご紹介しています。
 
 ## まとめ
 

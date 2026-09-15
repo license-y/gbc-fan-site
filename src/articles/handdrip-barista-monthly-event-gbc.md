@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京・北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ
+title: 東京・北参道のバリスタさんに教わるハンドドリップ体験は毎月開催で豆代のみ
 description: Green Beans Coffeeが毎月開催するハンドドリップ体験イベント。体験料は無料でコーヒー豆代のみ。北参道のバリスタさんが丁寧に淹れ方を伝授してくれるのでコーヒー初心者でも安心して参加できます。
 date: 2026-05-26
 tags:
@@ -47,7 +47,7 @@ Green Beans Coffeeでは毎月ハンドドリップ体験イベントが開催�
 
 ---
 
-バリスタさんの実演と手順説明を通じて自宅でもコーヒーを淹れる技術が身につく体験については[東京・渋谷で教わるハンドドリップ、自宅をサードプレイスにする体験](/articles/handdrip-home-thirdplace-event-gbc/)にまとめています。実際にイベントに参加した体験レポートは[北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)でご覧いただけます。毎月開催のイベントには自分でコーヒー豆を焙煎する[GBCの焙煎体験イベント](/articles/roasting-experience/)や[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)もあります。体験で飲むコーヒーの味をより深く知りたい方は[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひ。体験後の散歩には表参道・渋谷からもアクセスしやすい[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)がおすすめです。バリスタさんから教わるコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)でも詳しく書いています。
+バリスタさんの実演と手順説明を通じて自宅でもコーヒーを淹れる技術が身につく体験については[東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験](/articles/handdrip-home-thirdplace-event-gbc/)にまとめています。実際にイベントに参加した体験レポートは[北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)でご覧いただけます。毎月開催のイベントには自分でコーヒー豆を焙煎する[GBCの焙煎体験イベント](/articles/roasting-experience/)や[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)もあります。体験で飲むコーヒーの味をより深く知りたい方は[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひ。体験後の散歩には表参道・渋谷からもアクセスしやすい[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)がおすすめです。バリスタさんから教わるコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)でも詳しく書いています。
 
 ハンドドリップの基礎知識から道具・淹れ方のポイントまで体系的に学びたい方は[ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方](/articles/handdrip-guide/)もあわせてどうぞ。グリーンビーンズコーヒーの体験イベント全体像は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)でご覧いただけます。
 

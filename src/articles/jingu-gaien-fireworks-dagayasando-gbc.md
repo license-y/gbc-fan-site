@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京・北参道から歩く神宮外苑花火大会2026、当日ガイド
+title: 東京・北参道から歩く神宮外苑花火大会2026の当日ガイド
 description: 神宮外苑花火大会2026は8月8日土曜19時30分開催、荒天時は翌日順延です。東京・渋谷区ダガヤサンドウの北参道エリアからのアクセスや当日の混雑を避けながらグリーンビーンズコーヒーで過ごす方法をご紹介します。
 date: 2026-08-06
 tags:
@@ -50,7 +50,7 @@ thumbnailCaption: ※写真はイメージです
 
 花火が終わったあとの混雑を避けたい場合は店内で少し時間をつぶしてから帰路につくのも良い選択です。ペット同伴も可能なので愛犬と一緒に夏の夜を過ごす方にも向いています。
 
-ダガヤサンドウという街そのものについては[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)で詳しく紹介しています。国立競技場駅を起点にした散歩コースは[東京・国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)、明治神宮外苑からの散策は[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)もあわせてご覧ください。日が傾く時間帯の店内の過ごし方は[東京・ダガヤサンドウの夕涼み、日が傾く北参道を歩いてグリーンビーンズコーヒーへ](/articles/dusk-walk-kitasando-dagayasando-gbc/)、散歩とテイクアウトの組み合わせは[コーヒーを片手に歩く、東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)で紹介しています。グリーンビーンズコーヒーの体験イベントについて知りたい方は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)もあわせてどうぞ。
+ダガヤサンドウという街そのものについては[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)で詳しく紹介しています。国立競技場駅を起点にした散歩コースは[東京・国立競技場駅から歩くダガヤサンドウがサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)、明治神宮外苑からの散策は[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)もあわせてご覧ください。日が傾く時間帯の店内の過ごし方は[東京・ダガヤサンドウの夕涼みは日が傾く北参道を歩いてグリーンビーンズコーヒーへ](/articles/dusk-walk-kitasando-dagayasando-gbc/)、散歩とテイクアウトの組み合わせは[コーヒーを片手に歩く東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)で紹介しています。グリーンビーンズコーヒーの体験イベントについて知りたい方は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)もあわせてどうぞ。
 
 ## まとめ
 
