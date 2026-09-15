@@ -1,6 +1,6 @@
 ---
 layout: article.njk
-title: 東京旅行の到着直後に、渋谷・北参道のサードプレイスカフェでひと息
+title: 東京旅行の到着直後に渋谷・北参道のサードプレイスカフェでひと息
 description: 東京旅行の到着直後に休みたいなら、渋谷区北参道のGreen Beans Coffeeがおすすめです。東京駅から地下鉄で20分ほど、新宿から10分ほどのサードプレイスで旅の荷物を抱えたままゆっくりくつろげます。
 date: 2026-09-14
 tags:
@@ -40,7 +40,7 @@ thumbnailAlt: 青空を背景にそびえる東京駅丸の内駅舎の赤レン
 
 「東京にもこんな静かな場所があるんですね」。そう言われるたびに、日常的にサードプレイスとして使えているのはとても恵まれていることなのだと実感します。地元の方にとっての日常の一杯が、遠方から来た方にとっては旅の始まりを彩る特別なひと息になる。同じ空間でも過ごし方の意味合いが変わるのが面白いところです。
 
-東京駅から地下鉄でおよそ20分。新宿駅からのアクセスは[東京・新宿駅新南口も千駄ヶ谷？ダガヤサンドウのGreen Beans Coffeeへ徒歩圏内](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。到着後にそのまま観光へ向かいたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。ビジネス目的で東京に来た方には[東京出張の合間に、渋谷・北参道のサードプレイスカフェ](/articles/business-trip-thirdplace-kitasando-gbc/)も参考になります。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。
+東京駅から地下鉄でおよそ20分。新宿駅からのアクセスは[東京・新宿駅新南口も千駄ヶ谷？ダガヤサンドウのGreen Beans Coffeeへ徒歩圏内](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。到着後にそのまま観光へ向かいたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。ビジネス目的で東京に来た方には[東京出張の合間に渋谷・北参道のサードプレイスカフェ](/articles/business-trip-thirdplace-kitasando-gbc/)も参考になります。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。
 
 ## まとめ
 
