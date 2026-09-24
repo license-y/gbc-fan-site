@@ -51,7 +51,7 @@ thumbnailCaption: ※写真はイメージです
 
 東京・渋谷区千駄ヶ谷のGreen Beans Coffeeは日曜日にひとりの時間を過ごすサードプレイスとして最適です。読書や日記で一週間の気持ちを整理することで週明けを軽やかな気持ちで迎えられます。予定のない日曜日をどう過ごすか迷ったときはぜひ千駄ヶ谷のこのサードプレイスを思い出してみてください。
 
-サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で詳しく解説しています。コーヒーを飲みながら散策する過ごし方は[コーヒーを片手に歩く東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)、おしぼりのおもてなしから感じるやさしさは[コーヒー一杯のもてなしがうれしい。東京・千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)で紹介しています。グリーンビーンズコーヒーが「第3の場所」になっていく過程は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もあわせてお読みください。
+サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で詳しく解説しています。コーヒーを飲みながら散策する過ごし方は[コーヒーを片手に歩く東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)、おしぼりのおもてなしから感じるやさしさは[コーヒー一杯のもてなしがうれしい。東京・千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)で紹介しています。グリーンビーンズコーヒーが「第3の場所」になっていく過程は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのGBCが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もあわせてお読みください。ひとりの時間とは違う知人との優雅な過ごし方は[東京・千駄ヶ谷で知人と待ち合わせ優雅なカフェ時間](/articles/meetup-elegant-time-sendagaya-gbc/)でご紹介しています。
 
 ## よくある質問
 
