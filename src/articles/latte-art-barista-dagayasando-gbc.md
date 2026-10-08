@@ -53,7 +53,7 @@ Green Beans Coffeeがあるダガヤサンドウは渋谷区の中でも静け�
 
 カフェラテのほかにもグリーンビーンズコーヒーのサービスのひとつひとつに心遣いを感じます。[コーヒー一杯のもてなしがうれしい。東京・千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)では、布おしぼりのサービスについて書いています。
 
-静かな店内の雰囲気については[東京・ダガヤサンドウのカフェ店内で過ごすハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もあわせてご覧ください。
+静かな店内の雰囲気については[東京・ダガヤサンドウのカフェ店内で過ごすハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もあわせてご覧ください。ラテアートの技法や種類について基礎から知りたい方は[ラテアートとは？東京・北参道のバリスタさんに教わる描き方の基本](/articles/latte-art-guide/)でまとめています。
 
 ## まとめ
 
