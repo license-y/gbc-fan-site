@@ -6,7 +6,6 @@ tags:
   - articles
   - コーヒー
 pillar: true
-date: 2026-10-13
 thumbnail: /assets/images/articles/latte-art-guide-kitasando-gbc.jpg
 thumbnailAlt: 木製テーブルに花のように並んだ7杯のラテアート、リーフや動物モチーフなどさまざまな模様
 ---
