@@ -230,6 +230,7 @@
 - **og:description・twitter:description も 100〜120字厳守**（name="description" と同じ基準）
   - `name="description"` を長めに書いても `og:description` だけ短いケースが発生しやすい → 3つすべてを確認すること
   - ⚠️ 過去に `og:description` が60字のまま放置された事例あり（2026年6月修正）
+- **この100〜120字ルールは全角（日本語）基準**。英語版（`public/en/`）は全角基準をそのまま適用せず、英語の一般的なSEOガイドラインに合わせて**140〜160字（半角英数）**を目安とする（Googleの検索結果表示上限が概ね155〜160字程度のため）。英語版でも name="description" / og:description / twitter:description の**3つは必ず同一内容**にすること
 - 記事ページのメタタグ詳細（og:type / description字数 / Speakable / author）は `.claude/skills/article-writing/SKILL.md` を参照
 
 ## FAQセクション
@@ -258,16 +259,22 @@
 - バックナンバーは小さめのサムネイルグリッド（6号分）
 
 ## ファイル命名規則
+
+表紙・裏表紙は1枚の見開き画像（A4縦×2枚を横に並べたもの、縦横比約1.41:1）に合成してから保存する。ファイル名は日付を含まず、以下の固定名＋ローテーションで管理する:
+
 ```
-assets/images/magazine/YYYYMM-front.jpg
-assets/images/magazine/YYYYMM-back.jpg
+assets/images/magazine/latest.jpg    … 最新号（常にこの名前）
+assets/images/magazine/back-01.jpg   … バックナンバー1号前
+assets/images/magazine/back-02.jpg   … バックナンバー2号前
+...
+assets/images/magazine/back-06.jpg   … バックナンバー6号前（最古、6号分まで保持）
 ```
 
 ## 更新手順（毎月）
-1. PDFを画像に変換（表紙・裏表紙）
+1. PDFを画像に変換し、表紙・裏表紙を横並びの見開き1枚画像に合成
 2. 画像を最適化
-3. magazine/ フォルダに保存
-4. index.html の該当箇所を更新
+3. ファイルをローテーション：`back-06.jpg`を削除 → `back-05.jpg`〜`back-01.jpg`をそれぞれ1つ後ろ（`back-06.jpg`〜`back-02.jpg`）にリネーム → 旧`latest.jpg`を新`back-01.jpg`にリネーム → 新しい見開き画像を`latest.jpg`として保存
+4. index.html（メインサイト）の「最新号」「バックナンバー」セクションのimg src・alt文を更新
 
 ---
 
@@ -276,7 +283,7 @@ assets/images/magazine/YYYYMM-back.jpg
 ## 概要
 
 - **URL**: `/pets/`（サブディレクトリ）
-- **アンバサダー**: pome_ponkun
+- **アンバサダー**: Ayaka（本名表記。Instagramハンドルは `pome_ponkun`）。サイト内の人名表記（見出し・著者情報・JSON-LD Person）は「Ayaka」、SNSリンク・@メンションは「pome_ponkun」を使う
 - **目的**: ペット愛好家視点でGreen Beans Coffeeの魅力を伝える
 - **詳細仕様**: `project-docs/pets-content.md` を参照
 
@@ -284,7 +291,7 @@ assets/images/magazine/YYYYMM-back.jpg
 
 | 項目 | メインサイト | ペットサイト |
 |------|-------------|-------------|
-| アンバサダー | Kikumi | pome_ponkun |
+| アンバサダー | Kikumi | Ayaka（@pome_ponkun） |
 | Menuセクション | あり | なし（メインへリンク） |
 | GBC Magazine | あり | なし |
 | Pet Friendly | Experienceに含む | 独立セクション |

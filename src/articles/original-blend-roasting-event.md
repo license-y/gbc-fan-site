@@ -33,7 +33,7 @@ thumbnailAlt: オリジナルブレンドの焙煎体験イベントの様子
 
 豆一粒一粒の個性を引き出すため少量ずつ丁寧に焙煎しているとのこと。焙煎の過程で出るチャフ（豆の薄皮）もしっかり除去するため雑味のないクリアな味わいに仕上がるそうです。さらに焙煎ごとにその日の気温や湿度に合わせて微調整を加え常に安定した高品質を保っているとのことでした。
 
-![焙煎後のコーヒー豆](/assets/images/articles/original-blend-roasting-kitasando-gbc.jpg)
+<img src="/assets/images/articles/original-blend-roasting-kitasando-gbc.jpg" alt="焙煎後のコーヒー豆" loading="lazy" decoding="async">
 
 シルバーでスタイリッシュな焙煎機で自分の豆が仕上がっていく様子を見ているのは不思議な高揚感がありました。
 
@@ -49,7 +49,7 @@ thumbnailAlt: オリジナルブレンドの焙煎体験イベントの様子
 
 焙煎が終わったらその場でドリップして飲みます。
 
-![焙煎したコーヒーをカップで楽しむ](/assets/images/articles/original-blend-coffee.jpg)
+<img src="/assets/images/articles/original-blend-coffee.jpg" alt="焙煎したコーヒーをカップで楽しむ" loading="lazy" decoding="async">
 
 自分でブレンドして焙煎した一杯は格別においしく感じました。同じ豆でも組み合わせや焙煎の具合で風味が変わることを体験として実感できます。グリーンビーンズコーヒーでしかできないこの体験はコーヒーへの向き合い方を変えてくれます。完成したブレンドは持ち帰ることもできます。
 
