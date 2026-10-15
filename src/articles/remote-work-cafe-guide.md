@@ -2,6 +2,7 @@
 layout: article.njk
 title: カフェでのリモートワークとは？東京・千駄ヶ谷のWi-Fi電源の選び方
 description: カフェでのリモートワークとはカフェの座席を仕事場として使う働き方のことです。東京・渋谷区千駄ヶ谷のGreen Beans Coffeeで知ったWi-Fi・電源・座席環境の選び方を体験談でお伝えします。
+date: 2026-10-10
 tags:
   - articles
   - ビジネス
