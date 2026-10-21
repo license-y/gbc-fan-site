@@ -212,12 +212,13 @@ thumbnail: /assets/images/articles/〇〇.jpg
 
 ---
 
-## メインサイトのGBCガイド表示ルール
+## メインサイトのGBCガイド表示ルール（2026-10-21：自動化済み）
 
 - **常に最新ピラー記事2件を表示する**（`public/index.html` の `#articles` セクション内）
-- 新しいピラー記事を追加したら、`public/index.html` の GBCガイドカード2枚を最新2件に差し替えること
-- 対象箇所: `<!-- GBCガイド（ピラー記事） -->` のコメント以下 `grid grid-cols-1 sm:grid-cols-2` のグリッド内
-- 更新時は thumbnail・title・description・href を新記事に合わせて変更する
+- **⚠️ 手動更新は不要**：`scripts/update-gbc-guide.js` が全ピラー記事（`pillar: true`）を`date`降順でスキャンし、上位2件のカードHTML（thumbnail・title・description・href・alt）を自動生成して`public/index.html`に書き込む。`npm run build`の一部として自動実行される（`package.json`の`build`スクリプト参照）。単体実行は`npm run update-gbc-guide`
+- 対象箇所: `public/index.html`内の`<!-- GBC_GUIDE_CARDS_START -->`〜`<!-- GBC_GUIDE_CARDS_END -->`マーカーの間。**このブロックは自動生成されるため手動編集しないこと**（次回ビルドで上書きされる）
+- altテキストはタイトルの最初の「？」までを自動抽出する（例：「記念日とは？東京・北参道の〜」→「記念日とは？」）。タイトルに「？」が含まれない場合はタイトル全文がaltになる
+- **背景**：新ピラー記事を追加するたびに`public/index.html`を手動で書き換える運用だったが、2026-10-21に2つピラー記事（B01・C01）を追加した際に更新を失念し表示が2本分古いまま放置される不具合が発生した。これを受けてユーザー指示によりビルド時自動更新に変更した
 
 ---
 
