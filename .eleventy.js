@@ -12,6 +12,9 @@ const TAG_SLUGS = {
   "サードプレイス": "third-place",
   "カフェ店内": "cafe-interior",
   "ダガヤサンドウ": "dagayasando",
+  "記念日": "anniversary",
+  "旅行・観光": "travel-sightseeing",
+  "ランチ・食事": "lunch-dining",
 };
 
 // カテゴリ一覧ページ（tags/index.njk）用の個別description（100〜120字、カテゴリごとに内容を変えて重複コンテンツを回避）
@@ -26,6 +29,9 @@ const TAG_DESCRIPTIONS = {
   "サードプレイス": "東京・渋谷区ダガヤサンドウのサードプレイスGreen Beans Coffeeにまつわる記事一覧です。仕事や読書、ひとり時間、フリーランスの作業を過ごす第3の居場所としての魅力を3年通った視点で紹介します。",
   "カフェ店内": "東京・ダガヤサンドウのGreen Beans Coffee店内の様子にまつわる記事一覧です。焙煎機のある空間やカウンター席、トイレのアメニティまで、居心地のよさを支える店内のこだわりを詳しくお届けします。",
   "ダガヤサンドウ": "東京・渋谷区の隠れたカフェエリア、ダガヤサンドウにまつわる記事一覧です。Green Beans Coffeeを起点に鳩森八幡神社や国立競技場、明治神宮外苑周辺を歩いた散策記をアンバサダーKikumiが紹介します。",
+  "記念日": "東京・北参道のGreen Beans Coffeeで過ごす記念日にまつわる記事一覧です。誕生日や結婚記念日、ペットとの記念日まで、落ち着いた空間で特別な時間を過ごすための選び方や体験談をアンバサダーKikumiが紹介します。",
+  "旅行・観光": "東京・北参道の観光情報にまつわる記事一覧です。千駄ヶ谷や神宮外苑、国立競技場周辺の散策ルートや、Green Beans Coffeeでの休憩・コーヒー体験を交えた東京旅行の楽しみ方をアンバサダーKikumiがお届けします。",
+  "ランチ・食事": "東京・北参道千駄ヶ谷のGreen Beans Coffeeで楽しむランチや食事にまつわる記事一覧です。グルテンフリーメニューやランチミーティング、仕事帰りの食事利用など、カフェでの食事の過ごし方を紹介します。",
 };
 
 export default function (eleventyConfig) {
@@ -63,7 +69,7 @@ export default function (eleventyConfig) {
 
   // タグページ（カテゴリ一覧）の自動生成
   eleventyConfig.addCollection("tagList", function (collectionApi) {
-    const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","サードプレイス","カフェ店内","ダガヤサンドウ"];
+    const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","サードプレイス","カフェ店内","ダガヤサンドウ","記念日","旅行・観光","ランチ・食事"];
     const tagSet = new Set();
     collectionApi.getAll().forEach((item) => {
       (item.data.tags || []).forEach((tag) => {

@@ -129,6 +129,11 @@ permalink: /articles/index.html
       <button data-category="{{ cat }}" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
       {%- endfor %}
     </div>
+    <div class="flex justify-center gap-1.5">
+      {%- for cat in ["記念日", "旅行・観光", "ランチ・食事"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-[10px] px-2.5 py-1 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+      {%- endfor %}
+    </div>
   </div>
 
   <!-- カテゴリフィルター（PC：2段） -->
@@ -141,6 +146,11 @@ permalink: /articles/index.html
     </div>
     <div class="flex justify-center gap-2">
       {%- for cat in ["美容健康", "ビジネス", "サードプレイス", "カフェ店内", "ダガヤサンドウ"] %}
+      <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+      {%- endfor %}
+    </div>
+    <div class="flex justify-center gap-2">
+      {%- for cat in ["記念日", "旅行・観光", "ランチ・食事"] %}
       <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
       {%- endfor %}
     </div>
