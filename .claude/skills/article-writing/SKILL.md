@@ -368,6 +368,9 @@ Markdownでは1行の改行が無視されるため、**Q.**タイトルと回�
    | コーヒー（上記に該当しない場合） | specialty-coffee-guide |
    | カフェ店内 | cafe-interior-guide |
    | 体験・イベント | event-guide |
+   | 記念日 | anniversary-guide |
+   | 旅行・観光 | kitasando-travel-guide |
+   | ランチ・食事 | kitasando-lunch-guide |
 
    複数タグに該当する場合は表の上から優先し、その1本を必ずリンクする（最低1本のルール）。
 
