@@ -6,6 +6,7 @@ date: 2026-10-07
 tags:
   - articles
   - サードプレイス
+  - 記念日
 thumbnail: /assets/images/articles/anniversary-pet-celebration-sendagaya-gbc.jpg
 thumbnailAlt: 店内カウンターに飾られたHAPPY BIRTHDAYの文字とゴールドバルーン、愛犬の誕生日をお祝いする装飾
 ---
@@ -34,7 +35,7 @@ thumbnailAlt: 店内カウンターに飾られたHAPPY BIRTHDAYの文字とゴ�
 
 千駄ヶ谷駅から徒歩7分北参道駅から徒歩3分の場所にあります。新宿から10分ほど渋谷からも一本で着けるためお祝いのために遠出をする必要がありません。原宿や表参道で買い物をした帰りに立ち寄るお祝いの過ごし方もおすすめです。新宿御苑を散策したあとや鳩森八幡神社にお参りしたあとに合流するお祝いの集まりにも向いています。
 
-[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)では二人の記念日を特別に過ごす時間に触れましたが今回はもう少し幅を広げて人生の節目やペットの記念日まで受け止めてくれる懐の広さを伝えたいと思いました。気負わず立ち寄れる気軽さは[東京・新宿御苑から歩くダガヤサンドウの気軽なデートスポット](/articles/casual-date-spots-kitasando-gbc/)に通じるものがあり肩の力を抜いて過ごせる点もこの店の魅力です。こうした居心地の良さはまさに[サードプレイス](/articles/thirdplace-guide/)という考え方そのものだと感じています。
+[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)では二人の記念日を特別に過ごす時間に触れましたが今回はもう少し幅を広げて人生の節目やペットの記念日まで受け止めてくれる懐の広さを伝えたいと思いました。気負わず立ち寄れる気軽さは[東京・新宿御苑から歩くダガヤサンドウの気軽なデートスポット](/articles/casual-date-spots-kitasando-gbc/)に通じるものがあり肩の力を抜いて過ごせる点もこの店の魅力です。こうした居心地の良さはまさに[サードプレイス](/articles/thirdplace-guide/)という考え方そのものだと感じています。記念日に合うカフェの選び方そのものは[記念日とは？東京・北参道のカフェで過ごす特別な時間の選び方](/articles/anniversary-guide/)にまとめています。
 
 ## まとめ
 
