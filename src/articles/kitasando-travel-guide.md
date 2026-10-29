@@ -38,7 +38,7 @@ thumbnailCaption: ※写真はイメージです
 
 歩き疲れた足を休めながらハンドドリップのコーヒーを一杯味わうとそれだけで散策の満足感が増します。店内の席数は多くありませんが席の間隔にゆとりがあるため荷物の多い観光中でも落ち着いて座れるのがありがたいところです。地図アプリを広げて次の目的地を相談する観光客らしい方々を見かけることも増えました。
 
-鳩森八幡神社を訪れた体験は[東京・北参道から歩いて5分のパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)に詳しくまとめています。神宮外苑のいちょう並木については[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)をご覧ください。新宿御苑からの散策は[東京のパワースポット新宿御苑｜渋谷・ダガヤサンドウのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)国立競技場周辺は[東京・国立競技場駅から歩くダガヤサンドウがサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)で紹介しています。北参道という街そのものの魅力は[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)にまとめました。散策の合間にコーヒー体験まで楽しみたい方は[東京旅行でコーヒー体験を楽しむなら？北参道の自家焙煎カフェ](/articles/travel-coffee-experience-kitasando-gbc/)もご覧ください。
+鳩森八幡神社を訪れた体験は[東京・北参道から歩いて5分のパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)に詳しくまとめています。神宮外苑のいちょう並木については[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)をご覧ください。新宿御苑からの散策は[東京のパワースポット新宿御苑｜渋谷・ダガヤサンドウのサードプレイス巡り](/articles/shinjuku-gyoen-dagayasando-thirdplace/)国立競技場周辺は[東京・国立競技場駅から歩くダガヤサンドウがサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)で紹介しています。北参道という街そのものの魅力は[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)にまとめました。散策の合間にコーヒー体験まで楽しみたい方は[東京旅行でコーヒー体験を楽しむなら？北参道の自家焙煎カフェ](/articles/travel-coffee-experience-kitasando-gbc/)もご覧ください。国立競技場でのイベント帰りに休憩したい方は[国立競技場イベント後はどこで休む？北参道のカフェで過ごす旅](/articles/stadium-event-rest-travel-kitasando-gbc/)もあわせてどうぞ。
 
 ## まとめ
 

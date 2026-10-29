@@ -42,7 +42,7 @@ thumbnailCaption: ※写真はイメージです
 
 特別なプランや演出があるわけではありません。けれど落ち着いた空間とコーヒーの一杯だけで十分特別な時間になる。そう思わせてくれる店だと通い続けるなかで感じています。
 
-実際に記念日をこのカフェで過ごした話は[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)でも紹介しています。愛犬の記念日を一緒に祝いたい人は[誕生日から還暦祝いペットの記念日まで東京千駄ヶ谷で祝うサードプレイス](/articles/anniversary-pet-celebration-sendagaya-gbc/)も参考にしてみてください。デート利用を考えている人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も近い視点で書いています。店内の居心地そのものについては[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)で詳しく解説しました。
+実際に記念日をこのカフェで過ごした話は[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)でも紹介しています。愛犬の記念日を一緒に祝いたい人は[誕生日から還暦祝いペットの記念日まで東京千駄ヶ谷で祝うサードプレイス](/articles/anniversary-pet-celebration-sendagaya-gbc/)も参考にしてみてください。デート利用を考えている人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も近い視点で書いています。店内の居心地そのものについては[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)で詳しく解説しました。友人同士の卒業祝いや送別会という記念日の過ごし方は[卒業祝い・送別会は北参道のカフェで？友人との記念日の過ごし方](/articles/graduation-farewell-anniversary-kitasando-gbc/)で紹介しています。
 
 ## まとめ
 
