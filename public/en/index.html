@@ -1083,14 +1083,45 @@
       </p>
 
       <!-- 記事リスト -->
-      <div id="articles-grid" class="max-w-3xl mx-auto mb-12 border border-[#E8E0D5] rounded-xl overflow-hidden bg-white max-h-[280px] overflow-y-auto" data-aos="fade-up">
+      <div id="articles-grid" class="max-w-3xl mx-auto mb-12 flex flex-col gap-3 max-h-[440px] overflow-y-auto pr-1" data-aos="fade-up">
         <!-- 記事リストはJSで動的に生成 -->
         <noscript>
-          <ul style="padding:1rem;list-style:none;margin:0">
-            <li><a href="/en/articles/discover-kitasando-tokyo/">Discover Kitasando: A Local Guide to Tokyo</a></li>
-            <li><a href="/en/articles/dog-friendly-cafe-tokyo/">Where to Find Indoor Dog-Friendly Cafes in Tokyo</a></li>
-            <li><a href="/en/articles/japanese-hand-drip-coffee-tokyo/">Where to Experience Japanese Hand-Drip Coffee in Tokyo</a></li>
-          </ul>
+          <a href="/en/articles/discover-kitasando-tokyo/" class="flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden">
+            <div class="relative w-28 sm:w-32 flex-shrink-0 overflow-hidden self-stretch">
+              <img src="/assets/images/about-shop-front.jpg" alt="Discover Kitasando: A Local Guide to Tokyo" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" decoding="async">
+            </div>
+            <div class="p-4 flex flex-col justify-between flex-1 min-w-0">
+              <div>
+                <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">Tokyo Travel</span>
+                <h3 class="text-sm sm:text-base font-bold text-[#2D2A26] leading-snug mt-2 mb-1">Discover Kitasando: A Local Guide to Tokyo</h3>
+              </div>
+              <p class="text-xs text-[#B0A090] mt-2">November 1, 2026</p>
+            </div>
+          </a>
+          <a href="/en/articles/dog-friendly-cafe-tokyo/" class="flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden">
+            <div class="relative w-28 sm:w-32 flex-shrink-0 overflow-hidden self-stretch">
+              <img src="/assets/images/experience-pet-1.jpg" alt="Where to Find Indoor Dog-Friendly Cafes in Tokyo" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" decoding="async">
+            </div>
+            <div class="p-4 flex flex-col justify-between flex-1 min-w-0">
+              <div>
+                <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">Pet-Friendly Tokyo</span>
+                <h3 class="text-sm sm:text-base font-bold text-[#2D2A26] leading-snug mt-2 mb-1">Where to Find Indoor Dog-Friendly Cafes in Tokyo</h3>
+              </div>
+              <p class="text-xs text-[#B0A090] mt-2">October 31, 2026</p>
+            </div>
+          </a>
+          <a href="/en/articles/japanese-hand-drip-coffee-tokyo/" class="flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden">
+            <div class="relative w-28 sm:w-32 flex-shrink-0 overflow-hidden self-stretch">
+              <img src="/assets/images/menu-coffee.jpg" alt="Where to Experience Japanese Hand-Drip Coffee in Tokyo" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" decoding="async">
+            </div>
+            <div class="p-4 flex flex-col justify-between flex-1 min-w-0">
+              <div>
+                <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">Tokyo Coffee</span>
+                <h3 class="text-sm sm:text-base font-bold text-[#2D2A26] leading-snug mt-2 mb-1">Where to Experience Japanese Hand-Drip Coffee in Tokyo</h3>
+              </div>
+              <p class="text-xs text-[#B0A090] mt-2">October 30, 2026</p>
+            </div>
+          </a>
         </noscript>
       </div>
 
@@ -2085,15 +2116,23 @@
             grid.innerHTML = '<p class="text-center text-secondary py-8 text-sm">Articles coming soon.</p>';
             return;
           }
-          grid.innerHTML = articles.map(function(a, i) {
+          grid.innerHTML = articles.map(function(a) {
             const tag = (a.tags || [])[0] || '';
-            const border = i < articles.length - 1 ? ' border-b border-[#E8E0D5]' : '';
-            return '<a href="' + a.url + '" class="group flex items-center justify-between px-6 py-4 hover:bg-[#FAF8F5] transition-colors duration-150' + border + '">'
-              + '<span class="text-sm text-[#2D2A26] group-hover:text-[#4A3728] transition leading-snug pr-4">' + a.title + '</span>'
-              + '<span class="flex flex-col items-end gap-0.5 text-xs text-[#B0A090] flex-shrink-0">'
-              + (tag ? '<span class="whitespace-nowrap">' + tag + '</span>' : '')
-              + '<span class="whitespace-nowrap">' + a.date + '</span>'
-              + '</span>'
+            const img = a.thumbnail
+              ? '<div class="relative w-28 sm:w-32 flex-shrink-0 overflow-hidden self-stretch">'
+                + '<img src="' + a.thumbnail + '" alt="' + a.title + '" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">'
+                + '</div>'
+              : '';
+            return '<a href="' + a.url + '" class="group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">'
+              + img
+              + '<div class="p-4 flex flex-col justify-between flex-1 min-w-0">'
+              + '<div>'
+              + (tag ? '<span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">' + tag + '</span>' : '')
+              + '<h3 class="text-sm sm:text-base font-bold text-[#2D2A26] group-hover:text-[#4A3728] transition leading-snug mt-2 mb-1">' + a.title + '</h3>'
+              + '<p class="text-xs text-[#8B7355] line-clamp-2 hidden sm:block">' + (a.description || '') + '</p>'
+              + '</div>'
+              + '<p class="text-xs text-[#B0A090] mt-2">' + a.date + '</p>'
+              + '</div>'
               + '</a>';
           }).join('');
         })
