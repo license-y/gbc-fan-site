@@ -51,7 +51,7 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 
 ## まとめ
 
-Green Beans Coffeeのハンドドリップ体験は豆の選別・抽出技術・焙煎見学・テイクアウトコーヒーまでが豆の購入代金のみで体験できるイベントです。東京・渋谷区の表参道・原宿・新宿からもアクセスしやすく代々木公園や国立競技場にも近い北参道の自家焙煎コーヒー専門店ならではの内容でコーヒー初心者から愛好家まで楽しめます。次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
+Green Beans Coffeeのハンドドリップ体験は豆の選別・抽出技術・焙煎見学・テイクアウトコーヒーまでが豆の購入代金のみで体験できるイベントです。東京・渋谷区の表参道・原宿・新宿からもアクセスしやすく代々木公園や国立競技場にも近い北参道の自家焙煎コーヒー専門店ならではの内容でコーヒー初心者から愛好家まで楽しめます。選別した豆がどの産地のものか気になる方は[コーヒー豆の産地別特徴とは？東京・北参道で知ったアジア・アフリカ・中南米の違い](/articles/coffee-origin-guide/)もあわせてご覧ください。次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
 
 ## よくある質問
 

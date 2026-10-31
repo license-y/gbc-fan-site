@@ -53,7 +53,7 @@ Green Beans Coffeeでは毎月ハンドドリップ体験イベントが開催�
 
 ## まとめ
 
-Green Beans Coffeeのハンドドリップ体験イベントはコーヒー豆代のみで参加できる毎月開催のイベントです。北参道駅徒歩3分・千駄ヶ谷駅徒歩7分のダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店のバリスタさんが丁寧に淹れ方を教えてくれます。渋谷・新宿・表参道・代々木からもアクセスしやすく代々木公園や東京体育館の近くに位置するグリーンビーンズコーヒーで自分だけのコーヒーライフを始めるきっかけにしてみてください。最新の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
+Green Beans Coffeeのハンドドリップ体験イベントはコーヒー豆代のみで参加できる毎月開催のイベントです。北参道駅徒歩3分・千駄ヶ谷駅徒歩7分のダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店のバリスタさんが丁寧に淹れ方を教えてくれます。渋谷・新宿・表参道・代々木からもアクセスしやすく代々木公園や東京体育館の近くに位置するグリーンビーンズコーヒーで自分だけのコーヒーライフを始めるきっかけにしてみてください。バリスタさんの技術に興味を持った方は[ラテアートとは？東京・北参道のバリスタさんに教わる描き方の基本](/articles/latte-art-guide/)もぜひ読んでみてください。最新の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でご確認ください。
 
 ## よくある質問
 
