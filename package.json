@@ -10,7 +10,8 @@
     "check-reviews": "node scripts/check-review-consistency.js",
     "dev": "eleventy --serve --input=src --output=public",
     "update-gbc-guide": "node scripts/update-gbc-guide.js",
-    "build": "node scripts/update-date.js && node scripts/update-gbc-guide.js && node scripts/check-review-consistency.js && eleventy --input=src --output=public && pagefind --site public --output-path public/pagefind"
+    "update-gbc-guide-en": "node scripts/update-gbc-guide-en.js",
+    "build": "node scripts/update-date.js && node scripts/update-gbc-guide.js && node scripts/update-gbc-guide-en.js && node scripts/check-review-consistency.js && eleventy --input=src --output=public && pagefind --site public --output-path public/pagefind"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
