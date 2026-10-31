@@ -161,11 +161,17 @@ permalink: /articles/index.html
     <span class="text-[#B0A090]">カテゴリ別ページ:</span>
     {%- for cat in collections.tagList.slice(0, 8) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+    {%- if cat == "ビジネス" %}
+    <span class="basis-full h-0 md:hidden"></span>
+    {%- endif %}
     {%- endfor %}
   </div>
   <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 mb-8 text-xs text-[#8B7355]">
     {%- for cat in collections.tagList.slice(8) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+    {%- if cat == "記念日" %}
+    <span class="basis-full h-0 md:hidden"></span>
+    {%- endif %}
     {%- endfor %}
   </div>
 
