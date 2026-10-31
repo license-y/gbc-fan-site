@@ -1,7 +1,7 @@
 ---
 title: "What Is Dagayasando? Tokyo's Hidden Cafe Neighborhood"
 description: "Dagayasando is the local nickname for the quiet area between Kitasando and Sendagaya, Tokyo. Here is what defines it, and what makes it worth visiting."
-date: 2026-11-06
+date: 2026-11-01
 category: "Tokyo Travel"
 pillar: true
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Where to Experience Japanese Hand-Drip Coffee in Tokyo"
 description: "Green Beans Coffee in Kitasando, Shibuya serves hand-drip coffee from 30+ house-roasted beans, poured to match your mood in a quiet third place near Sendagaya."
-date: 2026-10-30
+date: 2026-10-28
 category: "Tokyo Coffee"
 tags:
   - en-articles

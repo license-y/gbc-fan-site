@@ -1,7 +1,7 @@
 ---
 title: "What Is Specialty Coffee? How It Differs from Regular Coffee"
 description: "Specialty coffee is high-grade coffee scored above 80 points for quality and traceability. Here is what sets it apart, and where to try it in Tokyo."
-date: 2026-11-03
+date: 2026-10-29
 category: "Tokyo Coffee"
 pillar: true
 tags:

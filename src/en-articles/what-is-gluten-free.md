@@ -1,7 +1,7 @@
 ---
 title: "What Is Gluten-Free? A Beginner's Guide to Dining Gluten-Free"
 description: "Gluten-free means avoiding gluten, a protein found in wheat, barley, and rye, usually for a medical reason or a personal dietary preference."
-date: 2026-11-07
+date: 2026-11-02
 category: "Food & Lifestyle"
 pillar: true
 tags:

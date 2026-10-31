@@ -1,7 +1,7 @@
 ---
 title: "What Is Hand-Drip Coffee? A Beginner's Guide to Pour-Over"
 description: "Hand-drip coffee is a slow, manual brewing method using a kettle and filter. Here is what it means, how it is made, and where to try it in Kitasando, Tokyo."
-date: 2026-11-02
+date: 2026-10-28
 category: "Tokyo Coffee"
 pillar: true
 tags:

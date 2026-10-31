@@ -1,7 +1,7 @@
 ---
 title: "How to Choose a Pet-Friendly Cafe in Tokyo"
 description: "Choosing a pet-friendly cafe in Tokyo means checking indoor access, seating rules, and amenities for your dog. Here is what to look for before you go."
-date: 2026-11-04
+date: 2026-10-30
 category: "Pet-Friendly Tokyo"
 pillar: true
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Where to Find Indoor Dog-Friendly Cafes in Tokyo"
 description: "Green Beans Coffee in Kitasando, Shibuya welcomes dogs of any size indoors, with water bowls on loan and pet photo days for a relaxed Tokyo cafe visit."
-date: 2026-10-31
+date: 2026-10-30
 category: "Pet-Friendly Tokyo"
 tags:
   - en-articles

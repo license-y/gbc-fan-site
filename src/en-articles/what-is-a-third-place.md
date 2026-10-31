@@ -1,7 +1,7 @@
 ---
 title: "What Is a Third Place? Finding Yours in Tokyo"
 description: "A third place is a space outside home and work where you can relax without obligation. Here is the concept explained, and where to find one in Tokyo."
-date: 2026-11-05
+date: 2026-10-31
 category: "Third Place Tokyo"
 pillar: true
 tags:
