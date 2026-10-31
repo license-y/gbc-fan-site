@@ -184,12 +184,12 @@ permalink: /articles/index.html
   <!-- カテゴリ別ページへの直接リンク（PC：2段、クロール可能なSSRタグページへの導線） -->
   <div class="hidden md:flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-[#8B7355]">
     <span class="text-[#B0A090]">カテゴリ別ページ:</span>
-    {%- for cat in collections.tagList.slice(0, 8) %}
+    {%- for cat in collections.tagList.slice(0, 6) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
     {%- endfor %}
   </div>
   <div class="hidden md:flex flex-wrap justify-center gap-x-3 gap-y-1 mb-8 text-xs text-[#8B7355]">
-    {%- for cat in collections.tagList.slice(8) %}
+    {%- for cat in collections.tagList.slice(6) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
     {%- endfor %}
   </div>
