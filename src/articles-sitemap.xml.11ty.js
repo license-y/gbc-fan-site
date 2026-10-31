@@ -3,21 +3,7 @@ export const data = {
   eleventyExcludeFromCollections: true,
 };
 
-// .eleventy.js の TAG_SLUGS と同じ対応表（タグ名→スラッグ）
-const TAG_SLUGS = {
-  "コーヒー": "coffee",
-  "焙煎": "roasting",
-  "グルテンフリー": "gluten-free",
-  "体験・イベント": "events",
-  "ペット": "pet",
-  "美容健康": "beauty-health",
-  "ビジネス": "business",
-  "サードプレイス": "third-place",
-  "カフェ店内": "cafe-interior",
-  "ダガヤサンドウ": "dagayasando",
-};
-
-export function render({ collections }) {
+export function render({ collections, tagSlugs }) {
   const base = "https://greenbeanscoffeeambassador.com";
   const today = new Date().toISOString().split("T")[0];
 
@@ -31,8 +17,10 @@ export function render({ collections }) {
   </url>`;
   });
 
+  // タグ→スラッグ対応表は .eleventy.js の addGlobalData("tagSlugs", ...) をそのまま参照する
+  // （このファイル独自にコピーを持つと同期漏れで壊れたURLになるため、必ずグローバルデータを使う）
   const tagEntries = (collections.tagList || []).map((tag) => {
-    const slug = TAG_SLUGS[tag] || tag;
+    const slug = tagSlugs[tag] || tag;
     return `  <url>
     <loc>${base}/articles/tags/${slug}/</loc>
     <lastmod>${today}</lastmod>
