@@ -1,0 +1,263 @@
+---
+layout: en-articles-base.njk
+title: Tokyo Coffee, Travel & Lifestyle Articles | Green Beans Coffee Ambassador Site
+description: Guides to specialty coffee, pet-friendly cafes, third places and travel experiences around Kitasando and Sendagaya, Tokyo, written by Green Beans Coffee ambassador Kikumi.
+ogType: website
+permalink: /en/articles/index.html
+---
+
+<style>
+  /* Pagefind UI カスタマイズ */
+  :root {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: #4A3728;
+    --pagefind-ui-text: #2D2A26;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #E8E0D5;
+    --pagefind-ui-tag: #FAF8F5;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 9999px;
+    --pagefind-ui-font: 'Lato', sans-serif;
+  }
+  .pagefind-ui__search-input {
+    font-size: 0.875rem !important;
+  }
+  .pagefind-ui__result-title {
+    color: #4A3728 !important;
+  }
+  .pagefind-ui__result-excerpt {
+    font-size: 0.8rem !important;
+    color: #8B7355 !important;
+  }
+  mark {
+    background: #F5EDD8 !important;
+    color: #4A3728 !important;
+    border-radius: 2px;
+    padding: 0 2px;
+  }
+</style>
+
+<main class="max-w-4xl mx-auto px-4 py-12">
+
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl font-bold text-[#4A3728] mb-2">Articles</h1>
+    <p class="text-sm text-[#8B7355]">Coffee, pet-friendly travel, third places and gluten-free guides from Green Beans Coffee</p>
+  </div>
+
+  <!-- 検索ボックス -->
+  <div id="search" class="mb-8 max-w-lg mx-auto"></div>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({
+          element: '#search',
+          showSubResults: false,
+          showImages: false,
+          translations: {
+            placeholder: 'Search articles...',
+            zero_results: 'No articles found for "[SEARCH_TERM]"'
+          }
+        });
+      }
+    });
+  </script>
+
+  {%- if collections.enArticles.length == 0 %}
+  <p class="text-center text-[#8B7355] py-20">Articles coming soon.</p>
+  {%- else %}
+
+  <!-- GBC Guides（ピラー記事） -->
+  {%- if collections.enPillars and collections.enPillars.length > 0 %}
+  <div class="mb-10">
+    <div class="flex items-center gap-2 mb-4">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <h2 class="text-base font-bold text-[#4A3728]">GBC Guides</h2>
+      <span class="text-xs text-[#B0A090]">— a starting point for each topic</span>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-3" id="pillars-grid">
+      {%- for post in collections.enPillars %}
+      <a href="{{ post.url }}" class="pillar-card group flex flex-col bg-[#FDF8F0] rounded-xl border border-[#C9A86C] overflow-hidden hover:shadow-md transition-shadow duration-200{% if loop.index > 6 %} hidden{% endif %}">
+        {%- if post.data.thumbnail %}
+        <div class="h-24 overflow-hidden">
+          <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+        </div>
+        {%- endif %}
+        <div class="p-4">
+          <span class="text-xs bg-[#C9A86C] text-white rounded-full px-2.5 py-0.5 mb-2 inline-block">Guide</span>
+          <h3 class="text-sm font-bold text-[#2D2A26] group-hover:text-[#4A3728] leading-snug mb-1">{{ post.data.title }}</h3>
+          {%- if post.data.description %}
+          <p class="text-xs text-[#8B7355] line-clamp-2 mt-1">{{ post.data.description }}</p>
+          {%- endif %}
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+    {%- if collections.enPillars.length > 6 %}
+    <div class="text-center mt-4" id="pillars-more-wrap">
+      <button id="pillars-more-btn" onclick="showAllPillars()" class="text-xs text-[#8B7355] border border-[#C9A86C] rounded-full px-4 py-1.5 hover:bg-[#FDF8F0] transition-colors duration-200">
+        Show more ({{ collections.enPillars.length - 6 }})
+      </button>
+    </div>
+    <script>
+      function showAllPillars() {
+        document.querySelectorAll('.pillar-card.hidden').forEach(function(el) { el.classList.remove('hidden'); });
+        document.getElementById('pillars-more-wrap').style.display = 'none';
+      }
+    </script>
+    {%- endif %}
+  </div>
+  <hr class="border-[#E8E0D5] mb-8">
+  {%- endif %}
+
+  <!-- カテゴリフィルター -->
+  <div class="flex flex-wrap justify-center gap-1.5 md:gap-2 mb-8" id="category-filters">
+    <button data-category="all" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#4A3728] bg-[#4A3728] text-white">All</button>
+    {%- for cat in ["Tokyo Coffee", "Pet-Friendly Tokyo", "Third Place Tokyo", "Tokyo Travel", "Food & Lifestyle"] %}
+    <button data-category="{{ cat }}" class="filter-btn text-xs px-3 py-1.5 rounded-full border border-[#D0C4B0] text-[#8B7355] hover:border-[#4A3728] hover:text-[#4A3728]">{{ cat }}</button>
+    {%- endfor %}
+  </div>
+
+  <!-- カテゴリ別ページへの直接リンク（クロール可能なSSRタグページへの導線） -->
+  <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 mb-8 text-xs text-[#8B7355]">
+    <span class="text-[#B0A090]">Browse by category:</span>
+    {%- for cat in collections.enTagList %}
+    <a href="/en/articles/tags/{{ cat | enTagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+    {%- endfor %}
+  </div>
+
+  <!-- 最新記事セクションヘッダー -->
+  <div class="flex items-center gap-2 mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <h2 class="text-base font-bold text-[#4A3728]">Latest Articles</h2>
+    <span class="text-xs text-[#B0A090]">— notes from Dagayasando</span>
+  </div>
+
+  <!-- 記事リスト -->
+  <div class="flex flex-col gap-4" id="articles-list">
+    {%- for post in collections.enArticles %}
+    {%- set postTags = [] %}
+    {%- for tag in post.data.tags %}
+      {%- if tag != "en-articles" %}
+        {%- set postTags = (postTags.push(tag), postTags) %}
+      {%- endif %}
+    {%- endfor %}
+    <a href="{{ post.url }}"
+      class="article-card group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200"
+      data-tags="{{ postTags | join(',') }}">
+
+      <!-- サムネイル -->
+      {%- if post.data.thumbnail %}
+      <div class="relative w-32 sm:w-44 flex-shrink-0 overflow-hidden self-stretch">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      </div>
+      {%- else %}
+      <div class="w-32 sm:w-44 h-28 sm:h-32 flex-shrink-0 bg-[#FAF8F5] flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D0C4B0" stroke-width="1.5"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2z"/></svg>
+      </div>
+      {%- endif %}
+
+      <!-- テキスト -->
+      <div class="p-4 sm:p-5 flex flex-col justify-between flex-1 min-w-0">
+        <div>
+          {%- if postTags.length > 0 %}
+          <div class="flex flex-wrap gap-1 mb-2">
+            {%- for tag in postTags %}
+            <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">{{ tag }}</span>
+            {%- endfor %}
+          </div>
+          {%- endif %}
+          <h2 class="text-sm sm:text-base font-bold text-[#2D2A26] group-hover:text-[#4A3728] leading-snug mb-1">{{ post.data.title }}</h2>
+          {%- if post.data.description %}
+          <p class="text-xs text-[#8B7355] line-clamp-2 hidden sm:block">{{ post.data.description }}</p>
+          {%- endif %}
+        </div>
+        <p class="text-xs text-[#B0A090] mt-2">{{ post.date | dateEn }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+
+  <!-- 該当記事なし -->
+  <p id="no-results" class="hidden text-center text-[#8B7355] py-12 text-sm">No articles in this category yet.</p>
+
+  <!-- もっと見るボタン -->
+  <div id="load-more-wrap" class="hidden text-center mt-8">
+    <button id="load-more-btn" class="px-8 py-3 rounded-full border border-[#4A3728] text-[#4A3728] text-sm hover:bg-[#4A3728] hover:text-white transition-colors duration-200">
+      Show more
+    </button>
+    <p id="load-more-count" class="text-xs text-[#B0A090] mt-2"></p>
+  </div>
+
+  {%- endif %}
+
+</main>
+
+<script>
+  var ITEMS_PER_PAGE = 20;
+  var currentCategory = 'all';
+  var visibleCount = ITEMS_PER_PAGE;
+
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = Array.from(document.querySelectorAll('.article-card'));
+  var noResults = document.getElementById('no-results');
+  var loadMoreWrap = document.getElementById('load-more-wrap');
+  var loadMoreBtn = document.getElementById('load-more-btn');
+  var loadMoreCount = document.getElementById('load-more-count');
+
+  if (noResults) {
+
+  function getFiltered() {
+    return cards.filter(function(card) {
+      if (currentCategory === 'all') return true;
+      var tags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+      return tags.includes(currentCategory);
+    });
+  }
+
+  function renderCards() {
+    var filtered = getFiltered();
+    cards.forEach(function(card) { card.style.display = 'none'; });
+    filtered.slice(0, visibleCount).forEach(function(card) { card.style.display = ''; });
+
+    var remaining = filtered.length - visibleCount;
+    if (remaining > 0) {
+      loadMoreWrap.classList.remove('hidden');
+      loadMoreCount.textContent = remaining + ' more';
+    } else {
+      loadMoreWrap.classList.add('hidden');
+    }
+
+    noResults.classList.toggle('hidden', filtered.length > 0);
+  }
+
+  // カテゴリフィルター
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      currentCategory = btn.dataset.category;
+      visibleCount = ITEMS_PER_PAGE;
+
+      buttons.forEach(function(b) {
+        b.classList.remove('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
+        b.classList.add('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
+      });
+      document.querySelectorAll('.filter-btn[data-category="' + currentCategory + '"]').forEach(function(b) {
+        b.classList.remove('border-[#D0C4B0]', 'text-[#8B7355]', 'hover:text-[#4A3728]', 'hover:border-[#4A3728]');
+        b.classList.add('bg-[#4A3728]', 'text-white', 'border-[#4A3728]');
+      });
+
+      renderCards();
+    });
+  });
+
+  // もっと見るボタン
+  loadMoreBtn.addEventListener('click', function() {
+    visibleCount += ITEMS_PER_PAGE;
+    renderCards();
+  });
+
+  // 初期表示
+  renderCards();
+  }
+</script>

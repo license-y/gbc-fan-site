@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LPQZLGFJVX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LPQZLGFJVX');
+  </script>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{% if tags %}{{ tags | join(', ') }}, {% endif %}Green Beans Coffee, Kitasando cafe, Sendagaya cafe, Dagayasando, specialty coffee Tokyo, pet-friendly cafe Tokyo, gluten-free cafe Tokyo, third place Tokyo">
+
+  <!-- OGP -->
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:type" content="{{ ogType if ogType else 'article' }}">
+  <meta property="og:site_name" content="Green Beans Coffee Ambassador Site">
+  <meta property="og:url" content="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  {% if thumbnail %}
+  <meta property="og:image" content="https://greenbeanscoffeeambassador.com{{ thumbnail }}">
+  {% else %}
+  <meta property="og:image" content="https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg">
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  {% if thumbnail %}
+  <meta name="twitter:image" content="https://greenbeanscoffeeambassador.com{{ thumbnail }}">
+  {% else %}
+  <meta name="twitter:image" content="https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg">
+  {% endif %}
+
+  <link rel="canonical" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  <link rel="alternate" hreflang="en" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  <link rel="alternate" hreflang="x-default" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <!-- CDN: Tailwind CSS v4 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- CDN: Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='all'" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Lato', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+    html { scroll-behavior: smooth; overflow-x: hidden; }
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4A3728',
+            secondary: '#8B7355',
+            accent: '#C9A86C',
+            background: '#FAF8F5',
+            text: '#2D2A26',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- JSON-LD: @graph（CafeOrCoffeeShop + BreadcrumbList + BlogPosting + FAQPage を1本に統合） -->
+  {% set faqItems = content | extractFAQ %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CafeOrCoffeeShop",
+        "name": "Green Beans Coffee",
+        "alternateName": "グリーンビーンズコーヒー",
+        "description": "A pet-friendly specialty coffee shop in Kitasando / Sendagaya, Tokyo. No storefront sign — a hidden gem in the Dagayasando neighborhood. Gluten-free menu available, 30+ house-roasted beans.",
+        "url": "https://greenbeanscoffeeambassador.com/en/",
+        "telephone": "+81-3-6447-0681",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3-30-1 Sendagaya, RC APARTMENT 1F",
+          "addressLocality": "Shibuya",
+          "addressRegion": "Tokyo",
+          "postalCode": "151-0051",
+          "addressCountry": "JP"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 35.6775167,
+          "longitude": 139.7078346
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "10:30",
+          "closes": "18:30"
+        },
+        "priceRange": "¥1,000–¥2,999",
+        "servesCuisine": ["Coffee","Gluten-Free","Cafe"],
+        "amenityFeature": [
+          {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Power outlets", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Pets welcome indoors", "value": true},
+          {"@type": "LocationFeatureSpecification", "name": "Takeout available", "value": true}
+        ],
+        "paymentAccepted": ["Cash","Credit Card","IC Card","QR Code Payment"],
+        "currenciesAccepted": "JPY",
+        "inLanguage": "en",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "596",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "4.8",
+            "bestRating": "5"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "Google Maps"
+          },
+          "url": "https://www.google.com/maps/place/グリーンビーンズコーヒー/@35.677521,139.7052597,17z"
+        },
+        "hasMap": "https://www.google.com/maps/place/Green+Beans+Coffee/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr",
+        "sameAs": [
+          "https://www.instagram.com/green.beanscoffee",
+          "https://www.youtube.com/@greenbeanscoffee9",
+          "https://tabelog.com/tokyo/A1309/A130901/13277423",
+          "https://www.tripadvisor.jp/Restaurant_Review-g14131014-d33930279-Reviews-Green_Beans_Coffee-Sendagaya_Shibuya_Tokyo_Tokyo_Prefecture_Kanto.html"
+        ]
+      },
+      {
+        "@type": "Organization",
+        "name": "Green Beans Coffee",
+        "alternateName": "グリーンビーンズコーヒー",
+        "url": "https://greenbeanscoffeeambassador.com/en/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://greenbeanscoffeeambassador.com/assets/images/hero_bg-1.jpg",
+          "width": 1280,
+          "height": 853
+        },
+        "description": "A house-roasted specialty coffee shop in Sendagaya, Shibuya, Tokyo. A pet-friendly cafe with no storefront sign. Gluten-free menu available.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "3-30-1 Sendagaya, RC APARTMENT 1F",
+          "addressLocality": "Shibuya",
+          "addressRegion": "Tokyo",
+          "postalCode": "151-0051",
+          "addressCountry": "JP"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+81-3-6447-0681",
+          "contactType": "customer service",
+          "availableLanguage": ["Japanese", "English"]
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Tokyo"
+        },
+        "knowsAbout": ["Specialty Coffee", "House Roasting", "Gluten-Free", "Pet-Friendly Cafes", "Hand-Drip Coffee"],
+        "sameAs": [
+          "https://www.instagram.com/green.beanscoffee",
+          "https://www.youtube.com/@greenbeanscoffee9",
+          "https://tabelog.com/tokyo/A1309/A130901/13277423"
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://greenbeanscoffeeambassador.com/en/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://greenbeanscoffeeambassador.com/en/articles/"
+          }{% if title and page.url != "/en/articles/" %},
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ title | dump | safe }},
+            "item": "https://greenbeanscoffeeambassador.com{{ page.url }}"
+          }{% endif %}
+        ]
+      }
+      {% if date %},
+      {
+        "@type": "BlogPosting",
+        "headline": {{ title | dump | safe }},
+        "description": {{ description | dump | safe }},
+        "datePublished": "{{ date | dateISO }}",
+        "dateModified": "{{ (updated or date) | dateISO }}",
+        "inLanguage": "en",
+        "author": {
+          "@type": "Person",
+          "@id": "https://greenbeanscoffeeambassador.com/en/#ambassador-{{ (author or 'kikumi') | lower }}",
+          "name": "{{ author or 'Kikumi' }}",
+          "jobTitle": "GBC Ambassador",
+          "url": "https://greenbeanscoffeeambassador.com/en/",
+          "sameAs": [
+            "https://greenbeanscoffeeambassador.com/en/"{% if not author or author == "Kikumi" %},
+            "https://horikikumi.pages.dev/"{% endif %}
+          ],
+          "knowsAbout": ["Specialty Coffee", "House-Roasted Coffee", "Pet-Friendly Cafes", "Gluten-Free Food"]
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Green Beans Coffee Ambassador Site",
+          "url": "https://greenbeanscoffeeambassador.com/en/"
+        },
+        "image": "https://greenbeanscoffeeambassador.com{% if thumbnail %}{{ thumbnail }}{% else %}/assets/images/hero_bg-1.jpg{% endif %}",
+        "url": "https://greenbeanscoffeeambassador.com{{ page.url }}",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://greenbeanscoffeeambassador.com{{ page.url }}"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["h1", "h2", "article .prose > p:first-of-type"]
+        }
+      }
+      {% endif %}
+      {% if faqItems | length > 0 %},
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {% for item in faqItems %}
+          {
+            "@type": "Question",
+            "name": {{ item.q | dump | safe }},
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": {{ item.a | dump | safe }}
+            }
+          }{% if not loop.last %},{% endif %}
+          {% endfor %}
+        ]
+      }
+      {% endif %},
+      {
+        "@type": "WebSite",
+        "name": "Green Beans Coffee Ambassador Site",
+        "url": "https://greenbeanscoffeeambassador.com/en/",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://greenbeanscoffeeambassador.com/en/articles/?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-[#FAF8F5] text-[#2D2A26] overflow-x-hidden">
+
+  <!-- Navigation（記事ページ専用：シンプル構成） -->
+  <nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 shadow-md text-[#4A3728] transition-all duration-300">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+
+      <!-- 左：ブランド + ナビ -->
+      <div class="flex items-center gap-4 text-sm">
+        <a href="https://greenbeanscoffeeambassador.com/en/" class="font-semibold text-[#4A3728] hover:text-[#C9A86C] transition whitespace-nowrap">Green Beans Coffee</a>
+        <span class="text-[#D0C4B0] hidden sm:block select-none">/</span>
+        <span class="hidden sm:block text-xs font-bold text-[#4A3728]">Articles</span>
+      </div>
+
+      <!-- 右：記事一覧リンク + モバイルメニューボタン -->
+      <div class="flex items-center gap-3">
+        <a href="/en/articles/" class="hidden sm:flex items-center gap-1.5 text-xs text-[#8B7355] hover:text-[#4A3728] transition whitespace-nowrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          All Articles
+        </a>
+
+        <!-- Mobile menu button（スマホのみ） -->
+        <button id="mobile-menu-btn" class="sm:hidden text-[#4A3728]" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu（スマホのみ） -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-white/95 backdrop-blur-md border-t border-[#E8E0D5]">
+      <ul class="flex flex-col p-4 text-sm gap-1 text-[#4A3728]">
+        <li>
+          <a href="/en/" class="flex items-center gap-2 py-2 hover:text-[#C9A86C] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+            Back to Main Site
+          </a>
+        </li>
+        <li><a href="/en/articles/" class="block py-2 font-bold">All Articles</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="pt-16">
+    {{ content | safe }}
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-[#4A3728] text-white/70 text-center py-8 text-xs mt-16">
+    <p class="mb-2 text-white/90 font-medium">Green Beans Coffee Ambassador Site</p>
+    <p class="mb-3">
+      <a href="/en/articles/" class="hover:text-[#C9A86C] transition">All Articles</a>
+      <span class="mx-2 text-white/40">/</span>
+      <a href="/en/" class="hover:text-[#C9A86C] transition">Home</a>
+    </p>
+    <hr class="border-white/20 w-24 mx-auto mb-3">
+    <p class="text-white/50">© 2026 GBC Ambassador Kikumi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // ① コピー時に著作権文言を自動付加
+    document.addEventListener('copy', function(e) {
+      const selection = window.getSelection();
+      if (!selection || selection.toString().length < 10) return;
+      const text = selection.toString();
+      const attribution = '\n\nSource: Green Beans Coffee Ambassador Site\n' + window.location.href + '\n© 2026 GBC Ambassador Kikumi. All rights reserved.\nUnauthorized reproduction of this content is prohibited.';
+      e.clipboardData.setData('text/plain', text + attribution);
+      e.preventDefault();
+    });
+    // ② 右クリック無効化
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+</body>
+</html>

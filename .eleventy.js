@@ -34,8 +34,25 @@ const TAG_DESCRIPTIONS = {
   "ランチ・食事": "東京・北参道千駄ヶ谷のGreen Beans Coffeeで楽しむランチや食事にまつわる記事一覧です。グルテンフリーメニューやランチミーティング、仕事帰りの食事利用など、カフェでの食事の過ごし方を紹介します。",
 };
 
+// 英語カテゴリの表示順
+const EN_TAG_ORDER = ["Tokyo Coffee", "Pet-Friendly Tokyo", "Third Place Tokyo", "Tokyo Travel", "Food & Lifestyle"];
+
+// カテゴリ一覧ページ（en-articles/tags/index.njk）用の個別description（140〜160字目安、カテゴリごとに内容を変えて重複コンテンツを回避）
+const EN_TAG_DESCRIPTIONS = {
+  "Tokyo Coffee": "Articles about Japanese specialty coffee, hand-drip brewing and house roasting at Green Beans Coffee in Kitasando, Tokyo, written from the perspective of ambassador Kikumi, who visits regularly.",
+  "Pet-Friendly Tokyo": "Articles about visiting Tokyo with your dog, from pet-friendly cafes to indoor pet etiquette at Green Beans Coffee in Sendagaya, a specialty coffee shop near Kitasando Station.",
+  "Third Place Tokyo": "Articles about finding a quiet third place in Tokyo for work, reading or a short break, based on time spent at Green Beans Coffee in the Dagayasando area near Kitasando and Sendagaya.",
+  "Tokyo Travel": "Articles about exploring Kitasando, Sendagaya and the Dagayasando neighborhood in Tokyo, including nearby shrines and stadiums, paired with a coffee break at Green Beans Coffee.",
+  "Food & Lifestyle": "Articles about gluten-free and vegan-friendly dining options in Tokyo, including the gluten-free menu at Green Beans Coffee, a specialty coffee shop in Kitasando, Sendagaya.",
+};
+
 export default function (eleventyConfig) {
   eleventyConfig.addFilter("tagSlug", (tag) => TAG_SLUGS[tag] || tag);
+
+  // 英語タグ用スラッグ化フィルター（英語タグはそのまま小文字・ハイフン区切りにするだけでよい）
+  eleventyConfig.addFilter("enTagSlug", (tag) =>
+    String(tag).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")
+  );
 
   // 関連記事取得フィルター（タグ一致数が多い順、最大3件）
   eleventyConfig.addFilter("relatedPosts", (collection, currentUrl, currentTags) => {
@@ -64,14 +81,16 @@ export default function (eleventyConfig) {
   });
   eleventyConfig.addGlobalData("tagSlugs", TAG_SLUGS);
   eleventyConfig.addGlobalData("tagDescriptions", TAG_DESCRIPTIONS);
+  eleventyConfig.addGlobalData("enTagDescriptions", EN_TAG_DESCRIPTIONS);
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");
+  eleventyConfig.addPassthroughCopy("src/en-articles/assets");
 
-  // タグページ（カテゴリ一覧）の自動生成
+  // タグページ（カテゴリ一覧）の自動生成（日本語記事＝"articles"タグが付いた記事のみ対象）
   eleventyConfig.addCollection("tagList", function (collectionApi) {
     const TAG_ORDER = ["コーヒー","焙煎","グルテンフリー","体験・イベント","ペット","美容健康","ビジネス","サードプレイス","カフェ店内","ダガヤサンドウ","記念日","旅行・観光","ランチ・食事"];
     const tagSet = new Set();
-    collectionApi.getAll().forEach((item) => {
+    collectionApi.getFilteredByTag("articles").forEach((item) => {
       (item.data.tags || []).forEach((tag) => {
         if (tag !== "articles") tagSet.add(tag);
       });
@@ -79,6 +98,21 @@ export default function (eleventyConfig) {
     return [...tagSet].sort((a, b) => {
       const ai = TAG_ORDER.indexOf(a);
       const bi = TAG_ORDER.indexOf(b);
+      return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
+    });
+  });
+
+  // 英語版タグ一覧（"en-articles"タグが付いた記事のみ対象）
+  eleventyConfig.addCollection("enTagList", function (collectionApi) {
+    const tagSet = new Set();
+    collectionApi.getFilteredByTag("en-articles").forEach((item) => {
+      (item.data.tags || []).forEach((tag) => {
+        if (tag !== "en-articles") tagSet.add(tag);
+      });
+    });
+    return [...tagSet].sort((a, b) => {
+      const ai = EN_TAG_ORDER.indexOf(a);
+      const bi = EN_TAG_ORDER.indexOf(b);
       return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi);
     });
   });
@@ -98,11 +132,33 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
+  // 英語記事一覧コレクション
+  eleventyConfig.addCollection("enArticles", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("en-articles")
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // 英語ピラー記事コレクション
+  eleventyConfig.addCollection("enPillars", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("en-articles")
+      .filter(p => p.data.pillar === true)
+      .sort((a, b) => b.date - a.date);
+  });
+
   // 日付フォーマットフィルター（例: 2026年5月7日）- JST基準
   eleventyConfig.addFilter("dateJa", function (date) {
     const d = new Date(date);
     const jst = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
     return `${jst.getFullYear()}年${jst.getMonth() + 1}月${jst.getDate()}日`;
+  });
+
+  // 英語日付フォーマットフィルター（例: May 7, 2026）- JST基準
+  eleventyConfig.addFilter("dateEn", function (date) {
+    const d = new Date(date);
+    const jst = new Date(d.toLocaleString('en-US', { timeZone: 'Asia/Tokyo' }));
+    return jst.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   });
 
   // ISO 8601 日付フィルター（例: 2026-05-07）- JST基準

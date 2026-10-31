@@ -59,4 +59,22 @@ export const targets = [
       /(?<="ratingValue":\s*")[\d.]+/g,
     ],
   },
+  {
+    file: 'src/_layouts/en-article.njk',
+    reviewCountPatterns: [
+      /\d+(?=\s*reviews)/g,
+    ],
+    ratingValuePatterns: [
+      /(?<=text-xs font-medium text-\[#4A3728\]">)[\d.]+(?=<)/g,
+    ],
+  },
+  {
+    file: 'src/_layouts/en-articles-base.njk',
+    reviewCountPatterns: [
+      /(?<="reviewCount":\s*")\d+/g,
+    ],
+    ratingValuePatterns: [
+      /(?<="ratingValue":\s*")[\d.]+/g,
+    ],
+  },
 ];
