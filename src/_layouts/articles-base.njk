@@ -42,6 +42,9 @@
   <link rel="canonical" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
   <link rel="alternate" hreflang="ja" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
   <link rel="alternate" hreflang="x-default" href="https://greenbeanscoffeeambassador.com{{ page.url }}">
+  {% if enAlternateUrl %}
+  <link rel="alternate" hreflang="en" href="{{ enAlternateUrl }}">
+  {% endif %}
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="alternate" type="application/rss+xml" title="Green Beans Coffee コラム" href="https://greenbeanscoffeeambassador.com/feed.xml">
 

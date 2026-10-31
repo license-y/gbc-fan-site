@@ -37,6 +37,24 @@ const TAG_DESCRIPTIONS = {
 // 英語カテゴリの表示順
 const EN_TAG_ORDER = ["Tokyo Coffee", "Pet-Friendly Tokyo", "Third Place Tokyo", "Tokyo Travel", "Food & Lifestyle"];
 
+// 日本語カテゴリ → 英語カテゴリの対応表（意味が近いカテゴリ同士のみ。対応がないカテゴリは相互リンクなし）
+const JA_TO_EN_TAG = {
+  "コーヒー": { slug: "tokyo-coffee", label: "Tokyo Coffee" },
+  "ペット": { slug: "pet-friendly-tokyo", label: "Pet-Friendly Tokyo" },
+  "サードプレイス": { slug: "third-place-tokyo", label: "Third Place Tokyo" },
+  "旅行・観光": { slug: "tokyo-travel", label: "Tokyo Travel" },
+  "グルテンフリー": { slug: "food-lifestyle", label: "Food & Lifestyle" },
+};
+
+// 英語カテゴリ → 日本語カテゴリの対応表（上記の逆引き）
+const EN_TO_JA_TAG = {
+  "Tokyo Coffee": { slug: "coffee", label: "コーヒー" },
+  "Pet-Friendly Tokyo": { slug: "pet", label: "ペット" },
+  "Third Place Tokyo": { slug: "third-place", label: "サードプレイス" },
+  "Tokyo Travel": { slug: "travel-sightseeing", label: "旅行・観光" },
+  "Food & Lifestyle": { slug: "gluten-free", label: "グルテンフリー" },
+};
+
 // カテゴリ一覧ページ（en-articles/tags/index.njk）用の個別description（140〜160字目安、カテゴリごとに内容を変えて重複コンテンツを回避）
 const EN_TAG_DESCRIPTIONS = {
   "Tokyo Coffee": "Articles about Japanese specialty coffee, hand-drip brewing and house roasting at Green Beans Coffee in Kitasando, Tokyo, written from the perspective of ambassador Kikumi, who visits regularly.",
@@ -82,6 +100,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addGlobalData("tagSlugs", TAG_SLUGS);
   eleventyConfig.addGlobalData("tagDescriptions", TAG_DESCRIPTIONS);
   eleventyConfig.addGlobalData("enTagDescriptions", EN_TAG_DESCRIPTIONS);
+  eleventyConfig.addGlobalData("jaToEnTag", JA_TO_EN_TAG);
+  eleventyConfig.addGlobalData("enToJaTag", EN_TO_JA_TAG);
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");
   eleventyConfig.addPassthroughCopy("src/en-articles/assets");

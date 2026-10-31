@@ -9,6 +9,7 @@ permalink: /en/articles/tags/{{ tag | enTagSlug }}/index.html
 eleventyComputed:
   title: "{{ tag }} Articles | Green Beans Coffee Ambassador Site"
   description: "{{ enTagDescriptions[tag] }}"
+  jaAlternateUrl: "{{ ('https://greenbeanscoffeeambassador.com/articles/tags/' + enToJaTag[tag].slug + '/') if (enToJaTag[tag] and enToJaTag[tag].label in collections.tagList) else '' }}"
 ---
 
 <main class="max-w-4xl mx-auto px-4 py-12">
@@ -21,7 +22,15 @@ eleventyComputed:
       <span>/</span>
       <span class="text-[#4A3728]">{{ tag }}</span>
     </nav>
-    <h1 class="text-2xl font-bold text-[#4A3728] mb-1">{{ tag }}</h1>
+    <div class="flex items-center justify-between flex-wrap gap-2 mb-1">
+      <h1 class="text-2xl font-bold text-[#4A3728]">{{ tag }}</h1>
+      {%- if enToJaTag[tag] and enToJaTag[tag].label in collections.tagList %}
+      <a href="/articles/tags/{{ enToJaTag[tag].slug }}/" class="inline-flex items-center gap-1 text-xs text-[#8B7355] border border-[#D0C4B0] rounded-full px-3 py-1 hover:border-[#4A3728] hover:text-[#4A3728] transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        View in Japanese
+      </a>
+      {%- endif %}
+    </div>
     <p class="text-sm text-[#8B7355]">Articles in the "{{ tag }}" category</p>
   </div>
 
