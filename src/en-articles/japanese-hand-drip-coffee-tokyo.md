@@ -32,7 +32,9 @@ I was also told that the shop uses real warm milk rather than the non-dairy crea
 
 ## Beans to Take Home
 
-If a cup you tried stands out, you can buy the exact beans before you leave — whole bean or ground, from any of the 30+ varieties across the Fruity, Mild, Bitter, and Decaf lineup. Drip packs are available too, which travel well if you're staying in Tokyo for a while longer. There's no online store, so beans are only sold in person at the Kitasando shop, but regulars who want coffee delivered monthly can sign up for a subscription in store, or later through the shop's official LINE account after a first visit.
+If a cup you tried stands out, you can buy the exact beans before you leave — whole bean or ground, from any of the 30+ varieties across the Fruity, Mild, Bitter, and Decaf lineup. Drip packs are available too, which travel well if you're staying in Tokyo for a while longer or want something easy to bring home as a Tokyo coffee gift. There's no online store, so beans are only sold in person at the Kitasando shop, but regulars who want coffee delivered monthly can sign up for a subscription in store, or later through the shop's official LINE account after a first visit.
+
+The shop also keeps an English menu on hand and accepts cashless payment, so ordering doesn't require any Japanese if you're visiting from abroad.
 
 ## A Seat Built for Staying Longer
 

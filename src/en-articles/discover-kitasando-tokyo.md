@@ -20,6 +20,8 @@ Most visitors reach Tokyo's bigger neighborhoods first: Shinjuku, Harajuku, Shib
 
 The area sits in what locals call Dagayasando, a loosely defined pocket that blends into Sendagaya. It's about a seven-minute walk from Sendagaya Station and roughly ten minutes from Shinjuku by train, with Yoyogi and Harajuku both within easy reach. Hatonomori Hachiman Shrine is a short stroll away if you want a quieter stop than Meiji Jingu, and the area around the National Olympic Stadium makes a natural pairing for anyone in town for an event there. Shinjuku Gyoen, one of Tokyo's larger parks, is also close enough to fold into the same afternoon if you want a longer walk.
 
+Hatonomori Hachiman Shrine itself is worth the few minutes it takes to reach — it holds one of Tokyo's oldest Fujizuka, a small Mt. Fuji replica you can actually climb, and sits right next to the Japan Shogi Hall, known for its connection to some of the game's most famous players. It's an easy, low-key stop to add between the station and the cafe.
+
 Compared to its neighbors, Kitasando has almost no big-name shopping or landmarks. What it has instead is a residential, low-rise streetscape where small design studios and independent shops sit beside ordinary apartment buildings — the kind of area that rewards walking slowly rather than checking off sights.
 
 ## Finding Green Beans Coffee

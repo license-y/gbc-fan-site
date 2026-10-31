@@ -26,6 +26,8 @@ Every table at Green Beans Coffee accepts dogs, and the staff keep water bowls o
 
 Because the space is quiet rather than bustling, dogs that get nervous around crowds tend to settle in fairly quickly. I've brought first-time visitors whose dogs were initially restless, and within ten minutes or so they'd usually found a comfortable spot under the table. The low background music and wide spacing between tables seem to help with that more than anything the staff actually do.
 
+The cafe isn't only set up for dog owners, either. Strollers are welcome inside and the space is barrier-free, so it's just as workable for a parent with a toddler as it is for a dog on a leash — I've regularly seen both at the same time without either feeling out of place.
+
 ## A Coffee Break That Doubles as a Meal
 
 Since this is a working specialty coffee shop first, the menu holds up on its own even if you're not there specifically for the pet-friendly seating. The gluten-free one-plate lunch — a choice of main, a side dish, and a sauce, served with house-made rice flour focaccia — is worth ordering while your dog settles in next to you. Staying after lunch also comes with a small perk: drinks are half price until 3 PM, which makes a longer stop easier to justify.
