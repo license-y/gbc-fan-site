@@ -156,22 +156,41 @@ permalink: /articles/index.html
     </div>
   </div>
 
-  <!-- カテゴリ別ページへの直接リンク（クロール可能なSSRタグページへの導線） -->
-  <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-[#8B7355]">
+  <!-- カテゴリ別ページへの直接リンク（モバイル：4段、クロール可能なSSRタグページへの導線） -->
+  <div class="flex flex-col items-center gap-1 mb-2 md:hidden text-xs text-[#8B7355]">
+    <span class="text-[#B0A090]">カテゴリ別ページ:</span>
+    <div class="flex flex-wrap justify-center gap-x-3 gap-y-1">
+      {%- for cat in ["コーヒー", "焙煎", "グルテンフリー"] %}
+      <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+      {%- endfor %}
+    </div>
+    <div class="flex flex-wrap justify-center gap-x-3 gap-y-1">
+      {%- for cat in ["体験・イベント", "ペット", "美容健康", "ビジネス"] %}
+      <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+      {%- endfor %}
+    </div>
+    <div class="flex flex-wrap justify-center gap-x-3 gap-y-1">
+      {%- for cat in ["サードプレイス", "カフェ店内", "ダガヤサンドウ"] %}
+      <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+      {%- endfor %}
+    </div>
+    <div class="flex flex-wrap justify-center gap-x-3 gap-y-1">
+      {%- for cat in ["記念日", "旅行・観光", "ランチ・食事"] %}
+      <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <!-- カテゴリ別ページへの直接リンク（PC：2段、クロール可能なSSRタグページへの導線） -->
+  <div class="hidden md:flex flex-wrap justify-center gap-x-3 gap-y-1 text-xs text-[#8B7355]">
     <span class="text-[#B0A090]">カテゴリ別ページ:</span>
     {%- for cat in collections.tagList.slice(0, 8) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
-    {%- if cat == "ビジネス" %}
-    <span class="basis-full h-0 md:hidden"></span>
-    {%- endif %}
     {%- endfor %}
   </div>
-  <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 mb-8 text-xs text-[#8B7355]">
+  <div class="hidden md:flex flex-wrap justify-center gap-x-3 gap-y-1 mb-8 text-xs text-[#8B7355]">
     {%- for cat in collections.tagList.slice(8) %}
     <a href="/articles/tags/{{ cat | tagSlug }}/" class="hover:text-[#4A3728] hover:underline transition">{{ cat }}</a>
-    {%- if cat == "記念日" %}
-    <span class="basis-full h-0 md:hidden"></span>
-    {%- endif %}
     {%- endfor %}
   </div>
 
