@@ -2170,6 +2170,18 @@
               + '</div>'
               + '</a>';
           }).join('');
+
+          // 常に4件分の高さに揃えてスクロール可能にする（5件目以降がある場合のみ）
+          requestAnimationFrame(function() {
+            var cards = grid.children;
+            if (cards.length > 4) {
+              var gridTop = grid.getBoundingClientRect().top;
+              var fourthBottom = cards[3].getBoundingClientRect().bottom;
+              grid.style.maxHeight = Math.ceil(fourthBottom - gridTop) + 'px';
+            } else {
+              grid.style.maxHeight = 'none';
+            }
+          });
         })
         .catch(function() {
           grid.innerHTML = '';
