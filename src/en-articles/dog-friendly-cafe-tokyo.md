@@ -1,13 +1,14 @@
 ---
 title: "Where to Find Indoor Dog-Friendly Cafes in Tokyo"
-description: "Green Beans Coffee in Kitasando, Shibuya welcomes dogs of any size indoors, with water bowls on loan and regular pet photo days — a relaxed Tokyo cafe for you and your dog."
+description: "Green Beans Coffee in Kitasando, Shibuya welcomes dogs of any size indoors, with water bowls on loan and pet photo days for a relaxed Tokyo cafe visit."
 date: 2026-10-31
 category: "Pet-Friendly Tokyo"
 tags:
   - en-articles
   - Pet-Friendly Tokyo
-thumbnail: /assets/images/experience-pet-1.jpg
-thumbnailAlt: A dog relaxing indoors with its owner at Green Beans Coffee, a pet-friendly cafe in Kitasando, Tokyo
+thumbnail: /assets/images/en-articles/dog-friendly-cafe-tokyo.jpg
+thumbnailAlt: A dog resting by the window inside a wood-interior cafe, the kind of indoor pet-friendly seating found at Green Beans Coffee in Tokyo
+thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/dog-friendly-cafe-tokyo/
 ---
@@ -22,11 +23,11 @@ Tokyo's weather swings between humid summers and cold winters, and a lot of "pet
 
 ## What to Expect With Your Dog
 
-Every table at Green Beans Coffee accepts dogs, and the staff keep water bowls on loan for anyone who didn't bring one. I've also noticed a corkboard near the counter filled with instant photos of pets who have visited — a small, ongoing record of regulars' dogs that I always check for new faces. The cafe holds pet photo sessions from time to time as well, so it's worth asking at the counter or checking their Instagram if that's something you'd like to join.
+Every table at Green Beans Coffee accepts dogs, and the staff lend out water bowls to anyone who didn't bring one. I've also noticed a corkboard near the counter filled with instant photos of pets who have visited, a small, ongoing record of regulars' dogs that I always check for new faces. The cafe holds pet photo sessions from time to time as well, so it's worth asking at the counter or checking their Instagram if that's something you'd like to join.
 
-Because the space is quiet rather than bustling, dogs that get nervous around crowds tend to settle in fairly quickly. I've brought first-time visitors whose dogs were initially restless, and within ten minutes or so they'd usually found a comfortable spot under the table. The low background music and wide spacing between tables seem to help with that more than anything the staff actually do.
+Because the space is quiet rather than bustling, dogs that get nervous around crowds tend to settle in fairly quickly. I've brought first-time visitors whose dogs were initially restless, and within ten minutes or so they'd usually found a comfortable spot under the table. The low background music and wide spacing between tables probably have more to do with that than anything the staff actually do.
 
-The cafe isn't only set up for dog owners, either. Strollers are welcome inside and the space is barrier-free, so it's just as workable for a parent with a toddler as it is for a dog on a leash — I've regularly seen both at the same time without either feeling out of place.
+The cafe isn't only set up for dog owners, either. Strollers are welcome inside and the space is barrier-free, so it works just as well for a parent with a toddler as it does for a dog on a leash. I've regularly seen both at the same time, neither one feeling out of place.
 
 ## A Coffee Break That Doubles as a Meal
 
@@ -34,7 +35,7 @@ Since this is a working specialty coffee shop first, the menu holds up on its ow
 
 ## Hosting a Pet Owner Meetup
 
-One detail I didn't expect: the venue can be booked for private hire, including pet owner meetups, not just team gatherings or media shoots. Capacity runs up to 20 seated or 30 standing, and reservations are generally accepted from three months out down to two weeks ahead. If you're organizing something with other dog owners rather than a casual solo visit, it's worth asking about this directly through [Instagram](https://www.instagram.com/green.beanscoffee) or by phone.
+One detail I didn't expect: the venue can be booked for private hire, including pet owner meetups, not just team gatherings or media shoots. Capacity is up to 20 seated or 30 standing, and reservations are typically accepted anywhere from three months out to two weeks ahead. If you're organizing something with other dog owners rather than a casual solo visit, it's worth asking about this directly through [Instagram](https://www.instagram.com/green.beanscoffee) or by phone.
 
 ## Who This Is For
 
@@ -55,7 +56,7 @@ Kitasando sits between the two, a short walk from Sendagaya and roughly ten minu
 Yes. The space is available for private hire, including pet owner meetups, with capacity for up to 20 seated or 30 standing. It's best to reserve two weeks to three months in advance.
 
 **Q. Is there food I can eat while my dog relaxes nearby?**<br>
-Yes. The gluten-free one-plate lunch is a popular choice, and ordering it before 3 PM gets you half-price drinks afterward — a good excuse to stay a while longer.
+Yes. The gluten-free one-plate lunch is a popular choice, and ordering it before 3 PM gets you half-price drinks afterward, which is a good excuse to stay a while longer.
 
 ## Conclusion
 

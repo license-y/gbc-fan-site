@@ -1,18 +1,19 @@
 ---
 title: "Discover Kitasando: A Local Guide to Tokyo"
-description: "Kitasando is a quiet Shibuya neighborhood near Sendagaya and the National Olympic Stadium, home to Green Beans Coffee — a hidden specialty coffee shop worth building a Tokyo walk around."
+description: "Kitasando is a quiet Shibuya neighborhood near Sendagaya, home to Green Beans Coffee, a hidden specialty coffee shop worth building a Tokyo walk around."
 date: 2026-11-01
 category: "Tokyo Travel"
 tags:
   - en-articles
   - Tokyo Travel
-thumbnail: /assets/images/about-shop-front.jpg
-thumbnailAlt: The unmarked storefront of Green Beans Coffee in the Dagayasando neighborhood of Kitasando, Tokyo
+thumbnail: /assets/images/en-articles/discover-kitasando-tokyo.jpg
+thumbnailAlt: A quiet residential street in Tokyo at golden hour, the kind of low-rise neighborhood that makes up Kitasando and Dagayasando
+thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/discover-kitasando-tokyo/
 ---
 
-**Kitasando is a small, quiet pocket of Shibuya, Tokyo, wedged between the energy of Shinjuku and Harajuku — and one of the easiest ways to get to know it is over a cup of coffee at Green Beans Coffee, a shop with no sign out front.**
+**Kitasando is a small, quiet pocket of Shibuya, Tokyo, between Shinjuku and Harajuku. One of the best ways to get to know it is over coffee at Green Beans Coffee, a shop with no sign out front.**
 
 Most visitors reach Tokyo's bigger neighborhoods first: Shinjuku, Harajuku, Shibuya. Kitasando rarely makes that list, which is exactly why I like sending people here. It's three minutes on foot from Kitasando Station, close enough to the National Olympic Stadium and Tokyo Metropolitan Gymnasium to combine with an event day, and quiet enough that a short walk feels like a break from the rest of the city.
 
@@ -20,7 +21,7 @@ Most visitors reach Tokyo's bigger neighborhoods first: Shinjuku, Harajuku, Shib
 
 The area sits in what locals call Dagayasando, a loosely defined pocket that blends into Sendagaya. It's about a seven-minute walk from Sendagaya Station and roughly ten minutes from Shinjuku by train, with Yoyogi and Harajuku both within easy reach. Hatonomori Hachiman Shrine is a short stroll away if you want a quieter stop than Meiji Jingu, and the area around the National Olympic Stadium makes a natural pairing for anyone in town for an event there. Shinjuku Gyoen, one of Tokyo's larger parks, is also close enough to fold into the same afternoon if you want a longer walk.
 
-Hatonomori Hachiman Shrine itself is worth the few minutes it takes to reach — it holds one of Tokyo's oldest Fujizuka, a small Mt. Fuji replica you can actually climb, and sits right next to the Japan Shogi Hall, known for its connection to some of the game's most famous players. It's an easy, low-key stop to add between the station and the cafe.
+Hatonomori Hachiman Shrine itself is worth the few minutes it takes to reach. It holds one of Tokyo's oldest Fujizuka, a small Mt. Fuji replica you can actually climb, and sits right next to the Japan Shogi Hall, known for its connection to some of the game's most famous players. It's an easy, low-key stop to add between the station and the cafe.
 
 Compared to its neighbors, Kitasando has almost no big-name shopping or landmarks. What it has instead is a residential, low-rise streetscape where small design studios and independent shops sit beside ordinary apartment buildings — the kind of area that rewards walking slowly rather than checking off sights.
 
@@ -28,7 +29,7 @@ Compared to its neighbors, Kitasando has almost no big-name shopping or landmark
 
 This is the part that trips people up: Green Beans Coffee has no storefront sign. It's on the first floor of the RC Apartment building at 3-30-1 Sendagaya, Shibuya, and I still tell first-time visitors to watch the address carefully rather than look for a sign, or they'll walk right past it. Once you're inside, it's a self-roasting specialty coffee shop with more than 30 bean varieties, a gluten-free lunch menu, and seating that [welcomes dogs at every table](/en/articles/dog-friendly-cafe-tokyo/).
 
-The shop is open 10:30 to 18:30 with last orders at 18:00, though it closes on irregular days — checking their Instagram before heading over is the safest bet. It's also worth knowing before you go: free Wi-Fi, power outlets, and an English menu are all available, and the shop takes cashless payment if you'd rather not carry cash.
+The shop is open 10:30 to 18:30 with last orders at 18:00, though it closes on irregular days, so checking their Instagram before heading over is the safest bet. It's also worth knowing before you go: free Wi-Fi, power outlets, and an English menu are all available, and the shop takes cashless payment if you'd rather not carry cash.
 
 ## A Simple Half-Day Walk
 
