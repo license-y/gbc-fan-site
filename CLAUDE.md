@@ -341,6 +341,14 @@ assets/images/magazine/back-06.jpg   … バックナンバー6号前（最古�
 
 執筆前の確認（git pull・重複チェック・5つの質問）、カテゴリ、フロントマター、文体ガイドライン、SEO・AEO指針、ピラー記事戦略、内部リンクなどの必須ワークフローはすべてSkill側に定義されている。CLAUDE.mdだけを見て記事を書き始めてはいけない。
 
+## 記事CTAセクション
+
+記事本文とサイドバーの間に、店舗情報・メニュー・食べログ予約・電話予約・Instagramへ誘導するCTAブロックがある。HTMLコメントは `<!-- 記事CTA -->` で統一（日本語版・英語版とも）。
+
+- **実装箇所**: `src/_layouts/article.njk`（日本語）、`src/_layouts/en-article.njk`（英語）
+- 共通レイアウトに組み込まれているため、`layout: article.njk` / `layout: en-article.njk` を指定する記事はすべて自動的に記事CTAが表示される（個別記事での追加作業は不要）
+- 各リンクに `data-ga-event`（`click_store_page` / `click_reserve` / `click_instagram`）と `data-ga-location="article_cta"` を付与済み。GA4計測ロジックは `articles-base.njk`／`en-articles-base.njk` 側にある
+
 ## サイトマップ
 
 | ファイル | 管理 |
