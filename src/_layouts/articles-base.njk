@@ -83,75 +83,13 @@
     }
   </script>
 
-  <!-- JSON-LD: @graph（CafeOrCoffeeShop + BreadcrumbList + BlogPosting + FAQPage を1本に統合） -->
+  <!-- JSON-LD: @graph（Organization + BreadcrumbList + BlogPosting + FAQPage を1本に統合） -->
+  <!-- 店舗情報(CafeOrCoffeeShop)はトップページ(/)に集約し、記事ページでは重複出力しない -->
   {% set faqItems = content | extractFAQ %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      {
-        "@type": "CafeOrCoffeeShop",
-        "name": "Green Beans Coffee",
-        "alternateName": "グリーンビーンズコーヒー",
-        "description": "北参道・千駄ヶ谷のペットフレンドリー自家焙煎カフェ。店名看板のない隠れ家コーヒー専門店。グルテンフリーメニューあり。営業時間10:30〜18:30（L.O.18:00）。",
-        "url": "https://greenbeanscoffeeambassador.com",
-        "telephone": "+81-3-6447-0681",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "千駄ヶ谷3-30-1 RC APARTMENT 1階",
-          "addressLocality": "渋谷区",
-          "addressRegion": "東京都",
-          "postalCode": "151-0051",
-          "addressCountry": "JP"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 35.6775167,
-          "longitude": 139.7078346
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "10:30",
-          "closes": "18:30"
-        },
-        "priceRange": "￥1,000〜￥2,999",
-        "servesCuisine": ["Coffee","Gluten-Free","Cafe"],
-        "amenityFeature": [
-          {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "電源コンセント", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "ペット同伴可", "value": true},
-          {"@type": "LocationFeatureSpecification", "name": "テイクアウト", "value": true}
-        ],
-        "paymentAccepted": ["Cash","Credit Card","Electronic Money","QR Code Payment"],
-        "currenciesAccepted": "JPY",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "596",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
-        "review": {
-          "@type": "Review",
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "4.8",
-            "bestRating": "5"
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "Google Maps"
-          },
-          "url": "https://www.google.com/maps/place/グリーンビーンズコーヒー/@35.677521,139.7052597,17z"
-        },
-        "hasMap": "https://www.google.com/maps/place/Green+Beans+Coffee/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr",
-        "sameAs": [
-          "https://www.instagram.com/green.beanscoffee",
-          "https://www.youtube.com/@greenbeanscoffee9",
-          "https://tabelog.com/tokyo/A1309/A130901/13277423"
-        ]
-      },
       {
         "@type": "Organization",
         "name": "Green Beans Coffee",
@@ -291,7 +229,7 @@
 
       <!-- 左：ブランド + ナビ -->
       <div class="flex items-center gap-4 text-sm">
-        <a href="https://greenbeanscoffeeambassador.com/" class="font-semibold text-[#4A3728] hover:text-[#C9A86C] transition whitespace-nowrap">Green Beans Coffee</a>
+        <a href="https://greenbeanscoffeeambassador.com/" class="font-semibold text-[#4A3728] hover:text-[#C9A86C] transition whitespace-nowrap" data-ga-event="click_store_page" data-ga-location="header_nav">Green Beans Coffee</a>
         <span class="text-[#D0C4B0] hidden sm:block select-none">/</span>
         <span class="hidden sm:block text-xs font-bold text-[#4A3728]">Articles</span>
       </div>
@@ -318,7 +256,7 @@
     <div id="mobile-menu" class="hidden sm:hidden bg-white/95 backdrop-blur-md border-t border-[#E8E0D5]">
       <ul class="flex flex-col p-4 text-sm gap-1 text-[#4A3728]">
         <li>
-          <a href="/" class="flex items-center gap-2 py-2 hover:text-[#C9A86C] transition">
+          <a href="/" class="flex items-center gap-2 py-2 hover:text-[#C9A86C] transition" data-ga-event="click_store_page" data-ga-location="mobile_nav">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
             メインサイトへ
           </a>
@@ -348,6 +286,19 @@
   <script>
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // GA4: 店舗CTAリンクのクリック計測（data-ga-event属性を付けた要素のみ対象。既存のgtag.jsを利用し新規タグは追加しない。このレイアウトを使う全ページで1回だけ登録）
+    // data-ga-location（article_cta / sidebar / header_nav / mobile_nav）はリンクの設置場所をGA4側で区別するためのパラメータ
+    document.querySelectorAll('[data-ga-event]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', el.dataset.gaEvent, {
+            link_url: el.href || undefined,
+            link_location: el.dataset.gaLocation || undefined
+          });
+        }
+      });
     });
 
     // ① コピー時に著作権文言を自動付加

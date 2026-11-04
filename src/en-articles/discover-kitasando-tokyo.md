@@ -11,6 +11,7 @@ thumbnailAlt: A quiet residential street in Tokyo at golden hour, the kind of lo
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/discover-kitasando-tokyo/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/kitasando-travel-guide/
 ---
 
 **Kitasando is a small, quiet pocket of Shibuya, Tokyo, between Shinjuku and Harajuku. One of the best ways to get to know it is over coffee at Green Beans Coffee, a shop with no sign out front.**

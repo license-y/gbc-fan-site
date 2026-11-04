@@ -12,6 +12,7 @@ thumbnailAlt: Latte art coffee cups next to an open book on a wooden table
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/what-is-a-third-place/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/thirdplace-guide/
 ---
 
 **A third place is a space that is neither home (the first place) nor work or school (the second place), where you can relax without obligation or pressure.**

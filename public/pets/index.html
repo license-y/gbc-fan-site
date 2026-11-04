@@ -1987,7 +1987,8 @@
   </script>
 
   <!-- JSON-LD Structured Data -->
-  <!-- ⚠️ AggregateRating 更新手順: ratingValue と reviewCount はGoogleマップの最新値に手動更新。目安：月1回。最終更新: 2026-10 -->
+  <!-- ⚠️ 2026-11: JSON-LDのaggregateRatingは自己申告レビューのためGoogleガイドラインに従い削除済み（このページには元々評価の可視表示が無いため、表示側の対応は不要）。
+       Googleマップの評価を確認する場合は上記の地図埋め込み・Googleマップリンクから。 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -2030,13 +2031,6 @@
       {"@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true},
       {"@type": "LocationFeatureSpecification", "name": "バリアフリー", "value": true}
     ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "596",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
     "sameAs": [
       "https://www.instagram.com/green.beanscoffee",
       "https://www.youtube.com/@greenbeanscoffee9"

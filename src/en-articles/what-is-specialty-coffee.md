@@ -12,6 +12,7 @@ thumbnailAlt: A close-up pile of freshly roasted specialty coffee beans
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/what-is-specialty-coffee/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/specialty-coffee-guide/
 ---
 
 **Specialty coffee is high-quality coffee, typically scored 80 points or above by professional tasters, grown, processed, and roasted with traceability in mind.**

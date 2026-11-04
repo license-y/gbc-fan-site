@@ -11,25 +11,17 @@ export const root = path.join(__dirname, '..');
 
 export const targets = [
   {
+    // 2026-11: Googleガイドラインに従い、JSON-LDのaggregateRatingは出力を停止。
+    // ページ上の「Google評価」表示テキストのみを対象とする。
     file: 'public/index.html',
     reviewCountPatterns: [
       /\d+(?=件のレビュー)/g,
-      /(?<="reviewCount":\s*")\d+/g,
     ],
     ratingValuePatterns: [
-      /(?<="ratingValue":\s*")[\d.]+/g,
       /(?<=text-sm font-medium text-\[#4A3728\] whitespace-nowrap">)[\d.]+(?=<)/g,
     ],
   },
-  {
-    file: 'public/pets/index.html',
-    reviewCountPatterns: [
-      /(?<="reviewCount":\s*")\d+/g,
-    ],
-    ratingValuePatterns: [
-      /(?<="ratingValue":\s*")[\d.]+/g,
-    ],
-  },
+  // 2026-11: public/pets/index.html はJSON-LDのaggregateRatingを削除（ページ上に評価の可視表示が元々無いため対象外）。
   {
     file: 'src/_layouts/article.njk',
     reviewCountPatterns: [
@@ -39,24 +31,14 @@ export const targets = [
       /(?<=text-xs font-medium text-\[#4A3728\]">)[\d.]+(?=<)/g,
     ],
   },
-  {
-    file: 'src/_layouts/articles-base.njk',
-    reviewCountPatterns: [
-      /(?<="reviewCount":\s*")\d+/g,
-    ],
-    ratingValuePatterns: [
-      /(?<="ratingValue":\s*")[\d.]+/g,
-    ],
-  },
+  // 2026-11: src/_layouts/articles-base.njk は店舗情報(CafeOrCoffeeShop/aggregateRating)を削除したため対象外。
   {
     file: 'public/en/index.html',
     reviewCountPatterns: [
       /\d+(?=\s*reviews)/g,
-      /(?<="reviewCount":\s*")\d+/g,
     ],
     ratingValuePatterns: [
       /(?<=text-sm font-medium text-\[#4A3728\] whitespace-nowrap">)[\d.]+(?=<)/g,
-      /(?<="ratingValue":\s*")[\d.]+/g,
     ],
   },
   {
@@ -68,13 +50,5 @@ export const targets = [
       /(?<=text-xs font-medium text-\[#4A3728\]">)[\d.]+(?=<)/g,
     ],
   },
-  {
-    file: 'src/_layouts/en-articles-base.njk',
-    reviewCountPatterns: [
-      /(?<="reviewCount":\s*")\d+/g,
-    ],
-    ratingValuePatterns: [
-      /(?<="ratingValue":\s*")[\d.]+/g,
-    ],
-  },
+  // 2026-11: src/_layouts/en-articles-base.njk も同様に店舗情報を削除したため対象外。
 ];

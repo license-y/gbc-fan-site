@@ -1,5 +1,6 @@
 ---
 layout: article.njk
+enAlternateUrl: https://greenbeanscoffeeambassador.com/en/articles/discover-kitasando-tokyo/
 title: 東京・北参道観光ガイド｜千駄ヶ谷と神宮外苑を楽しむ歩き方
 description: 北参道観光とは千駄ヶ谷・神宮外苑エリアを歩いて巡ることです。東京・渋谷区北参道のGreen Beans Coffeeを休憩の拠点に、鳩森八幡神社や国立競技場周辺を楽しむ散策ルートとモデルコースを紹介します。
 tags:

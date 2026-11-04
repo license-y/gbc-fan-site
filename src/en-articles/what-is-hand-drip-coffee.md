@@ -12,6 +12,7 @@ thumbnailAlt: An overhead view of hand-drip coffee brewing in a paper filter, wi
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/what-is-hand-drip-coffee/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/handdrip-guide/
 ---
 
 **Hand-drip coffee, also called pour-over, is coffee brewed by slowly pouring hot water over ground beans in a filter by hand, rather than using a machine.**

@@ -26,7 +26,7 @@ Gluten is a protein found in wheat, barley, and rye that gives bread and baked g
 
 Three groups generally follow a gluten-free diet, for different reasons and with different levels of required strictness:
 
-- **Celiac disease**: an autoimmune condition where gluten damages the small intestine. This requires strict, lifelong avoidance, since even small amounts of cross-contamination can trigger a reaction.
+- **Celiac disease**: a chronic digestive and immune disorder in which gluten triggers damage to the small intestine (<a href="https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/definition-facts" target="_blank" rel="noopener noreferrer">NIDDK</a>). This requires strict, lifelong avoidance, since even small amounts of cross-contamination can trigger a reaction.
 - **Non-celiac gluten sensitivity**: people who experience digestive discomfort or other symptoms from gluten without having celiac disease. Sensitivity and required strictness vary by individual.
 - **Lifestyle or wellness choice**: some people reduce or eliminate gluten without a diagnosed medical reason, often alongside broader dietary changes, without needing the same strict avoidance of cross-contamination.
 
@@ -45,13 +45,13 @@ A few questions go a long way when eating out:
 
 ## Gluten-Free Options at Green Beans Coffee
 
-Green Beans Coffee in Kitasando, Shibuya, isn't a dedicated gluten-free kitchen, meaning wheat-based dishes are prepared in the same space, so cross-contamination can't be fully ruled out. For anyone with celiac disease or a severe allergy, it's worth speaking to staff directly before ordering.
+Green Beans Coffee in Kitasando, Shibuya, isn't a dedicated gluten-free kitchen, meaning wheat-based dishes are prepared in the same space, so cross-contamination can't be fully ruled out. For anyone with celiac disease or a severe allergy, it's worth <a href="https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition" target="_blank" rel="noopener noreferrer">asking staff directly how a dish is prepared before ordering</a> — the same precaution recommended when dining out anywhere.
 
 That said, the shop keeps a genuinely useful gluten-free selection for anyone reducing wheat or managing a milder sensitivity: a one-plate lunch built around house-made rice flour focaccia, plus a rice flour chocolate brownie for dessert. The lunch comes with a choice of main (pork, chicken, or a seasonal option), a side dish, and a sauce. If you mention gluten-free needs when booking, the kitchen can also accommodate course meals.
 
 ## Who This Is For
 
-People easing into a gluten-free lifestyle, travelers managing a mild sensitivity, or anyone simply curious about rice flour baking. It's a reasonable stop if you're also exploring the area, since the [gluten-free lunch pairs naturally with a longer stay](/en/articles/dog-friendly-cafe-tokyo/) at the cafe.
+People easing into a gluten-free lifestyle, travelers managing a mild sensitivity, or anyone simply curious about rice flour baking. It's a reasonable stop if you're also exploring the area, since the gluten-free lunch pairs naturally with a longer stay at the cafe.
 
 ## Frequently Asked Questions
 
@@ -75,4 +75,4 @@ No. Some people avoid gluten for digestive comfort or personal preference withou
 
 ## Conclusion
 
-Gluten-free dining is really a spectrum, from strict medical necessity to a loose lifestyle choice, and knowing where you fall on it makes eating out far less stressful. In Tokyo, options like the [rice flour focaccia lunch at Green Beans Coffee](/en/articles/dog-friendly-cafe-tokyo/) show that gluten-free doesn't have to mean limited.
+Gluten-free dining is really a spectrum, from strict medical necessity to a loose lifestyle choice, and knowing where you fall on it makes eating out far less stressful. In Tokyo, options like the rice flour focaccia lunch at Green Beans Coffee show that gluten-free doesn't have to mean limited.

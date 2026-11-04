@@ -1,5 +1,6 @@
 ---
 layout: article.njk
+enAlternateUrl: https://greenbeanscoffeeambassador.com/en/articles/what-is-specialty-coffee/
 title: スペシャルティコーヒーとは？東京・北参道で自家焙煎コーヒーを飲んで知った違い
 description: スペシャルティコーヒーとは生産地・品質・風味が厳格な基準を満たしたコーヒーのことです。一般的なコーヒーとは豆の選別・焙煎・抽出のすべてが異なります。東京・渋谷区北参道のGreen Beans Coffeeで体験できる魅力をお伝えします。
 tags:
