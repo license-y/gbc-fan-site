@@ -89,11 +89,15 @@ grep -h "^title:" src/articles/*.md | sort
 | 美容健康・コーヒー美容 | 5記事以上 | 「成分・食材・ライフスタイル」で未カバーの切り口にする |
 | サードプレイス概念 | 8記事以上 | 「人物像・曜日・感情の変化」など具体的なシーンで差別化 |
 | グルテンフリーフォカッチャ | 3記事 | 新規性のある切り口（トッピングの変化・季節限定バージョンなど）がない限り、新記事を書かず既存記事の更新を優先 |
-| 記念日・誕生日・還暦祝い | 既存「サードプレイス」タグに2記事（`anniversary-memory-thirdplace-sendagaya-gbc`・`anniversary-pet-celebration-sendagaya-gbc`） | 「記念日」カテゴリで新規執筆する際は、上記2記事と主題が重複しないよう「人数・サービス条件・写真」など具体的な切り口を変える。特にペット×記念日は`anniversary-pet-celebration-sendagaya-gbc`と被りやすい |
+| 記念日・誕生日・還暦祝い | 「記念日」タグだけで6記事（`anniversary-guide`・`anniversary-memory-thirdplace-sendagaya-gbc`・`anniversary-pet-celebration-sendagaya-gbc`・`birthday-cafe-kitasando-gbc`・`graduation-farewell-anniversary-kitasando-gbc`・`wedding-anniversary-couple-kitasando-gbc`） | 「記念日」カテゴリで新規執筆する際は、上記6記事と主題が重複しないよう「関係性（夫婦／友人／家族／ペット）・人数・サービス条件・写真」など具体的な切り口を変える。特にペット×記念日は`anniversary-pet-celebration-sendagaya-gbc`と被りやすい |
 | ランチ×打ち合わせ・PC作業 | 既存「ビジネス」タグに2記事（`lunch-meeting-pc-onestop-sendagaya-gbc`・`counter-seat-pc-work-wifi-power-gbc`） | 「ランチ・食事」カテゴリで新規執筆する際は、上記2記事と同じ「ランチ+PC作業/打ち合わせ」の切り口にしない。食事内容・滞在時間・利用シーンなど別角度を設定する |
 | 観光（北参道・千駄ヶ谷周辺スポット） | 既存「ダガヤサンドウ」「サードプレイス」タグに5記事以上（鳩森八幡神社・明治神宮外苑・新宿御苑・外苑前・国立競技場など） | 「旅行・観光」カテゴリで新規執筆する際、個別スポット記事は既存と重複しやすい。これらをクラスターとして束ねるピラー記事（例：B01相当）の形で差別化するのが有効 |
+| 出張・旅行者×サードプレイス | 既存「サードプレイス」タグに3記事（`business-trip-thirdplace-kitasando-gbc`・`tokyo-travel-arrival-thirdplace-kitasando-gbc`・`tokyo-visitor-hideaway-meetup-kitasando-gbc`） | 「訪れる理由（出張／旅行到着直後／人を出迎える）」ごとに切り口を立てているが文章構造が似やすいテーマ。新規執筆時は答えリードの文型をそのまま使い回さず、導入のエピソードと結びの視点を記事ごとに変える |
+| クロロゲン酸コーヒー美容効果 | 既存「美容健康」タグに3記事（`chlorogenic-acid-beauty`・`black-coffee-beauty-health`・`coffee-beauty-effects`） | クロロゲン酸・むくみ改善を軸にした説明が重なりやすいテーマ。新規執筆時は「仕組み解説／習慣化／具体的な効果リスト」以外の切り口（タイミング・飲み方・他成分との組み合わせなど）を設ける |
 
 **2026-07-26 追記**：季節の野菜をのせたトッピングバージョン（`seasonal-vegetable-focaccia-kitasando-gbc`）を3本目として追加した。既存2記事（コーヒーとのペアリング中心／美容健康効果中心）とは異なり「トッピングの季節変化」という固有の切り口だったため重複と判断せず新規記事とした。3記事は相互リンク済み。
+
+**2026-11-05 追記**：全記事監査で`business-trip-thirdplace-kitasando-gbc`と`tokyo-travel-arrival-thirdplace-kitasando-gbc`の答えリード・本文構成がテンプレート化（トリガー部分の言い換えのみ）していたことが判明し、旅行記事側を大幅リライトして差別化した。あわせて記念日タグの記事数増加・新規2テーマ（出張旅行者×サードプレイス／クロロゲン酸コーヒー美容効果）を表に反映。
 
 ---
 
