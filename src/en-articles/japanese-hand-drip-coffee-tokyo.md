@@ -64,4 +64,4 @@ The shop is open 10:30 to 18:30 with last orders at 18:00. It closes on irregula
 
 ## Conclusion
 
-Hand-drip coffee rewards a slower visit, and Green Beans Coffee in Kitasando — tucked quietly between Shibuya and Shinjuku, close to Sendagaya and the National Olympic Stadium — is a good place to let someone else choose the cup for once. If you're exploring [Tokyo Coffee](/en/articles/tags/tokyo-coffee/) spots or planning a broader walk around the neighborhood, it's worth the short detour off the main street to find it.
+Hand-drip coffee rewards a slower visit, and Green Beans Coffee in Kitasando — tucked quietly between Shibuya and Shinjuku, close to Sendagaya and the National Olympic Stadium — is a good place to let someone else choose the cup for once. If you're exploring [Tokyo Coffee](/en/articles/tags/tokyo-coffee/) spots or planning a broader walk around the neighborhood, it's worth the short detour off the main street to find it. For a more hands-on version of the same idea, the shop also runs a [coffee roasting experience](/en/articles/coffee-roasting-experience-tokyo/) where you roast your own beans before brewing them.

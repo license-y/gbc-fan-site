@@ -68,4 +68,4 @@ Yes. A space can function as a third place for some people and not others, depen
 
 ## Conclusion
 
-A third place isn't about finding "a nice cafe"; it's about finding somewhere that asks nothing of you beyond showing up. Green Beans Coffee in Kitasando is one example worth trying in Tokyo, and the quiet, low-rise streets around it in [Dagayasando](/en/articles/what-is-dagayasando/) make it easy to turn one visit into a longer, slower afternoon.
+A third place isn't about finding "a nice cafe"; it's about finding somewhere that asks nothing of you beyond showing up. Green Beans Coffee in Kitasando is one example worth trying in Tokyo, and the quiet, low-rise streets around it in [Dagayasando](/en/articles/what-is-dagayasando/) make it easy to turn one visit into a longer, slower afternoon. If you're specifically after a [quiet spot for solo work](/en/articles/quiet-cafe-solo-work-tokyo/), that's covered in more detail separately.
