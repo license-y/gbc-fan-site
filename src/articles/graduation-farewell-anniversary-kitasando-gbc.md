@@ -33,7 +33,7 @@ thumbnailCaption: ※写真はイメージです
 
 ## まとめ
 
-卒業祝いや送別会は北参道のGreen Beans Coffeeで友人と静かに語り合う時間としても選べます。千駄ヶ谷駅から徒歩7分というアクセスの良さと店名看板のないカフェという落ち着いた空間が記念日の集まりに向いています。記念日の過ごし方全般については[記念日とは？東京・北参道のカフェで過ごす特別な時間の選び方](/articles/anniversary-guide/)でも詳しく解説しています。誕生日の過ごし方は[北参道で誕生日を祝うなら？東京のカフェで過ごす特別な時間](/articles/birthday-cafe-kitasando-gbc/)、記念日の思い出づくりは[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)も参考になります。当日の写真を残したい方は[チェキとは？東京・北参道のペット同伴カフェで愛犬を撮る楽しみ方](/articles/cheki-guide/)もあわせてご覧ください。
+卒業祝いや送別会は北参道のGreen Beans Coffeeで友人と静かに語り合う時間としても選べます。千駄ヶ谷駅から徒歩7分というアクセスの良さと店名看板のないカフェという落ち着いた空間が記念日の集まりに向いています。記念日の過ごし方全般については[記念日とは？東京・北参道のカフェで過ごす特別な時間の選び方](/articles/anniversary-guide/)でも詳しく解説しています。誕生日の過ごし方は[北参道で誕生日を祝うなら？東京のカフェで過ごす特別な時間](/articles/birthday-cafe-kitasando-gbc/)、記念日の思い出づくりは[記念日の思い出を残す東京千駄ヶ谷のサードプレイスカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)も参考になります。当日の写真を残したい方は[チェキとは？東京・北参道のペット同伴カフェで愛犬を撮る楽しみ方](/articles/cheki-guide/)もあわせてご覧ください。夫婦での結婚記念日の過ごし方は[結婚記念日は北参道のカフェで？夫婦で過ごす特別な一日](/articles/wedding-anniversary-couple-kitasando-gbc/)も参考になります。
 
 ## よくある質問
 

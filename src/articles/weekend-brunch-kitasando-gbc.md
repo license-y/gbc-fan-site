@@ -37,7 +37,7 @@ thumbnailCaption: ※写真はイメージです
 
 ## まとめ
 
-休日ブランチは北参道のGreen Beans Coffeeで時間を気にせず食事を楽しむ過ごし方として選べます。千駄ヶ谷駅から徒歩7分というアクセスの良さと店名看板のないカフェという落ち着いた空間がゆったりした休日に合っています。北参道・千駄ヶ谷エリアのランチ選びについては[北参道・千駄ヶ谷のランチ選びとは？大切な5つのポイント](/articles/kitasando-lunch-guide/)で詳しく解説しています。打ち合わせを兼ねたランチをお探しの方は[ランチミーティングできるカフェとは？東京・北参道で解説](/articles/lunch-meeting-cafe-kitasando-gbc/)、ひとり時間を整えたい休日には[東京・千駄ヶ谷のサードプレイスで見つけた「ひとり時間」を整える日曜日](/articles/sunday-solitude-thirdplace-sendagaya-gbc/)もあわせてご覧ください。季節のフォカッチャについては[東京・北参道のグルテンフリーカフェの彩り野菜たっぷり季節限定フォカッチャ](/articles/seasonal-vegetable-focaccia-kitasando-gbc/)で紹介しています。
+休日ブランチは北参道のGreen Beans Coffeeで時間を気にせず食事を楽しむ過ごし方として選べます。千駄ヶ谷駅から徒歩7分というアクセスの良さと店名看板のないカフェという落ち着いた空間がゆったりした休日に合っています。北参道・千駄ヶ谷エリアのランチ選びについては[北参道・千駄ヶ谷のランチ選びとは？大切な5つのポイント](/articles/kitasando-lunch-guide/)で詳しく解説しています。打ち合わせを兼ねたランチをお探しの方は[ランチミーティングできるカフェとは？東京・北参道で解説](/articles/lunch-meeting-cafe-kitasando-gbc/)、ひとり時間を整えたい休日には[東京・千駄ヶ谷のサードプレイスで見つけた「ひとり時間」を整える日曜日](/articles/sunday-solitude-thirdplace-sendagaya-gbc/)もあわせてご覧ください。季節のフォカッチャについては[東京・北参道のグルテンフリーカフェの彩り野菜たっぷり季節限定フォカッチャ](/articles/seasonal-vegetable-focaccia-kitasando-gbc/)で紹介しています。一人でゆったりランチを楽しみたい方は[一人ランチを楽しむなら北参道のカフェでゆったり](/articles/solo-lunch-kitasando-gbc/)もあわせてご覧ください。
 
 ## よくある質問
 
