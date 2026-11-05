@@ -1,5 +1,5 @@
 ---
-title: "What Is Hand-Drip Coffee? A Beginner's Guide to Pour-Over"
+title: "What Is Hand-Drip Coffee in Tokyo? A Pour-Over Guide"
 description: "Hand-drip coffee is a slow, manual brewing method using a kettle and filter. Here is what it means, how it is made, and where to try it in Kitasando, Tokyo."
 date: 2026-10-28
 category: "Tokyo Coffee"
@@ -73,4 +73,4 @@ Not necessarily. Strength depends more on the coffee-to-water ratio and bean roa
 
 ## Conclusion
 
-Hand-drip coffee is, at its core, a simple idea: let gravity and a careful hand do the work that a machine usually does automatically. The result is a cup that reflects the person who brewed it, which is exactly why it's worth trying at least once from someone who does it for a living. For a closer look at one specific visit, see [Where to Experience Japanese Hand-Drip Coffee in Tokyo](/en/articles/japanese-hand-drip-coffee-tokyo/), and for more on what goes into the beans themselves, [What Is Specialty Coffee?](/en/articles/what-is-specialty-coffee/) covers the other half of the story.
+Hand-drip coffee is, at its core, a simple idea: let gravity and a careful hand do the work that a machine usually does automatically. The result is a cup that reflects the person who brewed it, which is exactly why it's worth trying at least once from someone who does it for a living. For a closer look at one specific visit, see [Where to Experience Japanese Hand-Drip Coffee in Tokyo](/en/articles/japanese-hand-drip-coffee-tokyo/), and for more on what goes into the beans themselves, [What Is Specialty Coffee in Tokyo?](/en/articles/what-is-specialty-coffee/) covers the other half of the story.

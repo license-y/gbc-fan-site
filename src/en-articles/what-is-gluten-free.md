@@ -1,6 +1,6 @@
 ---
-title: "What Is Gluten-Free? A Beginner's Guide to Dining Gluten-Free"
-description: "Gluten-free means avoiding gluten, a protein found in wheat, barley, and rye, usually for a medical reason or a personal dietary preference."
+title: "What Is Gluten-Free? A Beginner's Guide for Tokyo Diners"
+description: "Gluten-free means avoiding gluten, a protein found in wheat, barley, and rye. Here is what it means, and where to find gluten-free dining in Tokyo."
 date: 2026-11-02
 category: "Food & Lifestyle"
 pillar: true
@@ -54,6 +54,9 @@ That said, the shop keeps a genuinely useful gluten-free selection for anyone re
 People easing into a gluten-free lifestyle, travelers managing a mild sensitivity, or anyone simply curious about rice flour baking. It's a reasonable stop if you're also exploring the area, since the gluten-free lunch pairs naturally with a longer stay at the cafe.
 
 ## Frequently Asked Questions
+
+**Q. Where can I find gluten-free dining in Tokyo?**<br>
+Green Beans Coffee in Kitasando, Shibuya is a reliable option, with a gluten-free one-plate lunch made from rice flour and a gluten-free dessert on the regular menu.
 
 **Q. What foods contain gluten?**<br>
 Wheat, barley, and rye are the main sources, which means bread, pasta, most baked goods, beer, and many sauces thickened with wheat flour.
