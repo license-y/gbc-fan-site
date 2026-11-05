@@ -44,7 +44,7 @@ thumbnailAlt: 青空を背景にそびえる東京駅丸の内駅舎の赤レン
 
 にぎやかな繁華街から外れた場所で過ごす最初の数十分が、その後の旅程全体の気持ちの余裕につながるように思います。到着直後にどんな一杯を選ぶかで旅の始まり方が変わる。そう思わせてくれる店です。
 
-東京駅から地下鉄でおよそ20分。新宿駅からのアクセスは[東京・新宿駅新南口から徒歩圏内のダガヤサンドウのカフェ](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。到着後にそのまま観光へ向かいたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。ビジネス目的で東京に来た方には[東京出張の合間に渋谷・北参道のサードプレイスカフェ](/articles/business-trip-thirdplace-kitasando-gbc/)も参考になります。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。東京に来た大切な人を出迎えて待ち合わせる場面については[出張や帰省で東京に来た人と待ち合わせる北参道の隠れ家カフェ](/articles/tokyo-visitor-hideaway-meetup-kitasando-gbc/)でも紹介しています。
+東京駅から地下鉄でおよそ20分。新宿駅からのアクセスは[東京・新宿駅新南口から徒歩圏内のダガヤサンドウのカフェ](/articles/shinjuku-sendagaya-boundary-dagayasando-gbc/)で紹介しています。到着後にそのまま観光へ向かいたい方は[東京・北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。ビジネス目的で東京に来た方には[東京出張の合間に渋谷・北参道のサードプレイスカフェ](/articles/business-trip-thirdplace-kitasando-gbc/)も参考になります。サードプレイスという概念そのものについては[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)で解説しています。東京に来た大切な人を出迎えて待ち合わせる場面については[東京に来た出張・帰省の人と待ち合わせる北参道の隠れ家カフェ](/articles/tokyo-visitor-hideaway-meetup-kitasando-gbc/)でも紹介しています。
 
 ## まとめ
 
