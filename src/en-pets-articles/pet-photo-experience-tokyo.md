@@ -7,6 +7,7 @@ tags:
   - Pet-Friendly Tokyo
 date: 2026-11-04
 permalink: /en/pets/articles/pet-photo-experience-tokyo/
+draft: true
 ---
 
 <!-- DRAFT STRUCTURE ONLY — outline for review before full prose is written. Not for publication as-is. -->

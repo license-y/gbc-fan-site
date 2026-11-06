@@ -7,6 +7,7 @@ tags:
   - Pet-Friendly Tokyo
 date: 2026-11-03
 permalink: /en/pets/articles/tokyo-day-trip-with-dog/
+draft: true
 ---
 
 <!-- DRAFT STRUCTURE ONLY — outline for review before full prose is written. Not for publication as-is. -->

@@ -207,17 +207,19 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // ペット専門11ty記事コレクション（/pets/articles/）
+  // ペット専門11ty記事コレクション（/pets/articles/）。draft: true の記事は一覧・サイトマップ・関連記事から除外
   eleventyConfig.addCollection("petsArticles", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("pets-articles")
+      .filter((p) => !p.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 
-  // 英語ペット専門11ty記事コレクション（/en/pets/articles/）
+  // 英語ペット専門11ty記事コレクション（/en/pets/articles/）。draft: true の記事は一覧・サイトマップ・関連記事から除外
   eleventyConfig.addCollection("enPetsArticles", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("en-pets-articles")
+      .filter((p) => !p.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 

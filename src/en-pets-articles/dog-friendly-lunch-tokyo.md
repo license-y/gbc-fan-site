@@ -23,9 +23,9 @@ A coffee stop is quick: you're in and out, and your dog barely has time to settl
 
 The gluten-free one-plate lunch is the main thing to know about: a main dish, a side, and a sauce, served with house-made rice flour focaccia instead of regular bread. It's a proper plate, not a snack plate you order because nothing else fits your diet.
 
-One detail that makes lunch an easier decision: if you order before 3 PM, drinks are half price for the rest of your visit. That alone can turn a quick stop into a longer one, especially if your dog has just settled into a good spot under the table and nobody's in a hurry to leave.
+I haven't seen a current discount or set-time offer on drinks, so I'm not going to mention one here — menus and offers change, and it's worth checking [Instagram](https://www.instagram.com/green.beanscoffee) or asking staff on the day for anything time-limited.
 
-I haven't been able to confirm a dog-specific food or treat menu, so I'm not going to claim one exists here — if that matters for your visit, it's worth asking staff directly or checking [Instagram](https://www.instagram.com/green.beanscoffee) beforehand.
+I also haven't been able to confirm a dog-specific food or treat menu, so I'm not going to claim one exists here — if that matters for your visit, it's worth asking staff directly or checking Instagram beforehand.
 
 ## Getting Your Dog Settled Before the Food Arrives
 
@@ -45,8 +45,8 @@ This is the version of a dog-friendly cafe for people who want to actually eat, 
 **Q. Can I get a real meal, not just coffee, at a dog-friendly cafe in Tokyo?**<br>
 Yes. Green Beans Coffee in Kitasando serves a gluten-free one-plate lunch — a main, a side, and a sauce with rice flour focaccia — and every seat is open to dogs indoors.
 
-**Q. Is there a discount for staying longer over lunch?**<br>
-Yes. Ordering before 3 PM gets you half-price drinks for the rest of your visit, which makes a longer, slower lunch easier to justify.
+**Q. Is there a quieter time to visit for lunch with a dog?**<br>
+I've generally found it calmer earlier in the lunch window than right around noon, though this isn't something the cafe publishes — it's just a pattern I've noticed.
 
 **Q. Does the cafe have food made specifically for dogs?**<br>
 This isn't confirmed at this time, so it isn't something I can promise here. Please ask staff directly or check Instagram before your visit if this matters to you.
