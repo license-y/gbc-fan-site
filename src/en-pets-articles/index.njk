@@ -1,0 +1,91 @@
+---
+layout: en-pets-articles-base.njk
+title: Dog-Friendly Tokyo Cafe Guide | Green Beans Coffee Pet Ambassador Site
+description: Articles about visiting Green Beans Coffee in Kitasando, Tokyo with your dog — birthdays, lunch, photo experiences, day trips and third places, written by pet ambassador Ayaka.
+ogType: website
+permalink: /en/pets/articles/index.html
+---
+
+<main class="max-w-4xl mx-auto px-4 py-12">
+
+  <div class="mb-8 text-center">
+    <h1 class="text-3xl font-bold text-[#4A3728] mb-2">Dog-Friendly Tokyo Cafe Guide</h1>
+    <p class="text-sm text-[#8B7355]">Articles about visiting Green Beans Coffee in Kitasando, Tokyo with your dog — birthdays, lunch, photo experiences, day trips and third places.</p>
+  </div>
+
+  <!-- Link to the full (Japanese) pet guide -->
+  <a href="/pets/" data-ga-event="click_store_page" data-ga-location="article_cta" data-content-group="pets"
+    class="group flex items-center gap-4 max-w-3xl mx-auto mb-10 bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
+    <div class="p-5 flex-1 min-w-0">
+      <span class="text-xs bg-[#C9A86C] text-white rounded-full px-2.5 py-0.5 mb-1 inline-block">Full Pet Guide</span>
+      <h2 class="text-sm sm:text-base font-bold text-[#2D2A26] group-hover:text-[#4A3728] leading-snug">Seating rules, FAQ and access (Japanese)</h2>
+      <p class="text-xs text-[#8B7355] mt-1 hidden sm:block">The complete pet-friendly guide — conditions, FAQ and photos — is maintained by pet ambassador Ayaka, currently in Japanese.</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-[#B0A090] mr-4 flex-shrink-0 hidden sm:block"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+  </a>
+
+  {%- if collections.enPetsArticles.length == 0 %}
+  <p class="text-center text-[#8B7355] py-20">Articles coming soon.</p>
+  {%- else %}
+
+  <!-- Latest articles header -->
+  <div class="flex items-center gap-2 mb-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    <h2 class="text-base font-bold text-[#4A3728]">All Articles</h2>
+  </div>
+
+  <!-- Article list -->
+  <div class="flex flex-col gap-4">
+    {%- for post in collections.enPetsArticles %}
+    {%- set postTags = [] %}
+    {%- for tag in post.data.tags %}
+      {%- if tag != "en-pets-articles" %}
+        {%- set postTags = (postTags.push(tag), postTags) %}
+      {%- endif %}
+    {%- endfor %}
+    <a href="{{ post.url }}"
+      class="group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
+
+      <!-- Thumbnail -->
+      {%- if post.data.thumbnail %}
+      <div class="relative w-32 sm:w-44 flex-shrink-0 overflow-hidden self-stretch">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" class="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300" loading="lazy" decoding="async">
+      </div>
+      {%- else %}
+      <div class="w-32 sm:w-44 h-28 sm:h-32 flex-shrink-0 bg-[#FAF8F5] flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D0C4B0" stroke-width="1.5"><path d="M17 3H7a2 2 0 0 0-2 2v16l7-3 7 3V5a2 2 0 0 0-2-2z"/></svg>
+      </div>
+      {%- endif %}
+
+      <!-- Text -->
+      <div class="p-4 sm:p-5 flex flex-col justify-between flex-1 min-w-0">
+        <div>
+          {%- if postTags.length > 0 %}
+          <div class="flex flex-wrap gap-1 mb-2">
+            {%- for tag in postTags %}
+            <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-2 py-0.5">{{ tag }}</span>
+            {%- endfor %}
+          </div>
+          {%- endif %}
+          <h3 class="text-sm sm:text-base font-bold text-[#2D2A26] group-hover:text-[#4A3728] leading-snug mb-1">{{ post.data.title }}</h3>
+          {%- if post.data.description %}
+          <p class="text-xs text-[#8B7355] line-clamp-2 hidden sm:block">{{ post.data.description }}</p>
+          {%- endif %}
+        </div>
+        <p class="text-xs text-[#B0A090] mt-2">{{ post.date | dateEn }}</p>
+      </div>
+    </a>
+    {%- endfor %}
+  </div>
+
+  {%- endif %}
+
+  <!-- Link back to general EN articles -->
+  <div class="mt-12 text-center">
+    <a href="/en/articles/" class="inline-flex items-center gap-2 text-sm text-[#8B7355] hover:text-[#4A3728] transition">
+      General Tokyo coffee &amp; cafe articles
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  </div>
+
+</main>

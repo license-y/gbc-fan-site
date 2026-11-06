@@ -1,0 +1,391 @@
+---
+layout: pets-articles-base.njk
+---
+
+<style>
+  .special-h2 {
+    background: #FAF8F5;
+    border-left: 3px solid #C9A86C !important;
+    border-bottom: none !important;
+    padding: 8px 16px !important;
+    margin-top: 3rem !important;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+
+<div class="max-w-6xl mx-auto px-4 py-12">
+
+  <!-- パンくずリスト（フル幅） -->
+  <nav class="text-xs text-[#8B7355] mb-6 flex items-center gap-1 flex-wrap">
+    <a href="/" class="hover:text-[#4A3728] transition whitespace-nowrap">トップ</a>
+    <span>/</span>
+    <a href="/pets/articles/" class="hover:text-[#4A3728] transition whitespace-nowrap">ペット記事</a>
+    <span>/</span>
+    <span class="text-[#4A3728]">{{ title }}</span>
+  </nav>
+
+  <!-- 記事ヘッダー（フル幅） -->
+  <header class="mb-10">
+    <!-- タグ（カテゴリページは記事が揃うまで非公開のためリンクなしのバッジ表示） -->
+    {% if tags %}
+    <div class="flex flex-wrap gap-2 mb-4">
+      {% for tag in tags %}
+      {% if tag != "pets-articles" %}
+      <span class="text-xs bg-[#FAF8F5] text-[#8B7355] border border-[#E8E0D5] rounded-full px-3 py-1">{{ tag }}</span>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- タイトル -->
+    <h1 class="text-lg md:text-2xl font-bold text-[#4A3728] leading-snug mb-4">{{ title }}</h1>
+
+    <!-- メタ情報 -->
+    <div class="flex items-center gap-4 text-xs text-[#8B7355] border-b border-[#E8E0D5] pb-5">
+      {% if not pillar %}<span>公開日：{{ page.date | dateJa }}</span>{% endif %}
+      {% if updated %}<span>更新日：{{ updated | dateJa }}</span>{% endif %}
+      <span>GBCペットアンバサダー</span>
+    </div>
+  </header>
+
+  <!-- 2カラムレイアウト（メタ情報の下から） -->
+  <div class="flex flex-col lg:flex-row gap-10 mt-8">
+
+    <!-- 本文エリア -->
+    <article class="lg:w-2/3 min-w-0">
+
+      <!-- アイキャッチ画像 -->
+      {% if thumbnail %}
+      <div class="max-w-[500px] mx-auto mb-8">
+        <div class="rounded-xl overflow-hidden">
+          <img src="{{ thumbnail }}" alt="{{ thumbnailAlt or (title + ' | Green Beans Coffee 北参道・千駄ヶ谷 ペット同伴カフェ') }}" class="w-full object-cover" loading="lazy" decoding="async" width="800" height="450">
+        </div>
+        {% if thumbnailCaption %}
+        <p class="text-xs text-[#B0A090] text-center mt-2">{{ thumbnailCaption }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <div class="prose prose-stone max-w-none
+        prose-headings:font-serif prose-headings:text-[#4A3728]
+        prose-h2:text-xl prose-h2:border-b prose-h2:border-[#E8E0D5] prose-h2:pb-2 prose-h2:mt-10
+        prose-h3:text-lg prose-h3:mt-8
+        prose-p:text-[#2D2A26] prose-p:leading-relaxed
+        prose-a:text-[#C9A86C] prose-a:no-underline hover:prose-a:underline
+        prose-img:rounded-lg
+        prose-blockquote:border-l-[#C9A86C] prose-blockquote:bg-[#FAF8F5] prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-lg
+        prose-strong:text-[#4A3728]">
+        {{ content | safe }}
+      </div>
+
+      <!-- シェアボタン -->
+      <div class="mt-12 pt-8 border-t border-[#E8E0D5] text-center">
+        <p class="text-xs text-[#8B7355] mb-4">この記事をシェア</p>
+        <div class="inline-flex items-center gap-4">
+          <!-- X (Twitter) -->
+          <a id="share-x" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.856L1.254 2.25H8.08l4.259 5.632L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            ポスト
+          </a>
+          <!-- LINE -->
+          <a id="share-line" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+            LINE
+          </a>
+          <!-- Facebook -->
+          <a id="share-fb" href="#" target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 border border-[#D0C4B0] text-[#8B7355] text-xs px-4 py-2 rounded-full hover:border-[#4A3728] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+        </div>
+      </div>
+
+      <!-- 関連記事 -->
+      {% set related = collections.petsArticles | petsRelatedPosts(page.url, tags) %}
+      {% if related.length > 0 %}
+      <div class="mt-8 pt-6 border-t border-[#E8E0D5]">
+        <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          関連記事
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          {% for post in related %}
+          {% set postTags = [] %}
+          {% for tag in post.data.tags %}
+            {% if tag != "pets-articles" %}{% set postTags = (postTags.push(tag), postTags) %}{% endif %}
+          {% endfor %}
+          <a href="{{ post.url }}" class="group flex flex-col gap-2 bg-[#FAF8F5] border border-[#E8E0D5] rounded-lg overflow-hidden hover:border-[#C9A86C] transition">
+            {% if post.data.thumbnail %}
+            <div class="overflow-hidden h-36 w-full">
+              <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }} | Green Beans Coffee 北参道" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-300" loading="lazy" decoding="async" width="400" height="144">
+            </div>
+            {% endif %}
+            <div class="px-3 pb-3 flex flex-col gap-1">
+              {% if postTags.length > 0 %}
+              <span class="text-xs text-[#B0A090]">{{ postTags[0] }}</span>
+              {% endif %}
+              <p class="text-xs font-medium text-[#2D2A26] leading-snug line-clamp-2 group-hover:text-[#C9A86C] transition">{{ post.data.title }}</p>
+              <p class="text-xs text-[#B0A090]">{{ post.date | dateJa }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- 前後記事ナビ -->
+      {% set prevPost = collections.petsArticles | prevPost(page.url) %}
+      {% set nextPost = collections.petsArticles | nextPost(page.url) %}
+      {% if prevPost or nextPost %}
+      <nav class="mt-8 pt-6 border-t border-[#E8E0D5]">
+        <div class="flex gap-3">
+          {% if prevPost %}
+          <a href="{{ prevPost.url }}" class="flex-1 flex flex-col gap-1.5 bg-[#FAF8F5] border border-[#D0C4B0] rounded-lg p-4 hover:border-[#C9A86C] transition group">
+            <span class="text-xs text-[#8B7355] flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+              前の記事
+            </span>
+            <span class="text-xs font-medium text-[#4A3728] line-clamp-2 group-hover:text-[#C9A86C] transition leading-snug">{{ prevPost.data.title }}</span>
+          </a>
+          {% else %}
+          <div class="flex-1"></div>
+          {% endif %}
+          {% if nextPost %}
+          <a href="{{ nextPost.url }}" class="flex-1 flex flex-col gap-1.5 items-end bg-[#FAF8F5] border border-[#D0C4B0] rounded-lg p-4 hover:border-[#C9A86C] transition group text-right">
+            <span class="text-xs text-[#8B7355] flex items-center gap-1">
+              次の記事
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </span>
+            <span class="text-xs font-medium text-[#4A3728] line-clamp-2 group-hover:text-[#C9A86C] transition leading-snug">{{ nextPost.data.title }}</span>
+          </a>
+          {% else %}
+          <div class="flex-1"></div>
+          {% endif %}
+        </div>
+      </nav>
+      {% endif %}
+
+      <!-- 記事CTA -->
+      {% set articleCategory = "" %}
+      {% for tag in tags %}
+        {% if tag != "pets-articles" and articleCategory == "" %}{% set articleCategory = tag %}{% endif %}
+      {% endfor %}
+      <div class="mt-10 pt-8 border-t border-[#E8E0D5]">
+        <div class="bg-white border border-[#E8E0D5] rounded-2xl px-6 py-8 sm:px-10 sm:py-10 text-center">
+          <p class="text-xs text-[#C9A86C] tracking-widest mb-2">GREEN BEANS COFFEE</p>
+          <h2 class="text-lg sm:text-xl font-bold text-[#4A3728] mb-3">愛犬と過ごせる<br class="sm:hidden">北参道・千駄ヶ谷のカフェへ</h2>
+          <p class="text-sm text-[#8B7355] leading-relaxed mb-8 max-w-xl mx-auto text-left md:text-center">
+            店内全席ペット同伴OKのGreen Beans Coffeeで、<br>愛犬との時間をゆっくりと。<br>来店前はペットワンページで最新情報をご確認ください。
+          </p>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-2xl mx-auto">
+            <a href="https://greenbeanscoffeeambassador.com/pets/" data-ga-event="click_store_page" data-ga-location="article_cta" data-content-group="pets"
+              class="flex flex-col items-center gap-2 px-3 py-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9A86C] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="text-xs font-medium text-[#4A3728]">ペットワンページ</span>
+            </a>
+            <a href="https://greenbeanscoffeeambassador.com/#menu" data-ga-event="click_store_page" data-ga-location="article_cta" data-content-group="pets"
+              class="flex flex-col items-center gap-2 px-3 py-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9A86C] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+              <span class="text-xs font-medium text-[#4A3728]">メニューを見る</span>
+            </a>
+            <a href="https://tabelog.com/tokyo/A1309/A130901/13277423" target="_blank" rel="noopener noreferrer" data-ga-event="click_reserve" data-ga-location="article_cta" data-content-group="pets"
+              class="flex flex-col items-center gap-2 px-3 py-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9A86C] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              <span class="text-xs font-medium text-[#4A3728]">食べログで予約</span>
+            </a>
+            <a href="tel:0364470681" data-ga-event="click_reserve" data-ga-location="article_cta" data-content-group="pets"
+              class="flex flex-col items-center gap-2 px-3 py-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9A86C] transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span class="text-xs font-medium text-[#4A3728]">電話で予約</span>
+            </a>
+          </div>
+          <a href="https://www.google.com/maps/place/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%93%E3%83%BC%E3%83%B3%E3%82%BA%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr?entry=ttu" target="_blank" rel="noopener noreferrer" data-ga-event="click_map" data-ga-location="article_cta" data-article-category="{{ articleCategory }}" data-article-slug="{{ page.fileSlug }}" data-content-group="pets"
+            class="mt-4 flex items-center justify-center gap-2 max-w-2xl mx-auto px-3 py-4 rounded-xl border border-[#E8E0D5] hover:border-[#C9A86C] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="text-xs font-medium text-[#4A3728]">Googleマップで場所を確認</span>
+          </a>
+          <p class="text-xs text-[#B0A090] mt-2">北参道駅から徒歩3分</p>
+          <a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer" data-ga-event="click_instagram" data-ga-location="article_cta" data-content-group="pets"
+            class="flex items-start justify-center gap-2 mt-6 text-xs text-[#8B7355] hover:text-[#4A3728] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="flex-shrink-0 mt-0.5"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <span class="flex-shrink-0 text-center">Instagram DMでもご予約いただけます<br>（@green.beanscoffee）</span>
+          </a>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- サイドバー -->
+    <aside class="lg:w-1/3">
+      <div class="sticky top-24 space-y-8">
+
+        <!-- ペットワンページへ -->
+        <a href="/pets/" data-ga-event="click_store_page" data-ga-location="sidebar" data-content-group="pets"
+          class="block bg-white rounded-xl border border-[#E8E0D5] p-6 hover:border-[#C9A86C] transition group">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-2 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            ペットワンページ
+          </h2>
+          <p class="text-xs text-[#8B7355] leading-relaxed">同伴条件・FAQ・アクセスなど来店前に確認したい情報はこちら</p>
+        </a>
+
+        <!-- 最新記事 -->
+        <div class="bg-white rounded-xl border border-[#E8E0D5] p-6">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            最新記事
+          </h2>
+          <ul class="divide-y divide-[#F0EAE0]">
+            {% set count = 0 %}
+            {% for post in collections.petsArticles %}
+            {% if post.url != page.url and count < 5 %}
+            {% set count = count + 1 %}
+            {% set postTags = [] %}
+            {% for tag in post.data.tags %}
+              {% if tag != "pets-articles" %}{% set postTags = (postTags.push(tag), postTags) %}{% endif %}
+            {% endfor %}
+            <li class="py-3">
+              <a href="{{ post.url }}" class="group block">
+                {% if postTags.length > 0 %}
+                <span class="text-xs text-[#B0A090]">{{ postTags[0] }}</span>
+                {% endif %}
+                <p class="text-xs font-medium text-[#2D2A26] leading-snug group-hover:text-[#C9A86C] transition mt-0.5 line-clamp-2">{{ post.data.title }}</p>
+                <p class="text-xs text-[#B0A090] mt-1">{{ post.date | dateJa }}</p>
+              </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- アクセス情報 -->
+        <div class="bg-white rounded-xl border border-[#E8E0D5] p-6">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            アクセス
+          </h2>
+          <ul class="space-y-3 text-xs text-[#2D2A26]">
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">住所</span>
+              <span>東京都渋谷区<br>千駄ヶ谷3-30-1<br>RC APARTMENT 1階</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">最寄駅</span>
+              <span>
+                北参道駅 徒歩3分<br>
+                千駄ヶ谷駅 徒歩7分<br>
+                国立競技場駅 徒歩7分<br>
+                代々木駅 徒歩11分<br>
+                原宿駅 徒歩11分
+              </span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">営業時間</span>
+              <span>10:30〜18:30<br><span class="text-[#B0A090]">L.O. 18:00</span></span>
+            </li>
+            <li class="flex gap-2">
+              <span class="text-[#B0A090] flex-shrink-0 w-14">定休日</span>
+              <span>不定休<br><a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer" class="text-[#C9A86C] hover:underline" data-ga-event="click_instagram" data-ga-location="sidebar" data-content-group="pets">Instagram で確認</a></span>
+            </li>
+          </ul>
+          <!-- Googleマップ -->
+          <div class="mt-4 rounded-lg overflow-hidden border border-[#E8E0D5]">
+            <iframe
+              title="Green Beans Coffee の地図"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.593074936916!2d139.7052597!3d35.6775167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d4404ef151f%3A0x85142d57557d0f87!2z44Kw44Oq44O844Oz44OT44O844Oz44K544Kz44O844OS44O8!5e0!3m2!1sja!2sjp!4v1234567890"
+              width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <!-- Google評価（マップ下部・右寄せ） -->
+          <div class="flex items-center justify-end gap-1 mt-2 whitespace-nowrap">
+            <span class="text-xs text-[#8B7355]">Google評価</span>
+            <span class="text-xs font-medium text-[#4A3728]">4.8</span>
+            <svg class="w-3 h-3 text-yellow-400 fill-current flex-shrink-0" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+            <span class="text-xs text-[#8B7355]">596件のレビュー</span>
+          </div>
+          <a href="https://www.google.com/maps/place/%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E3%83%93%E3%83%BC%E3%83%B3%E3%82%BA%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC/@35.677521,139.7052597,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d4404ef151f:0x85142d57557d0f87!8m2!3d35.6775167!4d139.7078346!16s%2Fg%2F11s4ybh4cr?entry=ttu" target="_blank" rel="noopener noreferrer" data-ga-event="click_map" data-ga-location="sidebar" data-content-group="pets"
+            class="mt-3 flex items-center justify-center gap-2 w-full bg-[#FAF8F5] border border-[#D0C4B0] text-[#4A3728] text-sm px-5 py-2.5 rounded-lg hover:bg-[#C9A86C] hover:text-white hover:border-[#C9A86C] transition">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Open in Google Maps
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+          </a>
+        </div>
+
+        <!-- SNS リンク -->
+        <div class="bg-white rounded-xl border border-[#E8E0D5] p-6">
+          <h2 class="text-sm font-bold text-[#4A3728] mb-4 flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            公式 SNS
+          </h2>
+          <ul class="space-y-2">
+            <li>
+              <a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer" data-ga-event="click_instagram" data-ga-location="sidebar" data-content-group="pets"
+                class="flex items-center gap-3 text-xs text-[#2D2A26] hover:text-[#C9A86C] transition group">
+                <span class="w-7 h-7 rounded-full bg-[#FAF8F5] border border-[#E8E0D5] flex items-center justify-center flex-shrink-0 group-hover:border-[#C9A86C] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </span>
+                <span>@green.beanscoffee<br><span class="text-[#B0A090]">最新情報・定休日</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/pome_ponkun/" target="_blank" rel="noopener noreferrer" data-ga-event="click_instagram" data-ga-location="sidebar" data-content-group="pets"
+                class="flex items-center gap-3 text-xs text-[#2D2A26] hover:text-[#C9A86C] transition group">
+                <span class="w-7 h-7 rounded-full bg-[#FAF8F5] border border-[#E8E0D5] flex items-center justify-center flex-shrink-0 group-hover:border-[#C9A86C] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </span>
+                <span>@pome_ponkun<br><span class="text-[#B0A090]">ペットアンバサダーAyaka</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@greenbeanscoffee9" target="_blank" rel="noopener noreferrer"
+                class="flex items-center gap-3 text-xs text-[#2D2A26] hover:text-[#C9A86C] transition group">
+                <span class="w-7 h-7 rounded-full bg-[#FAF8F5] border border-[#E8E0D5] flex items-center justify-center flex-shrink-0 group-hover:border-[#C9A86C] transition">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><polygon points="10 15 15 12 10 9"/></svg>
+                </span>
+                <span>Green Beans Coffee<br><span class="text-[#B0A090]">動画・イベント記録</span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<script>
+  // まとめ・よくある質問 の h2 に特別スタイルを適用
+  document.querySelectorAll('article h2').forEach(function(h2) {
+    var text = h2.textContent.trim();
+    if (['まとめ', 'よくある質問', 'FAQ', 'Summary', 'Conclusion'].includes(text)) {
+      h2.classList.add('special-h2');
+    }
+  });
+
+  // FAQ Q&AにARIAマークアップを付与
+  var faqProse = document.querySelector('article .prose');
+  if (faqProse) {
+    faqProse.querySelectorAll('p').forEach(function(p) {
+      var strong = p.querySelector('strong');
+      if (!strong) return;
+      var qText = strong.textContent.trim();
+      if (!qText.startsWith('Q.')) return;
+      p.setAttribute('role', 'group');
+      p.setAttribute('aria-label', qText);
+    });
+  }
+
+  // SNS シェアボタンのURL設定
+  var pageUrl = encodeURIComponent(location.href);
+  var pageTitle = encodeURIComponent(document.title);
+  var shareX = document.getElementById('share-x');
+  var shareLine = document.getElementById('share-line');
+  var shareFb = document.getElementById('share-fb');
+  if (shareX) shareX.href = 'https://twitter.com/intent/tweet?url=' + pageUrl + '&text=' + pageTitle;
+  if (shareLine) shareLine.href = 'https://social-plugins.line.me/lineit/share?url=' + pageUrl;
+  if (shareFb) shareFb.href = 'https://www.facebook.com/sharer/sharer.php?u=' + pageUrl;
+</script>

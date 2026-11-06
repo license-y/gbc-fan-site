@@ -15,6 +15,11 @@ const TAG_SLUGS = {
   "記念日": "anniversary",
   "旅行・観光": "travel-sightseeing",
   "ランチ・食事": "lunch-dining",
+  // ペット専門11ty記事（/pets/articles/）用カテゴリ。"記念日"は既存の値をそのまま再利用
+  "犬同伴カフェ・ランチ": "dog-friendly-cafe-lunch",
+  "犬連れ東京観光": "tokyo-dog-travel",
+  "ペットとサードプレイス": "pet-third-place",
+  "ペット撮影会・体験": "pet-photo-experience",
 };
 
 // カテゴリ一覧ページ（tags/index.njk）用の個別description（100〜120字、カテゴリごとに内容を変えて重複コンテンツを回避）
@@ -88,6 +93,38 @@ export default function (eleventyConfig) {
       .map(({ post }) => post);
   });
 
+  // ペット専門11ty記事用の関連記事取得フィルター（"pets-articles"タグを除外する以外はrelatedPostsと同じロジック）
+  eleventyConfig.addFilter("petsRelatedPosts", (collection, currentUrl, currentTags) => {
+    const tags = (currentTags || []).filter(t => t !== "pets-articles");
+    return collection
+      .filter(p => p.url !== currentUrl)
+      .map(p => {
+        const pTags = (p.data.tags || []).filter(t => t !== "pets-articles");
+        const score = pTags.filter(t => tags.includes(t)).length;
+        return { post: p, score };
+      })
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || b.post.date - a.post.date)
+      .slice(0, 3)
+      .map(({ post }) => post);
+  });
+
+  // 英語ペット専門11ty記事用の関連記事取得フィルター
+  eleventyConfig.addFilter("enPetsRelatedPosts", (collection, currentUrl, currentTags) => {
+    const tags = (currentTags || []).filter(t => t !== "en-pets-articles");
+    return collection
+      .filter(p => p.url !== currentUrl)
+      .map(p => {
+        const pTags = (p.data.tags || []).filter(t => t !== "en-pets-articles");
+        const score = pTags.filter(t => tags.includes(t)).length;
+        return { post: p, score };
+      })
+      .filter(({ score }) => score > 0)
+      .sort((a, b) => b.score - a.score || b.post.date - a.post.date)
+      .slice(0, 3)
+      .map(({ post }) => post);
+  });
+
   // 前後記事取得フィルター（コレクションは日付降順）
   eleventyConfig.addFilter("prevPost", (collection, currentUrl) => {
     const idx = collection.findIndex(p => p.url === currentUrl);
@@ -105,6 +142,9 @@ export default function (eleventyConfig) {
   // src/articles/assets/ 以下の静的ファイルをそのまま出力先にコピー
   eleventyConfig.addPassthroughCopy("src/articles/assets");
   eleventyConfig.addPassthroughCopy("src/en-articles/assets");
+  // ペット専門11ty記事の画像アセット
+  eleventyConfig.addPassthroughCopy("src/pets/articles/assets");
+  eleventyConfig.addPassthroughCopy("src/en-pets-articles/assets");
 
   // タグページ（カテゴリ一覧）の自動生成（日本語記事＝"articles"タグが付いた記事のみ対象）
   eleventyConfig.addCollection("tagList", function (collectionApi) {
@@ -164,6 +204,20 @@ export default function (eleventyConfig) {
     return collectionApi
       .getFilteredByTag("en-articles")
       .filter(p => p.data.pillar === true)
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // ペット専門11ty記事コレクション（/pets/articles/）
+  eleventyConfig.addCollection("petsArticles", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("pets-articles")
+      .sort((a, b) => b.date - a.date);
+  });
+
+  // 英語ペット専門11ty記事コレクション（/en/pets/articles/）
+  eleventyConfig.addCollection("enPetsArticles", function (collectionApi) {
+    return collectionApi
+      .getFilteredByTag("en-pets-articles")
       .sort((a, b) => b.date - a.date);
   });
 

@@ -43,7 +43,7 @@ thumbnailAlt: チェキカメラで撮影された愛犬の写真が店内に並
 - 持ち帰って手帳やアルバムに残す
 - 誕生日や記念日の思い出として飾る
 
-誕生日や記念日のお祝いと組み合わせてチェキを撮る方も多いです。[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)ではそうしたお祝いの様子を紹介しています。
+誕生日や記念日のお祝いと組み合わせてチェキを撮る方も多いです。[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)ではそうしたお祝いの様子を紹介しています。記念日ごとにチェキを撮り続けてアルバムにする楽しみ方は[愛犬との記念日をチェキで残す｜北参道のペット同伴カフェでできること](/pets/articles/cheki-anniversary-album-kitasando/)で詳しく紹介しています。
 
 ## 東京・北参道のGreen Beans Coffeeでチェキ撮影を体験する
 

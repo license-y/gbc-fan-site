@@ -163,3 +163,8 @@ public/articles-sitemap.xml
 public/feed.xml
 public/en/articles/
 public/en-articles-sitemap.xml
+# ペット専門11ty記事の生成物（public/pets/index.html・public/pets/assets/ は静的ファイルのため対象外）
+public/pets/articles/
+public/en/pets/articles/
+public/pets-articles-sitemap.xml
+public/en-pets-articles-sitemap.xml

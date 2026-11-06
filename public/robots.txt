@@ -36,3 +36,5 @@ Allow: /
 Sitemap: https://greenbeanscoffeeambassador.com/sitemap.xml
 Sitemap: https://greenbeanscoffeeambassador.com/articles-sitemap.xml
 Sitemap: https://greenbeanscoffeeambassador.com/en-articles-sitemap.xml
+Sitemap: https://greenbeanscoffeeambassador.com/pets-articles-sitemap.xml
+Sitemap: https://greenbeanscoffeeambassador.com/en-pets-articles-sitemap.xml
