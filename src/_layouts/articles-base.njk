@@ -290,12 +290,15 @@
 
     // GA4: 店舗CTAリンクのクリック計測（data-ga-event属性を付けた要素のみ対象。既存のgtag.jsを利用し新規タグは追加しない。このレイアウトを使う全ページで1回だけ登録）
     // data-ga-location（article_cta / sidebar / header_nav / mobile_nav）はリンクの設置場所をGA4側で区別するためのパラメータ
+    // data-article-category / data-article-slug は記事ページのCTAのみ付与。属性が無い既存リンクはundefinedとなりパラメータ送信されない
     document.querySelectorAll('[data-ga-event]').forEach(function (el) {
       el.addEventListener('click', function () {
         if (typeof gtag === 'function') {
           gtag('event', el.dataset.gaEvent, {
             link_url: el.href || undefined,
-            link_location: el.dataset.gaLocation || undefined
+            link_location: el.dataset.gaLocation || undefined,
+            article_category: el.dataset.articleCategory || undefined,
+            article_slug: el.dataset.articleSlug || undefined
           });
         }
       });

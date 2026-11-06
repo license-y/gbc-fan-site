@@ -290,12 +290,15 @@
 
     // GA4: store CTA link click tracking (only elements with data-ga-event; reuses existing gtag.js, no new tag added. Registered once per page using this layout)
     // data-ga-location (article_cta / sidebar / header_nav / mobile_nav) tells GA4 where on the page the link lives
+    // data-article-category / data-article-slug are only set on article-page CTAs. Links without these attributes resolve to undefined and send no parameter
     document.querySelectorAll('[data-ga-event]').forEach(function (el) {
       el.addEventListener('click', function () {
         if (typeof gtag === 'function') {
           gtag('event', el.dataset.gaEvent, {
             link_url: el.href || undefined,
-            link_location: el.dataset.gaLocation || undefined
+            link_location: el.dataset.gaLocation || undefined,
+            article_category: el.dataset.articleCategory || undefined,
+            article_slug: el.dataset.articleSlug || undefined
           });
         }
       });
