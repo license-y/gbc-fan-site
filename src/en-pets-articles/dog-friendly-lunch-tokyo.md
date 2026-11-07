@@ -55,4 +55,4 @@ This isn't confirmed at this time, so it isn't something I can promise here. Ple
 I'd budget 45 minutes to an hour. That's enough time for your dog to settle in properly and for you to actually enjoy the meal rather than rushing it.
 
 **Q. Where can I read more about the cafe's general pet-friendly setup?**<br>
-[Indoor Dog-Friendly Cafes in Tokyo](/en/articles/dog-friendly-cafe-tokyo/) covers the full pet-friendly layout and amenities. The [Japanese pet guide](/en/pets/) has even more detail, including a 21-question FAQ.
+[Indoor Dog-Friendly Cafes in Tokyo](/en/articles/dog-friendly-cafe-tokyo/) covers the full pet-friendly layout and amenities. The [Japanese pet guide](/pets/) has even more detail, including a 21-question FAQ (your browser's translate feature works fine on it), and the [English pet guide](/en/pets/) covers the same ground in English.
