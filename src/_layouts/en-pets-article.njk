@@ -58,7 +58,7 @@ layout: en-pets-articles-base.njk
       {% if thumbnail %}
       <div class="max-w-[500px] mx-auto mb-8">
         <div class="rounded-xl overflow-hidden">
-          <img src="{{ thumbnail }}" alt="{{ thumbnailAlt or (title + ' | Green Beans Coffee, Kitasando / Sendagaya, Tokyo — pet-friendly cafe') }}" class="w-full object-cover" loading="lazy" decoding="async" width="800" height="450">
+          <img src="{{ thumbnail }}" alt="{{ thumbnailAlt or (title + ' | Green Beans Coffee, Kitasando / Sendagaya, Tokyo — pet-friendly cafe') }}" class="w-full object-cover" loading="{{ thumbnailLoading or 'lazy' }}"{% if thumbnailFetchPriority %} fetchpriority="{{ thumbnailFetchPriority }}"{% endif %} decoding="async" width="{{ thumbnailWidth or 800 }}" height="{{ thumbnailHeight or 450 }}">
         </div>
         {% if thumbnailCaption %}
         <p class="text-xs text-[#B0A090] text-center mt-2">{{ thumbnailCaption }}</p>
