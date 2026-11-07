@@ -7,10 +7,17 @@ tags:
   - Pet-Friendly Tokyo
 date: 2026-11-04
 permalink: /en/pets/articles/pet-photo-experience-tokyo/
+thumbnail: /pets/assets/images/cheki-booth/cheki-photo-booth-four-dogs-kitasando.jpg
+thumbnailAlt: Four dogs posing together inside Green Beans Coffee in Kitasando, Tokyo, during a pet photo experience.
+thumbnailCaption: A memorable moment with four dogs at Green Beans Coffee in Kitasando, Tokyo. The cafe's free Cheki photos are displayed inside the store and are not available to take home.
+thumbnailWidth: 950
+thumbnailHeight: 716
+thumbnailLoading: eager
+thumbnailFetchPriority: high
 ---
 
 <figure class="my-8 max-w-[260px] sm:max-w-md mx-auto">
-  <img src="/pets/assets/images/cheki-booth/cheki-1.jpg" alt="A wall of instant-film (cheki) photos of dogs and other pets on display at Green Beans Coffee in Kitasando, Tokyo." width="846" height="888" loading="eager" fetchpriority="high" decoding="async" class="w-full rounded-lg">
+  <img src="/pets/assets/images/cheki-booth/cheki-1.jpg" alt="A wall of instant-film (cheki) photos of dogs and other pets on display at Green Beans Coffee in Kitasando, Tokyo." width="846" height="888" loading="lazy" decoding="async" class="w-full rounded-lg">
   <figcaption class="text-xs text-[#B0A090] text-center mt-2">The Pet Film Booth at Green Beans Coffee, where cheki photos of visiting pets are displayed.</figcaption>
 </figure>
 
@@ -23,11 +30,6 @@ If you've spent time in a Japanese convenience store, arcade, or photo booth, yo
 "Cheki" (チェキ) is the Japanese name for instant-film photography — the same category as Fujifilm's Instax cameras. Press the shutter and the camera develops the film internally, printing a physical photo within about a minute, no app or printer involved. There's no retaking the shot a dozen times to get the perfect angle, and no scrolling through a camera roll afterward — you get one print, slightly imperfect, and that's the point. In Japan, cheki has stuck around as a casual, almost nostalgic format long after most people's daily photos moved to their phones, which is part of why it still feels like a small event rather than a snapshot.
 
 ## The Pet Photo Experience at Green Beans Coffee
-
-<figure class="my-8 max-w-2xl mx-auto">
-  <img src="/pets/assets/images/cheki-booth/cheki-photo-booth-four-dogs-kitasando.jpg" alt="Four small dogs posing inside Green Beans Coffee in Kitasando, Tokyo." width="950" height="716" loading="lazy" decoding="async" class="w-full rounded-lg">
-  <figcaption class="text-xs text-[#B0A090] text-center mt-2">A memorable moment with four dogs at Green Beans Coffee in Kitasando, Tokyo.</figcaption>
-</figure>
 
 Every seat at Green Beans Coffee is indoors and open to dogs of any breed and size, including large dogs, so a cheki photo isn't limited to a terrace table or a particular corner of the room. When the cafe isn't too busy, staff will take an instant cheki photo of your dog and add it to the photo wall near the counter — a growing lineup of regulars and first-time visitors that's worth a look even if you're not there for a photo yourself.
 
