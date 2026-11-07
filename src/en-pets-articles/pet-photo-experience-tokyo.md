@@ -9,6 +9,11 @@ date: 2026-11-04
 permalink: /en/pets/articles/pet-photo-experience-tokyo/
 ---
 
+<figure class="my-8 max-w-[260px] sm:max-w-md mx-auto">
+  <img src="/pets/assets/images/cheki-booth/cheki-1.jpg" alt="A wall of instant-film (cheki) photos of dogs and other pets on display at Green Beans Coffee in Kitasando, Tokyo." width="846" height="888" loading="eager" fetchpriority="high" decoding="async" class="w-full rounded-lg">
+  <figcaption class="text-xs text-[#B0A090] text-center mt-2">The Pet Film Booth at Green Beans Coffee, where cheki photos of visiting pets are displayed.</figcaption>
+</figure>
+
 **Cheki is Japan's instant-film photo format, and Green Beans Coffee in Kitasando, Tokyo runs a free cheki photo service for visiting dogs — any breed, any size — added to a growing wall of pet portraits inside, whenever the cafe isn't too busy.**
 
 If you've spent time in a Japanese convenience store, arcade, or photo booth, you've probably seen a cheki machine without knowing the name for it. It's a small, specific kind of souvenir, and pairing it with a dog-friendly cafe stop makes for one of the more memorable things to do with your dog in Tokyo. Here's what it actually is, and what to expect if you want one with your own dog.
@@ -18,6 +23,11 @@ If you've spent time in a Japanese convenience store, arcade, or photo booth, yo
 "Cheki" (チェキ) is the Japanese name for instant-film photography — the same category as Fujifilm's Instax cameras. Press the shutter and the camera develops the film internally, printing a physical photo within about a minute, no app or printer involved. There's no retaking the shot a dozen times to get the perfect angle, and no scrolling through a camera roll afterward — you get one print, slightly imperfect, and that's the point. In Japan, cheki has stuck around as a casual, almost nostalgic format long after most people's daily photos moved to their phones, which is part of why it still feels like a small event rather than a snapshot.
 
 ## The Pet Photo Experience at Green Beans Coffee
+
+<figure class="my-8 max-w-2xl mx-auto">
+  <img src="/pets/assets/images/cheki-booth/cheki-photo-booth-four-dogs-kitasando.jpg" alt="Four small dogs posing inside Green Beans Coffee in Kitasando, Tokyo." width="950" height="716" loading="lazy" decoding="async" class="w-full rounded-lg">
+  <figcaption class="text-xs text-[#B0A090] text-center mt-2">A memorable moment with four dogs at Green Beans Coffee in Kitasando, Tokyo.</figcaption>
+</figure>
 
 Every seat at Green Beans Coffee is indoors and open to dogs of any breed and size, including large dogs, so a cheki photo isn't limited to a terrace table or a particular corner of the room. When the cafe isn't too busy, staff will take an instant cheki photo of your dog and add it to the photo wall near the counter — a growing lineup of regulars and first-time visitors that's worth a look even if you're not there for a photo yourself.
 
@@ -32,6 +42,11 @@ A few things worth knowing before you go: because this depends on staff availabi
 - **Keep the leash short** for the shot itself — it's easier to get a clean photo with your dog close by your side
 
 ## Who This Visit Suits
+
+<figure class="my-8 max-w-2xl mx-auto">
+  <img src="/pets/assets/images/cheki-booth/dogs-wood-floor-interior-kitasando.jpg" alt="Three small dogs enjoying their visit inside Green Beans Coffee in Tokyo." width="1200" height="787" loading="lazy" decoding="async" class="w-full rounded-lg">
+  <figcaption class="text-xs text-[#B0A090] text-center mt-2">Dogs enjoying a relaxing moment inside the pet-friendly Green Beans Coffee.</figcaption>
+</figure>
 
 This suits anyone who wants a specific, slightly novel thing to do with their dog in Tokyo, not just a coffee stop — a souvenir of sorts, even if it's one that lives on the cafe's wall rather than in your bag. It pairs naturally with a longer visit: [Where to Enjoy a Dog-Friendly Lunch in Tokyo](/en/pets/articles/dog-friendly-lunch-tokyo/) covers the sit-down meal side of things if you're planning to stay a while, and [How to Choose a Pet-Friendly Cafe in Tokyo](/en/articles/how-to-choose-pet-friendly-cafe-tokyo/) is useful background if this is your first dog-friendly cafe stop in the city.
 
