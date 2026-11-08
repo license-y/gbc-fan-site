@@ -51,4 +51,24 @@ export const targets = [
     ],
   },
   // 2026-11: src/_layouts/en-articles-base.njk も同様に店舗情報を削除したため対象外。
+  {
+    // 2026-11: ペット専門11tyサイトの記事テンプレート。article.njkと同じ表示構造。
+    file: 'src/_layouts/pets-article.njk',
+    reviewCountPatterns: [
+      /\d+(?=件のレビュー)/g,
+    ],
+    ratingValuePatterns: [
+      /(?<=text-xs font-medium text-\[#4A3728\]">)[\d.]+(?=<)/g,
+    ],
+  },
+  {
+    file: 'src/_layouts/en-pets-article.njk',
+    reviewCountPatterns: [
+      /\d+(?=\s*reviews)/g,
+    ],
+    ratingValuePatterns: [
+      /(?<=text-xs font-medium text-\[#4A3728\]">)[\d.]+(?=<)/g,
+    ],
+  },
+  // 2026-11: src/_layouts/pets-articles-base.njk / en-pets-articles-base.njk も店舗情報を削除したため対象外。
 ];

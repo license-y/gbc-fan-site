@@ -197,11 +197,12 @@
 
 ### AggregateRating の更新ルール
 - ⚠️ **2026-11時点、JSON-LDの`aggregateRating`/`review`は全ページで出力を停止・削除済み**（Googleのガイドラインでは、事業者自身が管理するレビューをLocalBusiness/CafeOrCoffeeShopのaggregateRatingとしてマークアップしてもレビューの星表示対象にはならないため）。`public/index.html`・`public/en/index.html`・`public/pets/index.html`・記事共通レイアウト(`articles-base.njk`／`en-articles-base.njk`、店舗情報のCafeOrCoffeeShop自体をトップページに集約したため記事側には元々無い)のいずれにも再度追加しないこと
-- ページ上の「Google評価」表示（`public/index.html`・`public/en/index.html`・`src/_layouts/article.njk`・`src/_layouts/en-article.njk`のテキスト表示のみ。`public/pets/index.html`は元々この表示自体が無い）とGoogleマップへのリンクは維持する。この表示用の`ratingValue`/`reviewCount`はGoogleマップの最新値に更新する
+- ページ上の「Google評価」表示（`public/index.html`・`public/en/index.html`・`src/_layouts/article.njk`・`src/_layouts/en-article.njk`・`src/_layouts/pets-article.njk`・`src/_layouts/en-pets-article.njk`のテキスト表示のみ。`public/pets/index.html`は元々この表示自体が無い）とGoogleマップへのリンクは維持する。この表示用の`ratingValue`/`reviewCount`はGoogleマップの最新値に更新する
 - 目安：月1回（口コミが増えやすい時期に確認）
 - **更新は必ず `npm run update-reviews -- <reviewCount> [ratingValue]` を使うこと**（例: `npm run update-reviews -- 540 4.7`）。対象は上記の表示テキストのみで、各ファイルのHTMLコメント `最終更新: YYYY-MM` も合わせて更新される。対象ファイルの一覧は `scripts/review-locations.config.js` で管理している
 - 個別ファイルを手で書き換えないこと（更新漏れの原因になるため）。ファイルが増えた場合は `review-locations.config.js` にエントリを追記する
 - ⚠️ **サイトの言語・地域バリエーション（`/en/` など）にも同じ表示があれば必ず対象に含めること**。2026-07に `public/en/index.html` が対象一覧から漏れていて反映漏れが発生した実例がある。新しいサブサイト・言語版ページを追加したときは、レビュー件数・評価を表示している箇所がないか確認し、あれば同時に `review-locations.config.js` へ追記する
+- ⚠️ **新しい記事レイアウト・サブサイト（ペット専門11tyサイト等）を追加したときも同様に確認すること**。2026-11-08に、ペット専門サイトの記事テンプレート `src/_layouts/pets-article.njk`／`src/_layouts/en-pets-article.njk`（`article.njk`／`en-article.njk`と同じGoogle評価表示を持つ）が `review-locations.config.js` に未登録のまま596件で放置されていた実例がある。メインサイト・記事テンプレートを更新しただけで「全ページ反映済み」と判断せず、`grep -rn "件のレビュー\|reviews" src/_layouts` 等で表示箇所を横断確認してから完了報告すること
 - `npm run build` 実行時に `scripts/check-review-consistency.js` が自動で全ファイルの値の食い違いを検知し、あれば警告を出す（ビルド自体は止めない）。手動で `npm run check-reviews` を実行しても確認できる
 
 ### VideoObject スキーマ（YouTube動画）
