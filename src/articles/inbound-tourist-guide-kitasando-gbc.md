@@ -35,7 +35,7 @@ thumbnailCaption: ※写真はイメージです
 
 観光の合間にひと息つきたいときはもちろん国立競技場でのイベントや新宿御苑の散策のあとに立ち寄る案内先としても向いています。ペット同伴でも入店できるため愛犬を連れて来日した友人を案内したこともあります。静かで落ち着いた空間は言葉の壁がある相手とゆっくり話すのにもちょうどいい時間を作ってくれます。
 
-北参道全体の散策ルートは[東京観光ガイド｜北参道・千駄ヶ谷と神宮外苑の歩き方](/articles/kitasando-travel-guide/)で詳しく紹介しています。旅行中にコーヒー体験を楽しみたい人は[東京旅行でコーヒー体験を楽しむなら？北参道の自家焙煎カフェ](/articles/travel-coffee-experience-kitasando-gbc/)国立競技場でのイベント帰りの過ごし方は[東京で国立競技場イベント後に休むなら？北参道のカフェ](/articles/stadium-event-rest-travel-kitasando-gbc/)も参考になります。鳩森八幡神社を訪れた体験は[東京・北参道から歩いて5分のパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)でも紹介しています。
+北参道全体の散策ルートは[東京観光ガイド｜北参道・千駄ヶ谷と神宮外苑の歩き方](/articles/kitasando-travel-guide/)で詳しく紹介しています。旅行中にコーヒー体験を楽しみたい人は[東京旅行でコーヒー体験を楽しむなら？北参道の自家焙煎カフェ](/articles/travel-coffee-experience-kitasando-gbc/)国立競技場でのイベント帰りの過ごし方は[東京で国立競技場イベント後に休むなら？北参道のカフェ](/articles/stadium-event-rest-travel-kitasando-gbc/)も参考になります。鳩森八幡神社を訪れた体験は[東京・北参道から歩いて5分のパワースポット鳩森八幡神社に行ってきました](/articles/hatomori-shrine-dagayasando/)でも紹介しています。観光の合間にしっかり食事をとりたい方には[東京観光のランチ休憩なら？北参道のグルテンフリーカフェ](/articles/sightseeing-lunch-break-kitasando-gbc/)もおすすめです。
 
 ## まとめ
 
