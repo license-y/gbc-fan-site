@@ -207,3 +207,76 @@ GitHubへのプッシュ・本番公開は未実施。**ユーザーの明示的
 4. 次回の記事追加は、上記の検索データを参考にしてから判断する（新規記事の即時追加は行わない）
 
 **次回再開時はGA4・Search Consoleの効果測定から開始する。新たな記事制作・サイト改修は行わない。**
+
+---
+
+## 2026-11-11｜相互導線・グローバルナビゲーション強化フェーズ完了
+
+日本語一般記事・英語一般記事・日本語ペット専門サイト・英語ペット専門サイトの4領域を横断する相互導線とグローバルナビゲーションを強化した。本番公開済み。
+
+### 1. 作業概要
+
+4領域の既存導線を調査したうえで、不足していたリンクのみを追加する方針で実施（機械的な全面刷新は行わず、既存の良く機能しているナビ・CTA・構造化データは維持）。
+
+### 2. 修正した不具合：英語トップページのペットリンク誤設定（6箇所）
+
+`public/en/index.html` のヘッダーnav・モバイルnav・CTAボタン・FAQ回答・FAQ補足リンク・フッターカードの**計6箇所**が、英語サイトであるにもかかわらず日本語版`/pets/`へリンクしていた。英語話者が「Pet Site」をクリックすると日本語ページに遷移してしまう状態だったため、全6箇所を`/en/pets/`に修正した。
+
+### 3. グローバルナビへのペット導線追加
+
+- `src/_layouts/articles-base.njk`（日本語一般記事の共通ナビ）：ヘッダー・モバイルメニュー・フッターの3箇所に「ペットと楽しむ」（`/pets/`）を追加
+- `src/_layouts/en-articles-base.njk`（英語一般記事の共通ナビ）：同3箇所に「With Pets」（`/en/pets/`）を追加
+- `public/pets/index.html` フッターに「英語でペット同伴情報を見る」（`/en/pets/`）を追加（日本語ペットハブから英語版への逆リンクが従来欠落していた）
+
+いずれも既存のEN pet hub（`/en/pets/`）側の「Explore Dog-Friendly Experiences in Tokyo」セクションや日本語ペットハブの記事カード導線はそのまま維持。
+
+### 4. 日本語記事10本への自然な内部リンク追加
+
+記念日4本（`anniversary-guide`・`birthday-cafe-kitasando-gbc`・`wedding-anniversary-couple-kitasando-gbc`・`exam-pass-celebration-family-kitasando-gbc`）、旅行・観光2本（`kitasando-travel-guide`・`inbound-tourist-guide-kitasando-gbc`）、ランチ・食事2本（`sightseeing-lunch-break-kitasando-gbc`・`solo-lunch-kitasando-gbc`）、サードプレイス2本（`thirdplace-guide`・`pet-indoor-thirdplace-dagayasando-gbc`）。
+
+既存文中の「ペット同伴OK」に言及する一文の直後に、該当する日本語ペット専門記事（またはペット記事一覧）へのリンクを自然な文章で追加。元々ペットに触れていなかった記事への機械的な追加は行っていない。
+
+### 5. GA4イベント
+
+**新規導入：`click_pet_hub`（19箇所）**
+
+一般記事・トップページからペット専門ハブへの「発見・遷移」を計測する専用イベント。既存の`click_store_page`（店舗ページ送客）と役割が異なるため分離した。
+
+内訳：JA top 6／EN top 6／JA一般記事nav 3／EN一般記事nav 3／JAペットハブ→EN版 1
+
+`data-content-group="pets"`は、リンク元のページ自体がペット領域に属する場合のみ付与（19箇所中、JAペットハブ→EN版の1件のみ）。一般サイト側の18件には付与していない。これは「content_groupはリンク元の文脈を表す」という既存の計測仕様（ペット専門サイト内の全リンクに一貫して付与されている）と整合させるための判断。
+
+**既存イベント（無変更）**
+- `click_store_page`／`click_reserve`／`click_map`／`click_instagram`：発火箇所・パラメータとも変更なし
+- `click_pet_article`：日本語ペットハブの4記事カード＋「もっと見る」（計5箇所）に、英語ペットハブ（`explore_cards`）と同一仕様で追加付与。2026-11-07時点では英語版のみの実装だったため、今回日本語版にも揃えた
+
+### 6. SEO・AEOへの影響
+
+title／description／canonical／hreflang／BlogPosting／BreadcrumbList／FAQPage／サイトマップ／OG・Twitter画像：すべて無変更。対象ページのJSON-LD構文検証でエラー0件を確認。
+
+### 7. 最終検証結果（2026-11-11作業終了時点）
+
+- `npm run build`：成功（3回実施、いずれもエラーなし）
+- 内部リンク疎通：新規追加分すべて実在ページへのリンクであることを確認（本番HTTP 200）
+- GA4：コード上の設定確認のみ実施。**本番DebugView・実受信確認は未実施**
+- モバイル375px／390px／430px：**コード確認のみ（実画面は未確認）**
+- Google Search Console：**未確認**
+
+### 8. Git状態・公開
+
+```
+ブランチ: main
+最終コミット: 980113fd3ee3de73102430a51bf879ba15e9f611
+  (Improve cross-site navigation and pet content discovery)
+origin/main: プッシュ・本番反映済み
+```
+
+### 9. 次回の確認事項（2026-11-21前後に予定、すべて未確認・未完了扱い）
+
+1. GA4 DebugView／レポートで`click_pet_hub`の実受信確認
+2. GA4で`click_pet_article`の実受信確認（日本語版・英語版の両方）
+3. 店舗予約・Googleマップへの送客状況（実データでの確認）
+4. モバイル375px・390px・430pxの実画面確認
+5. Google Search Consoleのインデックス状況・検索実績確認
+
+**次回再開時は上記の確認事項から開始する。新たな記事制作・サイト改修は行わない。**
