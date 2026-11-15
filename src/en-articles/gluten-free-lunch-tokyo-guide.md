@@ -1,7 +1,7 @@
 ---
 title: "Gluten-Free Lunch in Tokyo: A Traveler's Guide"
 description: "Finding a gluten-free lunch in Tokyo takes a bit more care than dinner, since set menus often hide wheat in soy sauce or dashi. Here's what to watch for."
-date: 2026-11-21
+date: 2026-11-15
 category: "Food & Lifestyle"
 tags:
   - en-articles

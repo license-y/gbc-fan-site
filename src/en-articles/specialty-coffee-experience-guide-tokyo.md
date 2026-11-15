@@ -1,7 +1,7 @@
 ---
 title: "How to Choose a Specialty Coffee Experience in Tokyo"
 description: "Tokyo offers hand-drip tastings, roasting workshops, and specialty coffee shops to explore. Here's how to match the right coffee experience to your trip."
-date: 2026-11-18
+date: 2026-11-15
 category: "Tokyo Coffee"
 tags:
   - en-articles
