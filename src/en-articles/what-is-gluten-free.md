@@ -78,4 +78,4 @@ No. Some people avoid gluten for digestive comfort or personal preference withou
 
 ## Conclusion
 
-Gluten-free dining is really a spectrum, from strict medical necessity to a loose lifestyle choice, and knowing where you fall on it makes eating out far less stressful. In Tokyo, options like the rice flour focaccia lunch at Green Beans Coffee show that gluten-free doesn't have to mean limited.
+Gluten-free dining is really a spectrum, from strict medical necessity to a loose lifestyle choice, and knowing where you fall on it makes eating out far less stressful. In Tokyo, options like the rice flour focaccia lunch at Green Beans Coffee show that gluten-free doesn't have to mean limited. For more on navigating gluten specifically at lunch, including where it tends to hide in set menus, [Gluten-Free Lunch in Tokyo: A Traveler's Guide](/en/articles/gluten-free-lunch-tokyo-guide/) goes into more detail.

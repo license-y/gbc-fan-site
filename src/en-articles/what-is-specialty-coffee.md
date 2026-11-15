@@ -70,4 +70,4 @@ Often, yes, especially side by side. The clarity of flavor tends to stand out ev
 
 ## Conclusion
 
-Specialty coffee isn't a vague marketing label; it's a graded, traceable category of coffee built around quality and transparency from farm to cup. Tasting the difference for yourself is easier than it sounds. At Green Beans Coffee, it just takes asking the barista for a recommendation and letting [hand-drip brewing](/en/articles/what-is-hand-drip-coffee/) show the bean at its best.
+Specialty coffee isn't a vague marketing label; it's a graded, traceable category of coffee built around quality and transparency from farm to cup. Tasting the difference for yourself is easier than it sounds. At Green Beans Coffee, it just takes asking the barista for a recommendation and letting [hand-drip brewing](/en/articles/what-is-hand-drip-coffee/) show the bean at its best. If you're weighing a quick tasting against a longer roasting session, [how to choose a specialty coffee experience in Tokyo](/en/articles/specialty-coffee-experience-guide-tokyo/) breaks down which fits your trip.
