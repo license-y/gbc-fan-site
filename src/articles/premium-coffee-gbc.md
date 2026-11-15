@@ -35,7 +35,7 @@ thumbnailAlt: 自家焙煎機とExtract Chilling技法で抽出するGreen Beans
 
 通常のフィルターコーヒーに比べて繊細な香りや風味成分を最大40%多く引き出せるのだそうです。一口飲んで「これは普通のアイスコーヒーじゃない」と思いました。クリアなのに深い。冷たいのにしっかりと香りと余韻が感じられる。価格に納得した瞬間でした。
 
-このコーヒーの焙煎の奥深さを体験で知りたい方は[自分で焙煎したコーヒーを飲む体験：GBCの焙煎イベント](/articles/roasting-experience/)がおすすめです。30種類の豆から自分だけのブレンドを作れる[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。豆の選別から学べる[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)もあわせてどうぞ。プレミアムコーヒーに添えられる本物ミルクへのこだわりは[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)で紹介しています。商談の場にこの一杯を活用したい方は[カフェミーティングの活用術](/articles/cafe-meeting-business/)もご覧ください。プレミアムコーヒーに含まれるクロロゲン酸の美容効果については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)や[コーヒーで叶える美肌習慣](/articles/coffee-beauty-effects/)もあわせてどうぞ。
+このコーヒーの焙煎の奥深さを体験で知りたい方は[東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート](/articles/roasting-experience/)がおすすめです。30種類の豆から自分だけのブレンドを作れる[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。豆の選別から学べる[東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)もあわせてどうぞ。プレミアムコーヒーに添えられる本物ミルクへのこだわりは[東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由](/articles/milk-not-creamer/)で紹介しています。商談の場にこの一杯を活用したい方は[カフェミーティングの活用術](/articles/cafe-meeting-business/)もご覧ください。プレミアムコーヒーに含まれるクロロゲン酸の美容効果については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)や[コーヒーで叶える美肌習慣](/articles/coffee-beauty-effects/)もあわせてどうぞ。
 
 ## まとめ
 

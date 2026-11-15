@@ -39,7 +39,7 @@ thumbnailAlt: 自分で焙煎したコーヒー豆を飲む体験の様子
 
 グリーンビーンズコーヒーの30種類以上の豆ラインナップを改めて見ると、それぞれに個性があることが感じられて、選ぶのが楽しくなりました。
 
-焙煎の基礎から押さえたい方は[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)もあわせてご覧ください。30種類の豆から自分だけのブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。焙煎の次のステップとして[GBCのハンドドリップ体験イベント](/articles/handdrip-experience/)への参加もおすすめです。毎月開催・豆代のみで参加できるハンドドリップ体験の詳細は[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もご覧ください。焙煎を学んだ目線で飲む[GBCのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。グリーンビーンズコーヒーが素材にこだわる姿勢は[コーヒーフレッシュを使わないGBCの本気度](/articles/milk-not-creamer/)にも表れています。焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントの詳細は[自分だけの焙煎豆を持ち帰れる：北参道GBCの月例焙煎体験イベントレポート](/articles/roasting-takehome-event-gbc/)もどうぞ。フルーティ・マイルド・ビターの豆の特徴と選び方は[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)でまとめています。
+焙煎の基礎から押さえたい方は[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)もあわせてご覧ください。30種類の豆から自分だけのブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。焙煎の次のステップとして[東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)への参加もおすすめです。毎月開催・豆代のみで参加できるハンドドリップ体験の詳細は[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もご覧ください。焙煎を学んだ目線で飲む[東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。グリーンビーンズコーヒーが素材にこだわる姿勢は[東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由](/articles/milk-not-creamer/)にも表れています。焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントの詳細は[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷の月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もどうぞ。フルーティ・マイルド・ビターの豆の特徴と選び方は[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)でまとめています。
 
 ## まとめ
 
@@ -47,7 +47,7 @@ Green Beans Coffeeの焙煎体験は東京・渋谷区の北参道で参加で�
 
 次回の開催日程は公式<a href="https://www.instagram.com/green.beanscoffee" target="_blank" rel="noopener noreferrer">Instagram（@green.beanscoffee）</a>でお知らせされます。ぜひチェックしてみてください。
 
-グリーンビーンズコーヒーで開催している体験イベント（ハンドドリップ・焙煎・オリジナルブレンド）の全体像を知りたい方は[GBCの体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)をご覧ください。焙煎機の仕組みや焙煎の工程について体系的に学びたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎したての豆を冷却しながら選別するハンドピックの様子は[東京・北参道の焙煎体験で見た焙煎したての豆を選別するハンドピックの瞬間](/articles/fresh-roasted-beans-check-kitasando-gbc/)で詳しく紹介しています。イベントのない日に焙煎機を間近で眺めた話は[東京・北参道のカフェ店内で初めて間近に見た焙煎機の迫力に驚いた話](/articles/roasting-machine-first-look-kitasando-gbc/)にまとめています。
+グリーンビーンズコーヒーで開催している体験イベント（ハンドドリップ・焙煎・オリジナルブレンド）の全体像を知りたい方は[体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)をご覧ください。焙煎機の仕組みや焙煎の工程について体系的に学びたい方は[焙煎機とは？東京・北参道の自家焙煎カフェで学んだコーヒーの焙煎装置と仕組み](/articles/roasting-machine-guide/)もあわせてどうぞ。焙煎したての豆を冷却しながら選別するハンドピックの様子は[東京・北参道の焙煎体験で見た焙煎したての豆を選別するハンドピックの瞬間](/articles/fresh-roasted-beans-check-kitasando-gbc/)で詳しく紹介しています。イベントのない日に焙煎機を間近で眺めた話は[東京・北参道のカフェ店内で初めて間近に見た焙煎機の迫力に驚いた話](/articles/roasting-machine-first-look-kitasando-gbc/)にまとめています。
 
 ## よくある質問
 
