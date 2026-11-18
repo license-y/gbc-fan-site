@@ -51,7 +51,77 @@ Green Beans Coffeeを起点にすると鳩森八幡神社まで徒歩3分です�
 
 千駄ヶ谷・北参道エリアは渋谷区の中でも静かで品のある街です。原宿・表参道・新宿からも近く日常の散歩に新しいルートを加えたい方にもおすすめできます。明治神宮外苑や代々木公園にも足を延ばしやすい立地なので半日たっぷり散策を楽しめます。国立競技場や東京体育館もすぐそばで都内屈指の緑と歴史が凝縮されたエリアです。
 
-東京旅行でパワースポット巡りをする方には[東京旅行のパワースポット巡り｜鳩森八幡神社と渋谷・北参道のサードプレイス](/articles/tokyo-travel-powerspot-hatomori-thirdplace-gbc/)もあわせてご覧ください。合格祈願の参拝後にグリーンビーンズコーヒーで合格祝いを過ごしたい方は[東京で合格祝いをするなら？北参道のカフェで家族と過ごす特別な時間](/articles/exam-pass-celebration-family-kitasando-gbc/)も参考になります。散歩の出発点になるグリーンビーンズコーヒーへ愛犬と訪れたい方は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)をご覧ください。千駄ヶ谷駅から鳩森八幡神社を経由してグリーンビーンズコーヒーへ向かう愛犬との散歩コース全体は[千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩](/articles/sendagaya-pet-walk-dagayasando/)でまとめています。グリーンビーンズコーヒーがビジネスや作業の拠点としても優れている理由は[東京・北参道のビジネスカフェが穴場のサードプレイスだった理由](/articles/business-remote-work-gbc/)で紹介しています。散歩前後に楽しみたい[東京・千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった](/articles/glutenfree-focaccia/)や[オリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひチェックしてみてください。国立競技場でのイベント帰りに休憩したい方は[東京で国立競技場イベント後に休むなら？北参道のカフェ](/articles/stadium-event-rest-travel-kitasando-gbc/)も参考になります。ダガヤサンドウが「サードプレイス」として機能する理由は[グリーンビーンズコーヒーが私のサードプレイスになるまで](/articles/third-place-dagayasando-gbc/)でも詳しく触れています。北参道駅からグリーンビーンズコーヒーへのルートと明治神宮外苑・新宿御苑との組み合わせ散歩コースは[北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に](/articles/kitasando-station-dagayasando-walk-coffee/)もあわせてどうぞ。
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">鳩森八幡神社とあわせて歩く散歩コース</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/tokyo-travel-powerspot-hatomori-thirdplace-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京旅行のパワースポット巡り｜鳩森八幡神社と渋谷・北参道のサードプレイス</a><span class="block text-[13px] text-[#6B5745]">東京旅行でパワースポット巡りをする方向けの散策ルートをご紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/kitasando-station-dagayasando-walk-coffee/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道駅3分のコーヒー専門店でひと息。明治神宮外苑・新宿御苑の散歩に</a><span class="block text-[13px] text-[#6B5745]">北参道駅からのルートと明治神宮外苑・新宿御苑を組み合わせた散歩コースです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/stadium-event-rest-travel-kitasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京で国立競技場イベント後に休むなら？北参道のカフェ</a><span class="block text-[13px] text-[#6B5745]">国立競技場でのイベント帰りに立ち寄って休憩したい方におすすめです。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">愛犬と一緒に訪れるなら</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pet-cafe-sendagaya/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました</a><span class="block text-[13px] text-[#6B5745]">散歩の出発点になるグリーンビーンズコーヒーへ愛犬と訪れたい方へのご紹介です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/sendagaya-pet-walk-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">千駄ヶ谷駅から愛犬と歩くダガヤサンドウ散歩</a><span class="block text-[13px] text-[#6B5745]">千駄ヶ谷駅から鳩森八幡神社を経由してカフェへ向かう愛犬との散歩コースをまとめています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">参拝のあとのご褒美に</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/premium-coffee-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><span class="block text-[13px] text-[#6B5745]">散歩前後に楽しみたい、特別な一杯としておすすめです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/glutenfree-focaccia/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった</a><span class="block text-[13px] text-[#6B5745]">参拝の行き帰りに立ち寄りたい、グルテンフリーの米粉フォカッチャのレポートです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/exam-pass-celebration-family-kitasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京で合格祝いをするなら？北参道のカフェで家族と過ごす特別な時間</a><span class="block text-[13px] text-[#6B5745]">合格祈願の参拝後に、家族でお祝いの時間を過ごしたい方向けのご紹介です。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">Green Beans Coffeeがサードプレイスである理由</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/business-remote-work-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のビジネスカフェが穴場のサードプレイスだった理由</a><span class="block text-[13px] text-[#6B5745]">ビジネスや作業の拠点としても優れている理由をご紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">グリーンビーンズコーヒーが私のサードプレイスになるまで</a><span class="block text-[13px] text-[#6B5745]">ダガヤサンドウが「サードプレイス」として機能する理由に詳しく触れています。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## まとめ
 
