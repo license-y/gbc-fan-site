@@ -45,7 +45,7 @@ Green Beans Coffee in Kitasando, Shibuya, checks most of these boxes directly: e
 
 ## Who This Is For
 
-Anyone who wants a real sit-down visit with their dog, not just a quick stop, including people exploring the Dagayasando or Kitasando area on foot and looking for an actual break rather than a bench. It's also useful for groups: the venue accepts private bookings for pet owner meetups, with capacity up to 20 seated or 30 standing.
+Anyone who wants a real sit-down visit with their dog, not just a quick stop, including people exploring the [Dagayasando](/en/articles/what-is-dagayasando/) or Kitasando area on foot and looking for an actual break rather than a bench. It's also useful for groups: the venue accepts private bookings for pet owner meetups, with capacity up to 20 seated or 30 standing.
 
 ## Frequently Asked Questions
 
