@@ -89,42 +89,48 @@ Green Beans Coffeeでは注文ごとにバリスタさんが一杯ずつハン�
       コーヒーの知識から、豆選び、バリスタとの体験まで。<br class="hidden md:block">興味に合わせて、ハンドドリップの魅力を深く知ることができます。
     </p>
   </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-    <a href="/articles/handdrip-experience/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card01" class="group flex flex-col bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
+  <div class="flex flex-wrap justify-center gap-5">
+    <a href="/articles/handdrip-experience/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card01" class="group flex flex-col w-full md:w-[calc(50%_-_10px)] md:flex-none bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
       <div class="flex items-center justify-between mb-4">
-        <span class="text-xs font-semibold text-[#C9A86C] tracking-wider">01</span>
+        <span class="text-sm font-semibold text-[#8A6D3B] tracking-wider">01</span>
         <span class="w-9 h-9 rounded-full bg-[#FAF8F5] flex items-center justify-center flex-shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
         </span>
       </div>
-      <h3 class="text-sm font-bold text-[#4A3728] mb-2 leading-snug">ハンドドリップを体験する</h3>
-      <p class="text-xs text-[#8B7355] leading-relaxed mb-3 flex-1">東京・北参道でバリスタから学ぶハンドドリップ。自分の手で淹れる一杯の魅力をご紹介します。</p>
-      <span class="text-[11px] text-[#B0A090] mb-4">体験イベント・初心者向け</span>
-      <span class="inline-flex items-center gap-1 text-xs font-medium text-[#C9A86C] group-hover:underline">体験記事を見る ↗</span>
+      <h3 class="text-base font-bold text-[#4A3728] mb-2 leading-snug">ハンドドリップを体験する</h3>
+      <p class="text-sm text-[#2D2A26] leading-relaxed mb-4">東京・北参道でバリスタから学ぶハンドドリップ。自分の手で淹れる一杯の魅力をご紹介します。</p>
+      <div class="mt-auto">
+        <span class="block text-[13px] text-[#6B5745] mb-3">体験イベント・初心者向け</span>
+        <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#8A6D3B] group-hover:underline">体験記事を見る ↗</span>
+      </div>
     </a>
-    <a href="/articles/coffee-origin-guide/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card02" class="group flex flex-col bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
+    <a href="/articles/coffee-origin-guide/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card02" class="group flex flex-col w-full md:w-[calc(50%_-_10px)] md:flex-none bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
       <div class="flex items-center justify-between mb-4">
-        <span class="text-xs font-semibold text-[#C9A86C] tracking-wider">02</span>
+        <span class="text-sm font-semibold text-[#8A6D3B] tracking-wider">02</span>
         <span class="w-9 h-9 rounded-full bg-[#FAF8F5] flex items-center justify-center flex-shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4.5 0-8 4-8 9s3.5 9 8 9 8-4 8-9-3.5-9-8-9Z"/><path d="M9 6c-1.5 2-1.5 10 0 12"/></svg>
         </span>
       </div>
-      <h3 class="text-sm font-bold text-[#4A3728] mb-2 leading-snug">コーヒー豆の産地を知る</h3>
-      <p class="text-xs text-[#8B7355] leading-relaxed mb-3 flex-1">産地によって異なる香りや酸味、コクの特徴を知り、自分好みのコーヒー豆を見つける楽しさをご紹介します。</p>
-      <span class="text-[11px] text-[#B0A090] mb-4">豆選び・産地・味わい</span>
-      <span class="inline-flex items-center gap-1 text-xs font-medium text-[#C9A86C] group-hover:underline">産地の記事を見る ↗</span>
+      <h3 class="text-base font-bold text-[#4A3728] mb-2 leading-snug">コーヒー豆の産地を知る</h3>
+      <p class="text-sm text-[#2D2A26] leading-relaxed mb-4">産地によって異なる香りや酸味、コクの特徴を知り、自分好みのコーヒー豆を見つける楽しさをご紹介します。</p>
+      <div class="mt-auto">
+        <span class="block text-[13px] text-[#6B5745] mb-3">豆選び・産地・味わい</span>
+        <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#8A6D3B] group-hover:underline">産地の記事を見る ↗</span>
+      </div>
     </a>
-    <a href="/articles/roasting-degree-brewing-technique-kitasando-gbc/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card03" class="group flex flex-col bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
+    <a href="/articles/roasting-degree-brewing-technique-kitasando-gbc/" data-ga-event="click_content_card" data-ga-location="handdrip_purpose_card03" class="group flex flex-col w-full md:w-[calc(50%_-_10px)] md:flex-none bg-white border border-[#E8E0D5] rounded-xl p-6 hover:border-[#C9A86C] hover:shadow-sm transition">
       <div class="flex items-center justify-between mb-4">
-        <span class="text-xs font-semibold text-[#C9A86C] tracking-wider">03</span>
+        <span class="text-sm font-semibold text-[#8A6D3B] tracking-wider">03</span>
         <span class="w-9 h-9 rounded-full bg-[#FAF8F5] flex items-center justify-center flex-shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4A3728" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.32 0z"/></svg>
         </span>
       </div>
-      <h3 class="text-sm font-bold text-[#4A3728] mb-2 leading-snug">淹れ方で変わる味わいを知る</h3>
-      <p class="text-xs text-[#8B7355] leading-relaxed mb-3 flex-1">お湯の温度や蒸らし方、焙煎度による味わいの違いを、バリスタの解説とともにご紹介します。</p>
-      <span class="text-[11px] text-[#B0A090] mb-4">抽出方法・焙煎度・初心者向け</span>
-      <span class="inline-flex items-center gap-1 text-xs font-medium text-[#C9A86C] group-hover:underline">淹れ方の記事を見る ↗</span>
+      <h3 class="text-base font-bold text-[#4A3728] mb-2 leading-snug">淹れ方で変わる味わいを知る</h3>
+      <p class="text-sm text-[#2D2A26] leading-relaxed mb-4">お湯の温度や蒸らし方、焙煎度による味わいの違いを、バリスタの解説とともにご紹介します。</p>
+      <div class="mt-auto">
+        <span class="block text-[13px] text-[#6B5745] mb-3">抽出方法・焙煎度・初心者向け</span>
+        <span class="inline-flex items-center gap-1 text-sm font-semibold text-[#8A6D3B] group-hover:underline">淹れ方の記事を見る ↗</span>
+      </div>
     </a>
   </div>
 </div>
