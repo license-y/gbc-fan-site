@@ -39,7 +39,69 @@ thumbnailAlt: 自分で焙煎したコーヒー豆を飲む体験の様子
 
 グリーンビーンズコーヒーの30種類以上の豆ラインナップを改めて見ると、それぞれに個性があることが感じられて、選ぶのが楽しくなりました。
 
-焙煎の基礎から押さえたい方は[コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選](/articles/roasting-basics-kitasando-gbc/)もあわせてご覧ください。30種類の豆から自分だけのブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。焙煎の次のステップとして[東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)への参加もおすすめです。毎月開催・豆代のみで参加できるハンドドリップ体験の詳細は[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もご覧ください。焙煎を学んだ目線で飲む[東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験](/articles/premium-coffee-gbc/)は格別に感じられます。焙煎度と美容成分の関係については[クロロゲン酸が活性酸素を抑えるしくみ](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。グリーンビーンズコーヒーが素材にこだわる姿勢は[東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由](/articles/milk-not-creamer/)にも表れています。焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントの詳細は[自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷の月例焙煎体験レポート](/articles/roasting-takehome-event-gbc/)もどうぞ。フルーティ・マイルド・ビターの豆の特徴と選び方は[渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方](/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/)でまとめています。
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">焙煎をもっと深く知る・体験する</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/roasting-basics-kitasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">コーヒー豆の焙煎とは？渋谷・北参道で体験する前に知っておきたい基礎3選</a><span class="block text-[13px] text-[#6B5745]">焙煎の基礎から押さえたい方におすすめの記事です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/original-blend-roasting-event/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">オリジナルブレンド焙煎体験</a><span class="block text-[13px] text-[#6B5745]">30種類の豆から自分だけのブレンドを作って焙煎する、毎月開催のイベントです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/roasting-takehome-event-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">自分だけの焙煎豆を持ち帰れる：東京・北参道千駄ヶ谷の月例焙煎体験レポート</a><span class="block text-[13px] text-[#6B5745]">焙煎士の実演指導と豆の持ち帰りが楽しめる月例イベントのレポートです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/coffee-beans-fruity-mild-bitter-roasting-event-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">渋谷・北参道の焙煎体験イベントで知った：フルーティ・マイルド・ビター豆の選び方</a><span class="block text-[13px] text-[#6B5745]">フルーティ・マイルド・ビターという豆の特徴と選び方をまとめています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">次はハンドドリップとプレミアムな一杯を</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/handdrip-experience/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ</a><span class="block text-[13px] text-[#6B5745]">焙煎の次のステップとして、ハンドドリップ体験への参加もおすすめです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/handdrip-barista-monthly-event-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ</a><span class="block text-[13px] text-[#6B5745]">毎月開催・豆代のみで参加できるハンドドリップ体験の詳細です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/premium-coffee-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><span class="block text-[13px] text-[#6B5745]">焙煎を学んだ目線で飲むと、より一層格別に感じられる一杯です。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">グリーンビーンズコーヒーのこだわりをもっと知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/chlorogenic-acid-beauty/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のカフェで学んだクロロゲン酸が肌に効くしくみ</a><span class="block text-[13px] text-[#6B5745]">焙煎度と美容成分の関係について詳しく紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/milk-not-creamer/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由</a><span class="block text-[13px] text-[#6B5745]">グリーンビーンズコーヒーが素材にこだわる姿勢が表れている記事です。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## まとめ
 
