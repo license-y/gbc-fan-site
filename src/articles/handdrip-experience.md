@@ -21,7 +21,9 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 
 体験はコーヒー豆を選ぶところからスタートします。最初にバリスタさんから教わったのが悪い豆の見分け方でした。
 
-コーヒー豆には形が崩れていたり色が均一でないものが混ざっています。こうした豆を丁寧に取り除くことで雑味のないすっきりとした味わいになるとのこと。そして除外しなかったらどんな味になるかも実際に体験させてもらえました。飲み比べてみると違いは明らか。この工程ひとつで味がこれだけ変わるんだと驚きました。
+コーヒー豆には形が崩れていたり色が均一でないものが混ざっています。こうした豆を丁寧に取り除くことで雑味のないすっきりとした味わいになるとのこと。
+
+そして除外しなかったらどんな味になるかも実際に体験させてもらえました。飲み比べてみると違いは明らか。この工程ひとつで味がこれだけ変わるんだと驚きました。
 
 プロの仕事は淹れ方の技術だけじゃなくここから始まっていたんですね。グリーンビーンズコーヒーのバリスタさんはこの選別を丁寧に実演してくれます。
 
@@ -45,9 +47,35 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 
 お得すぎる体験であることは確かです。グリーンビーンズコーヒーのコーヒーをより深く知りたいと思ったらぜひ参加してみてください！
 
-この体験で得た技術が自宅での「自分だけのコーヒー時間」につながる理由については[東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験](/articles/handdrip-home-thirdplace-event-gbc/)にまとめています。仕事に集中したい日にハンドドリップコーヒーを活用する方法は[東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力](/articles/handdrip-coffee-business-concentration-gbc/)にまとめています。このイベントの毎月の開催情報や参加の流れについては[北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)もあわせてご覧ください。豆を自分で焙煎する体験に興味が湧いた方は[東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート](/articles/roasting-experience/)もおすすめです。30種類の豆からオリジナルブレンドを作って焙煎する[オリジナルブレンド焙煎体験](/articles/original-blend-roasting-event/)も毎月開催されています。ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む[東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験](/articles/premium-coffee-gbc/)は格別です。体験後の散歩コースには[ダガヤサンドウのパワースポット鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)もぜひ。グリーンビーンズコーヒーが本物の牛乳にこだわる理由は[東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由](/articles/milk-not-creamer/)でご覧いただけます。日々のハンドドリップを楽しむカフェ店内の雰囲気については[ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス](/articles/cafe-interior-third-place-dagayasando/)もぜひ読んでみてください。体験で知ったコーヒーの温度と風味の関係については[コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方](/articles/coffee-temperature-flavor-gbc/)もあわせてどうぞ。
+## あわせて読みたい記事
 
-ハンドドリップの定義・道具・蒸らしや温度のポイントをまとめて知りたい方は[ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方](/articles/handdrip-guide/)も参考にしてください。グリーンビーンズコーヒーの体験イベント全体像は[体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド](/articles/event-guide/)でご覧いただけます。
+<div class="not-prose bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+
+### ハンドドリップをもっと深く知る
+
+- <a href="/articles/handdrip-guide/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方</a><br><span class="text-sm text-[#6B5745]">定義・道具・蒸らしや温度のポイントをまとめた基礎ガイドです。</span>
+- <a href="/articles/handdrip-barista-monthly-event-gbc/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ</a><br><span class="text-sm text-[#6B5745]">今回参加した体験イベントの毎月の開催情報や参加の流れをまとめています。</span>
+- <a href="/articles/event-guide/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド</a><br><span class="text-sm text-[#6B5745]">Green Beans Coffeeで開催している体験イベント全体像のガイドです。</span>
+
+### 日常にハンドドリップを取り入れる
+
+- <a href="/articles/handdrip-home-thirdplace-event-gbc/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験</a><br><span class="text-sm text-[#6B5745]">この体験で得た技術が自宅での「自分だけのコーヒー時間」につながる理由をまとめています。</span>
+- <a href="/articles/handdrip-coffee-business-concentration-gbc/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力</a><br><span class="text-sm text-[#6B5745]">仕事に集中したい日にハンドドリップコーヒーを活用する方法をまとめています。</span>
+
+### 焙煎・豆にもっとこだわりたい方へ
+
+- <a href="/articles/roasting-experience/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート</a><br><span class="text-sm text-[#6B5745]">豆を自分で焙煎する体験に興味が湧いた方におすすめのレポートです。</span>
+- <a href="/articles/original-blend-roasting-event/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">オリジナルブレンド焙煎体験</a><br><span class="text-sm text-[#6B5745]">30種類の豆からオリジナルブレンドを作って焙煎する、毎月開催のイベントです。</span>
+- <a href="/articles/premium-coffee-gbc/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><br><span class="text-sm text-[#6B5745]">ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む一杯の体験です。</span>
+
+### お店の雰囲気やこだわりを知る
+
+- <a href="/articles/cafe-interior-third-place-dagayasando/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス</a><br><span class="text-sm text-[#6B5745]">日々のハンドドリップを楽しむカフェ店内の雰囲気をまとめています。</span>
+- <a href="/articles/milk-not-creamer/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由</a><br><span class="text-sm text-[#6B5745]">グリーンビーンズコーヒーが本物の牛乳にこだわる理由をまとめています。</span>
+- <a href="/articles/coffee-temperature-flavor-gbc/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方</a><br><span class="text-sm text-[#6B5745]">体験で知ったコーヒーの温度と風味の関係をまとめています。</span>
+- <a href="/articles/hatomori-shrine-dagayasando/" class="text-[15px] font-medium text-[#8A6D3B] hover:underline">ダガヤサンドウのパワースポット鳩森八幡神社</a><br><span class="text-sm text-[#6B5745]">体験後の散歩コースにおすすめのスポットです。</span>
+
+</div>
 
 ## まとめ
 
