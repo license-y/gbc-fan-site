@@ -29,7 +29,7 @@ thumbnailAlt: コーヒーカップとシミ・くすみ・むくみ改善をイ
 
 **活性酸素**は体を守るために必要な存在ですが増えすぎると健康な細胞まで酸化させてしまいます。肌のしわやたるみ・くすみなどの老化サインはこの活性酸素の過剰な働きが原因のひとつと言われています。
 
-クロロゲン酸には高い**抗酸化作用**があります。活性酸素の発生を防いだりすでに発生した活性酸素の働きを弱めたりすることで肌の老化を内側から抑えてくれます。
+クロロゲン酸には**抗酸化作用**があることが知られています。ただし、コーヒーを飲むことで肌の老化を抑えられるかについては、十分な科学的根拠が確立しているわけではありません。
 
 バリスタさんから聞いて印象に残ったのが焙煎度の話です。クロロゲン酸は焙煎の過程で少しずつ減少するため浅煎りのコーヒーほど多く残る傾向があるとのことです。「美容効果を意識するなら浅煎りがおすすめですよ」と教えていただいてから豆を選ぶときに焙煎度を少し意識するようになりました。
 
@@ -49,7 +49,66 @@ thumbnailAlt: コーヒーカップとシミ・くすみ・むくみ改善をイ
 
 千駄ヶ谷・ダガヤサンドウエリアを散策したり鳩森八幡神社へ立ち寄ったりするついでに一杯。新宿・代々木・表参道から少し足を延ばして訪れる価値のある場所だと感じています。
 
-コーヒーの美容習慣を自宅に持ち帰りサードプレイスを作る方法は[東京・北参道のコーヒー専門店が教えてくれた：自宅を美容サードプレイスにする習慣](/articles/coffee-beauty-home-ritual-thirdplace-gbc/)もあわせてご覧ください。コーヒーの抗酸化成分についてさらに詳しく知りたい方は[クロロゲン酸が活性酸素を抑えるしくみを解説した記事](/articles/chlorogenic-acid-beauty/)もあわせてご覧ください。ブラックコーヒーで美容効果を最大限に活かす飲み方と習慣は[千駄ヶ谷のカフェで始めるブラックコーヒー習慣：美容健康に効く飲み方と効果](/articles/black-coffee-beauty-health/)で詳しく紹介しています。腸内環境と美容のつながりに興味がある方には[グルテンと美容・健康の関係を学べる記事](/articles/gluten-basics-beauty-health/)もおすすめです。美容効果を高めたい方は豆のクオリティにもこだわった[グリーンビーンズコーヒーのオリジナルプレミアムコーヒー](/articles/premium-coffee-gbc/)もぜひ試してみてください。浅煎りの魅力をもっと深く知りたい方は[東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート](/articles/roasting-experience/)も参考になります。グリーンビーンズコーヒーのグルテンフリーフォカッチャと美容コーヒーのペアリングは[東京・千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった](/articles/glutenfree-focaccia/)でご紹介しています。スペシャルティコーヒーそのものの定義や違いは[スペシャルティコーヒーとは？東京・北参道で自家焙煎コーヒーを飲んで知った違い](/articles/specialty-coffee-guide/)でまとめています。
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">コーヒーの美容効果をさらに深く知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/chlorogenic-acid-beauty/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のカフェで学んだクロロゲン酸が肌に効くしくみ</a><span class="block text-[13px] text-[#6B5745]">コーヒーの抗酸化成分についてさらに詳しく知りたい方へのご紹介です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/black-coffee-beauty-health/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のカフェで始めるブラックコーヒー習慣：美容健康に効く飲み方と効果</a><span class="block text-[13px] text-[#6B5745]">ブラックコーヒーで美容効果を活かす飲み方と習慣を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/gluten-basics-beauty-health/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のグルテンフリーカフェで学んだ：小麦が腸に与える影響と美容健康習慣</a><span class="block text-[13px] text-[#6B5745]">腸内環境と美容のつながりに興味がある方におすすめです。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">美容を意識したコーヒー選び</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/premium-coffee-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><span class="block text-[13px] text-[#6B5745]">美容効果を高めたい方へ、豆のクオリティにもこだわった一杯です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/roasting-experience/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート</a><span class="block text-[13px] text-[#6B5745]">浅煎りの魅力をもっと深く知りたい方の参考になります。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/specialty-coffee-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">スペシャルティコーヒーとは？東京・北参道で自家焙煎コーヒーを飲んで知った違い</a><span class="block text-[13px] text-[#6B5745]">スペシャルティコーヒーそのものの定義や違いをまとめています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">美容習慣を暮らしに取り入れる</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/coffee-beauty-home-ritual-thirdplace-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のコーヒー専門店が教えてくれた：自宅を美容サードプレイスにする習慣</a><span class="block text-[13px] text-[#6B5745]">コーヒーの美容習慣を自宅に持ち帰りサードプレイスを作る方法をご紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/glutenfree-focaccia/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のグルテンフリーカフェで食べた米粉フォカッチャが最高だった</a><span class="block text-[13px] text-[#6B5745]">グルテンフリーフォカッチャと美容コーヒーのペアリングをご紹介しています。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## まとめ
 
@@ -63,7 +122,7 @@ thumbnailAlt: コーヒーカップとシミ・くすみ・むくみ改善をイ
 コーヒー豆に含まれるクロロゲン酸が紫外線によるメラニン生成を抑制する作用があると言われています。毎日のコーヒーを続けることで体の内側からシミ・くすみ対策につながる可能性があります。
 
 **Q. コーヒーのアンチエイジング効果について教えてください。**<br>
-クロロゲン酸の高い抗酸化作用が体内の活性酸素の働きを抑えます。活性酸素による細胞の酸化を防ぐことでしわやたるみを防ぐアンチエイジング効果が期待できます。
+クロロゲン酸は抗酸化作用を持つポリフェノールの一種です。ただし、摂取によって肌の老化やしわ・たるみが改善するとは断定できません。
 
 **Q. コーヒーはむくみや冷えに効きますか？**<br>
 カフェインの利尿作用により余分な水分が排出されむくみの軽減が期待できます。また血行促進効果により冷えの改善にも役立つと言われています。飲みすぎには注意しながら取り入れるのがおすすめです。
