@@ -25,6 +25,8 @@ thumbnailAlt: 池に木々が映り込む新宿御苑の日本庭園、遠くに
 
 外国人の方がとても多いエリアでもあります。明治神宮や新宿御苑は海外からの旅行者にとっても東京を代表するスポットです。自然と緑を求めて世界中から人が引き寄せられてくる様子を見るたびにこのエリアの持つ力を感じます。
 
+ダガヤサンドウエリアそのものの特徴や魅力をもっと詳しく知りたい方は[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)もあわせてご覧ください。
+
 ## 新宿御苑はサードプレイスとして選ばれ続ける場所
 
 新宿御苑が好きな理由のひとつに「ただいるだけでいい場所」であることがあります。
@@ -61,7 +63,69 @@ thumbnailAlt: 池に木々が映り込む新宿御苑の日本庭園、遠くに
 
 緑の中でリフレッシュしたあとにGreen Beans Coffeeでスペシャルティコーヒーをいただく半日コースをぜひ体験してみてください。ダガヤサンドウがサードプレイスとして選ばれ続ける理由をきっと感じていただけると思います。北参道観光のモデルルート全体は[東京観光ガイド｜北参道・千駄ヶ谷と神宮外苑の歩き方](/articles/kitasando-travel-guide/)にまとめました。
 
-グリーンビーンズコーヒーがサードプレイスとして愛されている理由は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でも詳しく紹介しています。明治神宮や新宿御苑からこのエリアを訪れた方には[東京・明治神宮と新宿御苑から歩く千駄ヶ谷のグルテンフリーカフェ](/articles/meiji-shrine-dagayasando-gluten-free/)もあわせてご覧ください。ダガヤサンドウのパワースポット[鳩森八幡神社](/articles/hatomori-shrine-dagayasando/)も散策コースに加えてみてください。遠方から東京旅行でパワースポット巡りをする方には[東京旅行のパワースポット巡り｜鳩森八幡神社と渋谷・北参道のサードプレイス](/articles/tokyo-travel-powerspot-hatomori-thirdplace-gbc/)もおすすめです。愛犬とこのエリアを歩くなら[東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース](/articles/sendagaya-pet-walk-dagayasando/)もおすすめです。明治神宮外苑のいちょう並木を起点にしたダガヤサンドウ散歩コースは[東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験](/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/)でも詳しく紹介しています。国立競技場駅を起点にしたコースは[国立競技場駅から歩くダガヤサンドウ。千駄ヶ谷・北参道がサードプレイスになる理由](/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/)もあわせてご覧ください。グリーンビーンズコーヒーのテイクアウトコーヒーを手に歩くダガヤサンドウの楽しみ方は[コーヒーを片手に歩く東京・ダガヤサンドウのサードプレイス](/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/)でも詳しくご紹介しています。サードプレイスという概念そのものをより深く知りたい方は[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)もあわせてどうぞ。
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">ダガヤサンドウの散歩コースをもっと知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/tokyo-travel-powerspot-hatomori-thirdplace-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京旅行のパワースポット巡り｜鳩森八幡神社と渋谷・北参道のサードプレイス</a><span class="block text-[13px] text-[#6B5745]">遠方から東京旅行でパワースポット巡りをする方におすすめのルートです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/meiji-gaien-ginkgo-dagayasando-thirdplace/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・明治神宮外苑から始まるダガヤサンドウ散歩とサードプレイス体験</a><span class="block text-[13px] text-[#6B5745]">明治神宮外苑のいちょう並木を起点にした散歩コースをご紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/kokuritsu-kyogijo-dagayasando-thirdplace-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・国立競技場駅から歩くダガヤサンドウがサードプレイスになる理由</a><span class="block text-[13px] text-[#6B5745]">国立競技場駅を起点にしたコースをあわせてご覧いただけます。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/takeout-coffee-walk-dagayasando-thirdplace-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">コーヒーを片手に歩く東京・ダガヤサンドウのサードプレイス</a><span class="block text-[13px] text-[#6B5745]">テイクアウトコーヒーを手に歩くダガヤサンドウの楽しみ方をご紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">愛犬・ご褒美グルメと一緒に楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/sendagaya-pet-walk-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース</a><span class="block text-[13px] text-[#6B5745]">愛犬とこのエリアを歩きたい方におすすめの散歩コースです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/meiji-shrine-dagayasando-gluten-free/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・明治神宮と新宿御苑から歩く千駄ヶ谷のグルテンフリーカフェ</a><span class="block text-[13px] text-[#6B5745]">明治神宮や新宿御苑からこのエリアを訪れた方向けのご紹介です。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">パワースポットとサードプレイスをもっと深く知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/hatomori-shrine-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道から歩いて5分のパワースポット鳩森八幡神社に行ってきました</a><span class="block text-[13px] text-[#6B5745]">ダガヤサンドウのパワースポットとして散策コースに加えたい場所です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで</a><span class="block text-[13px] text-[#6B5745]">グリーンビーンズコーヒーがサードプレイスとして愛されている理由を詳しく紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/thirdplace-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方</a><span class="block text-[13px] text-[#6B5745]">サードプレイスという概念そのものをより深く知りたい方におすすめです。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## よくある質問
 
