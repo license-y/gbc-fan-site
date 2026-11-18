@@ -55,7 +55,77 @@ thumbnailAlt: 落ち着いた雰囲気のカフェ店内、ハンドドリップ
 
 ハンドドリップコーヒーを待ちながら静かなBGMに包まれて好きなことをして過ごす時間はそれ自体が小さな贅沢です。誰かに何かを証明しなくていい場所。何かを成し遂げなくていい時間。ただ自分のペースでいられる空間がある。それがグリーンビーンズコーヒーのカフェ店内で私が感じてきたことです。
 
-サードプレイスとは何かを定義から学びたい方は[サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方](/articles/thirdplace-guide/)が入口としておすすめです。グリーンビーンズコーヒーの静かな空間をフリーランスや個人事業主の仕事場として活用する方法は[ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法](/articles/freelance-third-place-dagayasando-gbc/)で詳しく紹介しています。バリスタさんが描くラテアートの技術や体験については[渋谷区・ダガヤサンドウでバリスタのラテアートを楽しむ。千駄ヶ谷のカフェラテ体験記](/articles/latte-art-barista-dagayasando-gbc/)もあわせてどうぞ。ハンドドリップをイベント形式で体験したい方は[北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)もあわせてどうぞ。サードプレイスという概念をより深く知りたい方は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)もぜひ読んでみてください。ペットと一緒に来店したい方は[北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました](/articles/pet-cafe-sendagaya/)が参考になります。ゆったり過ごすための店内アメニティについては[東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティに本気を見た](/articles/restroom-amenity/)もぜひ。グリーンビーンズコーヒーでのデートやカップルの過ごし方に興味がある方は[北参道カフェでホテルラウンジ気分のデート：渋谷・新宿から10分](/articles/date-cafe-kitasando-hotel-lounge/)もあわせてどうぞ。布おしぼりが届くもてなしの詳細については[コーヒー一杯のもてなしがうれしい。千駄ヶ谷のサードプレイスカフェ](/articles/coffee-oshibori-thirdplace-dagayasando-gbc/)でご紹介しています。仕事・デート・女子会・打ち合わせなど多様なシーンでグリーンビーンズコーヒーを活用したい方は[東京・渋谷ダガヤサンドウのコーヒー専門店がサードプレイスになるわけ](/articles/coffee-beans-30-thirdplace-dagayasando-gbc/)もぜひ読んでみてください。
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">サードプレイスという概念をもっと知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/thirdplace-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">サードプレイスとは？東京・渋谷で3年通ってわかった第3の居場所の意味と選び方</a><span class="block text-[13px] text-[#6B5745]">サードプレイスとは何かを定義から学びたい方への入口としておすすめの記事です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで</a><span class="block text-[13px] text-[#6B5745]">サードプレイスという概念をより深く知りたい方におすすめです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/coffee-beans-30-thirdplace-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・渋谷ダガヤサンドウのコーヒー専門店がサードプレイスになるわけ</a><span class="block text-[13px] text-[#6B5745]">仕事・デート・女子会・打ち合わせなど多様なシーンでの活用法をご紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">自分らしく過ごすシーンを選ぶ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/freelance-third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">ダガヤサンドウのサードプレイスで仕事がはかどる：渋谷フリーランスの活用法</a><span class="block text-[13px] text-[#6B5745]">静かな空間をフリーランスや個人事業主の仕事場として活用する方法を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pet-cafe-sendagaya/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道・千駄ヶ谷でペットと入れるカフェ：Green Beans Coffeeに行ってきました</a><span class="block text-[13px] text-[#6B5745]">ペットと一緒に来店したい方の参考になる記事です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/date-cafe-kitasando-hotel-lounge/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道カフェでホテルラウンジ気分のデート：渋谷・新宿から10分</a><span class="block text-[13px] text-[#6B5745]">デートやカップルでの過ごし方に興味がある方へのご紹介です。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">バリスタの技術をもっと楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/handdrip-experience/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ</a><span class="block text-[13px] text-[#6B5745]">ハンドドリップをイベント形式で体験したい方におすすめです。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/latte-art-barista-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">渋谷区・ダガヤサンドウでバリスタのラテアートを楽しむ。千駄ヶ谷のカフェラテ体験記</a><span class="block text-[13px] text-[#6B5745]">バリスタさんが描くラテアートの技術や体験をご紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">細部のホスピタリティを知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/restroom-amenity/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティに本気を見た</a><span class="block text-[13px] text-[#6B5745]">ゆったり過ごすための店内アメニティについて詳しく書いています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/coffee-oshibori-thirdplace-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">コーヒー一杯のもてなしがうれしい。千駄ヶ谷のサードプレイスカフェ</a><span class="block text-[13px] text-[#6B5745]">布おしぼりが届くもてなしの詳細をご紹介しています。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## まとめ
 
