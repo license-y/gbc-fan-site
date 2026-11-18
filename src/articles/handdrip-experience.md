@@ -49,21 +49,34 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 
 ## あわせて読みたい記事
 
-<div class="not-prose bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
 
 <h3 class="text-base font-bold text-[#4A3728] mb-3">ハンドドリップをもっと深く知る</h3>
 
 <ul class="divide-y divide-[#E8E0D5]">
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">01</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/handdrip-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">ハンドドリップとは？東京・北参道のバリスタさんに教わったコーヒーの淹れ方</a><span class="block text-[13px] text-[#6B5745]">定義・道具・蒸らしや温度のポイントをまとめた基礎ガイドです。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">02</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/handdrip-barista-monthly-event-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道のバリスタさんに教わるハンドドリップ体験、毎月開催で豆代のみ</a><span class="block text-[13px] text-[#6B5745]">今回参加した体験イベントの毎月の開催情報や参加の流れをまとめています。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">03</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/event-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">体験イベントとは？東京・北参道で毎月開催するコーヒー体験の全ガイド</a><span class="block text-[13px] text-[#6B5745]">Green Beans Coffeeで開催している体験イベント全体像のガイドです。</span></span>
 </li>
 </ul>
@@ -71,12 +84,10 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 <h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">日常にハンドドリップを取り入れる</h3>
 
 <ul class="divide-y divide-[#E8E0D5]">
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">04</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/handdrip-home-thirdplace-event-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験</a><span class="block text-[13px] text-[#6B5745]">この体験で得た技術が自宅での「自分だけのコーヒー時間」につながる理由をまとめています。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">05</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/handdrip-coffee-business-concentration-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力</a><span class="block text-[13px] text-[#6B5745]">仕事に集中したい日にハンドドリップコーヒーを活用する方法をまとめています。</span></span>
 </li>
 </ul>
@@ -84,16 +95,13 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 <h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">焙煎・豆にもっとこだわりたい方へ</h3>
 
 <ul class="divide-y divide-[#E8E0D5]">
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">06</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/roasting-experience/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道で初めての焙煎体験：生豆からコーヒーができるまでの感動レポート</a><span class="block text-[13px] text-[#6B5745]">豆を自分で焙煎する体験に興味が湧いた方におすすめのレポートです。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">07</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/original-blend-roasting-event/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">オリジナルブレンド焙煎体験</a><span class="block text-[13px] text-[#6B5745]">30種類の豆からオリジナルブレンドを作って焙煎する、毎月開催のイベントです。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">08</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/premium-coffee-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><span class="block text-[13px] text-[#6B5745]">ハンドドリップで引き出すコーヒーの奥深さを知った上で飲む一杯の体験です。</span></span>
 </li>
 </ul>
@@ -101,20 +109,16 @@ thumbnailAlt: 豆の選別から始まるハンドドリップ体験の様子
 <h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">お店の雰囲気やこだわりを知る</h3>
 
 <ul class="divide-y divide-[#E8E0D5]">
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">09</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/cafe-interior-third-place-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">ダガヤサンドウのカフェ店内で過ごす、ハンドドリップとサードプレイス</a><span class="block text-[13px] text-[#6B5745]">日々のハンドドリップを楽しむカフェ店内の雰囲気をまとめています。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">10</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/milk-not-creamer/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由</a><span class="block text-[13px] text-[#6B5745]">グリーンビーンズコーヒーが本物の牛乳にこだわる理由をまとめています。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">11</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/coffee-temperature-flavor-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">コーヒーは温度で味が変わる、北参道バリスタ体験で知った一杯の楽しみ方</a><span class="block text-[13px] text-[#6B5745]">体験で知ったコーヒーの温度と風味の関係をまとめています。</span></span>
 </li>
-<li class="flex items-start gap-3 py-2.5">
-<span class="w-7 flex-shrink-0 text-right pt-0.5 text-sm font-semibold text-[#8A6D3B]">12</span>
+<li class="related-item flex items-start gap-3 py-2.5">
 <span class="flex-1"><a href="/articles/hatomori-shrine-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">ダガヤサンドウのパワースポット鳩森八幡神社</a><span class="block text-[13px] text-[#6B5745]">体験後の散歩コースにおすすめのスポットです。</span></span>
 </li>
 </ul>
