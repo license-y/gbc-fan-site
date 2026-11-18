@@ -44,7 +44,7 @@ Kitasando doesn't photograph the way Shibuya or Harajuku does, and that's part o
 
 ## Who This Is For
 
-Travelers who've already covered the obvious Tokyo stops and want a neighborhood that moves at a slower pace, or anyone staying near Shinjuku who wants a short, walkable detour rather than another train transfer. It also works well for anyone combining a visit with pet-friendly plans, since the cafe itself is a comfortable stop either way.
+Travelers who've already covered the obvious Tokyo stops and want a neighborhood that moves at a slower pace, or anyone staying near Shinjuku who wants a short, walkable detour rather than another train transfer. It also works well for anyone combining a visit with [pet-friendly plans](/en/articles/how-to-choose-pet-friendly-cafe-tokyo/), since the cafe itself is a comfortable stop either way.
 
 ## Frequently Asked Questions
 
