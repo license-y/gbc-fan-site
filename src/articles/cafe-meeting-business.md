@@ -52,13 +52,79 @@ thumbnailAlt: コンクリート壁の店内に置かれた木目調テーブル
 **③ PCは最小限にして対話を中心に**
 カフェの雰囲気を活かすためPC画面に頼りすぎず対話中心の商談を心がけると効果的です。資料はスマートフォンやタブレットで手軽に共有するのがスマートです。
 
-グリーンビーンズコーヒーをリモートワークや日常の作業場所としても活用したい方は[北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所](/articles/business-remote-work-gbc/)もご覧ください。パワースポットエリアで商談の場所選びにこだわりたい方には[鳩森八幡神社そばのカフェで商談：千駄ヶ谷のビジネスパーソンに人気の理由](/articles/business-location-dagayasando-gbc/)もおすすめです。商談相手に印象を残すなら[東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験](/articles/premium-coffee-gbc/)の注文がおすすめです。グリーンビーンズコーヒーのトイレには商談前の身だしなみに役立つアメニティが揃っており[東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティに本気を見た](/articles/restroom-amenity/)で詳しく紹介しています。コーヒーの素材へのこだわりが気になった方は[東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由](/articles/milk-not-creamer/)もあわせてどうぞ。カフェが「第3の居場所（サードプレイス）」になる理由を知りたい方は[グリーンビーンズコーヒーが私のサードプレイスになるまで](/articles/third-place-dagayasando-gbc/)もぜひ。グリーンビーンズコーヒーのおしぼりとお冷のサービスなどスタッフのホスピタリティが商談の場を整えるまとめは[商談・面接・打ち合わせに使いたい千駄ヶ谷のカフェ：ホテルラウンジ級のおもてなしがある](/articles/business-omotenashi-gbc/)でご覧いただけます。コーヒーとフードを揃えて打ち合わせをさらに格上げしたい方は[東京・渋谷区でビジネスの打ち合わせ場所を探しているなら。千駄ヶ谷のホテルラウンジ空間カフェをマイリストに](/articles/business-meeting-food-cafe-dagayasando-gbc/)もあわせてどうぞ。
+グリーンビーンズコーヒーのトイレには商談前の身だしなみに役立つアメニティが揃っており[東京・千駄ヶ谷のカフェ店内レポート：トイレのアメニティに本気を見た](/articles/restroom-amenity/)で詳しく紹介しています。
 
 ## まとめ
 
 温かい飲み物には相手への印象を好意的にする心理効果があります。東京・千駄ヶ谷のダガヤサンドウにあるGreen Beans Coffeeは静かで洗練された空間でスペシャルティコーヒーとともに打ち解けた対話が生まれやすいカフェです。渋谷・代々木・原宿・北参道からのアクセスも便利です。次の商談はぜひカフェで試してみてください。ビジネスシーンでのカフェの選び方全体は[ビジネスカフェとは？東京・渋谷区千駄ヶ谷で仕事・商談に使えるカフェの選び方](/articles/business-cafe-guide/)でまとめています。
 
 ---
+
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">商談・打ち合わせに適したカフェ選び</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/business-omotenashi-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">商談・面接・打ち合わせに使いたい千駄ヶ谷のカフェ：ホテルラウンジ級のおもてなしがある</a><span class="block text-[13px] text-[#6B5745]">おしぼりやお冷などの心遣いが、商談の場に上質な印象をもたらす様子を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/business-meeting-food-cafe-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷でビジネスの打ち合わせに使えるコーヒーとフードのカフェ</a><span class="block text-[13px] text-[#6B5745]">コーヒーとフードを楽しみながら、落ち着いて打ち合わせできるカフェの魅力を紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">北参道・千駄ヶ谷でのビジネス利用とリモートワーク</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/business-remote-work-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道のビジネスカフェが穴場だった：コーヒー代でサードプレイス体験ができる場所</a><span class="block text-[13px] text-[#6B5745]">リモートワークや日常の作業場所として、カフェを活用する方法を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/business-location-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">鳩森八幡神社そばのカフェで商談：東京・千駄ヶ谷のビジネスパーソンに人気の理由</a><span class="block text-[13px] text-[#6B5745]">鳩森八幡神社に近い立地と、商談場所としてのカフェの魅力を紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">サードプレイスと上質なカフェ空間</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで</a><span class="block text-[13px] text-[#6B5745]">カフェが自宅でも職場でもない「第3の居場所」になる理由を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/cafe-interior-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件</a><span class="block text-[13px] text-[#6B5745]">席間のゆとりや音・照明など、居心地の良さを左右する5つの条件を解説しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">コーヒー体験・専門性で商談をもっと格上げ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/premium-coffee-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のスペシャルティコーヒー専門店で焙煎プレミアムコーヒーを体験</a><span class="block text-[13px] text-[#6B5745]">商談のひとときを彩る、プレミアムコーヒーの魅力を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/milk-not-creamer/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道のコーヒー専門店が教えるコーヒーフレッシュを使わない理由</a><span class="block text-[13px] text-[#6B5745]">牛乳へのこだわりを通じて、コーヒーの素材を大切にする姿勢を紹介しています。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## よくある質問
 
