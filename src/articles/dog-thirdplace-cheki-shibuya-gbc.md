@@ -51,9 +51,81 @@ thumbnailAlt: 愛犬とのチェキ撮影ブース、サードプレイスの一
 
 ## まとめ
 
-東京・渋谷エリアで愛犬と本格的なサードプレイス体験をしたい方にGreen Beans Coffeeはベストな選択肢のひとつです。[千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる](/articles/cheki-pet-cafe-dagayasando/)ではチェキブースの詳しい様子をレポートしています。グリーンビーンズコーヒーへ向かう散歩コースについては[東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース](/articles/sendagaya-pet-walk-dagayasando/)が参考になります。サードプレイスとしてのグリーンビーンズコーヒーの魅力は[東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで](/articles/third-place-dagayasando-gbc/)でも詳しく紹介しています。店内同伴OKのグリーンビーンズコーヒーで愛犬と記念写真を撮る楽しみ方は[北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK](/articles/pet-indoor-thirdplace-dagayasando-gbc/)でも書いています。ペット同伴カフェとしての基本的な選び方は[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)でまとめています。夏だけ雰囲気が変わるチェキブースの様子は[北参道のペット同伴カフェで見た夏のチェキブース、愛犬3匹のトロピカル仮装](/articles/pomeranian-tropical-cheki-dagayasando-gbc/)でも紹介しています。
+東京・渋谷エリアで愛犬と本格的なサードプレイス体験をしたい方にGreen Beans Coffeeはベストな選択肢のひとつです。ペット同伴カフェとしての基本的な選び方は[犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド](/articles/pet-cafe-guide/)でまとめています。
 
 グリーンビーンズコーヒーは北参道駅から徒歩3分のダガヤサンドウエリアにある自家焙煎スペシャルティコーヒー専門店です。店内全席ペット同伴OKで無料のチェキ撮影・展示サービスも行われています。東京・渋谷区で愛犬と過ごすサードプレイスをお探しの方にぜひ訪れてほしい一軒です。
+
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block { counter-reset: related-item; }
+.related-reading-block li.related-item { counter-increment: related-item; }
+.related-reading-block li.related-item::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">愛犬と過ごすペットフレンドリーカフェを知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/dog-friendly-cafe-guide/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道発・ペットカフェの選び方：愛犬と入店前にチェックすべき3つのポイント</a><span class="block text-[13px] text-[#6B5745]">入店前に確認すべき3つのポイントを解説するピラー記事です。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pet-cafe-first-visit-entry-manners-kitasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">初めてのペット同伴カフェは東京・北参道で聞いた入店ルールとスタッフの心遣い</a><span class="block text-[13px] text-[#6B5745]">初めての来店でも安心できるスタッフの案内の様子を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pet-cafe-sendagaya/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・北参道・千駄ヶ谷でペットと入れるカフェに行ってきました</a><span class="block text-[13px] text-[#6B5745]">店内同伴OKのカフェを実際に訪れたレポートです。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">ダガヤサンドウ・北参道を愛犬と歩く</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/sendagaya-pet-walk-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース</a><span class="block text-[13px] text-[#6B5745]">将棋会館・鳩森八幡神社を通る散歩ルートを紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/national-stadium-pet-walk-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷を愛犬と歩く一日。国立競技場エリアからダガヤサンドウのカフェへ</a><span class="block text-[13px] text-[#6B5745]">国立競技場エリアから歩く別ルートの散策体験を紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">サードプレイスとしての愛犬カフェ時間</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/third-place-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷のサードプレイス：ダガヤサンドウのカフェが私の第3の場所になるまで</a><span class="block text-[13px] text-[#6B5745]">サードプレイスとしてのグリーンビーンズコーヒーの魅力を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pet-indoor-thirdplace-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK</a><span class="block text-[13px] text-[#6B5745]">愛犬と記念写真を撮りながら過ごす店内同伴の様子を紹介しています。</span></span>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">チェキ・ペットメモリーをもっと楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/cheki-pet-cafe-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">千駄ヶ谷のペットカフェに行ってきました：ダガヤサンドウで無料チェキ展示もできる</a><span class="block text-[13px] text-[#6B5745]">チェキブースの詳しい様子をレポートしています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/pomeranian-tropical-cheki-dagayasando-gbc/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">北参道のペット同伴カフェで見た夏のチェキブース、愛犬3匹のトロピカル仮装</a><span class="block text-[13px] text-[#6B5745]">季節限定のチェキブースの様子を紹介しています。</span></span>
+</li>
+<li class="related-item flex items-start gap-3 py-2.5">
+<span class="flex-1"><a href="/articles/dog-walk-portrait-latte-dagayasando/" class="block text-[15px] font-semibold text-[#4A3728] hover:text-[#8A6D3B] hover:underline mb-1">東京・千駄ヶ谷を愛犬と散歩して北参道カフェで似顔絵ラテを楽しむ</a><span class="block text-[13px] text-[#6B5745]">チェキとは別の「似顔絵ラテ」というペットメモリーサービスを紹介しています。</span></span>
+</li>
+</ul>
+
+</div>
 
 ## よくある質問
 
