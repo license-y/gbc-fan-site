@@ -316,6 +316,46 @@
       });
     });
 
+    // GA4: 関連記事クリック計測（独自関連記事セクション .related-reading-block ／ 自動関連記事ウィジェット #auto-related-articles）
+    // 既存の [data-ga-event] ベースの計測とは独立したイベント委譲方式。data-ga-event を持つ要素（CTA等）は対象から除外し重複送信を避ける
+    // article_slug はクリック元ページURL、target_slug はクリック先リンクURLから /articles/<slug>/ 形式のみを対象に抽出する。それ以外（外部サイト・/pets/・/articles/tags/ 等）は計測しない
+    (function () {
+      function extractArticleSlug(pathname) {
+        var match = pathname.match(/^\/articles\/([a-zA-Z0-9-]+)\/?$/);
+        return match ? match[1] : null;
+      }
+
+      document.addEventListener('click', function (e) {
+        var a = e.target.closest('a');
+        if (!a || a.hasAttribute('data-ga-event')) return;
+
+        var container = a.closest('.related-reading-block, #auto-related-articles');
+        if (!container) return;
+
+        var targetUrl;
+        try {
+          targetUrl = new URL(a.href, location.href);
+        } catch (err) {
+          return;
+        }
+        if (targetUrl.hostname !== location.hostname) return;
+
+        var targetSlug = extractArticleSlug(targetUrl.pathname);
+        if (!targetSlug) return;
+
+        if (typeof gtag === 'function') {
+          var categoryEl = document.querySelector('[data-article-category]');
+          gtag('event', 'click_related_article', {
+            link_url: targetUrl.href,
+            link_location: container.id === 'auto-related-articles' ? 'auto_related' : 'related_reading',
+            article_slug: extractArticleSlug(location.pathname) || undefined,
+            target_slug: targetSlug,
+            article_category: (categoryEl && categoryEl.dataset.articleCategory) || undefined
+          });
+        }
+      });
+    })();
+
     // ① コピー時に著作権文言を自動付加
     document.addEventListener('copy', function(e) {
       const selection = window.getSelection();
