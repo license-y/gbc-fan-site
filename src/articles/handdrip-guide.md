@@ -67,16 +67,53 @@ thumbnailAlt: ハンドドリップでコーヒーを淹れるバリスタの手
 
 ここまでのポイントを数値に落とし込み、初心者の方でも自宅で試しやすい参考レシピとしてまとめました。GBCの公式レシピではなく、まずの目安としてご活用ください。豆の個性や好みに合わせて少しずつ調整してみてください。
 
-| 項目 | 目安 |
-|------|------|
-| コーヒー粉 | 15g |
-| お湯の総量 | 240g（粉とお湯の比率は約1：16） |
-| お湯の温度 | 浅煎り88〜92℃／深煎り83〜86℃ |
-| 蒸らし時間 | 20〜30秒 |
-| 注湯回数 | 3〜4回に分けて注ぐ |
-| 抽出時間 | 2分30秒〜3分 |
-| 挽き目 | 中挽きを基本に |
-| 使用する道具 | ドリッパー・ペーパーフィルター・サーバー・細口ケトル・スケール（詳しくは上記「ハンドドリップに必要な道具」を参照） |
+<div class="not-prose bg-white border border-[#E8E0D5] rounded-2xl p-5 sm:p-8 my-8">
+  <div class="grid grid-cols-2 gap-3 sm:gap-5">
+    <div class="bg-[#FAF8F5] border border-[#E8E0D5] rounded-xl px-3 py-4 sm:px-4 sm:py-5 text-center">
+      <p class="text-xs text-[#8B7355] mb-1">コーヒー粉</p>
+      <p class="text-xl sm:text-2xl font-bold text-[#4A3728]">15<span class="text-sm font-normal">g</span></p>
+    </div>
+    <div class="bg-[#FAF8F5] border border-[#E8E0D5] rounded-xl px-3 py-4 sm:px-4 sm:py-5 text-center">
+      <p class="text-xs text-[#8B7355] mb-1">お湯の総量</p>
+      <p class="text-xl sm:text-2xl font-bold text-[#4A3728]">240<span class="text-sm font-normal">g</span></p>
+    </div>
+    <div class="bg-[#FAF8F5] border border-[#E8E0D5] rounded-xl px-3 py-4 sm:px-4 sm:py-5 text-center">
+      <p class="text-xs text-[#8B7355] mb-1">粉とお湯の比率</p>
+      <p class="text-xl sm:text-2xl font-bold text-[#4A3728]">1：16</p>
+    </div>
+    <div class="bg-[#FAF8F5] border border-[#E8E0D5] rounded-xl px-3 py-4 sm:px-4 sm:py-5 text-center">
+      <p class="text-xs text-[#8B7355] mb-1">抽出時間</p>
+      <p class="text-base sm:text-2xl font-bold text-[#4A3728] leading-tight">2分30秒〜3分</p>
+    </div>
+  </div>
+
+  <ul class="mt-5 sm:mt-6 divide-y divide-[#E8E0D5] text-sm">
+    <li class="flex items-center justify-between py-2.5 gap-3">
+      <span class="text-[#8B7355]">浅煎りの温度</span>
+      <span class="font-semibold text-[#4A3728]">88〜92℃</span>
+    </li>
+    <li class="flex items-center justify-between py-2.5 gap-3">
+      <span class="text-[#8B7355]">深煎りの温度</span>
+      <span class="font-semibold text-[#4A3728]">83〜86℃</span>
+    </li>
+    <li class="flex items-center justify-between py-2.5 gap-3">
+      <span class="text-[#8B7355]">蒸らし時間</span>
+      <span class="font-semibold text-[#4A3728]">20〜30秒</span>
+    </li>
+    <li class="flex items-center justify-between py-2.5 gap-3">
+      <span class="text-[#8B7355]">注湯回数</span>
+      <span class="font-semibold text-[#4A3728]">3〜4回</span>
+    </li>
+    <li class="flex items-center justify-between py-2.5 gap-3">
+      <span class="text-[#8B7355]">挽き目</span>
+      <span class="font-semibold text-[#4A3728]">中挽きを基本に</span>
+    </li>
+  </ul>
+
+  <p class="mt-5 text-xs text-[#6B5745] leading-relaxed">
+    使用する道具：ドリッパー・ペーパーフィルター・コーヒーサーバー・細口ケトル・コーヒーミル・スケール（詳しくは上記「ハンドドリップに必要な道具」を参照）
+  </p>
+</div>
 
 ### STEP 1｜準備
 
