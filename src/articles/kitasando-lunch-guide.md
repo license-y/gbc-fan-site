@@ -7,6 +7,7 @@ tags:
   - ランチ・食事
 pillar: true
 date: 2026-10-22
+hideAutoRelated: true
 thumbnail: /assets/images/articles/lunch-cafe-table-dishes-kitasando-gbc.jpg
 thumbnailAlt: 木製テーブルに並んだパスタやサラダなど数皿のランチメニューのイメージ
 thumbnailCaption: ※写真はイメージです
@@ -43,6 +44,71 @@ thumbnailCaption: ※写真はイメージです
 グリーンビーンズコーヒーは店名の看板を出さない隠れ家のようなカフェで千駄ヶ谷駅から徒歩7分北参道駅から徒歩3分新宿から10分ほどの場所にあります。米粉を使ったグルテンフリーフォカッチャなどランチメニューがあり席の間隔も広いため会話を楽しみながらでも一人の時間を過ごすのにも向いています。自家焙煎のコーヒーと合わせて味わうランチタイムは散策や打ち合わせの合間のひと休みにもちょうどいい時間になります。
 
 ランチミーティングに向くカフェの選び方は[ランチミーティングに適したカフェとは？2〜3人で落ち着いて話せる場所の選び方](/articles/lunch-meeting-cafe-kitasando-gbc/)でも詳しく紹介しています。グルテンフリーメニューについては[グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法](/articles/gluten-free-guide/)が参考になります。カフェ店内の居心地そのものは[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)にまとめました。平日とは違う時間を気にせず過ごしたい休日には[北参道で休日ブランチを楽しむなら？ゆったり過ごすカフェ時間](/articles/weekend-brunch-kitasando-gbc/)もあわせてご覧ください。一人でゆっくり過ごすランチタイムは[一人ランチを楽しむなら北参道のカフェでゆったり](/articles/solo-lunch-kitasando-gbc/)でも紹介しています。観光の合間にしっかりランチ休憩を取りたい方は[東京観光のランチ休憩なら？北参道のグルテンフリーカフェ](/articles/sightseeing-lunch-break-kitasando-gbc/)も参考になります。グルテンフリーランチの具体例は[東京・北参道のグルテンフリーランチは鮮魚のグリルときのこが彩るオメガ3美肌ごはん](/articles/gluten-free-fish-lunch-omega3-kitasando-gbc/)、[東京・千駄ヶ谷のグルテンフリーカフェで見つけた旬の夏野菜へのこだわり](/articles/gluten-free-summer-vegetables-sendagaya-gbc/)、[東京・北参道のグルテンフリーカフェの彩り野菜たっぷり季節限定フォカッチャ](/articles/seasonal-vegetable-focaccia-kitasando-gbc/)でも紹介しています。
+
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block related-reading-block--linked-number bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block.related-reading-block--linked-number { counter-reset: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item { counter-increment: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">グルテンフリーのランチを楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/gluten-free-fish-lunch-omega3-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のグルテンフリーランチは鮮魚のグリルときのこが彩るオメガ3美肌ごはん</span><span class="block text-[13px] text-[#6B5745]">鮮魚のグリルにきのこと彩り野菜を添えたオメガ3脂肪酸がとれるグルテンフリーランチをご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/gluten-free-summer-vegetables-sendagaya-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・千駄ヶ谷のグルテンフリーカフェで見つけた旬の夏野菜へのこだわり</span><span class="block text-[13px] text-[#6B5745]">旬の夏野菜をふんだんに使ったグルテンフリーメニューのこだわりをお伝えしています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/seasonal-vegetable-focaccia-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のグルテンフリーカフェの彩り野菜たっぷり季節限定フォカッチャ</span><span class="block text-[13px] text-[#6B5745]">プチトマトやきのこ、オリーブをのせた季節限定の米粉フォカッチャの楽しみ方をご紹介しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">北参道のカフェをもっと知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/sightseeing-lunch-break-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京観光のランチ休憩なら？北参道のグルテンフリーカフェ</span><span class="block text-[13px] text-[#6B5745]">東京観光で歩き疲れた体を北参道のグルテンフリーカフェでしっかり休められるランチ休憩をご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/solo-lunch-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">一人ランチを楽しむなら北参道のカフェでゆったり</span><span class="block text-[13px] text-[#6B5745]">席の配置と居心地の良さが魅力の、誰にも急かされず過ごせる一人ランチをご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/weekend-brunch-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">北参道で休日ブランチを楽しむなら？ゆったり過ごすカフェ時間</span><span class="block text-[13px] text-[#6B5745]">店名看板のないカフェで時間を気にせずゆったり過ごせる休日ブランチの楽しみ方をご紹介しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">ランチと仕事・打ち合わせ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/lunch-meeting-cafe-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">ランチミーティングできるカフェとは？東京・北参道で解説</span><span class="block text-[13px] text-[#6B5745]">食事をとりながら2〜3人で落ち着いて話せる、ランチミーティング向けの席選びを解説しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/lunch-meeting-pc-onestop-sendagaya-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">ランチも打ち合わせもPC作業も東京・千駄ヶ谷の1軒で完結</span><span class="block text-[13px] text-[#6B5745]">複数人でのランチから打ち合わせ、PC作業まで店を移動せず一軒で完結できる使い方をご紹介しています。</span></span></a>
+</li>
+</ul>
+</div>
 
 ## まとめ
 
