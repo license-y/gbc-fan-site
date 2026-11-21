@@ -7,6 +7,7 @@ tags:
   - ペット
 pillar: true
 date: 2026-06-24
+hideAutoRelated: true
 thumbnail: /assets/images/articles/pet-cafe-guide-gbc.jpg
 thumbnailAlt: 店内の木の床でくつろぐ白いポメラニアン、スマートフォンで撮影する様子
 ---
@@ -84,7 +85,72 @@ Green Beans Coffeeでは店内ペット同伴が歓迎されています。渋�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeは店内ペット同伴OKで無料チェキ展示サービスも提供されています。グリーンビーンズコーヒーで愛犬とともに過ごす特別な時間をぜひ体験してみてください。
 
-グリーンビーンズコーヒーのペット同伴体験については[東京・北参道・千駄ヶ谷でペットと入れるカフェに行ってきました](/articles/pet-cafe-sendagaya/)で詳しくレポートしています。チェキ展示サービスの体験は[東京・千駄ヶ谷の無料チェキ展示もできるペットカフェに行ってきました](/articles/cheki-pet-cafe-dagayasando/)をご覧ください。愛犬と渋谷のサードプレイスで過ごした体験は[東京・渋谷エリアで愛犬とサードプレイス｜チェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)にまとめています。愛犬との散歩コースについては[東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース](/articles/sendagaya-pet-walk-dagayasando/)もあわせてどうぞ。朝晩が涼しくなってきた初秋に散歩コースを伸ばしながらカフェでひと休みする過ごし方は[東京・千駄ヶ谷を愛犬と歩く初秋は北参道のペット同伴カフェでひと休み](/articles/autumn-dog-walk-sendagaya-pet-cafe-gbc/)でも紹介しています。チェキ撮影そのものの魅力や楽しみ方については[チェキとは？東京・北参道のペット同伴カフェで愛犬を撮る楽しみ方](/articles/cheki-guide/)で詳しく解説しています。愛犬の記念日をお祝いしたい方は[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)も参考にしてみてください。愛犬の誕生日をこのカフェで祝う過ごし方は[東京で愛犬の誕生日を祝うなら｜北参道のペット同伴カフェで迎える特別な一日](/pets/articles/dog-birthday-cafe-kitasando/)にまとめました。
+グリーンビーンズコーヒーでは散歩コースとの組み合わせやチェキ展示での思い出づくり、愛犬の記念日のお祝いまで幅広い過ごし方が広がっています。愛犬と渋谷のサードプレイスで過ごす体験は[東京・渋谷エリアで愛犬とサードプレイス｜チェキ撮影が特別すぎた](/articles/dog-thirdplace-cheki-shibuya-gbc/)、鳩森八幡神社を経由する散歩コースの詳細は[東京・千駄ヶ谷を愛犬と歩く将棋会館・鳩森八幡神社経由のペット散歩コース](/articles/sendagaya-pet-walk-dagayasando/)で紹介しています。愛犬の誕生日をこのカフェで祝う過ごし方は[東京で愛犬の誕生日を祝うなら｜北参道のペット同伴カフェで迎える特別な一日](/pets/articles/dog-birthday-cafe-kitasando/)にまとめました。それぞれの過ごし方の具体例は、下記の「あわせて読みたい記事」でも目的別にご紹介しています。
+
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block related-reading-block--linked-number bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block.related-reading-block--linked-number { counter-reset: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item { counter-increment: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">愛犬とカフェを楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/pet-cafe-sendagaya/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道・千駄ヶ谷でペットと入れるカフェに行ってきました</span><span class="block text-[13px] text-[#6B5745]">ペット同伴OKの店内環境とスタッフの温かい対応を実際に訪れてレポートしています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/autumn-dog-walk-sendagaya-pet-cafe-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・千駄ヶ谷を愛犬と歩く初秋は北参道のペット同伴カフェでひと休み</span><span class="block text-[13px] text-[#6B5745]">初秋の散歩コースを伸ばしたあと、愛犬と一緒にひと休みできるカフェをご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/pet-indoor-thirdplace-dagayasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">北参道・ダガヤサンドウで愛犬とカフェ：東京の貴重なペット店内同伴OK</span><span class="block text-[13px] text-[#6B5745]">愛犬と散歩しながら立ち寄れる、都内でも貴重な店内同伴OKのカフェをご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/senior-dog-cafe-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">シニア犬とのカフェ時間は東京・北参道のペット同伴カフェで感じた優しい配慮</span><span class="block text-[13px] text-[#6B5745]">段差の少なさや静かな環境など、シニア犬への優しい配慮が感じられるカフェをご紹介しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">ペットと楽しむ特別な体験</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/cheki-guide/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">チェキとは？東京・北参道のペット同伴カフェで愛犬を撮る楽しみ方</span><span class="block text-[13px] text-[#6B5745]">店内展示限定で、愛犬とのチェキ撮影を無料で楽しめる様子をご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/cheki-pet-cafe-dagayasando/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・千駄ヶ谷の無料チェキ展示もできるペットカフェに行ってきました</span><span class="block text-[13px] text-[#6B5745]">混雑時以外は無料でチェキ撮影・展示をしてもらえる、都内でも珍しいカフェをレポートしています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/pomeranian-tropical-cheki-dagayasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のペット同伴カフェで見た夏のチェキブースは愛犬3匹のトロピカル仮装</span><span class="block text-[13px] text-[#6B5745]">2026年7月に3日間限定で開催された、トロピカル装飾のフォトブースでの撮影会をレポートしています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">ペットと記念日を過ごす</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/anniversary-pet-celebration-sendagaya-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ</span><span class="block text-[13px] text-[#6B5745]">誕生日や合格祝いからペットの記念日まで、幅広いお祝いを受け止めてくれるカフェです。</span></span></a>
+</li>
+</ul>
+</div>
 
 ## よくある質問
 

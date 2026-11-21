@@ -151,7 +151,67 @@ Green Beans Coffeeでは注文ごとにバリスタさんが一杯ずつハン�
 
 東京・渋谷区ダガヤサンドウのGreen Beans Coffeeではバリスタさんが一杯ずつ丁寧にハンドドリップで淹れるコーヒーを体験できます。グリーンビーンズコーヒーのカウンター席に座って目の前で淹れてもらう一杯はそれだけで特別な時間です。ぜひ一度訪れてみてください。
 
-<span class="related-reading-block">グリーンビーンズコーヒーで開催されているハンドドリップ体験イベントの詳細は[東京・北参道のバリスタさんに教わるハンドドリップ体験は毎月開催で豆代のみ](/articles/handdrip-barista-monthly-event-gbc/)で詳しくレポートしています。実際にイベントに参加したときの体験は[東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ](/articles/handdrip-experience/)もあわせてどうぞ。コーヒーの温度と味の関係についてバリスタさんに深掘りした話は[コーヒーは温度で味が変わると知った東京・北参道バリスタ体験の楽しみ方](/articles/coffee-temperature-flavor-gbc/)が参考になります。自宅でハンドドリップを楽しみたい方は[東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験](/articles/handdrip-home-thirdplace-event-gbc/)もおすすめです。仕事に集中したい日のハンドドリップコーヒーについては[東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力](/articles/handdrip-coffee-business-concentration-gbc/)もぜひご覧ください。</span>
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block related-reading-block--linked-number bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block.related-reading-block--linked-number { counter-reset: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item { counter-increment: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">ハンドドリップ体験をもっと深く知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/handdrip-barista-monthly-event-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のバリスタさんに教わるハンドドリップ体験は毎月開催で豆代のみ</span><span class="block text-[13px] text-[#6B5745]">体験料は無料で豆代のみ、バリスタさんが丁寧に教えてくれる毎月開催のイベントです。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/handdrip-experience/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のコーヒー体験に参加してきました：豆の選別から始まるハンドドリップ</span><span class="block text-[13px] text-[#6B5745]">豆の選別から焙煎見学、バリスタさん手淹れのテイクアウトまで参加したレポートです。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/handdrip-home-thirdplace-event-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・渋谷で教わるハンドドリップで自宅をサードプレイスにする体験</span><span class="block text-[13px] text-[#6B5745]">体験イベントで学んだ技術を自宅に持ち帰り、自分だけのコーヒー時間をつくる体験です。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">コーヒーの味わいを楽しむ</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/coffee-temperature-flavor-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">コーヒーは温度で味が変わると知った東京・北参道バリスタ体験の楽しみ方</span><span class="block text-[13px] text-[#6B5745]">淹れたてと時間が経った後で変わる、コーヒーの温度と味わいの関係をご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/coffee-beauty-effects/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道のコーヒーで始める美容健康習慣：シミ・くすみ・むくみに効く3つの効果</span><span class="block text-[13px] text-[#6B5745]">シミ・くすみ予防やアンチエイジングなど、コーヒーに期待される3つの美容効果を解説しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">コーヒー専門店の魅力を知る</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/handdrip-coffee-business-concentration-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・千駄ヶ谷のサードプレイスで仕事が捗った。ハンドドリップコーヒーと集中力</span><span class="block text-[13px] text-[#6B5745]">香りと集中力の関係や、仕事に集中したい日の活用法を実体験としてご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/specialty-coffee-guide/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">スペシャルティコーヒーとは？東京・北参道で自家焙煎コーヒーを飲んで知った違い</span><span class="block text-[13px] text-[#6B5745]">豆の選別・焙煎・抽出のすべてが異なる、スペシャルティコーヒーの魅力をご紹介しています。</span></span></a>
+</li>
+</ul>
+</div>
 
 <div class="not-prose bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-10 sm:px-8 sm:py-12 my-10">
   <div class="text-center mb-8 max-w-xl mx-auto">

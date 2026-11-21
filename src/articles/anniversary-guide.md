@@ -7,6 +7,7 @@ tags:
   - 記念日
 pillar: true
 date: 2026-10-20
+hideAutoRelated: true
 thumbnail: /assets/images/articles/anniversary-coffee-flowers-kitasando-gbc.jpg
 thumbnailAlt: 白いガーベラの花とコーヒーが並んだ卓上。記念日にふさわしい特別な時間をイメージした情景
 thumbnailCaption: ※写真はイメージです
@@ -42,7 +43,72 @@ thumbnailCaption: ※写真はイメージです
 
 特別なプランや演出があるわけではありません。けれど落ち着いた空間とコーヒーの一杯だけで十分特別な時間になる。そう思わせてくれる店だと通い続けるなかで感じています。
 
-実際に記念日をこのカフェで過ごした話は[東京で記念日の思い出を残すなら千駄ヶ谷のカフェ](/articles/anniversary-memory-thirdplace-sendagaya-gbc/)でも紹介しています。愛犬の記念日を一緒に祝いたい人は[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)も参考にしてみてください。誕生日そのものを特別に祝いたい人は[東京で誕生日を祝うなら？北参道のカフェで特別な時間](/articles/birthday-cafe-kitasando-gbc/)でも紹介しています。デート利用を考えている人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も近い視点で書いています。店内の居心地そのものについては[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)で詳しく解説しました。友人同士の卒業祝いや送別会という記念日の過ごし方は[東京の卒業祝い・送別会は北参道のカフェで友人と](/articles/graduation-farewell-anniversary-kitasando-gbc/)で紹介しています。夫婦で迎える結婚記念日の過ごし方は[東京で結婚記念日を祝うなら？北参道のカフェで夫婦と](/articles/wedding-anniversary-couple-kitasando-gbc/)でも紹介しています。家族そろって合格祝いを静かに過ごしたい人は[東京で合格祝いをするなら？北参道のカフェで家族と過ごす特別な時間](/articles/exam-pass-celebration-family-kitasando-gbc/)も参考になります。
+誕生日や卒業・送別会、結婚記念日、合格祝いなど人生の節目を祝う過ごし方から、愛犬の記念日まで幅広いお祝いの形をこのカフェで見てきました。デート利用を考えている人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も近い視点で書いています。店内の居心地そのものについては[居心地のいいカフェとは？東京・渋谷区で3年通って気づいた店内空間の5つの条件](/articles/cafe-interior-guide/)で詳しく解説しました。それぞれのお祝いの過ごし方は、下記の「あわせて読みたい記事」でも目的別にご紹介しています。
+
+## あわせて読みたい記事
+
+<div class="not-prose related-reading-block related-reading-block--linked-number bg-[#FAF8F5] border border-[#E8E0D5] rounded-2xl px-5 py-8 sm:px-8 sm:py-10 my-8">
+<style>
+.related-reading-block.related-reading-block--linked-number { counter-reset: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item { counter-increment: related-item; }
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.related-reading-block.related-reading-block--linked-number li.related-item > a.related-item-link::before {
+  content: counter(related-item, decimal-leading-zero);
+  display: inline-block;
+  width: 1.75rem;
+  flex-shrink: 0;
+  text-align: right;
+  padding-top: 0.125rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: #8A6D3B;
+}
+</style>
+
+<h3 class="text-base font-bold text-[#4A3728] mb-3">人生の節目を祝う</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/graduation-farewell-anniversary-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京の卒業祝い・送別会は北参道のカフェで友人と</span><span class="block text-[13px] text-[#6B5745]">少人数の友人同士でスペシャルティコーヒーを飲みながら卒業祝いや送別会を語り合えます。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/exam-pass-celebration-family-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で合格祝いをするなら？北参道のカフェで家族と過ごす特別な時間</span><span class="block text-[13px] text-[#6B5745]">受験や試験の合格を家族で祝うのに向いた、落ち着いた空間での過ごし方をご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/retirement-celebration-colleague-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で退職祝いをするなら？北参道のカフェで同僚と過ごす特別な時間</span><span class="block text-[13px] text-[#6B5745]">隠れ家のような店内で同僚と過ごす、落ち着いた退職祝いの時間をご紹介しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">二人で過ごす記念日</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/wedding-anniversary-couple-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で結婚記念日を祝うなら？北参道のカフェで夫婦と</span><span class="block text-[13px] text-[#6B5745]">隠れ家のような店内で夫婦二人が過ごす、落ち着いた結婚記念日の時間をご紹介しています。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/date-cafe-kitasando-hotel-lounge/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道カフェでホテルラウンジ気分のデート：渋谷・新宿エリアから歩いて10分</span><span class="block text-[13px] text-[#6B5745]">ホテルラウンジのような静かな空間で過ごす、二人のデートの時間をご紹介しています。</span></span></a>
+</li>
+</ul>
+
+<h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">家族・ペットと過ごす記念日</h3>
+
+<ul class="divide-y divide-[#E8E0D5]">
+<li class="related-item py-2.5">
+<a href="/articles/birthday-cafe-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で誕生日を祝うなら？北参道のカフェで特別な時間</span><span class="block text-[13px] text-[#6B5745]">店名看板のない隠れ家で、自家焙煎コーヒーとともに静かに祝う誕生日の過ごし方です。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/anniversary-pet-celebration-sendagaya-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ</span><span class="block text-[13px] text-[#6B5745]">誕生日や合格祝いからペットの記念日まで、幅広いお祝いを受け止めてくれるカフェです。</span></span></a>
+</li>
+<li class="related-item py-2.5">
+<a href="/articles/anniversary-memory-thirdplace-sendagaya-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で記念日の思い出を残すなら千駄ヶ谷のカフェ</span><span class="block text-[13px] text-[#6B5745]">自家製グルテンフリーデザートとともに、記念日の特別な思い出をゆっくり残せます。</span></span></a>
+</li>
+</ul>
+</div>
 
 ## まとめ
 
