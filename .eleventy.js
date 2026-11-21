@@ -177,10 +177,11 @@ export default function (eleventyConfig) {
     });
   });
 
-  // カテゴリ別記事一覧コレクション
+  // カテゴリ別記事一覧コレクション。draft: true の記事は一覧・サイトマップ・関連記事から除外
   eleventyConfig.addCollection("articles", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("articles")
+      .filter((p) => !p.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 
@@ -192,10 +193,11 @@ export default function (eleventyConfig) {
       .sort((a, b) => b.date - a.date);
   });
 
-  // 英語記事一覧コレクション
+  // 英語記事一覧コレクション。draft: true の記事は一覧・サイトマップ・関連記事から除外
   eleventyConfig.addCollection("enArticles", function (collectionApi) {
     return collectionApi
       .getFilteredByTag("en-articles")
+      .filter((p) => !p.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 
