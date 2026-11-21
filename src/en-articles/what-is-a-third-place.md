@@ -44,7 +44,7 @@ Green Beans Coffee in Kitasando, Shibuya, functions as a third place in a fairly
 
 ## Who This Is For
 
-Anyone who wants a place to be, rather than a place to accomplish something: remote workers between meetings, readers, people meeting a friend with nowhere particular to be afterward, or travelers who want a quiet stop that isn't a tourist attraction.
+Anyone who wants a place to be, rather than a place to accomplish something: remote workers between meetings (or looking for a [cafe suited to business meetings themselves](/en/articles/business-meeting-cafe-tokyo/)), readers, people meeting a friend with nowhere particular to be afterward, or travelers who want a quiet stop that isn't a tourist attraction.
 
 ## Frequently Asked Questions
 

@@ -1,5 +1,6 @@
 ---
 layout: article.njk
+enAlternateUrl: https://greenbeanscoffeeambassador.com/en/articles/what-is-dagayasando/
 title: ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説
 description: ダガヤサンドウとは東京・渋谷区千駄ヶ谷・北参道エリアの通称で個性的なカフェやショップが集まる注目エリアです。国立競技場・鳩森八幡神社・明治神宮外苑に囲まれた立地にありGreen Beans Coffeeはその中心に位置しています。
 tags:

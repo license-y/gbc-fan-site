@@ -12,6 +12,7 @@ thumbnailAlt: A quiet residential street corner in Tokyo at golden hour with low
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/what-is-dagayasando/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/dagayasando-guide/
 ---
 
 **Dagayasando is a local nickname, not an official place name, for the quiet, low-rise neighborhood that blends Kitasando and Sendagaya in Shibuya, Tokyo.**

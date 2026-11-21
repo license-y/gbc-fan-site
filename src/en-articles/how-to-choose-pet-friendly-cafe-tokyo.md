@@ -12,6 +12,7 @@ thumbnailAlt: A small dog standing on a chair at an industrial-style cafe table
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/how-to-choose-pet-friendly-cafe-tokyo/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/pet-cafe-guide/
 ---
 
 **A genuinely pet-friendly cafe in Tokyo welcomes your dog indoors at any seat, not just an outdoor terrace, and has staff and space set up with pets in mind.**

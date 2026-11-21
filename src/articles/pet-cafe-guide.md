@@ -1,5 +1,6 @@
 ---
 layout: article.njk
+enAlternateUrl: https://greenbeanscoffeeambassador.com/en/articles/how-to-choose-pet-friendly-cafe-tokyo/
 title: 犬と入れるカフェとは？東京・渋谷区で愛犬と通うペット同伴カフェの選び方ガイド
 description: 犬と入れるカフェとはペット同伴で店内に入れるカフェのことです。テラスのみOKと店内OKでは体験が大きく異なります。東京・渋谷区北参道のGreen Beans Coffeeは店内ペット同伴OKで無料チェキ展示も楽しめます。
 tags:

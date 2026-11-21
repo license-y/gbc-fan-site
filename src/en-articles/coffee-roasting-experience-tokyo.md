@@ -19,7 +19,7 @@ I've sat in on this event more times than I can count, and it's still the one I 
 
 ## What the Roasting Experience Actually Involves
 
-The event has run monthly at Green Beans Coffee since 2024, led by the shop's own roaster rather than a generic instructor brought in for the day. It starts with sorting green coffee beans by hand, picking out anything underripe or damaged before it ever reaches the machine. From there, you choose your own blend from more than 30 bean varieties kept on hand, mixing however you like rather than following a fixed recipe someone else chose for you. The roasting itself happens on the shop's in-house machine, with the roaster talking you through timing and heat the whole way so nothing is left to guesswork. Once the beans come out, you remove the chaff by hand, then brew your own roast by hand-drip and drink it on the spot.
+The event has run monthly at Green Beans Coffee since 2024, led by the shop's own roaster rather than a generic instructor brought in for the day. It starts with sorting green coffee beans by hand, picking out anything underripe or damaged before it ever reaches the machine. From there, you choose your own blend from more than 30 bean varieties kept on hand, mixing however you like rather than following a fixed recipe someone else chose for you. The roasting itself happens on the shop's in-house machine, with the roaster talking you through timing and heat the whole way so nothing is left to guesswork. Once the beans come out, you remove the chaff by hand, then brew your own roast by [hand-drip](/en/articles/what-is-hand-drip-coffee/) and drink it on the spot.
 
 ## What It's Actually Like
 

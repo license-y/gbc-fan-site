@@ -23,6 +23,8 @@ Hand-drip brewing means hot water is poured over freshly ground coffee in small,
 
 Water temperature matters too. Pour too hot and the cup turns bitter; too cool and the flavor falls flat. Watching the barista adjust the kettle and circle the grounds in slow, even spirals is part of why this method feels less like a transaction and more like a small performance made just for you.
 
+For a fuller breakdown of what hand-drip actually means and how it's made, see [What Is Hand-Drip Coffee in Tokyo? A Pour-Over Guide](/en/articles/what-is-hand-drip-coffee/).
+
 ## The Experience at Green Beans Coffee
 
 The shop roasts its own beans in-house and keeps more than 30 varieties on hand, grouped into four simple profiles: Fruity, Mild, Bitter, and Decaf. Rather than handing you a long list to choose from, the barista will ask how you're feeling and pick a bean that fits. I've asked for "something bright" on a tired afternoon and ended up with a cup I never would have chosen myself. That's part of the fun.

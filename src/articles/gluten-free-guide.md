@@ -1,5 +1,6 @@
 ---
 layout: article.njk
+enAlternateUrl: https://greenbeanscoffeeambassador.com/en/articles/what-is-gluten-free/
 title: グルテンフリーとは？東京・渋谷区のカフェで学んだ腸と美容への効果と実践法
 description: グルテンフリーとは小麦・大麦・ライ麦に含まれるたんぱく質グルテンを避ける食事法のことです。腸内環境や美容健康への効果が注目されています。東京・渋谷区北参道のGreen Beans Coffeeで体験できる米粉フォカッチャを解説します。
 tags:

@@ -12,6 +12,7 @@ thumbnailAlt: A stack of chocolate brownies on a white wooden table
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/what-is-gluten-free/
+jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/gluten-free-guide/
 ---
 
 **Gluten-free means avoiding gluten, a protein found in wheat, barley, and rye, usually for a medical reason or a personal dietary preference.**

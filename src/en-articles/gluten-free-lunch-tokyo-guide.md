@@ -11,7 +11,6 @@ thumbnailAlt: A round loaf of gluten-free bread in a cast iron pot
 thumbnailCaption: Photo for illustration purposes only
 layout: en-article.njk
 permalink: /en/articles/gluten-free-lunch-tokyo-guide/
-jaAlternateUrl: https://greenbeanscoffeeambassador.com/articles/gluten-free-guide/
 ---
 
 **Gluten-free lunch in Tokyo is manageable, but it takes more care than dinner: set lunch menus are often fixed-price combos that bundle in wheat-based sides, soy sauce, or breaded dishes you can't easily substitute out.**
