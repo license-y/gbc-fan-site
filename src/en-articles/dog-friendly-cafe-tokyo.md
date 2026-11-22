@@ -31,7 +31,7 @@ The cafe isn't only set up for dog owners, either. Strollers are welcome inside 
 
 ## A Coffee Break That Doubles as a Meal
 
-Since this is a working specialty coffee shop first, the menu holds up on its own even if you're not there specifically for the pet-friendly seating. The gluten-free one-plate lunch — a choice of main, a side dish, and a sauce, served with house-made rice flour focaccia — is worth ordering while your dog settles in next to you. Staying after lunch also comes with a small perk: drinks are half price until 3 PM, which makes a longer stop easier to justify.
+Since this is a working specialty coffee shop first, the menu holds up on its own even if you're not there specifically for the pet-friendly seating. The gluten-free one-plate lunch — a choice of main, a side dish, and a sauce, served with house-made rice flour focaccia — is worth ordering while your dog settles in next to you. There's also a small perk worth knowing about: order an eligible food item priced at ¥1,680 together with a drink and receive a complimentary drip coffee pack as part of our Coffee Experience Set.
 
 ## Hosting a Pet Owner Meetup
 
@@ -56,7 +56,7 @@ Kitasando sits between the two, a short walk from Sendagaya and roughly ten minu
 Yes. The space is available for private hire, including pet owner meetups, with capacity for up to 20 seated or 30 standing. It's best to reserve two weeks to three months in advance.
 
 **Q. Is there food I can eat while my dog relaxes nearby?**<br>
-Yes. The gluten-free one-plate lunch is a popular choice, and ordering it before 3 PM gets you half-price drinks afterward, which is a good excuse to stay a while longer.
+Yes. The gluten-free one-plate lunch is a popular choice, and ordering an eligible food item priced at ¥1,680 together with a drink gets you a complimentary drip coffee pack as part of the Coffee Experience Set.
 
 ## Conclusion
 
