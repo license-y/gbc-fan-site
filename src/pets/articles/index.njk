@@ -43,7 +43,7 @@ permalink: /pets/articles/index.html
         {%- set postTags = (postTags.push(tag), postTags) %}
       {%- endif %}
     {%- endfor %}
-    <a href="{{ post.url }}"
+    <a href="{{ post.url }}" data-ga-event="click_pet_article" data-ga-location="article_list" data-content-group="pets"
       class="group flex bg-white rounded-xl border border-[#E8E0D5] overflow-hidden hover:shadow-md transition-shadow duration-200">
 
       <!-- サムネイル -->

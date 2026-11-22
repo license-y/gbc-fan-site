@@ -7,7 +7,7 @@ tags:
   - 記念日
 date: 2026-11-06
 thumbnail: /pets/assets/images/visit-diary/visit-pon-3.jpg
-thumbnailAlt: ポメラニアンのポンが2歳の誕生日を迎えた「ポン誕生祭」で、たくさんのわんちゃんが集まったGreen Beans Coffee店内の様子
+thumbnailAlt: ポメラニアンのポンが2歳の誕生日を迎えた際、Green Beans Coffeeの店内でろうそくの灯った誕生日ケーキを前にした様子
 ---
 
 **東京で愛犬の誕生日を祝うなら、店内全席ペット同伴OKのカフェで過ごす時間がおすすめです。渋谷区北参道のGreen Beans Coffeeは、愛犬と一緒にゆっくり誕生日を迎えられるペットフレンドリーカフェです。**
