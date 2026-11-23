@@ -74,6 +74,9 @@ Yes. A one-plate lunch with house-made rice flour focaccia and a rice flour choc
 **Q. Is gluten-free the same as low-carb?**<br>
 No. Gluten-free only excludes gluten-containing grains; it doesn't restrict carbohydrates generally, and many gluten-free foods (like rice) are still high in carbs.
 
+**Q. Is gluten-free the same as vegan?**<br>
+No. The two restrictions are unrelated and only sometimes overlap: gluten-free is about wheat, barley, and rye, while vegan excludes all animal products, including dashi, eggs, and dairy. A dish can be gluten-free and still contain meat, or vegan and still contain wheat. [This guide to vegan-friendly cafes in Tokyo](/en/articles/vegan-friendly-cafes-tokyo-guide/) covers the vegan side of that distinction in more depth.
+
 **Q. Do I need a medical reason to eat gluten-free?**<br>
 No. Some people avoid gluten for digestive comfort or personal preference without a celiac diagnosis, though the required strictness is generally lower than for celiac disease.
 
