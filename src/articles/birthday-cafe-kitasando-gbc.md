@@ -35,7 +35,7 @@ thumbnailCaption: ※写真はイメージです
 
 ペット同伴でも入店できるため愛犬や愛猫と一緒に誕生日を過ごしたい人にも開かれています。愛犬の誕生日の祝い方は[東京で愛犬の誕生日を祝うなら｜北参道のペット同伴カフェで迎える特別な一日](/pets/articles/dog-birthday-cafe-kitasando/)でも紹介しています。新宿御苑や鳩森八幡神社を散策したあとに立ち寄る誕生日の過ごし方もおすすめです。国立競技場での観戦やイベントの帰りに合流して誕生日を祝う友人を見かけたこともあり北参道という立地の良さを改めて感じました。
 
-誕生日に合うカフェ選びそのものについては[記念日とは？東京・北参道のカフェで過ごす特別な時間の選び方](/articles/anniversary-guide/)でも詳しく紹介しています。落ち着いた雰囲気をゆっくり味わいたい人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も参考になります。家族での誕生日や還暦祝いまで幅広く受け止めてくれる懐の広さは[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)でも触れました。北参道という街そのものの魅力は[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)にまとめています。友人同士の卒業祝いや送別会という記念日の過ごし方は[東京の卒業祝い・送別会は北参道のカフェで友人と](/articles/graduation-farewell-anniversary-kitasando-gbc/)で詳しく紹介しています。
+誕生日に合うカフェ選びそのものについては[記念日とは？東京・北参道のカフェで過ごす特別な時間の選び方](/articles/anniversary-guide/)でも詳しく紹介しています。落ち着いた雰囲気をゆっくり味わいたい人には[東京・北参道カフェでホテルラウンジ気分のデート](/articles/date-cafe-kitasando-hotel-lounge/)も参考になります。家族での誕生日やペットの記念日まで幅広く受け止めてくれる懐の広さは[東京千駄ヶ谷で誕生日からペットの記念日まで祝うカフェ](/articles/anniversary-pet-celebration-sendagaya-gbc/)でも触れました。祖父母世代の還暦祝いを家族3世代で過ごしたい場合は[東京で還暦祝いをするなら？北参道のカフェで家族3世代と過ごす特別な時間](/articles/kanreki-celebration-family-kitasando-gbc/)も参考になります。北参道という街そのものの魅力は[ダガヤサンドウとは？東京・渋谷区の隠れたカフェエリアの特徴と魅力を解説](/articles/dagayasando-guide/)にまとめています。友人同士の卒業祝いや送別会という記念日の過ごし方は[東京の卒業祝い・送別会は北参道のカフェで友人と](/articles/graduation-farewell-anniversary-kitasando-gbc/)で詳しく紹介しています。
 
 ## まとめ
 

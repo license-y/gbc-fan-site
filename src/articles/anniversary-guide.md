@@ -82,6 +82,9 @@ thumbnailCaption: ※写真はイメージです
 <li class="related-item py-2.5">
 <a href="/articles/retirement-celebration-colleague-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で退職祝いをするなら？北参道のカフェで同僚と過ごす特別な時間</span><span class="block text-[13px] text-[#6B5745]">隠れ家のような店内で同僚と過ごす、落ち着いた退職祝いの時間をご紹介しています。</span></span></a>
 </li>
+<li class="related-item py-2.5">
+<a href="/articles/kanreki-celebration-family-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京で還暦祝いをするなら？北参道のカフェで家族3世代と過ごす特別な時間</span><span class="block text-[13px] text-[#6B5745]">祖父母から孫まで三世代の家族が気負わず集まれる還暦祝いの過ごし方をご紹介しています。</span></span></a>
+</li>
 </ul>
 
 <h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">二人で過ごす記念日</h3>

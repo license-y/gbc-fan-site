@@ -96,6 +96,9 @@ thumbnailCaption: ※写真はイメージです
 <li class="related-item py-2.5">
 <a href="/articles/weekend-brunch-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">北参道で休日ブランチを楽しむなら？ゆったり過ごすカフェ時間</span><span class="block text-[13px] text-[#6B5745]">店名看板のないカフェで時間を気にせずゆったり過ごせる休日ブランチの楽しみ方をご紹介しています。</span></span></a>
 </li>
+<li class="related-item py-2.5">
+<a href="/articles/girls-lunch-cafe-kitasando-gbc/" class="group related-item-link"><span class="flex-1 flex flex-col"><span class="block text-[15px] font-semibold text-[#4A3728] group-hover:text-[#8A6D3B] group-hover:underline mb-1">東京・北参道で女子会ランチを楽しむなら？写真映えするカフェごはんの選び方</span><span class="block text-[13px] text-[#6B5745]">写真映えするグルテンフリーメニューと広い席間隔で楽しむ3〜4人の女子会ランチをご紹介しています。</span></span></a>
+</li>
 </ul>
 
 <h3 class="text-base font-bold text-[#4A3728] mt-8 mb-3">ランチと仕事・打ち合わせ</h3>
