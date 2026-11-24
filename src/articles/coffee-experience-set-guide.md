@@ -6,7 +6,7 @@ tags:
   - articles
   - ランチ・食事
 pillar: true
-date: 2026-11-29
+date: 2026-11-25
 thumbnail: /assets/images/articles/coffee-experience-set-drip-pack-kitasando-gbc.jpg
 thumbnailAlt: 透明なマグカップにセットされたドリップバッグからコーヒーを淹れている様子
 thumbnailCaption: ※写真はイメージです
