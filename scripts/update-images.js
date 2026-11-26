@@ -236,23 +236,30 @@ async function main() {
   }
 
   // Monthly コーヒー処理
+  // 1.jpg・2.jpg は両方揃っている場合のみ処理する（片方のみの更新で左右がズレるのを防ぐ）。
+  // 処理後も inbox の元画像は削除しない。HTML更新・検証がすべて完了したことを確認してから、
+  // Claude Code が個別ファイル名で削除する運用とする（途中失敗時に元画像を保持するため）。
   log.header('Monthly コーヒー豆');
-  for (const [key, label, dest] of [
-    ['coffee1', '1.jpg', 'monthly-coffee/1.jpg'],
-    ['coffee2', '2.jpg', 'monthly-coffee/2.jpg'],
-  ]) {
-    const srcPath = inboxFiles[key];
-    if (existsSync(srcPath)) {
+  const coffee1Exists = existsSync(inboxFiles.coffee1);
+  const coffee2Exists = existsSync(inboxFiles.coffee2);
+  if (coffee1Exists !== coffee2Exists) {
+    log.error('monthly-coffee は 1.jpg と 2.jpg の両方が揃っている場合のみ処理します。片方のみのため処理をスキップしました。');
+  } else if (!coffee1Exists && !coffee2Exists) {
+    log.skip('monthly-coffee: スキップ（inbox になし）');
+  } else {
+    for (const [key, , dest] of [
+      ['coffee1', '1.jpg', 'monthly-coffee/1.jpg'],
+      ['coffee2', '2.jpg', 'monthly-coffee/2.jpg'],
+    ]) {
+      const srcPath = inboxFiles[key];
       const destPath = resolve(IMAGES, dest);
       if (tinify) {
         await compressAndCopy(srcPath, destPath, tinify);
       } else {
         await compressWithJimp(srcPath, destPath);
       }
-      unlinkSync(srcPath);
-    } else {
-      log.skip(`${label}: スキップ（inbox になし）`);
     }
+    log.info('inbox/monthly-coffee/1.jpg・2.jpg は削除していません。HTML更新・検証完了後に削除してください。');
   }
 
   // 完了メッセージ

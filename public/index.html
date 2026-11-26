@@ -583,8 +583,8 @@
         <h3 class="text-2xl font-bold text-center text-primary mb-6">今月のおすすめ</h3>
         <div class="grid grid-cols-2 gap-4 md:gap-6 max-w-xl mx-auto">
           <div class="text-center">
-            <div class="relative group cursor-pointer" onclick="openMonthlyModal(1)">
-              <img src="/assets/images/monthly-coffee/1.jpg" alt="今月のおすすめコーヒー：ケニアピンクフラミンゴ" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
+            <div class="relative group cursor-pointer" onclick="openMonthlyModal(this)">
+              <img src="/assets/images/monthly-coffee/1.jpg?v=97d85fb3" alt="2026年12月のおすすめコーヒー豆：ケニア ピンクフラミンゴ" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -596,8 +596,8 @@
             </div>
           </div>
           <div class="text-center">
-            <div class="relative group cursor-pointer" onclick="openMonthlyModal(2)">
-              <img src="/assets/images/monthly-coffee/2.jpg" alt="今月のおすすめコーヒー：コロンビア デカフェ" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
+            <div class="relative group cursor-pointer" onclick="openMonthlyModal(this)">
+              <img src="/assets/images/monthly-coffee/2.jpg?v=529f8863" alt="2026年12月のおすすめコーヒー豆：ホンジュラス" class="w-full rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105" loading="lazy" decoding="async">
               <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -2730,8 +2730,10 @@
     }
 
     // Monthly Coffee modal functions
-    function openMonthlyModal(num) {
-      document.getElementById('monthlyModalImage').src = '/assets/images/monthly-coffee/' + num + '.jpg';
+    function openMonthlyModal(el) {
+      const img = el.querySelector('img');
+      document.getElementById('monthlyModalImage').src = img.src;
+      document.getElementById('monthlyModalImage').alt = img.alt;
       document.getElementById('monthlyModal').classList.remove('hidden');
     }
 
@@ -2790,6 +2792,12 @@
       const paymentModal = document.getElementById('paymentModal');
       if (!paymentModal.classList.contains('hidden')) {
         if (e.key === 'Escape') closePaymentModal();
+      }
+
+      // Keyboard navigation for monthly coffee modal
+      const monthlyModal = document.getElementById('monthlyModal');
+      if (!monthlyModal.classList.contains('hidden')) {
+        if (e.key === 'Escape') closeMonthlyModal();
       }
     });
 

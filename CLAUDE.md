@@ -333,6 +333,122 @@ assets/images/magazine/back-06.jpg   … バックナンバー6号前（最古�
 
 ---
 
+# 今月のおすすめ（Monthly Coffee）セクション
+
+## 概要
+- メインサイトの「Coffee Beans Collection」内に、月替わりで2種類のコーヒー豆チラシ画像を表示するセクション（`#coffee-beans` 内）
+- 画像は**日本語版・英語版で共通利用**（同一ファイル `assets/images/monthly-coffee/1.jpg`・`2.jpg`）。日本語版の画像を更新するだけで英語版にも自動反映される
+- 英語版は2026年11月にこのセクションを新設（それ以前は「日本語サイトをご覧ください」という案内バナーのみだった）
+- クリックで拡大表示する機能があり、日本語版・英語版とも共通のモーダル実装パターン（下記）を使う
+
+## ファイル構成
+```
+public/assets/images/monthly-coffee/1.jpg   … 左側に表示する豆
+public/assets/images/monthly-coffee/2.jpg   … 右側に表示する豆
+```
+- `scripts/update-images.js`（`npm run update-images`）が `inbox/monthly-coffee/1.jpg`・`2.jpg` を読み込み、圧縮してこのパスへ上書きする
+- 「Coffee Beans Collection（全30種類リスト）」は今月のおすすめとは**別の固定リスト**（豆のフレーバーカテゴリ別一覧）。今月のおすすめの豆と同名の豆が全30種類リストに既に別エントリとして存在する場合があるが、**今月のおすすめの更新作業で全30種類リストを変更してはいけない**（2026-11-26に実際に齟齬が発生し、全30種類リストは変更しない方針で確定済み）
+
+## モーダル（拡大表示）の仕様統一ルール（2026-11-26確定）
+日本語版・英語版とも、以下の挙動を統一する：
+- 画像クリックで拡大表示、背景暗転、画像を画面中央に収める（縦横比維持）
+- 右上「×」ボタン／背景クリック／Escapeキーの3種類で閉じられる
+- モーダル内画像のalt属性は、クリックした元画像のalt属性をJSで動的に反映する（`el.querySelector('img')` でsrc/altを取得する実装。alt文言をJS側にハードコードしない）
+- 日本語版：`monthlyModal` / `openMonthlyModal(el)` / `closeMonthlyModal()`（`public/index.html`）
+- 英語版：`imageModal` / `openModal(el)` / `closeModal()`（`public/en/index.html`、GBC Magazineの拡大表示とも共通利用）
+- 新しい画像グループを追加する際は、`<div class="relative group cursor-pointer" onclick="openMonthlyModal(this)">`（または`openModal(this)`）の直下に`<img>`を置く構造を維持すること（`this.querySelector('img')`でsrc/altを取得する実装のため）
+
+### モーダル画像の表示サイズ設定（2026-11-26確定、STEP9で修正）
+- 日本語版 `#monthlyModalImage`：`max-h-[85vh] w-auto rounded-lg`。Monthly Coffee（縦長画像）専用のモーダルのため、高さ上限（85vh）のみで十分
+- 英語版 `#modalImage`：`max-h-[85vh] max-w-[90vw] w-auto h-auto rounded-lg`。GBC Magazine（横長・比率約1.41:1）とMonthly Coffee（縦長）を同じモーダルで共有するため、**高さ上限（85vh）と幅上限（90vw）の両方をビューポート基準で設定**し、どちらの縦横比でも画面からはみ出さないようにしている
+- 英語版に`max-w-[90vw]`がないと、横長のマガジン画像が狭い画面幅で画面からはみ出す可能性があるため、日本語版の設定をそのまま流用しないこと
+- 画像自体に`padding`は付けない（内側の余白はモーダル背景側の`p-4`で確保する）
+- 今後、英語版の共有モーダルに新しい画像グループ（別の縦横比）を追加する場合も、この`max-h-[85vh] max-w-[90vw] w-auto h-auto`パターンをそのまま使えば個別のサイズ調整は不要
+
+## 標準更新フロー（2026-11-26確定・自動化版）
+
+**ユーザーの操作は「`inbox/monthly-coffee/`に`1.jpg`・`2.jpg`を格納し、Claude Codeに『今月のおすすめを更新してください』と指示するだけ」。** 豆名・対象年月をユーザーが個別入力する必要はない。Claude Codeは以下の手順で自律的に処理する。
+
+### 0. 作業開始前の確認（既存の未コミット変更の保護、2026-11-27追加）
+- 作業を始める前に`git status`で、今回の更新対象ファイル（`public/index.html`・`public/en/index.html`・`public/assets/images/monthly-coffee/1.jpg`・`2.jpg`・`scripts/update-images.js`・`CLAUDE.md`）に、**今回の作業とは無関係な既存の未コミット変更がすでに存在していないか**を確認する
+- もし既に変更がある場合（ユーザーが手動編集中だった等）：`git stash push -m "monthly-coffee更新前の既存変更を退避" -- <該当ファイルを個別指定>` 等で現在の内容を退避してから作業を開始する。退避した場合はstashの内容（`git stash list`）を記録しておく
+- これにより、万一このあと復旧（`git restore`）が必要になった場合でも、**復旧先が「直前のコミット」ではなく「今回の作業を始める直前の状態（既存の未コミット変更を含む）」になるよう**、退避した変更を`git stash pop`で戻せる
+- 対象ファイルに既存の未コミット変更がなければ、このステップは何もせず次に進んでよい
+
+### 1. inboxの確認
+- `inbox/monthly-coffee/1.jpg`・`2.jpg` が**両方**揃っているか確認する
+- 片方のみの場合は処理せず、ユーザーに不足分の格納を依頼して停止する（`scripts/update-images.js`側にもガードあり：両方揃っていないと処理自体がスキップされる）
+
+### 2. 画像認識（Claude Codeのビジョン機能のみ使用。追加費用・外部API不要）
+- `npm run update-images`で圧縮・配置する**前に**、Readツールで`inbox/monthly-coffee/1.jpg`・`2.jpg`を直接読み込み、以下を抽出する：
+  - 豆名（日本語。「Monthly Coffee」見出し直下の大見出しに印刷されている）
+  - 対象年月（右下に`YYYY年M月`形式で印刷されている）
+  - 管理番号（左下。サイトには表示しないが、1.jpg=左／2.jpg=右の照合用に記録しておく）
+- **文字が不鮮明・対象年月の記載がない・読み取り結果に自信が持てない場合は、推測で更新せずユーザーに確認する**（最重要の安全ルール）
+- 2枚の対象年月が一致しているか確認する。一致しない場合はユーザーに確認する
+
+### 3. 英語名称の決定（全30種類リストとの照合を優先）
+- 抽出した日本語の豆名を、`public/index.html`の「Coffee Beans Collection（全30種類リスト）」内の`<li>`テキストと**完全一致**で照合する
+- 一致するエントリが見つかった場合：`public/en/index.html`の同じ並び順にある英語エントリをそのまま採用する（新規翻訳はしない）
+- 一致するエントリが見つからない場合：推測で翻訳せず、ユーザーに英語表記を確認する
+- 管理番号は全30種類リストにコード化されていないため自動照合はできない。1.jpg/2.jpgの左右判定や取り違えがないかの人的チェック用途として使う
+
+### 4. 画像の圧縮・配置
+- `npm run update-images` を実行する。このスクリプトは：
+  - `inbox/monthly-coffee/1.jpg`・`2.jpg`が両方揃っている場合のみ処理する
+  - 圧縮して `public/assets/images/monthly-coffee/1.jpg`・`2.jpg` に上書きする
+  - **inbox内の元画像は削除しない**（以前は自動削除していたが、2026-11-26に変更。HTML更新・検証が全て完了するまで元画像を保護するため）
+
+### 5. キャッシュ対策（コンテンツハッシュによるクエリ文字列）
+- ファイル名は`1.jpg`・`2.jpg`のまま毎月上書きするため、ブラウザ・CDNキャッシュ対策として**画像バイト列のSHA-1ハッシュ先頭8桁**を`?v=`クエリとして`<img src>`に付与する（新規ライブラリ不要。Node標準の`crypto`モジュールで算出）
+  ```bash
+  node -e "
+  const {createHash}=require('crypto');const fs=require('fs');
+  for (const f of ['public/assets/images/monthly-coffee/1.jpg','public/assets/images/monthly-coffee/2.jpg']) {
+    console.log(f, createHash('sha1').update(fs.readFileSync(f)).digest('hex').slice(0,8));
+  }
+  "
+  ```
+- 対象は日本語版・英語版それぞれの通常表示用`<img src>`の2箇所ずつ、計4箇所（`/assets/images/monthly-coffee/1.jpg?v=<hash>`形式）
+- 拡大表示モーダルは`el.querySelector('img').src`でDOM上のsrcをそのまま読むため、`<img>`側にクエリを付ければモーダル側は自動的に追随する（モーダル側への個別対応は不要）
+- 同じ月内に画像を差し替えた場合も、内容が変わればハッシュが変わるため自動的にキャッシュが更新される。内容が同一であれば同じハッシュになり、不要な差分は発生しない（冪等性）
+
+### 6. HTML更新
+- 日本語版（`public/index.html`）の「今月のおすすめ」セクション：img要素のalt属性を更新（`2026年X月のおすすめコーヒー豆：〇〇`形式）
+- 英語版（`public/en/index.html`）：alt属性（`[Month] [Year] Monthly Coffee – [Bean Name]`形式）、対象年月表示（タイトル直下の`<p>`）、豆名称キャプション（画像下の`<p>`）を更新
+- 「Coffee Beans Collection（全30種類リスト）」・マガジン・イベントチラシ・GA4計測・未追跡のEN下書き記事には触れない
+
+### 7. 検証
+- `git diff --stat` で変更ファイルが想定範囲内（monthly-coffee画像2点・`public/index.html`・`public/en/index.html`のみ）か確認
+- 全30種類リストの該当文字列の出現数が更新前後で変わっていないか確認
+- HTMLのdivタグ開閉数が一致しているか確認（簡易構文チェック）
+- 日本語版・英語版で豆名・対象年月の内容が一致しているか確認
+- 通常表示とモーダル拡大表示が同じ画像（同じsrc）を指しているか確認
+- 実ブラウザでのPC・スマートフォン表示、拡大表示の目視確認は、claude-in-chrome等のブラウザ操作ツールが利用できる場合のみ実施する。利用できない場合は「未確認」と明記し、推測で「確認済み」と報告しない
+
+### 8. inbox元画像の削除（最後の最後に・個別ファイル指定のみ）
+- 上記2〜7がすべて正常に完了したことを確認した**後にのみ**、`inbox/monthly-coffee/1.jpg`・`2.jpg`を個別ファイル名で削除する（ディレクトリ削除・ワイルドカード削除は禁止）
+- 途中でエラーが発生した場合は、inbox元画像をそのまま残す（まだ削除していないので失われない）
+
+#### 復旧手順（2026-11-26にgit worktreeで安全性を検証済み）
+`public/assets/images/monthly-coffee/{1,2}.jpg`・`public/index.html`・`public/en/index.html`・`scripts/update-images.js`・`CLAUDE.md`はいずれもGit追跡済みファイルのため、直前の公開状態に戻せる。ただし **`git restore .`や`git checkout .`など対象を指定しない形は絶対に使わない**（他の未コミットの手動編集や未追跡ファイルまで巻き込んで失う恐れがある。2026-11-26の検証で、無関係な未コミット編集・未追跡ファイルが復旧対象に含まれていない場合でも誤って一括復旧すると失われることを確認済み）。
+
+1. まず`git status`で現在変更されている全ファイルを確認し、今回の更新と無関係な変更が混ざっていないか確認する
+2. `git diff --stat -- <今回変更した対象ファイルを個別に列挙>` で、復旧によって何が失われるかを必ず事前確認する
+3. 復旧は対象ファイルを**個別に名前指定**して実行する：
+   ```bash
+   git restore -- public/index.html public/en/index.html public/assets/images/monthly-coffee/1.jpg public/assets/images/monthly-coffee/2.jpg scripts/update-images.js CLAUDE.md
+   ```
+4. 復旧後に`git status`で、今回の更新対象以外のファイル（他の未コミット編集・未追跡ファイル）が影響を受けていないことを確認する
+5. 「0. 作業開始前の確認」でstashに退避した既存の未コミット変更がある場合は、`git stash pop`で復元する（`git restore`だけでは直前のコミット状態にしか戻らず、退避前の既存変更は戻らないため、必ずstash復元を併用する）
+6. inbox内の元画像は削除していないため、復旧後にそのまま再実行できる
+
+### 9. 報告・承認
+- 検出した豆名（日本語・英語）・対象年月・変更ファイル一覧・検証結果を報告する
+- ユーザーの明示的な承認があるまでコミット・プッシュ・本番公開は行わない（本ファイル冒頭の「Git操作の重要ルール」を参照）
+
+---
+
 # ペット特化サイト（/pets/）
 
 ## 概要
