@@ -425,6 +425,7 @@ public/assets/images/monthly-coffee/2.jpg   … 右側に表示する豆
 - 日本語版・英語版で豆名・対象年月の内容が一致しているか確認
 - 通常表示とモーダル拡大表示が同じ画像（同じsrc）を指しているか確認
 - 実ブラウザでのPC・スマートフォン表示、拡大表示の目視確認は、claude-in-chrome等のブラウザ操作ツールが利用できる場合のみ実施する。利用できない場合は「未確認」と明記し、推測で「確認済み」と報告しない
+- **ユーザーが実ブラウザで確認する際は、必ずClaude Codeが提示したローカルURL（`http://127.0.0.1:xxxx/`）を新しいタブで開くこと。本番URL（`https://greenbeanscoffeeambassador.com/`）と混同しないよう案内する**（2026-11-26、ユーザーが本番URLを誤って確認し「更新が反映されていない」と報告した実例あり。プッシュ前は本番がまだ旧版のままなのが正常な状態であることも併せて伝える）
 
 ### 8. inbox元画像の削除（最後の最後に・個別ファイル指定のみ）
 - 上記2〜7がすべて正常に完了したことを確認した**後にのみ**、`inbox/monthly-coffee/1.jpg`・`2.jpg`を個別ファイル名で削除する（ディレクトリ削除・ワイルドカード削除は禁止）
@@ -446,6 +447,94 @@ public/assets/images/monthly-coffee/2.jpg   … 右側に表示する豆
 ### 9. 報告・承認
 - 検出した豆名（日本語・英語）・対象年月・変更ファイル一覧・検証結果を報告する
 - ユーザーの明示的な承認があるまでコミット・プッシュ・本番公開は行わない（本ファイル冒頭の「Git操作の重要ルール」を参照）
+
+---
+
+# 焙煎体験・ハンドドリップ体験イベント（イベントチラシ）セクション
+
+## 概要
+- メインサイトの「Experience」セクション内に、焙煎体験イベント・ハンドドリップ体験イベントのチラシ画像を表示する（`public/index.html`・`public/en/index.html`それぞれ独立したHTMLだが、画像ファイルは共通利用）
+- 2026-11-26にMonthly Coffeeと同様の運用（画像認識による情報取得・全30種類リスト相当の表記統一・ハッシュキャッシュ対策・拡大表示モーダル）を導入した
+- **焙煎体験・ハンドドリップ体験は互いに完全に独立しており、片方のみの更新も可能**（Monthly Coffeeの1.jpg/2.jpgとは異なり「両方揃っていないと処理しない」制約はない）
+
+## ファイル構成
+```
+public/assets/images/events/event-roasting.jpg   … 焙煎体験イベントのチラシ
+public/assets/images/events/event-handdrip.jpg    … ハンドドリップ体験イベントのチラシ
+```
+- `scripts/update-images.js`（`npm run update-images`）が `inbox/event-roasting.jpg`・`inbox/event-handdrip.jpg`（**サブフォルダなし、inbox直下にフラット格納**。Monthly Coffeeの`inbox/monthly-coffee/`とは配置が異なるので注意）を読み込み、圧縮してこのパスへ上書きする
+- 画像の縦横比は約0.707（例：905×1280）。Monthly Coffeeの画像と近い比率だが、**絶対ピクセルサイズは毎回のチラシ制作によって変わりうる**。JSON-LDの`image.width`/`height`をハードコードしているため、更新のたびに実際の出力画像サイズと一致しているか確認・更新すること（2026-11-26更新時は1061×1500→905×1280に変更）
+
+## 構造化データ（JSON-LD EventSeries）
+- `public/index.html`・`public/en/index.html`それぞれに「焙煎体験イベント」「ハンドドリップ体験イベント」のEventSeriesが1つずつ、計4ブロック存在する
+- 内容は**汎用的**（`eventSchedule.repeatFrequency: "P1M"`のみで、個別の開催回・日付・今後のスケジュールは含まれていない）。今回の運用では、この汎用構造は維持し、個別の開催回・日付はalt属性にのみ反映する方針とした（JSON-LDにsubEvent等で個別日程を持たせる設計変更は今回のスコープ外。導入する場合は構造自体の変更になるため、別途相談のうえ判断すること）
+- 更新時に必ず確認・修正する項目：`image.width`・`image.height`（実際の出力画像サイズと一致させる）
+- 変更しない項目：`name`・`description`・`eventSchedule`・`offers`・`location`・`organizer`など（個別の開催回ごとに書き換えない）
+
+## alt属性の記載方針（2026-11-26確定）
+- 既存の alt属性は開催回・日付に依存しない汎用的な説明文だったが、Monthly Coffeeと同様にAEO・アクセシビリティの観点から「第◯回＋開催日時」を自然な文の中に含める方式に変更した
+- 元の説明的な文章（何が描かれているか）は保持しつつ、冒頭または末尾に具体的な回数・日時を追加する。既存の説明を丸ごと削除して日付だけにしない
+- 例（日本語）：「北参道・千駄ヶ谷のGreen Beans Coffeeで開催する第24回コーヒー焙煎体験イベント（2026年12月26日 土 8:00〜10:00）のチラシ。店内に設置した焙煎機を使い、コーヒー豆が仕上がる工程を学べる体験型イベントです。」
+- 例（英語）：「Flyer for the 24th Coffee Roasting Workshop at Green Beans Coffee (Kitasando / Sendagaya) — December 26, 2026 (Sat), 8:00–10:00. Use the in-house roaster to learn how coffee beans are transformed, step by step.」
+- 「今後の開催予定」（複数回先の日程）は、2026-11-26時点ではチラシ画像内にのみ印刷されており、サイトのテキストとしては表示していない（既存仕様を維持。新しいテキスト表示ブロックの追加は今回のスコープ外）
+
+## モーダル（拡大表示）の再利用（2026-11-26導入）
+- 焙煎体験・ハンドドリップ体験の画像には、従来クリックで拡大表示する機能がなかったが、Monthly Coffeeで確立した仕組みをそのまま再利用する形で追加した
+- 日本語版：既存の`monthlyModal`/`openMonthlyModal(el)`/`closeMonthlyModal()`をそのまま流用（IDの名称は「Monthly」のままだが、実態はJP版の汎用フライヤー拡大表示モーダルとして機能している。新しいモーダルIDは作らない）
+- 英語版：既存の`imageModal`/`openModal(el)`/`closeModal()`をそのまま流用（マガジン・Monthly Coffeeとも共通）
+- 画像の縦横比（約0.707・縦長）がMonthly Coffeeと同系統のため、表示サイズ設定（JP：`max-h-[85vh] w-auto`、EN：`max-h-[85vh] max-w-[90vw] w-auto h-auto`）もそのまま変更不要だった
+- 新しい画像グループをこの仕組みに追加する場合も、`<div class="relative group cursor-pointer" onclick="openMonthlyModal(this)">`（またはEN版`openModal(this)`）の直下に`<img>`を置く構造を踏襲すること
+
+## 標準更新フロー（2026-11-26確定・Monthly Coffeeと同系統）
+
+**ユーザーの操作は「`inbox/`に`event-roasting.jpg`・`event-handdrip.jpg`（片方のみでも可）を格納し、Claude Codeに更新を指示するだけ」。**
+
+### 0. 作業開始前の確認
+- `git status`で、更新対象ファイル（`public/index.html`・`public/en/index.html`・`public/assets/images/events/event-roasting.jpg`・`event-handdrip.jpg`・`scripts/update-images.js`・`CLAUDE.md`）に、今回の作業と無関係な既存の未コミット変更がないか確認する
+- 既存の変更がある場合は`git stash push -m "イベントチラシ更新前の既存変更を退避" -- <該当ファイルを個別指定>`で退避してから作業を開始する
+
+### 1. inboxの確認
+- `inbox/event-roasting.jpg`・`inbox/event-handdrip.jpg`の存在を個別に確認する（**両方揃っている必要はない**。片方のみでもそのファイルだけ処理する）
+- どちらも存在しない場合はユーザーに確認する
+
+### 2. 画像認識（Claude Codeのビジョン機能のみ使用）
+- 圧縮・配置する**前に**、Readツールでinbox内の画像を直接読み込み、以下を抽出する：
+  - イベント名・開催回（「第◯回」）
+  - 開催日・曜日・開催時間
+  - 今後の開催予定（複数回分、記載があれば）
+- **文字が不鮮明・情報が読み取れない場合、または画像内の開催日と曜日が暦上一致しない場合は、推測で更新せずユーザーに確認する**（2026-11-26の12月号更新では、全日程の曜日を暦計算で検証し、印刷内容と完全に一致することを確認済み）
+
+### 3. 画像の圧縮・配置
+- `npm run update-images`を実行する。`inbox/event-roasting.jpg`・`event-handdrip.jpg`は独立して処理され、**inbox内の元画像は削除されない**（HTML更新・検証が完了するまで保護）
+
+### 4. キャッシュ対策
+- 出力画像のSHA-1ハッシュ先頭8桁を算出し、`?v=`クエリとして日本語版・英語版それぞれの`<img src>`に付与する（Monthly Coffeeと同じ方式。コマンド例は「今月のおすすめ」節を参照）
+
+### 5. HTML更新
+- 日本語版・英語版それぞれの該当イベントのalt属性を、上記の記載方針に従って更新する
+- JSON-LDの`image.width`/`height`を実際の出力画像サイズに更新する
+- 更新していない方のイベント（片方のみ更新の場合）・全30種類リスト・マガジン・既存の予約導線・GA4計測には触れない
+
+### 6. 検証
+- `git diff --stat`で変更ファイルが想定範囲内か確認する
+- JSON-LDが有効なJSONとしてパースできるか確認する（構造化データの構文崩れを防ぐ）
+- 日本語版・英語版で開催回・日付・時間の内容が一致しているか確認する
+- 通常表示とモーダル拡大表示が同じ画像（同じsrc）を指しているか確認する
+- 全30種類リスト・マガジン・GA4計測に変更がないか確認する
+- 実ブラウザでの目視確認は、claude-in-chrome等が利用できる場合のみ実施し、できない場合は「未確認」と明記する
+
+### 7. inbox元画像の削除
+- 上記6が完了したことを確認した**後にのみ**、処理対象だったinbox画像を個別ファイル名で削除する
+
+### 8. 報告・承認
+- 検出した開催回・日付・時間・変更ファイル一覧・検証結果を報告する
+- ユーザーの明示的な承認があるまでコミット・プッシュ・本番公開は行わない
+
+## 復旧手順
+Monthly Coffeeと同じ考え方を適用する：
+- `public/assets/images/events/{event-roasting,event-handdrip}.jpg`・`public/index.html`・`public/en/index.html`・`scripts/update-images.js`・`CLAUDE.md`はGit追跡済みファイルのため、`git restore -- <個別ファイル名>`（対象無指定の`git restore .`は禁止）で直前の公開状態に戻せる
+- 「0. 作業開始前の確認」でstashに退避した既存の未コミット変更がある場合は、復旧後に`git stash pop`で復元する
+- inbox内の元画像は削除していないため、復旧後にそのまま再実行できる
 
 ---
 

@@ -216,6 +216,9 @@ async function main() {
   }
 
   // イベントチラシ処理
+  // 焙煎体験・ハンドドリップ体験は互いに独立して更新できる（片方のみの更新も可）。
+  // 処理後も inbox の元画像は削除しない。HTML更新・検証がすべて完了したことを確認してから、
+  // Claude Code が個別ファイル名で削除する運用とする（途中失敗時に元画像を保持するため）。
   log.header('イベントチラシ');
   for (const [key, label, dest] of [
     ['roasting', 'event-roasting.jpg', 'events/event-roasting.jpg'],
@@ -229,7 +232,7 @@ async function main() {
       } else {
         await compressWithJimp(srcPath, destPath);
       }
-      unlinkSync(srcPath);
+      log.info(`inbox/${label} は削除していません。HTML更新・検証完了後に削除してください。`);
     } else {
       log.skip(`${label}: スキップ（inbox になし）`);
     }
