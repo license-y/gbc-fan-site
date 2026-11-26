@@ -201,16 +201,29 @@ async function main() {
   }
 
   // マガジン処理
+  // 「同じ号を誤って2回処理」「古い号で上書き」を防ぐため、このスクリプト自体には
+  // 年月・Vol.番号を判定する仕組みを持たせない（画像からの読み取りはAI/OCRが必要なため）。
+  // 判定は必ず Claude Code がビジョン機能で事前に行い、下記のいずれかの方法で結果を伝える：
+  //   - 通常の新号（現在のlatest.jpgより新しい）  → 環境変数なしで実行（ローテーションする）
+  //   - 同月号の修正版（latest.jpgと同じ年月・Vol.） → SKIP_MAGAZINE_ROTATION=1 を付けて実行
+  //                                                   （ローテーションせず latest.jpg のみ上書き）
+  //   - 現在号より古い／年月やVol.が不明           → このスクリプトを実行しない（Claude Code側で停止）
+  // 処理後も inbox の元画像は削除しない。HTML更新・検証がすべて完了したことを確認してから、
+  // Claude Code が個別ファイル名で削除する運用とする（途中失敗時に元画像を保持するため）。
   if (existsSync(inboxFiles.magazine)) {
     log.header('マガジン');
-    rotateMagazine();
+    if (process.env.SKIP_MAGAZINE_ROTATION === '1') {
+      log.info('SKIP_MAGAZINE_ROTATION=1 のため、バックナンバーのローテーションをスキップします（同月号の修正版として処理）。');
+    } else {
+      rotateMagazine();
+    }
     const destPath = resolve(IMAGES, 'magazine/latest.jpg');
     if (tinify) {
       await compressAndCopy(inboxFiles.magazine, destPath, tinify);
     } else {
       await compressWithJimp(inboxFiles.magazine, destPath);
     }
-    unlinkSync(inboxFiles.magazine);
+    log.info('inbox/magazine-latest.jpg は削除していません。HTML更新・検証完了後に削除してください。');
   } else {
     log.skip('magazine-latest.jpg: スキップ（inbox になし）');
   }
